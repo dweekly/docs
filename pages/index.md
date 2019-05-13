@@ -73,4 +73,10 @@ template: main-lp.html
   </div>
   <div class="clearfix"></div>
   <!--/bottom-nav-->
+  <div align="right">
+  <a href="/">English</a>
+  <a href="/ko/">Korean</a>
+  <a href="/ja/">Japanese</a>
+  <a href="/zh/">Chinesse</a>
+  </div>
 </div>
