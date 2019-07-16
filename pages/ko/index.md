@@ -1,4 +1,4 @@
-template: main-lp.html
+template: main-lp-ko.html
 <div class="main-page">
 <p class="greeting">How can we help?</p>
   <div class="search-bar">

@@ -1,4 +1,4 @@
-template: main-lp.html
+template: main-lp-ja.html
 <div class="main-page">
 <p class="greeting">How can we help?</p>
   <div class="search-bar">
@@ -73,7 +73,7 @@ template: main-lp.html
   </div>
   <div class="clearfix"></div>
   <!--/bottom-nav-->
-  <div align="right" class="nav-wrap">
+  <div align="right">
     <a href="/">English</a>
     <a href="/ko/">Korean</a>
     <a href="/ja/">Japanese</a>

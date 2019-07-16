@@ -39,6 +39,7 @@
   display: none;
   margin: 0;
   font-size: 0.6rem;
+  width: max-content;
 }
 @media (min-width: 960px) {
   .branch-header-label {
