@@ -75,13 +75,35 @@
       <div class="branch-header-button md-flex__cell md-flex__cell--shrink">
         <a href="#" class="improve-doc" title="Improve This Doc">
           <i class="branch-header-icon md-icon material-icons">mode_edit</i>
-          <p class="branch-header-label">Improve</p>
+          <p class="branch-header-label">
+            <script>
+              var page_url = window.location.host + window.location.pathname;
+              if(page_url.includes('/ko/') === true)
+                document.write('돌리다');
+              else if(page_url.includes('zh') === true)
+                document.write('돌리다');
+              else if(page_url.includes('ja') === true)
+                document.write('改善する');
+              else document.write('Improve');
+            </script>
+          </p>
         </a>
       </div>
       <div class="branch-header-button md-flex__cell md-flex__cell--shrink">
         <a href="#" class="contact-support" title="Contact support">
           <i class="branch-header-icon md-icon material-icons">help_outline</i>
-          <p class="branch-header-label">Support</p>
+          <p class="branch-header-label">
+            <script>
+              var page_url = window.location.host + window.location.pathname;
+              if(page_url.includes('/ko/') === true)
+                document.write('지원하다');
+              else if(page_url.includes('zh') === true)
+                document.write('支持');
+              else if(page_url.includes('ja') === true)
+                document.write('サポート');
+              else document.write('Support');
+            </script>
+          </p>
         </a>
       </div>
 
