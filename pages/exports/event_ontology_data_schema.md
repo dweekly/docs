@@ -8,7 +8,7 @@
 - [Data Feeds](/exports/data-feeds/):
     - [Webhooks](/exports/ua-webhooks/)
     - [Data Integrations](/integrations/data-integrations/)
-    - [Data Export API](/exports/api-v3/)
+    - [Daily Export API](/exports/api-v3/)
 
 Previously, we had different formats for Webhooks vs Data Integrations vs Exports. With the release of People-Based Attribution, we have reconciled these differences.
 
@@ -74,6 +74,15 @@ On each event, we provide a considerable amount of information. The following ta
 
 ## Full list of fields
 
-If you are building an integration with Branch or simply wish to learn more about the fields we offer, please download one of the CSV files below. They provide a comprehensive list of events and fields, along with definitions and data types.
+If you are building an integration with Branch or simply wish to learn more about the fields we offer, please download the CSV file below. It provides a comprehensive list of events and fields, definitions and data types, along with which fields are available for which event types.
 
 [Full Event Ontology for Webhooks, Data Integrations and Exports](full-event-ontology.csv)
+
+Additionally the Daily Export API CSVs will contain the following fields:
+
+| *field* | *format* | *definition* |
+| - | - | - |
+| timestamp_iso | string | timestamp as YYYY-MM-DD HH:MM:SS+0000 |
+| last_attributed_touch_timestamp_iso | string | last_attributed_touch_timestamp as YYYY-MM-DD HH:MM:SS+0000 |
+| last_cta_view_timestamp_iso | string | last_cta_view_timestamp as YYYY-MM-DD HH:MM:SS+0000 |
+| hash_version | string | whether certain sensitive fields are hashed or unhashed |
