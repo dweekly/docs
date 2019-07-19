@@ -34,10 +34,6 @@ Furthermore, this is in line with Google & Safari’s expectations of how clicks
 
 ### Google Ads Campaign Limitations
 
-#### Product Listing Ads (PLA) - Attribution
-- Branch's dashboard will attribute app events to PLA campaigns via the click tracking links used in the adwords_redirect field of the product catalog. However, Google's Conversion API currently does not support app attribution data for PLA/Shopping campaigns, so the data in Google Ads dashboard may not show app conversions such as installs or app purchases.
-- Deep linking is supported
-
 #### App Extensions - Deep Linking through Install
 - App Extensions currently do not allow Deep Linking, as the setup only accepts app store links [link](https://support.google.com/adwords/answer/2402582?hl=en)
 - Attribution is supported
@@ -71,7 +67,7 @@ creative_id | ~creative_id
 
 **A:** While we should always expect around a 5% discrepancy due to time zone differences and the like, if you are seeing significant discrepancies, it could be an indication of a broader problem.
 
-The first thing to do is to make sure you have enabled the `Use Ad Partner Attribution Windows` setting for Google Ads. Go to [Link Settings](https://branch.dashboard.branch.io/ads/partner-management/a_google_adwords?tab=attribution_windows), and navigate down to the Attribution Windows section. Here, you should set the attribution window for `click to install`, `click to session start`, and `click to conversion event` to be 30, 90, and 90 days respectively. This aligns with Google's default attribution windows, but if you'd like to make them shorter, feel free.
+The first thing to do is to make sure you have enabled the `Use Ad Partner Attribution Windows` setting for Google Ads. Go to [Link Settings](https://dashboard.branch.io/ads/partner-management/a_google_adwords?tab=attribution_windows), and navigate down to the Attribution Windows section. Here, you should set the attribution window for `click to install`, `click to session start`, and `click to conversion event` to be 30, 90, and 90 days respectively. This aligns with Google's default attribution windows, but if you'd like to make them shorter, feel free.
 
 Another source of discrepancies is the fact that attribution is based upon *click* time in Google Ads, whereas it is based upon *install* time in the Branch dashboard. This isn't a discrepancy per se, but will sometimes show different numbers in the two dashboards.
 
