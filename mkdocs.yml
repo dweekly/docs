@@ -149,6 +149,7 @@ nav:
       - iOS: apps/ios.md
       - Android: apps/android.md
       - Website: web/integrate.md
+      - Mac OS: apps/mac-os.md
       - Deep Linking API: apps/deep-linking-api.md
     - Plugins:
       - Cordova PhoneGap Ionic: apps/cordova-phonegap-ionic.md

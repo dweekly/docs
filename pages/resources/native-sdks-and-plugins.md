@@ -17,6 +17,18 @@ In addition to supporting Android, iOS and Web natively, Branch offers support f
     <img src="../../../_assets/img/pages/resources/sdk-resources/website-logo.png" alt="Web SDK"/>
     <p>Website</p>
   </a>
+  <a href="/apps/mac-os/">
+    <img src="../../../_assets/img/pages/resources/sdk-resources/mac-osx-logo.png" alt="Mac OS SDK"/>
+    <p>Mac OS</p>
+  </a>
+  <a href="/apps/windows/">
+    <img src="../../../_assets/img/pages/resources/sdk-resources/windows-logo.png" alt="Windows SDK"/>
+    <p>Windows</p>
+  </a>
+  <a href="/apps/c++/">
+    <img src="../../../_assets/img/pages/resources/sdk-resources/c++logo.png" alt="C++ SDK"/>
+    <p>C++</p>
+  </a>
   <a href="/apps/deep-linking-api/">
     <img src="../../../_assets/img/pages/resources/sdk-resources/api-logo.png" alt="API"/>
     <p>Deep Linking API</p>
