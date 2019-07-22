@@ -87,7 +87,13 @@ When viewing analytics, data is filterable by `Agency` via:
 
 - Ads Analytics, Journeys Analytics, Quick Links and Sources
 - An advanced filter in Webhooks
-- An `agency_name` column in exported CSVs (Data Export API, dashboard CSV exports)
+- An `agency_name` column in exported CSVs (Daily Export API, dashboard CSV exports)
 
 !!! note "Viewing other Agencies Data"
 	Only Agencies given the ability to view other Agencies data will be able to filter analytics by Agency.
+
+### Agency Access to Export Sensitive Data via API
+
+By default, third parties - including Agencies - do not have access to export sensitive (i.e.log-level) data via the [Custom Export API](/exports/custom-export-api/).
+
+However, agencies may be [given access to the Custom Export API](/exports/custom-export-api/#providing-agencies-api-access) by contacting their advertiser or emailing [support@branch.io](mailto:support@branch.io).
