@@ -1,0 +1,1 @@
+{! pages/integrations/mixpanel.md !}

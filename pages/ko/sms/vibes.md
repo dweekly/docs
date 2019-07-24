@@ -1,0 +1,1 @@
+{! pages/sms/vibes.md !}

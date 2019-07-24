@@ -1,0 +1,1 @@
+{! pages/integrations/forensiq.md !}

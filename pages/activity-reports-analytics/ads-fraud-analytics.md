@@ -1,1 +1,1 @@
-{! pages/activity-reports-analytics/ads-fraud-analytics.md !}
+{! localized/activity-reports-analytics/ads-fraud-analytics.md !}

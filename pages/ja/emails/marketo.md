@@ -1,0 +1,1 @@
+{! pages/emails/marketo.md !}

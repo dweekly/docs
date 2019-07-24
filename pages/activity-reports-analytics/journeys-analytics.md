@@ -1,1 +1,1 @@
-{! pages/activity-reports-analytics/journeys-analytics.md !}
+{! localized/activity-reports-analytics/journeys-analytics.md !}

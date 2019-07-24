@@ -1,0 +1,1 @@
+{! pages/integrations/singular.md !}
