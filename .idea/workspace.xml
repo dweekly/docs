@@ -2584,11 +2584,11 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1690" />
-    <option name="y" value="81" />
-    <option name="width" value="1440" />
-    <option name="height" value="832" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1905" />
+    <option name="y" value="-12" />
+    <option name="width" value="1888" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
