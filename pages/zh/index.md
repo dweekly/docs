@@ -65,7 +65,7 @@ template: main-lp-zh.html
         <img src="/_assets/img/pages/main-page/updates-dot.png" alt="Product Updates"/>
         <p>Product Updates</p>
       </a>
-      <a href="/translations/overview">
+      <a href="/zh/translations/overview">
         <img src="/_assets/img/pages/main-page/supported-languages.png" alt="Translated Documentation"/>
         <p>Translated Documentation</p>
       </a>
