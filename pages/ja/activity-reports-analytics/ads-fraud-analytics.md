@@ -1,1 +1,1 @@
-{! multilang/ja-JP/activity-reports-analytics/ads-fraud-analytics.md !}
+{! multilang/ja-JP/ads-fraud-analytics.md !}

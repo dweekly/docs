@@ -1,1 +1,1 @@
-{! multilang/ko-KR/activity-reports-analytics/paid-ads-analytics.md !}
+{! multilang/ko-KR/paid-ads-analytics.md !}

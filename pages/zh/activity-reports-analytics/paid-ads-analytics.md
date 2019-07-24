@@ -1,1 +1,1 @@
-{! multilang/zh-CN/activity-reports-analytics/paid-ads-analytics.md !}
+{! multilang/zh-CN/paid-ads-analytics.md !}

@@ -1,1 +1,1 @@
-{! multilang/ja-JP/activity-reports-analytics/link-level-analytics.md !}
+{! multilang/ja-JP/link-level-analytics.md !}

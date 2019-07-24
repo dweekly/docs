@@ -1,1 +1,1 @@
-{! multilang/ko-KR/activity-reports-analytics/journeys-analytics.md !}
+{! multilang/ko-KR/journeys-analytics.md !}

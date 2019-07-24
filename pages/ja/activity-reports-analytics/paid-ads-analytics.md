@@ -1,1 +1,1 @@
-{! multilang/ja-JP/activity-reports-analytics/paid-ads-analytics.md !}
+{! multilang/ja-JP/paid-ads-analytics.md !}

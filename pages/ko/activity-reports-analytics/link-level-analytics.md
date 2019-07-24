@@ -1,1 +1,1 @@
-{! multilang/ko-KR/activity-reports-analytics/link-level-analytics.md !}
+{! multilang/ko-KR/link-level-analytics.md !}

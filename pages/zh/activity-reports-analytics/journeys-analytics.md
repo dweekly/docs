@@ -1,1 +1,1 @@
-{! multilang/zh-CN/activity-reports-analytics/journeys-analytics.md !}
+{! multilang/zh-CN/journeys-analytics.md !}

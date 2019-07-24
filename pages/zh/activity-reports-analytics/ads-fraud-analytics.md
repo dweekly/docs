@@ -1,1 +1,1 @@
-{! multilang/zh-CN/activity-reports-analytics/ads-fraud-analytics.md !}
+{! multilang/zh-CN/ads-fraud-analytics.md !}
