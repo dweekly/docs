@@ -1,4 +1,4 @@
-a// no globals
+// no globals
 (function() {
   'use strict';
 

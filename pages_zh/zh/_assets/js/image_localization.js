@@ -3,11 +3,12 @@ var lang = 'zh';
 var shouldReplace = false;
 
 function onDataRetrieved () {
-    if (this.status === 404) {
-        shouldReplace = false;
-    } else {
+    if (this.status === 200) {
         shouldReplace = true;
+    } else {
+        shouldReplace = false;
     }
+    console.log(this.status);
 
 }
 
@@ -18,9 +19,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         var xhttp = new XMLHttpRequest();
         xhttp.addEventListener("load", onDataRetrieved);
-        xhttp.open("GET", newURL, true);
+        xhttp.open("GET", newURL, false);
         xhttp.send();
-        xhttp.close();
 
         if(shouldReplace) {
             els[pos].src = newURL;
