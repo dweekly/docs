@@ -5,4 +5,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
     for (var pos = 0; pos < els.length; pos++) {
         els[pos].src = els[pos].src.replace('_assets', lang + '/_assets');
     }
-}
+)}
