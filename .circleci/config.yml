@@ -30,21 +30,21 @@ jobs:
       - run:
           name: Build MkDocs_ko
           command: mkdocs build --config-file mkdocs_ko.yml --clean --verbose
-       - run:
+      - run:
           name: Build MkDocs_ja
           command: mkdocs build --config-file mkdocs_ja.yml --clean --verbose
-       - run:
+      - run:
           name: Build MkDocs_zh
           command: mkdocs build --config-file mkdocs_zh.yml --clean --verbose
       - run:
-         name: Copy MkDocs_ko
-         command: mkdir site/ko; cp -r site_zh/ko/* site/ko
+          name: Copy MkDocs_ko
+          command: mkdir site/ko; cp -r site_zh/ko/* site/ko
       - run:
-         name: Copy MkDocs_ja
-         command: mkdir site/ja; cp -r site_zh/ja/* site/ja
+          name: Copy MkDocs_ja
+          command: mkdir site/ja; cp -r site_zh/ja/* site/ja
       - run:
-         name: Copy MkDocs_zh
-         command: mkdir site/zh; cp -r site_zh/zh/* site/zh
+          name: Copy MkDocs_zh
+          command: mkdir site/zh; cp -r site_zh/zh/* site/zh
       - aws-s3/sync:
           from: ~/docs/site/
           to: << parameters.s3-bucket >>
