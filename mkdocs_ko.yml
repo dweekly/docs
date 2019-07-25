@@ -25,18 +25,18 @@ theme:
 docs_dir: 'pages_ko'
 site_dir: 'site_ko'
 extra_css:
-  - '_assets/css/main.css'
+  - 'ko/_assets/css/main.css'
 extra_javascript:
-  - '_assets/js/router.js'
-  - '_assets/js/events.js'
-  - '_assets/js/modals.js'
-  - '_assets/js/images.js'
-  - '_assets/js/buttons.js'
-  - '_assets/js/progress.js'
-  - '_assets/js/tabs.js'
-  - '_assets/js/languages.js'
-  - '_assets/js/utils.js'
-  - '_assets/js/main.js'
+  - 'ko/_assets/js/router.js'
+  - 'ko/_assets/js/events.js'
+  - 'ko/_assets/js/modals.js'
+  - 'ko/_assets/js/images.js'
+  - 'ko/_assets/js/buttons.js'
+  - 'ko/_assets/js/progress.js'
+  - 'ko/_assets/js/tabs.js'
+  - 'ko/_assets/js/languages.js'
+  - 'ko/_assets/js/utils.js'
+  - 'ko/_assets/js/main.js'
 
 # Extensions
 markdown_extensions:
@@ -929,9 +929,6 @@ nav:
           - Legacy Webhooks: ko/exports/webhooks.md
   - Translated Documentation:
     - Overview: translations/overview.md
-    - 中文:
-      - 配置控制面板: zh/integrate.md
-      - Journeys App Banners (路径图谱应用程序条幅广告): zh/journeys.md
     - 한국어:
       - Branch 연동 가이드 - iOS: ko/branch-ios.md
       - Branch 연동 가이드 - Android: ko/branch-android.md

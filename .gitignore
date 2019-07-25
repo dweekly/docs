@@ -10,3 +10,5 @@ site_ko/
 site_ja/
 
 site_en/
+
+mkbuild\.sh

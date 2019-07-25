@@ -25,18 +25,18 @@ theme:
 docs_dir: 'pages_zh'
 site_dir: 'site_zh'
 extra_css:
-  - '_assets/css/main.css'
+  - 'zh/_assets/css/main.css'
 extra_javascript:
-  - '_assets/js/router.js'
-  - '_assets/js/events.js'
-  - '_assets/js/modals.js'
-  - '_assets/js/images.js'
-  - '_assets/js/buttons.js'
-  - '_assets/js/progress.js'
-  - '_assets/js/tabs.js'
-  - '_assets/js/languages.js'
-  - '_assets/js/utils.js'
-  - '_assets/js/main.js'
+  - 'zh/_assets/js/router.js'
+  - 'zh/_assets/js/events.js'
+  - 'zh/_assets/js/modals.js'
+  - 'zh/_assets/js/images.js'
+  - 'zh/_assets/js/buttons.js'
+  - 'zh/_assets/js/progress.js'
+  - 'zh/_assets/js/tabs.js'
+  - 'zh/_assets/js/languages.js'
+  - 'zh/_assets/js/utils.js'
+  - 'zh/_assets/js/main.js'
 
 # Extensions
 markdown_extensions:
@@ -932,22 +932,3 @@ nav:
     - 中文:
       - 配置控制面板: zh/integrate.md
       - Journeys App Banners (路径图谱应用程序条幅广告): zh/journeys.md
-    - 한국어:
-      - Branch 연동 가이드 - iOS: ko/branch-ios.md
-      - Branch 연동 가이드 - Android: ko/branch-android.md
-      - iOS 유니버설 링크: ko/universal-links.md
-      - Android App Links 가이드: ko/android-app-links.md
-      - 앱 내 딥링크 라우팅 가이드: ko/deep-link-routing.md
-      - 다이내믹 제품 피드 : ko/dynamic-product-feeds.md
-      - 에이전시 보기 관련: ko/agency-view.md
-      - Branch 계정 내 앱 뷰 기능 : ko/app-view.md
-      - Facebook 앱 인스톨 광고: ko/facebook-app-install-ads.md
-      - Facebook 광고 관련하여 자주 묻는 질문 : ko/facebook-ads-faq.md
-      - Facebook 플랫폼 광고: ko/facebook-platform-ads.md
-      - Facebook 트래픽 및 전환 광고: ko/facebook-traffic-conversion-ads.md
-      - Google 광고에 대한 전반적인 소개 : ko/google-ads-overview.md
-      - 앱 인스톨 캠페인: ko/google-ads-uac.md
-      - 웹 기반 광고(비 UAC): ko/google-ads-non-uac.md
-      - Apple 광고 캠페인 트래킹 관련: ko/apple-mobile-tracking.md
-      - 카카오 광고 캠페인 트래킹 관련: ko/kakao-mobile-tracking.md
-      - 네이버 광고 캠페인 트래킹 관련 : ko/naver-mobile-tracking.md
