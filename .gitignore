@@ -2,3 +2,11 @@ site/
 node_modules/
 .DS_Store
 \.idea/
+
+site_zh/
+
+site_ko/
+
+site_ja/
+
+site_en/

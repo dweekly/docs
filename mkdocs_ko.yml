@@ -1,0 +1,953 @@
+# Project
+site_name: 'Branch Docs'
+site_description: 'Branch documentation for mobile deep linking and attribution'
+site_author: 'Branch'
+site_url: ##### # replaced with parameter by CircleCI
+repo_name: 'Branch documentation'
+repo_url: 'https://github.com/branchmetrics/docs'
+edit_uri: 'edit/master/pages/'
+copyright: 'Copyright &copy; 2019 <a href="https://branch.io">Branch</a>'
+
+# Files
+theme:
+  name: 'material'
+  custom_dir: 'branch-theme'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Open Sans'
+    code: 'Roboto Mono'
+  feature: false
+  logo: '_assets/img/logo.svg'
+  favicon: '_assets/img/favicon.ico'
+docs_dir: 'pages_ko'
+site_dir: 'site_ko'
+extra_css:
+  - '_assets/css/main.css'
+extra_javascript:
+  - '_assets/js/router.js'
+  - '_assets/js/events.js'
+  - '_assets/js/modals.js'
+  - '_assets/js/images.js'
+  - '_assets/js/buttons.js'
+  - '_assets/js/progress.js'
+  - '_assets/js/tabs.js'
+  - '_assets/js/languages.js'
+  - '_assets/js/utils.js'
+  - '_assets/js/main.js'
+
+# Extensions
+markdown_extensions:
+  - admonition:
+  - codehilite: #(linenums=true)
+  - footnotes:
+  - toc:
+      permalink: true
+  - meta:
+  - markdown.extensions.tables:
+  - pymdownx.magiclink:
+  - pymdownx.betterem:
+  - pymdownx.tilde:
+  - pymdownx.emoji:
+  - pymdownx.tasklist:
+  - pymdownx.superfences:
+  - attr_list:
+  - markdown_include.include:
+      base_path: includes/
+
+# Plugins
+plugins: []
+
+# Options
+extra:
+  social:
+    - type: 'globe'
+      link: 'https://branch.io'
+    - type: 'github'
+      link: 'https://github.com/branchmetrics/docs'
+    - type: 'twitter'
+      link: 'https://twitter.com/branchmetrics'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/branchmetrics'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company-beta/3813083'
+  disqus:
+  sources:
+    mixpanel: '47ec8ea9ac102b1370221dcda476091c'
+    google:
+      optimize: 'GTM-PCPBXCN'
+      analytics: 'UA-53307642-1'
+    facebook: '1040694199304729'
+    munchkin: '315-FTT-121'
+    linkedin: '21211'
+    bizible: true
+    algolia:
+      appId: 'WWVVC15B3P'
+      apiKey: '63fed64eb90bdb869334f90e3568b813'
+      index: 'branchmetrics'
+      selector: '#algolia-doc-search'
+      debug: false
+      hits: 15
+
+# Navigation
+nav:
+  - 집: ko/index.md
+  - Branch Basics:
+      - Overview: ko/resources/basics-overview.md
+      - Attribution:
+          - Branch Matching Overview: ko/resources/matching.md
+          - Branch Attribution Logic & Settings: ko/resources/branch-attribution-logic-and-settings.md
+          - Re-engagement Attribution Logic & Settings: ko/resources/re-engagement-attribution-logic-and-settings.md
+          - Advertising Identifiers for Attribution: ko/resources/advertising-identifiers-for-attribution.md
+          - Comparing Installs to Apple iTunes and Google Play: ko/resources/comparing-installs.md
+      - Data Mapping & Formatting:
+          - Postback Macros & Functions: ko/resources/postback-macros-and-functions.md
+      - Starting with Branch:
+          - Importing Historical User Data: ko/dashboard/importing-historical-user-data.md
+          - Testing Universal Ads Campaign Setup: ko/resources/testing-universal-ads-campaign-setup.md
+      - Agency & Ad Partner Access:
+          - Granting Access to Your Branch Account: ko/dashboard/granting-access-to-agencies-partners.md
+          - Agency/Partner Invitation Process: ko/dashboard/agency-ad-partner-invitation-process.md
+          - Viewing Agency/Partner Settings: ko/dashboard/agency-view.md
+          - Agency/Partner Functionality in App View: ko/dashboard/app-view.md
+  - Account Settings:
+      - Overview: ko/dashboard/account-settings.md
+      - Basic Settings:
+          - Access Levels:
+              - Overview: ko/dashboard/access-level.md
+              - Entity Views:
+                  - App View: ko/dashboard/app-view.md
+                  - Organization View: ko/dashboard/organization-view.md
+                  - Agency View: ko/dashboard/agency-view.md
+              - Resource Access:
+                  - App Level Access: ko/dashboard/app-level-access.md
+                  - Channel Level Access: ko/dashboard/channel-level-access.md
+                  - Link Level Access: ko/dashboard/link-level-access.md
+                  - Aggregate Data: ko/dashboard/aggregate-data-access.md
+                  - Sensitive Data: ko/dashboard/sensitive-data-access.md
+                  - Export Access: ko/dashboard/export-access.md
+      - Advanced Settings:
+          - View Billing Information: ko/dashboard/viewing-billing.md
+          - Enable Single Sign On: ko/dashboard/sso.md
+          - Changing Link Domains: ko/dashboard/changing-link-domains.md
+  - Link Settings:
+      - Overview: ko/links/branch-links-overview.md
+      - Default Link Behavior Configuration: ko/links/default-link-behavior.md
+      - Advanced Settings Configuration: ko/links/advanced-settings-configuration.md
+      - Deep Link Configuration:
+          - iOS Universal Links: ko/deep-linking/universal-links.md
+          - Android App Links: ko/deep-linking/android-app-links.md
+          - In-app deep link routing: ko/deep-linking/routing.md
+          - Creating Deep Links: ko/links/integrate.md
+      - Creating Branch Links:
+          - Creating Quick Links: ko/links/quick-links.md
+          - Creating Ad Links: ko/links/creating-ad-links.md
+  - Developer Resources:
+      - Overview: ko/resources/native-sdks-and-plugins.md
+      - Branch SDKs & API:
+          - iOS: ko/apps/ios.md
+          - Android: ko/apps/android.md
+          - Website: ko/web/integrate.md
+          - Deep Linking API: ko/apps/deep-linking-api.md
+      - Plugins:
+          - Cordova PhoneGap Ionic: ko/apps/cordova-phonegap-ionic.md
+          - mParticle Android: ko/apps/mparticle-android-v5.md
+          - mParticle iOS: ko/apps/mparticle-ios-v7.md
+          - Titanium: ko/apps/titanium.md
+          - React Native: ko/apps/react-native.md
+          - Unity: ko/apps/unity.md
+          - Xamarin: ko/apps/xamarin.md
+      - 3rd Party SDKs & Plugins:
+          - Adobe Launch Android SDK: ko/apps/adobe-launch-android.md
+          - Adobe Launch iOS SDK: ko/apps/adobe-launch-ios.md
+          - Adobe Launch Web Plugin: ko/apps/adobe-launch-web-plugin.md
+          - Segment Android SDK: ko/apps/segment-android.md
+          - Segment iOS SDK: ko/apps/segment-ios.md
+      - Validation Tools: ko/resources/validation-tools.md
+      - Launch your app:
+          - Apple App Store: ko/apps/ios-launch.md
+          - Google Play: ko/apps/android-launch.md
+      - Advanced Configuration:
+          - V2 Events: ko/apps/v2event.md
+          - Logging Branch Events Using Google Tag Manager: ko/apps/logging-branch-events-using-google-tag-manager.md
+      - Version Histories:
+          - Android Version History: ko/version-histories/android-version-history.md
+          - iOS Version History: ko/version-histories/ios-version-history.md
+  - Marketing Channels:
+      - Overview : ko/resources/branch-channels.md
+      - Website:
+          - Overview: ko/web/branch-web-solutions.md
+          - Journeys App Banners: ko/web/journeys.md
+          - Journeys via AMP: ko/web/amp-journeys.md
+          - Deepviews: ko/web/deep-views.md
+          - Text Me the App: ko/web/text-me-the-app.md
+          - Hosted Deep Link Data: ko/web/hosted-data.md
+      - Paid ads:
+          - Overview: ko/deep-linked-ads/ads-overview.md
+          - Branch Universal Ads: ko/deep-linked-ads/branch-universal-ads-mobile-tracking.md
+          - Universal Ad Partners: ko/deep-linked-ads/ad-networks-list.md
+          - SAN Web Tracking: ko/deep-linked-ads/san-web-tracking.md
+          - Dynamic Product Feeds: ko/deep-linked-ads/dynamic-product-feeds.md
+          - Fraud Rules: ko/deep-linked-ads/leveraging-fraud-rules.md
+      - Email:
+          - Branch Universal Email: ko/emails/universal-email.md
+          - Universal Email Partners: ko/emails/email-partners-list.md
+          - Self Serve: ko/emails/self-serve.md
+      - SMS:
+          - Vibes: ko/sms/vibes.md
+      - Push notifications: ko/advance/push-notifications.md
+      - Organic search:
+          - Overview: ko/organic-search/branch-organic-search.md
+          - Firebase App Indexing: ko/organic-search/firebase.md
+          - Spotlight Search: ko/organic-search/spotlight.md
+          - General SEO Compatibility: ko/organic-search/branch-seo.md
+      - Viral & Referral:
+          - Content sharing: ko/viral/content-sharing.md
+          - Referral programs: ko/viral/referrals.md
+      - New App Platforms:
+          - Android Instant Apps: ko/app-to-app/android-instant-apps.md
+          - iMessage Apps: ko/app-to-app/imessage-apps.md
+  - Partner Management:
+      - Overview: ko/partner-management/branch-integrated-partners.md
+      - Universal Ads Partners:
+          - Ad Partners List: ko/deep-linked-ads/ad-networks-list.md
+          - 1PlusAds: ko/deep-linked-ads/1plusads-mobile-tracking.md
+          - 3.14 Digital : ko/deep-linked-ads/3.14-digital-mobile-tracking.md
+          - A4G : ko/deep-linked-ads/a4g-mobile-tracking.md
+          - Aarki : ko/deep-linked-ads/aarki-mobile-tracking.md
+          - Actionpay : ko/deep-linked-ads/actionpay-mobile-tracking.md
+          - AcuityAds : ko/deep-linked-ads/acuityads-mobile-tracking.md
+          - Ad-Venture: ko/deep-linked-ads/ad-venture-mobile-tracking.md
+          - Ad.net: ko/deep-linked-ads/ad.net-mobile-tracking.md
+          - Ad2Click Media: ko/deep-linked-ads/ad2click-media-mobile-tracking.md
+          - Ad4Screen : ko/deep-linked-ads/ad4screen-mobile-tracking.md
+          - Ad4top: ko/deep-linked-ads/ad4top-mobile-tracking.md
+          - AdAction Engage : ko/deep-linked-ads/adaction-engage-mobile-tracking.md
+          - Adaction Interactive : ko/deep-linked-ads/adaction-interactive-mobile-tracking.md
+          - Adacts Digital: ko/deep-linked-ads/adacts-digital-mobile-tracking.md
+          - adAhead: ko/deep-linked-ads/adahead-mobile-tracking.md
+          - AdAppT: ko/deep-linked-ads/adappt-mobile-tracking.md
+          - Adbaazar : ko/deep-linked-ads/adbaazar-mobile-tracking.md
+          - Adbird Media: ko/deep-linked-ads/adbird-media-mobile-tracking.md
+          - Adbloom : ko/deep-linked-ads/adbloom-mobile-tracking.md
+          - Adblowz Services : ko/deep-linked-ads/adblowz-services-mobile-tracking.md
+          - ADCanopus : ko/deep-linked-ads/adcanopus-mobile-tracking.md
+          - Adcash: ko/deep-linked-ads/adcash-mobile-tracking.md
+          - Adcolony : ko/deep-linked-ads/adcolony-mobile-tracking.md
+          - Adcolony Performance Media: ko/deep-linked-ads/adcolony-performance-media-mobile-tracking.md
+          - AdCorsa : ko/deep-linked-ads/adcorsa-mobile-tracking.md
+          - AdCounty Media : ko/deep-linked-ads/adcounty-media-mobile-tracking.md
+          - Adcrops : ko/deep-linked-ads/adcrops-mobile-tracking.md
+          - Addict Mobile: ko/deep-linked-ads/addict-mobile-mobile-tracking.md
+          - Addictive Ads : ko/deep-linked-ads/addictive-ads-mobile-tracking.md
+          - Addiliate : ko/deep-linked-ads/addiliate-mobile-tracking.md
+          - Addtitans Digital : ko/deep-linked-ads/addtitans-digital-mobile-tracking.md
+          - AdDeals: ko/deep-linked-ads/addeals-mobile-tracking.md
+          - ADeals : ko/deep-linked-ads/adeals-mobile-tracking.md
+          - AdFalcon Performance : ko/deep-linked-ads/adfalcon-performance-mobile-tracking.md
+          - Adferns : ko/deep-linked-ads/adferns-mobile-tracking.md
+          - Adflex: ko/deep-linked-ads/adflex-mobile-tracking.md
+          - Adflow Digital Media: ko/deep-linked-ads/adflow-digital-media-mobile-tracking.md
+          - Adform: ko/deep-linked-ads/adform-mobile-tracking.md
+          - AdGate Media : ko/deep-linked-ads/adgate-media-mobile-tracking.md
+          - Adgoi Technologies: ko/deep-linked-ads/adgoi-technologies-mobile-tracking.md
+          - Adikteev : ko/deep-linked-ads/adikteev-mobile-tracking.md
+          - Adison Offerwall: ko/deep-linked-ads/adison-offerwall-mobile-tracking.md
+          - adMarketplace : ko/deep-linked-ads/admarketplace-mobile-tracking.md
+          - Admatic: ko/deep-linked-ads/admatic-mobile-tracking.md
+          - ADMAX: ko/deep-linked-ads/admax-mobile-tracking.md
+          - Admitad : ko/deep-linked-ads/admitad-mobile-tracking.md
+          - Admobly : ko/deep-linked-ads/admobly-mobile-tracking.md
+          - Admobs: ko/deep-linked-ads/admobs-mobile-tracking.md
+          - Adobe Advertising Cloud: ko/deep-linked-ads/adobe-advertising-cloud-mobile-tracking.md
+          - Adorca HongKong Limited: ko/deep-linked-ads/adorca-hongkong-limited-mobile-tracking.md
+          - ADPacker: ko/deep-linked-ads/adpacker-mobile-tracking.md
+          - Adperio : ko/deep-linked-ads/adperio-mobile-tracking.md
+          - ADPick : ko/deep-linked-ads/adpick-mobile-tracking.md
+          - Ad Popcorn : ko/deep-linked-ads/ad-popcorn-mobile-tracking.md
+          - ADSDOT : ko/deep-linked-ads/adsdot-mobile-tracking.md
+          - Ads Army : ko/deep-linked-ads/ads-army-mobile-tracking.md
+          - Ads Hero : ko/deep-linked-ads/ads-hero-mobile-tracking.md
+          - Adsbalance: ko/deep-linked-ads/adsbalance-mobile-tracking.md
+          - Adscreen: ko/deep-linked-ads/adscreen-mobile-tracking.md
+          - Adsflourish: ko/deep-linked-ads/adsflourish-mobile-tracking.md
+          - Adsizzler Media : ko/deep-linked-ads/adsizzler-mobile-tracking.md
+          - Adsplay International : ko/deep-linked-ads/adsplay-international-mobile-tracking.md
+          - Adsterra Network : ko/deep-linked-ads/adsterra-network-mobile-tracking.md
+          - Adstreet Digital: ko/deep-linked-ads/adstreet-digital-mobile-tracking.md
+          - Adtiming : ko/deep-linked-ads/adtiming-mobile-tracking.md
+          - Ad Volt: ko/deep-linked-ads/ad-volt-mobile-tracking.md
+          - ADvantage: ko/deep-linked-ads/advantage-mobile-tracking.md
+          - AdXcel : ko/deep-linked-ads/adxcel-mobile-tracking.md
+          - AdxMaster Inc.: ko/deep-linked-ads/adxmaster-mobile-tracking.md
+          - Adxperience : ko/deep-linked-ads/adxperience-mobile-tracking.md
+          - Adziny Media: ko/deep-linked-ads/adziny-media-mobile-tracking.md
+          - Affifix Digital : ko/deep-linked-ads/affifix-digital-mobile-tracking.md
+          - Affise: ko/deep-linked-ads/affise-mobile-tracking.md
+          - Affle : ko/deep-linked-ads/affle-mobile-tracking.md
+          - Affonix: ko/deep-linked-ads/affonix-mobile-tracking.md
+          - Aki Technologies: ko/deep-linked-ads/aki-technologies-mobile-tracking.md
+          - Aliothmob Media: ko/deep-linked-ads/aliothmob-media-mobile-tracking.md
+          - Altrooz : ko/deep-linked-ads/atlrooz-mobile-tracking.md
+          - AMoAd ADNW : ko/deep-linked-ads/amoad-adnw-mobile-tracking.md
+          - App Samurai : ko/deep-linked-ads/app-samurai-mobile-tracking.md
+          - Apoxy Media: ko/deep-linked-ads/apoxy-media-mobile-tracking.md
+          - App Digitals: ko/deep-linked-ads/app-digitals-mobile-tracking.md
+          - AppAlgo: ko/deep-linked-ads/appalgo-mobile-tracking.md
+          - Appbooster: ko/deep-linked-ads/appbooster-mobile-tracking.md
+          - Appcoachs : ko/deep-linked-ads/appcoachs-mobile-tracking.md
+          - Appflood: ko/deep-linked-ads/appflood-mobile-tracking.md
+          - AppGuardian: ko/deep-linked-ads/appguardian-mobile-tracking.md
+          - Appic Media: ko/deep-linked-ads/appic-media-mobile-tracking.md
+          - Appier: ko/deep-linked-ads/appier-mobile-tracking.md
+          - Apple Search Ads: ko/deep-linked-ads/apple-mobile-tracking.md
+          - Applift : ko/deep-linked-ads/applift-mobile-tracking.md
+          - Applift CPA : ko/deep-linked-ads/applift-cpa-mobile-tracking.md
+          - Applovin : ko/deep-linked-ads/applovin-mobile-tracking.md
+          - Appmontize Media : ko/deep-linked-ads/appmontize-media-mobile-tracking.md
+          - Appnerve: ko/deep-linked-ads/appnerve-mobile-tracking.md
+          - Appnext : ko/deep-linked-ads/appnext-mobile-tracking.md
+          - AppNexus : ko/deep-linked-ads/appnexus-mobile-tracking.md
+          - Appnlab: ko/deep-linked-ads/appnlab-mobile-tracking.md
+          - AppOnboard: ko/deep-linked-ads/apponboard-mobile-tracking.md
+          - Approan Media: ko/deep-linked-ads/approan-media-mobile-tracking.md
+          - Appromoters B.V.: ko/deep-linked-ads/appromoters-mobile-tracking.md
+          - AppsDiscover Technologies: ko/deep-linked-ads/appsdiscover-technologies-mobile-tracking.md
+          - Appsfire: ko/deep-linked-ads/appsfire-mobile-tracking.md
+          - APPSILON: ko/deep-linked-ads/appsilon-mobile-tracking.md
+          - AppsPress Platform: ko/deep-linked-ads/appspress-platform-mobile-tracking.md
+          - Appstare: ko/deep-linked-ads/appstare-mobile-tracking.md
+          - Arabclicks: ko/deep-linked-ads/arabclicks-mobile-tracking.md
+          - Aragon Premium: ko/deep-linked-ads/aragon-premium-mobile-tracking.md
+          - Art of Click : ko/deep-linked-ads/art-of-click-mobile-tracking.md
+          - Artsai: ko/deep-linked-ads/artsai-mobile-tracking.md
+          - ARVE Technologies : ko/deep-linked-ads/arve-technologies-mobile-tracking.md
+          - Auburn Digital Solutions: ko/deep-linked-ads/auburn-digital-solutions-mobile-tracking.md
+          - Aura Ironsource : ko/deep-linked-ads/aura-ironsource-mobile-tracking.md
+          - Avazu : ko/deep-linked-ads/avazu-mobile-tracking.md
+          - Avocet: ko/deep-linked-ads/avocet-mobile-tracking.md
+          - Avow : ko/deep-linked-ads/avow-mobile-tracking.md
+          - Awin : ko/deep-linked-ads/awin-mobile-tracking.md
+          - BackInApp: ko/deep-linked-ads/backinapp-mobile-tracking.md
+          - Bandsintown Amplified: ko/deep-linked-ads/bandsintown-amplified-mobile-tracking.md
+          - Barometric: ko/deep-linked-ads/barometric-mobile-tracking.md
+          - BAT TECHNOLOGY: ko/deep-linked-ads/bat-technology-mobile-tracking.md
+          - Bcnmonetize : ko/deep-linked-ads/bcnmonetize-mobile-tracking.md
+          - BEdigitech: ko/deep-linked-ads/bedigitech-mobile-tracking.md
+          - Beeswax: ko/deep-linked-ads/beeswax-mobile-tracking.md
+          - Beintoo : ko/deep-linked-ads/beintoo-mobile-tracking.md
+          - Bidease: ko/deep-linked-ads/bidease-mobile-tracking.md
+          - Bcnmonetize : ko/deep-linked-ads/bcnmonetize-mobile-tracking.md
+          - BEdigitech: ko/deep-linked-ads/bedigitech-mobile-tracking.md
+          - Beintoo : ko/deep-linked-ads/beintoo-mobile-tracking.md
+          - Bidmotion : ko/deep-linked-ads/bidmotion-mobile-tracking.md
+          - Bidroid : ko/deep-linked-ads/bidroid-mobile-tracking.md
+          - Bidsflyer: ko/deep-linked-ads/bidsflyer-mobile-tracking.md
+          - Bidsopt Media: ko/deep-linked-ads/bidsopt-media-mobile-tracking.md
+          - Billy Mobile : ko/deep-linked-ads/billy-mobile-mobile-tracking.md
+          - Bing Ads: ko/deep-linked-ads/bing-ads-mobile-tracking.md
+          - Blendai Digital: ko/deep-linked-ads/blendai-digital-mobile-tracking.md
+          - Blind Ferret Incent : ko/deep-linked-ads/blind-ferret-incent-mobile-tracking.md
+          - Blind Ferret Non-Incent : ko/deep-linked-ads/blind-ferret-non-incent-mobile-tracking.md
+          - Blue Track Media: ko/deep-linked-ads/blue-track-media-mobile-tracking.md
+          - Branmark Infomedia: ko/deep-linked-ads/branmark-infomedia-mobile-tracking.md
+          - Bright Storm DSP: ko/deep-linked-ads/bright-storm-mobile-tracking.md
+          - Brinkads: ko/deep-linked-ads/brinkads-mobile-tracking.md
+          - Brisk Ads: ko/deep-linked-ads/brisk-ads-mobile-tracking.md
+          - Bucksense Inc.: ko/deep-linked-ads/bucksense-mobile-tracking.md
+          - BuzzScreen: ko/deep-linked-ads/buzzscreen-mobile-tracking.md
+          - Buzzvil: ko/deep-linked-ads/buzzvil-mobile-tracking.md
+          - C3PA: ko/deep-linked-ads/c3pa-mobile-tracking.md
+          - Cactus Media: ko/deep-linked-ads/cactus-media-mobile-tracking.md
+          - CandyAdz: ko/deep-linked-ads/candyadz-mobile-tracking.md
+          - Capslock Digital Solutions: ko/deep-linked-ads/capslock-digital-solutions-mobile-tracking.md
+          - Cashslide: ko/deep-linked-ads/cashslide-mobile-tracking.md
+          - Cashtree For Indonesia: ko/deep-linked-ads/cashtree-for-indonesia-mobile-tracking.md
+          - Cauly: ko/deep-linked-ads/cauly-mobile-tracking.md
+          - CA Wise: ko/deep-linked-ads/ca-wise-mobile-tracking.md
+          - Centro: ko/deep-linked-ads/centro-mobile-tracking.md
+          - Cheetah Mobile: ko/deep-linked-ads/cheetah-mobile-mobile-tracking.md
+          - Cauly: ko/deep-linked-ads/cauly-mobile-tracking.md
+          - Centro: ko/deep-linked-ads/centro-mobile-tracking.md
+          - Chillofy Digital Agency: ko/deep-linked-ads/chillofy-digital-agency-mobile-tracking.md
+          - CityAds : ko/deep-linked-ads/cityads-mobile-tracking.md
+          - CJ Affiliate : ko/deep-linked-ads/cj-affiliate-mobile-tracking.md
+          - Claymotion: ko/deep-linked-ads/claymotion-mobile-tracking.md
+          - Click2Commission : ko/deep-linked-ads/click2commission-mobile-tracking.md
+          - Clickadu : ko/deep-linked-ads/clickadu-mobile-tracking.md
+          - Clickky : ko/deep-linked-ads/clickky-mobile-tracking.md
+          - ClickOnik : ko/deep-linked-ads/clickonik-mobile-tracking.md
+          - Clicksmob: ko/deep-linked-ads/clicksmob-mobile-tracking.md
+          - Clickwork7 : ko/deep-linked-ads/clickwork7-mobile-tracking.md
+          - Clinch: ko/deep-linked-ads/clinch-mobile-tracking.md
+          - Cluep : ko/deep-linked-ads/cluep-mobile-tracking.md
+          - Collectcent Digital Media : ko/deep-linked-ads/collectcent-digital-media-mobile-tracking.md
+          - Columbus : ko/deep-linked-ads/columbus-mobile-tracking.md
+          - CommerceX HasOffers: ko/deep-linked-ads/commercex-hasoffers-mobile-tracking.md
+          - CommerceX vNative: ko/deep-linked-ads/commercex-vnative-mobile-tracking.md
+          - Connected Interactive : ko/deep-linked-ads/connected-interactive-mobile-tracking.md
+          - Conversant Media : ko/deep-linked-ads/conversant-media-mobile-tracking.md
+          - Convertologic : ko/deep-linked-ads/convertologic-mobile-tracking.md
+          - Convivial Cords: ko/deep-linked-ads/convivial-cords-mobile-tracking.md
+          - Cooper Media: ko/deep-linked-ads/cooper-media-mobile-tracking.md
+          - CPI Droid : ko/deep-linked-ads/cpi-droid-mobile-tracking.md
+          - Creative Clicks : ko/deep-linked-ads/creative-clicks-mobile-tracking.md
+          - Criteo: ko/deep-linked-ads/criteo-mobile-tracking.md
+          - crobo : ko/deep-linked-ads/crobo-mobile-tracking.md
+          - Cronbay Technologies Pvt. LTD: ko/deep-linked-ads/cronbay-technologies-mobile-tracking.md
+          - Cross Audience LLC: ko/deep-linked-ads/cross-audience-mobile-tracking.md
+          - CrossInstall : ko/deep-linked-ads/crossinstall-mobile-tracking.md
+          - CrossTarget & Affolio: ko/deep-linked-ads/crosstarget-affolio-mobile-tracking.md
+          - Crunchie Media : ko/deep-linked-ads/crunchie-media-mobile-tracking.md
+          - Curate Mobile : ko/deep-linked-ads/curate-mobile-mobile-tracking.md
+          - Curate Mobile - Swarm: ko/deep-linked-ads/curate-mobile-swarm-mobile-tracking.md
+          - Cyberagent inc ameba : ko/deep-linked-ads/cyberagent-inc-ameba-mobile-tracking.md
+          - Cygobel Media: ko/deep-linked-ads/cygobel-media-mobile-tracking.md
+          - Crunchie Media : ko/deep-linked-ads/crunchie-media-mobile-tracking.md
+          - Curate Mobile : ko/deep-linked-ads/curate-mobile-mobile-tracking.md
+          - Dailyhunt: ko/deep-linked-ads/dailyhunt-mobile-tracking.md
+          - Daisycon : ko/deep-linked-ads/daisycon-mobile-tracking.md
+          - Dangleads : ko/deep-linked-ads/dangleads-mobile-tracking.md
+          - Darriens: ko/deep-linked-ads/darriens-mobile-tracking.md
+          - DataXu: ko/deep-linked-ads/dataxu-mobile-tracking.md
+          - DAU-UP ClicksMob : ko/deep-linked-ads/dau-up-clicksmob-mobile-tracking.md
+          - Dawin Click: ko/deep-linked-ads/dawin-click-mobile-tracking.md
+          - Defy Norms: ko/deep-linked-ads/defy-norms-mobile-tracking.md
+          - DGTG Marketing: ko/deep-linked-ads/dgtg-marketing-mobile-tracking.md
+          - Digiads Media: ko/deep-linked-ads/digiads-media-mobile-tracking.md
+          - Digidarts Marketing: ko/deep-linked-ads/digidarts-marketing-mobile-tracking.md
+          - Digital Optimist: ko/deep-linked-ads/digital-optimist-mobile-tracking.md
+          - Digital Remedy: ko/deep-linked-ads/digital-remedy-mobile-tracking.md
+          - Digital Turbine : ko/deep-linked-ads/digital-turbine-mobile-tracking.md
+          - Discipline Digital: ko/deep-linked-ads/discipline-digital-mobile-tracking.md
+          - Display.io: ko/deep-linked-ads/display-io-mobile-tracking.md
+          - DNM: ko/deep-linked-ads/dnm-mobile-tracking.md
+          - Docomo Ad Network: ko/deep-linked-ads/docomo-ad-network-mobile-tracking.md
+          - Domob : ko/deep-linked-ads/domob-mobile-tracking.md
+          - Doozymob : ko/deep-linked-ads/doozymob-mobile-tracking.md
+          - Doubleclick : ko/deep-linked-ads/doubleclick-mobile-tracking.md
+          - Downstream: ko/deep-linked-ads/downstream-mobile-tracking.md
+          - Drawbridge: ko/deep-linked-ads/drawbridge-mobile-tracking.md
+          - Dreamin: ko/deep-linked-ads/dreamin-mobile-tracking.md
+          - Dynalyst : ko/deep-linked-ads/dynalyst-mobile-tracking.md
+          - EasyJoy Technology: ko/deep-linked-ads/easyjoy-technology-mobile-tracking.md
+          - Edge226 : ko/deep-linked-ads/edge226-mobile-tracking.md
+          - Edge360 Limited: ko/deep-linked-ads/edge360-limited-mobile-tracking.md
+          - Efountain: ko/deep-linked-ads/efountain-mobile-tracking.md
+          - Electra Advertising: ko/deep-linked-ads/electra-advertising-mobile-tracking.md
+          - EMX Digital: ko/deep-linked-ads/emx-digital-mobile-tracking.md
+          - Epom Market: ko/deep-linked-ads/epom-market-mobile-tracking.md
+          - Espire: ko/deep-linked-ads/espire-mobile-tracking.md
+          - Everflow Technologies : ko/deep-linked-ads/everflow-technologies-mobile-tracking.md
+          - Expand Mobile : ko/deep-linked-ads/expand-mobile-mobile-tracking.md
+          - Facebook :
+              - Facebook Ads Overview: ko/deep-linked-ads/facebook-ads-overview.md
+              - Facebook App Install Ads: ko/deep-linked-ads/facebook-app-install-ads.md
+              - Facebook Traffic and Conversion Ads: ko/deep-linked-ads/facebook-traffic-conversion-ads.md
+              - Facebook Platform Ads: ko/deep-linked-ads/facebook-platform-ads.md
+              - Facebook Dynamic Ads: ko/deep-linked-ads/facebook-dynamic-ads.md
+              - Facebook FAQ and Advanced Options: ko/deep-linked-ads/facebook-ads-faq.md
+          - Fanbytes : ko/deep-linked-ads/fanbytes-mobile-tracking.md
+          - FeedMob : ko/deep-linked-ads/feedmob-mobile-tracking.md
+          - Filly Media Solutions : ko/deep-linked-ads/filly-media-solutions-mobile-tracking.md
+          - finaceAds: ko/deep-linked-ads/financeads-mobile-tracking.md
+          - Finaff: ko/deep-linked-ads/finaff-mobile-tracking.md
+          - Five Video Network : ko/deep-linked-ads/five-video-network-mobile-tracking.md
+          - Flexplatform: ko/deep-linked-ads/flexplatform-mobile-tracking.md
+          - Flipmass: ko/deep-linked-ads/flipmass-mobile-tracking.md
+          - Fluent : ko/deep-linked-ads/fluent-mobile-tracking.md
+          - FOX: ko/deep-linked-ads/fox-mobile-tracking.md
+          - FreakOut : ko/deep-linked-ads/freakout-mobile-tracking.md
+          - Flipmass: ko/deep-linked-ads/flipmass-mobile-tracking.md
+          - Fyber : ko/deep-linked-ads/fyber-mobile-tracking.md
+          - Galaksion : ko/deep-linked-ads/galaksion-mobile-tracking.md
+          - Gameberry: ko/deep-linked-ads/gameberry-mobile-tracking.md
+          - Gameloft: ko/deep-linked-ads/gameloft-mobile-tracking.md
+          - Gamespipe : ko/deep-linked-ads/gamespipe-mobile-tracking.md
+          - Gamned: ko/deep-linked-ads/gamned-mobile-tracking.md
+          - GeistM: ko/deep-linked-ads/geistm-mobile-tracking.md
+          - Geniee Inc. : ko/deep-linked-ads/geniee-inc-mobile-tracking.md
+          - Getloyal : ko/deep-linked-ads/getloyal-mobile-tracking.md
+          - Glispa: ko/deep-linked-ads/glispa-mobile-tracking.md
+          - Global Fastads: ko/deep-linked-ads/global-fastads-mobile-tracking.md
+          - Globale Media : ko/deep-linked-ads/globale-media-mobile-tracking.md
+          - GlobalWide Media : ko/deep-linked-ads/globalwide-media-mobile-tracking.md
+          - GMT Consultancy: ko/deep-linked-ads/gmt-consultancy-mobile-tracking.md
+          - GMT Digital : ko/deep-linked-ads/gmt-digital-mobile-tracking.md
+          - GMO Tech : ko/deep-linked-ads/gmo-tech-mobile-tracking.md
+          - GoClick Digital: ko/deep-linked-ads/goclick-digital-mobile-tracking.md
+          - Go Mobile: ko/deep-linked-ads/gomobile-mobile-tracking.md
+          - Google Ads:
+              - Google Ads Overview: ko/deep-linked-ads/google-ads-overview.md
+              - Enabling the Integration: ko/deep-linked-ads/google-ads-enable.md
+              - App Install Campaigns: ko/deep-linked-ads/google-ads-uac.md
+              - App Engagement Campaigns: ko/deep-linked-ads/google-ads-app-engagement.md
+              - Web-based Ads (non-UAC): ko/deep-linked-ads/google-ads-non-uac.md
+              - Troubleshooting & FAQs: ko/deep-linked-ads/google-ads-troubleshooting.md
+          - Google Marketing Platform: ko/deep-linked-ads/google-marketing-platform-app-conversion-tracking.md
+          - GreedyGame Media: ko/deep-linked-ads/greedygame-media-mobile-tracking.md
+          - GumGum: ko/deep-linked-ads/gumgum-mobile-tracking.md
+          - Gunosy : ko/deep-linked-ads/gunosy-mobile-tracking.md
+          - Hang My Ads : ko/deep-linked-ads/hang-my-ads-mobile-tracking.md
+          - HasOffers/TUNE : ko/deep-linked-ads/tune-mobile-tracking.md
+          - Hawk Platform by TabMo Group: ko/deep-linked-ads/hawk-platform-mobile-tracking.md
+          - Heyzap : ko/deep-linked-ads/heyzap-mobile-tracking.md
+          - Hong Kong Cappuccino Media: ko/deep-linked-ads/hong-kong-cappuccino-media-mobile-tracking.md
+          - Hotstar: ko/deep-linked-ads/hotstar-mobile-tracking.md
+          - Httpool Digital: ko/deep-linked-ads/httpool-digital-mobile-tracking.md
+          - Hubscale : ko/deep-linked-ads/hubscale-mobile-tracking.md
+          - Hybrid: ko/deep-linked-ads/hybrid-mobile-tracking.md
+          - I-Mobile: ko/deep-linked-ads/i-mobile-mobile-tracking.md
+          - Iavatarz Digital: ko/deep-linked-ads/iavatarz-digital-mobile-tracking.md
+          - Iconpeak : ko/deep-linked-ads/iconpeak-mobile-tracking.md
+          - iCubesWire: ko/deep-linked-ads/icubeswire-mobile-tracking.md
+          - iCubesWire Affise: ko/deep-linked-ads/icubeswire-affise-mobile-tracking.md
+          - iHuntz Media: ko/deep-linked-ads/ihuntz-media-mobile-tracking.md
+          - Impact Radius : ko/deep-linked-ads/impact-radius-mobile-tracking.md
+          - Impelus: ko/deep-linked-ads/impelus-mobile-tracking.md
+          - Indus OS: ko/deep-linked-ads/indus-os-mobile-tracking.md
+          - Inflecto Media: ko/deep-linked-ads/inflecto-media-mobile-tracking.md
+          - Infleux : ko/deep-linked-ads/infleux-mobile-tracking.md
+          - Influence Mobile: ko/deep-linked-ads/influence-mobile-mobile-tracking.md
+          - InMobi: ko/deep-linked-ads/inmobi-mobile-tracking.md
+          - Inneractive: ko/deep-linked-ads/inneractive-mobile-tracking.md
+          - Innoexcel Technologies: ko/deep-linked-ads/innoexcel-technologies-mobile-tracking.md
+          - Inplayable: ko/deep-linked-ads/inplayable-mobile-tracking.md
+          - Instal: ko/deep-linked-ads/instal-mobile-tracking.md
+          - Interactivy: ko/deep-linked-ads/interactivy-mobile-tracking.md
+          - Interceptd: ko/deep-linked-ads/interceptd-mobile-tracking.md
+          - Intellect Ads: ko/deep-linked-ads/intellect-ads-mobile-tracking.md
+          - Interspace Indonesia: ko/deep-linked-ads/interspace-indonesia-mobile-tracking.md
+          - Interspace Vietnam: ko/deep-linked-ads/interspace-vietnam-mobile-tracking.md
+          - Involve Asia: ko/deep-linked-ads/involve-asia-mobile-tracking.md
+          - ipinyou: ko/deep-linked-ads/ipinyou-mobile-tracking.md
+          - IronSource: ko/deep-linked-ads/ironsource-mobile-tracking.md
+          - IWOOP : ko/deep-linked-ads/iwoop-mobile-tracking.md
+          - Jack Morris Media : ko/deep-linked-ads/jack-morris-media-mobile-tracking.md
+          - Jampp : ko/deep-linked-ads/jampp-mobile-tracking.md
+          - Jaxto Media: ko/deep-linked-ads/jaxto-media-mobile-tracking.md
+          - JetFuel Ads : ko/deep-linked-ads/jetfuel-ads-mobile-tracking.md
+          - Jun Group: ko/deep-linked-ads/jun-group-mobile-tracking.md
+          - JungggleX : ko/deep-linked-ads/junggglex-mobile-tracking.md
+          - Kakao: ko/deep-linked-ads/kakao-mobile-tracking.md
+          - Kalpssoft: ko/deep-linked-ads/kalpssoft-mobile-tracking.md
+          - Kargo: ko/deep-linked-ads/kargo-mobile-tracking.md
+          - Kayzen : ko/deep-linked-ads/kayzen-mobile-tracking.md
+          - Kenshoo: ko/deep-linked-ads/kenshoo-mobile-tracking.md
+          - Kenshoo Apps: ko/deep-linked-ads/kenshoo-apps-mobile-tracking.md
+          - Keyade: ko/deep-linked-ads/keyade-mobile-tracking.md
+          - Khing : ko/deep-linked-ads/khing-mobile-tracking.md
+          - Kiip : ko/deep-linked-ads/kiip-mobile-tracking.md
+          - Kinesiz Media: ko/deep-linked-ads/kinesiz-media-mobile-tracking.md
+          - KJ Network : ko/deep-linked-ads/kj-network-mobile-tracking.md
+          - Klay Media: ko/deep-linked-ads/klay-media-mobile-tracking.md
+          - Koneo Mobile Inc. : ko/deep-linked-ads/koneo-mobile-mobile-tracking.md
+          - Kreativads: ko/deep-linked-ads/kreativads-mobile-tracking.md
+          - Kwanko: ko/deep-linked-ads/kwanko-mobile-tracking.md
+          - Leadbolt : ko/deep-linked-ads/leadbolt-mobile-tracking.md
+          - Lemmonet: ko/deep-linked-ads/lemmonet-mobile-tracking.md
+          - LifeStreet : ko/deep-linked-ads/lifestreet-mobile-tracking.md
+          - Liftoff : ko/deep-linked-ads/liftoff-mobile-tracking.md
+          - LINE Ads Plaftorm - M.T.Burns : ko/deep-linked-ads/line-ads-platform-mobile-tracking.md
+          - LINE Corp. : ko/deep-linked-ads/line-corp-mobile-tracking.md
+          - Linkmine: ko/deep-linked-ads/linkmine-mobile-tracking.md
+          - Linking Mobile: ko/deep-linked-ads/linking-mobile-mobile-tracking.md
+          - LinkShare : ko/deep-linked-ads/linkshare-mobile-tracking.md
+          - Living Consumer: ko/deep-linked-ads/living-consumer-mobile-tracking.md
+          - LoopMe: ko/deep-linked-ads/loopme-mobile-tracking.md
+          - Luna Park Media: ko/deep-linked-ads/luna-park-media-mobile-tracking.md
+          - Madup: ko/deep-linked-ads/madup-mobile-tracking.md
+          - Magnet: ko/deep-linked-ads/magnet-mobile-tracking.md
+          - Maio: ko/deep-linked-ads/maio-mobile-tracking.md
+          - Maiden Marketing: ko/deep-linked-ads/maiden-marketing-mobile-tracking.md
+          - Manage: ko/deep-linked-ads/manage-mobile-tracking.md
+          - MANPLUS: ko/deep-linked-ads/manplus-mobile-tracking.md
+          - Mapendo : ko/deep-linked-ads/mapendo-mobile-tracking.md
+          - Marge Inc: ko/deep-linked-ads/marge-inc-mobile-tracking.md
+          - Matchmade : ko/deep-linked-ads/matchmade-mobile-tracking.md
+          - MCRONY Co Ltd: ko/deep-linked-ads/mcrony-mobile-tracking.md
+          - Mecross: ko/deep-linked-ads/mecross-mobile-tracking.md
+          - Media Donuts : ko/deep-linked-ads/media-donuts-mobile-tracking.md
+          - MediaMath : ko/deep-linked-ads/mediamath-mobile-tracking.md
+          - Mediasmart : ko/deep-linked-ads/mediasmart-mobile-tracking.md
+          - MediaSwag : ko/deep-linked-ads/mediaswag-mobile-tracking.md
+          - Mediaxpedia : ko/deep-linked-ads/mediaxpedia-mobile-tracking.md
+          - Mediazotic : ko/deep-linked-ads/mediazotic-mobile-tracking.md
+          - MEMU: ko/deep-linked-ads/memu-mobile-tracking.md
+          - MGID: ko/deep-linked-ads/mgid-mobile-tracking.md
+          - Minimob : ko/deep-linked-ads/minimob-mobile-tracking.md
+          - Mintegral : ko/deep-linked-ads/mintegral-mobile-tracking.md
+          - Mister Bell : ko/deep-linked-ads/mister-bell-mobile-tracking.md
+          - Mitraksh Media: ko/deep-linked-ads/mitraksh-media-mobile-tracking.md
+          - mMedia by Millennial Media: ko/deep-linked-ads/mmedia-mobile-tracking.md
+          - MobAir: ko/deep-linked-ads/mobair-mobile-tracking.md
+          - MobAvenue : ko/deep-linked-ads/mobavenue-mobile-tracking.md
+          - MobCastle: ko/deep-linked-ads/mobcastle-mobile-tracking.md
+          - Mobco Media: ko/deep-linked-ads/mobco-media-mobile-tracking.md
+          - Mobidays: ko/deep-linked-ads/mobidays-mobile-tracking.md
+          - Mobilda : ko/deep-linked-ads/mobilda-mobile-tracking.md
+          - MobAir: ko/deep-linked-ads/mobair-mobile-tracking.md
+          - MobAvenue : ko/deep-linked-ads/mobavenue-mobile-tracking.md
+          - Mobco Media: ko/deep-linked-ads/mobco-media-mobile-tracking.md
+          - Mobility Performance Network : ko/deep-linked-ads/mobility-performance-network-mobile-tracking.md
+          - Mobio : ko/deep-linked-ads/mobio-mobile-tracking.md
+          - Mobipium: ko/deep-linked-ads/mobipium-mobile-tracking.md
+          - Mobipuff: ko/deep-linked-ads/mobipuff-mobile-tracking.md
+          - Mobireckon: ko/deep-linked-ads/mobireckon-mobile-tracking.md
+          - Mobistroke: ko/deep-linked-ads/mobistroke-mobile-tracking.md
+          - Mobisummer: ko/deep-linked-ads/mobisummer-mobile-tracking.md
+          - Mobivisits Media: ko/deep-linked-ads/mobivisits-media-mobile-tracking.md
+          - Mobixu: ko/deep-linked-ads/mobixu-mobile-tracking.md
+          - Mobligent Media: ko/deep-linked-ads/mobligent-media-mobile-tracking.md
+          - Moblin : ko/deep-linked-ads/moblin-mobile-tracking.md
+          - Mobme Asia: ko/deep-linked-ads/mobme-asia-mobile-tracking.md
+          - Mobobeat : ko/deep-linked-ads/mobobeat-mobile-tracking.md
+          - MobPartner : ko/deep-linked-ads/mobpartner-mobile-tracking.md
+          - Mobme Asia: ko/deep-linked-ads/mobme-asia-mobile-tracking.md
+          - Mobobeat : ko/deep-linked-ads/mobobeat-mobile-tracking.md
+          - MoBrain : ko/deep-linked-ads/mobrain-mobile-tracking.md
+          - Mobsuccess: ko/deep-linked-ads/mobsuccess-mobile-tracking.md
+          - Mobtions: ko/deep-linked-ads/mobtions-mobile-tracking.md
+          - MobUpps : ko/deep-linked-ads/mobupps-mobile-tracking.md
+          - Mobusi: ko/deep-linked-ads/mobusi-mobile-tracking.md
+          - Mobvista : ko/deep-linked-ads/mobvista-mobile-tracking.md
+          - MobWonder : ko/deep-linked-ads/mobwonder-mobile-tracking.md
+          - MobX : ko/deep-linked-ads/mobx-mobile-tracking.md
+          - MobYoung: ko/deep-linked-ads/mobyoung-mobile-tracking.md
+          - Moca Technology : ko/deep-linked-ads/mocatechnology-mobile-tracking.md
+          - Moloco: ko/deep-linked-ads/moloco-mobile-tracking.md
+          - MoMAGIC Technologies : ko/deep-linked-ads/momagic-technologies-mobile-tracking.md
+          - MoPub Impression-level Revenue Data: ko/deep-linked-ads/mopub-impression-level-revenue-data.md
+          - Motive: ko/deep-linked-ads/motive-mobile-tracking.md
+          - Mozoo : ko/deep-linked-ads/mozoo-mobile-tracking.md
+          - Mpire Network : ko/deep-linked-ads/mpire-network-mobile-tracking.md
+          - MRN Digital: ko/deep-linked-ads/mrn-digital-mobile-tracking.md
+          - MundoMedia: ko/deep-linked-ads/mundomedia-mobile-tracking.md
+          - MUV Mobile: ko/deep-linked-ads/muv-mobile-mobile-tracking.md
+          - myTarget : ko/deep-linked-ads/mytarget-mobile-tracking.md
+          - NativeX : ko/deep-linked-ads/nativex-mobile-tracking.md
+          - Naver : ko/deep-linked-ads/naver-mobile-tracking.md
+          - NBT: ko/deep-linked-ads/nbt-mobile-tracking.md
+          - Nend : ko/deep-linked-ads/nend-mobile-tracking.md
+          - Netcore Solutions : ko/deep-linked-ads/netcore-solutions-mobile-tracking.md
+          - Neurality : ko/deep-linked-ads/neurality-mobile-tracking.md
+          - Novabeyond: ko/deep-linked-ads/novabeyond-mobile-tracking.md
+          - Nswitch : ko/deep-linked-ads/nswitch-mobile-tracking.md
+          - Oath: ko/deep-linked-ads/oath-mobile-tracking.md
+          - Offer18 : ko/deep-linked-ads/offer18-mobile-tracking.md
+          - Opera: ko/deep-linked-ads/opera-mobile-tracking.md
+          - Opicle Technologies: ko/deep-linked-ads/opicle-technologies-mobile-tracking.md
+          - Oplytic : ko/deep-linked-ads/oplytic-mobile-tracking.md
+          - Optimal Fusion : ko/deep-linked-ads/optimal-fusion-mobile-tracking.md
+          - Optimidea: ko/deep-linked-ads/optimidea-mobile-tracking.md
+          - Optimise Media: ko/deep-linked-ads/optimise-media-mobile-tracking.md
+          - OSLABS Technology: ko/deep-linked-ads/oslabs-technology-mobile-tracking.md
+          - Outbrain : ko/deep-linked-ads/outbrain-mobile-tracking.md
+          - Oximobimedia: ko/deep-linked-ads/oximobimedia-mobile-tracking.md
+          - Pandora : ko/deep-linked-ads/pandora-mobile-tracking.md
+          - PapayaMobile : ko/deep-linked-ads/papayamobile-mobile-tracking.md
+          - Partnerize: ko/deep-linked-ads/partnerize-mobile-tracking.md
+          - Pepperjam : ko/deep-linked-ads/pepperjam-mobile-tracking.md
+          - Performance Horizon : ko/deep-linked-ads/performance-horizon-mobile-tracking.md
+          - Performance Revenues : ko/deep-linked-ads/performance-revenues-mobile-tracking.md
+          - Persona.ly: ko/deep-linked-ads/persona-ly-mobile-tracking.md
+          - PCH Media: ko/deep-linked-ads/pch-media-mobile-tracking.md
+          - Phunware : ko/deep-linked-ads/phunware-mobile-tracking.md
+          - Pick Media: ko/deep-linked-ads/pick-media-mobile-tracking.md
+          - Picnic Media : ko/deep-linked-ads/picnic-media-mobile-tracking.md
+          - Pincrux : ko/deep-linked-ads/pincrux-mobile-tracking.md
+          - Pinisight : ko/deep-linked-ads/pinisight-mobile-tracking.md
+          - Pinterest : ko/deep-linked-ads/pinterest-mobile-tracking.md
+          - Pixoble: ko/deep-linked-ads/pixoble-mobile-tracking.md
+          - Plabs Ventures: ko/deep-linked-ads/plabs-ventures-mobile-tracking.md
+          - Playdigo: ko/deep-linked-ads/playdigo-mobile-tracking.md
+          - Pocketmath: ko/deep-linked-ads/pocketmath-mobile-tracking.md
+          - Pocket Media: ko/deep-linked-ads/pocket-media-mobile-tracking.md
+          - Pointific Digital: ko/deep-linked-ads/pointific-digital-mobile-tracking.md
+          - Polyvalent Digital Services: ko/deep-linked-ads/polyvalent-digital-services-mobile-tracking.md
+          - Prappers : ko/deep-linked-ads/prappers-mobile-tracking.md
+          - Prodege: ko/deep-linked-ads/prodege-mobile-tracking.md
+          - ProfiliAd : ko/deep-linked-ads/profiliad-mobile-tracking.md
+          - Proformics Digtech: ko/deep-linked-ads/proformics-digitech-mobile-tracking.md
+          - Propeller Ads : ko/deep-linked-ads/propeller-ads-mobile-tracking.md
+          - Qooapp Limited : ko/deep-linked-ads/qooapp-limited-mobile-tracking.md
+          - Quora : ko/deep-linked-ads/quora-mobile-tracking.md
+          - Rakuten Marketing : ko/deep-linked-ads/rakuten-marketing-mobile-tracking.md
+          - RankMyApp : ko/deep-linked-ads/rankmyapp-mobile-tracking.md
+          - RationalHeads Technologies: ko/deep-linked-ads/rationalheads-technologies-mobile-tracking.md
+          - Raykaad : ko/deep-linked-ads/raykaad-mobile-tracking.md
+          - Reddit: ko/deep-linked-ads/reddit-mobile-tracking.md
+          - Red for Publishers: ko/deep-linked-ads/red-for-publishers-mobile-tracking.md
+          - Remerge : ko/deep-linked-ads/remerge-mobile-tracking.md
+          - ResultsMedia: ko/deep-linked-ads/resultsmedia-mobile-tracking.md
+          - Revmob : ko/deep-linked-ads/revmob-mobile-tracking.md
+          - RevX : ko/deep-linked-ads/revx-mobile-tracking.md
+          - Rocket10 : ko/deep-linked-ads/rocket10-mobile-tracking.md
+          - Rockford Mobi: ko/deep-linked-ads/rockford-mobi-mobile-tracking.md
+          - Rokt : ko/deep-linked-ads/rokt-mobile-tracking.md
+          - Roman Derby Advertising Solutions: ko/deep-linked-ads/roman-derby-advertising-solutions-mobile-tracking.md
+          - Roock Mobile: ko/deep-linked-ads/roock-mobile-mobile-tracking.md
+          - RoundCubez : ko/deep-linked-ads/roundcubez-mobile-tracking.md
+          - RTB House: ko/deep-linked-ads/rtb-house-mobile-tracking.md
+          - RTBdemand: ko/deep-linked-ads/rtbdemand-mobile-tracking.md
+          - S2S Softsys: ko/deep-linked-ads/s2s-softsys-mobile-tracking.md
+          - Sabio Mobile : ko/deep-linked-ads/sabio-mobile-mobile-tracking.md
+          - Scorp : ko/deep-linked-ads/scorp-mobile-tracking.md
+          - SearchAdsHQ: ko/deep-linked-ads/searchadshq-mobile-tracking.md
+          - seedApp : ko/deep-linked-ads/seedapp-mobile-tracking.md
+          - Sense Digital : ko/deep-linked-ads/sense-digital-mobile-tracking.md
+          - Shakes Mobi : ko/deep-linked-ads/shakes-mobi-mobile-tracking.md
+          - SHAREit : ko/deep-linked-ads/shareit-mobile-tracking.md
+          - Shemaroo Entertainment: ko/deep-linked-ads/shemaroo-entertainment-mobile-tracking.md
+          - Shoogloo Mobile : ko/deep-linked-ads/shoogloo-mobile-mobile-tracking.md
+          - ShopBack : ko/deep-linked-ads/shopback-mobile-tracking.md
+          - Shopping Kids Unia: ko/deep-linked-ads/shopping-kids-unia-mobile-tracking.md
+          - Signitech: ko/deep-linked-ads/signitech-mobile-tracking.md
+          - SilverPush: ko/deep-linked-ads/silverpush-mobile-tracking.md
+          - SilverPush - Affise : ko/deep-linked-ads/silverpush-affise-mobile-tracking.md
+          - SilverPush - Javelin: ko/deep-linked-ads/silverpush-javelin-mobile-tracking.md
+          - SIROK Inc. : ko/deep-linked-ads/sirok-mobile-tracking.md
+          - Sizmek Adserver: ko/deep-linked-ads/sizmek-adserver-mobile-tracking.md
+          - Sizmek DSP: ko/deep-linked-ads/sizmek-dsp-mobile-tracking.md
+          - Slavia Mobile: ko/deep-linked-ads/slavia-mobile-mobile-tracking.md
+          - Smadex: ko/deep-linked-ads/smadex-mobile-tracking.md
+          - Smart.bid : ko/deep-linked-ads/smart-bid-mobile-tracking.md
+          - Smart-C : ko/deep-linked-ads/smart-c-mobile-tracking.md
+          - SmartNews Ads : ko/deep-linked-ads/smartnews-ads-mobile-tracking.md
+          - SmartPosting 2.0: ko/deep-linked-ads/smartposting-2.0-mobile-tracking.md
+          - SmoorfApp : ko/deep-linked-ads/smoorfapp-mobile-tracking.md
+          - Snap: ko/deep-linked-ads/snap-mobile-tracking.md
+          - Sonarclick: ko/deep-linked-ads/sonarclick-mobile-tracking.md
+          - So-net Media: ko/deep-linked-ads/sonet-media-mobile-tracking.md
+          - Spyke Media : ko/deep-linked-ads/spyke-media-mobile-tracking.md
+          - StackAdapt: ko/deep-linked-ads/stackadapt-mobile-tracking.md
+          - Stargazer : ko/deep-linked-ads/stargazer-mobile-tracking.md
+          - StartApp : ko/deep-linked-ads/startapp-mobile-tracking.md
+          - Ströer Mobile Performance : ko/deep-linked-ads/stroer-mobile-performance-mobile-tracking.md
+          - SuperADS: ko/deep-linked-ads/superads-mobile-tracking.md
+          - Supernova: ko/deep-linked-ads/supernova-mobile-tracking.md
+          - SVG Media : ko/deep-linked-ads/svg-media-mobile-tracking.md
+          - Synative: ko/deep-linked-ads/synative-mobile-tracking.md
+          - TAB : ko/deep-linked-ads/tab-mobile-tracking.md
+          - Tabatoo: ko/deep-linked-ads/tabatoo-mobile-tracking.md
+          - Taboola : ko/deep-linked-ads/taboola-mobile-tracking.md
+          - Tapgerine: ko/deep-linked-ads/tapgerine-mobile-tracking.md
+          - Tapjoy: ko/deep-linked-ads/tapjoy-mobile-tracking.md
+          - Tap One : ko/deep-linked-ads/tap-one-mobile-tracking.md
+          - Tappx: ko/deep-linked-ads/tappx-mobile-tracking.md
+          - Tapsell : ko/deep-linked-ads/tapsell-mobile-tracking.md
+          - Taptica : ko/deep-linked-ads/taptica-mobile-tracking.md
+          - Target Circle : ko/deep-linked-ads/target-circle-mobile-tracking.md
+          - TaskBucks : ko/deep-linked-ads/taskbucks-mobile-tracking.md
+          - Teads : ko/deep-linked-ads/teads-mobile-tracking.md
+          - TECHIDO: ko/deep-linked-ads/techido-mobile-tracking.md
+          - Tellmedia: ko/deep-linked-ads/tellmedia-mobile-tracking.md
+          - Thalamus: ko/deep-linked-ads/thalamus-mobile-tracking.md
+          - The Trade Desk: ko/deep-linked-ads/the-trade-desk-mobile-tracking.md
+          - The Zero Games: ko/deep-linked-ads/the-zero-games-mobile-tracking.md
+          - Themobiadz: ko/deep-linked-ads/themobiadz-mobile-tracking.md
+          - TheMobily Arabia: ko/deep-linked-ads/themobily-arabia-mobile-tracking.md
+          - Thing Or Two : ko/deep-linked-ads/thing-or-two-mobile-tracking.md
+          - Tiktok Ads : ko/deep-linked-ads/tiktok-ads-mobile-tracking.md
+          - TimeOneGroup : ko/deep-linked-ads/timeonegroup-mobile-tracking.md
+          - Times Internet Limited: ko/deep-linked-ads/times-internet-limited-mobile-tracking.md
+          - TNK Factory : ko/deep-linked-ads/tnk-factory-mobile-tracking.md
+          - Tradedoubler : ko/deep-linked-ads/tradedoubler-mobile-tracking.md
+          - Tradelab: ko/deep-linked-ads/tradelab-mobile-tracking.md
+          - TradeTracker : ko/deep-linked-ads/tradetracker-mobile-tracking.md
+          - Tradingworks : ko/deep-linked-ads/tradingworks-mobile-tracking.md
+          - TRANSSION: ko/deep-linked-ads/transsion-mobile-tracking.md
+          - Tricky Digital: ko/deep-linked-ads/tricky-digital-mobile-tracking.md
+          - Triton Digital: ko/deep-linked-ads/triton-digital-mobile-tracking.md
+          - Trooperads: ko/deep-linked-ads/trooperads-mobile-tracking.md
+          - Truecaller: ko/deep-linked-ads/truecaller-mobile-tracking.md
+          - Tunica Labs : ko/deep-linked-ads/tunica-labs-mobile-tracking.md
+          - TVSmiles : ko/deep-linked-ads/tvsmiles-mobile-tracking.md
+          - TVSquared : ko/deep-linked-ads/tvsquared-mobile-tracking.md
+          - Twinpine: ko/deep-linked-ads/twinpine-mobile-tracking.md
+          - Twitter Ads: ko/deep-linked-ads/twitter-ads-app-install.md
+          - Tyroo : ko/deep-linked-ads/tyroo-mobile-tracking.md
+          - U2opia Mobile : ko/deep-linked-ads/u2opia-mobile-mobile-tracking.md
+          - UC Ads: ko/deep-linked-ads/uc-ads-mobile-tracking.md
+          - Unicorn : ko/deep-linked-ads/unicorn-mobile-tracking.md
+          - Unilead Network : ko/deep-linked-ads/unilead-network-mobile-tracking.md
+          - Unity : ko/deep-linked-ads/unity-mobile-tracking.md
+          - Value Direct: ko/deep-linked-ads/value-direct-mobile-tracking.md
+          - VAPA: ko/deep-linked-ads/vapa-mobile-tracking.md
+          - vCommission Media : ko/deep-linked-ads/vcommission-media-mobile-tracking.md
+          - Ventes Avenues: ko/deep-linked-ads/ventes-avenues-mobile-tracking.md
+          - Vermmillion: ko/deep-linked-ads/vermmillion-mobile-tracking.md
+          - Viant: ko/deep-linked-ads/viant-mobile-tracking.md
+          - Vid AI: ko/deep-linked-ads/vid-ai-mobile-tracking.md
+          - Vidoads: ko/deep-linked-ads/vidoads-mobile-tracking.md
+          - Vidspot : ko/deep-linked-ads/vidspot-mobile-tracking.md
+          - Vishibility : ko/deep-linked-ads/vishibility-mobile-tracking.md
+          - Vizury: ko/deep-linked-ads/vizury-mobile-tracking.md
+          - Volo Media: ko/deep-linked-ads/volo-media-mobile-tracking.md
+          - Vpon: ko/deep-linked-ads/vpon-mobile-tracking.md
+          - Vserv : ko/deep-linked-ads/vserv-mobile-tracking.md
+          - Vungle : ko/deep-linked-ads/vungle-mobile-tracking.md
+          - Wagawin : ko/deep-linked-ads/wagawin-mobile-tracking.md
+          - Wakeapp : ko/deep-linked-ads/wakeapp-mobile-tracking.md
+          - Wappier : ko/deep-linked-ads/wappier-mobile-tracking.md
+          - WeAdsForYou: ko/deep-linked-ads/weadsforyou-mobile-tracking.md
+          - Webpals Mobile : ko/deep-linked-ads/webpals-mobile-mobile-tracking.md
+          - Webfuel: ko/deep-linked-ads/webfuel-mobile-tracking.md
+          - WeQ : ko/deep-linked-ads/weq-mobile-tracking.md
+          - Wider Planet : ko/deep-linked-ads/wider-planet-mobile-tracking.md
+          - Wiz Metric: ko/deep-linked-ads/wiz-metric-mobile-tracking.md
+          - Xapads Media : ko/deep-linked-ads/xapads-media-mobile-tracking.md
+          - XiaoMi Global: ko/deep-linked-ads/xiaomi-global-mobile-tracking.md
+          - Xmax : ko/deep-linked-ads/xmax-mobile-tracking.md
+          - Webpals Mobile : ko/deep-linked-ads/webpals-mobile-mobile-tracking.md
+          - Wider Planet : ko/deep-linked-ads/wider-planet-mobile-tracking.md
+          - Xapads Media : ko/deep-linked-ads/xapads-media-mobile-tracking.md
+          - XiaoMi Global: ko/deep-linked-ads/xiaomi-global-mobile-tracking.md
+          - XY Ads: ko/deep-linked-ads/xy-ads-mobile-tracking.md
+          - Yandex Direct : ko/deep-linked-ads/yandex-direct-mobile-tracking.md
+          - YeahMobi : ko/deep-linked-ads/yeahmobi-mobile-tracking.md
+          - Yelohi: ko/deep-linked-ads/yelohi-mobile-tracking.md
+          - Yep Ads : ko/deep-linked-ads/yep-ads-mobile-tracking.md
+          - Yidio: ko/deep-linked-ads/yidio-mobile-tracking.md
+          - Yoke Network : ko/deep-linked-ads/yoke-network-mobile-tracking.md
+          - YouAppi : ko/deep-linked-ads/youappi-mobile-tracking.md
+          - YouAppi Retargeting : ko/deep-linked-ads/youappi-retargeting-mobile-tracking.md
+          - ZenAds : ko/deep-linked-ads/zenads-mobile-tracking.md
+          - Zoomd: ko/deep-linked-ads/zoomd-mobile-tracking.md
+          - Zorka.Mobi : ko/deep-linked-ads/zorka-mobi-mobile-tracking.md
+          - Zucks Ad Network : ko/deep-linked-ads/zucks-ad-network-mobile-tracking.md
+          - Zucks Affiliate : ko/deep-linked-ads/zucks-affiliate-mobile-tracking.md
+      - Universal Email Partners:
+          - Email Partners List: ko/emails/email-partners-list.md
+          - Active Campaign: ko/emails/active-campaign.md
+          - Adobe Campaign Classic: ko/emails/adobe-campaign-classic.md
+          - Adobe Campaign Standard: ko/emails/adobe-campaign-standard.md
+          - Amazon Simple Email Service: ko/emails/amazon-ses.md
+          - Betaout: ko/emails/betaout.md
+          - Bluecore: ko/emails/bluecore.md
+          - Blueshift: ko/emails/blueshift.md
+          - Braze (via SendGrid): ko/emails/braze.md
+          - Braze (via Mailjet): ko/emails/braze-mailjet.md
+          - Campaign Monitor: ko/emails/campaign-monitor.md
+          - Cheetah Digital Marketing Suite: ko/emails/cheetah-digital-marketing-suite.md
+          - CheetahMail: ko/emails/cheetahmail.md
+          - Epsilon: ko/emails/epsilon.md
+          - Emarsys: ko/emails/emarsys.md
+          - Hootsuite: ko/social-links/hootsuite.md
+          - IBM Watson Campaign Automation: ko/emails/ibm-watson-campaign-automation.md
+          - iCubesPro: ko/emails/icubespro.md
+          - Iterable: ko/emails/iterable.md
+          - Kahuna: ko/emails/kahuna.md
+          - Klaviyo: ko/emails/klaviyo.md
+          - Leanplum: ko/emails/leanplum.md
+          - Mailgun: ko/emails/mailgun.md
+          - Mailjet: ko/emails/mailjet.md
+          - Mailup: ko/emails/mailup.md
+          - Mandrill: ko/emails/mandrill.md
+          - Marketo: ko/emails/marketo.md
+          - MessageGears: ko/emails/messagegears.md
+          - MoEngage: ko/emails/moengage.md
+          - Oracle Bronto: ko/emails/oracle-bronto.md
+          - Oracle Eloqua: ko/emails/oracle-eloqua.md
+          - Oracle Responsys: ko/emails/oracle-responsys.md
+          - Pepipost: ko/emails/pepipost.md
+          - PostUp: ko/emails/postup.md
+          - Rapidmail: ko/emails/rapidmail.md
+          - Sailthru: ko/emails/sailthru.md
+          - Salesforce v1: ko/emails/salesforce-v1.md
+          - Salesforce v2: ko/emails/salesforce-v2.md
+          - Salesforce v3: ko/emails/salesforce-v3.md
+          - Selligent Message Studio: ko/emails/selligent.md
+          - Sender: ko/emails/sender.md
+          - SendGrid: ko/emails/sendgrid.md
+          - Social Flow: ko/social-links/social-flow.md
+          - SparkPost: ko/emails/sparkpost.md
+          - Vero: ko/emails/vero.md
+          - WhatCounts: ko/emails/whatcounts.md
+          - Yes Marketing: ko/emails/yes-marketing.md
+          - Zeta: ko/emails/zeta.md
+      - Data Integrations:
+          - Data Integration Partners List: ko/integrations/data-integrations-list.md
+          - 24Metrics Fraudshield: ko/integrations/24metrics-fraudshield.md
+          - Adjust: ko/integrations/adjust.md
+          - Adobe Analytics: ko/integrations/adobe-analytics.md
+          - Amplitude: ko/integrations/amplitude.md
+          - AppMetrica: ko/integrations/appmetrica.md
+          - Appsee: ko/integrations/appsee.md
+          - Appsflyer: ko/integrations/appsflyer.md
+          - Apptilaus - Subscription Analytics: ko/integrations/apptilaus.md
+          - Backinapp: ko/integrations/backinapp.md
+          - Braze: ko/integrations/braze.md
+          - CleverTap: ko/integrations/clevertap.md
+          - Convertro: ko/integrations/convertro.md
+          - Eulerian: ko/integrations/eulerian.md
+          - Forensiq: ko/integrations/forensiq.md
+          - Fraud Defense: ko/integrations/fraud-defense.md
+          - Google Analytics: ko/integrations/google-analytics.md
+          - Insider: ko/integrations/insider.md
+          - Kochava: ko/integrations/kochava.md
+          - Leanplum: ko/integrations/leanplum.md
+          - Localytics: ko/integrations/localytics.md
+          - Mixpanel: ko/integrations/mixpanel.md
+          - MobileAction: ko/integrations/mobileaction.md
+          - mParticle (export): ko/integrations/mparticle.md
+          - mParticle (import): ko/integrations/mparticle-import.md
+          - Segment (export): ko/integrations/segment.md
+          - Segment (import): ko/integrations/segment-import.md
+          - Singular: ko/integrations/singular.md
+          - TrafficGuard: ko/integrations/trafficguard.md
+          - WebEngage: ko/integrations/webengage.md
+      - Partner Resources:
+          - Branch Certified Partner Program: ko/partner-management/branch-certified-partner-program.md
+          - Branch Partner Best Practices: ko/partner-management/branch-partner-best-practices.md
+          - Universal Ads Partner Integration QA Process: ko/deep-linked-ads/universal-ads-partner-integration-qa-process.md
+          - Multiple Goal ID Support: ko/partner-management/multiple-goal-id-support.md
+  - Reports & Analytics:
+      - Overview: ko/dashboard/analytics-overview.md
+      - Fraud Analytics: ko/activity-reports-analytics/ads-fraud-analytics.md
+      - Cohort Analytics: ko/dashboard/cohort-analysis.md
+      - Paid Ads Analytics: ko/activity-reports-analytics/paid-ads-analytics.md
+      - Journeys Analytics: ko/activity-reports-analytics/journeys-analytics.md
+      - Link Level Analytics: ko/activity-reports-analytics/link-level-analytics.md
+      - Liveview: ko/exports/pba-liveview.md
+  - Data Feeds:
+      - Overview: ko/exports/data-feeds-overview.md
+      - Data Integrations: ko/integrations/data-integrations-list.md
+      - Webhooks: ko/exports/ua-webhooks.md
+      - Custom Exports: ko/exports/custom-exports.md
+      - Daily Exports: ko/exports/daily-exports.md
+      - Query API: ko/exports/query-api.md
+      - Supplemental Information:
+          - Query Recipe Book: ko/exports/query-recipe-book.md
+          - Event Ontology: ko/exports/event_ontology_data_schema.md
+          - Export API Migration Guide: ko/exports/export-api-migration-guide.md
+          - Webhooks Migration Guide: ko/exports/webhooks-migration-guide.md
+      - Legacy Functionality:
+          - Legacy Export API: ko/exports/api.md
+          - Legacy Webhooks: ko/exports/webhooks.md
+  - Translated Documentation:
+    - Overview: translations/overview.md
+    - 中文:
+      - 配置控制面板: zh/integrate.md
+      - Journeys App Banners (路径图谱应用程序条幅广告): zh/journeys.md
+    - 한국어:
+      - Branch 연동 가이드 - iOS: ko/branch-ios.md
+      - Branch 연동 가이드 - Android: ko/branch-android.md
+      - iOS 유니버설 링크: ko/universal-links.md
+      - Android App Links 가이드: ko/android-app-links.md
+      - 앱 내 딥링크 라우팅 가이드: ko/deep-link-routing.md
+      - 다이내믹 제품 피드 : ko/dynamic-product-feeds.md
+      - 에이전시 보기 관련: ko/agency-view.md
+      - Branch 계정 내 앱 뷰 기능 : ko/app-view.md
+      - Facebook 앱 인스톨 광고: ko/facebook-app-install-ads.md
+      - Facebook 광고 관련하여 자주 묻는 질문 : ko/facebook-ads-faq.md
+      - Facebook 플랫폼 광고: ko/facebook-platform-ads.md
+      - Facebook 트래픽 및 전환 광고: ko/facebook-traffic-conversion-ads.md
+      - Google 광고에 대한 전반적인 소개 : ko/google-ads-overview.md
+      - 앱 인스톨 캠페인: ko/google-ads-uac.md
+      - 웹 기반 광고(비 UAC): ko/google-ads-non-uac.md
+      - Apple 광고 캠페인 트래킹 관련: ko/apple-mobile-tracking.md
+      - 카카오 광고 캠페인 트래킹 관련: ko/kakao-mobile-tracking.md
+      - 네이버 광고 캠페인 트래킹 관련 : ko/naver-mobile-tracking.md

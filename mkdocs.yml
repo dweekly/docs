@@ -22,7 +22,8 @@ theme:
   feature: false
   logo: '_assets/img/logo.svg'
   favicon: '_assets/img/favicon.ico'
-docs_dir: 'pages'
+docs_dir: 'pages_en'
+site_dir: 'site'
 extra_css:
   - '_assets/css/main.css'
 extra_javascript:
