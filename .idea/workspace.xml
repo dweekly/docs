@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="303ae840-703c-4752-8ef4-558affe8f760" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pages_ja/ja/_assets/js/image_localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages_ja/ja/_assets/js/image_localization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages_ko/ko/_assets/js/image_localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages_ko/ko/_assets/js/image_localization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages_zh/zh/_assets/js/image_localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages_zh/zh/_assets/js/image_localization.js" afterDir="false" />
-    </list>
+    <list default="true" id="303ae840-703c-4752-8ef4-558affe8f760" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -395,25 +391,6 @@
               <item name="_assets" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="zh" type="462c0819:PsiDirectoryNode" />
-              <item name="_assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="zh" type="462c0819:PsiDirectoryNode" />
-              <item name="_assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="main-page" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -473,16 +450,15 @@
       <workItem from="1563180460887" duration="2459000" />
       <workItem from="1563185112863" duration="19000" />
       <workItem from="1563267082222" duration="8084000" />
-      <workItem from="1564060632055" duration="15145000" />
+      <workItem from="1564060632055" duration="15304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51890000" />
+    <option name="totallyTimeSpent" value="52049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21530758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
