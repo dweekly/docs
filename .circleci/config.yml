@@ -38,10 +38,10 @@ jobs:
           command: mkdocs build --config-file mkdocs_zh.yml --clean --verbose
       - run:
           name: Copy MkDocs_ko
-          command: mkdir site/ko; cp -r site_zh/ko/* site/ko
+          command: mkdir site/ko; cp -r site_ko/ko/* site/ko
       - run:
           name: Copy MkDocs_ja
-          command: mkdir site/ja; cp -r site_zh/ja/* site/ja
+          command: mkdir site/ja; cp -r site_ja/ja/* site/ja
       - run:
           name: Copy MkDocs_zh
           command: mkdir site/zh; cp -r site_zh/zh/* site/zh
