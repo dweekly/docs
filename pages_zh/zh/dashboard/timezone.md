@@ -1,1 +1,1 @@
-{! pages/dashboard/timezone.md !}
+{? multilang/zh-CN/timezone.md | localized/dashboard/timezone.md | pages/dashboard/timezone.md ?}

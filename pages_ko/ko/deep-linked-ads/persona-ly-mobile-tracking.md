@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/persona-ly-mobile-tracking.md !}
+{? multilang/ko-KR/persona-ly-mobile-tracking.md | localized/deep-linked-ads/persona-ly-mobile-tracking.md | pages/deep-linked-ads/persona-ly-mobile-tracking.md ?}

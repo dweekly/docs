@@ -1,1 +1,1 @@
-{! pages/integrations/convertro.md !}
+{? multilang/ko-KR/convertro.md | localized/integrations/convertro.md | pages/integrations/convertro.md ?}

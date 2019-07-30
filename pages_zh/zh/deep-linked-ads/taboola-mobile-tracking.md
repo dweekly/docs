@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/taboola-mobile-tracking.md !}
+{? multilang/zh-CN/taboola-mobile-tracking.md | localized/deep-linked-ads/taboola-mobile-tracking.md | pages/deep-linked-ads/taboola-mobile-tracking.md ?}

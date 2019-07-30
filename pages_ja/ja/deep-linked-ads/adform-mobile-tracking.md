@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/adform-mobile-tracking.md !}
+{? multilang/ja-JP/adform-mobile-tracking.md | localized/deep-linked-ads/adform-mobile-tracking.md | pages/deep-linked-ads/adform-mobile-tracking.md ?}

@@ -58,7 +58,8 @@ markdown_extensions:
       base_path: includes/
 
 # Plugins
-plugins: []
+plugins:
+  - file-selector
 
 # Options
 extra:

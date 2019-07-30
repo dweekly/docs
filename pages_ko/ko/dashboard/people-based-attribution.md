@@ -1,1 +1,1 @@
-{! pages/dashboard/people-based-attribution.md !}
+{? multilang/ko-KR/people-based-attribution.md | localized/dashboard/people-based-attribution.md | pages/dashboard/people-based-attribution.md ?}

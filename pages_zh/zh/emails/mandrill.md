@@ -1,1 +1,1 @@
-{! pages/emails/mandrill.md !}
+{? multilang/zh-CN/mandrill.md | localized/emails/mandrill.md | pages/emails/mandrill.md ?}

@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/appromoters-mobile-tracking.md !}
+{? multilang/ja-JP/appromoters-mobile-tracking.md | localized/deep-linked-ads/appromoters-mobile-tracking.md | pages/deep-linked-ads/appromoters-mobile-tracking.md ?}

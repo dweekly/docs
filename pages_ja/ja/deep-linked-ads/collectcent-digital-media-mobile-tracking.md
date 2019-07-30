@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/collectcent-digital-media-mobile-tracking.md !}
+{? multilang/ja-JP/collectcent-digital-media-mobile-tracking.md | localized/deep-linked-ads/collectcent-digital-media-mobile-tracking.md | pages/deep-linked-ads/collectcent-digital-media-mobile-tracking.md ?}

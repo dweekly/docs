@@ -1,1 +1,1 @@
-{! pages/emails/betaout.md !}
+{? multilang/zh-CN/betaout.md | localized/emails/betaout.md | pages/emails/betaout.md ?}

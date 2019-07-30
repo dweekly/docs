@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/affle-mobile-tracking.md !}
+{? multilang/ko-KR/affle-mobile-tracking.md | localized/deep-linked-ads/affle-mobile-tracking.md | pages/deep-linked-ads/affle-mobile-tracking.md ?}

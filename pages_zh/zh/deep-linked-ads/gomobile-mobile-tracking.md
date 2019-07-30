@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/gomobile-mobile-tracking.md !}
+{? multilang/zh-CN/gomobile-mobile-tracking.md | localized/deep-linked-ads/gomobile-mobile-tracking.md | pages/deep-linked-ads/gomobile-mobile-tracking.md ?}

@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/keyade-mobile-tracking.md !}
+{? multilang/ja-JP/keyade-mobile-tracking.md | localized/deep-linked-ads/keyade-mobile-tracking.md | pages/deep-linked-ads/keyade-mobile-tracking.md ?}

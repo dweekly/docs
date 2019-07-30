@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/vishibility-mobile-tracking.md !}
+{? multilang/ja-JP/vishibility-mobile-tracking.md | localized/deep-linked-ads/vishibility-mobile-tracking.md | pages/deep-linked-ads/vishibility-mobile-tracking.md ?}

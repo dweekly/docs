@@ -1,1 +1,1 @@
-{! pages/resources/re-engagement-attribution-logic-and-settings.md !}
+{? multilang/ja-JP/re-engagement-attribution-logic-and-settings.md | localized/resources/re-engagement-attribution-logic-and-settings.md | pages/resources/re-engagement-attribution-logic-and-settings.md ?}

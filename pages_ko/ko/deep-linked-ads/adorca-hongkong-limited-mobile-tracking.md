@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/adorca-hongkong-limited-mobile-tracking.md !}
+{? multilang/ko-KR/adorca-hongkong-limited-mobile-tracking.md | localized/deep-linked-ads/adorca-hongkong-limited-mobile-tracking.md | pages/deep-linked-ads/adorca-hongkong-limited-mobile-tracking.md ?}

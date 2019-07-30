@@ -37,7 +37,6 @@ extra_javascript:
   - 'ja/_assets/js/languages.js'
   - 'ja/_assets/js/utils.js'
   - 'ja/_assets/js/main.js'
-  - 'ja/_assets/js/image_localization.js'
 
 # Extensions
 markdown_extensions:
@@ -59,8 +58,10 @@ markdown_extensions:
       base_path: includes/
 
 # Plugins
-plugins: []
-
+plugins:
+    - file-selector
+    - image-localization
+locale: ja
 # Options
 extra:
   social:

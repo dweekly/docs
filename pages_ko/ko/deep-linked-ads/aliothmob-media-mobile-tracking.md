@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/aliothmob-media-mobile-tracking.md !}
+{? multilang/ko-KR/aliothmob-media-mobile-tracking.md | localized/deep-linked-ads/aliothmob-media-mobile-tracking.md | pages/deep-linked-ads/aliothmob-media-mobile-tracking.md ?}

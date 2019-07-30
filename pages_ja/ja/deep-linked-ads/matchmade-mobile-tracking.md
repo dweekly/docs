@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/matchmade-mobile-tracking.md !}
+{? multilang/ja-JP/matchmade-mobile-tracking.md | localized/deep-linked-ads/matchmade-mobile-tracking.md | pages/deep-linked-ads/matchmade-mobile-tracking.md ?}

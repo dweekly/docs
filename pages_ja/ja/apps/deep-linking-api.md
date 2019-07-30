@@ -1,1 +1,1 @@
-{! pages/apps/deep-linking-api.md !}
+{? multilang/ja-JP/deep-linking-api.md | localized/apps/deep-linking-api.md | pages/apps/deep-linking-api.md ?}

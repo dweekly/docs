@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/jetfuel-ads-mobile-tracking.md !}
+{? multilang/ko-KR/jetfuel-ads-mobile-tracking.md | localized/deep-linked-ads/jetfuel-ads-mobile-tracking.md | pages/deep-linked-ads/jetfuel-ads-mobile-tracking.md ?}

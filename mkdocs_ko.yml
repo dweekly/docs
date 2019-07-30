@@ -37,7 +37,7 @@ extra_javascript:
   - 'ko/_assets/js/languages.js'
   - 'ko/_assets/js/utils.js'
   - 'ko/_assets/js/main.js'
-  - 'ko/_assets/js/image_localization.js'
+
 # Extensions
 markdown_extensions:
   - admonition:
@@ -58,8 +58,10 @@ markdown_extensions:
       base_path: includes/
 
 # Plugins
-plugins: []
-
+plugins:
+    - file-selector
+    - image-localization
+locale: ko
 # Options
 extra:
   social:

@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/media-donuts-mobile-tracking.md !}
+{? multilang/ko-KR/media-donuts-mobile-tracking.md | localized/deep-linked-ads/media-donuts-mobile-tracking.md | pages/deep-linked-ads/media-donuts-mobile-tracking.md ?}

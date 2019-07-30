@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/stroer-mobile-performance-mobile-tracking.md !}
+{? multilang/ko-KR/stroer-mobile-performance-mobile-tracking.md | localized/deep-linked-ads/stroer-mobile-performance-mobile-tracking.md | pages/deep-linked-ads/stroer-mobile-performance-mobile-tracking.md ?}

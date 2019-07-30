@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/appbooster-mobile-tracking.md !}
+{? multilang/zh-CN/appbooster-mobile-tracking.md | localized/deep-linked-ads/appbooster-mobile-tracking.md | pages/deep-linked-ads/appbooster-mobile-tracking.md ?}

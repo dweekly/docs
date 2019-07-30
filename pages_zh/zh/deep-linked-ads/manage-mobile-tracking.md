@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/manage-mobile-tracking.md !}
+{? multilang/zh-CN/manage-mobile-tracking.md | localized/deep-linked-ads/manage-mobile-tracking.md | pages/deep-linked-ads/manage-mobile-tracking.md ?}

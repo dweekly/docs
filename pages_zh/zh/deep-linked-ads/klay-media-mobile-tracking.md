@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/klay-media-mobile-tracking.md !}
+{? multilang/zh-CN/klay-media-mobile-tracking.md | localized/deep-linked-ads/klay-media-mobile-tracking.md | pages/deep-linked-ads/klay-media-mobile-tracking.md ?}

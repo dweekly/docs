@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/svg-media-mobile-tracking.md !}
+{? multilang/ja-JP/svg-media-mobile-tracking.md | localized/deep-linked-ads/svg-media-mobile-tracking.md | pages/deep-linked-ads/svg-media-mobile-tracking.md ?}

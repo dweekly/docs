@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/webpals-mobile-mobile-tracking.md !}
+{? multilang/ja-JP/webpals-mobile-mobile-tracking.md | localized/deep-linked-ads/webpals-mobile-mobile-tracking.md | pages/deep-linked-ads/webpals-mobile-mobile-tracking.md ?}

@@ -1,1 +1,1 @@
-{! pages/exports/custom-exports.md !}
+{? multilang/zh-CN/custom-exports.md | localized/exports/custom-exports.md | pages/exports/custom-exports.md ?}

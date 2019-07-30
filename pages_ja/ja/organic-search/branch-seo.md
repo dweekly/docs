@@ -1,1 +1,1 @@
-{! pages/organic-search/branch-seo.md !}
+{? multilang/ja-JP/branch-seo.md | localized/organic-search/branch-seo.md | pages/organic-search/branch-seo.md ?}

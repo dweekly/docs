@@ -1,1 +1,1 @@
-{! pages/links/advanced-settings-configuration.md !}
+{? multilang/ja-JP/advanced-settings-configuration.md | localized/links/advanced-settings-configuration.md | pages/links/advanced-settings-configuration.md ?}

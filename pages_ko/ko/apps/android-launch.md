@@ -1,1 +1,1 @@
-{! pages/apps/android-launch.md !}
+{? multilang/ko-KR/android-launch.md | localized/apps/android-launch.md | pages/apps/android-launch.md ?}

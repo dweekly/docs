@@ -1,1 +1,1 @@
-{! pages/dashboard/aggregate-data-access.md !}
+{? multilang/zh-CN/aggregate-data-access.md | localized/dashboard/aggregate-data-access.md | pages/dashboard/aggregate-data-access.md ?}

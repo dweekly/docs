@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/linkmine-mobile-tracking.md !}
+{? multilang/ja-JP/linkmine-mobile-tracking.md | localized/deep-linked-ads/linkmine-mobile-tracking.md | pages/deep-linked-ads/linkmine-mobile-tracking.md ?}

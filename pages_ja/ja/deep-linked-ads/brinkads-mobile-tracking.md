@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/brinkads-mobile-tracking.md !}
+{? multilang/ja-JP/brinkads-mobile-tracking.md | localized/deep-linked-ads/brinkads-mobile-tracking.md | pages/deep-linked-ads/brinkads-mobile-tracking.md ?}

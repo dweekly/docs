@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/red-for-publishers-mobile-tracking.md !}
+{? multilang/ja-JP/red-for-publishers-mobile-tracking.md | localized/deep-linked-ads/red-for-publishers-mobile-tracking.md | pages/deep-linked-ads/red-for-publishers-mobile-tracking.md ?}

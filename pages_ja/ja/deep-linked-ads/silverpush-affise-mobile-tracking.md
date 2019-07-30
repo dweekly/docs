@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/silverpush-affise-mobile-tracking.md !}
+{? multilang/ja-JP/silverpush-affise-mobile-tracking.md | localized/deep-linked-ads/silverpush-affise-mobile-tracking.md | pages/deep-linked-ads/silverpush-affise-mobile-tracking.md ?}

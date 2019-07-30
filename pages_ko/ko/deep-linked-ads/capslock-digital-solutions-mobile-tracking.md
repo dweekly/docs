@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/capslock-digital-solutions-mobile-tracking.md !}
+{? multilang/ko-KR/capslock-digital-solutions-mobile-tracking.md | localized/deep-linked-ads/capslock-digital-solutions-mobile-tracking.md | pages/deep-linked-ads/capslock-digital-solutions-mobile-tracking.md ?}

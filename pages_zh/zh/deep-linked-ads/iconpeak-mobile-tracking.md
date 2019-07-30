@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/iconpeak-mobile-tracking.md !}
+{? multilang/zh-CN/iconpeak-mobile-tracking.md | localized/deep-linked-ads/iconpeak-mobile-tracking.md | pages/deep-linked-ads/iconpeak-mobile-tracking.md ?}

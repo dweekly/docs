@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/youappi-mobile-tracking.md !}
+{? multilang/ja-JP/youappi-mobile-tracking.md | localized/deep-linked-ads/youappi-mobile-tracking.md | pages/deep-linked-ads/youappi-mobile-tracking.md ?}

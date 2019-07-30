@@ -1,1 +1,1 @@
-{! pages/dashboard/channel-level-access.md !}
+{? multilang/ja-JP/channel-level-access.md | localized/dashboard/channel-level-access.md | pages/dashboard/channel-level-access.md ?}

@@ -1,1 +1,1 @@
-{! pages/dashboard/analytics-overview.md !}
+{? multilang/ja-JP/analytics-overview.md | localized/dashboard/analytics-overview.md | pages/dashboard/analytics-overview.md ?}

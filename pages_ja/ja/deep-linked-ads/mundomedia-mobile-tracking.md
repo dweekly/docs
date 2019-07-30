@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/mundomedia-mobile-tracking.md !}
+{? multilang/ja-JP/mundomedia-mobile-tracking.md | localized/deep-linked-ads/mundomedia-mobile-tracking.md | pages/deep-linked-ads/mundomedia-mobile-tracking.md ?}

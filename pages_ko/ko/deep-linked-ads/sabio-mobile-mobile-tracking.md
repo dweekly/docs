@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/sabio-mobile-mobile-tracking.md !}
+{? multilang/ko-KR/sabio-mobile-mobile-tracking.md | localized/deep-linked-ads/sabio-mobile-mobile-tracking.md | pages/deep-linked-ads/sabio-mobile-mobile-tracking.md ?}

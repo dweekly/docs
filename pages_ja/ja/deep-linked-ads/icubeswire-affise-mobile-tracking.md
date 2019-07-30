@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/icubeswire-affise-mobile-tracking.md !}
+{? multilang/ja-JP/icubeswire-affise-mobile-tracking.md | localized/deep-linked-ads/icubeswire-affise-mobile-tracking.md | pages/deep-linked-ads/icubeswire-affise-mobile-tracking.md ?}

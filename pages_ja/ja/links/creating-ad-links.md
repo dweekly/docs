@@ -1,1 +1,1 @@
-{! pages/links/creating-ad-links.md !}
+{? multilang/ja-JP/creating-ad-links.md | localized/links/creating-ad-links.md | pages/links/creating-ad-links.md ?}

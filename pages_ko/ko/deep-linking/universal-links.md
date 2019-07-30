@@ -1,1 +1,1 @@
-{! pages/deep-linking/universal-links.md !}
+{? multilang/ko-KR/universal-links.md | localized/deep-linking/universal-links.md | pages/deep-linking/universal-links.md ?}

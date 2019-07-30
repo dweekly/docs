@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/columbus-mobile-tracking.md !}
+{? multilang/zh-CN/columbus-mobile-tracking.md | localized/deep-linked-ads/columbus-mobile-tracking.md | pages/deep-linked-ads/columbus-mobile-tracking.md ?}

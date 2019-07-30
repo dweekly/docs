@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/gmt-consultancy-mobile-tracking.md !}
+{? multilang/ko-KR/gmt-consultancy-mobile-tracking.md | localized/deep-linked-ads/gmt-consultancy-mobile-tracking.md | pages/deep-linked-ads/gmt-consultancy-mobile-tracking.md ?}

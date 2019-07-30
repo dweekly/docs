@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/vcommission-media-mobile-tracking.md !}
+{? multilang/ko-KR/vcommission-media-mobile-tracking.md | localized/deep-linked-ads/vcommission-media-mobile-tracking.md | pages/deep-linked-ads/vcommission-media-mobile-tracking.md ?}

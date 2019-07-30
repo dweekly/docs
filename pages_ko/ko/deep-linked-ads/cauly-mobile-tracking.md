@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/cauly-mobile-tracking.md !}
+{? multilang/ko-KR/cauly-mobile-tracking.md | localized/deep-linked-ads/cauly-mobile-tracking.md | pages/deep-linked-ads/cauly-mobile-tracking.md ?}

@@ -1,1 +1,1 @@
-{! pages/emails/yes-marketing.md !}
+{? multilang/ko-KR/yes-marketing.md | localized/emails/yes-marketing.md | pages/emails/yes-marketing.md ?}

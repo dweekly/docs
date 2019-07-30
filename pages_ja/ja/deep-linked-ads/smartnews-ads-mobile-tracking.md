@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/smartnews-ads-mobile-tracking.md !}
+{? multilang/ja-JP/smartnews-ads-mobile-tracking.md | localized/deep-linked-ads/smartnews-ads-mobile-tracking.md | pages/deep-linked-ads/smartnews-ads-mobile-tracking.md ?}

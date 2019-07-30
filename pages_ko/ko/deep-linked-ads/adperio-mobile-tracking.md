@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/adperio-mobile-tracking.md !}
+{? multilang/ko-KR/adperio-mobile-tracking.md | localized/deep-linked-ads/adperio-mobile-tracking.md | pages/deep-linked-ads/adperio-mobile-tracking.md ?}

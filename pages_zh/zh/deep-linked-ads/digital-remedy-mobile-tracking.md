@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/digital-remedy-mobile-tracking.md !}
+{? multilang/zh-CN/digital-remedy-mobile-tracking.md | localized/deep-linked-ads/digital-remedy-mobile-tracking.md | pages/deep-linked-ads/digital-remedy-mobile-tracking.md ?}

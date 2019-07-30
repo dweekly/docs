@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/cashtree-for-indonesia-mobile-tracking.md !}
+{? multilang/ja-JP/cashtree-for-indonesia-mobile-tracking.md | localized/deep-linked-ads/cashtree-for-indonesia-mobile-tracking.md | pages/deep-linked-ads/cashtree-for-indonesia-mobile-tracking.md ?}

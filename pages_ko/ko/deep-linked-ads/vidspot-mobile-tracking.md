@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/vidspot-mobile-tracking.md !}
+{? multilang/ko-KR/vidspot-mobile-tracking.md | localized/deep-linked-ads/vidspot-mobile-tracking.md | pages/deep-linked-ads/vidspot-mobile-tracking.md ?}

@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/revmob-mobile-tracking.md !}
+{? multilang/ja-JP/revmob-mobile-tracking.md | localized/deep-linked-ads/revmob-mobile-tracking.md | pages/deep-linked-ads/revmob-mobile-tracking.md ?}

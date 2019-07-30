@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/tradelab-mobile-tracking.md !}
+{? multilang/ko-KR/tradelab-mobile-tracking.md | localized/deep-linked-ads/tradelab-mobile-tracking.md | pages/deep-linked-ads/tradelab-mobile-tracking.md ?}

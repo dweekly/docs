@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/google-ads-enable.md !}
+{? multilang/ko-KR/google-ads-enable.md | localized/deep-linked-ads/google-ads-enable.md | pages/deep-linked-ads/google-ads-enable.md ?}

@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/xy-ads-mobile-tracking.md !}
+{? multilang/ja-JP/xy-ads-mobile-tracking.md | localized/deep-linked-ads/xy-ads-mobile-tracking.md | pages/deep-linked-ads/xy-ads-mobile-tracking.md ?}

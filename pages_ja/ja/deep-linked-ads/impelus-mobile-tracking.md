@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/impelus-mobile-tracking.md !}
+{? multilang/ja-JP/impelus-mobile-tracking.md | localized/deep-linked-ads/impelus-mobile-tracking.md | pages/deep-linked-ads/impelus-mobile-tracking.md ?}

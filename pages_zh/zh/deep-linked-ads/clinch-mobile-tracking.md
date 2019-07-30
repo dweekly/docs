@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/clinch-mobile-tracking.md !}
+{? multilang/zh-CN/clinch-mobile-tracking.md | localized/deep-linked-ads/clinch-mobile-tracking.md | pages/deep-linked-ads/clinch-mobile-tracking.md ?}

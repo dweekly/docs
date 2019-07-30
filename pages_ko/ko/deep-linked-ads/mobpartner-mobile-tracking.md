@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/mobpartner-mobile-tracking.md !}
+{? multilang/ko-KR/mobpartner-mobile-tracking.md | localized/deep-linked-ads/mobpartner-mobile-tracking.md | pages/deep-linked-ads/mobpartner-mobile-tracking.md ?}

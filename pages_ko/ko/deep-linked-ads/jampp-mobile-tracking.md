@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/jampp-mobile-tracking.md !}
+{? multilang/ko-KR/jampp-mobile-tracking.md | localized/deep-linked-ads/jampp-mobile-tracking.md | pages/deep-linked-ads/jampp-mobile-tracking.md ?}

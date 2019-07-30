@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/i-mobile-mobile-tracking.md !}
+{? multilang/ko-KR/i-mobile-mobile-tracking.md | localized/deep-linked-ads/i-mobile-mobile-tracking.md | pages/deep-linked-ads/i-mobile-mobile-tracking.md ?}

@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/admitad-mobile-tracking.md !}
+{? multilang/zh-CN/admitad-mobile-tracking.md | localized/deep-linked-ads/admitad-mobile-tracking.md | pages/deep-linked-ads/admitad-mobile-tracking.md ?}

@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/value-direct-mobile-tracking.md !}
+{? multilang/zh-CN/value-direct-mobile-tracking.md | localized/deep-linked-ads/value-direct-mobile-tracking.md | pages/deep-linked-ads/value-direct-mobile-tracking.md ?}

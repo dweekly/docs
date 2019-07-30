@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/offer18-mobile-tracking.md !}
+{? multilang/zh-CN/offer18-mobile-tracking.md | localized/deep-linked-ads/offer18-mobile-tracking.md | pages/deep-linked-ads/offer18-mobile-tracking.md ?}

@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/living-consumer-mobile-tracking.md !}
+{? multilang/zh-CN/living-consumer-mobile-tracking.md | localized/deep-linked-ads/living-consumer-mobile-tracking.md | pages/deep-linked-ads/living-consumer-mobile-tracking.md ?}

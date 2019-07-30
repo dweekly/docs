@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/mobsuccess-mobile-tracking.md !}
+{? multilang/ja-JP/mobsuccess-mobile-tracking.md | localized/deep-linked-ads/mobsuccess-mobile-tracking.md | pages/deep-linked-ads/mobsuccess-mobile-tracking.md ?}

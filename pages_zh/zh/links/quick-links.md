@@ -1,1 +1,1 @@
-{! pages/links/quick-links.md !}
+{? multilang/zh-CN/quick-links.md | localized/links/quick-links.md | pages/links/quick-links.md ?}

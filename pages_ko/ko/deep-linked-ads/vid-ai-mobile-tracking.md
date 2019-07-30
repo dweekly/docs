@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/vid-ai-mobile-tracking.md !}
+{? multilang/ko-KR/vid-ai-mobile-tracking.md | localized/deep-linked-ads/vid-ai-mobile-tracking.md | pages/deep-linked-ads/vid-ai-mobile-tracking.md ?}

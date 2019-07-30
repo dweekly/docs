@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/magnet-mobile-tracking.md !}
+{? multilang/ja-JP/magnet-mobile-tracking.md | localized/deep-linked-ads/magnet-mobile-tracking.md | pages/deep-linked-ads/magnet-mobile-tracking.md ?}

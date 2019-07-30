@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/themobiadz-mobile-tracking.md !}
+{? multilang/ko-KR/themobiadz-mobile-tracking.md | localized/deep-linked-ads/themobiadz-mobile-tracking.md | pages/deep-linked-ads/themobiadz-mobile-tracking.md ?}

@@ -1,1 +1,1 @@
-{! pages/links/default-link-behavior.md !}
+{? multilang/ja-JP/default-link-behavior.md | localized/links/default-link-behavior.md | pages/links/default-link-behavior.md ?}

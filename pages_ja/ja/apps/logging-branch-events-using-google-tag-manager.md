@@ -1,1 +1,1 @@
-{! pages/apps/logging-branch-events-using-google-tag-manager.md !}
+{? multilang/ja-JP/logging-branch-events-using-google-tag-manager.md | localized/apps/logging-branch-events-using-google-tag-manager.md | pages/apps/logging-branch-events-using-google-tag-manager.md ?}

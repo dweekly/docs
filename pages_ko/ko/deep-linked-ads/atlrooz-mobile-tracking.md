@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/atlrooz-mobile-tracking.md !}
+{? multilang/ko-KR/atlrooz-mobile-tracking.md | localized/deep-linked-ads/atlrooz-mobile-tracking.md | pages/deep-linked-ads/atlrooz-mobile-tracking.md ?}

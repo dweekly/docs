@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/affonix-mobile-tracking.md !}
+{? multilang/zh-CN/affonix-mobile-tracking.md | localized/deep-linked-ads/affonix-mobile-tracking.md | pages/deep-linked-ads/affonix-mobile-tracking.md ?}

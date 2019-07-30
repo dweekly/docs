@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/tapsell-mobile-tracking.md !}
+{? multilang/zh-CN/tapsell-mobile-tracking.md | localized/deep-linked-ads/tapsell-mobile-tracking.md | pages/deep-linked-ads/tapsell-mobile-tracking.md ?}

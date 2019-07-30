@@ -1,1 +1,1 @@
-{! pages/emails/messagegears.md !}
+{? multilang/zh-CN/messagegears.md | localized/emails/messagegears.md | pages/emails/messagegears.md ?}

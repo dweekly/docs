@@ -1,1 +1,1 @@
-{! pages/partner-management/multiple-goal-id-support.md !}
+{? multilang/ja-JP/multiple-goal-id-support.md | localized/partner-management/multiple-goal-id-support.md | pages/partner-management/multiple-goal-id-support.md ?}

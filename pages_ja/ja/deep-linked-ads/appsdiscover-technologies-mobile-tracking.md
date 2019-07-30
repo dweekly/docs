@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/appsdiscover-technologies-mobile-tracking.md !}
+{? multilang/ja-JP/appsdiscover-technologies-mobile-tracking.md | localized/deep-linked-ads/appsdiscover-technologies-mobile-tracking.md | pages/deep-linked-ads/appsdiscover-technologies-mobile-tracking.md ?}

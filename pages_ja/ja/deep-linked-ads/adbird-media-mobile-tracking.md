@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/adbird-media-mobile-tracking.md !}
+{? multilang/ja-JP/adbird-media-mobile-tracking.md | localized/deep-linked-ads/adbird-media-mobile-tracking.md | pages/deep-linked-ads/adbird-media-mobile-tracking.md ?}

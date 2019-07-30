@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/ads-army-mobile-tracking.md !}
+{? multilang/ja-JP/ads-army-mobile-tracking.md | localized/deep-linked-ads/ads-army-mobile-tracking.md | pages/deep-linked-ads/ads-army-mobile-tracking.md ?}

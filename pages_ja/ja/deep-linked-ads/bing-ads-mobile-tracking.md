@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/bing-ads-mobile-tracking.md !}
+{? multilang/ja-JP/bing-ads-mobile-tracking.md | localized/deep-linked-ads/bing-ads-mobile-tracking.md | pages/deep-linked-ads/bing-ads-mobile-tracking.md ?}

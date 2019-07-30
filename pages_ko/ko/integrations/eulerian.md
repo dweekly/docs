@@ -1,1 +1,1 @@
-{! pages/integrations/eulerian.md !}
+{? multilang/ko-KR/eulerian.md | localized/integrations/eulerian.md | pages/integrations/eulerian.md ?}

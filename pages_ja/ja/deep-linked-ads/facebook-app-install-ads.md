@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/facebook-app-install-ads.md !}
+{? multilang/ja-JP/facebook-app-install-ads.md | localized/deep-linked-ads/facebook-app-install-ads.md | pages/deep-linked-ads/facebook-app-install-ads.md ?}

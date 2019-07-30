@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/volo-media-mobile-tracking.md !}
+{? multilang/ja-JP/volo-media-mobile-tracking.md | localized/deep-linked-ads/volo-media-mobile-tracking.md | pages/deep-linked-ads/volo-media-mobile-tracking.md ?}

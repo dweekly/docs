@@ -37,7 +37,6 @@ extra_javascript:
   - 'zh/_assets/js/languages.js'
   - 'zh/_assets/js/utils.js'
   - 'zh/_assets/js/main.js'
-  - 'zh/_assets/js/image_localization.js'
 
 # Extensions
 markdown_extensions:
@@ -59,8 +58,10 @@ markdown_extensions:
       base_path: includes/
 
 # Plugins
-plugins: []
-
+plugins:
+    - file-selector
+    - image-localization
+locale: zh
 # Options
 extra:
   social:

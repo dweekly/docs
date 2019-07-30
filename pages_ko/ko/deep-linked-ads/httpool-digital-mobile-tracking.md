@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/httpool-digital-mobile-tracking.md !}
+{? multilang/ko-KR/httpool-digital-mobile-tracking.md | localized/deep-linked-ads/httpool-digital-mobile-tracking.md | pages/deep-linked-ads/httpool-digital-mobile-tracking.md ?}

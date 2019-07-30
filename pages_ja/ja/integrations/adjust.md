@@ -1,1 +1,1 @@
-{! pages/integrations/adjust.md !}
+{? multilang/ja-JP/adjust.md | localized/integrations/adjust.md | pages/integrations/adjust.md ?}

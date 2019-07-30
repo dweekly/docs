@@ -1,1 +1,1 @@
-{! pages/organic-search/firebase.md !}
+{? multilang/ja-JP/firebase.md | localized/organic-search/firebase.md | pages/organic-search/firebase.md ?}

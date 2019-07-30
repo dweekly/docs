@@ -1,1 +1,1 @@
-{! pages/partner-management/branch-certified-partner-program.md !}
+{? multilang/ko-KR/branch-certified-partner-program.md | localized/partner-management/branch-certified-partner-program.md | pages/partner-management/branch-certified-partner-program.md ?}

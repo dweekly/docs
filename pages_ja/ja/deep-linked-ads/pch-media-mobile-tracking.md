@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/pch-media-mobile-tracking.md !}
+{? multilang/ja-JP/pch-media-mobile-tracking.md | localized/deep-linked-ads/pch-media-mobile-tracking.md | pages/deep-linked-ads/pch-media-mobile-tracking.md ?}

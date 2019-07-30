@@ -1,1 +1,1 @@
-{! pages/social-links/social-flow.md !}
+{? multilang/ja-JP/social-flow.md | localized/social-links/social-flow.md | pages/social-links/social-flow.md ?}

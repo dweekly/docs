@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/jun-group-mobile-tracking.md !}
+{? multilang/ja-JP/jun-group-mobile-tracking.md | localized/deep-linked-ads/jun-group-mobile-tracking.md | pages/deep-linked-ads/jun-group-mobile-tracking.md ?}

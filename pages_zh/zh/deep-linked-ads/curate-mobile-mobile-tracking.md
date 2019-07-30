@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/curate-mobile-mobile-tracking.md !}
+{? multilang/zh-CN/curate-mobile-mobile-tracking.md | localized/deep-linked-ads/curate-mobile-mobile-tracking.md | pages/deep-linked-ads/curate-mobile-mobile-tracking.md ?}

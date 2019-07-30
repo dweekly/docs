@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/mobavenue-mobile-tracking.md !}
+{? multilang/ko-KR/mobavenue-mobile-tracking.md | localized/deep-linked-ads/mobavenue-mobile-tracking.md | pages/deep-linked-ads/mobavenue-mobile-tracking.md ?}

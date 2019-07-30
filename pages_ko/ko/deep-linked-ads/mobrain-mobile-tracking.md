@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/mobrain-mobile-tracking.md !}
+{? multilang/ko-KR/mobrain-mobile-tracking.md | localized/deep-linked-ads/mobrain-mobile-tracking.md | pages/deep-linked-ads/mobrain-mobile-tracking.md ?}

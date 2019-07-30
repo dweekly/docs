@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/zorka-mobi-mobile-tracking.md !}
+{? multilang/ja-JP/zorka-mobi-mobile-tracking.md | localized/deep-linked-ads/zorka-mobi-mobile-tracking.md | pages/deep-linked-ads/zorka-mobi-mobile-tracking.md ?}

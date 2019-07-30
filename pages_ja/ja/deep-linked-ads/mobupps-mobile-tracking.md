@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/mobupps-mobile-tracking.md !}
+{? multilang/ja-JP/mobupps-mobile-tracking.md | localized/deep-linked-ads/mobupps-mobile-tracking.md | pages/deep-linked-ads/mobupps-mobile-tracking.md ?}

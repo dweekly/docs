@@ -1,1 +1,1 @@
-{! pages/exports/query-api.md !}
+{? multilang/zh-CN/query-api.md | localized/exports/query-api.md | pages/exports/query-api.md ?}
