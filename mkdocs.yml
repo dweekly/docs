@@ -146,10 +146,11 @@ nav:
   - Developer Resources:
     - Overview: resources/native-sdks-and-plugins.md
     - Branch SDKs & API:
-      - iOS: apps/ios.md
-      - Android: apps/android.md
-      - Website: web/integrate.md
-      - Mac OS: apps/mac-os.md
+      - iOS SDK: apps/ios.md
+      - Android SDK: apps/android.md
+      - Website SDK: web/integrate.md
+      - Mac OS SDK: apps/mac-os.md
+      - Windows SDK: apps/windows-csharp.md
       - Deep Linking API: apps/deep-linking-api.md
     - Plugins:
       - Cordova PhoneGap Ionic: apps/cordova-phonegap-ionic.md

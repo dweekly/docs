@@ -24,10 +24,6 @@ Complete the `Basic integration` within [Configure your dashboard](/dashboard/in
 
     ![image](/_assets/img/pages/dashboard/fallback.png)
 
-### Integrate app
-
-Complete [Integrate your app](#dialog-code)
-
 ### Install the Framework
 
 Add the Branch.framework as an embedded binary in your app.
