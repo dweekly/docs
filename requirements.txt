@@ -6,4 +6,4 @@ mkdocs-material==4.0.2
 Markdown==3.0.1
 requests==2.21.0
 mkdocs-file-selector==0.1.45
-mkdocs-image-localization==0.1.4
+mkdocs-image-localization==0.1.5

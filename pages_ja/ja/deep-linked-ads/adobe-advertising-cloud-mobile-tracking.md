@@ -1,1 +1,0 @@
-{? multilang/ja-JP/adobe-advertising-cloud-mobile-tracking.md | localized/deep-linked-ads/adobe-advertising-cloud-mobile-tracking.md | pages/deep-linked-ads/adobe-advertising-cloud-mobile-tracking.md ?}

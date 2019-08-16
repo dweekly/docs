@@ -1,1 +1,0 @@
-{? multilang/ko-KR/kreativads-mobile-tracking.md | localized/deep-linked-ads/kreativads-mobile-tracking.md | pages/deep-linked-ads/kreativads-mobile-tracking.md ?}

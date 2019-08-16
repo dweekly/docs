@@ -1,1 +1,0 @@
-{? multilang/ko-KR/rationalheads-technologies-mobile-tracking.md | localized/deep-linked-ads/rationalheads-technologies-mobile-tracking.md | pages/deep-linked-ads/rationalheads-technologies-mobile-tracking.md ?}

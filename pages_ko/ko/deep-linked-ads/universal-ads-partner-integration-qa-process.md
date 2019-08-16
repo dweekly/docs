@@ -1,1 +1,0 @@
-{? multilang/ko-KR/universal-ads-partner-integration-qa-process.md | localized/deep-linked-ads/universal-ads-partner-integration-qa-process.md | pages/deep-linked-ads/universal-ads-partner-integration-qa-process.md ?}

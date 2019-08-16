@@ -1,1 +1,0 @@
-{? multilang/ja-JP/adsflourish-mobile-tracking.md | localized/deep-linked-ads/adsflourish-mobile-tracking.md | pages/deep-linked-ads/adsflourish-mobile-tracking.md ?}
