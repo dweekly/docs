@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mkbuild.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="41" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -199,8 +199,8 @@
         <option value="$PROJECT_DIR$/mkdocs_ko.yml" />
         <option value="$PROJECT_DIR$/mkdocs_ja.yml" />
         <option value="$PROJECT_DIR$/mkdocs_zh.yml" />
-        <option value="$PROJECT_DIR$/mkbuild.sh" />
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
+        <option value="$PROJECT_DIR$/mkbuild.sh" />
         <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
@@ -332,12 +332,12 @@
       <workItem from="1564493846755" duration="4718000" />
       <workItem from="1564565586145" duration="80000" />
       <workItem from="1565786020426" duration="6426000" />
-      <workItem from="1565944697084" duration="8070000" />
+      <workItem from="1565944697084" duration="9361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82875000" />
+    <option name="totallyTimeSpent" value="84166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="0" />
@@ -572,13 +572,6 @@
     <entry file="file://$PROJECT_DIR$/asdfadsf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mkdocs.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -595,17 +588,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mkdocs_ja.yml">
+    <entry file="file://$PROJECT_DIR$/mkdocs.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="932" column="40" selection-start-line="932" selection-start-column="40" selection-end-line="932" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mkdocs_zh.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="924" column="59" selection-start-line="924" selection-start-column="59" selection-end-line="924" selection-end-column="59" />
+        <state relative-caret-position="1102">
+          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -618,8 +604,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mkbuild.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="41" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mkdocs_ja.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="932" column="40" selection-start-line="932" selection-start-column="40" selection-end-line="932" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mkdocs_zh.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="924" column="59" selection-start-line="924" selection-start-column="59" selection-end-line="924" selection-end-column="59" />
         </state>
       </provider>
     </entry>
