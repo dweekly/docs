@@ -25,18 +25,18 @@ theme:
 docs_dir: 'pages_ja'
 site_dir: 'site_ja'
 extra_css:
-  - 'ja/_assets/css/main.css'
+  - '_assets/css/main.css'
 extra_javascript:
-  - 'ja/_assets/js/router.js'
-  - 'ja/_assets/js/events.js'
-  - 'ja/_assets/js/modals.js'
-  - 'ja/_assets/js/images.js'
-  - 'ja/_assets/js/buttons.js'
-  - 'ja/_assets/js/progress.js'
-  - 'ja/_assets/js/tabs.js'
-  - 'ja/_assets/js/languages.js'
-  - 'ja/_assets/js/utils.js'
-  - 'ja/_assets/js/main.js'
+  - '_assets/js/router.js'
+  - '_assets/js/events.js'
+  - '_assets/js/modals.js'
+  - '_assets/js/images.js'
+  - '_assets/js/buttons.js'
+  - '_assets/js/progress.js'
+  - '_assets/js/tabs.js'
+  - '_assets/js/languages.js'
+  - '_assets/js/utils.js'
+  - '_assets/js/main.js'
 
 # Extensions
 markdown_extensions:

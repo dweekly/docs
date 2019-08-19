@@ -25,18 +25,18 @@ theme:
 docs_dir: 'pages_ko'
 site_dir: 'site_ko'
 extra_css:
-  - 'ko/_assets/css/main.css'
+  - '_assets/css/main.css'
 extra_javascript:
-  - 'ko/_assets/js/router.js'
-  - 'ko/_assets/js/events.js'
-  - 'ko/_assets/js/modals.js'
-  - 'ko/_assets/js/images.js'
-  - 'ko/_assets/js/buttons.js'
-  - 'ko/_assets/js/progress.js'
-  - 'ko/_assets/js/tabs.js'
-  - 'ko/_assets/js/languages.js'
-  - 'ko/_assets/js/utils.js'
-  - 'ko/_assets/js/main.js'
+  - '_assets/js/router.js'
+  - '_assets/js/events.js'
+  - '_assets/js/modals.js'
+  - '_assets/js/images.js'
+  - '_assets/js/buttons.js'
+  - '_assets/js/progress.js'
+  - '_assets/js/tabs.js'
+  - '_assets/js/languages.js'
+  - '_assets/js/utils.js'
+  - '_assets/js/main.js'
 
 # Extensions
 markdown_extensions:
@@ -115,25 +115,25 @@ nav:
           - Viewing Agency/Partner Settings: ko/dashboard/agency-view.md
           - Agency/Partner Functionality in App View: ko/dashboard/app-view.md
   - Account Settings:
-      - Overview: dashboard/account-settings.md
+      - Overview: ko/dashboard/account-settings.md
       - Basic Settings:
           - Access Levels:
-              - Overview: dashboard/access-level.md
+              - Overview: ko/dashboard/access-level.md
               - Entity Views:
-                  - App View: dashboard/app-view.md
-                  - Organization View: dashboard/organization-view.md
-                  - Agency View: dashboard/agency-view.md
+                  - App View: ko/dashboard/app-view.md
+                  - Organization View: ko/dashboard/organization-view.md
+                  - Agency View: ko/dashboard/agency-view.md
               - Resource Access:
-                  - App Level Access: dashboard/app-level-access.md
-                  - Channel Level Access: dashboard/channel-level-access.md
-                  - Link Level Access: dashboard/link-level-access.md
-                  - Aggregate Data: dashboard/aggregate-data-access.md
-                  - Sensitive Data: dashboard/sensitive-data-access.md
-                  - Export Access: dashboard/export-access.md
+                  - App Level Access: ko/dashboard/app-level-access.md
+                  - Channel Level Access: ko/dashboard/channel-level-access.md
+                  - Link Level Access: ko/dashboard/link-level-access.md
+                  - Aggregate Data: ko/dashboard/aggregate-data-access.md
+                  - Sensitive Data: ko/dashboard/sensitive-data-access.md
+                  - Export Access: ko/dashboard/export-access.md
       - Advanced Settings:
-          - View Billing Information: dashboard/viewing-billing.md
-          - Enable Single Sign On: dashboard/sso.md
-          - Changing Link Domains: dashboard/changing-link-domains.md
+          - View Billing Information: ko/dashboard/viewing-billing.md
+          - Enable Single Sign On: ko/dashboard/sso.md
+          - Changing Link Domains: ko/dashboard/changing-link-domains.md
   - Link Settings:
       - Overview: links/branch-links-overview.md
       - Default Link Behavior Configuration: links/default-link-behavior.md

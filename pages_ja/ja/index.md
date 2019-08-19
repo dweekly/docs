@@ -18,30 +18,30 @@ template: main-lp-ja.html
         <img src="/_assets/img/pages/main-page/account-dot.png" />
         <p>Account Settings</p>
       </a>
-      <a href="/ja/links/branch-links-overview/">
+      <a href="/links/branch-links-overview/">
         <img src="/_assets/img/pages/main-page/links-dot.png" />
         <p>Link Settings</p>
       </a>
-      <a href="/ja/resources/native-sdks-and-plugins/">
+      <a href="/resources/native-sdks-and-plugins/">
         <img src="/_assets/img/pages/main-page/sdk-dot.png" />
         <p>Developer Resources</p>
       </a>
     </div>
     <div class="clearfix"></div>
     <div class="nav-wrap">
-      <a href="/ja/resources/branch-channels/">
+      <a href="/resources/branch-channels/">
         <img src="/_assets/img/pages/main-page/channel-dot.png" />
         <p>Channels</p>
       </a>
-      <a href="/ja/partner-management/branch-integrated-partners/">
+      <a href="/partner-management/branch-integrated-partners/">
         <img src="/_assets/img/pages/main-page/partner-dot.png" />
         <p>Partner Management</p>
       </a>
-      <a href="/ja/dashboard/analytics-overview/">
+      <a href="/dashboard/analytics-overview/">
         <img src="/_assets/img/pages/main-page/reports-dot.png" />
         <p>Reports & Analytics</p>
       </a>
-      <a href="/ja/exports/data-feeds-overview/">
+      <a href="/exports/data-feeds-overview/">
         <img src="/_assets/img/pages/main-page/feeds-dot.png" />
         <p>Data Feeds</p>
       </a>

@@ -25,18 +25,18 @@ theme:
 docs_dir: 'pages_zh'
 site_dir: 'site_zh'
 extra_css:
-  - 'zh/_assets/css/main.css'
+  - '_assets/css/main.css'
 extra_javascript:
-  - 'zh/_assets/js/router.js'
-  - 'zh/_assets/js/events.js'
-  - 'zh/_assets/js/modals.js'
-  - 'zh/_assets/js/images.js'
-  - 'zh/_assets/js/buttons.js'
-  - 'zh/_assets/js/progress.js'
-  - 'zh/_assets/js/tabs.js'
-  - 'zh/_assets/js/languages.js'
-  - 'zh/_assets/js/utils.js'
-  - 'zh/_assets/js/main.js'
+  - '_assets/js/router.js'
+  - '_assets/js/events.js'
+  - '_assets/js/modals.js'
+  - '_assets/js/images.js'
+  - '_assets/js/buttons.js'
+  - '_assets/js/progress.js'
+  - '_assets/js/tabs.js'
+  - '_assets/js/languages.js'
+  - '_assets/js/utils.js'
+  - '_assets/js/main.js'
 
 # Extensions
 markdown_extensions:
