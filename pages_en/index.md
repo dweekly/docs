@@ -1,4 +1,10 @@
 template: main-lp.html
+<script src="_assets/js/docs-language-router.js"></script>
+<script>
+  var locales = { 'en-US': '','ko-KR': '/ko', 'ja-JP': '/ja', 'zh-CN' : '/zh' };
+  console.log(locales);
+  languageRouter(locales, true);
+</script>****
 <div class="main-page">
 <p class="greeting">How can we help?</p>
   <div class="search-bar">
@@ -74,9 +80,9 @@ template: main-lp.html
   <div class="clearfix"></div>
   <!--/bottom-nav-->
   <div align="right">
-  <a href="/">English</a>
-  <a href="/ko/">Korean</a>
-  <a href="/ja/">Japanese</a>
-  <a href="/zh/">Chinesse</a>
+  <a href="/" onclick="setLocale('en', true)">English</a>
+  <a href="/ko/" onclick="setLocale('ko', true)">Korean</a>
+  <a href="/ja/" onclick="setLocale('ja', true)">Japanese</a>
+  <a href="/zh/" onclick="setLocale('zh', true)">Chinesse</a>
   </div>
 </div>

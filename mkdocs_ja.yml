@@ -37,6 +37,7 @@ extra_javascript:
   - '_assets/js/languages.js'
   - '_assets/js/utils.js'
   - '_assets/js/main.js'
+  - '_assets/js/docs-language-router.js'
 
 # Extensions
 markdown_extensions:

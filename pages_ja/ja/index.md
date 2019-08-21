@@ -74,9 +74,9 @@ template: main-lp-ja.html
   <div class="clearfix"></div>
   <!--/bottom-nav-->
   <div align="right">
-    <a href="/">English</a>
-    <a href="/ko/">Korean</a>
-    <a href="/ja/">Japanese</a>
-    <a href="/zh/">Chinesse</a>
+     <a href="/" onclick="setLocale('en', true)">English</a>
+     <a href="/ko/" onclick="setLocale('ko', true)">Korean</a>
+     <a href="/ja/" onclick="setLocale('ja', true)">Japanese</a>
+     <a href="/zh/" onclick="setLocale('zh', true)">Chinesse</a>
     </div>
 </div>
