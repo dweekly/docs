@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/google-ads-troubleshooting.md !}
+{? pages/deep-linked-ads/google-ads-troubleshooting.md | multilang/deep-linked-ads/google-ads-troubleshooting.md ?}

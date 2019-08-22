@@ -1,1 +1,1 @@
-{! pages/integrations/appmetrica.md !}
+{? pages/integrations/appmetrica.md | multilang/integrations/appmetrica.md ?}

@@ -1,1 +1,1 @@
-{! pages/deep-linking/universal-links.md !}
+{? pages/deep-linking/universal-links.md | multilang/deep-linking/universal-links.md ?}

@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/dynalyst-mobile-tracking.md !}
+{? pages/deep-linked-ads/dynalyst-mobile-tracking.md | multilang/deep-linked-ads/dynalyst-mobile-tracking.md ?}

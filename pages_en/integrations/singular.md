@@ -1,1 +1,1 @@
-{! pages/integrations/singular.md !}
+{? pages/integrations/singular.md | multilang/integrations/singular.md ?}

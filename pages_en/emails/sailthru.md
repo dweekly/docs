@@ -1,1 +1,1 @@
-{! pages/emails/sailthru.md !}
+{? pages/emails/sailthru.md | multilang/emails/sailthru.md ?}

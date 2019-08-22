@@ -1,0 +1,1 @@
+# This file should be translated by SmartLing in ja locale

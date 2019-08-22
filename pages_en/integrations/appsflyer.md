@@ -1,1 +1,1 @@
-{! pages/integrations/appsflyer.md !}
+{? pages/integrations/appsflyer.md | multilang/integrations/appsflyer.md ?}

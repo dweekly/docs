@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/google-ads-uac.md !}
+{? pages/deep-linked-ads/google-ads-uac.md | multilang/deep-linked-ads/google-ads-uac.md ?}

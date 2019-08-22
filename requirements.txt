@@ -1,9 +1,9 @@
 mkdocs==1.0.4
 pygments==2.3.1
 pymdown-extensions==6.0.0
-markdown-include==0.5.1
+markdown-includecustom==0.1.6
 mkdocs-material==4.0.2
 Markdown==3.0.1
 requests==2.21.0
 mkdocs-file-selector==0.1.45
-mkdocs-image-localization==0.1.8
+mkdocs-multilang==0.1.3

@@ -1,1 +1,1 @@
-{! pages/exports/ua-webhooks.md !}
+{? pages/exports/ua-webhooks.md | multilang/exports/ua-webhooks.md ?}

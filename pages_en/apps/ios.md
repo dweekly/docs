@@ -1,1 +1,1 @@
-{! pages/apps/ios.md !}
+{? pages/apps/ios.md | multilang/apps/ios.md ?}

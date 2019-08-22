@@ -1,1 +1,1 @@
-{! pages/integrations/backinapp.md !}
+{? pages/integrations/backinapp.md | multilang/integrations/backinapp.md ?}

@@ -1,1 +1,1 @@
-{! pages/emails/yes-marketing.md !}
+{? pages/emails/yes-marketing.md | multilang/emails/yes-marketing.md ?}

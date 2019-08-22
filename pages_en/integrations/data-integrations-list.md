@@ -1,1 +1,1 @@
-{! pages/integrations/data-integrations-list.md !}
+{? pages/integrations/data-integrations-list.md | multilang/integrations/data-integrations-list.md ?}

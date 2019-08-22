@@ -1,1 +1,1 @@
-{! pages/emails/mailjet.md !}
+{? pages/emails/mailjet.md | multilang/emails/mailjet.md ?}

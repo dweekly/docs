@@ -1,1 +1,1 @@
-{! pages/emails/marketo.md !}
+{? pages/emails/marketo.md | multilang/emails/marketo.md ?}

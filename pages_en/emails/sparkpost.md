@@ -1,1 +1,1 @@
-{! pages/emails/sparkpost.md !}
+{? pages/emails/sparkpost.md | multilang/emails/sparkpost.md ?}

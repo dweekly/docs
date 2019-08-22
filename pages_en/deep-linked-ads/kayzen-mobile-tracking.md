@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/kayzen-mobile-tracking.md !}
+{? pages/deep-linked-ads/kayzen-mobile-tracking.md | multilang/deep-linked-ads/kayzen-mobile-tracking.md ?}

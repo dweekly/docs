@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/cluep-mobile-tracking.md !}
+{? pages/deep-linked-ads/cluep-mobile-tracking.md | multilang/deep-linked-ads/cluep-mobile-tracking.md ?}

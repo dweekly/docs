@@ -70,14 +70,17 @@ markdown_extensions:
   - pymdownx.tasklist:
   - pymdownx.superfences:
   - attr_list:
-  - markdown_include.include:
-      base_path: includes/
+  - markdown_includecustom.includecustom:
+      base_path: "includes/"
+      locale_dir: "ko-KR"
+
 
 # Plugins
 plugins:
     - file-selector
-    - image-localization
+    - multilang
 locale: ko
+
 # Options
 extra:
   social:
@@ -131,25 +134,25 @@ nav:
           - Viewing Agency/Partner Settings: ko/dashboard/agency-view.md
           - Agency/Partner Functionality in App View: ko/dashboard/app-view.md
   - Account Settings:
-      - Overview: ko/dashboard/account-settings.md
+      - Overview: dashboard/account-settings.md
       - Basic Settings:
           - Access Levels:
-              - Overview: ko/dashboard/access-level.md
+              - Overview: dashboard/access-level.md
               - Entity Views:
-                  - App View: ko/dashboard/app-view.md
-                  - Organization View: ko/dashboard/organization-view.md
-                  - Agency View: ko/dashboard/agency-view.md
+                  - App View: dashboard/app-view.md
+                  - Organization View: dashboard/organization-view.md
+                  - Agency View: dashboard/agency-view.md
               - Resource Access:
-                  - App Level Access: ko/dashboard/app-level-access.md
-                  - Channel Level Access: ko/dashboard/channel-level-access.md
-                  - Link Level Access: ko/dashboard/link-level-access.md
-                  - Aggregate Data: ko/dashboard/aggregate-data-access.md
-                  - Sensitive Data: ko/dashboard/sensitive-data-access.md
-                  - Export Access: ko/dashboard/export-access.md
+                  - App Level Access: dashboard/app-level-access.md
+                  - Channel Level Access: dashboard/channel-level-access.md
+                  - Link Level Access: dashboard/link-level-access.md
+                  - Aggregate Data: dashboard/aggregate-data-access.md
+                  - Sensitive Data: dashboard/sensitive-data-access.md
+                  - Export Access: dashboard/export-access.md
       - Advanced Settings:
-          - View Billing Information: ko/dashboard/viewing-billing.md
-          - Enable Single Sign On: ko/dashboard/sso.md
-          - Changing Link Domains: ko/dashboard/changing-link-domains.md
+          - View Billing Information: dashboard/viewing-billing.md
+          - Enable Single Sign On: dashboard/sso.md
+          - Changing Link Domains: dashboard/changing-link-domains.md
   - Link Settings:
       - Overview: links/branch-links-overview.md
       - Default Link Behavior Configuration: links/default-link-behavior.md
@@ -914,7 +917,7 @@ nav:
           - mParticle (import): integrations/mparticle-import.md
           - Segment (export): integrations/segment.md
           - Segment (import): integrations/segment-import.md
-          - Singular: integrations/singular.md
+          - Singular: ko/integrations/singular.md
           - TrafficGuard: integrations/trafficguard.md
           - WebEngage: integrations/webengage.md
       - Partner Resources:

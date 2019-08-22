@@ -1,1 +1,1 @@
-{! pages/emails/selligent.md !}
+{? pages/emails/selligent.md | multilang/emails/selligent.md ?}

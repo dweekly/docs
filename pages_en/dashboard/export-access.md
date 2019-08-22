@@ -1,1 +1,1 @@
-{! pages/dashboard/export-access.md !}
+{? pages/dashboard/export-access.md | multilang/dashboard/export-access.md ?}

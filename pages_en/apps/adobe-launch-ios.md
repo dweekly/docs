@@ -1,1 +1,1 @@
-{! pages/apps/adobe-launch-ios.md !}
+{? pages/apps/adobe-launch-ios.md | multilang/apps/adobe-launch-ios.md ?}

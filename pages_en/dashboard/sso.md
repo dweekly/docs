@@ -1,1 +1,1 @@
-{! pages/dashboard/sso.md !}
+{? pages/dashboard/sso.md | multilang/dashboard/sso.md ?}

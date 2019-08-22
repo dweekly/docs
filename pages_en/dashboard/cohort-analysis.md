@@ -1,1 +1,1 @@
-{! pages/dashboard/cohort-analysis.md !}
+{? pages/dashboard/cohort-analysis.md | multilang/dashboard/cohort-analysis.md ?}

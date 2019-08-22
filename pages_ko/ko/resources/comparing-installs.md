@@ -1,1 +1,1 @@
-{? multilang/ko-KR/comparing-installs.md | localized/resources/comparing-installs.md | pages/resources/comparing-installs.md ?}
+{? multilang/resources/ko-KR/comparing-installs.md | multilang/resources/comparing-installs.md | pages/resources/comparing-installs.md ?}

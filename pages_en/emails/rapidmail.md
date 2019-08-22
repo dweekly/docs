@@ -1,1 +1,1 @@
-{! pages/emails/rapidmail.md !}
+{? pages/emails/rapidmail.md | multilang/emails/rapidmail.md ?}

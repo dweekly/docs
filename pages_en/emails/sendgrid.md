@@ -1,1 +1,1 @@
-{! pages/emails/sendgrid.md !}
+{? pages/emails/sendgrid.md | multilang/emails/sendgrid.md ?}

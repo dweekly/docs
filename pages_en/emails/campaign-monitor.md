@@ -1,1 +1,1 @@
-{! pages/emails/campaign-monitor.md !}
+{? pages/emails/campaign-monitor.md | multilang/emails/campaign-monitor.md ?}

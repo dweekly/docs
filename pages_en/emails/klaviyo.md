@@ -1,1 +1,1 @@
-{! pages/emails/klaviyo.md !}
+{? pages/emails/klaviyo.md | multilang/emails/klaviyo.md ?}

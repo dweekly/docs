@@ -70,14 +70,16 @@ markdown_extensions:
   - pymdownx.tasklist:
   - pymdownx.superfences:
   - attr_list:
-  - markdown_include.include:
-      base_path: includes/
+  - markdown_includecustom.includecustom:
+          base_path: "includes/"
+          locale_dir: "ja-JP"
 
 # Plugins
 plugins:
     - file-selector
-    - image-localization
+    - multilang
 locale: ja
+
 # Options
 extra:
   social:
@@ -115,41 +117,41 @@ nav:
   - Branch Basics:
       - Overview: ja/resources/basics-overview.md
       - Attribution:
-          - Branch Matching Overview: ja/resources/matching.md
-          - Branch Attribution Logic & Settings: ja/resources/branch-attribution-logic-and-settings.md
-          - Re-engagement Attribution Logic & Settings: ja/resources/re-engagement-attribution-logic-and-settings.md
-          - Advertising Identifiers for Attribution: ja/resources/advertising-identifiers-for-attribution.md
-          - Comparing Installs to Apple iTunes and Google Play: ja/resources/comparing-installs.md
+          - Branch Matching Overview: resources/matching.md
+          - Branch Attribution Logic & Settings: resources/branch-attribution-logic-and-settings.md
+          - Re-engagement Attribution Logic & Settings: resources/re-engagement-attribution-logic-and-settings.md
+          - Advertising Identifiers for Attribution: resources/advertising-identifiers-for-attribution.md
+          - Comparing Installs to Apple iTunes and Google Play: resources/comparing-installs.md
       - Data Mapping & Formatting:
-          - Postback Macros & Functions: ja/resources/postback-macros-and-functions.md
+          - Postback Macros & Functions: resources/postback-macros-and-functions.md
       - Starting with Branch:
-          - Importing Historical User Data: ja/dashboard/importing-historical-user-data.md
-          - Testing Universal Ads Campaign Setup: ja/resources/testing-universal-ads-campaign-setup.md
+          - Importing Historical User Data: dashboard/importing-historical-user-data.md
+          - Testing Universal Ads Campaign Setup: resources/testing-universal-ads-campaign-setup.md
       - Agency & Ad Partner Access:
-          - Granting Access to Your Branch Account: ja/dashboard/granting-access-to-agencies-partners.md
-          - Agency/Partner Invitation Process: ja/dashboard/agency-ad-partner-invitation-process.md
-          - Viewing Agency/Partner Settings: ja/dashboard/agency-view.md
-          - Agency/Partner Functionality in App View: ja/dashboard/app-view.md
+          - Granting Access to Your Branch Account: dashboard/granting-access-to-agencies-partners.md
+          - Agency/Partner Invitation Process: dashboard/agency-ad-partner-invitation-process.md
+          - Viewing Agency/Partner Settings: dashboard/agency-view.md
+          - Agency/Partner Functionality in App View: dashboard/app-view.md
   - Account Settings:
-      - Overview: ja/dashboard/account-settings.md
+      - Overview: dashboard/account-settings.md
       - Basic Settings:
           - Access Levels:
-              - Overview: ja/dashboard/access-level.md
+              - Overview: dashboard/access-level.md
               - Entity Views:
-                  - App View: ja/dashboard/app-view.md
-                  - Organization View: ja/dashboard/organization-view.md
-                  - Agency View: ja/dashboard/agency-view.md
+                  - App View: dashboard/app-view.md
+                  - Organization View: dashboard/organization-view.md
+                  - Agency View: dashboard/agency-view.md
               - Resource Access:
-                  - App Level Access: ja/dashboard/app-level-access.md
-                  - Channel Level Access: ja/dashboard/channel-level-access.md
-                  - Link Level Access: ja/dashboard/link-level-access.md
-                  - Aggregate Data: ja/dashboard/aggregate-data-access.md
-                  - Sensitive Data: ja/dashboard/sensitive-data-access.md
-                  - Export Access: ja/dashboard/export-access.md
+                  - App Level Access: dashboard/app-level-access.md
+                  - Channel Level Access: dashboard/channel-level-access.md
+                  - Link Level Access: dashboard/link-level-access.md
+                  - Aggregate Data: dashboard/aggregate-data-access.md
+                  - Sensitive Data: dashboard/sensitive-data-access.md
+                  - Export Access: dashboard/export-access.md
       - Advanced Settings:
-          - View Billing Information: ja/dashboard/viewing-billing.md
-          - Enable Single Sign On: ja/dashboard/sso.md
-          - Changing Link Domains: ja/dashboard/changing-link-domains.md
+          - View Billing Information: dashboard/viewing-billing.md
+          - Enable Single Sign On: dashboard/sso.md
+          - Changing Link Domains: dashboard/changing-link-domains.md
   - Link Settings:
       - Overview: links/branch-links-overview.md
       - Default Link Behavior Configuration: links/default-link-behavior.md

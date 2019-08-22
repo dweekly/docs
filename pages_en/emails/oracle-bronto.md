@@ -1,1 +1,1 @@
-{! pages/emails/oracle-bronto.md !}
+{? pages/emails/oracle-bronto.md | multilang/emails/oracle-bronto.md ?}

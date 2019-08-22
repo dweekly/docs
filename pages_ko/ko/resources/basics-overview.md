@@ -1,1 +1,1 @@
-{? multilang/ko-KR/basics-overview.md | localized/resources/basics-overview.md | pages/resources/basics-overview.md ?}
+{? multilang/resources/ko-KR/basics-overview.md | multilang/resources/basics-overview.md | pages/resources/basics-overview.md ?}

@@ -1,1 +1,1 @@
-{! pages/emails/whatcounts.md !}
+{? pages/emails/whatcounts.md | multilang/emails/whatcounts.md ?}

@@ -1,1 +1,1 @@
-{! pages/emails/self-serve.md !}
+{? pages/emails/self-serve.md | multilang/emails/self-serve.md ?}

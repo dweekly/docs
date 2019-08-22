@@ -1,1 +1,1 @@
-{! pages/integrations/mobileaction.md !}
+{? pages/integrations/mobileaction.md | multilang/integrations/mobileaction.md ?}

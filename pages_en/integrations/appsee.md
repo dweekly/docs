@@ -1,1 +1,1 @@
-{! pages/integrations/appsee.md !}
+{? pages/integrations/appsee.md | multilang/integrations/appsee.md ?}

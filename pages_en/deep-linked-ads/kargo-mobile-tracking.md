@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/kargo-mobile-tracking.md !}
+{? pages/deep-linked-ads/kargo-mobile-tracking.md | multilang/deep-linked-ads/kargo-mobile-tracking.md ?}

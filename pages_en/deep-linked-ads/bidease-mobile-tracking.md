@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/bidease-mobile-tracking.md !}
+{? pages/deep-linked-ads/bidease-mobile-tracking.md | multilang/deep-linked-ads/bidease-mobile-tracking.md ?}

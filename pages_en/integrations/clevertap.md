@@ -1,1 +1,1 @@
-{! pages/integrations/clevertap.md !}
+{? pages/integrations/clevertap.md | multilang/integrations/clevertap.md ?}

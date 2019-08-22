@@ -1,1 +1,1 @@
-{! pages/emails/moengage.md !}
+{? pages/emails/moengage.md | multilang/emails/moengage.md ?}

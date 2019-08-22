@@ -1,1 +1,1 @@
-{! pages/integrations/segment.md !}
+{? pages/integrations/segment.md | multilang/integrations/segment.md ?}

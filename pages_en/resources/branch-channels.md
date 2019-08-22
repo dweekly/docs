@@ -1,1 +1,1 @@
-{! pages/resources/branch-channels.md !}
+{? pages/resources/branch-channels.md | multilang/resources/branch-channels.md ?}

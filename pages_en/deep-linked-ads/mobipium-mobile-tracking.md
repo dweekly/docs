@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/mobipium-mobile-tracking.md !}
+{? pages/deep-linked-ads/mobipium-mobile-tracking.md | multilang/deep-linked-ads/mobipium-mobile-tracking.md ?}

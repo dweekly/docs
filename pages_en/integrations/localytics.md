@@ -1,1 +1,1 @@
-{! pages/integrations/localytics.md !}
+{? pages/integrations/localytics.md | multilang/integrations/localytics.md ?}

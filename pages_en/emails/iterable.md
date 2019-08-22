@@ -1,1 +1,1 @@
-{! pages/emails/iterable.md !}
+{? pages/emails/iterable.md | multilang/emails/iterable.md ?}

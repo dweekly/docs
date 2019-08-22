@@ -1,1 +1,1 @@
-{! pages/emails/icubespro.md !}
+{? pages/emails/icubespro.md | multilang/emails/icubespro.md ?}

@@ -1,1 +1,1 @@
-{! pages/integrations/leanplum.md !}
+{? pages/integrations/leanplum.md | multilang/integrations/leanplum.md ?}

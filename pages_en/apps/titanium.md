@@ -1,1 +1,1 @@
-{! pages/apps/titanium.md !}
+{? pages/apps/titanium.md | multilang/apps/titanium.md ?}

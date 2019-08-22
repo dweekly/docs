@@ -1,1 +1,1 @@
-{! pages/emails/adobe-campaign-classic.md !}
+{? pages/emails/adobe-campaign-classic.md | multilang/emails/adobe-campaign-classic.md ?}

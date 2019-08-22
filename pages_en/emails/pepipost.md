@@ -1,1 +1,1 @@
-{! pages/emails/pepipost.md !}
+{? pages/emails/pepipost.md | multilang/emails/pepipost.md ?}

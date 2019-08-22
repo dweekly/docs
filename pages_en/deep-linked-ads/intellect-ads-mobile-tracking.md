@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/intellect-ads-mobile-tracking.md !}
+{? pages/deep-linked-ads/intellect-ads-mobile-tracking.md | multilang/deep-linked-ads/intellect-ads-mobile-tracking.md ?}

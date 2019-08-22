@@ -1,1 +1,1 @@
-{! pages/emails/vero.md !}
+{? pages/emails/vero.md | multilang/emails/vero.md ?}

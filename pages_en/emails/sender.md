@@ -1,1 +1,1 @@
-{! pages/emails/sender.md !}
+{? pages/emails/sender.md | multilang/emails/sender.md ?}

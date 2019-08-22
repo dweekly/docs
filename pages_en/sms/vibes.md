@@ -1,1 +1,1 @@
-{! pages/sms/vibes.md !}
+{? pages/sms/vibes.md | multilang/sms/vibes.md ?}

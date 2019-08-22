@@ -1,1 +1,1 @@
-{! pages/emails/kahuna.md !}
+{? pages/emails/kahuna.md | multilang/emails/kahuna.md ?}

@@ -70,14 +70,17 @@ markdown_extensions:
   - pymdownx.tasklist:
   - pymdownx.superfences:
   - attr_list:
-  - markdown_include.include:
-      base_path: includes/
+  - markdown_includecustom.includecustom:
+        base_path: "includes/"
+        locale_dir: "zh-CN"
+
 
 # Plugins
 plugins:
     - file-selector
-    - image-localization
+    - multilang
 locale: zh
+
 # Options
 extra:
   social:
@@ -115,41 +118,41 @@ nav:
   - Branch Basics:
       - Overview: zh/resources/basics-overview.md
       - Attribution:
-          - Branch Matching Overview: zh/resources/matching.md
-          - Branch Attribution Logic & Settings: zh/resources/branch-attribution-logic-and-settings.md
-          - Re-engagement Attribution Logic & Settings: zh/resources/re-engagement-attribution-logic-and-settings.md
-          - Advertising Identifiers for Attribution: zh/resources/advertising-identifiers-for-attribution.md
-          - Comparing Installs to Apple iTunes and Google Play: zh/resources/comparing-installs.md
+          - Branch Matching Overview: resources/matching.md
+          - Branch Attribution Logic & Settings: resources/branch-attribution-logic-and-settings.md
+          - Re-engagement Attribution Logic & Settings: resources/re-engagement-attribution-logic-and-settings.md
+          - Advertising Identifiers for Attribution: resources/advertising-identifiers-for-attribution.md
+          - Comparing Installs to Apple iTunes and Google Play: resources/comparing-installs.md
       - Data Mapping & Formatting:
-          - Postback Macros & Functions: zh/resources/postback-macros-and-functions.md
+          - Postback Macros & Functions: resources/postback-macros-and-functions.md
       - Starting with Branch:
-          - Importing Historical User Data: zh/dashboard/importing-historical-user-data.md
-          - Testing Universal Ads Campaign Setup: zh/resources/testing-universal-ads-campaign-setup.md
+          - Importing Historical User Data: dashboard/importing-historical-user-data.md
+          - Testing Universal Ads Campaign Setup: resources/testing-universal-ads-campaign-setup.md
       - Agency & Ad Partner Access:
-          - Granting Access to Your Branch Account: zh/dashboard/granting-access-to-agencies-partners.md
-          - Agency/Partner Invitation Process: zh/dashboard/agency-ad-partner-invitation-process.md
-          - Viewing Agency/Partner Settings: zh/dashboard/agency-view.md
-          - Agency/Partner Functionality in App View: zh/dashboard/app-view.md
+          - Granting Access to Your Branch Account: dashboard/granting-access-to-agencies-partners.md
+          - Agency/Partner Invitation Process: dashboard/agency-ad-partner-invitation-process.md
+          - Viewing Agency/Partner Settings: dashboard/agency-view.md
+          - Agency/Partner Functionality in App View: dashboard/app-view.md
   - Account Settings:
-      - Overview: zh/dashboard/account-settings.md
+      - Overview: dashboard/account-settings.md
       - Basic Settings:
           - Access Levels:
-              - Overview: zh/dashboard/access-level.md
+              - Overview: dashboard/access-level.md
               - Entity Views:
-                  - App View: zh/dashboard/app-view.md
-                  - Organization View: zh/dashboard/organization-view.md
-                  - Agency View: zh/dashboard/agency-view.md
+                  - App View: dashboard/app-view.md
+                  - Organization View: dashboard/organization-view.md
+                  - Agency View: dashboard/agency-view.md
               - Resource Access:
-                  - App Level Access: zh/dashboard/app-level-access.md
-                  - Channel Level Access: zh/dashboard/channel-level-access.md
-                  - Link Level Access: zh/dashboard/link-level-access.md
-                  - Aggregate Data: zh/dashboard/aggregate-data-access.md
-                  - Sensitive Data: zh/dashboard/sensitive-data-access.md
-                  - Export Access: zh/dashboard/export-access.md
+                  - App Level Access: dashboard/app-level-access.md
+                  - Channel Level Access: dashboard/channel-level-access.md
+                  - Link Level Access: dashboard/link-level-access.md
+                  - Aggregate Data: dashboard/aggregate-data-access.md
+                  - Sensitive Data: dashboard/sensitive-data-access.md
+                  - Export Access: dashboard/export-access.md
       - Advanced Settings:
-          - View Billing Information: zh/dashboard/viewing-billing.md
-          - Enable Single Sign On: zh/dashboard/sso.md
-          - Changing Link Domains: zh/dashboard/changing-link-domains.md
+          - View Billing Information: dashboard/viewing-billing.md
+          - Enable Single Sign On: dashboard/sso.md
+          - Changing Link Domains: dashboard/changing-link-domains.md
   - Link Settings:
       - Overview: links/branch-links-overview.md
       - Default Link Behavior Configuration: links/default-link-behavior.md

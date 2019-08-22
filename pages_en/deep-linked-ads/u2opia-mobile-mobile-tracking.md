@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/u2opia-mobile-mobile-tracking.md !}
+{? pages/deep-linked-ads/u2opia-mobile-mobile-tracking.md | multilang/deep-linked-ads/u2opia-mobile-mobile-tracking.md ?}

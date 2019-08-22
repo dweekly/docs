@@ -1,1 +1,1 @@
-{! pages/emails/mailgun.md !}
+{? pages/emails/mailgun.md | multilang/emails/mailgun.md ?}

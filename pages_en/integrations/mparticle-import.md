@@ -1,1 +1,1 @@
-{! pages/integrations/mparticle-import.md !}
+{? pages/integrations/mparticle-import.md | multilang/integrations/mparticle-import.md ?}

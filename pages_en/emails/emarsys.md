@@ -1,1 +1,1 @@
-{! pages/emails/emarsys.md !}
+{? pages/emails/emarsys.md | multilang/emails/emarsys.md ?}

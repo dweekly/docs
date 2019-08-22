@@ -1,1 +1,1 @@
-{! pages/links/integrate.md !}
+{? pages/links/integrate.md | multilang/links/integrate.md ?}

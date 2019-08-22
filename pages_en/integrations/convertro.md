@@ -1,1 +1,1 @@
-{! pages/integrations/convertro.md !}
+{? pages/integrations/convertro.md | multilang/integrations/convertro.md ?}

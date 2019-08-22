@@ -1,1 +1,1 @@
-{! pages/dashboard/organization-view.md !}
+{? pages/dashboard/organization-view.md | multilang/dashboard/organization-view.md ?}

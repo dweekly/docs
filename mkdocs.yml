@@ -70,9 +70,9 @@ markdown_extensions:
   - pymdownx.tasklist:
   - pymdownx.superfences:
   - attr_list:
-  - markdown_include.include:
-      base_path: includes/
-
+  - markdown_includecustom.includecustom:
+      base_path: "includes/"
+      locale_dir: ""
 # Plugins
 plugins:
   - file-selector

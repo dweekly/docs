@@ -14,7 +14,7 @@ template: main-lp-ja.html
         <img src="/_assets/img/pages/main-page/basics-dot.png" />
         <p>Branch Basics</p>
       </a>
-      <a href="/ja/dashboard/account-settings/">
+      <a href="/dashboard/account-settings/">
         <img src="/_assets/img/pages/main-page/account-dot.png" />
         <p>Account Settings</p>
       </a>

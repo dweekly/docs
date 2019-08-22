@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/crosstarget-affolio-mobile-tracking.md !}
+{? pages/deep-linked-ads/crosstarget-affolio-mobile-tracking.md | multilang/deep-linked-ads/crosstarget-affolio-mobile-tracking.md ?}

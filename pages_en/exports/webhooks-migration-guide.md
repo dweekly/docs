@@ -1,1 +1,1 @@
-{! pages/exports/webhooks-migration-guide.md !}
+{? pages/exports/webhooks-migration-guide.md | multilang/exports/webhooks-migration-guide.md ?}

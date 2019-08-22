@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/involve-asia-mobile-tracking.md !}
+{? pages/deep-linked-ads/involve-asia-mobile-tracking.md | multilang/deep-linked-ads/involve-asia-mobile-tracking.md ?}

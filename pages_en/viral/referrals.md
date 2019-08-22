@@ -1,1 +1,1 @@
-{! pages/viral/referrals.md !}
+{? pages/viral/referrals.md | multilang/viral/referrals.md ?}

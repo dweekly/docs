@@ -1,1 +1,1 @@
-{! pages/exports/webhooks.md !}
+{? pages/exports/webhooks.md | multilang/exports/webhooks.md ?}

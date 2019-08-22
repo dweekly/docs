@@ -1,1 +1,1 @@
-{! pages/exports/pba-liveview.md !}
+{? pages/exports/pba-liveview.md | multilang/exports/pba-liveview.md ?}

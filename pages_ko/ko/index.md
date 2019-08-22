@@ -14,7 +14,7 @@ template: main-lp-ko.html
         <img src="/_assets/img/pages/main-page/basics-dot.png" />
         <p>Branch Basics</p>
       </a>
-      <a href="/ko/dashboard/account-settings/">
+      <a href="/dashboard/account-settings/">
         <img src="/_assets/img/pages/main-page/account-dot.png" />
         <p>Account Settings</p>
       </a>

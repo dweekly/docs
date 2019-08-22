@@ -1,1 +1,1 @@
-{! pages/web/journeys.md !}
+{? pages/web/journeys.md | multilang/web/journeys.md ?}

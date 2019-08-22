@@ -1,1 +1,1 @@
-{! pages/integrations/apptilaus.md !}
+{? pages/integrations/apptilaus.md | multilang/integrations/apptilaus.md ?}

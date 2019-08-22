@@ -1,1 +1,1 @@
-{! pages/deep-linked-ads/netcore-solutions-mobile-tracking.md !}
+{? pages/deep-linked-ads/netcore-solutions-mobile-tracking.md | multilang/deep-linked-ads/netcore-solutions-mobile-tracking.md ?}
