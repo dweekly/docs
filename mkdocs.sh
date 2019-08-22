@@ -9,7 +9,7 @@ mkdir site/zh; cp -r site_zh/zh/* site/zh
 
 #
 #
-#####BUILD KO ONLY:
+######BUILD KO ONLY:
 #mkdocs build --config-file mkdocs_ko.yml --clean --verbose
 #rm -R site/ko
 #mkdir site/ko; cp -r site_ko/ko/* site/ko

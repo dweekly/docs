@@ -39,6 +39,21 @@ extra_javascript:
   - '_assets/js/main.js'
   - '_assets/js/docs-language-router.js'
 
+modals:
+    choose: 'Choose your app'
+    iOS: 'iOS'
+    android: 'Android'
+    CIP: 'Cordova Ionic PhoneGap'
+    react: 'React Native'
+    image: 'Image'
+    select: 'Select your platform'
+    mParticleAndroid: 'mParticle Android'
+    mParticleiOS: 'mParticle iOS'
+    titanium: 'Titanium'
+    unity: 'Unity'
+    xamarin: 'Xamarin'
+    adobe: 'Adobe'
+
 # Extensions
 markdown_extensions:
   - admonition:

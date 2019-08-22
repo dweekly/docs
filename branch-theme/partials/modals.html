@@ -3,18 +3,18 @@
     <div class="modal-background"></div>
     <div class="modal-content">
       <i class="material-icons md-icon modal-close right">close</i>
-      <h2>Choose your app</h2>
-      <button type="button">iOS</button>
-      <button type="button">Android</button>
-      <button type="button">Cordova Ionic PhoneGap</button>
-      <button type="button">React Native</button>
+      <h2>{{ config.modals.choose }}</h2>
+      <button type="button">{{ config.modals.iOS }}</button>
+      <button type="button">{{ config.modals.android }}</button>
+      <button type="button">{{ config.modals.CIP }}</button>
+      <button type="button">{{ config.modals.react }}</button>
     </div>
   </div>
   <div id="modal-image" class="modal dialog image">
     <div class="modal-background"></div>
     <div class="modal-content">
       <i class="material-icons md-icon modal-close right">close</i>
-      <h2>Image</h2>
+      <h2>{{ config.modals.image }}</h2>
       <a id="modal-image-link" href="#">
         <img id="modal-image-img">
       </a>
@@ -24,26 +24,26 @@
     <div class="modal-background"></div>
     <div class="modal-content">
       <i class="material-icons md-icon modal-close right">close</i>
-      <h2>Select your platform</h2>
+      <h2>{{ config.modals.select }}</h2>
       <div class="flex">
-        <button id="modal-code-ios">iOS</button>
-        <button id="modal-code-android">Android</button>
+        <button id="modal-code-ios">{{ config.modals.iOS }}</button>
+        <button id="modal-code-android">{{ config.modals.android}}</button>
       </div>
       <div class="flex">
-        <button id="modal-code-cordova">Cordova PhoneGap Ionic</button>
-        <button id="modal-code-react">React Native</button>
+        <button id="modal-code-cordova">{{ config.modals.CIP }}</button>
+        <button id="modal-code-react">{{ config.modals.react }}</button>
       </div>
       <div class="flex">
-        <button id="modal-code-mparticle-android">mParticle Android</button>
-        <button id="modal-code-mparticle-ios">mParticle iOS</button>
+        <button id="modal-code-mparticle-android">{{ config.modals.mParticleAndroid }}</button>
+        <button id="modal-code-mparticle-ios">{{ config.modals.mParticleiOS }}</button>
       </div>
       <div class="flex">
-        <button id="modal-code-titanium">Titanium</button>
-        <button id="modal-code-unity">Unity</button>
+        <button id="modal-code-titanium">{{ config.modals.titanium}}</button>
+        <button id="modal-code-unity">{{config.modals.unity }}</button>
       </div>
       <div class="flex">
-        <button id="modal-code-xamarin">Xamarin</button>
-        <button id="modal-code-adobe" class="vanish">Adobe</button>
+        <button id="modal-code-xamarin">{{config.modals.xamarin }}</button>
+        <button id="modal-code-adobe" class="vanish">{{ config.modals.adobe }}</button>
       </div>
     </div>
   </div>
