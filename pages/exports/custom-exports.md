@@ -831,9 +831,7 @@ For example, `site_event.id` will now be exported as `site_event_id`.
 
 ## Accessing via Branch Dashboard
 
-!!! warning "BETA - TUNE Clients Only"
-	This feature is currently in BETA. If you do not see this feature in your dashboard, please contact your CSM or [Contact Support](mailto:support@branch.io) to request access.  
-
+!!! warning "TUNE Migrated Clients Only"
 	This feature is currently only available to TUNE migrated clients, with plans to open this feature to all Branch clients in Q4.
 
 Rather than accessing the Custom Export API directly, you can use the Custom Exports section in your Branch dashboard to request the appropriate data via CSVs.
@@ -897,7 +895,7 @@ Find and queue all records that match search criteria for export; returns a “h
    </td>
    <td>Date
    </td>
-   <td><a href="https://en.wikipedia.org/wiki/ISO_8601">The beginning datetime for the requested results, provided in ISO-8601 format. </a>; <strong>REQUIRED</strong>
+   <td><a href="https://en.wikipedia.org/wiki/ISO_8601">The beginning datetime for the requested results, provided in ISO-8601 format including Hours, Minutes, Seconds and Milliseconds. </a>; <strong>REQUIRED</strong>
 <p>
 Dates without offsets (i.e. a timezone) default to the value provided for the timezone parameter. If the timezone parameter is not specified, the dates timezone defaults to UTC. Date must be within the last 120 days. Example: 2016-01-01T00:00:00Z
    </td>
@@ -907,9 +905,9 @@ Dates without offsets (i.e. a timezone) default to the value provided for the ti
    </td>
    <td>Date
    </td>
-   <td><a href="https://en.wikipedia.org/wiki/ISO_8601">The end datetime for the requested results, provided in ISO-8601 format. </a>; <strong>REQUIRED</strong>
+   <td><a href="https://en.wikipedia.org/wiki/ISO_8601">The end datetime for the requested results, provided in ISO-8601 format including Hours, Minutes, Seconds and Milliseconds. </a>; <strong>REQUIRED</strong>
 <p>
-Dates without offsets (i.e. a timezone) default to the value provided for the timezone parameter. If the timezone parameter is not specified, the dates timezone defaults to UTC. Example: 2016-01-01T23:59:59Z
+Dates without offsets (i.e. a timezone) default to the value provided for the timezone parameter. If the timezone parameter is not specified, the dates timezone defaults to UTC. Example: 2016-01-01T23:59:59:999Z
    </td>
   </tr>
   <tr>
