@@ -15,11 +15,11 @@ Logo | Partner
 <a href="https://www.campaignmonitor.com/" target="_blank">![Campaign_Monitor](/_assets/img/pages/email/campaign-monitor/campaign-monitor.png)</a>| **[Campaign Monitor](/emails/campaign-monitor/)**
 <a href="https://www.cheetahdigital.com/" target="_blank">![Cheetah_Digital_Marketing_Suite](/_assets/img/pages/email/cheetah-digital-marketing-suite/cheetah-digital-marketing-suite.png)</a>| **[Cheetah Digital Marketing Suite](/emails/cheetah-digital-marketing-suite/)**
 <a href="https://www.cheetahdigital.com/" target="_blank">![CheetahMail](/_assets/img/pages/email/cheetahmail/cheetahmail.png)</a>| **[CheetahMail](/emails/cheetahmail/)**
+<a href="https://cmercury.com/" target="_blank">![Cmercury](https://cdn.branch.io/branch-assets/ad-partner-manager//cmercury_logo-1570600334548.png)</a>| **[Cmercury](/emails/cmercury/)**
 <a href="https://cordial.com/" target="_blank">![Cordial](https://cdn.branch.io/branch-assets/email-providers//cordial-1559944328558.png)</a>| **[Cordial](/emails/cordial/)**
 <a href="https://www.epsilon.com/" target="_blank">![Epsilon](/_assets/img/pages/email/epsilon/epsilon.png)</a>| **[Epsilon](/emails/epsilon/)**
 <a href="https://www.emarsys.com/" target="_blank">![Emarsys](https://cdn.branch.io/branch-assets/email-providers/386574786681131050/emarsys-1537315326046.png)</a>| **[Emarsys](/emails/emarsys/)**
 <a href="https://www.ibm.com/us-en/marketplace/digital-marketing-and-lead-management" target="_blank">![IBM_Watson_Campaign_Automation](/_assets/img/pages/email/ibm-watson-campaign-automation/ibm-watson-campaign-automation.png)</a>| **[IBM Watson Campaign Automation](/emails/ibm-watson-campaign-automation/)**
-<a href="https://www.icubespro.com/" target="_blank">![iCubesPro](https://cdn.branch.io/branch-assets/email-providers/388787843096400122/icubespro-1538185683767.png)</a>| **[iCubesPro](/emails/icubespro/)**
 <a href="https://iterable.com/" target="_blank">![Iterable](/_assets/img/pages/email/iterable/iterable.png)</a>| **[Iterable](/emails/iterable/)**
 <a href="https://www.kahuna.com/" target="_blank">![Kahuna](/_assets/img/pages/email/kahuna/kahuna.png)</a>| **[Kahuna](/emails/kahuna/)**
 <a href="https://www.klaviyo.com/" target="_blank">![Klaviyo](/_assets/img/pages/email/klaviyo/klaviyo.png)</a>| **[Klaviyo](/emails/klaviyo/)**
