@@ -51,6 +51,8 @@ You can retrieve your click tracking domain from the **[Tracking Domains](https:
 
 {! ingredients/email/associated-domains.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

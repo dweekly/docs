@@ -47,6 +47,8 @@ You can retrieve your click tracking domains from your Blueshift settings.
 
 {! ingredients/email/bounce-web.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

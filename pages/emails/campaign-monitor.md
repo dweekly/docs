@@ -55,6 +55,8 @@ If you have not added a custom click tracking domain yet, follow the instruction
 
 {! ingredients/email/bounce-web.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

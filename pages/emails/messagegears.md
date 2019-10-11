@@ -51,6 +51,8 @@ You can retrieve your click tracking domain from the dit Account Settings. If yo
 
 {! ingredients/email/bounce-web.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}
