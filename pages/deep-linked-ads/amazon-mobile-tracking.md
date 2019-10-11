@@ -8,6 +8,9 @@ This guide will walk you through how to setup your campaigns with **[Amazon](htt
 
 ## Setup
 
+!!! info "Fire OS Support"
+	Please implement the Branch SDK for Android [4.1.1](/version-histories/android-version-history/#v411) to ensure support for Fire OS devices.
+
 {! ingredients/deep-linked-ads/integrate-branch-sdk.md !}
 
 {! ingredients/deep-linked-ads/conversion-events-tracking.md !}
@@ -23,6 +26,14 @@ This guide will walk you through how to setup your campaigns with **[Amazon](htt
 ![image](/_assets/img/pages/deep-linked-ads/amazon/amazon-postbacks.png)
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
+
+!!! warning "Platform-specific Ad Links"
+	Create separate links to track campaigns for Fire TV devices vs Tablet devices. Make sure to  append the following mandatory key-values for tracking ad links on Amazon Fire Tablet/TV Devices:
+
+	- **Fire Tablet**: %24os=AMAZON_FIRE
+	- **Fire TV**: %24os=AMAZON_FIRE_TV
+
+	Implement these links for platform-specific Fire OS ad campaigns on the Amazon Advertising platform.
 
 {! ingredients/deep-linked-ads/view-ad-link-data.md !}
 

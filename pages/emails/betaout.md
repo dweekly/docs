@@ -49,6 +49,8 @@ Contact Betaout support and request that they **disable the Smart URL feature***
 
 {! ingredients/email/bounce-web.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

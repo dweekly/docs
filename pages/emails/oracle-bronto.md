@@ -49,6 +49,8 @@ Contact your **Bronto Account Manager** to retrieve your private domain of your 
 
 {! ingredients/email/associated-domains.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

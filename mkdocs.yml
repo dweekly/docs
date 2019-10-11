@@ -196,7 +196,10 @@ nav:
       - Branch Universal Email: emails/universal-email.md
       - Universal Email Partners: emails/email-partners-list.md
       - Self Serve: emails/self-serve.md
-      - Personalization Services: emails/personalization-services.md
+      - Personalization Services:
+        - Personalization Overview: emails/personalization/personalization-services.md
+        - Movable Ink - Email: emails/personalization/movable-ink-email-links.md
+        - Movable Ink - In-App Messages: emails/personalization//movable-ink-in-app-messages.md
     - SMS:
       - Vibes: sms/vibes.md
     - Push notifications: advance/push-notifications.md
@@ -234,6 +237,7 @@ nav:
       - Adaction Interactive : deep-linked-ads/adaction-interactive-mobile-tracking.md
       - Adacts Digital: deep-linked-ads/adacts-digital-mobile-tracking.md
       - adAhead: deep-linked-ads/adahead-mobile-tracking.md
+      - Adalyser: deep-linked-ads/adalyser-mobile-tracking.md
       - AdAppT: deep-linked-ads/adappt-mobile-tracking.md
       - Adbaazar : deep-linked-ads/adbaazar-mobile-tracking.md
       - Adbird Media: deep-linked-ads/adbird-media-mobile-tracking.md
@@ -539,6 +543,7 @@ nav:
       - Heyzap : deep-linked-ads/heyzap-mobile-tracking.md
       - Hockeycurve: deep-linked-ads/hockeycurve-mobile-tracking.md
       - Hong Kong Cappuccino Media: deep-linked-ads/hong-kong-cappuccino-media-mobile-tracking.md
+      - Hopbug: deep-linked-ads/hopbug-mobile-tracking.md
       - Hotstar: deep-linked-ads/hotstar-mobile-tracking.md
       - Httpool Digital: deep-linked-ads/httpool-digital-mobile-tracking.md
       - Hubscale : deep-linked-ads/hubscale-mobile-tracking.md
@@ -566,6 +571,7 @@ nav:
       - Interactivy: deep-linked-ads/interactivy-mobile-tracking.md
       - Interceptd: deep-linked-ads/interceptd-mobile-tracking.md
       - Intellect Ads: deep-linked-ads/intellect-ads-mobile-tracking.md
+      - Interomob Media: deep-linked-ads/interomob-media-mobile-tracking.md
       - Interspace Indonesia: deep-linked-ads/interspace-indonesia-mobile-tracking.md
       - Interspace Vietnam: deep-linked-ads/interspace-vietnam-mobile-tracking.md
       - Involve Asia: deep-linked-ads/involve-asia-mobile-tracking.md
@@ -644,6 +650,7 @@ nav:
       - Mobidays: deep-linked-ads/mobidays-mobile-tracking.md
       - Mobilda : deep-linked-ads/mobilda-mobile-tracking.md
       - Mobility Performance Network : deep-linked-ads/mobility-performance-network-mobile-tracking.md
+      - Mobilogic Digital Media: deep-linked-ads/mobilogic-digital-media-mobile-tracking.md
       - Mobio : deep-linked-ads/mobio-mobile-tracking.md
       - Mobipium: deep-linked-ads/mobipium-mobile-tracking.md
       - Mobipuff: deep-linked-ads/mobipuff-mobile-tracking.md
@@ -748,6 +755,7 @@ nav:
       - Revenueclick Media: deep-linked-ads/revenueclick-media-mobile-tracking.md
       - Revmob : deep-linked-ads/revmob-mobile-tracking.md
       - RevX : deep-linked-ads/revx-mobile-tracking.md
+      - RisemetriX: deep-linked-ads/risemetrix-mobile-tracking.md
       - Rocket10 : deep-linked-ads/rocket10-mobile-tracking.md
       - Rocket Lab: deep-linked-ads/rocket-lab-mobile-tracking.md
       - Rockford Mobi: deep-linked-ads/rockford-mobi-mobile-tracking.md
@@ -907,12 +915,12 @@ nav:
       - Campaign Monitor: emails/campaign-monitor.md
       - Cheetah Digital Marketing Suite: emails/cheetah-digital-marketing-suite.md
       - CheetahMail: emails/cheetahmail.md
+      - Cmercury: emails/cmercury.md
       - Cordial: emails/cordial.md
       - Epsilon: emails/epsilon.md
       - Emarsys: emails/emarsys.md
       - Hootsuite: social-links/hootsuite.md
       - IBM Watson Campaign Automation: emails/ibm-watson-campaign-automation.md
-      - iCubesPro: emails/icubespro.md
       - Iterable v1: emails/iterable-v1.md
       - Iterable v2: emails/iterable-v2.md
       - Kahuna: emails/kahuna.md

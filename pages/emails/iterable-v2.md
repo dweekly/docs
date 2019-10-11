@@ -52,6 +52,8 @@ If you have not added a custom click tracking domain yet, follow the instruction
 
 {! ingredients/email/associated-domains.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ### Configure Iterable account to support iOS Universal Links
 
 1. Determine which links you want to redirect to your iOS application.

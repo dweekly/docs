@@ -1,8 +1,8 @@
 ## Overview
 
-![iCubesPro](https://cdn.branch.io/branch-assets/email-providers/388787843096400122/icubespro-1538185683767.png)
+![Cmercury](https://cdn.branch.io/branch-assets/ad-partner-manager//cmercury_logo-1570600334548.png)
 
-This guide will walk you through how to setup your email campaigns with **[iCubesPro](https://www.icubespro.com/){:target="\_blank"}** using Branch Universal Email to automatically convert your email links into **multi-platform deep links**
+This guide will walk you through how to setup your email campaigns with **[Cmercury](https://cmercury.com/){:target="\_blank"}** using Branch Universal Email to automatically convert your email links into **multi-platform deep links**
 
 {! ingredients/email/overview-steps.md !}
 
@@ -14,7 +14,7 @@ This guide will walk you through how to setup your email campaigns with **[iCube
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **[Acount Settings](https://app.icubespro.com/Masters/AccountSettings){:target="\_blank"}** section of your iCubesPro account:
+1. Add and verify a custom click tracking domain in the **[Acount Settings](https://app.icubespro.com/Masters/AccountSettings){:target="\_blank"}** section of your Cmercury account:
 
     ![image](/_assets/img/pages/email/icubes_pro/create-domain.png)
 
@@ -29,13 +29,13 @@ For more information on how to set up your domain, please ask your account manag
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **iCubesPro** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Cmercury** and click **Enable**.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Acount Settings](https://app.icubespro.com/Masters/AccountSettings){:target="\_blank"}** section of your iCubesPro account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the **[Acount Settings](https://app.icubespro.com/Masters/AccountSettings){:target="\_blank"}** section of your Cmercury account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/icubes_pro/setup-config.png)
 
@@ -52,6 +52,8 @@ You can retrieve your click tracking domain from the **[Acount Settings](https:/
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/bounce-web.md !}
+
+{! ingredients/email/continue-user-activity.md !}
 
 ## Using Universal email
 

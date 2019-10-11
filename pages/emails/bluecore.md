@@ -47,6 +47,8 @@ Retrieve your click tracking domain from your BlueCore account. If you have not 
 
 {! ingredients/email/associated-domains.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

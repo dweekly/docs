@@ -59,6 +59,8 @@ You will also need to add your AWS tracking domain next to your click tracking d
 
 {! ingredients/email/bounce-web.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

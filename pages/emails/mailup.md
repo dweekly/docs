@@ -49,6 +49,8 @@ Please ask your account manager at MailUp about your tracking domain settings. I
 
 {! ingredients/email/bounce-web.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}
