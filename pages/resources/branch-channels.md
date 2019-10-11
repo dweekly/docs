@@ -29,7 +29,7 @@ User journeys happen across channels. To get accurate attribution, you need to m
 ## Engagement
 <!-- Engagement -->
 <div class="nav-wrap flex-wrap">
-  <a href="/emails/universal-email/">
+  <a href="/emails/email-overview/">
     <img src="../../../_assets/img/pages/channels/email.png" />
     <p>Email</p>
   </a>

@@ -196,7 +196,10 @@ nav:
       - Branch Universal Email: emails/universal-email.md
       - Universal Email Partners: emails/email-partners-list.md
       - Self Serve: emails/self-serve.md
-      - Personalization Services: emails/personalization-services.md
+      - Personalization Services:
+        - Personalization Overview: emails/personalization/personalization-services.md
+        - Movable Ink - Email: emails/personalization/movable-ink-email-links.md
+        - Movable Ink - In-App Messages: emails/personalization//movable-ink-in-app-messages.md
     - SMS:
       - Vibes: sms/vibes.md
     - Push notifications: advance/push-notifications.md
