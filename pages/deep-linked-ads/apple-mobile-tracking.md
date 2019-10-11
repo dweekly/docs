@@ -38,6 +38,9 @@ branch.initSession.....
 
 If you're concerned about the additional 1 second latency, the call to `delayInitToCheckForSearchAds` can be called conditionally at run time. So, if you want to only check on first install, or the like, then just don't call this method.
 
+!!! warning "Testing Apple Search Ads"
+    If you test using a non-production app, the iAd framework returns fake Apple Search Ads payloads to simulate the install being claimed by Apple Search Ads. Subsequently, you will see these claims in your reporting. 
+
 ## Cost Data Setup
 
 1. Navigate to the [Apple Search Ads UI > Settings > API](https://app.searchads.apple.com/cm/app/settings/apicertificates). *Verify you have selected the correct account by using the account selector in the top right hand corner.*

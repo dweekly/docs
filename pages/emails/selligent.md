@@ -57,6 +57,8 @@ You can retrieve your click tracking domain from the account settings section of
 
 {! ingredients/email/bounce-web.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

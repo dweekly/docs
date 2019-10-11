@@ -16,8 +16,7 @@ By connecting your Google Ads and Branch accounts, the following is enabled:
 
 To link Branch to your Google Ads account, please follow Google's **[Link a third-party app analytics provider and Google Ads](https://support.google.com/google-ads/answer/7365001?hl=en&ref_topic=7280929)**.
 
-!!! tip "Branch's Provider ID"
-	Please make sure to provide Branch's Provider ID - **3404357870** - during the linking process
+![image](/_assets/img/pages/deep-linked-ads/google/google-ads-aap.png)
 
 **Things to Keep in Mind**
 

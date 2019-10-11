@@ -59,6 +59,8 @@ You will also need to register your Salesforce Data Domain (retrieved from your 
 
 {! ingredients/email/associated-domains.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

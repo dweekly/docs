@@ -48,3 +48,4 @@ deep-linked-ads/dynamic-product-feeds/index.html https://docs.branch.io/deep-lin
 apps/ios//ios/index.html https://docs.branch.io/apps/ios/
 apps/ios//android/index.html https://docs.branch.io/apps/android/
 emails/iterable/index.html https://docs.branch.io/emails/iterable-v1/
+emails/icubespro/index.html https://docs.branch.io/emails/cmercury/

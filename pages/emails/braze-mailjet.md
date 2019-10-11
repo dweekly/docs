@@ -47,6 +47,8 @@ Contact your **Braze Account Manager** and request the Email Click Tracking Doma
 
 {! ingredients/email/associated-domains.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

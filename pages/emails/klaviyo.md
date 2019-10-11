@@ -49,6 +49,8 @@ Contact your **Klaviyo Account Manager** and request the name of your Custom Cli
 
 {! ingredients/email/associated-domains.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

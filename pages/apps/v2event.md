@@ -22,9 +22,10 @@ These events will also have analytics, so you can understand their performance, 
 
 ### Limitations
 
-As of now, any calls made through these SDK methods will **not** yet:
+As of now, any calls made through these SDK methods will **not**:
 
 - Work with our [referrals system](/viral/referrals/).
+- Show custom data in the Branch dashboard aside from **Liveview** and **Exports**.
 
 ## Available Events
 

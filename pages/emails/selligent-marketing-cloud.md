@@ -47,6 +47,8 @@ Retrieve your click tracking domain from your Selligent Marketing Cloud account.
 
 {! ingredients/email/bounce-web.md !}
 
+{! ingredients/email/continue-user-activity.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}
