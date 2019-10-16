@@ -9,8 +9,6 @@ The [Google Marketing Platform](https://support.google.com/dcm/answer/9015629?hl
 
 - Display & Video 360 (Formerly DoubleClick Bid Manager)
 - Campaign Manager (Formerly DoubleClick Campaign Manager)
-- Search Ads 360 (formerly DoubleClick Search)
-
 
 **[ENABLE THE GOOGLE MARKETING PLATFORM INTEGRATION](/deep-linked-ads/google-marketing-platform-app-conversion-tracking/)**
 
