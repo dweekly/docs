@@ -14,7 +14,7 @@ You can use Movable Ink personalization links with any ESP, so before we start t
 
 ### Setup link behavior
 
-	Once you have completed the ESP configuration, you can start adding Movable Ink links the email body.
+Once you have completed the ESP configuration, you can start adding Movable Ink links the email body.
 
 With your ESP make sure to add the URL parameter **`$follow_redirect=true`** to every Movable Ink link in the email body. This will indicate Branch that this link is an MI link. As soon as Branch detects this parameter Branch backend will follow the MI link, receive personalization data from MI’s servers, and send it to the mobile App/Web.
 
