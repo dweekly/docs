@@ -18,7 +18,7 @@
         <!-- sample config.xml -->
         <widget id="com.eneff.branch.cordovatestbed" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
           <!-- Branch -->
-          <plugin name="branch-cordova-sdk" spec="^3.1.6" />
+          <plugin name="branch-cordova-sdk" spec="^4.0.0" />
           <branch-config>
             <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
             <uri-scheme value="branchcordova" />
@@ -33,7 +33,7 @@
         <!-- sample config.xml -->
         <widget id="com.eneff.branch.cordovatestbed" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
           <!-- Branch -->
-          <plugin name="branch-cordova-sdk" spec="^3.1.6" />
+          <plugin name="branch-cordova-sdk" spec="^4.0.0" />
           <branch-config>
             <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
             <uri-scheme value="branchcordova" />
