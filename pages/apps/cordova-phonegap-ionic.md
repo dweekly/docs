@@ -22,7 +22,8 @@
           <branch-config>
             <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
             <uri-scheme value="branchcordova" />
-            <link-domain value="cordova.app.link" />
+            <link-domain value="cordova.app.link" />  <!-- Required app.link domain -->
+            <link-domain value="cordova-alternate.app.link" />  <!-- Required alternate.app.link domain -->
             <ios-team-release value="PW4Q8885U7" />
           </branch-config>
         ```
@@ -37,7 +38,8 @@
           <branch-config>
             <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
             <uri-scheme value="branchcordova" />
-            <link-domain value="cordova.app.link" />
+            <link-domain value="cordova.app.link" />  <!-- Required app.link domain -->
+            <link-domain value="cordova-alternate.app.link" />  <!-- Required alternate.app.link domain -->
             <ios-team-release value="PW4Q8885U7" />
           </branch-config>
         ```
