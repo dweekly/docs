@@ -489,7 +489,7 @@
         buo.showShareSheet(this, lp, ss, object : Branch.BranchLinkShareListener {
             override fun onShareLinkDialogLaunched() {}
             override fun onShareLinkDialogDismissed() {}
-            override fun onLinkShareResponse(sharedLink: String, sharedChannel: String, error: BranchError) {}
+            override fun onLinkShareResponse(sharedLink: String, sharedChannel: String, error: BranchError?) {}
             override fun onChannelSelected(channelName: String) {}
         })
         ```

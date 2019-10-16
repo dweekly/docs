@@ -1,3 +1,9 @@
+### v0.29.3 Changes
+
+**(2019-October-16)**
+
+- Added a check for previous Tune data; when found, data's status is set to "updated" to be used in determining new vs existing users.
+
 ### v0.29.1 Changes
 
 **(2019-October-04)**
@@ -8,7 +14,7 @@
 
 **(2019-September-26)**
 
-- Added support for Cross-Platform ID (CPID) & Last attributed touch data (LATD).
+- Added support for Cross-Platform ID (CPID) & Last Attributed Touch Data (LATD).
 - Fixed a race condition on slow startup.
 - Fixed a rare Keychain deadlock.
 
