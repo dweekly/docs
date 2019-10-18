@@ -17,6 +17,8 @@ This guide will walk you through how to send your Branch data to **[Insider](htt
 ### What Branch sends to Insider
 
 * Install
+* Commerce Event
+* Custom Event
 
 ## Advanced
 
