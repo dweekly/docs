@@ -989,7 +989,7 @@ nav:
       - Netcore Smartech: integrations/netcore-smartech.md
       - Scalarr: integrations/scalarr.md
       - SearchAdsHQ: integrations/searchadshq.md
-      - Segment (export): integrations/segment.md
+      - Segment (export): integrations/segment-export.md
       - Segment (import): integrations/segment-import.md
       - Singular: integrations/singular.md
       - TrafficGuard: integrations/trafficguard.md
