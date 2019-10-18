@@ -1,8 +1,8 @@
 ## Overview
 
-![Insider](https://cdn.branch.io/branch-assets/ad-partner-manager//insider_logo_2x-1561003202055.png)
+![Machine Advertising](https://cdn.branch.io/branch-assets/ad-partner-manager//c6ee7790611f-Machine_Logo_Black-1569986723163.png)
 
-This guide will walk you through how to send your Branch data to **[Insider](https://useinsider.com/)** using Branch Data Integration.
+This guide will walk you through how to send your Branch data to **[Machine Advertising](https://www.machineadvertising.com/)** using Branch Data Integration.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -14,11 +14,10 @@ This guide will walk you through how to send your Branch data to **[Insider](htt
 
 {! ingredients/data-integrations/add-credentials.md !}
 
-### What Branch sends to Insider
+### What Branch sends to Machine Advertising
 
 * Install
 * Commerce Event
-* Custom Event
 
 ## Advanced
 

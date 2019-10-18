@@ -1,8 +1,8 @@
 ## Overview
 
-![Insider](https://cdn.branch.io/branch-assets/ad-partner-manager//insider_logo_2x-1561003202055.png)
+![Barometric](https://cdn.branch.io/branch-assets/ad-partner-manager//barometric_1318215-1570577841533.png)
 
-This guide will walk you through how to send your Branch data to **[Insider](https://useinsider.com/)** using Branch Data Integration.
+This guide will walk you through how to send your Branch data to **[Barometric](https://barometric.com/)** using Branch Data Integration.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -14,10 +14,10 @@ This guide will walk you through how to send your Branch data to **[Insider](htt
 
 {! ingredients/data-integrations/add-credentials.md !}
 
-### What Branch sends to Insider
+### What Branch sends to Barometric
 
 * Install
-* Commerce Event
+* Open
 * Custom Event
 
 ## Advanced

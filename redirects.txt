@@ -49,3 +49,5 @@ apps/ios//ios/index.html https://docs.branch.io/apps/ios/
 apps/ios//android/index.html https://docs.branch.io/apps/android/
 emails/iterable/index.html https://docs.branch.io/emails/iterable-v1/
 emails/icubespro/index.html https://docs.branch.io/emails/cmercury/
+integrations/segment/index.html https://docs.branch.io/integrations/segment-export/
+integrations/mparticle/index.html https://docs.branch.io/integrations/mparticle-export/

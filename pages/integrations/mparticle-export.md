@@ -14,13 +14,13 @@ Branch will send **attributed installs**. Branch also sends all the data that is
 
 ### What does it look like?
 
-Branch events will appear as an attribution event in mParticle. You can then export Branch data to your other data sources.
+Branch install events will appear as a **Custom Attribution Event** in mParticle. You can then export Branch data to your other data sources.
 
-Branch attribution events are mapped as follows:
+Branch install events are mapped as follows:
 
-- Event Type = Custom Event
-- Custom Event Type = attribution
-- Event Name = attribution
+- mParticle Event Type = Custom Event
+- mParticle Custom Event Type = attribution
+- mParticle Event Name = attribution
 
 ![image](/_assets/img/pages/integrations/mparticle/mparticle-showing-branch-data.png)
 
