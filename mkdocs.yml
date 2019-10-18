@@ -965,6 +965,7 @@ nav:
       - Appsflyer: integrations/appsflyer.md
       - Apptilaus - Subscription Analytics: integrations/apptilaus.md
       - Backinapp: integrations/backinapp.md
+      - Barometric: integrations/barometric.md
       - Batch: integrations/batch.md
       - Braze: integrations/braze.md
       - Chartable: integrations/chartable.md
@@ -982,6 +983,7 @@ nav:
       - Kochava: integrations/kochava.md
       - Leanplum: integrations/leanplum.md
       - Localytics: integrations/localytics.md
+      - Machine Advertising: integrations/machine-advertising.md
       - Mixpanel: integrations/mixpanel.md
       - MobileAction: integrations/mobileaction.md
       - mParticle (export): integrations/mparticle-export.md
