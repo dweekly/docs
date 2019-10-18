@@ -984,7 +984,7 @@ nav:
       - Localytics: integrations/localytics.md
       - Mixpanel: integrations/mixpanel.md
       - MobileAction: integrations/mobileaction.md
-      - mParticle (export): integrations/mparticle.md
+      - mParticle (export): integrations/mparticle-export.md
       - mParticle (import): integrations/mparticle-import.md
       - Netcore Smartech: integrations/netcore-smartech.md
       - Scalarr: integrations/scalarr.md
