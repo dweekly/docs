@@ -363,10 +363,8 @@ nav:
       - BEdigitech: deep-linked-ads/bedigitech-mobile-tracking.md
       - Beeswax: deep-linked-ads/beeswax-mobile-tracking.md
       - Beintoo : deep-linked-ads/beintoo-mobile-tracking.md
+      - Bidalgo: deep-linked-ads/bidalgo-mobile-tracking.md
       - Bidease: deep-linked-ads/bidease-mobile-tracking.md
-      - Bcnmonetize : deep-linked-ads/bcnmonetize-mobile-tracking.md
-      - BEdigitech: deep-linked-ads/bedigitech-mobile-tracking.md
-      - Beintoo : deep-linked-ads/beintoo-mobile-tracking.md
       - Bidmotion : deep-linked-ads/bidmotion-mobile-tracking.md
       - Bidroid : deep-linked-ads/bidroid-mobile-tracking.md
       - Bidsflyer: deep-linked-ads/bidsflyer-mobile-tracking.md
@@ -664,6 +662,7 @@ nav:
       - Mobligent Media: deep-linked-ads/mobligent-media-mobile-tracking.md
       - Moblin : deep-linked-ads/moblin-mobile-tracking.md
       - Mobme Asia: deep-linked-ads/mobme-asia-mobile-tracking.md
+      - Mobngage: deep-linked-ads/mobngage-mobile-tracking.md
       - Mobobeat : deep-linked-ads/mobobeat-mobile-tracking.md
       - Mobotto Media: deep-linked-ads/mobotto-media-mobile-tracking.md
       - MobPartner : deep-linked-ads/mobpartner-mobile-tracking.md
@@ -703,6 +702,7 @@ nav:
       - Oath: deep-linked-ads/oath-mobile-tracking.md
       - Offer18 : deep-linked-ads/offer18-mobile-tracking.md
       - Ogury: deep-linked-ads/ogury-mobile-tracking.md
+      - One Engine Media Works: deep-linked-ads/one-engine-media-works-mobile-tracking.md
       - Opera: deep-linked-ads/opera-mobile-tracking.md
       - Opera Event: deep-linked-ads/opera-event-mobile-tracking.md
       - Opicle Technologies: deep-linked-ads/opicle-technologies-mobile-tracking.md
@@ -965,6 +965,7 @@ nav:
       - Appsflyer: integrations/appsflyer.md
       - Apptilaus - Subscription Analytics: integrations/apptilaus.md
       - Backinapp: integrations/backinapp.md
+      - Barometric: integrations/barometric.md
       - Batch: integrations/batch.md
       - Braze: integrations/braze.md
       - Chartable: integrations/chartable.md
@@ -982,14 +983,15 @@ nav:
       - Kochava: integrations/kochava.md
       - Leanplum: integrations/leanplum.md
       - Localytics: integrations/localytics.md
+      - Machine Advertising: integrations/machine-advertising.md
       - Mixpanel: integrations/mixpanel.md
       - MobileAction: integrations/mobileaction.md
-      - mParticle (export): integrations/mparticle.md
+      - mParticle (export): integrations/mparticle-export.md
       - mParticle (import): integrations/mparticle-import.md
       - Netcore Smartech: integrations/netcore-smartech.md
       - Scalarr: integrations/scalarr.md
       - SearchAdsHQ: integrations/searchadshq.md
-      - Segment (export): integrations/segment.md
+      - Segment (export): integrations/segment-export.md
       - Segment (import): integrations/segment-import.md
       - Singular: integrations/singular.md
       - TrafficGuard: integrations/trafficguard.md

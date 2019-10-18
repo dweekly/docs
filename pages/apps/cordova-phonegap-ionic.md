@@ -503,6 +503,7 @@
         Branch.getStandardEvents().then(function success(res) {
             var event = res.STANDARD_EVENT_ADD_TO_CART;
             var metadata = {
+                customerEventAlias: 'alias name for event',
                 transactionID: '1234455',
                 currency: 'USD',
                 revenue: 1.5,

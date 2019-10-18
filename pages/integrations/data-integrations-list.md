@@ -18,6 +18,7 @@ Interested in becoming a Data Intgeration Partner? Just fill out this form: **[P
 <a href="https://apptilaus.com/" target="_blank">![Apptilaus - Subscription Analytics](https://cdn.branch.io/branch-assets/ad-partner-manager//apptilaus_logo-1562023417593.png)</a>|**[Apptilaus - Subscription Analytics](/integrations/apptilaus/)**
 <a href="https://www.backinapp.com" target="_blank">![Backinapp](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/backinapp-1546469932312.png)</a>|**[Backinapp](/integrations/backinapp/)**
 <a href="https://batch.com/" target="_blank">![Batch](https://cdn.branch.io/branch-assets/ad-partner-manager//batch-1563920130951.png)</a>|**[Batch](/integrations/batch/)**
+<a href="https://barometric.com" target="_blank">![Barometric](https://cdn.branch.io/branch-assets/ad-partner-manager//barometric_1318215-1570577841533.png)</a>|**[Barometric](/integrations/barometric/)**
 <a href="https://www.braze.com/" target="_blank">![Braze](/_assets/img/pages/integrations/logos/braze.png)</a>|**[Braze](/integrations/braze/)**
 <a href="https://chartable.com/" target="_blank">![Chartable](https://cdn.branch.io/branch-assets/ad-partner-manager//Chartable_Logo-1569590745878.png)</a>|**[Chartable](/integrations/chartable/)**
 <a href="https://clevertap.com/" target="_blank">![CleverTap](/_assets/img/pages/integrations/logos/clevertap.png)</a>|**[CleverTap](/integrations/clevertap/)**
@@ -33,14 +34,15 @@ Interested in becoming a Data Intgeration Partner? Just fill out this form: **[P
 <a href="https://www.kochava.com/" target="_blank">![Kochava](/_assets/img/pages/integrations/logos/kochava.png)</a>|**[Kochava](/integrations/kochava/)**
 <a href="https://www.leanplum.com/" target="_blank">![Leanplum](/_assets/img/pages/integrations/logos/leanplum.png)</a>|**[Leanplum](/integrations/leanplum/)**
 <a href="https://www.localytics.com/" target="_blank">![Localytics](/_assets/img/pages/integrations/logos/localytics.png)</a>|**[Localytics](/integrations/localytics/)**
+<a href="https://www.machineadvertising.com/" target="_blank">![Machine Advertising](https://cdn.branch.io/branch-assets/ad-partner-manager//c6ee7790611f-Machine_Logo_Black-1569986723163.png)</a>|**[Machine Advertising](/integrations/machine-advertising/)**
 <a href="https://www.mobileaction.co/" target="_blank">![MobileAction](https://cdn.branch.io/branch-assets/ad-partner-manager//SearchAdsByMobileActionLogo-1550011543924.png)</a>|**[MobileAction](/integrations/mobileaction/)**
 <a href="https://mixpanel.com/" target="_blank">![Mixpanel](https://cdn.branch.io/branch-assets/ad-partner-manager//mixpanel-1550716013249.png)</a>|**[Mixpanel](/integrations/mixpanel/)**
-<a href="https://www.mparticle.com/" target="_blank">![mParticle](https://cdn.branch.io/branch-assets/ad-partner-manager//mParticle-1552066868841.png)</a>|**[mParticle Export](/integrations/mparticle/)**
+<a href="https://www.mparticle.com/" target="_blank">![mParticle](https://cdn.branch.io/branch-assets/ad-partner-manager//mParticle-1552066868841.png)</a>|**[mParticle Export](/integrations/mparticle-export/)**
 <a href="https://www.mparticle.com/" target="_blank">![mParticle](https://cdn.branch.io/branch-assets/ad-partner-manager//mParticle-1552066868841.png)</a>|**[mParticle Import](/integrations/mparticle-import/)**
 <a href="https://www.netcoresmartech.com/" target="_blank">![Netcore Smartech](https://cdn.branch.io/branch-assets/ad-partner-manager//bcad3b4c0c31-netcore_1527812078091-1567147518764.png)</a>|**[Netcore Smartech](/integrations/netcore-smartech/)**
 <a href="https://scalarr.io/" target="_blank">![Scalarr](https://cdn.branch.io/branch-assets/ad-partner-manager//sc-1559415883554.png)</a>|**[Scalarr](/integrations/scalarr/)**
 <a href="https://searchadshq.com/" target="_blank">![SearchAdsHQ](https://cdn.branch.io/branch-assets/ad-partner-manager//1479b0002dff-18A02F13_B1DF_40A9_B097_D7421ED91A0B-1559413705882.png)</a>|**[SearchAdsHQ](/integrations/searchadshq/)**
-<a href="https://segment.com/" target="_blank">![Segment](/_assets/img/pages/integrations/logos/segment.png)</a>|**[Segment Export](/integrations/segment/)**
+<a href="https://segment.com/" target="_blank">![Segment](/_assets/img/pages/integrations/logos/segment.png)</a>|**[Segment Export](/integrations/segment-export/)**
 <a href="https://segment.com/" target="_blank">![Segment](/_assets/img/pages/integrations/logos/segment.png)</a>|**[Segment Import](/integrations/segment-import/)**
 <a href="https://www.singular.net/" target="_blank">![Singular](/_assets/img/pages/integrations/logos/singular.png)</a>|**[Singular](/integrations/singular/)**
 <a href="https://www.trafficguard.ai/" target="_blank">![TrafficGuard](https://cdn.branch.io/branch-assets/ad-partner-manager//trafficguard-1550889602563.png)</a>|**[TrafficGuard](/integrations/trafficguard/)**

@@ -25,10 +25,19 @@ This guide will walk you through how to setup your campaigns with **[Pinterest](
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 
 !!! warning "Platform Specific Links"
-	It's important to create platform specific tracking links by adding a plaform specific macro to the tracking link itself:
-	
-	- **iOS** $idfa_sha1={sha1_advertising_id}
-	- **Android** $aaid_sha1={sha1_advertising_id}
+	It's important to create platform specific tracking links by adding a platform specific macro to the tracking link itself.
+
+	![image](/_assets/img/pages/deep-linked-ads/pinterest/pinterest-links.png)
+
+	Make sure that you are using a direct link to the Apple Store or Google Play Store in the **Destination URL** field.
+
+	Add the following URL parameter to iOS/Android links:
+
+	- **iOS**: `$idfa_sha1={sha1_advertising_id}`
+
+	- **Android**: `$aaid_sha1={sha1_advertising_id}`
+
+	**NOTE**: if you are using TUNE links - please remove `$`
 
 {! ingredients/deep-linked-ads/view-ad-link-data.md !}
 
