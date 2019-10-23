@@ -35,6 +35,7 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 * [x] [Basic Integration Prerequisites](#basic-integration-prerequisites)
 * [x] [Web Routing Prerequisites](#web-routing-only-prerequisites)
 * [x] Place your [modified Branch link](#modifying-your-final-url-to-include-your-branch-link-as-a-query-parameter) in the `Final URL` field during Google Ads campaign setup.
+* [x] Place your Branch link in the `Tracking Template` field during Google Ads campaign setup.
 * [x] Branch Deep Linking enabled via either:
 	* [x] Adding `$uri_redirect_mode=1` to link's data.  If app link settings `URI Deep Link Mode` is set to `Intelligent`, then this link key is unnecessary.
 	* [x] [App links (Android)](/deep-linking/android-app-links/) and/or [Universal Links (iOS)](/deep-linking/universal-links/).
