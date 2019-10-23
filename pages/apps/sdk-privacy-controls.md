@@ -27,7 +27,7 @@ Branch.setTrackingDisabled(true)
 ```
 ### Web SDK
 
-**NOTE**: This state is persistent, meaning that it’s saved for the user across browser sessions for the web site.
+**NOTE**: This state is persistent, meaning that it’s saved for the user across browser sessions for the web site. This setting can also be enabled across all users for a particular link, or across your Branch links.
 
 ```
 branch.init( 'BRANCH_KEY',
@@ -36,3 +36,6 @@ branch.init( 'BRANCH_KEY',
     }
 );
 ```
+
+!!! info "Impact on Journeys"
+	To learn how these privacy controls impact our Journey’s product, please see [Journeys & GDPR](https://docs.branch.io/web/journeys/#journeys-and-gdpr).
