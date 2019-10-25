@@ -173,6 +173,7 @@ nav:
       - SDK Privacy Controls: apps/sdk-privacy-controls.md
       - Logging Branch Events Using Google Tag Manager: apps/logging-branch-events-using-google-tag-manager.md
       - Retrieving Branch's Cross-Platform ID: apps/retrieving-branchs-cross-platform-id.md
+      - Retrieving Branch's Last Attributed Touch Data: apps/retrieving-last-attributed-touch-data.md
     - Version Histories:
       - Android Version History: version-histories/android-version-history.md
       - iOS Version History: version-histories/ios-version-history.md
