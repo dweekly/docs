@@ -77,3 +77,9 @@ By default, installs and events via Branch links will be attributed to Branch vi
 1. Take the 6 letter identifier for your tracker and put it as a key value pair with key `tracker_id` in your deep link data for that specific link.
 
 ![image](/_assets/img/pages/integrations/adjust/override-adjust.png)
+
+!!! info "Platform-specific Tracker IDs"
+    If you have different `Tracker IDs` for your Android and iOS apps, you can specify these by using the following keys:
+
+    - **android_tracker_id**
+    - **ios_tracker_id**
