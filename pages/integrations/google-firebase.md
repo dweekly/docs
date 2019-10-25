@@ -1,5 +1,5 @@
 !!! warning "Google Analytics vs. Google Firebase"
-  If you are a free customer, please as follow the guide below as Google Analytics has been deprecated for free users. If you are a paying Google Analytics customer, please refer to our data integration for [Google Analytics](/integrations/google-analytics/).  
+  	If you are a free customer, please as follow the guide below as Google Analytics has been deprecated for free users. If you are a paying Google Analytics customer, please refer to our data integration for [Google Analytics](/integrations/google-analytics/).  
 
 ## Overview
 
