@@ -1,5 +1,11 @@
 ## Overview
 
+!!! warning "ONLY USE V1 CUSTOM EVENTS"
+	Our referral system only supports our v1 custom event SDK method which is `userCompletedAction()` and `track()`. **The v2 events, `BranchEvent` and `logEvent()` used for installs and opens, are not supported.**
+
+!!! info "Not recommended for Enterprise Clients"
+    Due to the nature of this functionality, we do not recommend the use of referrals for Enterprise clients.
+
 Branch allows you to reward users with credits, track those credits, and redeem them when appropriate. It is a unit-less currency available to your users without you having to build a system from scratch.
 
 <p align="center">
@@ -17,9 +23,6 @@ With every event that is recorded in Branch, we check automatically if that even
 
 !!! warning "Identify your users"
 	Because we do not merge identities, you *should set rewards on custom events* and *not use* the events we automatically track (`install` and `open`), and do so only *after* you have identified a user using our [identity methods](#dialog-code?ios=track-users&android=track-users&adobe=track-users&cordova=track-users&mparticleAndroid=track-users&mparticleIos=track-users&titanium=track-users&reactNative=track-users&unity=track-users&xamarin=track-users). This will help avoid duplicate rewards and missing credits.
-
-!!! warning "Only use v1 custom events"
-	Our referral system only supports our v1 custom event SDK method which is `userCompletedAction()` and `track()`. The v2 events, `BranchEvent` and `logEvent()`, are not supported at this time.
 
 !!! warning "Promo codes has been deprecated"
 	Our Promo codes feature on the dashboard has been deprecated. Please use reward rules to trigger referral rewards for your users.

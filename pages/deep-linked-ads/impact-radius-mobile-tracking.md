@@ -16,6 +16,14 @@ This guide will walk you through how to setup your campaigns with **[Impact Radi
 
 ![image](/_assets/img/pages/deep-linked-ads/impact-radius/impact-radius-enable.png)
 
+!!! warning "Impact Radius Credentials"
+	Please contact your Impact Radius account manager to retrieve the following values:
+
+	- Account SID
+	- Authorization Token
+	- iOS Tracker
+	- Android Tracker
+
 {! ingredients/deep-linked-ads/enable-partner-tip.md !}
 
 ![image](/_assets/img/pages/deep-linked-ads/impact-radius/impact-radius-postbacks.png)
