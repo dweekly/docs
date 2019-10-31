@@ -1,8 +1,8 @@
 ## Overview
 
-![Impact-Radius](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/ir-1528505569606.png)
+![Vaaya Digital Media](https://cdn.branch.io/branch-assets/ad-partner-manager/710170762236940715/dab4a64ade44-vaaya_logo-1571468553820.png)
 
-This guide will walk you through how to setup your campaigns with **[Impact Radius](http://impactradius.com)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
+This guide will walk you through how to setup your campaigns with **[Vaaya Digital Media](https://www.vaaya.xyz/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -14,19 +14,13 @@ This guide will walk you through how to setup your campaigns with **[Impact Radi
 
 {! ingredients/deep-linked-ads/enable-partner.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/impact-radius/impact-radius-enable.png)
+![image](/_assets/img/pages/deep-linked-ads/vaaya-digital-media/vaaya-digital-media-enable.png)
 
-!!! warning "Impact Radius Credentials"
-	Please contact your Impact Radius account manager to retrieve the following values:
-
-	- Account SID
-	- Authorization Token
-	- iOS Tracker
-	- Android Tracker
+{! ingredients/deep-linked-ads/add-credentials.md !}
 
 {! ingredients/deep-linked-ads/enable-partner-tip.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/impact-radius/impact-radius-postbacks.png)
+![image](/_assets/img/pages/deep-linked-ads/vaaya-digital-media/vaaya-digital-media-postbacks.png)
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 

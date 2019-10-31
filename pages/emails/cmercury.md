@@ -37,7 +37,7 @@ Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_
 
 You can retrieve your click tracking domain from the **[Acount Settings](https://app.icubespro.com/Masters/AccountSettings){:target="\_blank"}** section of your Cmercury account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
-![image](/_assets/img/pages/email/icubes_pro/setup-config.png)
+![image](/_assets/img/pages/email/icubes_pro/cmercury-setup.png)
 
 {! ingredients/email/technical-setup.md !}
 

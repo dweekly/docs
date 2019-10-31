@@ -1,8 +1,8 @@
 ## Overview
 
-![Impact-Radius](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/ir-1528505569606.png)
+![Enewsvault](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/115bbe62809f-logo-1571906223638.png)
 
-This guide will walk you through how to setup your campaigns with **[Impact Radius](http://impactradius.com)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
+This guide will walk you through how to setup your campaigns with **[Enewsvault](https://enewsvault.com/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -14,19 +14,13 @@ This guide will walk you through how to setup your campaigns with **[Impact Radi
 
 {! ingredients/deep-linked-ads/enable-partner.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/impact-radius/impact-radius-enable.png)
+![image](/_assets/img/pages/deep-linked-ads/enewsvault/enewsvault-enable.png)
 
-!!! warning "Impact Radius Credentials"
-	Please contact your Impact Radius account manager to retrieve the following values:
-
-	- Account SID
-	- Authorization Token
-	- iOS Tracker
-	- Android Tracker
+{! ingredients/deep-linked-ads/add-credentials.md !}
 
 {! ingredients/deep-linked-ads/enable-partner-tip.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/impact-radius/impact-radius-postbacks.png)
+![image](/_assets/img/pages/deep-linked-ads/enewsvault/enewsvault-postbacks.png)
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 

@@ -1,5 +1,5 @@
 !!! warning "Google Analytics vs. Google Firebase"
-	If you are a paying Google Analytics customer, please refer to our [Google Analytics](/integrations/google-analytics/) data integration. Otherwise, please follow the guide below to send Branch data to your free Google Firebase Analytics account.
+  	If you are a free customer, please as follow the guide below as Google Analytics has been deprecated for free users. If you are a paying Google Analytics customer, please refer to our data integration for [Google Analytics](/integrations/google-analytics/).  
 
 ## Overview
 
@@ -19,12 +19,11 @@ Below is the full list of fields:
 | Property Name | Value | Sourced from | Example | Req
 | --- | --- | --- | --- | ---
 | v | API version | [fixed] | 1 | Y
-| tid | Tracking ID | Branch Dashboard | UA-XXXXXX-Y | Y
+| tid | Tracking ID | Google Analytics Dashboard | UA-XXXXXX-Y | Y
 | ds | Source (mobile SDK) | [fixed] | app | Y
 | an | Application Name | [fixed] | BRANCH-APP | Y
 | t | Type | [fixed] | event | Y
 | ec | Event Category | [fixed] | BranchEvent | Y
-| cid | Client ID | (discussed above, includes $google_analytics_client_id) | AEBE52E7-03EE-455A-B3C4-E57283966239 | Y
 | uid | User Id | $google_analytics_user_id | User A | N
 | cn | Campaign Name | utm_campaign -or- Branch campaign  | "Beaches and breezes" | N
 | cs | Campaign Source | utm_source -or- Branch channel | "Twitter" | N
