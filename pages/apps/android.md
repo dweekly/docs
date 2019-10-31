@@ -955,16 +955,6 @@
 
         - `your.app.com`
 
- - ### Branch with Fabric Answers
-
-    - If you do not want to import `answers-shim`
-
-        ```
-        compile ('io.branch.sdk.android:library:2.+') {
-          exclude module: 'answers-shim'
-        }
-        ```
-
 - ### Deep link routing
 
     - Loads a specific URI Scheme path, for example
