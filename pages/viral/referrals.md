@@ -3,6 +3,9 @@
 !!! warning "ONLY USE V1 CUSTOM EVENTS"
 	Our referral system only supports our v1 custom event SDK method which is `userCompletedAction()` and `track()`. **The v2 events, `BranchEvent` and `logEvent()` used for installs and opens, are not supported.**
 
+!!! info "Not recommended for Enterprise Clients"
+    Due to the nature of this functionality, we do not recommend the use of referrals for Enterprise clients.
+
 Branch allows you to reward users with credits, track those credits, and redeem them when appropriate. It is a unit-less currency available to your users without you having to build a system from scratch.
 
 <p align="center">
