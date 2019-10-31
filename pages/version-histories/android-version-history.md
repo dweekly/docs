@@ -1,3 +1,14 @@
+### v4.1.2
+
+**( 30 Oct 2019 )**
+
+- Removed fabric artifacts.
+- Closed field gaps with TUNE SDK.
+- Fixed sharing links on devices without a touchscreen.
+- Configurable CDN endpoint.
+- Refactored codebase to follow Android Studio project structure.
+- Decoupled LifecycleObserver from main Branch.java class.
+
 ### v4.1.1
 
 **( 07 Oct 2019 )**
