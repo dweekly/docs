@@ -1,8 +1,8 @@
 ## Overview
 
-![MyAppFree](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/myappfree-1571905068264.png)
+![Touchpoint Ads](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/e4a7f3ea2363-1-1571739108227.png)
 
-This guide will walk you through how to setup your campaigns with **[MyAppFree](https://www.myappfree.com/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
+This guide will walk you through how to setup your campaigns with **[Touchpoint Ads](https://www.touchpointcorp.com/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -14,13 +14,13 @@ This guide will walk you through how to setup your campaigns with **[MyAppFree](
 
 {! ingredients/deep-linked-ads/enable-partner.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/myappfree/myappfree-enable.png)
+![image](/_assets/img/pages/deep-linked-ads/touchpoint-ads/touchpoint-ads-enable.png)
 
 {! ingredients/deep-linked-ads/add-credentials.md !}
 
 {! ingredients/deep-linked-ads/enable-partner-tip.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/myappfree/myappfree-postbacks.png)
+![image](/_assets/img/pages/deep-linked-ads/touchpoint-ads/touchpoint-ads-postbacks.png)
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 
