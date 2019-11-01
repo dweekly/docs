@@ -171,7 +171,8 @@ nav:
       - Apple App Store: apps/ios-launch.md
       - Google Play: apps/android-launch.md
     - Advanced Configuration:
-      - V2 Events: apps/v2event.md
+      - Tracking Commerce, Content, Lifecycle and Custom Events : apps/v2event.md
+      - SDK Privacy Controls: apps/sdk-privacy-controls.md
       - Logging Branch Events Using Google Tag Manager: apps/logging-branch-events-using-google-tag-manager.md
     - Version Histories:
       - Android Version History: version-histories/android-version-history.md
