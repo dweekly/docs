@@ -62,7 +62,7 @@ Branch.sharedInstance().trackingDisabled = true
 
 ### Windows SDK
 
-#### C-Sharp
+#### C-sharp
 
 ```
 void DisableTracking(bool disableTracking);
