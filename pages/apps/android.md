@@ -11,6 +11,15 @@
 
     If you are running Google Play Services versions below 17, no update is necessary.
 
+!!! info "Amazon Fire Device Support"
+    The Branch Android SDK 4.1.1+ includes support for Amazon Fire devices.  
+
+    Please follow the guide below **except do not include the following two lines in the app level `build.gradle` file**:
+    ```
+    implementation 'com.google.android.gms:play-services-appindexing:9.+' // App indexing
+    implementation 'com.google.android.gms:play-services-ads:9+' // GAID matching
+    ```
+
 ## Integrate Branch
 
 - ### Configure Branch

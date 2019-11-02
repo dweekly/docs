@@ -71,6 +71,9 @@ The following log topics are available via the Aggregate Export API:
 !!! info "Info"
 	Branch does not support exports of the infrequently-used update and postbacks TUNE topics.
 
+	!!! warning "IP Discrepancies"
+		Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
+
 
 ## Available Fields
 

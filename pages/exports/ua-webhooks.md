@@ -121,6 +121,9 @@ Setting up Advanced Filters or Freemarker macros requires an understanding of th
 !!! info "Full List of Available Postback Macros"
     To find a complete list of Branch supported postback macros, please see [Postback Macros & Functions](/resources/postback-macros-and-functions/).
 
+!!! warning "IP Discrepancies"
+	Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
+
 ### Sample webhook POST body syntax
 
 The POST body for all webhooks follows the same structure:
