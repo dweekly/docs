@@ -3,11 +3,6 @@
 var buttons = (function() {
   // properties
   var buttons = {
-    support: {
-      url: _getSupportUrl(),
-      buttons: document.getElementsByClassName('contact-support'),
-      example: '<a href="#" class="contact-support" title="Contact support">Contact support</a>',
-    },
     improve: {
       url: _getImproveUrl(),
       buttons: document.getElementsByClassName('improve-doc'),
@@ -16,9 +11,6 @@ var buttons = (function() {
   };
 
   // private
-  function _getSupportUrl() {
-    return 'https://support.branch.io/support/tickets/new/';
-  }
   function _getImproveUrl() {
     var trim = window.location.pathname.replace(/^\/|\/$/g, '').split('/');
     trim = trim[0] === 'docs' ? trim.slice(1, trim.length).join('/') : trim.join('/');
