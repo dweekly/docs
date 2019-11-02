@@ -104,6 +104,9 @@ All exports via Data Feeds are powered by Branch's [People-Based Attribution](/d
 !!! tip
     A full day's files will be available on our S3 bucket at that location to download around 7:00pm UTC. It will return a blank array from S3 for any empty files until the UTC day is over and the data has been transfered to S3, therefore it is recommended you schedule any ETLs to fetch the data for the previous day around 7:00pm UTC (12pm PST).
 
+!!! warning "IP Discrepancies"
+	Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
+
 ## Support
 
 ### Time Limits

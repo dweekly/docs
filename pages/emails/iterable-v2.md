@@ -96,7 +96,7 @@ If you have not added a custom click tracking domain yet, follow the instruction
 
 ![image](/_assets/img/pages/email/iterable/iterable-aasa.png)
 
-For more information, please see Iterable's documentation on [Setting up iOS Universal Links](https://support.iterable.com/hc/en-us/articles/115000440206-Setting-up-iOS-Universal-Links#what-should-an-apple-app-site-association-file-look-like-how-does-all-this-work).
+For more information, please see Iterable's documentation on [Setting up iOS Universal Links](https://support.iterable.com/hc/en-us/articles/360035496511-iOS-Universal-Links-Setup-#setup).
 
 ## Support
 

@@ -151,6 +151,9 @@ Below is the full list of fields:
 	}
 ```
 
+!!! warning "mParticle for Android and/or iOS"
+    If you use the mParticle plugins alongside the Branch SDK, you must **ensure Firebase authenticates before the Branch session is initialized with mParticle**. When the Branch session is initialized with mParticle prior to Firebase authentication, the deep link data is not returned.
+
 ## Using Firebase DebugView
 
 To debug the events and their metadata, you can enable the `DebugView` on Firebase to verify the setup. Please refer to Google's official instructions [here](https://firebase.google.com/docs/analytics/debugview).
@@ -171,4 +174,4 @@ To debug the events and their metadata, you can enable the `DebugView` on Fireba
 	!!! warning "NOTE"
 		Please ensure you’ve reviewed your agreements with any ad network (for example Facebook, Snap and Twitter) to ensure your handling of attribution data and use of third party analytics tools is in compliance.
 
-- As per your account settings, it may be the case where the Fingerprinting attribution is disabled. This means that the deep link will return the link data, but no attribution data will be recorded at Branch’s end. If this is the case(ensure to check with your Account Manager or support@branch.io).
+- As per your account settings, it may be the case where the Fingerprinting attribution is disabled. This means that the deep link will return the link data, but no attribution data will be recorded at Branch’s end. If this is the case (ensure to check with your Account Manager or support@branch.io).

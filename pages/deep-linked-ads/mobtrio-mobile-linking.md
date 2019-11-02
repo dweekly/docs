@@ -1,8 +1,8 @@
 ## Overview
 
-![MyAppFree](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/myappfree-1571905068264.png)
+![MobTrio](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/Mobtrio-1571109946316.png)
 
-This guide will walk you through how to setup your campaigns with **[MyAppFree](https://www.myappfree.com/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
+This guide will walk you through how to setup your campaigns with **[MobTrio](https://m-trio.com/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -14,13 +14,13 @@ This guide will walk you through how to setup your campaigns with **[MyAppFree](
 
 {! ingredients/deep-linked-ads/enable-partner.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/myappfree/myappfree-enable.png)
+![image](/_assets/img/pages/deep-linked-ads/mobtrio/mobtrio-enable.png)
 
 {! ingredients/deep-linked-ads/add-credentials.md !}
 
 {! ingredients/deep-linked-ads/enable-partner-tip.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/myappfree/myappfree-postbacks.png)
+![image](/_assets/img/pages/deep-linked-ads/mobtrio/mobtrio-postbacks.png)
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 

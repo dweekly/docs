@@ -617,6 +617,7 @@ nav:
       - LINE Corp. : deep-linked-ads/line-corp-mobile-tracking.md
       - Linkmine: deep-linked-ads/linkmine-mobile-tracking.md
       - Linking Mobile: deep-linked-ads/linking-mobile-mobile-tracking.md
+      - LiveIntent: deep-linked-ads/liveintent-mobile-tracking.md
       - LinkShare : deep-linked-ads/linkshare-mobile-tracking.md
       - Living Consumer: deep-linked-ads/living-consumer-mobile-tracking.md
       - LoopMe: deep-linked-ads/loopme-mobile-tracking.md
@@ -664,6 +665,7 @@ nav:
       - Mobisonic: deep-linked-ads/mobisonic-mobile-tracking.md
       - Mobistroke: deep-linked-ads/mobistroke-mobile-tracking.md
       - Mobisummer: deep-linked-ads/mobisummer-mobile-tracking.md
+      - MobTrio: deep-linked-ads/mobtrio-mobile-tracking.md
       - Mobivisits Media: deep-linked-ads/mobivisits-media-mobile-tracking.md
       - Mobixu: deep-linked-ads/mobixu-mobile-tracking.md
       - Mobligent Media: deep-linked-ads/mobligent-media-mobile-tracking.md
@@ -754,6 +756,7 @@ nav:
       - Qooapp Limited : deep-linked-ads/qooapp-limited-mobile-tracking.md
       - QuickSticks Media: deep-linked-ads/quicksticks-media-mobile-tracking.md
       - Quora : deep-linked-ads/quora-mobile-tracking.md
+      - RainyDayMarketing: deep-linked-ads/rainydaymarketing-mobile-tracking.md
       - Rakuten Marketing : deep-linked-ads/rakuten-marketing-mobile-tracking.md
       - RankMyApp : deep-linked-ads/rankmyapp-mobile-tracking.md
       - RationalHeads Technologies: deep-linked-ads/rationalheads-technologies-mobile-tracking.md
@@ -841,6 +844,7 @@ nav:
       - TimeOneGroup : deep-linked-ads/timeonegroup-mobile-tracking.md
       - Times Internet Limited: deep-linked-ads/times-internet-limited-mobile-tracking.md
       - TNK Factory : deep-linked-ads/tnk-factory-mobile-tracking.md
+      - Touchpoint Ads: deep-linked-ads/touchpoint-ads-mobile-tracking.md
       - Tradedoubler : deep-linked-ads/tradedoubler-mobile-tracking.md
       - Tradelab: deep-linked-ads/tradelab-mobile-tracking.md
       - TradeTracker : deep-linked-ads/tradetracker-mobile-tracking.md
@@ -1001,6 +1005,7 @@ nav:
       - mParticle (export): integrations/mparticle-export.md
       - mParticle (import): integrations/mparticle-import.md
       - Netcore Smartech: integrations/netcore-smartech.md
+      - Neustar: integrations/neustar.md
       - Scalarr: integrations/scalarr.md
       - SearchAdsHQ: integrations/searchadshq.md
       - Segment (export): integrations/segment-export.md
