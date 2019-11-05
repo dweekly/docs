@@ -27,9 +27,11 @@ Branch provides the following two methods to set the relevant information in the
 !!! info "Pre-loaded Data in the APK"
 	If you set the preloaded data in the APK, it will override the system props data.
 
-After initialization, call these setters to set the data in the APK:
+After loading the Branch SDK in the Application class as per the docs [here](https://docs.branch.io/apps/android/#load-branch), call the below setters to set the data in the APK. This is how the final implementation should look like:
 
 ```
+// Branch object initialization
+Branch.getAutoInstance(this);
 Branch.setPreinstallCampaign(“My Campaign Name”)
 Branch.setPreinstallPartner(“Branch $3p Parameter Value”)
 ```
