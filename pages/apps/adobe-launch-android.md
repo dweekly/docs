@@ -35,7 +35,7 @@ Here's a brief outline of how to use the AdobeBranchExtension in your app:
 2. For application integration, you'll need to follow the instructions as described in the Branch docs here:
     - [Integrate Branch](/apps/android/)
 
-3. For deep linking, you will need to add the Branch domains, app URI scheme and your Branch key to the manifest file for you app for deep linking.
+3. For deep linking, you will need to add the Branch domains, app URI scheme and your Branch key to your app's manifest file.
     - [Configure your application with Branch key and for URI schemes](/apps/android/#configure-app)
 
 4. In the Adobe dashboard, activate Branch and add your Branch key to your app's configuration.
