@@ -25,25 +25,53 @@ Conversion | Product Catalogue Sales | Web or App | **[link](/deep-linked-ads/fa
 
 ## Data Mapping between Branch and Facebook
 
-| Branch event name | Facebook MMP _eventName
-| --- | ---
-| ACHIEVE_LEVEL | fb_mobile_level_achieved
-| ADD_PAYMENT_INFO | fb_mobile_add_payment_info
-| ADD_TO_CART | fb_mobile_add_to_cart
-| ADD_TO_WISHLIST | fb_mobile_add_to_wishlist
-| COMPLETE_REGISTRATION | fb_mobile_complete_registration
-| COMPLETE_TUTORIAL | fb_mobile_tutorial_completion
-| INITIATE_PURCHASE | fb_mobile_initiated_checkout
-| PURCHASE | fb_mobile_purchase
-| RATE | fb_mobile_rate
-| SEARCH | fb_mobile_search
-| SPEND_CREDITS | fb_mobile_spent_credits
-| UNLOCK_ACHIEVEMENT | fb_mobile_achievement_unlocked
-| VIEW_ITEM | fb_mobile_content_view
+### Campaign/Ad Data
 
-### Mapping of Branch metadata to Facebook metadata
+| **Branch Data**                                          | **Facebook Data**      |
+|------------------------------------------------------|--------------------|
+| last_attributed_touch_data_tilde_campaign            | campaign name      |
+| last_attributed_touch_data_tilde_campaign_id         | campaign ID        |
+| last_attributed_touch_data_tilde_secondary_publisher | publisher platform |
+| last_attributed_touch_data_tilde_creative_name       | creative name      |
+| last_attributed_touch_data_tilde_creative_id         | creative ID        |
+| last_attributed_touch_data_tilde_ad_set_name         | ad set name        |
+| last_attributed_touch_data_tilde_ad_set_id           | ad set ID          |
+| last_attributed_touch_data_tilde_ad_name             | ad name            |
+| last_attributed_touch_data_tilde_ad_id               | ad ID              |
 
-|Branch Key-Value Pair | Facebook MMP Key-Value Pair | Facebook event(s) supported
+
+### Event Names
+
+| **Facebook MMP _eventName**         | **Branch Event Name**     |
+|---------------------------------|-----------------------|
+| AdClick                         | Custom                |
+| AdImpression                    | Custom                |
+| Contact                         | Custom                |
+| CustomizeProduct                | Custom                |
+| Donate                          | Custom                |
+| fb_mobile_achievement_unlocked  | UNLOCK_ACHIEVEMENT    |
+| fb_mobile_activate_app          | OPEN                  |
+| fb_mobile_add_payment_info      | ADD_PAYMENT_INFO      |
+| fb_mobile_add_to_cart           | ADD_TO_CART           |
+| fb_mobile_add_to_wishlist       | ADD_TO_WISHLIST       |
+| fb_mobile_complete_registration | COMPLETE_REGISTRATION |
+| fb_mobile_content_view          | VIEW_ITEM             |
+| fb_mobile_initiated_checkout    | INITIATE_PURCHASE     |
+| fb_mobile_level_achieved        | ACHIEVE_LEVEL         |
+| fb_mobile_purchase              | PURCHASE              |
+| fb_mobile_rate                  | RATE                  |
+| fb_mobile_search                | SEARCH                |
+| fb_mobile_spent_credits         | SPEND_CREDITS         |
+| fb_mobile_tutorial_completion   | COMPLETE_TUTORIAL     |
+| FindLocation                    | Custom                |
+| Schedule                        | Custom                |
+| StartTrial                      | Custom                |
+| SubmitApplication               | Custom                |
+| Subscribe                       | Custom                |
+
+### Metadata
+
+|**Branch Key-Value Pair** | **Facebook MMP Key-Value Pair** | **Facebook event(s) supported**
 | --- | --- | ---
 |commerce_data.revenue | _valueToSum | fb_mobile_add_to_cart, fb_mobile_add_to_wishlist, fb_mobile_initiated_checkout, fb_mobile_purchase, fb_mobile_spent_credits, fb_mobile_content_view
 |commerce_data.currency | fb_currency | fb_mobile_add_to_cart, fb_mobile_add_to_wishlist, fb_mobile_initiated_checkout, fb_mobile_purchase, fb_mobile_content_view
