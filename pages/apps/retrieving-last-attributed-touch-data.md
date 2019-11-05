@@ -68,7 +68,23 @@ By using the LATD SDK querying, the following fields will be returned to the cli
 - last_attributed_touch_data_plus_touch_id
 - last_attributed_touch_data_custom_fields
 
+## Enabling LATD Feature
+
+Before you can receive Branch last attributed touch data client-side, you need to enable this functionality in your Branch dashboard. This functionality is disabled by default.
+
+To enable LATD:
+
+1. In the left-hand navigation, click on **Link Settings**.
+2. On the **Link Settings** page, scroll down and expand **Advanced Settings**.
+3. Within the **Advanced Settings** section, check the box next to **Enable retrieving Last Attributed Touch Data via SDKs**.
+4. Once checked, scroll down to the bottom of the page and click **Save**.
+
+![image](/_assets/img/pages/apps/latd-setting.png)
+
 ## Android
+
+!!! info "Attribution Window Logic"
+    When calling the LATD method, you can also provide a value for the `attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
 
 ```
 // init the LATD call
@@ -78,10 +94,13 @@ Branch.getInstance().getLastAttributedTouchData(
         public void onDataFetched(JSONObject jsonObject, BranchError error) {
              // read the data from the jsonObject
         }
-    }, 30);
+    }, attributionWindow);
 ```
 
 ## iOS
+
+!!! info "Attribution Window Logic"
+    When calling the LATD method, you can also provide a value for the `ltad.attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
 
 ```
 [[Branch getInstance] lastTouchAttributedDataWithCompletion:^(BranchLastAttributedTouchData * _Nullable ltad) {
@@ -91,6 +110,9 @@ Branch.getInstance().getLastAttributedTouchData(
 ```
 
 ## Web
+
+!!! info "Attribution Window Logic"
+    When calling the LATD method, you can also provide a value for the `attribution_window` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
 
 ```
 branch.lastAttributedTouchData(
