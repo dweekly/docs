@@ -16,7 +16,7 @@ Add the power of Branch deep linking and attribute to your Adobe Marketing Cloud
 - Adobe Core Platform
 
 !!! warning "Branch SDK not Required"
-	As the Adobe Branch extension is a wrapper that auto includes a sub-dependency for the Branch SDK, you do not need to - nor do we recommend to - implement the Branch SDK separately in your app.
+    As the Adobe Branch extension is a wrapper that auto includes a sub-dependency for the Branch SDK, you do not need to - nor do we recommend to - implement the Branch SDK separately in your app.
 
 ## Example
 
@@ -33,18 +33,18 @@ Here's a brief outline of how to use the AdobeBranchExtension in your app:
 1. You'll need to configure your app and get a Branch API key in the [Branch Metrics dashboard](https://branch.dashboard.branch.io/account-settings/app). You can read more about configuring your dashboard in the Branch docs here.
 
 2. For application integration, you'll need to follow the instructions as described in the Branch docs here:
-	- [Integrate Branch](/apps/android/)
+    - [Integrate Branch](/apps/android/)
 
-3. Also add an app URI scheme and your Branch key to the manifest file for you app for deep linking.
-	- [Configure your application with Branch key and for URI schemes](/apps/android/#configure-app)
+3. For deep linking, you will need to add the Branch domains, app URI scheme and your Branch key to the manifest file for you app for deep linking.
+    - [Configure your application with Branch key and for URI schemes](/apps/android/#configure-app)
 
 4. In the Adobe dashboard, activate Branch and add your Branch key to your app's configuration.
-	- Activate Branch:
+    - Activate Branch:
 
-	![image](/_assets/img/pages/apps/adobe-launch-install.png)
+    ![image](/_assets/img/pages/apps/adobe-launch-install.png)
 
 5. Add the AdobeBranchExtension to your app's build.gradle.
-	`implementation 'io.branch.sdk.android:adobebranchextension:1.+'`
+    `implementation 'io.branch.sdk.android:adobebranchextension:1.+'`
 
 6. Register the Branch `AdobeBranchExtension` with `MobileCore` in `configureWithAppID`:
 ```
@@ -64,7 +64,25 @@ Here's a brief outline of how to use the AdobeBranchExtension in your app:
     });
 
 ```
-
+7. Intitialize Branch session and register BranchReferralInitListener in your launcher activity. You can see some [best practices on deep link routing in this doc](/deep-linking/routing/)
+```
+    AdobeBranch.initSession(new Branch.BranchReferralInitListener() {
+            @Override
+            public void onInitFinished(JSONObject referringParams, BranchError error) {
+                try {
+                    // Retrieve deep link params and route to content appropriately 
+                    if (referringParams.has("+clicked_branch_link") && referringParams.getBoolean("+clicked_branch_link")) {
+                            // Handle your Branch deep link routing in the callback
+                        }
+                    }
+                } catch (JSONException e) {
+                    // referringParams property doesn't exist
+                } catch (NumberFormatException e) {
+                    // internal error; id is not a number.
+                }
+            }
+    }, getIntent().getData(), this);
+```
 ## Implementing Branch Features
 
 Once you've added the AdobeBranchExtension and Branch, you can always use Branch features directly. You can learn about using the Branch features here, in the Branch documentation for [Android.](/apps/android/)
@@ -106,6 +124,21 @@ Here's an example of tracking app state via Adobe Launch:
         MobileCore.dispatchEvent(newEvent, this);
     }
 
+Note that all Adobe Events are processed by default. To optionally track events with custom names you can register a whitelist as follows:
+```
+List<AdobeBranch.EventTypeSource> apiWhitelist = new ArrayList<>();
+apiWhitelist.add(new AdobeBranch.EventTypeSource("com.adobe.eventType.generic.track", "com.adobe.eventSource.requestContent"));
+apiWhitelist.add(new AdobeBranch.EventTypeSource("io.branch.eventType.generic.track", "io.branch.eventSource.requestContent"));
+
+AdobeBranch.registerAdobeBranchEvents(apiWhitelist);
+```
+
+Additional Whitelist Configuration Implementation Notes:
+
+- Whitelist Configuration must happen after Adobe Initialization has completed.
+- An empty whitelist will not listen for any events.
+- A null whitelist (default) will listen for all Adobe events.
+- A non-empty whitelist will listen for only those events that are in the list.
 
 ## License
 
