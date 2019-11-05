@@ -59,6 +59,8 @@ Please reach out to Selligent Relationship Managers to request a new custom trac
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

@@ -49,6 +49,8 @@ Contact your **Braze Account Manager** and request the Custom Click Tracking Dom
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

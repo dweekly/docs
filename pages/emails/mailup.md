@@ -51,6 +51,9 @@ MailUp
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
+## Using Universal email
 
 ## Using Universal email
 

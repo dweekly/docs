@@ -53,6 +53,8 @@ Add a custom click tracking domain at the **Brand Configuration** page in the fi
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

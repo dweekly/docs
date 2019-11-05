@@ -53,6 +53,8 @@ You can retrieve your click tracking domain from the **[Domains](https://my.sail
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

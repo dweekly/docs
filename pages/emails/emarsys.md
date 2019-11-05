@@ -57,6 +57,8 @@ Request a new custom click tracking domain from your Account team:
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

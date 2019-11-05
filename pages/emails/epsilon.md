@@ -53,6 +53,10 @@ For Epsilon, you may also need an IP address. Notify your Epsilon Harmony Accoun
 
 {! ingredients/email/epsilon-cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
+## Using Universal email
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

@@ -51,6 +51,8 @@ Please reach out to Betaout support to request a new custom tracking domain for 
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

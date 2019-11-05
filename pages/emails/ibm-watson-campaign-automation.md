@@ -55,6 +55,8 @@ If you need to add new custom click tracking domain please ask your IBM Watson C
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

@@ -49,6 +49,8 @@ Contact your **Braze Account Manager** and request the Email Click Tracking Doma
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

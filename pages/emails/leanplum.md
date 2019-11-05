@@ -51,6 +51,8 @@ For more information on how to set up your domain, please visit Leanplum's [docu
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

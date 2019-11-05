@@ -51,6 +51,8 @@ You can retrieve your click tracking domain from the account settings section of
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

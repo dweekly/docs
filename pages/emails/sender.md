@@ -51,6 +51,8 @@ You can retrieve your click tracking domain from the support team **support@send
 
 {! ingredients/email/cname.md !}
 
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

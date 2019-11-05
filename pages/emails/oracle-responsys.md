@@ -49,6 +49,10 @@ You can retrieve your click tracking domain from your Responsys settings. If you
 !!! tip "Adding a custom click-tracking domain"
     If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Oracle Responsys.
 
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}

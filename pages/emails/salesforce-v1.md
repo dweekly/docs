@@ -63,6 +63,12 @@ Your Salesforce account must be configured to correctly handle Universal Links. 
 
 ![image](/_assets/img/pages/email/salesforce/salesforce-aasa-form.png)
 
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
+
+## Using Universal email
+
 ## Using Universal email
 
 {! ingredients/email/usage.md !}
