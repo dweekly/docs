@@ -10,21 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Campa
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Add and verify a custom click tracking domain in the **[Set up a custom domain name for your account](http://email-campmon.branch.rocks/account/customize/customdomain/manage){:target="\_blank"}** section of your Campaign Monitor account:
-
-    ![image](/_assets/img/pages/email/campaign-monitor/create-domain.png)
-
-For more information on how to set up your domain, please visit Campaign Monitor's [documentation](https://help.campaignmonitor.com/custom-domain-names#set-up-a-custom-domain){:target="\_blank"}.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Campaign Monitor.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -56,6 +41,21 @@ If you have not added a custom click tracking domain yet, follow the instruction
 {! ingredients/email/bounce-web.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Add and verify a custom click tracking domain in the **[Set up a custom domain name for your account](http://email-campmon.branch.rocks/account/customize/customdomain/manage){:target="\_blank"}** section of your Campaign Monitor account:
+
+    ![image](/_assets/img/pages/email/campaign-monitor/create-domain.png)
+
+For more information on how to set up your domain, please visit Campaign Monitor's [documentation](https://help.campaignmonitor.com/custom-domain-names#set-up-a-custom-domain){:target="\_blank"}.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Campaign Monitor.
+
+{! ingredients/email/cname.md !}
 
 ## Using Universal email
 

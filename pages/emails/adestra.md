@@ -10,19 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Adest
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Add and verify a custom click tracking domain in the **[Setting -> Domain]** section of your Adestra account.
-
-For more information on how to set up your domain, please visit Adestra's documentation.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at ActiveCampaign.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -52,6 +39,19 @@ You can retrieve your click tracking domain from the **[Setting -> Domain]** sec
 {! ingredients/email/bounce-web.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Add and verify a custom click tracking domain in the **[Setting -> Domain]** section of your Adestra account.
+
+For more information on how to set up your domain, please visit Adestra's documentation.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at ActiveCampaign.
+
+{! ingredients/email/cname.md !}
 
 ## Using Universal email
 

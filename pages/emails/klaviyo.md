@@ -10,19 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Klavi
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Contact your **Klaviyo Account Manager** and request them to create a Custom Click Tracking domain.
-
-For more information on how to set up your domain, please visit Klaviyo's [documentation](https://help.klaviyo.com/hc/en-us/articles/360001550572-Setting-Up-Dedicated-Click-Tracking){:target="\_blank"}.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Klaviyo.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -50,6 +37,19 @@ Contact your **Klaviyo Account Manager** and request the name of your Custom Cli
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Contact your **Klaviyo Account Manager** and request them to create a Custom Click Tracking domain.
+
+For more information on how to set up your domain, please visit Klaviyo's [documentation](https://help.klaviyo.com/hc/en-us/articles/360001550572-Setting-Up-Dedicated-Click-Tracking){:target="\_blank"}.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Klaviyo.
+
+{! ingredients/email/cname.md !}
 
 ## Using Universal email
 

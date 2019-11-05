@@ -10,21 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Spark
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Add and verify a custom click tracking domain in the **[Tracking Domains](https://app.sparkpost.com/account/tracking-domains){:target="\_blank"}** section of your SparkPost account:
-
-    ![image](/_assets/img/pages/email/sparkpost/create-domain.png)
-
-For more information on how to set up your domain, please visit Sparkpost's [documentation](https://www.sparkpost.com/docs/tech-resources/enabling-multiple-custom-tracking-domains/){:target="\_blank"}.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Sparkpost.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -54,6 +39,21 @@ You can retrieve your click tracking domain from the **[Tracking Domains](https:
 {! ingredients/email/bounce-web.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Add and verify a custom click tracking domain in the **[Tracking Domains](https://app.sparkpost.com/account/tracking-domains){:target="\_blank"}** section of your SparkPost account:
+
+    ![image](/_assets/img/pages/email/sparkpost/create-domain.png)
+
+For more information on how to set up your domain, please visit Sparkpost's [documentation](https://www.sparkpost.com/docs/tech-resources/enabling-multiple-custom-tracking-domains/){:target="\_blank"}.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Sparkpost.
+
+{! ingredients/email/cname.md !}
 
 ## Using Universal email
 

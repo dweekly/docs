@@ -10,21 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Itera
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Add and verify a custom click tracking domain in the **[Mail Domains]** page of your Iterable account:
-
-    ![image](/_assets/img/pages/email/iterable/create-domain.png)
-
-For more information on how to set up your domain, please visit Iterable's [documentation](https://support.iterable.com/hc/en-us/articles/115002651226-Setting-Up-Mail-Domains#trackingdomains){:target="\_blank"}.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Iterable.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -97,6 +82,21 @@ If you have not added a custom click tracking domain yet, follow the instruction
 ![image](/_assets/img/pages/email/iterable/iterable-aasa.png)
 
 For more information, please see Iterable's documentation on [Setting up iOS Universal Links](https://support.iterable.com/hc/en-us/articles/360035496511-iOS-Universal-Links-Setup-#setup).
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Add and verify a custom click tracking domain in the **[Mail Domains]** page of your Iterable account:
+
+    ![image](/_assets/img/pages/email/iterable/create-domain.png)
+
+For more information on how to set up your domain, please visit Iterable's [documentation](https://support.iterable.com/hc/en-us/articles/115002651226-Setting-Up-Mail-Domains#trackingdomains){:target="\_blank"}.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Iterable.
+
+{! ingredients/email/cname.md !}
 
 ## Support
 

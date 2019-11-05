@@ -10,19 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Oracl
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Contact your **Bronto Account Manager** and request to add and verify a private tracking domain:
-
-For more information on how to set up your domain, please visit Bronto's [documentation](https://helpdocs.bronto.com/bmp/task/t_bmp_home_data_exchange_link_tracking_set_up.html){:target="\_blank"}.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Bronto.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -50,6 +37,19 @@ Contact your **Bronto Account Manager** to retrieve your private domain of your 
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Contact your **Bronto Account Manager** and request to add and verify a private tracking domain:
+
+For more information on how to set up your domain, please visit Bronto's [documentation](https://helpdocs.bronto.com/bmp/task/t_bmp_home_data_exchange_link_tracking_set_up.html){:target="\_blank"}.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Bronto.
+
+{! ingredients/email/cname.md !}
 
 ## Using Universal email
 

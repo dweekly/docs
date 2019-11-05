@@ -10,19 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Messa
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Add and verify a custom click tracking domain in the dit Account Settings:
-
-For more information on how to set up your domain, please visit MessageGears's [documentation](https://support.messagegears.com/hc/en-us/articles/236281188-Whitelabeling-and-Dedicated-IPs#customtrackingdomain){:target="\_blank"}.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at MessageGears.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -52,6 +39,19 @@ You can retrieve your click tracking domain from the dit Account Settings. If yo
 {! ingredients/email/bounce-web.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Add and verify a custom click tracking domain in the dit Account Settings:
+
+For more information on how to set up your domain, please visit MessageGears's [documentation](https://support.messagegears.com/hc/en-us/articles/236281188-Whitelabeling-and-Dedicated-IPs#customtrackingdomain){:target="\_blank"}.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at MessageGears.
+
+{! ingredients/email/cname.md !}
 
 ## Using Universal email
 

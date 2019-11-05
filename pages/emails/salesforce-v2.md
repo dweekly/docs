@@ -14,21 +14,6 @@ This guide will walk you through how to setup your email campaigns with **[Sales
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a Sender Authentication Package
-
-1. Configure the Sender Authentication Package for your Salesforce Marketing Cloud account using instructions form your Salesforce account manger.
-
-    ![image](/_assets/img/pages/email/salesforce_dns/create-domain.png)
-
-For more information on how to set up your domain, please visit Salesforce Marketing Cloud's [documentation](https://help.salesforce.com/articleView?id=mc_es_subdomain_delegation_guide.htm&type=5){:target="\_blank"}.
-
-!!! tip "Updating DNS settings"
-    As soon as you've configured and verified the Sender Authentication Package with the Salesforce team, please find the **click** record in your DNS settings so we can update your DNS settings.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -56,6 +41,21 @@ You can retrieve your click tracking domain from the **[Authenticated Domains]**
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a Sender Authentication Package
+
+1. Configure the Sender Authentication Package for your Salesforce Marketing Cloud account using instructions form your Salesforce account manger.
+
+    ![image](/_assets/img/pages/email/salesforce_dns/create-domain.png)
+
+For more information on how to set up your domain, please visit Salesforce Marketing Cloud's [documentation](https://help.salesforce.com/articleView?id=mc_es_subdomain_delegation_guide.htm&type=5){:target="\_blank"}.
+
+!!! tip "Updating DNS settings"
+    As soon as you've configured and verified the Sender Authentication Package with the Salesforce team, please find the **click** record in your DNS settings so we can update your DNS settings.
+
+{! ingredients/email/cname.md !}
 
 ## Using Universal email
 

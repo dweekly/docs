@@ -13,28 +13,6 @@ This guide will walk you through how to setup your email campaigns with **[Sales
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-You can retrieve your click tracking domain from your Salesforce settings. We **highly** recommend using a new click tracking domain for this implementation to ensure that the user experience for pre-Branch links on the original click tracking domain doesn't break.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Salesforce.
-
-#### Configure your AASA file in Salesforce Marketing Cloud
-
-Your Salesforce account must be configured to correctly handle Universal Links. Configure the settings in Deep Linking under the Send Management section in Email Studio. Ensure you're in the account corresponding to the correct click tracking domain [you selected](#tell-us-your-click-tracking-domain) above.
-
-![image](https://cdn.branch.io/branch-assets/1559434914239-og_image.png)
-
-1. Enter the AppID value
-1. Check the "Exclude Profile" and "Unsub Center" checkboxes to force links to these items to open in the browser and not the app, if desired.
-1. Click "Save" to save the configuration.
-1. Let Salesforce and Branch know that you've finished this step and your Technical Account Manager will verify that everything looks good.
-
-![image](/_assets/img/pages/email/salesforce/salesforce-aasa-form.png)
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -62,6 +40,28 @@ You can retrieve your click tracking domain from your Salesforce settings. If yo
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+You can retrieve your click tracking domain from your Salesforce settings. We **highly** recommend using a new click tracking domain for this implementation to ensure that the user experience for pre-Branch links on the original click tracking domain doesn't break.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Salesforce.
+
+#### Configure your AASA file in Salesforce Marketing Cloud
+
+Your Salesforce account must be configured to correctly handle Universal Links. Configure the settings in Deep Linking under the Send Management section in Email Studio. Ensure you're in the account corresponding to the correct click tracking domain [you selected](#tell-us-your-click-tracking-domain) above.
+
+![image](https://cdn.branch.io/branch-assets/1559434914239-og_image.png)
+
+1. Enter the AppID value
+1. Check the "Exclude Profile" and "Unsub Center" checkboxes to force links to these items to open in the browser and not the app, if desired.
+1. Click "Save" to save the configuration.
+1. Let Salesforce and Branch know that you've finished this step and your Technical Account Manager will verify that everything looks good.
+
+![image](/_assets/img/pages/email/salesforce/salesforce-aasa-form.png)
 
 ## Using Universal email
 
