@@ -1,0 +1,2 @@
+!!! warning "SSL Changes"
+	Please be aware that it may take up to an hour to resolve SSL errors once you change the CNAME. During this time, link redirects on the click tracking domain will redirect to `branch.io`. If you are making this change to a live domain that has email click traffic from your users, it’s best to schedule time with your Branch account manager to expedite the changes during a time of low click traffic.

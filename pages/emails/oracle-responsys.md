@@ -12,13 +12,6 @@ To use the Branch Link Conversion SDK, you'll need an **EMD (Email Message Desig
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Oracle Responsys.
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -48,6 +41,17 @@ You can retrieve your click tracking domain from your Responsys settings. If you
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Oracle Responsys.
+
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
 
 ## Using Universal email
 

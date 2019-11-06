@@ -10,19 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Bluec
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Add a custom click tracking domain in the  section of your BlueCore account.
-
-2. Validate the new click tracking domain in BlueCore's dashboard, and also retrieve the secondary domain from the final step of that validation process (this secondary domain will be needed when you enable the Branch integration).
-
-!!! tip "Adding a custom click-tracking domain"
-    This domain must be validated in BlueCore, before you can enable the Branch integration.  For more information on how to validate a new domain in BlueCore, please contact your BlueCore account manager.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -48,6 +35,21 @@ Retrieve your click tracking domain from your BlueCore account. If you have not 
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Add a custom click tracking domain in the  section of your BlueCore account.
+
+2. Validate the new click tracking domain in BlueCore's dashboard, and also retrieve the secondary domain from the final step of that validation process (this secondary domain will be needed when you enable the Branch integration).
+
+!!! tip "Adding a custom click-tracking domain"
+    This domain must be validated in BlueCore, before you can enable the Branch integration.  For more information on how to validate a new domain in BlueCore, please contact your BlueCore account manager.
+
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
 
 ## Using Universal email
 

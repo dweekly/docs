@@ -37,7 +37,7 @@ Each access level - as defined above - comes with predefined permissions which y
 During the process of granting an agency access to your Branch account, you can also impose limitations around what data is available to the agency at any given time.
 
 !!! warning "Filter to Only Show Data from Specific Ad Networks"
-  When giving an ad partner access to your Branch account, please make sure you toggle the `Only Show Data from Specific Ad Networks` to on and select the ad partner you are giving access to.
+  	When giving an ad partner access to your Branch account, please make sure you toggle the `Only Show Data from Specific Ad Networks` to on and select the ad partner you are giving access to.
 
 - **Only Show Agency-tagged Data** - When toggled on, agency users can only see events tagged with their Agency ID.
 - **Restrict Access to Revenue Data** - When toggled on, agency users cannot view revenue data.
