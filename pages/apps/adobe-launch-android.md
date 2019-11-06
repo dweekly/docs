@@ -77,8 +77,6 @@ Here's a brief outline of how to use the AdobeBranchExtension in your app:
                     }
                 } catch (JSONException e) {
                     // referringParams property doesn't exist
-                } catch (NumberFormatException e) {
-                    // internal error; id is not a number.
                 }
             }
     }, getIntent().getData(), this);
