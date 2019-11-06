@@ -80,6 +80,7 @@ In addition to supporting Android, iOS and Web natively, Branch offers support f
 - [SDK Privacy Controls](/apps/sdk-privacy-controls)
 - [Logging Branch Events using Google Tag Manager](/apps/logging-branch-events-using-google-tag-manager)
 - [Retrieving Branch's Cross-Platform ID](/apps/retrieving-branchs-cross-platform-id)
+- [Retrieving Branch's Last Attributed Touch Data](/apps/retrieving-last-attributed-touch-data)
 
 ## Version Histories
 - [Android Version History](/version-histories/android-version-history)
