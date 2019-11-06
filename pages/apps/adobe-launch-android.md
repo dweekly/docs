@@ -73,7 +73,6 @@ Here's a brief outline of how to use the AdobeBranchExtension in your app:
                     // Retrieve deep link params and route to content appropriately 
                     if (referringParams.has("+clicked_branch_link") && referringParams.getBoolean("+clicked_branch_link")) {
                             // Handle your Branch deep link routing in the callback
-                        }
                     }
                 } catch (JSONException e) {
                     // referringParams property doesn't exist
