@@ -100,7 +100,7 @@ Branch.getInstance().getLastAttributedTouchData(
 ## iOS
 
 !!! info "Attribution Window Logic"
-    When calling the LATD method, you can also provide a value for the `ltad.attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
+    Branch uses the attribution window setting value in your Branch dashboard. The ability to set the attribution window value via the SDK will be included in the next release.
 
 ```
 [[Branch getInstance] lastTouchAttributedDataWithCompletion:^(BranchLastAttributedTouchData * _Nullable ltad) {
