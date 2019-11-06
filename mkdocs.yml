@@ -1039,6 +1039,7 @@ nav:
     - Webhooks: exports/ua-webhooks.md
     - Custom Exports: exports/custom-exports.md
     - Aggregate Exports: exports/aggregate-exports.md
+    - Cohort Exports: exports/cohort-exports.md
     - Daily Exports: exports/daily-exports.md
     - Query API: exports/query-api.md
     - Supplemental Information:
