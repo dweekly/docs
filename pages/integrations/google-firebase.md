@@ -166,9 +166,6 @@ To debug the events and their metadata, you can enable the `DebugView` on Fireba
 
 	The above purchase event on Branch might be attributed based on the attribution window, but on the Firebase this will always be organic as the SDK will not have the attribution data.
 
-	!!! info "Feature in Development"
-		Last attributed touch data explicitly within the SDK is currently in development. Once released, this discrepancy should not occur.
-
 - SAN attribution support, for Google UAC (no deep linking) and Facebook App Install (not so reliable deferred deep links), the Firebase installs would miss the attribution data.
 
 	!!! warning "NOTE"
