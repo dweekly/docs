@@ -89,6 +89,55 @@
 
 - ### Initialize Branch
 
+    - *Swift 5*
+    
+        ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
+        import UIKit
+        import Branch
+
+        @UIApplicationMain
+        class AppDelegate: UIResponder, UIApplicationDelegate {
+
+        var window: UIWindow?
+
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+          // if you are using the TEST key
+          Branch.setUseTestBranchKey(true)
+          // listener for Branch Deep Link data
+          if let branchInstance = Branch.getInstance(){
+             branchInstance.initSession(launchOptions: launchOptions) { (params, error) in
+               // do stuff with deep link data (nav to page, display content, etc)
+               print(params as? [String: AnyObject] ?? {})
+            }
+          }
+         
+          return true
+        }
+
+        func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+          if let branchInstance = Branch.getInstance(){
+            branchInstance.application(app, open: url, options: options)
+          }
+          return true
+        }
+
+        func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+          // handler for Universal Links
+          if let branchInstance = Branch.getInstance(){
+            branchInstance.continue(userActivity)
+          }
+          return true
+        }
+
+        func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+          // handler for Push Notifications
+          if let branchInstance = Branch.getInstance(){
+            branchInstance.handlePushNotification(userInfo)
+          }
+        }
+        ```
+        
+
     - *Swift 4.2*
 
         ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
