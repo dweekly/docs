@@ -25,6 +25,35 @@ Conversion | Product Catalogue Sales | Web or App | **[link](/deep-linked-ads/fa
 
 ## Data Mapping between Branch and Facebook
 
+### Event Names
+
+| **Facebook MMP _eventName**         | **Branch Event Name**     |
+|---------------------------------|-----------------------|
+| AdClick                         | Custom                |
+| AdImpression                    | Custom                |
+| Contact                         | Custom                |
+| CustomizeProduct                | Custom                |
+| Donate                          | Custom                |
+| fb_mobile_achievement_unlocked  | UNLOCK_ACHIEVEMENT    |
+| fb_mobile_activate_app          | OPEN                  |
+| fb_mobile_add_payment_info      | ADD_PAYMENT_INFO      |
+| fb_mobile_add_to_cart           | ADD_TO_CART           |
+| fb_mobile_add_to_wishlist       | ADD_TO_WISHLIST       |
+| fb_mobile_complete_registration | COMPLETE_REGISTRATION |
+| fb_mobile_content_view          | VIEW_ITEM             |
+| fb_mobile_initiated_checkout    | INITIATE_PURCHASE     |
+| fb_mobile_level_achieved        | ACHIEVE_LEVEL         |
+| fb_mobile_purchase              | PURCHASE              |
+| fb_mobile_rate                  | RATE                  |
+| fb_mobile_search                | SEARCH                |
+| fb_mobile_spent_credits         | SPEND_CREDITS         |
+| fb_mobile_tutorial_completion   | COMPLETE_TUTORIAL     |
+| FindLocation                    | Custom                |
+| Schedule                        | Custom                |
+| StartTrial                      | Custom                |
+| SubmitApplication               | Custom                |
+| Subscribe                       | Custom                |
+
 ### Campaign/Ad Data
 
 | **Branch Data**                                          | **Facebook Data**      |
