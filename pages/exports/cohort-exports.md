@@ -6,12 +6,12 @@ The Branch Cohort Exports allows you to programmatically query and export **Coho
     *    We may define dynamic record limits based on app_id/org_id.
 *   Max month lookback: 24
 *   Max number of dimensions: 11
-*   Max number of measures: 3
+*   Max number of measures: 5
 *   Max number of days that can be queried at a time: 90
 
 ## Authentication
 
-Calls to the v2 Query API require an _api_key_ query string parameter to be passed with each request. API Keys are generated on a per-user basis and are permanent.
+Calls to the Cohort Exports require an _api_key_ query string parameter to be passed with each request. API Keys are generated on a per-user basis and are permanent.
 
 Learn how to [retrieve your API key (a.k.a. `Access Token`)](/dashboard/organization-view/#managing-your-user-profile)
 
@@ -20,7 +20,7 @@ Learn how to [retrieve your API key (a.k.a. `Access Token`)](/dashboard/organiza
 
 ## Rate Limits
 
-The v2 Query API includes the following rate limits:
+The Cohort Exports includes the following rate limits:
 
 - 2 requests per second
 - 5 requests per minute
@@ -28,7 +28,7 @@ The v2 Query API includes the following rate limits:
 
 ## API Access
 
-In order to access the v2 Query API, a user will need to have both **Sensitive Data** and **Export** access.
+In order to access the Cohort Exports, a user will need to have both **Aggregate Data** and **Export** access.
 
 ![image](/_assets/img/pages/dashboard/access-levels/export-access.png)
 
@@ -36,28 +36,22 @@ For more details on how to give a user the required access, please follow [Grant
 
 ### Providing Agencies API Access
 
-If you work with an agency that runs your advertising campaigns and want to give them access to export the subsequent data, you can provide them with access to the Custom Export API.
+If you work with an agency that runs your advertising campaigns and want to give them access to export the subsequent data, you can provide them with access to the Cohort Exports.
 
-To provide an agency team member with access to the Custom Export API:
+To provide an agency team member with access to the Cohort Exports:
 
 1. In the left-hand navigation, under **Setup & Testing**, click on **Account Settings**.
 2. On the **Account Settings** page, click on the **Agencies** tab.
 3. Expand the agency in question, find the agency team member you want to give access to, hover on the button in the **Actions** column and click **Edit**.
 4. In the **Edit Agency Team Member** modal:
     1. Under **Access Level**, check the **Export** box.
-    2. Under **Permissions**, check the **Sensitive Data** box.
+    2. Under **Permissions**, check the **Aggregate Data** box.
 5. Optional: add data filters
     1. Under **Data Filters**, toggle any necessary data filters on/blue. Exported data will be filtered accordingly.
 6. Click **Save**.
 
-![image](/_assets/img/pages/exports/agency-export-access.png)
-
 !!! warning "Agency-Tagged Data"
-	If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export sensitive data associated with all of your campaigns, regardless if they are associated with them or not.
-
-### Third Party Access
-
-Any user with access to an account’s API keys will be able to access Branch’s Custom Export API (and thus unfiltered, log-level data). As a result, we would recommend against providing third parties with the permissions required to view API keys during the invitation process.
+	If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export aggregate data associated with all of your campaigns, regardless if they are associated with them or not.
 
 ## Export Request
 
@@ -736,7 +730,7 @@ eCPA
 
 #### CSV
 
-Columns: measure, metric, per_user, cumulative, user, cost, <dimensions>, <granularity bands>
+Columns: measure, metric, per_user, cumulative, user, cost, `<dimensions>`, `<granularity bands>`
 
 **Example:**
 
