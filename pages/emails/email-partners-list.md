@@ -45,6 +45,7 @@ Logo | Partner
 <a href="https://www.selligent.com/" target="_blank">![Selligent Message Studio](/_assets/img/pages/email/selligent/selligent.png)</a>| **[Selligent Message Studio](/emails/selligent/)**
 <a href="https://www.sender.net/" target="_blank">![Sender](/_assets/img/pages/email/sender/sender.png)</a>| **[Sender](/emails/sender/)**
 <a href="https://sendgrid.com/" target="_blank">![SendGrid](/_assets/img/pages/email/sendgrid/sendgrid.png)</a>| **[SendGrid](/emails/sendgrid/)**
+<a href="https://www.netcoresmartech.com/" target="_blank">![Smartech](https://cdn.branch.io/branch-assets/ad-partner-manager//c6ddf6fce4c2-smartechlogo-1569500612651.png)</a>| **[Smartech](/emails/smartech/)**
 <a href="https://socialflow.com/" target="_blank">![Social Flow](https://cdn.branch.io/branch-assets/email-providers/386574786681131050/socialflow-1542648339227.png)</a>| **[Social Flow](/social-links/social-flow/)**
 <a href="https://www.sparkpost.com/" target="_blank">![SparkPost](/_assets/img/pages/email/sparkpost/sparkpost.png)</a>| **[SparkPost](/emails/sparkpost/)**
 <a href="https://www.getvero.com/" target="_blank">![Vero](/_assets/img/pages/email/vero/vero.png)</a>| **[Vero](/emails/vero/)**

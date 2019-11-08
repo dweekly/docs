@@ -27,6 +27,10 @@ Conversion | Product Catalogue Sales | Web or App | **[link](/deep-linked-ads/fa
 
 ### Event Names
 
+!!! info "Standard vs Custom Events"
+	Please follow the [Tracking Commerce, Content, Lifecycle and Custom Events](/apps/v2event/) guide when implementing event tracking in the Branch SDK.  When tracking any of the Facebook events that are mapped to the Branch `custom` event, use the event name from the table below; e.g. `branch.logevent('AdClick')`.
+
+
 | **Facebook MMP _eventName**         | **Branch Event Name**     |
 |---------------------------------|-----------------------|
 | AdClick                         | Custom                |

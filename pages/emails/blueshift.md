@@ -55,7 +55,7 @@ You can retrieve your click tracking domains from your Blueshift settings.
 
 {! ingredients/email/usage.md !}
 
-{! ingredients/email/usage-auto-bounce-deep.md !}
+{! ingredients/email/usage-auto-deeplink.md !}
 
 {! ingredients/email/usage-auto-bounce-web.md !}
 
