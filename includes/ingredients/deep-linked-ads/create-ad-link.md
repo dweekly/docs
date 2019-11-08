@@ -26,11 +26,12 @@ Once you've enabled an integration it's time to create a tracking link.
 
     ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-completed.png)
 
-!!! tip "Server to server tracking links"
-    If you have a server to server integration you must provide specific requirements for attribution. Make sure to append the following mandatory key-values into tracking ad links to ensure they are not rejected or blocked:
+#### Server to Server Ad Links
 
-    - **Server to Server Parameter**: Add `%24s2s=true` at the end of your link, so we know it's a server to server link
+If you have a server to server integration you must provide specific requirements for attribution. Make sure to append the following mandatory key-values into tracking ad links to ensure they are not rejected or blocked:
 
-    - **Device ID Macro Value**: Add `%24idfa` for iOS devices OR `%24aaid` for Android devices.
+- **Server to Server Parameter**: Add `%24s2s=true` at the end of your link, so we know it's a server to server link
 
-    - **IP Header info (x-ip-override)**: Pass IP Header to override the IP information on click. e.g. `x-ip-override: {IP ADDRESS}`
+- **Device ID Macro Value**: Add `%24idfa` for iOS devices OR `%24aaid` for Android devices.
+
+- **IP Header info (x-ip-override)**: Pass IP Header to override the IP information on click. e.g. `x-ip-override: {IP ADDRESS}`
