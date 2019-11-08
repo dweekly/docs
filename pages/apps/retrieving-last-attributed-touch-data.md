@@ -87,7 +87,7 @@ To enable LATD:
     When calling the LATD method, you can also provide a value for the `attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
 
 ```
-// init the LATD call
+// init the LATD call from inside the initSession
 Branch.getInstance().getLastAttributedTouchData(
     new BranchLastAttributedTouchDataListener() {
         @Override
