@@ -50,7 +50,7 @@ To provide an agency team member with access to the Cohort Exports:
     1. Under **Data Filters**, toggle any necessary data filters on/blue. Exported data will be filtered accordingly.
 6. Click **Save**.
 
-![image](/_assets/img/pages/dashboard/access-levels/agency-cohort-access.png)
+![image](/_assets/img/pages/dashboard/agency-ad-partner-invite.png)
 
 !!! warning "Agency-Tagged Data"
 	If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export aggregate data associated with all of your campaigns, regardless if they are associated with them or not.
