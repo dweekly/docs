@@ -20,18 +20,19 @@ Our integration with Google Ads supports the following:
 ### App Install Campaigns
 - Full attribution for:
 	- App Installs
-- No 3rd Party Links
+- No 3rd Party Links / **Branch Links Not Supported**
 - No Deep Linking
 - Destinations:
 	- App Stores only
 
-!!! info "No Branch Links"
-	As all App Install Campaigns direct users to the respective app store, please make sure you complete the following.
+#### App Install Requirements
 
-	* [x] Branch SDK integrated into your app.
-	* [x] Collect the IDFA on iOS, or the AAID on Android. For specifics, refer to the set up guide for [iOS](/apps/ios/#install-branch) and [Android](/apps/android/#install-branch) respectively.
-	* [x] Track all necessary events through the SDKs, with instructions [here](#forwarding-events-to-google-ads).
-	* [x] Have admin access to your Google Ads account; required for generating Link IDs in Google Ads.
+As all App Install Campaigns direct users to the respective app store, please make sure you complete the following.
+
+* [x] Branch SDK integrated into your app.
+* [x] Collect the IDFA on iOS, or the AAID on Android. For specifics, refer to the set up guide for [iOS](/apps/ios/#install-branch) and [Android](/apps/android/#install-branch) respectively.
+* [x] Track all necessary events through the SDKs, with instructions [here](#forwarding-events-to-google-ads).
+* [x] Have admin access to your Google Ads account; required for generating Link IDs in Google Ads.
 
 Please follow Google Ads' documentation on how to [set up an App Install Campaign](https://support.google.com/google-ads/answer/6291545?co=ADWORDS.IsAWNCustomer%3Dtrue&oco=0).
 
@@ -40,18 +41,20 @@ For more detailed information, please see [Google Ads' help documentation](https
 ### App Engagement Campaigns
 - Full attribution for:
 	- In-app Events
-- No 3rd Party Links
+- No 3rd Party Links / **Branch Links Not Supported**
 - Deep Linking via Universal Links (iOS), App Links (Android), custom URI Scheme
 - Destinations:
 	- In-app experiences
 
+
 Please follow Google Ads' documentation on how to [set up an App Engagement Campaign](https://support.google.com/google-ads/answer/9234102).
 
-!!! info "Required for App Engagement Campaigns"
-	* [x] Have [assets such as text, video and image](https://support.google.com/google-ads/answer/9234183).
-	* [x] Have a universal deep link (iOS), an app link (Android), or custom URI scheme.
-	* [x] Use an [audience list](https://support.google.com/google-ads/answer/9234182) of app users.
-	* [x] Have [mobile app conversion tracking](https://support.google.com/google-ads/answer/6100665) set up and [a supported third party](https://support.google.com/google-ads/answer/7382633) (Branch) to track conversions.
+#### App Engagement Requirements
+
+* [x] Have [assets such as text, video and image](https://support.google.com/google-ads/answer/9234183).
+* [x] Have a universal deep link (iOS), an app link (Android), or custom URI scheme.
+* [x] Use an [audience list](https://support.google.com/google-ads/answer/9234182) of app users.
+* [x] Have [mobile app conversion tracking](https://support.google.com/google-ads/answer/6100665) set up and [a supported third party](https://support.google.com/google-ads/answer/7382633) (Branch) to track conversions.
 
 !!! warning "Dynamic Remarketing Campaigns for Apps"
 	App Engagement Campaigns do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a **Web-based Ad** using the **Display Network**.
@@ -71,11 +74,25 @@ For more detailed information, please see [Google Ads' help documentation](https
 	- Web (Mobile & Desktop) conversions
 - Deep Linking via Branch Links
 - Destinations:
-	- Web (Mobile & Desktop) Only
-		- Requires the [Branch Web SDK](/web/integrate/)
+	- Web (Mobile & Desktop)
 	- Deep Link into App (if installed)
-		- Requires [Universal Links](/deep-linking/universal-links/) and/or [App Links](/deep-linking/android-app-links/)
-			- If you don't have Universal Links or App links enabled, use [Branch's custom deep linking solution](/deep-linked-ads/google-ads-customization/).
+
+#### Web Routing Requirements
+
+If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the power of Branch for **desktop and mobile web** conversions, please make sure you complete the following:
+
+* [x] Branch SDK integrated into your app.
+* [x] Collect the IDFA on iOS, or the AAID on Android. For specifics, refer to the set up guide for [iOS](/apps/ios/#install-branch) and [Android](/apps/android/#install-branch) respectively.
+* [x] Track all necessary events through the SDKs, with instructions [here](#forwarding-events-to-google-ads).
+* [x] Have admin access to your Google Ads account; required for generating Link IDs in Google Ads.
+* [x] [Branch Web SDK v2.48.0+](/web/integrate/)
+* [x] [Measurement of relevant v2 events](/web/integrate/#track-events)
+* [x] Requires [Branch Ad link](/deep-linked-ads/google-ads-customization/#create-a-branch-ad-link) in the campaign's **Tracking Template**.
+
+Please follow Google Ads' documentation on how to [set up a Campaign](https://support.google.com/google-ads/answer/6324971?hl=en&ref_topic=3121941).
+
+!!! warning "Web Ads Routing to Your App"
+	If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the full power of Branch's routing capabilities for **desktop/mobile web conversions AND deep linking into apps via Branch links**, please use [Branch's custom deep linking solution](/deep-linked-ads/google-ads-customization/).
 
 ## Data Mapping between Google Ads & Branch
 
