@@ -292,7 +292,7 @@ One discrepancy root cause we've seen before is the scenario where Branch will c
 
 Facebook ads are incompatible with [debug mode](/apps/ios/#simulate-an-install), as this prevents us from sending the correct hardware ID to Facebook.
 
-Please make sure the debug method is not included in your production app OR set to false - `Branch.setDebug(false)` - as doing so still enables debug mode. 
+Please make sure the debug method is not included in your production app OR set to false - `Branch.setDebug(false)` - as doing so still enables debug mode.
 
 ##### Renaming campaigns, ad sets, and ads
 
@@ -302,6 +302,9 @@ Rest assured, however, that we are treating the data properly. Though we do not 
 
 
 #### Discrepancies with Impressions and Clicks
+
+!!! warning "Clicks vs Link Clicks"
+	Please be aware that Branch receives **Link Clicks** from Facebook via API.  This click count differs from the click count found in Facebook which includes other sources of clicks.
 
 ##### 1. I don't see any clicks or installs on the Branch Dashboard
 
