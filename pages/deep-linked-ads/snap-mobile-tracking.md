@@ -62,7 +62,7 @@ Before you begin, be sure the following is confirmed.
 
 ## Using Branch Links in Snap Campaigns
 
-Branch links are not necessary for attribution, however, you can insert Branch links into the `Drive Traffic to App` campaign type if you are trying to use deferred deeplinking (send users to a specific page after install+launch). 
+Branch links are not necessary for attribution, however, you can insert Branch links into the `Drive Traffic to App` campaign type if you are trying to use deferred deeplinking (send users to a specific page after install+launch).
 
 To use Branch links in your `Drive Traffic to App` campaigns:
 
@@ -77,7 +77,7 @@ To use Branch links in your `Drive Traffic to App` campaigns:
 
 !!! warning "Web Site as Fallback Required for Deferred Deep Linking"
     Please ensure you choose `Web Site` as the `FALLBACK TYPE` and inserting the same Branch link into the provided field.  If you choose `App Install` as the `FALLBACK TYPE`, users not properly routed will be sent to the App Store without the Branch link and deferred deep linking will not occur.
-    
+
 
 {! ingredients/deep-linked-ads/add-agency-prefix-san-only.md !}
 
@@ -95,21 +95,10 @@ You can edit your attribution windows for Snap only. With this, you can preserve
 
 !!! info
       Please make sure your Branch attribution windows for Snap match those in your Snap account. See the Troubleshooting section for more detail.
-      
-## Data Mapping between Snap & Branch
 
-Branch maps the following data fields from Snap to Branch.
+## Data Mapping between Branch & Snap
 
-Snap Data | Branch Data
---- | ---
-ad_campaign_name | ~campaign
-ad_campaign_id | ~campaign_id
-ad_squad_name | ~ad_set_name
-ad_squad_id | ~ad_set_id
-ad_name | ~ad_name
-ad_id | ~ad_id
-
-## Mapping of Branch event names to Snap events
+### Event Names
 
 Branch supports sending [Standard and Custom Events](/apps/v2event/#v2-event){target:"\_blank"} to Snap. Here are the mappings for Branch events to Snap events.
 
@@ -135,6 +124,30 @@ The below events can be sent to Snap by registering [custom events ](/apps/v2eve
 | SAVE | SAVE
 | PAGE_VIEW | PAGE_VIEW
 
+### Campaign Data
+
+Branch maps the following data fields from Snap to Branch.
+
+Branch Data | Snap Data
+--- | ---
+~campaign | campaign_name
+~campaign_id | campaign_id
+~ad_set_name | ad_squad_name
+~ad_set_id | ad_squad_id
+~ad_name | ad_name
+~ad_id | ad_id
+
+### Metadata
+
+| Branch metadata   | Snap Metadata  | Description                                                                                                                                                                                                                                     |
+|-------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| SKU (list of)     | item_ids       | International Article Number (EAN) when applicable, or other product or category identifier.                                                                                                                                                    |
+| Quantity          | number_items   | Number of items.                                                                                                                                                                                                                                |
+| revenue           | price          | Monetary value of the conversion event in float format. Valid delimiters are “|” “,” “;”. Please do not include currency symbols or commas as part of the value. (ex. single value: price=34.24, multiple values: price=99.43,45.34;34.2|23.22) |
+| currency_code     | currency       | Currency in standard ISO 4217 code (ex. EUR, USD, JPY). Required if price is included.                                                                                                                                                          |
+| transactionID     | transaction_id | Transaction ID.                                                                                                                                                                                                                                 |
+| searchQuery       | search_string  | The text string that was searched.                                                                                                                                                                                                              |
+| custom_data.level | level          | Level in the game.                                                                                                                                                                                                                              |
 
 {! ingredients/deep-linked-ads/cost-data.md !}
 

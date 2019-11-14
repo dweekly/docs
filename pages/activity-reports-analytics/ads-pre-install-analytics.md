@@ -9,6 +9,9 @@ For example, you have agreed with a wireless carrier (such as AT&T) to pre-insta
 !!! info "Android Only"
 	The following functionality is applicable to Android apps only.
 
+!!! info "Minimum Android SDK Version"
+	The following functionality is only available for Android SDK v4.0.0 or above.
+
 !!! info "Pre-Install Overrides Attribution"
 	If you include pre-install data via the SDK, it will always override any attribution info Branch receives from the Branch link itself.
 

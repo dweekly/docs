@@ -14,31 +14,21 @@ Whereas Universal App Campaigns are focused solely on the single conversion type
 
 ## Requirements
 
-### Basic Integration Prerequisites
-* [x] Branch SDK integrated into your app.
-* [x] Collect the IDFA on iOS, or the AAID on Android. For specifics, refer to the set up guide for [iOS](/apps/ios/#install-branch) and [Android](/apps/android/#install-branch) respectively.
-* [x] Track all necessary events through the SDKs, with instructions [here](#forwarding-events-to-google-ads).
-* [x] Have admin access to your Google Ads account; required for generating Link IDs in Google Ads.
-
-### Web Routing Only Prerequisites
-
-If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the power of Branch for **desktop and mobile web** conversions, please make sure you complete the following:
-
-* [x] [Basic Integration Prerequisites](#basic-integration-prerequisites)
-* [x] [Branch Web SDK v2.48.0+](/web/integrate/)
-* [x] [Measurement of relevant v2 events](/web/integrate/#track-events)
-
 ### Web + App Routing Prerequisites
 
 If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the full power of Branch's routing capabilities for **desktop/mobile web conversions AND deep linking into apps via Branch links**, please make sure you also complete the following:
 
-* [x] [Basic Integration Prerequisites](#basic-integration-prerequisites)
-* [x] [Web Routing Prerequisites](#web-routing-only-prerequisites)
-* [x] Place your [modified Branch link](#modifying-your-final-url-to-include-your-branch-link-as-a-query-parameter) in the `Final URL` field during Google Ads campaign setup.
-* [x] Place your Branch link in the `Tracking Template` field during Google Ads campaign setup.
+* [x] Branch SDK integrated into your app.
+* [x] Collect the IDFA on iOS, or the AAID on Android. For specifics, refer to the set up guide for [iOS](/apps/ios/#install-branch) and [Android](/apps/android/#install-branch) respectively.
+* [x] Track all necessary events through the SDKs, with instructions [here](#forwarding-events-to-google-ads).
+* [x] Have admin access to your Google Ads account; required for generating Link IDs in Google Ads.
+* [x] [Branch Web SDK v2.48.0+](/web/integrate/)
+* [x] [Measurement of relevant v2 events](/web/integrate/#track-events)
 * [x] Branch Deep Linking enabled via either:
 	* [x] Adding `$uri_redirect_mode=1` to link's data.  If app link settings `URI Deep Link Mode` is set to `Intelligent`, then this link key is unnecessary.
-	* [x] [App links (Android)](/deep-linking/android-app-links/) and/or [Universal Links (iOS)](/deep-linking/universal-links/).
+* [x] [App links (Android)](/deep-linking/android-app-links/) and/or [Universal Links (iOS)](/deep-linking/universal-links/) as the campaign's **Destination URL**.
+* [x] [Branch Ad link](/deep-linked-ads/google-ads-customization/#create-a-branch-ad-link) in the campaign's **Tracking Template**.
+* [x] Place your [modified Branch link](#modifying-your-final-url-to-include-your-branch-link-as-a-query-parameter) in the `Final URL` field during Google Ads campaign setup.
 
 ![image](/_assets/img/pages/deep-linked-ads/google/web-based-ads-routing-options.png)
 
@@ -74,9 +64,9 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 	Because the **Final URL** for your campaigns must match your display URL and not contain any cross-domain redirects, you cannot put a Branch link directly in that box. However, you can append query parameters to the Final URL in order to pass the required data needed for Branch to route and attribute your users properly.
 
 1. Copy your Branch Ad Link from the last section and ensure the copied link has the appropriate additional params (~campaign_id, ~ad_set_id, lpurl, etc.) which should be automatically generated on your Branch dashboard.
-1. Remove "%24always_deeplink=false" from the Branch link
+1. Remove `%24always_deeplink=false` from the Branch link.
 1. URL encode the Branch Ad Link you just created, but leave any "{" or "}" unencoded. This will ensure these valuetrack params are properly filled in by Google.  If you leave the ampersands before the valuetrack parameters unencoded, they will be parsed by the web browser.  If you encode the ampersands, the valuetrack parameters will be sent into the app.
-1. Append &branchify_url=PARTIALLY URL ENCODED BRANCH LINK to your Final URL.
+1. Append `&branchify_url=`PARTIALLY URL ENCODED BRANCH LINK to your Final URL.
 
 ### Create Your Campaign
 
@@ -89,7 +79,7 @@ Please follow Google Ads help documentation on how to create a new [Google Ads c
 	During campaign creation, please make sure you place the Branch link in the correct location depending on your desired user outcome.
 
 	- **For Web Routing Only** - place your Branch link in the `Tracking Template` field during Google Ads campaign setup.
-	- **For Deep Linking into App if App Installed else Routing to Web** - place your modified Branch Link in the `Final URL` field during Google Ads campaign setup.
+	- **For Deep Linking into App if App Installed else Routing to Web** - place your modified Branch Link in the `Final URL` field during Google Ads campaign setup & place your unencoded Branch link in the `Tracking Template` field during Google Ads campaign setup.
 
 For additional information on Google Ads campaigns, please see [Create ads and campaigns](https://support.google.com/google-ads/topic/3119116?hl=en&ref_topic=311907).
 
