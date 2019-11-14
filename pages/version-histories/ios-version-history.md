@@ -1,16 +1,29 @@
-### v0.29.3 Changes
+### v0.30.0
+
+**(2019-Nov-13)**
+
+- Update Apple Search Ads behavior and API.
+- Last attributed touch API now accepts attribution window.
+- Add blacklist URL configuration.
+- Removed deprecated Safari cookie integration.
+- Fix race condition in SDK initialization.
+- Fix Carthage Swift build from source.
+- Fix Swift getInstance nullability.
+- Fix object serialization error.
+
+### v0.29.3
 
 **(2019-October-16)**
 
 - Added a check for previous Tune data; when found, data's status is set to "updated" to be used in determining new vs existing users.
 
-### v0.29.1 Changes
+### v0.29.1
 
 **(2019-October-04)**
 
 - Fix nullability warnings.
 
-### v0.29.0 Changes
+### v0.29.0
 
 **(2019-September-26)**
 

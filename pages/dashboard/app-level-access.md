@@ -113,6 +113,7 @@ Each access level - as defined above - comes with predefined permissions which y
 - **App-level Settings** - Settings or features that can impact functionality app-wide.
 - **Aggregate Data** - Summary data that contains no granular data.
 - **Sensitive Data** - Data that can contain user-identifying, payment-related, or secret information.
+- **Fraud Settings & Data** - Settings or data associated with fraud detection and prevention.
 
 #### Modifying an App Team Member
 

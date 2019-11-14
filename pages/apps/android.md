@@ -1,4 +1,4 @@
-!!! info "Current SDK Version 4.1.2"
+!!! info "Current SDK Version 4.2.0"
     Please see the [Android Version History](/version-histories/android-version-history) to view change log.
 
 !!! warning "v4.0.0 Uses Android X"
