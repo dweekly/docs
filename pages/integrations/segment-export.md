@@ -2,7 +2,7 @@
 
 With a push of a button you can send your Branch data to your Segment dashboard, helping you to understand the power of Branch as an acquisition pathway, export your data to your entire suite of analytics tools and build custom audiences upon Branch data.
 
-This documentation explains how to send **Branch-referred events to Segment**. If you'd like to send Segment events to your Branch dashboard, please review the Branch/segment SDK Kit integration documentation for [iOS](https://github.com/BranchMetrics/Segment-Branch-iOS) and [Android](https://github.com/BranchMetrics/Segment-Branch-Android).
+This documentation explains how to send **Branch-referred events to Segment**. If you'd like to send Segment events to your Branch dashboard, please review the [Segment Import integration](/integrations/segment-import/).
 
 ### How does it work?
 
@@ -13,7 +13,7 @@ Once the Branch SDK is integrated into an app, Branch can detect which links are
 Branch will send *attributed* **installs** and **opens**, as well as any **custom events** and **commerce events** you track with Branch. Non-referred events, clicks, web session starts, and pageviews will be excluded. Branch also sends all the data that is attached to the link that drove the referred event. This will allow you to analyze which campaigns, channels, etc. are helping you acquire and engage users. You can see the list of fields that we send to Segment [here](#what-branch-sends-to-segment).
 
 !!! warning "WebSDK events not supported"
-    We do not support Segment export for Branch WebSDK events. 
+    We do not support Segment export for Branch WebSDK events.
 
 ### What does it look like?
 
