@@ -1,17 +1,8 @@
-# Segment-Branch
+!!! warning "Segment Branch SDK Integration in Maintenance Mode"
+    As of November 14, 2019 the Segment - Branch SDK integration is in maintenance mode.  
 
-Easily add Branch deep linking and analytics to your Segment-based app with this Segment integration.
+    What does this mean???
 
-New to Branch or deep linking? Start here: [All about Branch deep linking.](https://branch.io/what-is-deep-linking/)
+    - **Existing Users** can continue to leverage the SDK integration to import events tracked by Segment into their Branch account.
 
-The Segment-Branch integration adds:
-
-* Deep linking capabilities to your app.
-* Segment events are automatically tracked and analyzed in the Branch dashboard too,
-  so you can measure the effectiveness of your deep linked content and marketing campaigns.
-* Use other Branch features, like referrals or automatic app content listing in Spotlight.
-
-### Questions?
-
-* Segment support: [Segment Support](https://segment.com/contact)
-* Branch Support: [Branch support](https://support.branch.io/support/home)
+    - **New Users** please use our server-side data integration with Segment to either [import Segment data into Branch](/integrations/segment-import/) or [export Branch Data into Segment](/integrations/segment-export/).
