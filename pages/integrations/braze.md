@@ -71,7 +71,6 @@ Campaign | campaign
 Channel | source
 Adgroup | adgroup
 Ad | ad
-Tags | tags
 
 ### Braze Endpoints.
 

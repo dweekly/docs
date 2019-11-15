@@ -1016,6 +1016,7 @@ nav:
       - Segment (import): integrations/segment-import.md
       - Singular: integrations/singular.md
       - TrafficGuard: integrations/trafficguard.md
+      - Visual IQ: integrations/visual-iq.md
       - WebEngage: integrations/webengage.md
     - App Stores:
       - App Stores List: app-stores/app-stores-list.md
