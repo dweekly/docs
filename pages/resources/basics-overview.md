@@ -18,3 +18,5 @@ People-Based Attribution stitches all of these identity fragments back together.
 - [Agency/Partner Invitation Process](/dashboard/agency-ad-partner-invitation-process/)
 - [Viewing Agency/Partner Settings](/dashboard/agency-view/)
 - [Agency/Partner Functionality in App View](/dashboard/app-view/#agencies-in-app-view/)
+## Data Privacy
+- [Handling Data Subject Requests From End Users](/resources/handling-data-subject-requests-from-end-users/)
