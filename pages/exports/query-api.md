@@ -1,9 +1,12 @@
 # Query API
 
-!!! protip "Getting started"
+!!! tip "Getting started"
     For newcomers to this API, we strongly suggest you check out our [Query Recipe Book](/exports/query-recipe-book/). It has screenshots of Dashboard visualizations, accompanied by what queries you need to make to pull the same data. It's a quick way to get up and running with this API.
 
 The Query API is an HTTP API that can be used for programmatically querying pre-aggregated analytics. It can be used to fetch the same data displayed in your Branch dashboard, without having to access the Dashboard itself.
+
+!!! warning "Self Attributing Network Data Not Available"
+    The Query API does not return data associated with SANs; i.e. Google Ads, Snap, Twitter, Facebook Ads and Apple Search Ads.
 
 An individual query is constructed from three types of parameters:
 
@@ -492,8 +495,8 @@ Example Results:
     {
       "timestamp": "2017-12-12T00:00:00.000Z",
       "result": {
-        "last_attributed_touch_data_tilde_channel": "Facebook#2",
-        "last_attributed_touch_data_tilde_campaign": "Facebook#2",
+        "last_attributed_touch_data_tilde_channel": "ads",
+        "last_attributed_touch_data_tilde_campaign": "Xmas",
         "last_attributed_touch_data_tilde_feature": "paid advertising",
         "last_attributed_touch_data_plus_current_feature": "ADS",
         "unique_count": 750

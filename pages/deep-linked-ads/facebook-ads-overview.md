@@ -94,9 +94,7 @@ Currently Facebook appears to only support sending one fb_content_id (etc) per e
 
 ## Sharing Facebook Data
 
-There are many ways to access data pertaining to Facebook.
-
-You can see analytics on impressions, clicks, installs, opens and conversion events on various pages of the [Branch Dashboard](https://dashboard.branch.io){:target="\_blank"}, as well as the [Query API](/exports/query-api).
+You can see analytics on impressions, clicks, installs, opens and conversion events on various pages of the [Branch Dashboard](https://dashboard.branch.io).
 
 ### Facebook's Advanced Mobile Measurement Agreement
 
