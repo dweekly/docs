@@ -1000,6 +1000,7 @@ nav:
       - Google Firebase: integrations/google-firebase.md
       - Heap: integrations/heap.md
       - Insider: integrations/insider.md
+      - Iterable: integrations/iterable.md
       - Kochava: integrations/kochava.md
       - Leanplum: integrations/leanplum.md
       - Localytics: integrations/localytics.md
