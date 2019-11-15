@@ -349,7 +349,7 @@ _format_: boolean
 
 **limit**
 
-_description_: Maximum number of results to return in the response
+_description_: Maximum number of results to return in the response. If granularity is set to day, Branch will pull results up to the limit for each day. So if limit is set to 1000 and 5 days worth of data is queried, with granularity=day, then this API will return up to 5000 results.
 
 _required_: false
 
