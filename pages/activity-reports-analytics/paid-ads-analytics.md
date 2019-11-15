@@ -11,7 +11,7 @@ Additionally, you can share your current dashboard view using the share button, 
 
 ## Graph View
 
-Here you can see a visual breakdown of where your various in-app and web events are originating from. See the appendix for a breakdown of each event and filter type. These events can be further filtered by the various analytics tags from their originating ad campaigns. For example:
+Here you can see a visual breakdown of where your various in-app and web events are originating from. See the appendix for a breakdown of each event and filter type. These events can be further filtered by the various analytics tags from their originating ad campaigns.
 
 To see which ad networks are leading to your installs (default view):
 
@@ -27,13 +27,13 @@ To see which ad networks lead to the most in-app iOS purchases:
 
 ![image](/_assets/img/pages/analytics/paid-ads3.png)
 
+{! ingredients/deep-linked-ads/reporting-dimensions-sans.md !}
 
 ## Table View
 
 The Table View lets you see a more granular view of your event data. Here you can filter and compare fields by the same parameters as in the graph view, and see a side by side view of your events. Use the three vertical column button to select which events you'd like to see in this table.
 
 ![image](/_assets/img/pages/analytics/paid-ads4.png)
-
 
 Some examples of table views:
 

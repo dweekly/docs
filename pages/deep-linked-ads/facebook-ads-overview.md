@@ -92,7 +92,9 @@ Conversion | Product Catalogue Sales | Web or App | **[link](/deep-linked-ads/fa
 
 Currently Facebook appears to only support sending one fb_content_id (etc) per event, whereas Branch allows you to send many. To provide as much functionality as possible, we choose the first content_item and search it for key-value pairs that can be sent to Facebook.
 
-## Sharing Facebook Data
+## Viewing Facebook Data
+
+{! ingredients/deep-linked-ads/reporting-dimensions-sans.md !}
 
 You can see analytics on impressions, clicks, installs, opens and conversion events on various pages of the [Branch Dashboard](https://dashboard.branch.io).
 

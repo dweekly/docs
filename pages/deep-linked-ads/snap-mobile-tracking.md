@@ -87,6 +87,8 @@ All attribution can be visible on the [Branch dashboard summary page](https://da
 
 Note that these stats are **limited to the date range** at the top of the page. You can expand the range if you'd like.
 
+{! ingredients/deep-linked-ads/reporting-dimensions-sans.md !}
+
 ### Changing attribution windows
 
 You can edit your attribution windows for Snap only. With this, you can preserve your Account Level Attribution Windows, but the attribution windows set for Snap will take precedence for Snap campaigns.
