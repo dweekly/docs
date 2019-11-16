@@ -31,6 +31,7 @@ Interested in becoming a Data Intgeration Partner? Just fill out this form: **[P
 <a href="https://firebase.google.com/" target="_blank">![Google Firebase](/_assets/img/pages/integrations/logos/firebase-logo.png)</a>|**[Google Firebase](/integrations/google-firebase/)**
 <a href="https://heap.io/" target="_blank">![Heap](https://cdn.branch.io/branch-assets/ad-partner-manager//heap_logo-1564446383572.png)</a>|**[Heap](/integrations/heap/)**
 <a href="https://useinsider.com/" target="_blank">![Insider](https://cdn.branch.io/branch-assets/ad-partner-manager//insider_logo_2x-1561003202055.png)</a>|**[Insider](/integrations/insider/)**
+<a href="https://iterable.com/" target="_blank">![Iterable](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/Iterable-1571449180903.png)</a>|**[Iterable](/integrations/iterable/)**
 <a href="https://www.kochava.com/" target="_blank">![Kochava](/_assets/img/pages/integrations/logos/kochava.png)</a>|**[Kochava](/integrations/kochava/)**
 <a href="https://www.leanplum.com/" target="_blank">![Leanplum](/_assets/img/pages/integrations/logos/leanplum.png)</a>|**[Leanplum](/integrations/leanplum/)**
 <a href="https://www.localytics.com/" target="_blank">![Localytics](/_assets/img/pages/integrations/logos/localytics.png)</a>|**[Localytics](/integrations/localytics/)**
@@ -47,6 +48,7 @@ Interested in becoming a Data Intgeration Partner? Just fill out this form: **[P
 <a href="https://segment.com/" target="_blank">![Segment](/_assets/img/pages/integrations/logos/segment.png)</a>|**[Segment Import](/integrations/segment-import/)**
 <a href="https://www.singular.net/" target="_blank">![Singular](/_assets/img/pages/integrations/logos/singular.png)</a>|**[Singular](/integrations/singular/)**
 <a href="https://www.trafficguard.ai/" target="_blank">![TrafficGuard](https://cdn.branch.io/branch-assets/ad-partner-manager//trafficguard-1550889602563.png)</a>|**[TrafficGuard](/integrations/trafficguard/)**
+<a href="https://www.nielsen.com/" target="_blank">![Visual IQ](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/Visual-IQ-Logo-1573087845138.png)</a>|**[Visual IQ](/integrations/visual-iq/)**
 <a href="https://webengage.com/" target="_blank">![WebEngage](https://cdn.branch.io/branch-assets/ad-partner-manager//webengage-1550629207966.png)</a>|**[WebEngage](/integrations/webengage/)**
 
 Interested in becoming a Data Intgeration Partner? Just fill out this form: **[Partner's Profile](https://branch.app.link/ads-partner-signup)**

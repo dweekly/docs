@@ -4,12 +4,15 @@
 		- **Reporting & Discrepancies (this page)**
 		- [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/)
 
+{! ingredients/deep-linked-ads/reporting-dimensions-sans.md !}
+
 ## Enabling and Segmenting View-Through Conversions in Reporting
 
 By default, Google Ads includes View-Through Conversion counts in a separate column in reporting. If you have impression windows enabled in Branch, we can also attribute VTC installs and events (when there is not a matching click from another partner). Those will be grouped into the install and event counts, and can be segmented using the 'last attributed touch type' compare by in Branch reporting. You can manage settings to enable this attribution within the attribution settings tab of the Google AdWords partner management or by reaching out to support@branch.io
 
 !!! warning "Not Yet Supported"
 	Viewing click/impression/cost data in your Branch dashboard is not yet supported for App Engagement campaigns.
+
 
 ## Cost Data
 
