@@ -1,8 +1,8 @@
 ## Overview
 
-![Barometric](https://cdn.branch.io/branch-assets/ad-partner-manager/adnetwork_logos/barometric.png)
+![Cashpop](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/CashPop-1573199948382.png)
 
-This guide will walk you through how to setup your campaigns with **[Barometric](http://barometric.com/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
+This guide will walk you through how to setup your campaigns with **[Cashpop](https://www.cashpop.net/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -14,11 +14,13 @@ This guide will walk you through how to setup your campaigns with **[Barometric]
 
 {! ingredients/deep-linked-ads/enable-partner.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/barometric/barometric-enable.png)
+![image](/_assets/img/pages/deep-linked-ads/cashpop/cashpop-enable.png)
+
+{! ingredients/deep-linked-ads/add-credentials.md !}
 
 {! ingredients/deep-linked-ads/enable-partner-tip.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/barometric/barometric-postbacks.png)
+![image](/_assets/img/pages/deep-linked-ads/cashpop/cashpop-postbacks.png)
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 

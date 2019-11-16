@@ -83,9 +83,11 @@ To use Branch links in your `Drive Traffic to App` campaigns:
 
 ## View Attribution on Dashboard
 
-All the attribution can be visible on the [Branch dashboard summary page](https://dashboard.branch.io/). All installs and opens registered from this channel will automatically be tagged with `Ad Partner`: `Snap`. Other analytics tags will reflect the campaign, ad squad and ad names you set up in the Snap Ads dashboard.
+All attribution can be visible on the [Branch dashboard summary page](https://dashboard.branch.io/). All installs and opens registered from this channel will automatically be tagged with `Ad Partner`: `Snap`. Other analytics tags will reflect the campaign, ad squad and ad names you set up in the Snap Ads dashboard.
 
 Note that these stats are **limited to the date range** at the top of the page. You can expand the range if you'd like.
+
+{! ingredients/deep-linked-ads/reporting-dimensions-sans.md !}
 
 ### Changing attribution windows
 
@@ -167,12 +169,6 @@ Branch Data | Snap Data
 
 ###Exporting Snap Data
 
-!!! warning
-        Data integrations will never include events attribution to Snap. This is because we cannot share device-level Snap attribution data with third parties.
-
-
-There are many ways to access data pertaining to Snap.
-
-You can see analytics on impressions, clicks, installs, opens and conversion events on various pages of the Branch Dashboard, as well as the Query API.
+You can see analytics on impressions, clicks, installs, opens and conversion events on various pages of the Branch Dashboard.
 
 We cannot send device-level Snap attribution data to third parties. Thus we cannot send events attributed to Snap via Data Integrations. Please instead consider analyzing this data in-house (using Webhooks, the Daily Export API, or CSV Exports), or using the Branch Dashboard for all of your analytics and attribution needs.

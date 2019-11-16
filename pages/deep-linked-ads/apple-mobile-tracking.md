@@ -39,7 +39,7 @@ branch.initSession.....
 If you're concerned about the additional 1 second latency, the call to `delayInitToCheckForSearchAds` can be called conditionally at run time. So, if you want to only check on first install, or the like, then just don't call this method.
 
 !!! warning "Testing Apple Search Ads"
-    If you test using a non-production app, the iAd framework returns fake Apple Search Ads payloads to simulate the install being claimed by Apple Search Ads. Subsequently, you will see these claims in your reporting. 
+    If you test using a non-production app, the iAd framework returns fake Apple Search Ads payloads to simulate the install being claimed by Apple Search Ads. Subsequently, you will see these claims in your reporting.
 
 ## Cost Data Setup
 
@@ -71,6 +71,8 @@ If you're concerned about the additional 1 second latency, the call to `delayIni
 Please ensure you've both selected the correct files *and* pressed the blue upload arrows to complete your upload.
 
 #### Cost, click and impression data not appearing
+
+{! ingredients/deep-linked-ads/reporting-dimensions-sans.md !}
 
 Verify that you have selected the right certificates:
 
