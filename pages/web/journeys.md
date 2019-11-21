@@ -266,6 +266,9 @@ Use this filter to target (or exclude) users viewing your website in different r
 
 You can define which subsets of your website the Journey will appear. For example, maybe you have a page `yoursite.com/settings` and `yoursite.com/products/1234`. You could fill in `products` here and only users visiting a URL with that substring present would see the Journey.
 
+!!! warning "Exact URL Match Required"
+    If you create an audience rule that relies on matching against a URL, please be advised it must be an **exact** match.  For example, if you set up the rule for `https://www.branch.io`only visitors to that URL will apply.  Users who view `https://www.branch.io/` (notice the `/`) will not be included in the rule.
+
 #### Has visited web
 
 Here, you can use website visits to determine who to target. For instance, you might decide that someone who visits your site five times is ready to see a Journey with some extra incentive to open the app.
