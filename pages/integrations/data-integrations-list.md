@@ -8,6 +8,7 @@ Interested in becoming a Data Intgeration Partner? Just fill out this form: **[P
 **Partner Website** | **Branch Integration Guide**
 --- | ---
 <a href="https://24metrics.com/" target="_blank">![24Metrics](/_assets/img/pages/integrations/logos/24metrics-banner.png)</a>|**[24Metrics](/integrations/24metrics-fraudshield/)**
+<a href="http://www.adform.com/" target="_blank">![Adform](https://cdn.branch.io/branch-assets/ad-partner-manager//028bec97585b-Adform_logo_RGB-1559416078779.png)</a>|**[Adform](/integrations/adform/)**
 <a href="https://www.adjust.com/" target="_blank">![Adjust](/_assets/img/pages/integrations/logos/adjust-logo.png)</a>|**[Adjust](/integrations/adjust/)**
 <a href="https://my.omniture.com" target="_blank">![Adobe Analytics](/_assets/img/pages/integrations/logos/adobe_analytics.png)</a>|**[Adobe Analytics](/integrations/adobe-analytics/)**
 <a href="https://www.urbanairship.com/" target="_blank">![Airship](https://cdn.branch.io/branch-assets/ad-partner-manager//urban_airship-1568181974178.png)</a>|**[Airship](/integrations/airship/)**
@@ -36,6 +37,7 @@ Interested in becoming a Data Intgeration Partner? Just fill out this form: **[P
 <a href="https://www.leanplum.com/" target="_blank">![Leanplum](/_assets/img/pages/integrations/logos/leanplum.png)</a>|**[Leanplum](/integrations/leanplum/)**
 <a href="https://www.localytics.com/" target="_blank">![Localytics](/_assets/img/pages/integrations/logos/localytics.png)</a>|**[Localytics](/integrations/localytics/)**
 <a href="https://www.machineadvertising.com/" target="_blank">![Machine Advertising](https://cdn.branch.io/branch-assets/ad-partner-manager//c6ee7790611f-Machine_Logo_Black-1569986723163.png)</a>|**[Machine Advertising](/integrations/machine-advertising/)**
+<a href="http://mfilterit.com/" target="_blank">![mFilterit](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/mfilterit-logo-final-1574450353955.png)</a>|**[mFilterit](/integrations/mfilterit/)**
 <a href="https://www.mobileaction.co/" target="_blank">![MobileAction](https://cdn.branch.io/branch-assets/ad-partner-manager//SearchAdsByMobileActionLogo-1550011543924.png)</a>|**[MobileAction](/integrations/mobileaction/)**
 <a href="https://mixpanel.com/" target="_blank">![Mixpanel](https://cdn.branch.io/branch-assets/ad-partner-manager//mixpanel-1550716013249.png)</a>|**[Mixpanel](/integrations/mixpanel/)**
 <a href="https://www.mparticle.com/" target="_blank">![mParticle](https://cdn.branch.io/branch-assets/ad-partner-manager//mParticle-1552066868841.png)</a>|**[mParticle Export](/integrations/mparticle-export/)**

@@ -34,4 +34,4 @@ If you have a server to server integration you must provide specific requirement
 
 - **Device ID Macro Value**: Add `%24idfa` for iOS devices OR `%24aaid` for Android devices.
 
-- **IP Header info (x-ip-override)**: Pass IP Header to override the IP information on click. e.g. `x-ip-override: {IP ADDRESS}`
+- **IP address**:  Pass user IP information in the header to override on click: `x-ip-override: {IP_ADDRESS}` OR via click macro URL parameter: `device_ip={IP_ADDRESS}`

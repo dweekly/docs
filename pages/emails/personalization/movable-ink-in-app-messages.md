@@ -4,9 +4,9 @@ This guide will walk you through how to setup your personalized campaigns with *
 
 ## Setup Message link
 
-To create a message link a client need to merge **Branch domain **and **Movable Ink link**.
+To create a message link, you must merge the **Branch domain** and **Movable Ink link**.
 
-Branch domain can be found on the link settings on Branch dashboard; e.g. `https://branchster.app.link`
+The Branch domain can be found on the **Link Settings** page of your Branch dashboard; e.g. `https://branchster.app.link`
 
 ![image](/_assets/img/pages/email/movable-ink/movable-ink-messages1.png)
 
@@ -15,12 +15,12 @@ Movable Ink link should be URL encoded and added to the URL parameter **`$origin
 $original_url=https%3A%2F%2Fbjyd1mdh.mi-msg.com%2Fp%2Fcp%2Fcbf5400e1cd062b8%2Fc%3F%24follow_redirect%3Dtrue%26%24deep_link%3Dtrue%26url%3Dhttps%253A%252F%252Fbjyd1mdh.mi-msg.com%252Fp%252Frp%252F20751a2caf35a4b6%252Furl
 ```
 
-A client should also add **`%24follow_redirect=true`** parameter to the link.
+A client should also add **`/3p?$3p=e_mi&%24follow_redirect=true`** parameter to the link.
 
 Here is an example of full link (Branch + Movable Ink):
 
 ```
-https://branchster.app.link/?%24follow_redirect=true&$original_url=**https%3A%2F%2Fbjyd1mdh.mi-msg.com%2Fp%2Fcp%2Fcbf5400e1cd062b8%2Fc%3F%24follow_redirect%3Dtrue%26%24deep_link%3Dtrue%26url%3Dhttps%253A%252F%252Fbjyd1mdh.mi-msg.com%252Fp%252Frp%252F20751a2caf35a4b6%252Furl
+https://branchster.app.link/3p?$3p=e_mi&%2524follow_redirect=true&$original_url=https%253A%252F%252Fbjyd1mdh.mi-msg.com%252Fp%252Fcp%252Fcbf5400e1cd062b8%252Fc%253F%2524follow_redirect%253Dtrue%2526%2524deep_link%253Dtrue%2526url%253Dhttps%253A%252F%252Fbjyd1mdh.mi-msg.com%252Fp%252Frp%252F20751a2caf35a4b6%252Furl
 ```
 
 ## Ignore Query parameter within your Movable Ink Campaign

@@ -982,6 +982,7 @@ nav:
     - Data Integrations:
       - Data Integration Partners List: integrations/data-integrations-list.md
       - 24Metrics Fraudshield: integrations/24metrics-fraudshield.md
+      - Adform: integrations/adform.md
       - Adjust: integrations/adjust.md
       - Adobe Analytics: integrations/adobe-analytics.md
       - Airship: integrations/airship.md
@@ -1011,6 +1012,7 @@ nav:
       - Leanplum: integrations/leanplum.md
       - Localytics: integrations/localytics.md
       - Machine Advertising: integrations/machine-advertising.md
+      - mFilterit: integrations/mfilterit.md
       - Mixpanel: integrations/mixpanel.md
       - MobileAction: integrations/mobileaction.md
       - mParticle (export): integrations/mparticle-export.md
