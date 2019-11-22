@@ -77,12 +77,12 @@ Before navigating to Branch, in your Adobe Analytics dashboard, navigate to the 
 
 Under Manage App Setting -> SDK Analytics Options, find the following data
 
-Branch field | Adobe field value
---- | ---
-Protocol | Use HTTPS Check Box (if checked, select HTTPS)
-Analytics Server Domain | Tracking Server
-Omniture iOS/Android Server Key | Report Suite ID for that app
-Timestamp | Offline Tracking
+| Branch field | Adobe field value |
+| --- | --- |
+| Protocol | Use HTTPS Check Box (if checked, select HTTPS) |
+| Analytics Server Domain | Tracking Server |
+| Omniture iOS/Android Server Key | Report Suite ID for that app |
+| Timestamp | Offline Tracking |
 
 For `Analytics Server Domain`, please do not include `http` or `https`. If your value for this is `http://test.com`, simply put in `test.com`. This means no extra slashes, and no protocol.
 
@@ -246,13 +246,13 @@ Branch.initSession(...);
 
 Branch sends the following values from Branch link data in the Adobe Context Data:
 
-| Adobe Classification | Branch Analytics Tag | Example
-| --- | --- | ---
-| Source | Channel | Our Website
-| Campaign | Campaign | Journeys Test Campaign
-| Medium | Feature | Journeys
-| Action | Branch Event Name | Install
-| Action Property| Branch Tags | tag=bar&tag2=1234
+| Adobe Classification | Branch Analytics Tag | Example |
+| --- | --- | --- |
+| Source | Channel | Our Website |
+| Campaign | Campaign | Journeys Test Campaign |
+| Medium | Feature | Journeys |
+| Action | Branch Event Name | Install |
+| Action Property| Branch Tags | tag=bar&tag2=1234 |
 
 If you create a Quick Link and specify analytics, those analytics will appear in the Adobe Analytics reporting suite.
 
