@@ -14,13 +14,13 @@ This documentation contains information on the procedure for submitting data sub
 	1. Visit the following page and fill out the online form: [https://gdpr.branch.io/hc/en-us/requests/new](https://gdpr.branch.io/hc/en-us/requests/new). 
 	2. **Required Fields:**
 	    1. **Email Address**: your email address
-	    2. **Requestor: **Select** **“Someone else’s behalf”
+	    2. **Requestor**: Select “Someone else’s behalf”
 	    3. **GDPR Request:** Select "Data Deletion"
 	    4. **Original Request Date**: Input date of submission
 	    5. **Subject**: "[Your company Name] - Deletion request - [MM/DD/YYYY]"
 	    6. **Description**: "Requesting data deletion request for the list of attached IDs."
 	        1. Please Include your App ID. _see below Security/Request Validation_
-	    7. **Attachments**: upload .CSV file`
+	    7. **Attachments**: upload .CSV file
 
 3. **Security/ Request Validation:**
 If it is the first time Branch has received a data subject request from you, we will need to validate the request for security purposes and ask that you provide the following information to carry out the request:

@@ -81,7 +81,12 @@ To enable LATD:
 
 ![image](/_assets/img/pages/apps/latd-setting.png)
 
-## Android
+## Required SDK Methods
+
+!!! warning "LATD for Self-Attributing Networks"
+    This endpoint reads last attributed touch data from our Persona store. If you invoke it immediately after session start, it may not contain the most recent attribution data. Requests to self-attributing networks (SANs) like Facebook and Google are processed asynchronously and take time to finish.
+
+### Android
 
 !!! info "Attribution Window Logic"
     When calling the LATD method, you can also provide a value for the `attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
@@ -97,7 +102,7 @@ Branch.getInstance().getLastAttributedTouchData(
     }, attributionWindow);
 ```
 
-## iOS
+### iOS
 
 !!! info "Attribution Window Logic"
     When calling the LATD method, you can also provide a value for the `attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
@@ -109,7 +114,7 @@ Branch.getInstance().getLastAttributedTouchData(
   }];
 ```
 
-## Web
+### Web
 
 !!! info "Attribution Window Logic"
     When calling the LATD method, you can also provide a value for the `attribution_window` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
