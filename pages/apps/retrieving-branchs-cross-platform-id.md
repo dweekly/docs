@@ -6,7 +6,7 @@ Cross-Platform ID will be consistent across Branch touchpoints if we think those
 
 
 !!! warning "Paid Feature"
-  Cross-Platform ID is a paid product that is currently only available to Branch’s Enterprise customers. The methods described below are only available as part of the paid Cross-Platform ID product.
+    Cross-Platform ID is a paid product that is currently only available to Branch’s Enterprise customers. The methods described below are only available as part of the paid Cross-Platform ID product.
 
 
 ## Fields
@@ -15,12 +15,7 @@ Cross-Platform ID will be consistent across Branch touchpoints if we think those
 - **user_data_past_cross_platform_ids**: array of strings, which are past Cross-Platform IDs
 - **user_data_prob_cross_platform_ids**: array of dicts. Each dict represents a probabilistically linked Cross-Platform ID, along with a score/probability representing how confident Branch is that this ID is associated with the main Cross-Platform ID for this event.
 
-## Interfaces
-
-We currently provide three interfaces for accessing Cross-Platform ID. 
-
-
-## Daily Export API and UI
+## Viewing CPID via Daily Export API and UI
 
 We have already added three new columns to the [Daily Export](https://docs.branch.io/exports/daily-exports/) CSVs accessible through the [Daily Export API](https://docs.branch.io/exports/daily-exports/#access-via-api) or [Daily Export UI](https://docs.branch.io/exports/daily-exports/#access-via-branch-dashboard).
 
@@ -33,7 +28,7 @@ Here is an example row, with strings truncated for readability.
 | …6c7f3 | \["…0d8d","…82cbf","…67321","…0fc16","…e328f"\] | \[{"id":"...c7510","probability":0.9092076420783997}\]|
 
 
-## Webhooks 
+## Retrieving CPID via Webhooks 
 
 The three Cross-Platform ID fields are accessible via Freemarker in our Custom Webhooks interface as well. 
 
@@ -102,6 +97,3 @@ branch.crossPlatformIds(
 }
 */
 ```
-
-## Common Questions
-(Work in progress, stay tuned)
