@@ -162,11 +162,6 @@ Creating Branchified ad links for your product feed includes three steps:
       </tr>
     </table>
 
-Your Branch long link for Facebook should look like this:
-```
-https://example.app.link?product_id=123&category=shoes&$fallback_url=https://branch.io/universal-ads/&$3p=a_facebook&~advertising_partner_name=Facebook&$one_time_use=false&branch_ad_format=App Only&~channel=Facebook&~feature=paid advertising&~campaign={{campaign.name}}&~ad_id={{ad.id}}&~ad_set_id={{ad.set.id}}&~campaign_id={{campaign.id}}
-```
-
 Your Branch long link for Google Ads should look like this:
 ```
 https://example.app.link?product_id=123&category=shoes&$fallback_url=https://branch.io/universal-ads/&$3p=a_google_adwords&~advertising_partner_name=Google-Adwords&$one_time_use=false&branch_ad_format=Cross-Platform Search&~channel=Google Adwords&~feature=paid advertising&~ad_set_id={adgroupid}&~campaign_id={campaignid}&~keyword={keyword}&~placement={placement}&~gclid={gclid}&~lpurl={lpurl}&$android_deepview=false&$ios_deepview=false&$desktop_deepview=false&$android_passive_deepview=false&$ios_passive_deepview=false
@@ -177,12 +172,9 @@ https://example.app.link?product_id=123&category=shoes&$fallback_url=https://bra
     1. If you leave the ampersands before the valuetrack parameters unencoded, they will be parsed by the web browser. If you encode the ampersands, the valuetrack parameters will be sent into the app.
 2. URL encode the resulting link.
 
-Your ENCODED Branch long link for Facebook should look like this:
-```
-```
-
 Your ENCODED Branch long link for Google Ads should look like this:
 ```
+https%3A%2F%2Fexample.app.link%3Fproduct_id%3D123%26category%3Dshoes%26%24fallback_url%3Dhttps%3A%2F%2Fbranch.io%2Funiversal-ads%2F%26%243p%3Da_google_adwords%26~advertising_partner_name%3DGoogle-Adwords%26%24one_time_use%3Dfalse%26branch_ad_format%3DCross-Platform%20Search%26~channel%3DGoogle%20Adwords%26~feature%3Dpaid%20advertising%26~ad_set_id%3D{adgroupid}%26~campaign_id%3D{campaignid}%26~keyword%3D{keyword}%26~placement%3D{placement}%26~gclid%3D{gclid}%26~lpurl%3D{lpurl}%26%24android_deepview%3Dfalse%26%24ios_deepview%3Dfalse%26%24desktop_deepview%3Dfalse%26%24android_passive_deepview%3Dfalse%26%24ios_passive_deepview%3Dfalse
 ```
 
 **Step 3 - Append the URL-encoded Branch long link to your Product Item landing page**:
@@ -191,6 +183,7 @@ Your ENCODED Branch long link for Google Ads should look like this:
 
 Your FINAL Product Item Link should look like this:
 ```
+https://branch.io/universal-ads&branchify_url=https%3A%2F%2Fexample.app.link%3Fproduct_id%3D123%26category%3Dshoes%26%24fallback_url%3Dhttps%3A%2F%2Fbranch.io%2Funiversal-ads%2F%26%243p%3Da_google_adwords%26~advertising_partner_name%3DGoogle-Adwords%26%24one_time_use%3Dfalse%26branch_ad_format%3DCross-Platform%20Search%26~channel%3DGoogle%20Adwords%26~feature%3Dpaid%20advertising%26~ad_set_id%3D{adgroupid}%26~campaign_id%3D{campaignid}%26~keyword%3D{keyword}%26~placement%3D{placement}%26~gclid%3D{gclid}%26~lpurl%3D{lpurl}%26%24android_deepview%3Dfalse%26%24ios_deepview%3Dfalse%26%24desktop_deepview%3Dfalse%26%24android_passive_deepview%3Dfalse%26%24ios_passive_deepview%3Dfalse
 ```
 
 ### Creating a Google Feed
