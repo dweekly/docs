@@ -1,8 +1,8 @@
 ## Overview
 
-Branch Cross-Platform ID exposes a series of fields representing app-scoped, anonymous, cross-platform identifiers you can use to stitch together events for multi-touch attribution, user journeys for state-of-the-art UX, and many other use cases. 
+Branch Cross-Platform ID exposes a series of fields representing app-scoped, anonymous, cross-platform identifiers you can use to stitch together events for multi-touch attribution, user journeys for state-of-the-art UX, and many other use cases.
 
-Cross-Platform ID will be consistent across Branch touchpoints if we think those touchpoints are emitted by the same user. 
+Cross-Platform ID will be consistent across Branch touchpoints if we think those touchpoints are emitted by the same user.
 
 
 !!! warning "Paid Feature"
@@ -15,11 +15,11 @@ Cross-Platform ID will be consistent across Branch touchpoints if we think those
 - **user_data_past_cross_platform_ids**: array of strings, which are past Cross-Platform IDs
 - **user_data_prob_cross_platform_ids**: array of dicts. Each dict represents a probabilistically linked Cross-Platform ID, along with a score/probability representing how confident Branch is that this ID is associated with the main Cross-Platform ID for this event.
 
-## Viewing CPID via Daily Export API and UI
+## Retrieving CPID via Daily Export API and UI
 
 We have already added three new columns to the [Daily Export](https://docs.branch.io/exports/daily-exports/) CSVs accessible through the [Daily Export API](https://docs.branch.io/exports/daily-exports/#access-via-api) or [Daily Export UI](https://docs.branch.io/exports/daily-exports/#access-via-branch-dashboard).
 
-These fields will start to populate once you have access to the Cross-Platform ID product. Backfilling of historical data pre-access is not supported. 
+These fields will start to populate once you have access to the Cross-Platform ID product. Backfilling of historical data pre-access is not supported.
 
 Here is an example row, with strings truncated for readability.
 
@@ -28,9 +28,9 @@ Here is an example row, with strings truncated for readability.
 | …6c7f3 | \["…0d8d","…82cbf","…67321","…0fc16","…e328f"\] | \[{"id":"...c7510","probability":0.9092076420783997}\]|
 
 
-## Retrieving CPID via Webhooks 
+## Retrieving CPID via Webhooks
 
-The three Cross-Platform ID fields are accessible via Freemarker in our Custom Webhooks interface as well. 
+The three Cross-Platform ID fields are accessible via Freemarker in our Custom Webhooks interface as well.
 
 | Field Name | Postback Macro | Type | Sample Usage |
 | --- | --- | --- | --- |
@@ -43,7 +43,7 @@ The three Cross-Platform ID fields are accessible via Freemarker in our Custom W
 
 Branch includes SDK methods to allow retrieval of our Cross Platform ID (CPID) from the client. This results in an asynchronous call being made to Branch’s servers with CPID data returned when possible.
 
-By using the CPID SDK querying, the three Cross-Platform ID fields described above will be returned to the client. 
+By using the CPID SDK querying, the three Cross-Platform ID fields described above will be returned to the client.
 
 
 ### Android
