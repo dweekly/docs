@@ -25,7 +25,7 @@ Here is an example row, with strings truncated for readability.
 
 | user_data_cross_platform_id | user_data_past_cross_platform_ids | user_data_prob_cross_platform_ids |
 | --- | --- | --- |
-| …6c7f3 | \["…0d8d","…82cbf","…67321","…0fc16","…e328f"\] | \[{"id":"...c7510","probability":0.9092076420783997}\]|
+| …6c7f3 | `["…0d8d","…82cbf","…67321","…0fc16","…e328f"]` | `[{"id":"...c7510","probability":0.9092076420783997}]` |
 
 
 ## Retrieving CPID via Webhooks
@@ -34,9 +34,9 @@ The three Cross-Platform ID fields are accessible via Freemarker in our Custom W
 
 | Field Name | Postback Macro | Type | Sample Usage |
 | --- | --- | --- | --- |
-| user_data_cross_platform_id | ${(user_data.cross_platform_id)!} | String | cpid=${(user_data.cross_platform_id)!} |
-| user_data_past_cross_platform_ids | ${(user_data.past_cross_platform_ids)!} | Array | past_cpids=<@loop data=user_data.past_cross_platform_ids>${key}=${(val)!}<@sep>&</@sep></@loop> |
-| user_data_prob_cross_platform_ids | ${(user_data.prob_cross_platform_ids)!} | Array of Dicts | prob_cpids=<@urlencode><@jsonmap><@loop data=user_data.past_cross_platform_ids>\"${key}\":\"${(val)!}\"<@sep>,</@sep></@loop></@jsonmap></@urlencode> |
+| user_data_cross_platform_id | `${(user_data.cross_platform_id)!}` | String | `cpid=${(user_data.cross_platform_id)!}` |
+| user_data_past_cross_platform_ids | `${(user_data.past_cross_platform_ids)!}` | Array | `past_cpids=<@loop data=user_data.past_cross_platform_ids>${key}=${(val)!}<@sep>&</@sep></@loop>` |
+| user_data_prob_cross_platform_ids | `${(user_data.prob_cross_platform_ids)!}` | Array of Dicts | `prob_cpids=<@urlencode><@jsonmap><@loop data=user_data.past_cross_platform_ids>\"${key}\":\"${(val)!}\"<@sep>,</@sep></@loop></@jsonmap></@urlencode>` |
 
 
 ## SDK Querying
