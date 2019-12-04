@@ -588,23 +588,16 @@
         | calculation_type | `int` | `0` reward for each use, `1` reward for first use only | √
         | location | `int` | `0` all acting users, `1` referring users, `4`, referred acting users | √
         | type | `string` | `credit` reward points | √
-        | web_hook | `string` | The url to call when an event occurs |  `type` = `web_hook`
         | amount | `string` | Number of credits |  `type` = `credit`
         | bucket | `string` | The category where the credits are save to | `type` = `credit`
         | filter | `json` | This is the set of keys and values that must be contained in the event metadata for this reward to be issued |
 
     !!! note "Please take note of the `type` parameter"
-        `type` = `credit` will create a reward rule on your dashboard, but `type` = `web_hook` will create a webhook each time the reward rule is triggered. To see the structure of the webhook callback, please test this with [RequestBin](https://requestbin.com/) or a similar service.
+        `type` = `credit` will create a reward rule on your dashboard. To see the structure of the webhook callback, please test this with [RequestBin](https://requestbin.com/) or a similar service.
 
 - ### Referral troubleshooting
 
     - Referral `credits` cannot go below zero
-
-## Webhook
-
-- ### Webhook create
-
-    - See [Referral create rule](#referral-create-rule)
 
 ## App
 
