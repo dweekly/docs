@@ -179,7 +179,6 @@ User information:
 ```
 [
   "user_data_os",
-  "user_data_country",
   "user_data_language",
   "user_data_platform",
   "user_data_environment",
