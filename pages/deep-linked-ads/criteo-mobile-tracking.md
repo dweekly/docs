@@ -350,7 +350,19 @@ Just need a single link? It's easy to use the Branch dashboard to create a one-o
 
 If you just need a server to server tracking link, you can use the same flow as Option 2, above.
 
-However, at the end, add `%24s2s=true` to your link, so we know it's a server to server to link.
+However, at the end, add the following:
+
+- `&%24s2s=true` at the end of your link, so we know it’s a server to server link.
+
+- Device ID macro `&%24idfa=` for iOS devices OR `&%24aaid=` for Android devices.
+
+- Device OS macro `%24os=` for IOS or ANDROID.
+
+- Send IP client’s address via URL parameter or HTTP Header.
+
+	- IP Header to override the IP information on click. e.g. `x-ip-override: {IP ADDRESS}`.
+
+	- IP URL parameter `&device_ip={IP_Address}`.
 
 
 ### View your data with People-Based Attribution
