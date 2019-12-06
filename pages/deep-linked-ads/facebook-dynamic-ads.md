@@ -1,11 +1,3 @@
----
-title: Facebook Dynamic Ads
-description: An overview page of using Branch in Facebook Dynamic Ad campaigns.
-path: tree/master/src/deep-linked-ads
-source: facebook-dynamic-ads.md
----
-# Facebook Dynamic Ads
-
 ## Overview
 
 Branch links can be used in conjunction with Facebook's dynamic advertisements. Dynamic remarketing campaigns on desktop have been proven to deliver 16x return on ad spend. Now you can easily set up Facebook Dynamic Ads on mobile to drive incredible results.
