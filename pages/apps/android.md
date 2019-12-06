@@ -167,6 +167,8 @@
 
     - Add Branch to your `LauncherActivity.java`
 
+    !!! warning "`initSession` is required as of v4.2.0."
+
     - *Java*
 
         ```java hl_lines="16 17 31 32 33 34 35 36 37 38 39 40 41 42 43 46 47 48 49"
@@ -196,30 +198,26 @@
                 setContentView(R.layout.activity_launcher);
             }
 
-            @Override
-            public void onStart() {
+            @Override public void onStart() {
                 super.onStart();
-
-                // Branch init
-                Branch.getInstance().initSession(new Branch.BranchReferralInitListener() {
-                    @Override
-                    public void onInitFinished(JSONObject referringParams, BranchError error) {
-                        if (error == null) {
-                            Log.i("BRANCH SDK", referringParams.toString());
-                            // Retrieve deeplink keys from 'referringParams' and evaluate the values to determine where to route the user
-                            // Check '+clicked_branch_link' before deciding whether to use your Branch routing logic
-                        } else {
-                            Log.i("BRANCH SDK", error.getMessage());
-                        }
-                    }
-                }, this.getIntent().getData(), this);
+                Branch.getInstance().initSession(branchReferralInitListener, getIntent() != null ?
+                        getIntent().getData() : null, this);
             }
-
             @Override
-            public void onNewIntent(Intent intent) {
-                this.setIntent(intent);
+            protected void onNewIntent(Intent intent) {
+                super.onNewIntent(intent);
+                setIntent(intent);
+                // if activity is in foreground (or in backstack but partially visible) launching the same
+                // activity will skip onStart, handle this case with reInitSession
+                Branch.getInstance().reInitSession(this, branchReferralInitListener);
             }
-        }
+            private Branch.BranchUniversalReferralInitListener branchReferralInitListener =
+                    new Branch.BranchUniversalReferralInitListener() {
+                        @Override public void onInitFinished(BranchUniversalObject branchUniversalObject,
+                                                             LinkProperties linkProperties, BranchError branchError) {
+                            // do something with branchUniversalObject/linkProperties..
+                        }
+                    };
         ```
 
     - *Kotlin*
@@ -803,7 +801,7 @@
     - *Java*
 
         ```java
-        Intent resultIntent = new Intent(this, TargetClass.class);
+        Intent resultIntent = new Intent(this, TargetActivity.class);
         resultIntent.putExtra("branch","http://xxxx.app.link/testlink");
         resultIntent.putExtra("branch_force_new_session",true);
         PendingIntent resultPendingIntent =  PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -817,6 +815,24 @@
         val resultPendingIntent = PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT)
         resultIntent.putExtra("branch_force_new_session", true)
         ```
+
+    - To handle situations where TargetActivity is in the foreground when push notification is clicked, don't forget to call reInitSession from onNewIntent inside TargetActivity:
+
+    - *Java*
+
+        ```java
+        @Override
+        protected void onNewIntent(Intent intent) {
+            super.onNewIntent(intent);
+            setIntent(intent);
+            // if activity is in foreground (or in backstack but partially visible) launching the same
+            // activity will skip onStart, handle this case with reInitSession
+            Branch.getInstance().reInitSession(this, branchReferralInitListener);
+        }
+        ```
+
+!!! warning ""
+    Handling a new deep link via `reInitSession` will clear the current session data, if there is any, and a new referred "open" will be attributed.
 
 - ### Handle links in your own app
 
@@ -842,8 +858,11 @@
 
     - Replace "http://xxxx.app.link/testlink" with your own link URL
 
-!!! warning
+!!! warning ""
     Handling a new deep link in your app will clear the current session data and a new referred "open" will be attributed.
+
+!!! warning ""
+    Similarly to handling push notifications [ttps://docs.branch.io/apps/android/#handle-push-notification], linking to the currently open activity or an activity that's in the backstack and partially visible, must be handled via reInitSession.
 
 - ### Enable 100% matching
 
