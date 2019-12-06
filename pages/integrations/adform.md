@@ -14,9 +14,9 @@ This guide will walk you through how to send your Branch data to **[Adform](http
 
 {! ingredients/data-integrations/add-credentials.md !}
 
-Please refer to [Airship's documentation](https://docs.airship.com/) if you need instructions on how to find the values required to enable the integration.
+Please refer to [Adform's documentation](https://support.adform.com/documentation/) if you need instructions on how to find the values required to enable the integration.
 
-### What Branch sends to Airship
+### What Branch sends to Adform
 
 * Installs
 * Commerce Events

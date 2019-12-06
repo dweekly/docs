@@ -1038,6 +1038,7 @@ nav:
       - 24Metrics Fraudshield: integrations/24metrics-fraudshield.md
       - Adform: integrations/adform.md
       - Adjust: integrations/adjust.md
+      - Admost: integrations/admost.md
       - Adobe Analytics: integrations/adobe-analytics.md
       - Airship: integrations/airship.md
       - Amplitude: integrations/amplitude.md
@@ -1048,7 +1049,9 @@ nav:
       - Backinapp: integrations/backinapp.md
       - Barometric: integrations/barometric.md
       - Batch: integrations/batch.md
+      - Bluecore: integrations/bluecore.md
       - Braze: integrations/braze.md
+      - Bubbleye: integrations/bubbleye.md
       - Chartable: integrations/chartable.md
       - CleverTap: integrations/clevertap.md
       - Convertro: integrations/convertro.md
@@ -1060,6 +1063,7 @@ nav:
       - Google Analytics: integrations/google-analytics.md
       - Google Firebase: integrations/google-firebase.md
       - Heap: integrations/heap.md
+      - iCubes Pro: integrations/icbues-pro.md
       - Insider: integrations/insider.md
       - Iterable: integrations/iterable.md
       - Kochava: integrations/kochava.md
@@ -1071,6 +1075,7 @@ nav:
       - MobileAction: integrations/mobileaction.md
       - mParticle (export): integrations/mparticle-export.md
       - mParticle (import): integrations/mparticle-import.md
+      - myTracker: integrations/mytracker.md
       - Netcore Smartech: integrations/netcore-smartech.md
       - Neustar: integrations/neustar.md
       - Scalarr: integrations/scalarr.md
