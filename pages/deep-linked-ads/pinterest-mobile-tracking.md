@@ -45,7 +45,7 @@ Once you've enabled an integration it's time to create a tracking link.
         It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. _Channels_ generally correspond to ad networks, and _Campaigns_ correspond to marketing initiatives that you're launching. For example: _Channel_: "YouTube", _Campaign_: "Summer 2017 Shoe Discounts."
 
     !!! info "Links Created by Agency Users"
-        When an Agency users saves an ad link/Journey/Quick Link, that ad link/Journey/Quick Link is associated with that Agency via a unique agency_id that is included as a key-value in deep linking setup.
+        When an Agency user saves an ad link/Journey/Quick Link, that ad link/Journey/Quick Link is associated with that Agency via a unique agency_id that is included as a key-value in deep linking setup.
 
 
 1. Click **Create Link Now**, and you have your tracking link!
@@ -55,7 +55,10 @@ Once you've enabled an integration it's time to create a tracking link.
 1. When creating your Pinterest ad campaign, make sure to:
 
  	1. Use a direct link to the Apple Store or Google Play Store in the **Destination URL** field.
-	2. Place your Branch link in the **Click Tracking URL**.
+	2. Remove the macro for the platform not being promoted; i.e. if your **Destination URL** goes to the Apple Store, remove the macro for the Google Play Store.
+    1. **iOS**: `$idfa_sha1={sha1_advertising_id}`
+    2. **Android**: `$aaid_sha1={sha1_advertising_id}`
+  3. Place your Branch link in the **Click Tracking URL**.
 
 	![image](/_assets/img/pages/deep-linked-ads/pinterest/pinterest-links.png)
 
