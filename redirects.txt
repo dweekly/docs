@@ -31,7 +31,6 @@ kr/universal-links/index.html https://docs.branch.io/ko/universal-links/
 cn/integrate/index.html https://docs.branch.io/zh/integrate/
 emails/salesforce/index.html https://docs.branch.io/emails/salesforce-v1/
 emails/salesforce_dns/index.html https://docs.branch.io/emails/salesforce-v2/
-deep-linked-ads/google-uac/index.html https://docs.branch.io/deep-linked-ads/google-ads-uac/
 integrations/tune.md/index.html https://docs.branch.io/integrations/data-integrations-list/
 dashboard/people-based-attribution/index.html https://docs.branch.io/resources/branch-attribution-logic-and-settings/
 deep-linked-ads/hasoffers-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/tune-mobile-tracking/
@@ -39,3 +38,16 @@ activity-reports-analytics/content-analytics/index.html https://docs.branch.io/d
 emails/get-started/#deep-linking-settings-for-email/index.html https://docs.branch.io/emails/universal-email/#deep-linking-settings-for-email
 exports/api-v3/index.html https://docs.branch.io/exports/daily-exports/
 exports/custom-export-api/index.html https://docs.branch.io/exports/custom-exports/
+emails/get-started/#deep-linking-settings-for-email/index.html https://docs.branch.io/emails/universal-email/#deep-linking-settings-for-email
+emails/salesforce-v.1/index.html https://docs.branch.io/emails/salesforce-v1/
+emails/salesforce-v.-2/index.html https://docs.branch.io/emails/salesforce-v2/
+emails/salesforce-v.-3/index.html https://docs.branch.io/emails/salesforce-v3/
+deep-linked-ads/sizmek-dsp-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/ad-networks-list/
+deep-linked-ads/dynamic-product-feeds/index.html https://docs.branch.io/deep-linked-ads/creating-branch-links-for-product-feeds/
+apps/ios//ios/index.html https://docs.branch.io/apps/ios/
+apps/ios//android/index.html https://docs.branch.io/apps/android/
+emails/iterable/index.html https://docs.branch.io/emails/iterable-v1/
+emails/icubespro/index.html https://docs.branch.io/emails/cmercury/
+integrations/segment/index.html https://docs.branch.io/integrations/segment-export/
+integrations/mparticle/index.html https://docs.branch.io/integrations/mparticle-export/
+deep-linked-ads/google-uac/index.html https://docs.branch.io/deep-linked-ads/google-ads-setup/#linking-branch-in-google-ads

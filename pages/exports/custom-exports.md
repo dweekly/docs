@@ -7,13 +7,32 @@ The Branch Custom Exports find and queue log records that match your search crit
 
 Custom exports endpoints are limited to a maximum of 2 million records each and can query up to 120 days prior to the date of export. If more records are required, please make multiple requests with smaller time intervals to pull the necessary data in "batches".
 
-
 ## Authentication
 
-Calls to the Custom Export API require an _api_key_ query string parameter to be passed with each request. API Keys are generated on a per-user basis, are permanent, and calls using an API Key are only allowed from devices with known IP addresses.
+Calls to the Custom Export API require an _api_key_ query string parameter to be passed with each request. API Keys are generated on a per-user basis and are permanent.
 
+Learn how to [retrieve your API key (a.k.a. `Access Token`)](/dashboard/organization-view/#managing-your-user-profile)
 
-## Third Party Access
+!!! warning "Organization Level Access Required"
+	In order to retrieve or reset your API Key/Access Token, you must have access to the Organization level of the account.  This functionality is not present at the app level.
+
+##Rate Limits
+
+Rate limits depend on the endpoint you are making a request to.
+
+For creating exports, the rate limit is 10 requests per minute and 25 requests per hour.
+
+For checking the status of an export, the rate limit is 50 requests per minute and 1000 per hour.
+
+## Export Access
+
+In order to access Custom Exports, a user will need to have both **Sensitive Data** and **Export** access.
+
+![image](/_assets/img/pages/dashboard/access-levels/export-access.png)
+
+For more details on how to give a user the required access, please follow [Granting a User Export Access](/dashboard/export-access/#granting-a-user-export-access).
+
+### Third Party Access
 
 Any user with access to an account’s API keys will be able to access Branch’s Custom Export API (and thus unfiltered, log-level data). As a result, we would recommend against providing third parties with the permissions required to view API keys during the invitation process.
 
@@ -51,8 +70,11 @@ The following log topics are available via the Custom Export API:
 *   **Installs**
 *   **Opens**
 
-!!! info ""
-Branch does not support exports of the infrequently-used update and postbacks TUNE topics.
+!!! info "Info"
+	Branch does not support exports of the infrequently-used update and postbacks TUNE topics.
+
+!!! warning "IP Discrepancies"
+	Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
 
 
 ## Available Fields
@@ -231,6 +253,12 @@ Branch does not support exports of the infrequently-used update and postbacks TU
    <td>attribute_sub5
    </td>
    <td>Attribute Sub5
+   </td>
+  </tr>
+	<tr>
+   <td>branch_app_id
+   </td>
+   <td>Branch App ID
    </td>
   </tr>
   <tr>
@@ -527,6 +555,18 @@ Branch does not support exports of the infrequently-used update and postbacks TU
    <td>Publisher Sub Campaign Ref
    </td>
   </tr>
+	<tr>
+   <td>publisher_sub_channel
+   </td>
+   <td>Publisher Sub Channel
+   </td>
+  </tr>
+	<tr>
+   <td>publisher_sub_feature
+   </td>
+   <td>Publisher Sub Feature
+   </td>
+  </tr>
   <tr>
    <td>publisher_sub_keyword_id
    </td>
@@ -615,6 +655,18 @@ Branch does not support exports of the infrequently-used update and postbacks TU
    <td>publisher_sub5
    </td>
    <td>Publisher Sub5
+   </td>
+  </tr>
+	<tr>
+	 <td>publisher_sub_stage
+	 </td>
+	 <td>Publisher Sub Stage
+	 </td>
+	</tr>
+	<tr>
+   <td>publisher_sub_tags
+   </td>
+   <td>Publisher Sub Tags
    </td>
   </tr>
   <tr>
@@ -787,9 +839,7 @@ For example, `site_event.id` will now be exported as `site_event_id`.
 
 ## Accessing via Branch Dashboard
 
-!!! warning "BETA - TUNE Clients Only"
-	This feature is currently in BETA. If you do not see this feature in your dashboard, please contact your CSM or [Contact Support](mailto:support@branch.io) to request access.  
-
+!!! warning "TUNE Migrated Clients Only"
 	This feature is currently only available to TUNE migrated clients, with plans to open this feature to all Branch clients in Q4.
 
 Rather than accessing the Custom Export API directly, you can use the Custom Exports section in your Branch dashboard to request the appropriate data via CSVs.
@@ -853,7 +903,7 @@ Find and queue all records that match search criteria for export; returns a “h
    </td>
    <td>Date
    </td>
-   <td><a href="https://en.wikipedia.org/wiki/ISO_8601">The beginning datetime for the requested results, provided in ISO-8601 format. </a>; <strong>REQUIRED</strong>
+   <td><a href="https://en.wikipedia.org/wiki/ISO_8601">The beginning datetime for the requested results, provided in ISO-8601 format including Hours, Minutes, Seconds and Milliseconds. </a>; <strong>REQUIRED</strong>
 <p>
 Dates without offsets (i.e. a timezone) default to the value provided for the timezone parameter. If the timezone parameter is not specified, the dates timezone defaults to UTC. Date must be within the last 120 days. Example: 2016-01-01T00:00:00Z
    </td>
@@ -863,9 +913,9 @@ Dates without offsets (i.e. a timezone) default to the value provided for the ti
    </td>
    <td>Date
    </td>
-   <td><a href="https://en.wikipedia.org/wiki/ISO_8601">The end datetime for the requested results, provided in ISO-8601 format. </a>; <strong>REQUIRED</strong>
+   <td><a href="https://en.wikipedia.org/wiki/ISO_8601">The end datetime for the requested results, provided in ISO-8601 format including Hours, Minutes, Seconds and Milliseconds. </a>; <strong>REQUIRED</strong>
 <p>
-Dates without offsets (i.e. a timezone) default to the value provided for the timezone parameter. If the timezone parameter is not specified, the dates timezone defaults to UTC. Example: 2016-01-01T23:59:59Z
+Dates without offsets (i.e. a timezone) default to the value provided for the timezone parameter. If the timezone parameter is not specified, the dates timezone defaults to UTC. Example: 2016-01-01T23:59:59:999Z
    </td>
   </tr>
   <tr>

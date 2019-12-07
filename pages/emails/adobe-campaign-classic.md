@@ -10,19 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Adobe
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-Add a custom click tracking domain at the **Brand Configuration** page in the field called **External URL of the tracking server**.
-
-![image](/_assets/img/pages/email/adobe-campaign-classic/create-domain.png)
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Adobe Campaign Classic.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -41,6 +28,9 @@ You can retrieve your click tracking domain from the **Brand Configuration** pag
 
 {! ingredients/email/validate-test.md !}
 
+!!! warning "Important Notice"
+    Please reach out to your CSM or the Support team to configure the Host for your integration.
+
 {! ingredients/email/usage-auto.md !}
 
 ## Configure your mobile app
@@ -50,6 +40,23 @@ You can retrieve your click tracking domain from the **Brand Configuration** pag
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/bounce-web.md !}
+
+{! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+Add a custom click tracking domain at the **Brand Configuration** page in the field called **External URL of the tracking server**.
+
+![image](/_assets/img/pages/email/adobe-campaign-classic/create-domain.png)
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Adobe Campaign Classic.
+
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
 
 ## Using Universal email
 

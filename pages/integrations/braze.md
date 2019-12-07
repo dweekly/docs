@@ -69,7 +69,8 @@ Branch Analytics Tag | Braze Data Placeholder Tag
 --- | ---
 Campaign | campaign
 Channel | source
-Tags | tags
+Adgroup | adgroup
+Ad | ad
 
 ### Braze Endpoints.
 

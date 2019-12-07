@@ -1,3 +1,49 @@
+### v0.30.0
+
+**(2019-Nov-13)**
+
+- Update Apple Search Ads behavior and API.
+- Last attributed touch API now accepts attribution window.
+- Add blacklist URL configuration.
+- Removed deprecated Safari cookie integration.
+- Fix race condition in SDK initialization.
+- Fix Carthage Swift build from source.
+- Fix Swift getInstance nullability.
+- Fix object serialization error.
+
+### v0.29.3
+
+**(2019-October-16)**
+
+- Added a check for previous Tune data; when found, data's status is set to "updated" to be used in determining new vs existing users.
+
+### v0.29.1
+
+**(2019-October-04)**
+
+- Fix nullability warnings.
+
+### v0.29.0
+
+**(2019-September-26)**
+
+- Added support for Cross-Platform ID (CPID) & Last Attributed Touch Data (LATD).
+- Fixed a race condition on slow startup.
+- Fixed a rare Keychain deadlock.
+
+### v0.28.1
+
+**(2019-September-06)**
+
+- Remove deprecated `UIWebView` and replace with `WebKit`.
+- Add Standard Event customer alias field.
+- Cocoapods adds `iAd` by default.
+- Remove deprecated Fabric integration.
+- Remove Apple Search Ads debug which is redundant with Apple's existing debug.
+- Collect install receipt.
+- Fix bug with proxying network calls.
+- Fix bug with network retry.
+
 ### v0.27.1
 
 **(2019-June-03)**

@@ -97,9 +97,9 @@ For `Analytics Server Domain`, please do not include `http` or `https`. If your 
 
 You'll need to pass through all user IDs configured with Adobe, to the Branch SDKs (There are three possible Adobe IDs this integration can track).  First, figure out which ID you use by asking your Adobe Consultant, and then pass that value to Branch by calling `setRequestMetadataKey` (iOS) or `.setRequestMetadata` (Android) on the Branch SDK, **BEFORE** calling *initSession* on the Branch SDK.
 
-For example, if your Adobe integration uses the Marketing Cloud Visitor ID, retrieve the ID's value from Adobe's SDK, and pass it to Branch's SDK with a key called *$marketing_cloud_visitor_id*.  Sample snippets for all 3 ID types below:
+For example, if your Adobe integration uses the Marketing Cloud Visitor ID or Experience Cloud ID, retrieve the ID from Adobe's SDK, and pass it to Branch's SDK with a key called *$marketing_cloud_visitor_id*.  Sample snippets for all ID types below:
 
-#### Marketing Cloud Visitor ID
+#### Marketing Cloud Visitor ID / Experience Cloud ID
 
 Value sent to Branch using *$marketing_cloud_visitor_id* key.  Value sent to Adobe as _`mid`_
 
@@ -246,13 +246,13 @@ Branch.initSession(...);
 
 Branch sends the following values from Branch link data in the Adobe Context Data:
 
-| Adobe Classification | Branch Analytics Tag | Example
-| --- | --- | ---
-| Source | Channel | Our Website
-| Campaign | Campaign | Journeys Test Campaign
-| Medium | Feature | Journeys
-| Action | Branch Event Name | Install
-| Action Property| Branch Tags | tag=bar&tag2=1234
+| Adobe Classification | Branch Analytics Tag | Example |
+| --- | --- | --- |
+| Source | Channel | Our Website |
+| Campaign | Campaign | Journeys Test Campaign |
+| Medium | Feature | Journeys |
+| Action | Branch Event Name | Install |
+| Action Property| Branch Tags | tag=bar&tag2=1234 |
 
 If you create a Quick Link and specify analytics, those analytics will appear in the Adobe Analytics reporting suite.
 

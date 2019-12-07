@@ -1,6 +1,6 @@
 ## Overview
 
-![Ad Volt](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/Ad_Volt-Logo-1548381696618.png)
+![Ad Volt](https://cdn.branch.io/branch-assets/ad-partner-manager//db5c3f61d0f5-logo-1565171315161.png)
 
 This guide will walk you through how to setup your campaigns with **[Ad Volt](http://www.ad-volt.com/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 

@@ -4,16 +4,18 @@ title: Twitter Ads App Install Measurement
 
 ## Overview
 
-Branch links can be used together with Twitter App Install Campaign ads, allowing you to track ad-driven installs on the Branch dashboard.
-
 By connecting your Twitter Ads and Branch accounts, the following is enabled:
 
 - App conversion data collected by the Branch SDK sent to Twitter Ads for attribution.
 - `Read-only` access to install data (not cost/click/impression data) from Twitter Ads in your Branch account.
 
+!!! note "Deep Linking Not Supported"
+	Twitter Ads does not support the use of deep links at this time.  As such, this integration does not require the use of Branch links.
+
 ## Prerequisites
 
 !!! warning "Prerequisites"
+	* [x] Ensure Branch is the only MMP configured in your Twitter account.  This must be done before you enable the Twitter integration in your Branch dashboard.
 	* [x] To track installs from Twitter Ads you should [integrate the Branch SDK](/apps/ios/#integrate-branch) into your app OR send events via server to server integration including device IDs (Google AID or Apple IFA).
 	* [x] To use Twitter App Install Ads ensure you have:
 		* [x] URI schemes configured on iOS
@@ -21,11 +23,26 @@ By connecting your Twitter Ads and Branch accounts, the following is enabled:
 		* [x] iOS App Store ID set
 		* [x] Android Package Name set
 	* [x] Ads is a premium product priced on Monthly Active Users. Sign up for the Ads product to enable this functionality.
+	
+## Campaign Support
+
+| **Campaign Type** | **Attribution Supported** | **Branch Linking Supported** |
+| - | - | - |
+| App installs | Yes | No |
+| App re-engagements | Yes | No |
+| Website clicks or conversions | Yes (Branch only) | Yes |
+
+The integration with Twitter Ads for mobile app conversion tracking is designed to support App install and re-engagement campaigns. Other campaign types can be run with Branch links, but will only attribute in Branch and is not part of the integration.
+
+## Branch links
+
+App campaigns do not support Branch links. Branch links can be used on Tweets, promoted Tweets, and non-app campaign types, but will only report conversions in Branch and not Twitter. To avoid high-level reporting discrepancies, you may want to segment this traffic from the integration by using Quick Links. 
 
 ## Enable Twitter Ads for Measurement
 
-!!! note ""
-	Completing this section -- "Enable Twitter Ads for Measurement" -- will result in Branch sending app events to Twitter in order to attribute them back to Twitter ad campaigns. At this time, the integration does not support deep linking new users directly to content the first time they open your app.
+!!! note "Enabling Twitter"
+	- Completing this section -- "Enable Twitter Ads for Measurement" -- will result in Branch sending app events to Twitter in order to attribute them back to Twitter ad campaigns.
+	- Ensure Branch is the only MMP configured in your Twitter account.  This must be done before you enable the Twitter integration in your Branch dashboard.
 
 1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management) and search for **Twitter**.
 
@@ -107,9 +124,12 @@ Twitter has a data agreement with TUNE, and there are several layers of data tha
 
 ### Data Levels
 
-**Source Level** > Source level is the source information including Partner name (Twitter Ads) and Partner Site (PROMOTED, ORGANIC, TAP).
+**Source Level** > Source level is the source information including Publisher name (hardcoded to "Twitter"), Publisher ID, 3p (hardcoded to "a_twitter") and advertising partner name (hardcoded to "Twitter").
 
-**Campaign Level** > Campaign level includes campaign information such as Partner Campaign (campaign name), Partner Ad (Tweet ID), Partner Ad Group (Line Item ID)
+**Campaign Level** > Campaign level includes campaign information such as Campaign (Twitter Campaign Name), Campaign ID (Twitter Campaign ID), Channel (Twitter or Twitter Audience Platform), Feature (hardcoded to "paid advertising"), Ad ID (Tweet ID), Partner Ad Set ID (Line Item ID).
+
+!!! warning "Whitelisting for Device IDs"
+	If you want to receive device IDs and campaign level information via Branch's data feeds, then you must contact your Twitter and Branch account manager. Please make use the email title of "CAMPAIGN LEVEL DATA EXPORT WHITELIST" when contacting your account manager to ensure proper handling.
 
 ### Accessible Data
 
@@ -117,40 +137,33 @@ Twitter has a data agreement with TUNE, and there are several layers of data tha
 
 **Branch API/UI**:
 
- - [x] Can access source and campaign level data by default in aggregate reports.
- - [x] Source and campaign level data is not accessible in exports.
+ - [x] Source and campaign level data by default in aggregate reports.
+ - [x] Source level data in exports by default. Campaign level data is not accessible in exports without whitelisting.
 
-**Postbacks**:
+**Data Feeds**:
 
- - [x] Can receive source level data with identifiers by default to an *internal BI endpoint only* Data can not be sent to third party analytics (see below for third parties) – the postback must be whitelisted for source level data by contacting support.
- - [x] Campaign level data can not be sent to internal endpoints by default, please speak with your Twitter account manager for more information.
-
-#### Partners
-
-Only official Twitter partners can be attributed to and access Twitter data, those found at partners.twitter.com.
-
-**Branch API/UI**:
-
- - [x] Can see source and campaign level data without identifiers for conversions they are attributed to (Twitter conversions that contain their attribution string in the campaign name).
- - [x] Identifiers are never accessible.
-
-**Postbacks**:
-
- - [x] Can receive source and campaign level data to their endpoints, and identifiers will be scrubbed out, no exceptions. This occurs by default and does not need whitelisting for a partner that has Twitter enabled on their integration.
-
-#### Third parties (analytics providers)
-
- - [x] Third parties (not client or official Twitter partner) **can not receive Twitter data, no exceptions**.
- - [x] Postbacks set up to analytics providers will scrub source and campaign level information by default, identifiers will still pass through, and the conversions will appear organic to the third party.
+ - [x] Source level data with identifiers to an **internal BI endpoint only**.
+ - [x] Data can not be sent to Branch data integrations, i.e. third party analytics.
+ 	 - [x] Postbacks set up to analytics providers will scrub source and campaign level information by default, identifiers will still pass through, and the conversions will appear organic to the third party.
 
 #### Agencies
 
 Agencies can access Twitter data under the following circumstances:
 
  - [x] If they have been provided full agency access by the client.
- - [x] If they are an official Twitter partner.
  - [x] If they append their agency attribution code to the Twitter campaign they are running.
 
+## Reporting and Discrepancies
+
+There are two main causes for Twitter Ads discrepancies with Branch:
+
+**Not last click**
+
+Twitter will claim and report all conversions they have tracked clicks or views for within window. Because Branch will attribute to the last partner to interact with the user, you may see up to 10-30% discrepancies. 
+
+**August 2019 user data sharing changes**
+
+In early August of 2019, Twitter temporarily suspended sharing conversion data with MMP's. Upon resuming, Twitter will still attribute all user conversions in their reporting, but will only share conversion data if the user has allowed data sharing in their settings. This may result in up to 50% discrepancies after the first week of August depending on the settings of the users you're acquiring. For more details contact Twitter or reference [their messaging](https://help.twitter.com/en/ads-settings).
 
 ## Troubleshooting
 

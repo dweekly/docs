@@ -14,10 +14,6 @@ With event tracking, it's important to track the objects related to the event oc
 
 Refer to the above document to set up Branch Universal Objects.
 
-## Current Compatibility
-
-There are a few products and features unsupported by this new method of tracking events. We clarify what's currently supported and what isn't below.
-
 ### Acceptance
 
 Tracking these events will propagate to Ad Networks, like Criteo. For example, if you track the purchase event through Branch, this will map to Criteo's Purchase event.
@@ -26,9 +22,10 @@ These events will also have analytics, so you can understand their performance, 
 
 ### Limitations
 
-As of now, any calls made through these SDK methods will **not** yet:
+As of now, any calls made through these SDK methods will **not**:
 
 - Work with our [referrals system](/viral/referrals/).
+- Show custom data in the Branch dashboard aside from **Liveview** and **Exports**.
 
 ## Available Events
 
@@ -101,10 +98,11 @@ This allows you to easily visualize revenue on the Dashboard, across many countr
     // Create a BranchEvent:
     let event = BranchEvent.standardEvent(.purchase)
 
-    // Add the BranchUniversalObjects with the content:
+    // Add the BranchUniversalObject with the content (do not add an empty branchUniversalObject):
     event.contentItems     = [ branchUniversalObject ]
 
     // Add relevant event data:
+    event.alias            = "my custom alias"
     event.transactionID    = "12344555"
     event.currency         = .USD
     event.revenue          = 1.5
@@ -146,10 +144,11 @@ This allows you to easily visualize revenue on the Dashboard, across many countr
     // Create an event and add the BranchUniversalObject to it.
     BranchEvent *event     = [BranchEvent standardEvent:BranchStandardEventAddToCart];
 
-    // Add the BranchUniversalObjects with the content:
+    // Add the BranchUniversalObjects with the content (do not add an empty branchUniversalObject):
     event.contentItems     = (id) @[ branchUniversalObject ];
 
     // Add relevant event data:
+    event.alias            = "my custom alias";
     event.transactionID    = @"12344555";
     event.currency         = BNCCurrencyUSD;
     event.revenue          = [NSDecimalNumber decimalNumberWithString:@"1.5"];
@@ -193,8 +192,11 @@ BranchUniversalObject buo = new BranchUniversalObject()
 	    .addKeyWord("keyword1")
 	    .addKeyWord("keyword2");
 
+//  Do not add an empty branchUniversalObject to the BranchEvent
+
 new BranchEvent(BRANCH_STANDARD_EVENT.ADD_TO_CART)
         .setAffiliation("test_affiliation")
+        .setCustomerEventAlias("my_custom_alias");
         .setCoupon("Coupon Code")
         .setCurrency(CurrencyType.USD)
         .setDescription("Customer added item to cart")
@@ -276,10 +278,13 @@ var content_items = [
    "$creation_timestamp": 1499892854966
 }];
 
+var customer_event_alias = "my custom alias";
+
 branch.logEvent(
    "PURCHASE",
    event_and_custom_data,
    content_items,
+   customer_event_alias,
    function(err) { console.log(err); }
 );
 ```
@@ -289,6 +294,7 @@ branch.logEvent(
 ```bash
 curl -vvv -d '{
   "name": "PURCHASE",
+  "customer_event_alias": "my custom alias",
   "user_data": {
     "os": "Android",
     "os_version": 25,
@@ -396,6 +402,7 @@ Content events are events that occur when a user engages with your in-app conten
 
     ```swift
     let event = BranchEvent.standardEvent(.search)
+    event.alias = "my custom alias"
     event.eventDescription = "Product Search"
     event.searchQuery = "user search query terms for product xyz"
     event.customData["Custom_Event_Property_Key1"] = "Custom_Event_Property_val1"
@@ -406,6 +413,7 @@ Content events are events that occur when a user engages with your in-app conten
 
     ```obj-c
     BranchEvent *event = [BranchEvent standardEvent:BranchStandardEventSearch];
+    event.alias = "my custom alias";
     event.eventDescription = @"Product Search";
     event.searchQuery = @"user search query terms for product xyz";
     event.customData[@"Custom_Event_Property_Key1"] = @"Custom_Event_Property_val1";
@@ -416,6 +424,7 @@ Content events are events that occur when a user engages with your in-app conten
 
 ```Java
  new BranchEvent(BRANCH_STANDARD_EVENT.SEARCH)
+    .setCustomerEventAlias("my_custom_alias");
     .setDescription("Product Search")
     .setSearchQuery("product name")
     .addCustomDataProperty("Custom_Event_Property_Key1", "Custom_Event_Property_val1")
@@ -490,10 +499,13 @@ var content_items = [
    "$creation_timestamp": 1499892854966
 }];
 
+var customer_event_alias = "my custom alias";
+
 branch.logEvent(
    "VIEW_ITEMS",
    event_and_custom_data,
    content_items,
+   customer_event_alias,
    function(err) { console.log(err); }
 );
 ```
@@ -503,6 +515,7 @@ branch.logEvent(
 ```
 curl -vvv -d '{
   "name": "VIEW_ITEMS",
+  "customer_event_alias": "my custom alias",
   "user_data": {
     "os": "Android",
     "os_version": 25,
@@ -602,6 +615,7 @@ Lifecycle events can be described as events a user takes in your app to continue
 
     ```swift
     let event = BranchEvent.standardEvent(.completeRegistration)
+    event.alias = "my custom alias"
     event.transactionID = "tx1234"
     event.eventDescription = "User completed registration."
     event.customData["registrationID"] = "12345"
@@ -612,6 +626,7 @@ Lifecycle events can be described as events a user takes in your app to continue
 
     ```obj-c
     BranchEvent *event = [BranchEvent standardEvent:BranchStandardEventCompleteRegistration];
+    event.alias = "my custom alias";
     event.transactionID = @"tx1234";
     event.eventDescription = @"User completed registration.";
     event.customData[@"registrationID"] = @"12345";
@@ -622,6 +637,7 @@ Lifecycle events can be described as events a user takes in your app to continue
 
 ```java
 new BranchEvent(BRANCH_STANDARD_EVENT.COMPLETE_REGISTRATION)
+    .setCustomerEventAlias("my_custom_alias");
     .setTransactionID("tx1234")
     .setDescription("User created an account")
     .addCustomDataProperty("registrationID", "12345")
@@ -636,10 +652,13 @@ var event_and_custom_data = {
    "registration_id": "12345"
 };
 
+var customer_event_alias = "my custom alias";
+
 branch.logEvent(
    "COMPLETE_REGISTRATION",
    event_and_custom_data,
    content_items,
+   customer_event_alias,
    function(err) { console.log(err); }
 );
 ```
@@ -649,6 +668,7 @@ branch.logEvent(
 ```
 curl -vvv -d '{
   "name": "COMPLETE_REGISTRATION",
+  "customer_event_alias": "my custom alias",
   "user_data": {
     "os": "Android",
     "os_version": 25,

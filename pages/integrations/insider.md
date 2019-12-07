@@ -2,7 +2,7 @@
 
 ![Insider](https://cdn.branch.io/branch-assets/ad-partner-manager//insider_logo_2x-1561003202055.png)
 
-This guide will walk you through how to send your Branch data to **[Insider](https://useinsider.com/)** using Branch Data Intgeration **.
+This guide will walk you through how to send your Branch data to **[Insider](https://useinsider.com/)** using Branch Data Integration.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -17,6 +17,8 @@ This guide will walk you through how to send your Branch data to **[Insider](htt
 ### What Branch sends to Insider
 
 * Install
+* Commerce Event
+* Custom Event
 
 ## Advanced
 

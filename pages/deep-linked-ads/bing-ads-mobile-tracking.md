@@ -24,6 +24,9 @@ This guide will walk you through how to setup your campaigns with **[Bing Ads](h
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 
+!!! warning "Bing App Extension Ads"
+	When running Bing App Extension campaigns, you must run separate campaigns with platform-specific Branch links for your Android and iOS app versions. As the Branch link must go directly to the app’s page on the corresponding app/play store, please ensure even the link's desktop redirect is set to the appropriate app/play store.
+
 {! ingredients/deep-linked-ads/view-ad-link-data.md !}
 
 {! ingredients/deep-linked-ads/people-based-attribution.md !}

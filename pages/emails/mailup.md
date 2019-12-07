@@ -10,17 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[MailU
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-MailUp
-1. Add and verify a custom click tracking domain at your MailUp account:
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at MailUp.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -48,6 +37,23 @@ Please ask your account manager at MailUp about your tracking domain settings. I
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/bounce-web.md !}
+
+{! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+MailUp
+1. Add and verify a custom click tracking domain at your MailUp account:
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at MailUp.
+
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
+
+## Using Universal email
 
 ## Using Universal email
 

@@ -12,17 +12,6 @@ Customers need to be on **Message Studio v10.0** to be upgraded to the service p
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-Please reach out to Selligent Relationship Managers to request a new custom tracking domain for your account and proceed with integration.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Selligent.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -44,6 +33,9 @@ You can retrieve your click tracking domain from the account settings section of
 
 {! ingredients/email/validate-test.md !}
 
+!!! warning "Important Notice"
+    Please reach out to your CSM or the Support team to configure the Host for your integration.
+
 {! ingredients/email/usage-auto.md !}
 
 ## Configure your mobile app
@@ -53,6 +45,21 @@ You can retrieve your click tracking domain from the account settings section of
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/bounce-web.md !}
+
+{! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+Please reach out to Selligent Relationship Managers to request a new custom tracking domain for your account and proceed with integration.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Selligent.
+
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
 
 ## Using Universal email
 

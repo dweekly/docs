@@ -7,7 +7,8 @@ A few important notes:
 - The data will only be retrievable for the last 7 days
 - The data will only appear after end of day since it's processed every 24 hours
 - The data will not be visible prior to your whitelisting date. After you sign up, data will be generated for the next UTC day or the following UTC day.
-- The data will only be visible for your live key (not your test key)
+- The data will only be visible for your live key (not your test key).
+- Click data related to SANs (e.g. Google Ads) can be found at the campaign level rather than device level.
 
 !!! note "Data Feeds is a premium solution"
     The Daily Export API is included in Branch’s [Data Feeds](/exports/data-feeds/) offering, which can be purchased according to Branch’s [pricing schedule](https://branch.io/pricing/){:target="\_blank"}, and is available at no additional charge to customers who are on Launch and Startup plans for [Journeys](https://branch.io/journeys/){:target="\_blank"}, [Universal Email](https://branch.io/email/){:target="\_blank"}, or [Universal Ads](https://branch.io/attribution/){:target="\_blank"}. Without Data Feeds, you can still export Branch data in CSV form directly from the Branch dashboard via [Sources](https://dashboard.branch.io/sources){:target="\_blank"} or [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports){:target="\_blank"}.
@@ -75,6 +76,9 @@ https://api2.branch.io/v3/export/
 curl -X POST api2.branch.io/v3/export -H 'content-type:application/json' -d '{"branch_key":"key_live_gcASshuadd7l39m36NhdsDPWRjmkdcgh12jsg1", "branch_secret": "secret_live_ztPsdKIjUtcjkUYF732nsl81HJ75BJqiv24J86", "export_date": "2017-10-01"}'
 ```
 
+!!! info "Windows Command Prompt Formatting"
+    Please note that if you are trying to run this curl command in Command Prompt on a machine running Windows, you will need to change `'` to `"` and escape the `"` in curly brackets with a `\`. Here is a final example: `curl -X POST api2.branch.io/v3/export -H "content-type:application/json" -d "{\"branch_key\":\"key_live_gcASshuadd7l39m36NhdsDPWRjmkdcgh12jsg1\", \"branch_secret\": \"secret_live_ztPsdKIjUtcjkUYF732nsl81HJ75BJqiv24J86\", \"export_date\": \"2017-10-01\"}"`
+
 ### Response
 
 The response payload will be in JSON format and for each export it will have an array of paths to files on S3 to download. Note that there may be multiple files (depending on the size of the day's export) and that each csv file will be gzipped.
@@ -100,6 +104,9 @@ All exports via Data Feeds are powered by Branch's [People-Based Attribution](/d
 !!! tip
     A full day's files will be available on our S3 bucket at that location to download around 7:00pm UTC. It will return a blank array from S3 for any empty files until the UTC day is over and the data has been transfered to S3, therefore it is recommended you schedule any ETLs to fetch the data for the previous day around 7:00pm UTC (12pm PST).
 
+!!! warning "IP Discrepancies"
+	Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
+
 ## Support
 
 ### Time Limits
@@ -109,3 +116,6 @@ Data will be available through the API only for 7 days after the date it's poste
 ### Exporting beyond 7 days
 
 In accordance with our internal policies related to GDPR and other data protection laws, we hash many fields, including IP address and advertising identifiers, after 7 days. This means that if you want to export data beyond 7 days, either via the Dashboard's CSV Exports or by requesting a manual data dump, these fields will no longer contain the original values. For this reason, we highly recommend you always export raw data within 7 days.
+
+!!! note "Manual Data Dump"
+    Due to the resources required to complete a manual data dump, this service is available to Branch Enterprise tier clients only.

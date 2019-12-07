@@ -10,17 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Oracl
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-You can retrieve your click tracking domain from the **Email Configuration** section of your Eloqua account.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Oracle Eloqua.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -40,6 +29,9 @@ If you have not added a custom click tracking domain yet, follow the instruction
 
 {! ingredients/email/validate-test.md !}
 
+!!! warning "Important Notice"
+    Please reach out to your CSM or the Support team to configure the Host for your integration.
+
 {! ingredients/email/usage-auto.md !}
 
 ## Configure your mobile app
@@ -49,6 +41,21 @@ If you have not added a custom click tracking domain yet, follow the instruction
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/bounce-web.md !}
+
+{! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+You can retrieve your click tracking domain from the **Email Configuration** section of your Eloqua account.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Oracle Eloqua.
+
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
 
 ## Using Universal email
 

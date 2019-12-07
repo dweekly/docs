@@ -13,6 +13,71 @@
       display: none !important;
     }
 
+    .main-page .wizard-container {
+      width: 100%;
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      /*background-color: #e3e2e2;*/
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+    }
+    .wizard-container .wizard-wrapper {
+      display: flex;
+    }
+    .wizard-container .wizard-wrapper .wizard-header-box {
+      width: 70%;
+    }
+    .wizard-container .wizard-wrapper .wizard-header-box .wizard-header {
+      color: #0075C9;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .wizard-container .wizard-wrapper .wizard-header-box .wizard-intro {
+      margin: 0;
+    }
+    .wizard-container .wizard-wrapper .wizard-cta-box {
+      width: 30%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .wizard-container .wizard-wrapper .wizard-cta-box .wizard-cta {
+      text-align: right;
+      outline: none;
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      border-radius: 22px;
+      box-sizing: border-box;
+      text-decoration: none;
+      height: 40px;
+      width: 180px;
+      padding: 6px 6px 8px 6px;
+      transition: background-color 160ms linear, color 160ms linear, border-color 160ms linear;
+      background-color: #0075C9;
+      color: #ffffff !important;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .wizard-container .wizard-wrapper .wizard-cta-box .wizard-cta:hover {
+      background-color: #004876;
+    }
+
+    @media (max-width: 600px) {
+      .wizard-container .wizard-wrapper {
+        display: block;
+      }
+      .wizard-container .wizard-wrapper .wizard-header-box,
+      .wizard-container .wizard-wrapper .wizard-cta-box {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
     .main-page .greeting-wrapper {
       text-align: center;
     }
@@ -37,7 +102,7 @@
     }
 
     .search-bar {
-      margin: 60px auto;
+      margin: 20px auto;
     }
     .search-input {
       margin: 0 auto;
@@ -127,10 +192,17 @@
           </a>
         </div>
         <div class="branch-header-button md-flex__cell md-flex__cell--shrink">
-          <a href="#" class="contact-support" title="Contact support">
-            <i class="branch-header-icon md-icon material-icons">help_outline</i>
+          <a href="https://support.branch.io/support/tickets/new/" class="contact-support" title="Contact support">
+            <i class="branch-header-icon md-icon material-icons">help</i>
             <p class="branch-header-label">Support</p>
           </a>
+        </div>
+        <div class="branch-header-button md-flex__cell md-flex__cell--shrink">
+          <a href="https://wizard.docs.branch.io/" class="wizard" title="Implementation Guide Generator">
+            <i class="branch-header-icon md-icon material-icons">grade</i>
+            <p class="branch-header-label">Wizard</p>
+          </a>
+        </div>
       </div>
     </nav>
   </header>

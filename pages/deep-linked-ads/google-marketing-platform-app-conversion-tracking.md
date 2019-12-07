@@ -1,13 +1,11 @@
-title: Google Marketing Platform App Conversion Tracking
-
-![image](https://cdn.branch.io/branch-assets/ad-partner-manager//gmp-logo-1557768658464.png)
-
 ## Overview
+
+![Google Marketing Platform](https://cdn.branch.io/branch-assets/ad-partner-manager//gmp-logo-1557768658464.png)
 
 Branch links can be used together with Google Marketing Platform app conversion ads, allowing you to track ad-driven app conversion (installs and in-app events) on the Branch dashboard.
 
 !!! warning "Google Marketing Platform"
-	The [Google Marketing Platform](https://support.google.com/dcm/answer/9015629?hl=en) includes the following products: Display & Video 360 (Formerly DoubleClick Bid Manager), Campaign Manager (Formerly DoubleClick Campaign Manager) and Search Ads 360 (formerly DoubleClick Search).
+	The [Google Marketing Platform](https://support.google.com/dcm/answer/9015629?hl=en) includes the following products: Display & Video 360 (Formerly DoubleClick Bid Manager) and Campaign Manager (Formerly DoubleClick Campaign Manager).
 
 	Please make sure to use `Google Marketing Platform` in your Branch dashboard and not `Doubleclick` which is the legacy integration and does not include server-side attribution responses.
 
@@ -16,11 +14,22 @@ By connecting your Google Marketing Platform and Branch accounts, the following 
 - App conversion data collected by the Branch SDK sent to Google Marketing Platform for attribution.
 - `Read-only` access to app conversion data (not cost/click/impression data) from Google Marketing Platform Ads in your Branch account.
 
+!!! warning "Working with Google Marketing Platform & Google Ads"
+	Please keep the following in mind when working with both Google Marketing Platform and Google Ads:
+
+	If your Google Marketing Platform and Google Ads accounts are **not linked**:
+
+	- Branch may receive two separate claims; i.e. receive two competing clicks between Google Marketing Platform & Google Ads.
+
+	If your Google Marketing Platform and Google Ads accounts are **linked** :
+
+	- Google suppresses the Google Marketing Platform claim if Google Ads makes a claim, so Branch will only ever receive a single claim for a click.
+
 ## Prerequisites
 
 !!! warning "Prerequisites"
-	* [x] To track conversions from Google Marketing Platform Ads you should [integrate the Branch SDK](https://docs.branch.io/resources/native-sdks-and-plugins/) into your app, and/or if you are using S2S, ensure that advertising ID's are being passed to Branch. 
-	* [x] You must request whitelisting from your Google rep for the new 'App Analytics' section of Floodlight Configuration in CM in order to generate link ID's for this integration
+	* [x] To track conversions from Google Marketing Platform Ads you should [integrate the Branch SDK](https://docs.branch.io/resources/native-sdks-and-plugins/) into your app, and/or if you are using S2S, ensure that advertising ID's are being passed to Branch.
+	* [x] You must request whitelisting from your Google rep for the new 'App Analytics' section of Floodlight Configuration in order to generate link ID's for this integration
 
 ## Configure Branch as App Analytics Partner in Google Marketing Platform
 

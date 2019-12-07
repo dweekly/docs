@@ -10,19 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Epsil
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-You can retrieve your click tracking domain from your Epsilon settings. We recommend creating a new click tracking domain for the Epsilon Harmony integration. You can switch over your production click tracking domain to Epsilon but we recommend testing with a different domain to get started.
-
-For Epsilon, you may also need an IP address. Notify your Epsilon Harmony Account Manager that you plan to use Branch Universal Email, and ask your Harmony Account Manager to provide the IP that you set your click tracking domains to. Add that next to your click tracking domain in this step.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Epsilon.
-
-{! ingredients/email/epsilon-cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -50,6 +37,25 @@ You can retrieve your click tracking domain from your Epsilon settings. If you h
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/bounce-web.md !}
+
+{! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+You can retrieve your click tracking domain from your Epsilon settings. We recommend creating a new click tracking domain for the Epsilon Harmony integration. You can switch over your production click tracking domain to Epsilon but we recommend testing with a different domain to get started.
+
+For Epsilon, you may also need an IP address. Notify your Epsilon Harmony Account Manager that you plan to use Branch Universal Email, and ask your Harmony Account Manager to provide the IP that you set your click tracking domains to. Add that next to your click tracking domain in this step.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Epsilon.
+
+{! ingredients/email/epsilon-cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
+
+## Using Universal email
 
 ## Using Universal email
 

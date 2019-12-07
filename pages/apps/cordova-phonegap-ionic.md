@@ -18,11 +18,12 @@
         <!-- sample config.xml -->
         <widget id="com.eneff.branch.cordovatestbed" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
           <!-- Branch -->
-          <plugin name="branch-cordova-sdk" spec="^3.1.6" />
+          <plugin name="branch-cordova-sdk" spec="^4.0.0" />
           <branch-config>
             <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
             <uri-scheme value="branchcordova" />
-            <link-domain value="cordova.app.link" />
+            <link-domain value="cordova.app.link" />  <!-- Required app.link domain -->
+            <link-domain value="cordova-alternate.app.link" />  <!-- Required alternate.app.link domain -->
             <ios-team-release value="PW4Q8885U7" />
           </branch-config>
         ```
@@ -33,11 +34,12 @@
         <!-- sample config.xml -->
         <widget id="com.eneff.branch.cordovatestbed" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
           <!-- Branch -->
-          <plugin name="branch-cordova-sdk" spec="^3.1.6" />
+          <plugin name="branch-cordova-sdk" spec="^4.0.0" />
           <branch-config>
             <branch-key value="key_live_ndqptlgXNE4LHqIahH1WIpbiyFlb62J3" />
             <uri-scheme value="branchcordova" />
-            <link-domain value="cordova.app.link" />
+            <link-domain value="cordova.app.link" />  <!-- Required app.link domain -->
+            <link-domain value="cordova-alternate.app.link" />  <!-- Required alternate.app.link domain -->
             <ios-team-release value="PW4Q8885U7" />
           </branch-config>
         ```
@@ -501,6 +503,7 @@
         Branch.getStandardEvents().then(function success(res) {
             var event = res.STANDARD_EVENT_ADD_TO_CART;
             var metadata = {
+                customerEventAlias: 'alias name for event',
                 transactionID: '1234455',
                 currency: 'USD',
                 revenue: 1.5,

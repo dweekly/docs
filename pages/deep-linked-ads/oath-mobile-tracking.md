@@ -2,17 +2,20 @@
 
 ![Oath](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/oath-1544044998484.png)
 
-Branch is able to support the attribution of Gemini/Native & Search inventory from Oath Ad Platforms using Branch links, and is able to send data to Oath which can attribute both Gemini and DSP inventory.
-
-Oath Ad Platforms has two main products/channels relevant to mobile advertising and attribution - (Yahoo!) Gemini/Native & Search, and the (formerly Brightroll) DSP.
-
-Yahoo Gemini used to operate as a standard integration (driving clicks with identifiers and receiving postbacks after attribution), but added Self-Attributing Network (SAN) functionality which also covers DSP inventory.
-
-Because Branch is not yet ready to fully ingest the SAN response for attribution, we operate a hybrid approach utilizing the legacy Gemini integration for attribution in Branch, while pushing all data to the SAN endpoint which can attribute both channels.
-
 This guide will walk you through how to setup your campaigns with **[Oath](https://gemini.yahoo.com/advertiser/home)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
+
+## Campaign Support
+
+| **Campaign Type** | **Attribution supported** |
+| - | - |
+| Gemini/Native/Search | Yes (using Branch links) |
+| DSP | No (reporting only available in Oath) |
+
+Oath Ad Platforms has two main products/channels relevant to mobile advertising and attribution - (Yahoo!) Gemini/Native & Search, and the (formerly Brightroll) DSP.
+
+Branch currently attributes only Gemini inventory using Branch links, and is able to send all event data to Oath which can attribute both Gemini and DSP inventory. 
 
 ## Setup
 
@@ -32,6 +35,10 @@ This guide will walk you through how to setup your campaigns with **[Oath](https
 	By default, postbacks to Oath are enabled to send all events to Oath, not just those events attributed to them. This allows Oath to attribute on Gemini and DSP inventory. Please ensure this setting remains set to `All Events`.
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
+
+!!! info "Using Links in Gemini"
+	During campaign setup, The App Store URL needs to be used in the app URL field. Then, when the ad is created, the tracking URL can be used. You will need to specify "Other" under the MMP, and can then enter the tracking URL.
+	If you are still unable to locate a tracking URL field in the UI, you may have to upload them via bulk upload functionality. Please take a look at this documentation:  https://developer.verizonmedia.com/nativeandsearch/advertiser/guide/bulk/ . There are screenshots included and a short video. If you have further issues, please reach out to your VZM contact or support team.
 
 {! ingredients/deep-linked-ads/add-agency-prefix-san-only.md !}
 

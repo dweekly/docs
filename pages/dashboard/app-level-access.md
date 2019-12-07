@@ -62,6 +62,9 @@ If you are an Admin, you have edit access to the **Profile** tab.
 - **App ID** - assigned by Branch; not editable.
 - **Time Zone** - Your time zone affects your dashboard analytics and how your Branch data matches up with external data sources. Use the drop-down to select the appropriate time zone.
 
+!!! info "Resetting your Branch Key/Secret"
+	If you need to reset your Branch Key/Secret, click **Reset Key** or **Reset Secret** respectively.  Doing so automatically generates a new Branch Key/Secret.
+
 ### Managing your User Profile
 
 ![image](/_assets/img/pages/dashboard/access-levels/org-user.png)
@@ -110,6 +113,7 @@ Each access level - as defined above - comes with predefined permissions which y
 - **App-level Settings** - Settings or features that can impact functionality app-wide.
 - **Aggregate Data** - Summary data that contains no granular data.
 - **Sensitive Data** - Data that can contain user-identifying, payment-related, or secret information.
+- **Fraud Settings & Data** - Settings or data associated with fraud detection and prevention.
 
 #### Modifying an App Team Member
 
@@ -192,7 +196,7 @@ This selector allows you to control how and when Branch uses URI schemes to open
 - For Desktop apps
     - Enter your Desktop URI Scheme (e.g. `spotify://`)
     - Include `$desktop_deeplink_path` key-value pair to your link (e.g. `"$desktop_deeplink_path": "track/5D8o9tGf3Dfjz7CgMxcoeI"`)
-    - If the app is not installed when the link is clicked, we will fall back to the Desktop or Default URL, in that order
+    - If the app is not installed when the link is clicked, we will fall back to `$desktop_url` or Default URL, in that order
     - This feature is still in the early stages of development; so usage without a Desktop SDK will not be able to attribute or pass data through an install.
 
 #### Advanced Mobile Redirects

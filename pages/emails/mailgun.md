@@ -10,21 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[Mailg
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Add and verify a custom click tracking domain in the **[Domains](https://app.mailgun.com/app/domains){:target="\_blank"}** section of your Mailgun account:
-
-    ![image](/_assets/img/pages/email/mailgun/create-domain.png)
-
-For more information on how to set up your domain, please visit Mailgun's [documentation](https://help.mailgun.com/hc/en-us/articles/202052074-How-do-I-verify-my-domain-){:target="\_blank"}.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Mailgun.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -50,6 +35,25 @@ You can retrieve your click tracking domain from the **[Domains](https://app.mai
 {! ingredients/email/technical-setup-app.md !}
 
 {! ingredients/email/associated-domains.md !}
+
+{! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Add and verify a custom click tracking domain in the **[Domains](https://app.mailgun.com/app/domains){:target="\_blank"}** section of your Mailgun account:
+
+    ![image](/_assets/img/pages/email/mailgun/create-domain.png)
+
+For more information on how to set up your domain, please visit Mailgun's [documentation](https://help.mailgun.com/hc/en-us/articles/202052074-How-do-I-verify-my-domain-){:target="\_blank"}.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Mailgun.
+
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
 
 ## Using Universal email
 

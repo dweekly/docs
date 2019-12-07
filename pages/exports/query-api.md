@@ -1,9 +1,12 @@
 # Query API
 
-!!! protip "Getting started"
+!!! tip "Getting started"
     For newcomers to this API, we strongly suggest you check out our [Query Recipe Book](/exports/query-recipe-book/). It has screenshots of Dashboard visualizations, accompanied by what queries you need to make to pull the same data. It's a quick way to get up and running with this API.
 
 The Query API is an HTTP API that can be used for programmatically querying pre-aggregated analytics. It can be used to fetch the same data displayed in your Branch dashboard, without having to access the Dashboard itself.
+
+!!! warning "Self Attributing Network Data Not Available"
+    The Query API does not return data associated with SANs; i.e. Google Ads, Snap, Twitter, Facebook Ads and Apple Search Ads.
 
 An individual query is constructed from three types of parameters:
 
@@ -176,7 +179,6 @@ User information:
 ```
 [
   "user_data_os",
-  "user_data_country",
   "user_data_language",
   "user_data_platform",
   "user_data_environment",
@@ -346,7 +348,7 @@ _format_: boolean
 
 **limit**
 
-_description_: Maximum number of results to return in the response
+_description_: Maximum number of results to return in the response. If granularity is set to day, Branch will pull results up to the limit for each day. So if limit is set to 1000 and 5 days worth of data is queried, with granularity=day, then this API will return up to 5000 results.
 
 _required_: false
 
@@ -492,8 +494,8 @@ Example Results:
     {
       "timestamp": "2017-12-12T00:00:00.000Z",
       "result": {
-        "last_attributed_touch_data_tilde_channel": "Facebook#2",
-        "last_attributed_touch_data_tilde_campaign": "Facebook#2",
+        "last_attributed_touch_data_tilde_channel": "ads",
+        "last_attributed_touch_data_tilde_campaign": "Xmas",
         "last_attributed_touch_data_tilde_feature": "paid advertising",
         "last_attributed_touch_data_plus_current_feature": "ADS",
         "unique_count": 750

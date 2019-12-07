@@ -1,5 +1,24 @@
-!!! info "Current SDK Version 3.1.0"
+!!! info "Current SDK Version 4.2.0"
     Please see the [Android Version History](/version-histories/android-version-history) to view change log.
+
+!!! warning "v4.0.0 Uses Android X"
+    If you implement Branch SDK v4.0.0 for Android, you must also update to Android Studio version 3.4+ to ensure the appropriate support libraries are being used.
+
+!!! warning "Google Play Services version 17+"
+    If you reference Google Play Services version 17 or higher, you **MUST** complete Google's update instructions [here](https://developers.google.com/android/guides/releases#june_17_2019).
+
+    Due to a major Google Play Services change made in June 2019, not completing the update steps will cause Branch's Android SDK (and various other cross-platform SDKs, e.g. Unity) to stop collecting Android AID which we use to ensure accurate deep linking and attribution.
+
+    If you are running Google Play Services versions below 17, no update is necessary.
+
+!!! info "Amazon Fire Device Support"
+    The Branch Android SDK 4.1.1+ includes support for Amazon Fire devices.  
+
+    Please follow the guide below **except do not include the following two lines in the app level `build.gradle` file**:
+    ```
+    implementation 'com.google.android.gms:play-services-appindexing:9.+' // App indexing
+    implementation 'com.google.android.gms:play-services-ads:9+' // GAID matching
+    ```
 
 ## Integrate Branch
 
@@ -45,13 +64,17 @@
             implementation 'com.android.support:appcompat-v7:25.2.0'
             implementation 'com.android.support:design:25.2.0'
 
-            // required
+            // required for all Android apps
             implementation 'io.branch.sdk.android:library:3.+'
+
+            // required if your app is in the Google Play Store
+            implementation 'com.google.android.gms:play-services-appindexing:9.+' // App indexing
+            implementation 'com.google.android.gms:play-services-ads:9+' // GAID matching
 
             // optional
             implementation 'com.android.support:customtabs:23.3.0' // Chrome Tab matching
-            implementation 'com.google.android.gms:play-services-ads:9+' // GAID matching
-            implementation 'com.google.android.gms:play-services-appindexing:9.+' // App indexing
+
+
 
             testImplementation 'junit:junit:4.12'
         }
@@ -475,7 +498,7 @@
         buo.showShareSheet(this, lp, ss, object : Branch.BranchLinkShareListener {
             override fun onShareLinkDialogLaunched() {}
             override fun onShareLinkDialogDismissed() {}
-            override fun onLinkShareResponse(sharedLink: String, sharedChannel: String, error: BranchError) {}
+            override fun onLinkShareResponse(sharedLink: String, sharedChannel: String, error: BranchError?) {}
             override fun onChannelSelected(channelName: String) {}
         })
         ```
@@ -940,16 +963,6 @@
     - Change the following values to match your [Branch Dashboard](https://dashboard.branch.io/settings/link)
 
         - `your.app.com`
-
- - ### Branch with Fabric Answers
-
-    - If you do not want to import `answers-shim`
-
-        ```
-        compile ('io.branch.sdk.android:library:2.+') {
-          exclude module: 'answers-shim'
-        }
-        ```
 
 - ### Deep link routing
 

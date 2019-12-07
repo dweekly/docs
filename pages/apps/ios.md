@@ -1,4 +1,4 @@
-!!! info "Current SDK Version 0.27.1"
+!!! info "Current SDK Version 0.30.0"
     Please see the [iOS Version History](/version-histories/ios-version-history) to view change log.
 
 ## Integrate Branch
@@ -69,6 +69,8 @@
         ```sh
         pod install && pod update
         ```
+        !!! info "iAd Support Included by Default"
+            With the release of v0.28.0, the Branch SDK for iOS now includes all of the necessary dependencies for iAD when installed via CocoaPods.
 
     - Option 2: [Carthage](https://github.com/Carthage/Carthage)
 
@@ -76,16 +78,65 @@
         github "BranchMetrics/ios-branch-deep-linking"
         ```
 
-        - Import `AdSupport`, `SafariServices`, `MobileCoreServices`, `CoreSpotlight`, and `iAd` into `Linked Frameworks`
+        - Import `AdSupport`, `SafariServices`, `MobileCoreServices`, `CoreSpotlight`, `Webkit` and `iAd` into `Linked Frameworks`
 
     - Option 3: Manually install the [source code](https://github.com/BranchMetrics/ios-branch-deep-linking/releases) with dependencies
 
         - Drag and drop `Branch.framework` into `Embedded Binaries` (select `Copy items if needed`)
-        - Import `AdSupport`, `SafariServices`, `MobileCoreServices`, `CoreSpotlight`, and `iAd` into `Linked Frameworks`
+        - Import `AdSupport`, `SafariServices`, `MobileCoreServices`, `CoreSpotlight`, `Webkit` and `iAd` into `Linked Frameworks`
 
-        ![image](/_assets/img/pages/apps/ios-frameworks.png)
+        ![image](/_assets/img/pages/apps/cocoapods-frameworks.png)
 
 - ### Initialize Branch
+
+    - *Swift 5*
+    
+        ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
+        import UIKit
+        import Branch
+
+        @UIApplicationMain
+        class AppDelegate: UIResponder, UIApplicationDelegate {
+
+        var window: UIWindow?
+
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+          // if you are using the TEST key
+          Branch.setUseTestBranchKey(true)
+          // listener for Branch Deep Link data
+          if let branchInstance = Branch.getInstance(){
+             branchInstance.initSession(launchOptions: launchOptions) { (params, error) in
+               // do stuff with deep link data (nav to page, display content, etc)
+               print(params as? [String: AnyObject] ?? {})
+            }
+          }
+         
+          return true
+        }
+
+        func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+          if let branchInstance = Branch.getInstance(){
+            branchInstance.application(app, open: url, options: options)
+          }
+          return true
+        }
+
+        func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+          // handler for Universal Links
+          if let branchInstance = Branch.getInstance(){
+            branchInstance.continue(userActivity)
+          }
+          return true
+        }
+
+        func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+          // handler for Push Notifications
+          if let branchInstance = Branch.getInstance(){
+            branchInstance.handlePushNotification(userInfo)
+          }
+        }
+        ```
+        
 
     - *Swift 4.2*
 
@@ -684,20 +735,6 @@
 
             ```objc
             [[Branch getInstance] delayInitToCheckForSearchAds];
-            ```
-
-    - **Faking ASA calls** Create Apple Search Ads events with fake campaign parameters. However, this feature only shows data in Liveview for Branch "live" apps (not "test" apps). Remember to remove this before production release.
-
-        - *Swift*
-
-            ```swift
-            Branch.getInstance().setAppleSearchAdsDebugMode()
-            ```
-
-        - *Objective C*
-
-            ```objc
-            [[Branch getInstance] setAppleSearchAdsDebugMode];
             ```
 
 - ### Enable 100% matching

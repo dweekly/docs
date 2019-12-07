@@ -25,7 +25,7 @@ We've built out custom deep linking mechanisms that are specific to each platfor
 | **Facebook deferred deep linking API** | We've built a custom integration with Facebook where if a user originates from an app invite or advertisement, we connect with Facebook's API to know with 100% certainty if the install originated from this source. You'll need to authenticate with Facebook on the Branch dash if you want to support this.
 | **Android Google Play referrer** | Google Play supports passing a referrer through the install process that we listen for. It's notoriously unreliable and currently unsupported when redirecting from Chrome. However, we'll use it when available. Enabling this method is covered in the [SDK Integration Guide](/apps/android/#configure-app).
 | **iOS 9/10 Safari cookie passthrough** | We built a custom technique into our iOS SDK that will guarantee 100% accuracy on iOS 9/10 when a user clicks from the Safari browser. This only applies if you include SafariServices.framework in your app. Please see our new recommended [path to use this feature](/resources/matching/#configuring-your-ios-app-for-100-match-ios-10-only). Note that this method has some risks due to a policy change on iOS on 9/1/16.
-| **Android Chrome Tabs cookie passthrough** | We built a custom technique into our Android SDK that will guarantee 100% accuracy when a user originates from the Chrome browser. We're automatically cookie match based on app.link, but you can configure the domain depending on your use case. Please see [the guide here](/resources/matching/#configuring-your-android-app-for-100-match).
+| **Android Chrome Tabs cookie passthrough** | We built a custom technique into our Android SDK that will guarantee 100% accuracy when a user originates from the Chrome browser. We automatically cookie match based on app.link, but you can configure the domain depending on your use case. Please see [the guide here](/resources/matching/#configuring-your-android-app-for-100-match).
 
 ### Methods without 100% match accuracy
 
@@ -35,12 +35,21 @@ Branch collects information about devices both when a user is in the browser -- 
 
 When no 100% match method is available, we connect the unique fingerprint collected in the app to the unique fingerprint collected in the browser to determine where user originated.
 
-!!! tip "Customize the fingerprint matching criteria"
-    If you are concerned that users may potentially have the same fingerprint, you can choose to have us not match users if two identical fingerprints are outstanding. On the Dashboard's [Link Settings](https://dashboard.branch.io/link-settings) page, under advanced options, you should set **Match Type** to `Unique`. You can also modify the 7200 second (2 hour) default expiration for all links, or [configure it for individual links](/links/integrate/#deep-linking) by using the `$match_duration` control parameter.
+##### Customize the fingerprint matching criteria
 
-    ![image](/_assets/img/pages/resources/matching/match_type.png)
+If you are concerned that users may potentially have the same fingerprint, you can choose to have us not match users if two identical fingerprints are outstanding.
 
-    This means that if two users with the same fingerprint, on the same wifi, were to click a Branch link for your app, we would blacklist those digital fingerprints for the expiration duration. Therefore, when either user opens up your app, no match would be made.
+On the Dashboard's [Link Settings](https://dashboard.branch.io/link-settings) page, under advanced options, you should set **Match Type** to `Unique`.
+
+![image](/_assets/img/pages/resources/matching/match-type-unique.png)
+
+You can also modify the 7200 second (2 hour) default expiration for all links,
+
+![image](/_assets/img/pages/resources/matching/fingerprint-matching-duration.png)
+
+or [configure it for individual links](/links/integrate/#deep-linking) by using the `$match_duration` control parameter.
+
+This means that if two users with the same fingerprint, on the same wifi, were to click a Branch link for your app, we would blacklist those digital fingerprints for the expiration duration. Therefore, when either user opens up your app, no match would be made.
 
 ## Configuring Your iOS App for 100% Match ( > iOS 10 only)
 

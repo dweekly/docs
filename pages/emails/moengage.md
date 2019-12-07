@@ -10,19 +10,6 @@ This guide will walk you through how to setup your email campaigns with **[MoEng
 
 {! ingredients/email/prerequisites.md !}
 
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Add and verify a custom click tracking domain in the **[Tracking Domains](https://app.moengage.com/v3/#/settings/email/connector){:target="\_blank"}** section of your MoEngage account:
-
-For more information on how to set up your domain, please visit MoEngage's [documentation](https://help.moengage.com/hc/en-us/articles/206814913-Configuring-Custom-SMTP-connector){:target="\_blank"}.
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at MoEngage.
-
-{! ingredients/email/cname.md !}
-
 ## Activate integration
 
 ### Choose your email service provider
@@ -50,6 +37,23 @@ You can retrieve your click tracking domain from the **[Tracking Domains](https:
 {! ingredients/email/associated-domains.md !}
 
 {! ingredients/email/bounce-web.md !}
+
+{! ingredients/email/continue-user-activity.md !}
+
+## Configure your ESP
+
+### Setup a custom click tracking domain
+
+1. Add and verify a custom click tracking domain in the **[Tracking Domains](https://app.moengage.com/v3/#/settings/email/connector){:target="\_blank"}** section of your MoEngage account:
+
+For more information on how to set up your domain, please visit MoEngage's [documentation](https://help.moengage.com/hc/en-us/articles/206814913-Configuring-Custom-SMTP-connector){:target="\_blank"}.
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at MoEngage.
+
+{! ingredients/email/cname.md !}
+
+{! ingredients/email/cname-change-warning.md !}
 
 ## Using Universal email
 

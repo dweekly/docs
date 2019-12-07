@@ -256,6 +256,10 @@ Once you've integrated the SDK and configured the relevant events, you can enabl
 !!! tip "Enable postbacks"
     Postbacks will automatically be activated for the events listed above when you enable the integration. You can always [add additional postbacks](#adding-postbacks) or [edit postbacks](#editing-postbacks), as described below in the Advanced section.
 
+!!! warning "Updating Postbacks"
+	- Please do **NOT** reset Criteo Postbacks settings as it will override the previous postbacks.
+	- Make sure to replace old versions of the event postbacks with new ones gradually one by one.
+
 #### Sending unattributed events to Criteo
 
 It is possible to opt in to send all events occurring in your app to Criteo, not just events attributed to a Criteo campaign. Customers generally do this for the purposes of allowing Criteo insight into users who would be good candidates for retargeting based on their actions in the app.
@@ -346,7 +350,19 @@ Just need a single link? It's easy to use the Branch dashboard to create a one-o
 
 If you just need a server to server tracking link, you can use the same flow as Option 2, above.
 
-However, at the end, add `%24s2s=true` to your link, so we know it's a server to server to link.
+However, at the end, add the following:
+
+- `&%24s2s=true` at the end of your link, so we know it’s a server to server link.
+
+- Device ID macro `&%24idfa=` for iOS devices OR `&%24aaid=` for Android devices.
+
+- Device OS macro `%24os=` for IOS or ANDROID.
+
+- Send IP client’s address via URL parameter or HTTP Header.
+
+	- IP Header to override the IP information on click. e.g. `x-ip-override: {IP ADDRESS}`.
+
+	- IP URL parameter `&device_ip={IP_Address}`.
 
 
 ### View your data with People-Based Attribution

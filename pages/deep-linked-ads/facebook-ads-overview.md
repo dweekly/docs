@@ -6,7 +6,7 @@ Branch links can be used together with **[Facebook](http://facebook.com/)**  ads
 
 Facebook's Ad Platform supports numerous campaign types and a shared set of advertisement formats. To help you navigate Facebook's Advertisement Platform we created this guide detailing how to use Branch links in all major Facebook ad types.
 
-## Supported Facebook Ad Campaigns
+## Campaign Support
 
 This documentation supports the following Facebook Ad Campaigns:
 
@@ -23,11 +23,80 @@ Conversion | Product Catalogue Sales | Web or App | **[link](/deep-linked-ads/fa
 
 [x] Facebook has indicated that links are not supported in all placements.
 
-## Sharing Facebook Data
+## Data Mapping between Branch and Facebook
 
-There are many ways to access data pertaining to Facebook.
+### Event Names
 
-You can see analytics on impressions, clicks, installs, opens and conversion events on various pages of the [Branch Dashboard](https://dashboard.branch.io){:target="\_blank"}, as well as the [Query API](/exports/query-api).
+!!! info "Standard vs Custom Events"
+	Please follow the [Tracking Commerce, Content, Lifecycle and Custom Events](/apps/v2event/) guide when implementing event tracking in the Branch SDK.  When tracking any of the Facebook events that are mapped to the Branch `custom` event, use the event name from the table below; e.g. `branch.logevent('AdClick')`.
+
+
+| **Facebook MMP _eventName**         | **Branch Event Name**     |
+|---------------------------------|-----------------------|
+| AdClick                         | Custom                |
+| AdImpression                    | Custom                |
+| Contact                         | Custom                |
+| CustomizeProduct                | Custom                |
+| Donate                          | Custom                |
+| fb_mobile_achievement_unlocked  | UNLOCK_ACHIEVEMENT    |
+| fb_mobile_activate_app          | OPEN                  |
+| fb_mobile_add_payment_info      | ADD_PAYMENT_INFO      |
+| fb_mobile_add_to_cart           | ADD_TO_CART           |
+| fb_mobile_add_to_wishlist       | ADD_TO_WISHLIST       |
+| fb_mobile_complete_registration | COMPLETE_REGISTRATION |
+| fb_mobile_content_view          | VIEW_ITEM             |
+| fb_mobile_initiated_checkout    | INITIATE_PURCHASE     |
+| fb_mobile_level_achieved        | ACHIEVE_LEVEL         |
+| fb_mobile_purchase              | PURCHASE              |
+| fb_mobile_rate                  | RATE                  |
+| fb_mobile_search                | SEARCH                |
+| fb_mobile_spent_credits         | SPEND_CREDITS         |
+| fb_mobile_tutorial_completion   | COMPLETE_TUTORIAL     |
+| FindLocation                    | Custom                |
+| Schedule                        | Custom                |
+| StartTrial                      | Custom                |
+| SubmitApplication               | Custom                |
+| Subscribe                       | Custom                |
+
+### Campaign/Ad Data
+
+| **Branch Data**                                          | **Facebook Data**      |
+|------------------------------------------------------|--------------------|
+| last_attributed_touch_data_tilde_campaign            | campaign name      |
+| last_attributed_touch_data_tilde_campaign_id         | campaign ID        |
+| last_attributed_touch_data_tilde_secondary_publisher | publisher platform |
+| last_attributed_touch_data_tilde_creative_name       | creative name      |
+| last_attributed_touch_data_tilde_creative_id         | creative ID        |
+| last_attributed_touch_data_tilde_ad_set_name         | ad set name        |
+| last_attributed_touch_data_tilde_ad_set_id           | ad set ID          |
+| last_attributed_touch_data_tilde_ad_name             | ad name            |
+| last_attributed_touch_data_tilde_ad_id               | ad ID              |
+
+### Metadata
+
+|**Branch Key-Value Pair** | **Facebook MMP Key-Value Pair** | **Facebook event(s) supported**
+| --- | --- | ---
+|event_data.revenue | _valueToSum | fb_mobile_add_to_cart, fb_mobile_add_to_wishlist, fb_mobile_initiated_checkout, fb_mobile_purchase, fb_mobile_spent_credits, fb_mobile_content_view
+|event_data.currency | fb_currency | fb_mobile_add_to_cart, fb_mobile_add_to_wishlist, fb_mobile_initiated_checkout, fb_mobile_purchase, fb_mobile_content_view
+|content_items[0].$sku | fb_content_id | fb_mobile_add_to_cart, fb_mobile_add_to_wishlist, fb_mobile_tutorial_completion, fb_mobile_initiated_checkout, fb_mobile_purchase, fb_mobile_rate, fb_mobile_spent_credits, fb_mobile_content_view
+|content_items[0].$product_category | fb_content_type | fb_mobile_add_to_cart, fb_mobile_add_to_wishlist, fb_mobile_initiated_checkout, fb_mobile_purchase, fb_mobile_rate, fb_mobile_search, fb_mobile_spent_credits, fb_mobile_content_view
+|content_items[0].$quantity | fb_num_items | fb_mobile_initiated_checkout, fb_mobile_purchase
+|content_items[0].$rating | _valueToSum | fb_mobile_rate
+|content_items[0].$rating_max | fb_max_rating_value | fb_mobile_rate
+|event_data.search_query | fb_search_string | fb_mobile_search
+|content_items[0].$og_description | fb_description | fb_mobile_achievement_unlocked
+|custom_data.fb_payment_info_available | fb_payment_info_available | fb_mobile_initiated_checkout
+|custom_data.level | fb_level | fb_mobile_level_achieved
+|custom_data.fb_success | fb_success | fb_mobile_add_payment_info, fb_mobile_tutorial_completion, fb_mobile_search
+|custom_data.fb_registration_method | fb_registration_method | fb_mobile_complete_registration
+
+Currently Facebook appears to only support sending one fb_content_id (etc) per event, whereas Branch allows you to send many. To provide as much functionality as possible, we choose the first content_item and search it for key-value pairs that can be sent to Facebook.
+
+## Viewing Facebook Data
+
+{! ingredients/deep-linked-ads/reporting-dimensions-sans.md !}
+
+You can see analytics on impressions, clicks, installs, opens and conversion events on various pages of the [Branch Dashboard](https://dashboard.branch.io).
 
 ### Facebook's Advanced Mobile Measurement Agreement
 

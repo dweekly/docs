@@ -21,11 +21,7 @@
         - Understand [Custom domain debugging](#custom-domain-debugging)
         - Change your link domain to your custom root domain on [Link settings](https://dashboard.branch.io/link-settings)
         - Update your `NS` records on your custom root domain
-            - These values are unique per app, below is an example
-                - `ns-1371.awsdns-43.org`
-                - `ns-1695.awsdns-19.co.uk`
-                - `ns-991.awsdns-59.net`
-                - `ns-428.awsdns-53.com`
+            - These values are unique per app. You can retrieve these values by entering your custom domain on our dashboard.
         - Click `Confirm` on [Link settings](https://dashboard.branch.io/link-settings)
         - If you are configuring the domain through AWS's Route 53, make sure you are editing the nameservers under the `Registered Domains` tab, and not the `Hosted zones` section
 
