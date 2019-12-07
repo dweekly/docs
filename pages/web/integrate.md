@@ -1,4 +1,4 @@
-!!! info "Current SDK Version 2.49.0"
+!!! info "Current SDK Version 2.52.2"
 
 ## Overview
 

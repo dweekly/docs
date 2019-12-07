@@ -18,6 +18,13 @@ Please refer to [Airship's documentation](https://docs.airship.com/) if you need
 
 ### What Branch sends to Airship
 
+!!! warning "IMPORTANT"
+	To be able to match events with your users - you must send a client's email as the `User Identity` to Branch:
+
+	**iOS**: https://docs.branch.io/apps/ios/#track-users
+
+	**Android**: https://docs.branch.io/apps/android/#track-users
+
 * Commerce Events
 * Custom Events
 

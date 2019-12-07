@@ -1,3 +1,9 @@
+### v0.30.1
+
+**(2019-Dec-3)**
+
+- Hotfix to call FB SDK on the main thread.
+
 ### v0.30.0
 
 **(2019-Nov-13)**

@@ -51,3 +51,4 @@ emails/icubespro/index.html https://docs.branch.io/emails/cmercury/
 integrations/segment/index.html https://docs.branch.io/integrations/segment-export/
 integrations/mparticle/index.html https://docs.branch.io/integrations/mparticle-export/
 deep-linked-ads/google-uac/index.html https://docs.branch.io/deep-linked-ads/google-ads-setup/#linking-branch-in-google-ads
+deep-linked-ads/impact-radius-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/impact-mobile-tracking/
