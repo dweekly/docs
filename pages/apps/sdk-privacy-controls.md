@@ -1,6 +1,6 @@
 ## Overview
 
-### What 
+### What
 
 We take our customers’ privacy very seriously. To enable our customers to honor opt-out requests from their end-users or comply with laws that allow end users to restrict processing of their data, we provide mechanisms for disabling certain data collection features, which are identified below. This way, if a user indicates that they want to limit collection of their data on your app or website, or if you otherwise determine that a particular end user’s should not be collected or otherwise processed, you can continue to make use of the Branch’s SDK (e.g. for creating and sharing Branch links) while not tracking that end user.
 
@@ -45,3 +45,31 @@ branch.init( 'BRANCH_KEY',
 
 !!! info "Impact on Journeys"
 	To learn how these privacy controls impact our Journey’s product, please see [Journeys & GDPR](https://docs.branch.io/web/journeys/#journeys-and-gdpr).
+
+### MacOS SDK
+
+#### Objective-C
+
+```
+[Branch sharedInstance].trackingDisabled = YES;
+```
+
+#### Swift
+
+```
+Branch.sharedInstance().trackingDisabled = true
+```
+
+### Windows SDK
+
+#### C-Sharp
+
+```
+void DisableTracking(bool disableTracking);
+```
+
+#### C++
+
+```
+branchInstance->getAdvertiserInfo().disableTracking();
+```
