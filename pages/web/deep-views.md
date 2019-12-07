@@ -224,54 +224,6 @@ You can use the Deepview editor to edit created templates. You cannot edit pre-c
 !!! failure "Javascript not allowed"
     Before rendering the template, we sanitize the markup of Javascript for security reasons. This includes script tags and event attributes on tags.
 
-### Inject Other Data Into Deepviews
-
-By customizing your Deepview template, you have the ability to pass through other parameters from your link's [data dictionary](/links/integrate/#configure-deep-links).
-
-Here's a full list of liquid available tags:
-
-**app**
-
-This is the App object, which contains app data not specific to any link. This will allow you to surface information like your app name or other properties. You can surface this object in your Deepview like so:
-
-```
-{{app}}
-```
-
-| Key | Usage |
-| --- | --- |
-| `app.branch_key` | Your Branch key from [Settings](https://dashboard.branch.io/#/settings).
-| `app.name` | The name of your app from [Settings](https://dashboard.branch.io/#/settings).
-| `app.og_title` | The **Link Title** set in the _Social Media Display Customization_ section of your app's [Link Settings](https://dashboard.branch.io/#/settings/link).
-| `app.og_description` | The **Description** set in the _Social Media Display Customization_ section of your app's [Link Settings](https://dashboard.branch.io/#/settings/link).
-| `app.og_image_url` | The **Thumbnail Image** set in the _Social Media Display Customization_ section of your app's [Link Settings](https://dashboard.branch.io/#/settings/link).
-
-!!! success ""
-    If you want to show your app's name inside a Deepview, you would expose it like so: `<h1>Get {% raw %}{{app.name}}{% endraw %}</h1>`
-
-
-**link data**
-
-Link Object, which contains all of your link's parameters, including your deep link values from the data dictionary. See the [Configuring Links](/links/integrate/#configure-deep-links) page for more information. You can surface this object in your Deepview like so:
-
-```
-{{link_data}}
-```
-
-!!! success ""
-    If you want to expose a key value pair of `'welcome_message' : 'Welcome to my App'`, you would do the following: `<h1>{% raw %}{{link_data.welcome_message}}{% endraw %}</h1>`, and this would render `Welcome to my App`.
-
-**action**
-
-The URL of the Branch link itself. If you create a new call to action in your Deepview, use this. You can surface this object in your Deepview like so:
-
-```
-{{action}}
-```
-
-!!! success ""
-    Create a new call to action link: `<a href="{% raw %}{{action}}{% endraw %}">Click</a>`.
-
 ## Glossary
 
 #### Active Deepviews
