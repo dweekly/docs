@@ -10,8 +10,7 @@ Logo | Partner
 <a href="https://www.betaout.com/" target="_blank">![Betaout](/_assets/img/pages/email/betaout/betaout.png)</a>| **[Betaout](/emails/betaout/)**
 <a href="https://bluecore.com/" target="_blank">![Bluecore](https://cdn.branch.io/branch-assets/email-providers//bluecore-logo-blue-horizontal-1561137049672.png)</a>| **[Bluecore](/emails/bluecore/)**
 <a href="https://blueshift.com/" target="_blank">![Blueshift](/_assets/img/pages/email/blueshift/blueshift.png)</a>| **[Blueshift](/emails/blueshift/)**
-<a href="https://www.braze.com/" target="_blank">![Braze (via SendGrid)](/_assets/img/pages/email/braze/braze.png)</a>| **[Braze (via SendGrid)](/emails/braze/)**
-<a href="https://www.braze.com/" target="_blank">![Braze (via Mailjet)](/_assets/img/pages/email/braze/braze.png)</a>| **[Braze (via Mailjet)](/emails/braze-mailjet/)**
+<a href="https://www.braze.com/" target="_blank">![Braze](/_assets/img/pages/email/braze/braze.png)</a>| **[Braze](/emails/braze/)**
 <a href="https://www.campaignmonitor.com/" target="_blank">![Campaign_Monitor](/_assets/img/pages/email/campaign-monitor/campaign-monitor.png)</a>| **[Campaign Monitor](/emails/campaign-monitor/)**
 <a href="https://www.cheetahdigital.com/" target="_blank">![Cheetah_Digital_Marketing_Suite](/_assets/img/pages/email/cheetah-digital-marketing-suite/cheetah-digital-marketing-suite.png)</a>| **[Cheetah Digital Marketing Suite](/emails/cheetah-digital-marketing-suite/)**
 <a href="https://www.cheetahdigital.com/" target="_blank">![CheetahMail](/_assets/img/pages/email/cheetahmail/cheetahmail.png)</a>| **[CheetahMail](/emails/cheetahmail/)**
