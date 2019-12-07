@@ -157,6 +157,7 @@ Note that opening a session with Branch will notify of any pending deep links in
 
 **V. Register app to handle deep links**  
 
+To enable your Windows application for deep linking, please follow [Microsoft's documentation on enabling apps for websites using app URI handlers](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/web-to-app-linking).
 
 **VI. Configuring**
 
@@ -196,9 +197,8 @@ the correct values.
 
 ## Branch SDK Method Reference
 
-### Branch Documentation
-[Branch API Documentation](https://github.com/BranchMetrics/cpp-branch-deep-linking-attribution/docs) is auto-generated
-for every release.
+### API Documentation
+Branch auto-generates API documentation for every release. Please download the [Github Docs Zip file](https://github.com/BranchMetrics/cpp-branch-deep-linking-attribution/releases/tag/1.0.0) and run it locally.
 
 ### Create a Branch Instance
 
@@ -258,8 +258,6 @@ BranchStandardEvent ev = new BranchStandardEvent(BranchIO::StandardEvent::Type::
     .AddCustomDataProperty("TestProperty", "TestValue");
 _branchInstance->sendEvent(ev, _myCallback);
 ```
-
-____
 
 ### Generating Branch links
 
