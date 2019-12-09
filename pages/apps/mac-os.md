@@ -74,38 +74,49 @@ method:
 #import <Branch/Branch.h>
 
 // In your app delegate class file add this method to start the Branch SDK:
-- (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    // Insert code here to initialize your application
 
     // Register for Branch URL notifications:
-    [[NSNotificationCenter defaultCenter]
-        addObserver:self
-        selector:@selector(branchOpenedURLNotification:)
-        name:BranchDidOpenURLWithSessionNotification
-        object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(branchWillStartSession:) name:BranchWillStartSessionNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(branchDidStartSession:) name:BranchDidStartSessionNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(branchOpenedURLNotification:) name:BranchDidOpenURLWithSessionNotification object:nil];
 
     // Create a Branch configuration object with your key:
-    BranchConfiguration*configuration =
-        [[BranchConfiguration alloc] initWithKey:@"key_live_YOURBRANCHKEY"];
+    BranchConfiguration *configuration = [[BranchConfiguration alloc] initWithKey:@"key_live_joQf7gfRz1vebNOoHPFGJhnhFCarsZg0"];
 
     // Start Branch:
     [[Branch sharedInstance] startWithConfiguration:configuration];
 }
+
 ```
 
 Next, add a notification handler so your app can handle the deep links:
 
 ```objc
-- (void) branchOpenedURLNotification:(NSNotification*)notification {
-    // Get the Branch session info:
-    BranchSession*session = notification.userInfo[BranchSessionKey];
-
-    // Do something with the link!
-    // In this contrived example we'll load a view controller that plays the song that was in the link:
-    SongViewController *viewController = [SongViewController loadController];
-    viewController.songTitle = branchSession.linkContent.title;
-    [viewController.window makeKeyAndOrderFront:self];
-    [viewController playSong];
+- (void)applicationWillTerminate:(NSNotification *)aNotification {
+    // Insert code here to tear down your application
 }
+
+- (void) branchWillStartSession:(NSNotification*)notification {
+    NSLog(@"branchWillStartSession: %@", notification.name);
+
+    NSString *url = notification.userInfo[BranchURLKey] ?: @"";
+    NSLog(@"URL: %@", url);
+}
+
+- (void) branchDidStartSession:(NSNotification*)notification {
+    NSLog(@"branchDidStartSession: %@", notification.name);
+
+    NSString *url = notification.userInfo[BranchURLKey] ?: @"";
+    NSLog(@"URL: %@", url);
+
+    BranchSession *session = notification.userInfo[BranchSessionKey];
+    NSString *data = (session && session.data) ? session.data.description : @"";
+}
+
+- (void) branchOpenedURLNotification:(NSNotification*)notification {
+    NSLog(@"branchOpenedURLNotification: %@", notification.name);
 ```
 
 ## Implement Branch Features
