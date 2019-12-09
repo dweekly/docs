@@ -94,10 +94,6 @@ method:
 Next, add a notification handler so your app can handle the deep links:
 
 ```objc
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
-}
-
 - (void) branchWillStartSession:(NSNotification*)notification {
     NSLog(@"branchWillStartSession: %@", notification.name);
 
@@ -117,6 +113,19 @@ Next, add a notification handler so your app can handle the deep links:
 
 - (void) branchOpenedURLNotification:(NSNotification*)notification {
     NSLog(@"branchOpenedURLNotification: %@", notification.name);
+
+    NSString *url = notification.userInfo[BranchURLKey] ?: @"";
+    NSLog(@"URL: %@", url);
+
+    BranchSession *session = notification.userInfo[BranchSessionKey];
+
+    // Do something with the link!
+    // In this contrived example we'll load a view controller that plays the song that was in the link:
+    SongViewController *viewController = [SongViewController loadController];
+    viewController.songTitle = branchSession.linkContent.title;
+    [viewController.window makeKeyAndOrderFront:self];
+    [viewController playSong];
+}
 ```
 
 ## Implement Branch Features
