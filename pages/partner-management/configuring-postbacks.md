@@ -37,6 +37,9 @@ To disable any postback currently enabled for an ad partner:
 
 ![image](/_assets/img/pages/partner-management/postback-disable.gif)
 
+!!! info "Automated Postback Clean Up"
+	Branch runs weekly jobs to disable all non-functioning postbacks.  Any postback that has failed consistently over the last 7 days - throwing only 400/500s - will be automatically disabled.
+
 ### Deleting
 
 To delete any postback currently enabled for an ad partner:  
