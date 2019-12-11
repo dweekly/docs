@@ -222,6 +222,8 @@ nav:
       - iMessage Apps: app-to-app/imessage-apps.md
   - Partner Management:
     - Overview: partner-management/branch-integrated-partners.md
+    - Settings:
+      - Configuring Postbacks: partner-management/configuring-postbacks.md
     - Universal Ads Partners:
       - Ad Partners List: deep-linked-ads/ad-networks-list.md
       - Adding Custom Partners: deep-linked-ads/adding-custom-partners.md
