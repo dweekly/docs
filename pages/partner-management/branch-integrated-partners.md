@@ -26,6 +26,10 @@ Branch integrates with a wide variety of services to ensure a seamless workflow 
   </a>
 </div>
 
+## Settings
+
+- [Configuring Postbacks](/partner-management/configuring-postbacks)
+
 ## Partner Resources
 
 - [Branch Certified Partner Program](/partner-management/branch-certified-partner-program)

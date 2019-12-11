@@ -1,11 +1,3 @@
----
-title: Facebook Platform Ads
-description: An overview page of using Branch in your Facebook Platform Ad campaigns.
-path: tree/master/src/deep-linked-ads
-source: facebook-platform-ads.md
----
-# Facebook Platform Ads
-
 ## Overview
 
 Branch links can be used together with a variety of Facebook ads, allowing you to track ad performance on the Branch dashboard and to deep link new users from ad-driven installs directly to content the first time they open your app.

@@ -1,12 +1,3 @@
----
-title: Facebook Ads FAQ and Advanced Options
-description: An FAQ page of using Branch in your Facebook Ad campaigns.
-path: tree/master/src/deep-linked-ads
-source: facebook-ads-faq.md
----
-
-# Facebook Ads FAQ and Advanced Options
-
 ## FAQ
 
 ### What is Facebook MMP?

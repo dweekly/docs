@@ -1,8 +1,8 @@
 ## Overview
 
-![Impact-Radius](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/ir-1528505569606.png)
+![Impact](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/Impact-logo-print-color-1575002393158.png)
 
-This guide will walk you through how to setup your campaigns with **[Impact Radius](http://impactradius.com)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
+This guide will walk you through how to setup your campaigns with **[Impact](http://impact.com)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -14,10 +14,10 @@ This guide will walk you through how to setup your campaigns with **[Impact Radi
 
 {! ingredients/deep-linked-ads/enable-partner.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/impact-radius/impact-radius-enable.png)
+![image](/_assets/img/pages/deep-linked-ads/impact/impact-enable.png)
 
-!!! warning "Impact Radius Credentials"
-	Please contact your Impact Radius account manager to retrieve the following values:
+!!! warning "Impact  Credentials"
+	Please contact your Impact  account manager to retrieve the following values:
 
 	- Account SID
 	- Authorization Token
@@ -26,7 +26,7 @@ This guide will walk you through how to setup your campaigns with **[Impact Radi
 
 {! ingredients/deep-linked-ads/enable-partner-tip.md !}
 
-![image](/_assets/img/pages/deep-linked-ads/impact-radius/impact-radius-postbacks.png)
+![image](/_assets/img/pages/deep-linked-ads/impact/impact-postbacks.png)
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 
