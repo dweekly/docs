@@ -65,7 +65,7 @@
             implementation 'com.android.support:design:25.2.0'
 
             // required for all Android apps
-            implementation 'io.branch.sdk.android:library:3.+'
+            implementation 'io.branch.sdk.android:library:4.+'
 
             // required if your app is in the Google Play Store
             implementation 'com.google.android.gms:play-services-appindexing:9.+' // App indexing
