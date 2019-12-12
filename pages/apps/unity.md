@@ -24,7 +24,7 @@
 
 - ### Get the Branch SDK
 
-    - [Download the latest SDK version](https://s3-us-west-1.amazonaws.com/branchhost/BranchUnityWrapper.unitypackage) or clone our [open-source GitHub repository](https://github.com/BranchMetrics/unity-branch-deep-linking).
+    - [Download the latest SDK version](https://github.com/BranchMetrics/unity-branch-deep-linking-attribution/raw/master/BranchUnityWrapper.unitypackage) or clone our [open-source GitHub repository](https://github.com/BranchMetrics/unity-branch-deep-linking).
 
     - Import the **BranchUnityWrapper.unitypackage** into your project by clicking `Assets -> Import Package`.
 
