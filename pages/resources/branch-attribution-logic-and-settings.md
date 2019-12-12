@@ -20,7 +20,7 @@ To accurately measure and attribute interactions (installs and in-app events) th
 
 *   Fingerprint Matching
 
-**4. Deterministic View Attribution**
+**3. Deterministic View Attribution**
 
 *   Identifier Matching Only
 
