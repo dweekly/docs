@@ -56,8 +56,9 @@ Once you've enabled an integration it's time to create a tracking link.
 
 	1. Use a direct link to the Apple Store or Google Play Store in the **Destination URL** field.
 	2. Remove `$idfa_sha1={sha1_advertising_id}` from your Branch Link if your Destination URL goes to the Google Play Store.
-	3. Remove `$aaid_sha1={sha1_advertising_id}` from your Branch Link if your Destination URL goes to the Apple Store. 
+	3. Remove `$aaid_sha1={sha1_advertising_id}` from your Branch Link if your Destination URL goes to the Apple Store.
 	4. Place your Branch link in the **Click Tracking URL**.
+  5. Avoid using the **View Tracking URL**  until further notice.
 
 	![image](/_assets/img/pages/deep-linked-ads/pinterest/pinterest-links.png)
 
