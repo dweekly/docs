@@ -7,7 +7,7 @@ Branch can help track your **[Apple Search Ads](https://searchads.apple.com/)** 
 + [Apple Search Ads](https://searchads.apple.com/)
 + [Apple Search Ads WWDC](https://developer.apple.com/videos/play/wwdc2016/302/)
 
-## Setup
+## SDK Setup
 
 In order to check if the user came from an Apple Search Ads, you must make the attribution call before Branch initializes. As a warning, Apple's Search Ads Attribution API may take more than 1 second round trip. This means that your call to Branch's initSession to the execution of the callback block may be delayed by this additional 1 second.
 
@@ -20,26 +20,67 @@ You must add Apple's **iAd.framework** and **AdSupport.framework** to your **Lin
 
 ![image](/_assets/img/pages/apps/ios-frameworks.png)
 
+!!! warning ""
+  If using Cocoapods, the iAd framework is automatically added (in build phase) and the headers are imported. If not using Cocoapods, you will need to do this manually.
+
 #### Enable Apple Search Ads Check
 
+!!! info "Branch iOS SDK v0.30.0"
+    As of v0.30.0, the Branch iOS SDK supports new logic that increases wait time for Apple Search Ads to respond with the payload, as well as ignore Apple's test data.  
+
 To enable this check, add a `delayInitToCheckForSearchAds` call to your **AppDelegate.m** (or **AppDelegate.swift**) file after you create the Branch singleton, but *before* you call `initSession`. Your code will end up looking something like this:
+
+**Objective-C**
 
 ```obj-c
 Branch *branch = [Branch getInstance];
 [branch delayInitToCheckForSearchAds];
-[branch initSession.....
+
+// Branch will wait longer for Apple Search Ads to respond.
+[branch useLongerWaitForAppleSearchAds];
+
+// Branch won't callback with Apple's test data, this is still sent to the server.
+[branch ignoreAppleSearchAdsTestData];
+
+[branch initSessionWithLaunchOptions:launchOptions andRegisterDeepLinkHandler:^(NSDictionary *params, NSError *error) {
+    // handle payload
+    }];
 ```
+**Swift**
 
 ```swift
-let branch: Branch = Branch.getInstance()
+let branch = Branch.getInstance()
 branch.delayInitToCheckForSearchAds()
-branch.initSession.....
+
+// Branch will wait longer for Apple Search Ads to respond.
+branch.useLongerWaitForAppleSearchAds()
+
+// Branch won't callback with Apple's test data, this is still sent to the server.
+branch.ignoreAppleSearchAdsTestData()
+branch.initSession(launchOptions: launchOptions, andRegisterDeepLinkHandler: { (params, error) in
+    // handle payload
+    })
 ```
 
 If you're concerned about the additional 1 second latency, the call to `delayInitToCheckForSearchAds` can be called conditionally at run time. So, if you want to only check on first install, or the like, then just don't call this method.
 
 !!! warning "Testing Apple Search Ads"
-    If you test using a non-production app, the iAd framework returns fake Apple Search Ads payloads to simulate the install being claimed by Apple Search Ads. Subsequently, you will see these claims in your reporting.
+    If you test using a non-production app and do not use the `ignoreAppleSearchAdsTestData()` method, the iAd framework will return fake Apple Search Ads payloads to simulate the install being claimed by Apple Search Ads. Subsequently, you will see these claims in your reporting.
+
+!!! warning "Impact on Deferred Deep Linking"
+    If you use deferred deep linking, do not use the `useLongerWaitForAppleSearchAds()` method as it will negatively impact the end user's experience by creating longer wait times for the deferred deep linking to occur.
+
+## Server to Server Setup
+
+If you have a S2S integration with Branch (i.e. you do not use the Branch SDK to send Branch data), you will need to perform the Apple Search Ads check yourself before sending the returned payload to Branch.
+
+Please refer to Apple Search Ads developer documentation on how to [make requests to their API](https://developer.apple.com/documentation/iad/setting_up_apple_search_ads_attribution).
+
+### Implementation Guidelines
+
+- Give a 2 second buffer before calling Apple's Attribution API. If your request times out after 5 seconds, please retry.
+- Implement retry logic if response returns as False or Error Code [0,2,3]. Call Apple again 2 seconds later.
+- After 20 seconds or successful response, call Branch with the returned Apple Search Ads payload.
 
 ## Cost Data Setup
 
