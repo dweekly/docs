@@ -15,7 +15,7 @@ This documentation contains information on the procedure for submitting data sub
 	2. **Required Fields:**
 	    1. **Email Address**: your email address
 	    2. **Requestor**: Select “Someone else’s behalf”
-	    3. **GDPR Request:** Select "Data Deletion"
+	    3. **Request Type:** Select "Data Deletion"
 	    4. **Original Request Date**: Input date of submission
 	    5. **Subject**: "[Your company Name] - Deletion request - [MM/DD/YYYY]"
 	    6. **Description**: "Requesting data deletion request for the list of attached IDs."
@@ -43,7 +43,7 @@ If it is the first time Branch has received a data subject request from you, we 
     2. **Required Fields:**
         1. **Email Address**: your email address/alias
         2. **Requestor** Select “Someone else’s behalf”
-        3. **GDPR Request:** Select "Access to Data"
+        3. **Request Type:** Select "Access to Data"
         4. **Original Request Date**: Input date of submission
         5. **Subject**: "[Your company Name] - Data Access Request - [MM/DD/YYYY]"
         6. **Description**: "Requesting data on the list of attached IDs."
@@ -57,7 +57,7 @@ If it is the first time Branch has received a data subject request from you, we 
     3. Your Branch App ID(s) for the app(s) at issue (available at [https://dashboard.branch.io/account-settings/app](https://dashboard.branch.io/account-settings/app), under "App ID");
     4. Please copy in your reply at least one person who is listed as an admin on the app's Branch account, and have each admin reply-all to confirm that the request should be executed
 
-4. **Branch’s GDPR Team** **will confirm completion of executing the request via email**
+4. **Branch’s Privacy Team will confirm completion of executing the request via email**
     1. **Please note that you should expect a confirmation within 7-14 business days from submission time**
     2. Branch will provide you with a file that contains the end user’s personal data subject to the request
     3. File Details:

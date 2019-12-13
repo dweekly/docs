@@ -6,7 +6,7 @@
 The Query API is an HTTP API that can be used for programmatically querying pre-aggregated analytics. It can be used to fetch the same data displayed in your Branch dashboard, without having to access the Dashboard itself.
 
 !!! warning "Self Attributing Network Data Not Available"
-    The Query API does not return data associated with SANs; i.e. Google Ads, Snap, Twitter, Facebook Ads and Apple Search Ads.
+    The Query API does not return cost click/impression data associated with SANs; i.e. Google Ads, Snap, Twitter, Facebook Ads and Apple Search Ads.
 
 An individual query is constructed from three types of parameters:
 
