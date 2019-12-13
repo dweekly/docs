@@ -11,7 +11,7 @@ With Branch, you can integrate with **[Google Ads](https://ads.google.com/home/)
 ![image](/_assets/img/pages/deep-linked-ads/google/google-ads-overview.png)
 
 !!! warning "Branch Linking Supported but Not Recommended"
-	For non-app campaigns, use you can use Branch links.  However, they are not required and we recommend their usage only in custom edge cases.  Learn more about [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/) for using Branch links.
+	You can use Branch links in non-app campaigns.  However, they are not required and we recommend their usage only in custom edge cases.  Learn more about [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/) for using Branch links.
 
 ## Campaign Support
 
