@@ -1,8 +1,5 @@
 ## Overview
 
-!!! info "Fraud Rules & Fraud Analytics"
-	The Fraud rules mentioned below are custom rules not available in the UI and require being enabled by your CSM or Support. As such, these rules are not present in Ads Fraud Analytics as a `Key Fraud Indicator` to filter the report by.
-
 !!! warning "Viewing Fraud Data Permissions"
 	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the **Fraud Settings & Data** permission.  Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
 
@@ -10,9 +7,25 @@ Branch’s Fraud Detection Platform uses an intelligent blacklist to block known
 
 The platform leverages Branch’s persona data to give you RealScore - a model that intelligently scores the likelihood that any given install comes from a real person rather than a bot, malware or false attribution claim. RealScore depends on a variety of web and app signals to establish patterns of normal and fraudulent behavior, making it the first fraud detection product to leverage the full set of signals available on mobile.
 
-![image](/_assets/img/pages/analytics/fraud-dashboard.png)
+![image](/_assets/img/pages/analytics/fraud-analytics.png)
 
-![image](/_assets/img/pages/analytics/cti-report.png)
+## Events Blocked by Fraud Rules
+
+Branch recommends creating [fraud rules](/deep-linked-ads/leveraging-fraud-rules/) to block erroneous attribution credit in real-time. If you have Fraud rules enabled in your Branch dashboard, you can view the blocked events on a per fraud rule basis.
+
+### Available Fraud Rules
+
+- **Geo Conflict**: The touch and the conversion occur in different countries
+- **Device Conflict**: The device information on the touch and the conversion are different
+- **IP**: Events coming from known TOR networks
+- **Conversion Time**: The time between the touch and the conversion is short
+- **Persona Fraud**: Browsers or devices with suspicious behavior based on Branch’s cross-platform persona graph
+- **Once Ever Capped**: Events only occurring once per user
+- **Custom**: Events matching your custom selection of fraud parameters.
+- **None**: Do not show blocked events based on Fraud Rules. Branch automatically selects `None` when you filter on Key Fraud Indicators instead.
+
+!!! info "Fraud Rules vs Fraud Indicators"
+	Fraud Rules are enabled by you based on your business criteria for what constitutes fraud.  Fraud Indicators are built into Branch and are auto-enabled to protect you from generic fraud methods.  **NOTE**: You cannot view blocked events based on both of these types of fraud simultaneously; please select one at a time.
 
 ## Key Fraud Indicators
 

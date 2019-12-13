@@ -175,10 +175,10 @@ Example to disable ad tracking:
 
 To help you get started, there are a number of examples for learning how to effectively use the Branch C++ SDK
 
-#### [Hello Branch](../BranchSDK-Samples/console/hello/helloworld.cpp)
+#### [Hello Branch](https://github.com/BranchMetrics/cpp-branch-deep-linking-attribution/blob/BranchSDK-Samples/console/hello/helloworld.cpp)
 The most basic console application.  This sample creates a couple of attribution events and waits until they have all completed.
 
-#### [Console Example](../BranchSDK-Samples/console/example/example.cpp)
+#### [Console Example](https://github.com/BranchMetrics/cpp-branch-deep-linking-attribution/blob/BranchSDK-Samples/console/example/example.cpp)
 A more detailed console application.  This sample puts up a simple menu and allows the user to initialize sessions,
 enable and disable tracking, and more.   This is most useful for examining how Branch works in an isolated environment
 and provides an easy framework to extend to try out other requests that are pertinent to the problems that you are trying to solve.
@@ -187,7 +187,7 @@ Adding new menu items is trivial and is immensely useful for a debugging tool.
 This example also has the ability to print out details of the environment that it is running on, such as the OS,
 OS Version, SDK version, etc.
 
-#### [Windows Color Picker](../BranchSDK-Samples/Windows/ColorPicker/README.md)
+#### [Windows Color Picker](https://github.com/BranchMetrics/cpp-branch-deep-linking-attribution/blob/BranchSDK-Samples/Windows/ColorPicker/README.md)
 Basic Windows Win32 application to demonstrate the Branch SDK in a Windows environment.  This sample will also
 demonstrate basic deep linking functionality and creating links to share.
 

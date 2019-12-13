@@ -16,10 +16,10 @@
         curl -XPOST https://api2.branch.io/v1/url -H "Content-Type: application/json" \
           -d '{
           "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
-          "channel": "facebook",
-          "feature": "onboarding",
-          "campaign": "new product",
-          "stage": "new user",
+          "~channel": "facebook",
+          "~feature": "onboarding",
+          "~campaign": "new product",
+          "~stage": "new user",
           "tags": ["one", "two", "three"],
           "data": {
             "$canonical_identifier": "content/123",

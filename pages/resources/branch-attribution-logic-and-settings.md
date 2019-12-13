@@ -20,7 +20,7 @@ To accurately measure and attribute interactions (installs and in-app events) th
 
 *   Fingerprint Matching
 
-**4. Deterministic View Attribution**
+**3. Deterministic View Attribution**
 
 *   Identifier Matching Only
 
@@ -105,4 +105,8 @@ Differences:
 
 **How does Limit Ad Tracking impact Branch attribution?**
 
-If a user of your app has Limit Ad Tracking enabled on their device, Branch will not perform attribution of said user.  We will, however, still complete deep linking and deferred deep linking when applicable.
+A user's Limit Ad Tracking preference is passed through from Branch to ad networks. The ad network can then decide whether or not to target the user. The value of the flag does not explicitly affect attribution.
+
+Having said that, when limit ad tracking is enabled on *iOS*, no IDFA is made available on the device. This means that for iOS users with limit ad tracking enabled, Branch will not make calls to self-attributing networks (e.g. Twitter, Facebook, Google, Snap) or pass IDFA to ad networks via postback. Apple Search Ads also does not return attribution for users with Limit Ad Tracking enabled.
+
+For more privacy tools, including the ability to opt users out of Branch attribution, please visit our docs page on [SDK Privacy Controls]

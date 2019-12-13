@@ -30,8 +30,20 @@ Once you've enabled an integration it's time to create a tracking link.
 
 If you have a server to server integration you must provide specific requirements for attribution. Make sure to append the following mandatory key-values into tracking ad links to ensure they are not rejected or blocked:
 
-- **Server to Server Parameter**: Add `%24s2s=true` at the end of your link, so we know it's a server to server link
+- **Server to Server Parameter**: Add server-to-server click macro URL parameter at the end of your link, so we know it's a server to server link:
+    - `%24s2s=true`
 
-- **Device ID Macro Value**: Add `%24idfa` for iOS devices OR `%24aaid` for Android devices.
+- **Device ID Macro Value**: Pass user Advertising Identifier via click macro URL parameter:
+    - `%24idfa={IDFA}` for iOS devices
+    - `%24aaid={AAID}` for Android devices
 
-- **IP address**:  Pass user IP information in the header to override on click: `x-ip-override: {IP_ADDRESS}` OR via click macro URL parameter: `device_ip={IP_ADDRESS}`
+- **IP address**:  Pass user IP information in the header OR click macro URL parameter to override on click:
+    - HTTP header `x-ip-override: {IP_ADDRESS}`
+    - Click macro URL parameter: `device_ip={IP_ADDRESS}`
+
+- **User Agent**:  Pass User Agent information in the header OR click macro URL parameter to override on click:
+    - HTTP header `User-Agent: {USER_AGENT}`  
+    - Click macro URL parameter: `user_agent={USER_AGENT}`
+
+!!! warning "Update Partner-specific URL macros"
+    Please make sure that you are using your macros instead of {IDFA}. {AAID}, {IP_ADDRESS}, {USER_AGENT}

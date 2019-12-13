@@ -148,7 +148,7 @@ helpful if you know your users access your service from different devices. This 
 
 `[Branch setUserIdentity:completion:]`
 
-See [**`setUserIdentity:completion:`**](Classes/Branch.html#/c:objc(cs)Branch(im)setUserIdentity:completion:)
+See [**`setUserIdentity:completion:`**](https://github.com/BranchMetrics/mac-branch-deep-linking/blob/master/Classes/Branch.html#/c:objc(cs)Branch(im)setUserIdentity:completion:)
 
 ### Logout
 
@@ -161,7 +161,7 @@ stored parameters get cleared and all events are properly attributed to the righ
 
 `[Branch logoutWithCompletion:]`
 
-See [**`logoutWithCompletion:`**](Documentation/HTMLDocumentation/Classes/Branch.html#/c:objc(cs)Branch(im)logoutWithCompletion:)
+See [**`logoutWithCompletion:`**](https://github.com/BranchMetrics/mac-branch-deep-linking/blob/master/Documentation/HTMLDocumentation/Classes/Branch.html#/c:objc(cs)Branch(im)logoutWithCompletion:)
 
 ### Tracking User Actions and Events
 

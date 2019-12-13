@@ -1,8 +1,5 @@
 ## Overview
 
-!!! info "Fraud Rules & Fraud Analytics"
-	The Fraud rules mentioned below are custom rules not available in the UI and require being enabled by your CSM or Support. As such, these rules are not present in Ads Fraud Analytics as a `Key Fraud Indicator` to filter the report by.
-
 !!! warning "Viewing Fraud Data Permissions"
 	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the **Fraud Settings & Data** permission.  Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
 
@@ -22,13 +19,22 @@ But not to worry, blocked events are still deep linked, so blocking would not af
 
 ## Recommended Fraud Rules
 
+### Country Conflict
+
+The click and the install occur in different countries. Theoretically this could happen for a real user, but it is extremely unlikely. It’s much more likely that the click or install was simulated.
+
 ### Device Conflict
 
 The device information on the click and the install are different. A real user clicks and installs on the same device, so this is highly suspicious.
 
-### Country Conflict
+### Event-level Characteristics
 
-The click and the install occur in different countries. Theoretically this could happen for a real user, but it is extremely unlikely. It’s much more likely that the click or install was simulated.
+We can block on any attribute stored at the event level. Examples:
+Device Pattern: For example, “OS version + Country + Model”. It’s common for device farms to use the same devices over and over, making it easy to pick out specific device characteristics to block.
+
+### Once Ever Capped
+
+To be used only for those events that should only ever occur once per user.
 
 ### Suspicious IP
 
@@ -41,8 +47,3 @@ Very short click-to-install times are suspicious - this is typically caused by f
 ### Suspicious Persona
 
 This is based on Branch’s cross-platform persona graph. We use proprietary algorithms to dynamically block attributions on browsers and devices showing suspicious behavior.
-
-### Event-level Characteristics
-
-We can block on any attribute stored at the event level. Examples:
-Device Pattern: For example, “OS version + Country + Model”. It’s common for device farms to use the same devices over and over, making it easy to pick out specific device characteristics to block

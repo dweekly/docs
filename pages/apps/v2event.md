@@ -717,6 +717,7 @@ If you want to track an event that isn't a predefined event, simply do the follo
     let event = BranchEvent.customEventWithName("User_Scanned_Item")
 	event.customData[“Custom_Event_Property_Key1”] = “Custom_Event_Property_val1"
 	event.customData[“Custom_Event_Property_Key2”] = “Custom_Event_Property_val2"
+  event.alias = "my custom alias"
 	event.logEvent()
     ```
 
@@ -726,6 +727,7 @@ If you want to track an event that isn't a predefined event, simply do the follo
     BranchEvent *event = [BranchEvent customEventWithName:@"User_Scanned_Item"]];
     event.customData[@“Custom_Event_Property_Key1”] = @“Custom_Event_Property_val1";
     event.customData[@“Custom_Event_Property_Key2”] = @“Custom_Event_Property_val2";
+    event.alias = "my custom alias";
 	[event logEvent];
     ```
 
@@ -735,8 +737,8 @@ If you want to track an event that isn't a predefined event, simply do the follo
 new BranchEvent("Some Custom Event")
     .addCustomDataProperty("Custom_Event_Property_Key11", "Custom_Event_Property_val11")
     .addCustomDataProperty("Custom_Event_Property_Key22", "Custom_Event_Property_val22")
+    .setCustomerEventAlias("my_custom_alias")
     .logEvent(MainActivity.this);
-}
 ```
 
 ### Web
@@ -746,6 +748,8 @@ var custom_data = {
    "Custom_Event_Property_Key1": "Custom_Event_Property_val1",
    "Custom_Event_Property_Key2": "Custom_Event_Property_val2"
 };
+
+var customer_event_alias = "my custom alias";
 
 branch.logEvent(
     event,
@@ -759,6 +763,7 @@ branch.logEvent(
 ```
 curl -vvv -d '{
   "name": "picture swiped",
+  "customer_event_alias": "my custom alias",
   "user_data": {
     "os": "Android",
     "os_version": 25,
