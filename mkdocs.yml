@@ -939,8 +939,7 @@ nav:
       - Betaout: emails/betaout.md
       - Bluecore: emails/bluecore.md
       - Blueshift: emails/blueshift.md
-      - Braze (via SendGrid): emails/braze.md
-      - Braze (via Mailjet): emails/braze-mailjet.md
+      - Braze: emails/braze.md
       - Campaign Monitor: emails/campaign-monitor.md
       - Cheetah Digital Marketing Suite: emails/cheetah-digital-marketing-suite.md
       - CheetahMail: emails/cheetahmail.md
