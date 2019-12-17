@@ -667,6 +667,7 @@
           "deepview_desktop": "branch_default",
           "deepview_ios": "branch_default",
           "deepview_android": "branch_default"
+          "organization_id":"626878341655318826" // this is not mandatory
         }'
         ```
 
@@ -706,6 +707,7 @@
           "og_description": "branch description",
           "og_image_url": "http://lorempixel.com/400/400/",
           "og_title": "branch test",
+          "organization_id": "626878341655318826",
           "origin": "API: creator id = YOUR_USER_ID, creator email = YOUR_EMAIL",
           "short_url_domain": "",
           "text_message": "click here to download {{ link }}",
