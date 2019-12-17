@@ -109,4 +109,4 @@ A user's Limit Ad Tracking preference is passed through from Branch to ad networ
 
 Having said that, when limit ad tracking is enabled on *iOS*, no IDFA is made available on the device. This means that for iOS users with limit ad tracking enabled, Branch will not make calls to self-attributing networks (e.g. Twitter, Facebook, Google, Snap) or pass IDFA to ad networks via postback. Apple Search Ads also does not return attribution for users with Limit Ad Tracking enabled.
 
-For more privacy tools, including the ability to opt users out of Branch attribution, please visit our docs page on [SDK Privacy Controls]
+For more privacy tools, including the ability to opt users out of Branch attribution, please visit our docs page on [SDK Privacy Controls](https://docs.branch.io/apps/sdk-privacy-controls/)
