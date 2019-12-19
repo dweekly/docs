@@ -1,11 +1,8 @@
-# Query API
-
-!!! tip "Getting started"
-    For newcomers to this API, we strongly suggest you check out our [Query Recipe Book](/exports/query-recipe-book/). It has screenshots of Dashboard visualizations, accompanied by what queries you need to make to pull the same data. It's a quick way to get up and running with this API.
+## Overview
 
 The Query API is an HTTP API that can be used for programmatically querying pre-aggregated analytics. It can be used to fetch the same data displayed in your Branch dashboard, without having to access the Dashboard itself.
 
-!!! warning "Self Attributing Network Data Not Available"
+!!! warning "Self Attributing Network Cost Data Not Available"
     The Query API does not return cost click/impression data associated with SANs; i.e. Google Ads, Snap, Twitter, Facebook Ads and Apple Search Ads.
 
 An individual query is constructed from three types of parameters:
@@ -14,35 +11,8 @@ An individual query is constructed from three types of parameters:
 - Data selection keys which define which events are eligible to be counted in the results (eg, filters)
 - Result format specifiers that define which results are included in the HTTP response, and how the result is returned (eg, sorting)
 
-An example query could look like:
-```js
-{
-  // Authentication
-  "branch_key":"<YOUR_BRANCH_KEY>",
-  "branch_secret":"<YOUR_BRANCH_SECRET>",
-  // Data selection
-  "start_date": "2017-12-12",
-  "end_date": "2017-12-18",
-  "data_source": "eo_click",
-  "dimensions": [
-    "last_attributed_touch_data_tilde_feature",
-    "last_attributed_touch_data_tilde_channel",
-    "last_attributed_touch_data_tilde_campaign",
-    "last_attributed_touch_data_plus_current_feature"
-  ],
-  "filters": {
-    "!last_attributed_touch_data_plus_current_feature": [
-      "MOBILE_DEEPVIEWS",
-      "DESKTOP_DEEPVIEWS"
-    ]
-  },
-  // Result format
-  "ordered": "descending",
-  "ordered_by": "unique_count",
-  "aggregation": "unique_count",
-  "zero_fill": true
-}
-```
+!!! tip "Getting started"
+    For newcomers to this API, we strongly suggest you check out our [Query Recipe Book](/exports/query-recipe-book/). It has screenshots of Dashboard visualizations, accompanied by what queries you need to make to pull the same data. It's a quick way to get up and running with this API.
 
 ## Endpoint Definition
 ```
@@ -126,7 +96,8 @@ Branch data sources
   "eo_commerce_event",
   "eo_custom_event",
   "eo_content_event",
-  "eo_user_lifecycle_event"
+  "eo_user_lifecycle_event",
+  "cost"
 ]
 ```
 
@@ -150,7 +121,8 @@ _possible values_:
 [
   "unique_count",
   "total_count",
-  "revenue"
+  "revenue",
+  "cost"
 ]
 ```
 
@@ -386,8 +358,32 @@ _format_: string
 
 **Note:** The query id should be treated as ephemeral, and should only be used when retrieving pages of an existing query where the pagination URLs already have query_id set as a query parameter. You should not attempt to change the id between requests or include a query id with a different query request.
 
+## Cost Data
+
+!!! info "BETA ACCESS ONLY"
+    Cost data is now available! This feature is in BETA, please submit issues or feedback to [Support](mailto:support@branch.io).
+
+The recommended use of pulling cost data via API is "pull all the cost by partner and campaign". You can attempt to drill down to things like keyword and OS, but you should definitely plan to handle nulls, as the breakdowns provided by partner APIs are not be consistent from partner to partner. If the dashboard returns you zeros for certain cost breakdowns, so will the API.
+
+**Top tips**:
+
+- `Aggregation` must be `cost` (for other dimensions it could be "total_count" or "unique_count" but those are not applicable for cost).
+
+- Cost is always returned in USD, where the exchange rate is stored at the time we retrieve from an API (virtually always the day of the campaign, e.g. we pull data for a campaign that ran Dec 17th 2020 into the Branch system on Dec 17th 2020 and the exchange rate will be the exchange rate on Dec 17th 2020).
+
+- Click & impressions not supported today, coming with new API (2020, time TBD)
+
+- We will only return the parameters available from the ad partner API, so often dimensions will appear "null" for cost. For example, Snap data has virtually no device breakdowns (e.g. OS)
+
+- Supported partners: FB, Google, Snap, Apple.
+
+- Cost data is generally available in Branch within 6-12 hours of being available in the partner API.
+
+- Cost data may change over time as we do accuracy checks against partner APIs up to 30 days before today's date and refresh cost.
 
 ## Example Usage
+
+### Installs Per Day Per OS
 
 Basic query for pulling installs per day, split by OS of the device the user installed on, limited to 5 results:
 
@@ -453,6 +449,8 @@ Example results:
   }
 }
 ```
+
+### Unique Click Counts Per Channel/Campaign/Feature
 
 More complex query for pulling unique click counts, split by the last touch channel, campaign, feature and the +via_current_features values.
 
@@ -545,6 +543,112 @@ Example Results:
   "paging": {
     "next_url": "/v1/query/analytics?query_id=EDdBOb&limit=5&after=5",
     "total_count": 143
+  }
+}
+```
+
+### Cost Per Ad Partner/Campaign
+
+```
+curl -X POST 'http://api.branch.io/v1/query/analytics' -H 'content-type: application/json' -d '{
+  "start_date": "2019-12-06",
+  "end_date": "2019-12-11",
+  "branch_key": "<branch_live_key>",
+  "branch_secret": "<secret_key>,
+  "data_source": "cost",
+  "dimensions": [
+    "last_attributed_touch_data_tilde_advertising_partner_name",
+    "last_attributed_touch_data_tilde_campaign"
+  ],                      
+  "ordered": "descending",
+  "aggregation": "cost"
+}'
+```
+
+Example Results:
+
+```
+{
+  "results" : [ {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "fb_zeit",
+      "cost" : 23636.767182316362,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Facebook"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "google_zeit",
+      "cost" : 12475.522455796843,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Google AdWords"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "CampaignName8",
+      "cost" : 202.59,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Apple Search Ads"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "CampaignName1",
+      "cost" : 158.07999999999998,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Apple Search Ads"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "CampaignName2",
+      "cost" : 158.14,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Apple Search Ads"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "CampaignName0",
+      "cost" : 100.65,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Apple Search Ads"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "CampaignName7",
+      "cost" : 98.57,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Apple Search Ads"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "CampaignName5",
+      "cost" : 98.21000000000001,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Apple Search Ads"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "CampaignName6",
+      "cost" : 96.42,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Apple Search Ads"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "CampaignName3",
+      "cost" : 55.13,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Apple Search Ads"
+    }
+  }, {
+    "timestamp" : "2019-12-01T00:00:00.000-08:00",
+    "result" : {
+      "last_attributed_touch_data_tilde_campaign" : "CampaignName4",
+      "cost" : 53.57,
+      "last_attributed_touch_data_tilde_advertising_partner_name" : "Apple Search Ads"
+    }
+  } ],
+  "paging" : {
+    "total_count" : 11
   }
 }
 ```
