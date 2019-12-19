@@ -1,3 +1,25 @@
+### v0.31.2
+
+**(2019-Dec-18)**
+
+- Change type of field cpu_type.
+
+### v0.31.1
+
+**(2019-Dec-11)**
+
+- Fix first run issue with logEvent.
+
+### v0.31.0
+
+**(2019-Dec-11)**
+
+- Add fields for Tune compatibility.  
+- Carrier name, connection type, cpu type.
+- Add fallback for disabled module support. C++ compatibility.
+- BranchEvent safety improvement.
+- Add APIs for plugin support.
+
 ### v0.30.1
 
 **(2019-Dec-3)**

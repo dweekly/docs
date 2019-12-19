@@ -116,6 +116,28 @@
 
     - Bulk link creator is limited to a JSON payload size of 250KB at a time.
 
+- ### Link delete
+
+    - *Request*
+
+        ```bash
+        curl -X DELETE \
+        'https://api2.branch.io/v1/url?url=https://branchster.app.link/1H5KaitBi2' \
+          -d '{
+          "branch_key": "key_live_hkDytPACtipny3N9XmnbZlapBDdj4WIL",
+          "branch_secret": "secret_live_8CcBNYaLwvLM398sjTXOdptVf8EA57YP"
+        }'
+        ```
+
+    - *Response*
+
+        ```js
+        {
+          "url": "https://branchster.app.link/1H5KaitBi2",
+          "deleted": true
+        }
+        ```
+
 - ### Link read
 
     - Returns [deep link properties](/links/integrate/#read-deep-links)
@@ -645,6 +667,7 @@
           "deepview_desktop": "branch_default",
           "deepview_ios": "branch_default",
           "deepview_android": "branch_default"
+          "organization_id":"626878341655318826" // this is not mandatory
         }'
         ```
 
@@ -684,6 +707,7 @@
           "og_description": "branch description",
           "og_image_url": "http://lorempixel.com/400/400/",
           "og_title": "branch test",
+          "organization_id": "626878341655318826",
           "origin": "API: creator id = YOUR_USER_ID, creator email = YOUR_EMAIL",
           "short_url_domain": "",
           "text_message": "click here to download {{ link }}",

@@ -29,6 +29,7 @@ Branch integrates with a wide variety of services to ensure a seamless workflow 
 ## Settings
 
 - [Configuring Postbacks](/partner-management/configuring-postbacks)
+- [Configuring Events for Self-Attributing Networks](/partner-management/configuring-events-for-self-attributing-networks)
 
 ## Partner Resources
 

@@ -1,4 +1,4 @@
-### View-Through Attribution (VTA) with Impression Pixels
+#### View-Through Attribution (VTA) with Impression Pixels
 
 View-through attribution allows you to track installs, session starts and conversion events back to an ad impression, even if the ad was never clicked on.
 
