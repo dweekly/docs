@@ -291,128 +291,128 @@ To provide an agency team member with access to the Custom Export API:
 
 - *TUNE FIELDS*
 
-			|TUNE Field|TUNE Human Readable|
-			|---------------------------------------------------------------|---------------------------------------------|
-			|ad_network_id|Ad Network ID|
-			|ad_network_name|Ad Network Name|
-			|advertiser_id|Advertiser ID|
-			|advertiser_name|Advertiser Name|
-			|advertiser_opt_out|Advertiser Opt Out|
-			|advertiser_ref_id|Advertiser Ref ID|
-			|advertiser_sub_ad_name|My Ad Name|
-			|advertiser_sub_ad_ref|My Ad Ref|
-			|advertiser_sub_adgroup_name|My Adgroup Name|
-			|advertiser_sub_adgroup_ref|My Adgroup Ref|
-			|advertiser_sub_campaign_name|My Campaign Name|
-			|advertiser_sub_campaign_ref|My Campaign Ref|
-			|advertiser_sub_keyword_name|My Keyword Name|
-			|advertiser_sub_keyword_ref|My Keyword Ref|
-			|advertiser_sub_placement_name|My Placement Name|
-			|advertiser_sub_placement_ref|My Placement Ref|
-			|advertiser_sub_publisher_name|My Publisher Name|
-			|advertiser_sub_publisher_ref|My Publisher Ref|
-			|advertiser_sub_site_name|My Site Name|
-			|advertiser_sub_site_ref|My Site Ref|
-			|agency_id|Agency ID|
-			|agency_name|Agency Name|
-			|app_version|App Version|
-			|attribute_sub1|Attribute Sub1|
-			|attribute_sub2|Attribute Sub2|
-			|attribute_sub3|Attribute Sub3|
-			|attribute_sub4|Attribute Sub4|
-			|attribute_sub5|Attribute Sub5|
-			|branch_app_id|Branch App ID|
-			|click_created|Click Created|
-			|country_code|Country Code|
-			|country_name|Country Name|
-			|created|Created|
-			|currency_code|Currency Code|
-			|device_brand|Device Brand|
-			|device_carrier|Device Carrier|
-			|device_ip|Device IP|
-			|device_model|Device Model|
-			|device_type|Device Type|
-			|download_date|Download Date|
-			|event_type|Event Type|
-			|existing_user|Existing User|
-			|google_ad_tracking|Google Ad Tracking Enabled|
-			|google_aid|Google Advertising ID|
-			|id|ID|
-			|impression_created|Impression Created|
-			|install_created|Install Created|
-			|install_date|Install Date|
-			|install_publisher_name|Install Publisher Name|
-			|ios_ad_tracking|iOS Ad Tracking Enabled|
-			|ios_ifa|iOS IDFA|
-			|ios_ifv|iOS IDFV|
-			|ip|IP|
-			|is_view_through|Is View Through|
-			|language|Language|
-			|latitude|Latitude|
-			|longitude|Longitude|
-			|mat_id|Mat ID|
-			|metro_code|Metro Code|
-			|os_id|OS ID|
-			|os_jailbroke|Jailbroken|
-			|os_version|OS Version|
-			|package_name|Package Name|
-			|platform_aid|Platform AID|
-			|postal_code|Postal Code|
-			|publisher_adgroup_id|Publisher Adgroup ID|
-			|publisher_click_id|Publisher Click ID|
-			|publisher_id|Publisher ID|
-			|publisher_name|Publisher Name|
-			|publisher_ref_id|Publisher Ref ID|
-			|publisher_sub_ad_id|Publisher Sub Ad ID|
-			|publisher_sub_ad_name|Publisher Sub Ad Name|
-			|publisher_sub_ad_ref|Publisher Sub Ad Ref|
-			|publisher_sub_adgroup_name|Publisher Sub Adgroup Name|
-			|publisher_sub_adgroup_ref|Publisher Sub Adgroup Ref|
-			|publisher_sub_campaign_id|Publisher Sub Campaign ID|
-			|publisher_sub_campaign_name|Publisher Sub Campaign Name|
-			|publisher_sub_campaign_ref|Publisher Sub Campaign Ref|
-			|publisher_sub_channel|Publisher Sub Channel|
-			|publisher_sub_feature|Publisher Sub Feature|
-			|publisher_sub_keyword_id|Publisher Sub Keyword ID|
-			|publisher_sub_keyword_name|Publisher Sub Keyword Name|
-			|publisher_sub_keyword_ref|Publisher Sub Keyword Ref|
-			|publisher_sub_placement_id|Publisher Sub Placement ID|
-			|publisher_sub_placement_name|Publisher Sub Placement Name|
-			|publisher_sub_placement_ref|Publisher Sub Placement Ref|
-			|publisher_sub_publisher_id|Publisher Sub Publisher ID|
-			|publisher_sub_publisher_name|Publisher Sub Publisher Name|
-			|publisher_sub_publisher_ref|Publisher Sub Publisher Ref|
-			|publisher_sub_site_name|Publisher Sub Site Name|
-			|publisher_sub1|Publisher Sub1|
-			|publisher_sub2|Publisher Sub2|
-			|publisher_sub3|Publisher Sub3|
-			|publisher_sub4|Publisher Sub4|
-			|publisher_sub5|Publisher Sub5|
-			|publisher_sub_stage|Publisher Sub Stage|
-			|publisher_sub_tags|Publisher Sub Tags|
-			|region_name|Region Name|
-			|revenue|Revenue|
-			|revenue_usd|Revenue USD|
-			|sdk|SDK|
-			|sdk_version|SDK Version|
-			|search_string|Search String|
-			|session_datetime|Session Datetime|
-			|site_event_id|Site Event ID|
-			|site_event_name|Site Event Name|
-			|site_event_type|Site Event Type|
-			|site_id|Site ID|
-			|site_name|Site Name|
-			|stat_click_id|Click ID|
-			|stat_impression_id|Impression ID|
-			|transaction_id|Transaction ID|
-			|user_agent|User Agent|
-			|user_id|User ID|
-			|windows_aid|Windows Advertising ID|
-			|wurfl_brand_name|Brand Name|
-			|wurfl_device_os|Device OS|
-			|wurfl_device_os_version|Device OS Version|
-			|wurfl_model_name|Model Name|
-			|branch_app_id|Branch App ID|
+			| TUNE Field                                                     | TUNE Human Readable                        |
+			|----------------------------------------------------------------|--------------------------------------------|
+			|ad_network_id                                                   | Ad Network ID                              |
+			|ad_network_name                                                 | Ad Network Name                            |
+			|advertiser_id                                                   | Advertiser ID                              |
+			|advertiser_name                                                 | Advertiser Name                            |
+			|advertiser_opt_out                                              | Advertiser Opt Out                         |
+			|advertiser_ref_id                                               | Advertiser Ref ID                          |
+			|advertiser_sub_ad_name                                          | My Ad Name                                 |
+			|advertiser_sub_ad_ref                                           | My Ad Ref                                  |
+			|advertiser_sub_adgroup_name                                     | My Adgroup Name                            |
+			|advertiser_sub_adgroup_ref                                      | My Adgroup Ref                             |
+			|advertiser_sub_campaign_name                                    | My Campaign Name                           |
+			|advertiser_sub_campaign_ref                                     | My Campaign Ref                            |
+			|advertiser_sub_keyword_name                                     | My Keyword Name                            |
+			|advertiser_sub_keyword_ref                                      | My Keyword Ref                             |
+			|advertiser_sub_placement_name                                   | My Placement Name                          |
+			|advertiser_sub_placement_ref                                    | My Placement Ref                           |
+			|advertiser_sub_publisher_name                                   | My Publisher Name                          |
+			|advertiser_sub_publisher_ref                                    | My Publisher Ref                           |
+			|advertiser_sub_site_name                                        | My Site Name                               |
+			|advertiser_sub_site_ref                                         | My Site Ref                                |
+			|agency_id                                                       | Agency ID                                  |
+			|agency_name                                                     | Agency Name                                |
+			|app_version                                                     | App Version                                |
+			|attribute_sub1                                                  | Attribute Sub1                             |
+			|attribute_sub2                                                  | Attribute Sub2                             |
+			|attribute_sub3                                                  | Attribute Sub3                             |
+			|attribute_sub4                                                  | Attribute Sub4                             |
+			|attribute_sub5                                                  | Attribute Sub5                             |
+			|branch_app_id                                                   | Branch App ID                              |
+			|click_created                                                   | Click Created                              |
+			|country_code                                                    | Country Code                               |
+			|country_name                                                    | Country Name                               |
+			|created                                                         | Created                                    |
+			|currency_code                                                   | Currency Code                              |
+			|device_brand                                                    | Device Brand                               |
+			|device_carrier                                                  | Device Carrier                             |
+			|device_ip                                                       | Device IP                                  |
+			|device_model                                                    | Device Model                               |
+			|device_type                                                     | Device Type                                |
+			|download_date                                                   | Download Date                              |
+			|event_type                                                      | Event Type                                 |
+			|existing_user                                                   | Existing User                              |
+			|google_ad_tracking                                              | Google Ad Tracking Enabled                 |
+			|google_aid                                                      | Google Advertising ID                      |
+			|id                                                              | ID                                         |
+			|impression_created                                              | Impression Created                         |
+			|install_created                                                 | Install Created                            |
+			|install_date                                                    | Install Date                               |
+			|install_publisher_name                                          | Install Publisher Name                     |
+			|ios_ad_tracking                                                 | iOS Ad Tracking Enabled                    |
+			|ios_ifa                                                         | iOS IDFA                                   |
+			|ios_ifv                                                         | iOS IDFV                                   |
+			|ip                                                              | IP                                         |
+			|is_view_through                                                 | Is View Through                            |
+			|language                                                        | Language                                   |
+			|latitude                                                        | Latitude                                   |
+			|longitude                                                       | Longitude                                  |
+			|mat_id                                                          | Mat ID                                     |
+			|metro_code                                                      | Metro Code                                 |
+			|os_id                                                           | OS ID                                      |
+			|os_jailbroke                                                    | Jailbroken                                 |
+			|os_version                                                      | OS Version                                 |
+			|package_name                                                    | Package Name                               |
+			|platform_aid                                                    | Platform AID                               |
+			|postal_code                                                     | Postal Code                                |
+			|publisher_adgroup_id                                            | Publisher Adgroup ID                       |
+			|publisher_click_id                                              | Publisher Click ID                         |
+			|publisher_id                                                    | Publisher ID                               |
+			|publisher_name                                                  | Publisher Name                             |
+			|publisher_ref_id                                                | Publisher Ref ID                           |
+			|publisher_sub_ad_id                                             | Publisher Sub Ad ID                        |
+			|publisher_sub_ad_name                                           | Publisher Sub Ad Name                      |
+			|publisher_sub_ad_ref                                            | Publisher Sub Ad Ref                       |
+			|publisher_sub_adgroup_name                                      | Publisher Sub Adgroup Name                 |
+			|publisher_sub_adgroup_ref                                       | Publisher Sub Adgroup Ref                  |
+			|publisher_sub_campaign_id                                       | Publisher Sub Campaign ID                  |
+			|publisher_sub_campaign_name                                     | Publisher Sub Campaign Name                |
+			|publisher_sub_campaign_ref                                      | Publisher Sub Campaign Ref                 |
+			|publisher_sub_channel                                           | Publisher Sub Channel                      |
+			|publisher_sub_feature                                           | Publisher Sub Feature                      |
+			|publisher_sub_keyword_id                                        | Publisher Sub Keyword ID                   |
+			|publisher_sub_keyword_name                                      | Publisher Sub Keyword Name                 |
+			|publisher_sub_keyword_ref                                       | Publisher Sub Keyword Ref                  |
+			|publisher_sub_placement_id                                      | Publisher Sub Placement ID                 |
+			|publisher_sub_placement_name                                    | Publisher Sub Placement Name               |
+			|publisher_sub_placement_ref                                     | Publisher Sub Placement Ref                |
+			|publisher_sub_publisher_id                                      | Publisher Sub Publisher ID                 |
+			|publisher_sub_publisher_name                                    | Publisher Sub Publisher Name               |
+			|publisher_sub_publisher_ref                                     | Publisher Sub Publisher Ref                |
+			|publisher_sub_site_name                                         | Publisher Sub Site Name                    |
+			|publisher_sub1                                                  | Publisher Sub1                             |
+			|publisher_sub2                                                  | Publisher Sub2                             |
+			|publisher_sub3                                                  | Publisher Sub3                             |
+			|publisher_sub4                                                  | Publisher Sub4                             |
+			|publisher_sub5                                                  | Publisher Sub5                             |
+			|publisher_sub_stage                                             | Publisher Sub Stage                        |
+			|publisher_sub_tags                                              | Publisher Sub Tags                         |
+			|region_name                                                     | Region Name                                |
+			|revenue                                                         | Revenue                                    |
+			|revenue_usd                                                     | Revenue USD                                |
+			|sdk                                                             | SDK                                        |
+			|sdk_version                                                     | SDK Version                                |
+			|search_string                                                   | Search String                              |
+			|session_datetime                                                | Session Datetime                           |
+			|site_event_id                                                   | Site Event ID                              |
+			|site_event_name                                                 | Site Event Name                            |
+			|site_event_type                                                 | Site Event Type                            |
+			|site_id                                                         | Site ID                                    |
+			|site_name                                                       | Site Name                                  |
+			|stat_click_id                                                   | Click ID                                   |
+			|stat_impression_id                                              | Impression ID                              |
+			|transaction_id                                                  | Transaction ID                             |
+			|user_agent                                                      | User Agent                                 |
+			|user_id                                                         | User ID                                    |
+			|windows_aid                                                     | Windows Advertising ID                     |
+			|wurfl_brand_name                                                | Brand Name                                 |
+			|wurfl_device_os                                                 | Device OS                                  |
+			|wurfl_device_os_version                                         | Device OS Version                          |
+			|wurfl_model_name                                                | Model Name                                 |
+			|branch_app_id                                                   | Branch App ID                              |
 
 
 !!! warning "IP Discrepancies"
@@ -480,30 +480,28 @@ You can also view any requested export in the **Custom Exports Created** table w
 
 - *BRANCH ENDPOINTS*
 
-        ```js
-        POST /v2/logs?organization_id=<org_id>
-        POST /v2/logs?app_id=<app_id>
+        POST /v2/logs?organization_id=ORG_ID
+        POST /v2/logs?app_id=APP_ID
         Headers:
-          Access-Token: <api_key>
+          Access-Token: API_KEY
         Content-Type: application/json
-        Body: <JSON parameters>
+        Body: JSON parameters
         Host: api2.branch.io
 
-        GET /v2/logs/<job_id>
+        GET /v2/logs/JOB_ID
         Headers:
-          Access-Token: <api_key>
+          Access-Token: API_KEY
         Host: api2.branch.io
-        ```
+
 
 - *TUNE ENDPOINTS*
 
-        ```js
-        POST /v3/logs/advertisers/<ADVERTISER_ID>/exports/
+        POST /v3/logs/advertisers/ADVERTISER_ID/exports/
         Host: api.mobileapptracking.com/
 
-        GET /v3/logs/advertisers/<ADVERTISER_ID>/exports/<job_id>
+        GET /v3/logs/advertisers/ADVERTISER_ID/exports/JOB_ID
         Host: api.mobileapptracking.com/
-        ```
+
 
 ### Building the Export Request
 
@@ -626,38 +624,30 @@ Optional parameter; results are returned in UTC if not provided.
 
 - *BRANCH REQUEST*
 
-			```
 			curl -X POST 'https://api2.branch.io/v2/logs?organization_id=732662944269095814'
 			-H "Content-Type: application/json"
 			-H "Access-Token: REMOVED"  
 			-d '{"report_type": "eo_open",
-          "limit": 100,
-          "fields": ["app_id","organization_id"],
-          "start_date": "2019-12-09T00:00:00Z",
-          "end_date": "2019-12-09T01:59:59Z",
-          "filter": ["gt","app_id",7]
-         }'
-			```
+					"limit": 100,
+					"fields": ["app_id","organization_id"],
+					"start_date": "2019-12-09T00:00:00Z",
+					"end_date": "2019-12-09T01:59:59Z",
+					"filter": ["gt","app_id",7]
+					}'
 
 - *TUNE REQUEST*
 
-			```
 			https://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/installs?api_key=REMOVED&start_date=2019-01-14T00:00:00&end_date=2019-01-15T00:00:00&timezone=UTC&fields=site.name,site.id,device_ip&limit=100&response_format=csv
-			```
 
 #### Sample Export Response
 
-- *BRANCH Response*
+- *BRANCH RESPONSE*
 
-			```
 			{"handle":"1612dbb3-85ef-49f8-b1c5-5818c163600c","export_job_status_url":"http://api2.branch.io/v2/logs/1612dbb3-85ef-49f8-b1c5-5818c163600c?organization_id=732662944269095814"}
-			```
 
 - *TUNE RESPONSE*
 
-			```
-			{"handle": "0818e641-cd5c-4498-8a17-77152689bb94", "export_job_status_url": "http://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=REMOVED", "branch_url": "http://tlnk.branch.io/v3/logs/advertisers/ADVERTISER_ID/exports/installs?start_date=2019-01-14T00%3A00%3A00%2B00%3A00&end_date=2019-01-15T00%3A00%3A00%2B00%3A00&fields=site.name%2Csite.id%2Cdevice_ip&filter_cthulhu=%5B%22in%22%2C%20%22advertiser_id%22%2C%20ADVERTISER_ID%5D&response_format=csv&timezone=UTC&limit=100&api_key=REMOVED"}
-			```
+			{"handle":"0818e641-cd5c-4498-8a17-77152689bb94","export_job_status_url":"http://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=REMOVED","branch_url":"http://tlnk.branch.io/v3/logs/advertisers/ADVERTISER_ID/exports/installs?start_date=2019-01-14T00%3A00%3A00%2B00%3A00&end_date=2019-01-15T00%3A00%3A00%2B00%3A00&fields=site.name%2Csite.id%2Cdevice_ip&filter_cthulhu=%5B%22in%22%2C%20%22advertiser_id%22%2C%20ADVERTISER_ID%5D&response_format=csv&timezone=UTC&limit=100&api_key=REMOVED"}
 
 ### Building the Download Export Request
 
@@ -702,27 +692,19 @@ Finds and exports requested queue (by handle) and provides URL location for down
 
 - *BRANCH REQUEST*
 
-			```
 			curl 'http://api2.branch.io/v2/logs/1612dbb3-85ef-49f8-b1c5-5818c163600c?organization_id=732662944269095814'
 			-H "Access-Token: REMOVED"
-			```
 
 - *TUNE REQUEST*
 
-			```
 			http://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=REMOVED
-			```
 
 #### Sample Download Export Response
 
 - *BRANCH RESPONSE*
 
-			```
 			{"code":200,"lines_exported":2000000,"status":"complete","response_url":"https://branch-exports-web.s3.amazonaws.com/732662944269095814-eo_open-2019-12-10-2019-12-10-1612dbb3-85ef-49f8-b1c5-5818c163600c-bUlN2lwyTE10qIVH.csv?Signature=REMOVED&AWSAccessKeyId=REMOVED&Expires=1577305615"}
-			```
 
 - *TUNE RESPONSE*
 
-			```
 			{"report_schedule_id": null, "lines_exported": null, "context": "", "url": "https://branch-exports-web.s3.amazonaws.com/ADVERTISER_ID-installs-2019-01-14-2019-01-15-0818e641-cd5c-4498-8a17-77152689bb94-wxGQxyHo0Djw2ktt.csv?Signature=5XN9MRMftyQ1XafNSTW4STMpT9U%3D&AWSAccessKeyId=AKIAI7A6NRHGMRDK2LIQ&Expires=1548295211", "percent_complete": 100, "status": "complete", "branch_url": "http://tlnk.branch.io/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=REMOVED"}
-			```
