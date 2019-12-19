@@ -1,3 +1,6 @@
+!!! info "BETA ACCESS ONLY"
+	The ability to configure event mappings for Self Attributing Networks is currently in BETA.  
+
 ## Overview
 
 Branch accepts different naming conventions for the conversion events we measure. For example, maybe Uber sends a custom event called “RiderFirstBooking.” Most people who see this name would understand what it means. If they sent it as “PURCHASE” it wouldn’t be the same event, nor would it be clear.
