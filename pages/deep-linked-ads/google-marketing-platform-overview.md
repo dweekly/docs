@@ -18,5 +18,10 @@ If you have not been whitelisted to use the new Google Marketing Platform, you c
 
 DoubleClick supports tracking links, and is also a self-attributing network with limited data in the response. Follow the relevant setup guide for the behavior you would like to see. Where possible, we recommend setting up *both* implementations for complete coverage, so data appears in Branch, the ad partner, and DoubleClick.
 
-
 **[ENABLE THE DOUBLECLICK INTEGRATION](/deep-linked-ads/doubleclick-mobile-tracking/)**
+
+## Google Ad Manager Integration
+
+If you are an ad partner that uses DoubleClick for Publishers and/or DoubleClick Ad Exchange - now merged and called Google Ad Manager - plus use our Google Ad Manager Integration instead.
+
+**[ENABLE THE GOOGLE AD MANAGER INTEGRATION](/deep-linked-ads/google-ad-manager-mobile-tracking/)**
