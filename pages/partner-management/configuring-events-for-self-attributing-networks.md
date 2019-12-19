@@ -6,7 +6,8 @@ However, Self-Attributing Networks (SANs) such as Facebook do not allow customer
 
 ## Supported SANs
 
-INFO - The ability to configure event mappings is available only for integrations with SANs.  For all other ad partners, Branch uses standard event mappings for postbacks.
+!!! info "Event Mapping Support"
+	The ability to configure event mappings is available only for integrations with SANs.  For all other ad partners, Branch uses standard event mappings for postbacks.
 
 You can configure event mappings for the following Self-Attributing Networks:
 
