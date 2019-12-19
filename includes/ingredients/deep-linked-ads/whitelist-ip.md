@@ -1,4 +1,4 @@
-### Whitelist postback server IP addresses
+#### Whitelisting Postback Server IP Addresses
 
 If you need to whitelist the postback server IP addresses for security purposes, they are listed below:
 

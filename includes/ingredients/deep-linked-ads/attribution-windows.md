@@ -1,4 +1,4 @@
-### Change attribution windows
+#### Changing Attribution Windows
 
 Attribution windows can be specified at the global account level or on a per link basis with the link level window taking priority. See the below instructions for setup.
 

@@ -1,4 +1,4 @@
-!!! info "Current SDK Version 0.30.1"
+ !!! info "Current SDK Version 0.31.2"
     Please see the [iOS Version History](/version-histories/ios-version-history) to view change log.
 
 ## Integrate Branch
@@ -90,7 +90,7 @@
 - ### Initialize Branch
 
     - *Swift 5*
-    
+
         ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
         import UIKit
         import Branch
@@ -110,7 +110,7 @@
                print(params as? [String: AnyObject] ?? {})
             }
           }
-         
+
           return true
         }
 
@@ -136,7 +136,7 @@
           }
         }
         ```
-        
+
 
     - *Swift 4.2*
 

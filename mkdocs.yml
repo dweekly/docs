@@ -224,6 +224,7 @@ nav:
     - Overview: partner-management/branch-integrated-partners.md
     - Settings:
       - Configuring Postbacks: partner-management/configuring-postbacks.md
+      - Configuring Events for Self-Attributing Networks: partner-management/configuring-events-for-self-attributing-networks.md
     - Universal Ads Partners:
       - Ad Partners List: deep-linked-ads/ad-networks-list.md
       - Adding Custom Partners: deep-linked-ads/adding-custom-partners.md
@@ -540,6 +541,7 @@ nav:
       - Go Mobile: deep-linked-ads/gomobile-mobile-tracking.md
       - Go-Rilla Digital Advertising LTD: deep-linked-ads/go-rilla-digital-advertising-mobile-tracking.md
       - GoClick Digital: deep-linked-ads/goclick-digital-mobile-tracking.md
+      - Google Ad Manager: deep-linked-ads/google-ad-manager-mobile-tracking.md
       - Google Ads:
         - Google Ads Overview: deep-linked-ads/google-ads-overview.md
         - Enabling the Integration: deep-linked-ads/google-ads-setup.md
@@ -573,7 +575,7 @@ nav:
       - Ignite OPM: deep-linked-ads/ignite-opm-mobile-tracking.md
       - iHuntz Media: deep-linked-ads/ihuntz-media-mobile-tracking.md
       - Imgur: deep-linked-ads/imgur-mobile-tracking.md
-      - Impact Radius : deep-linked-ads/impact-radius-mobile-tracking.md
+      - Impact: deep-linked-ads/impact-mobile-tracking.md
       - Impelus: deep-linked-ads/impelus-mobile-tracking.md
       - Indus OS: deep-linked-ads/indus-os-mobile-tracking.md
       - Inflecto Media: deep-linked-ads/inflecto-media-mobile-tracking.md
@@ -730,7 +732,7 @@ nav:
       - Opera: deep-linked-ads/opera-mobile-tracking.md
       - Opera Event: deep-linked-ads/opera-event-mobile-tracking.md
       - Opicle Technologies: deep-linked-ads/opicle-technologies-mobile-tracking.md
-      - Oplytic Media: deep-linked-ads/oplytic-mobile-tracking.md
+      - Oplytic Media: deep-linked-ads/oplytic-media-mobile-tracking.md
       - Optimal Fusion : deep-linked-ads/optimal-fusion-mobile-tracking.md
       - Optimidea: deep-linked-ads/optimidea-mobile-tracking.md
       - Optimise Media: deep-linked-ads/optimise-media-mobile-tracking.md
@@ -939,8 +941,7 @@ nav:
       - Betaout: emails/betaout.md
       - Bluecore: emails/bluecore.md
       - Blueshift: emails/blueshift.md
-      - Braze (via SendGrid): emails/braze.md
-      - Braze (via Mailjet): emails/braze-mailjet.md
+      - Braze: emails/braze.md
       - Campaign Monitor: emails/campaign-monitor.md
       - Cheetah Digital Marketing Suite: emails/cheetah-digital-marketing-suite.md
       - CheetahMail: emails/cheetahmail.md

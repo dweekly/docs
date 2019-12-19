@@ -1,4 +1,4 @@
-## Granting Ad Partner Access
+#### Granting Ad Partner Access
 
 To grant an Ad Partner access to your App's data, you need to add them as an `agency` in your Branch account.  Doing so give's said ad partner access to your app; based on the permissions you define.
 
@@ -19,7 +19,7 @@ To grant an Ad Partner access to your App's data, you need to add them as an `ag
 !!! warning "Granting agencies Sensitive Data & App-Level Settings permissions"
 	Agencies with Sensitive Data & App-Level Settings permissions to an Org or App will have access to that Org/App's API keys, which can be used to access Branch's [HTTP](https://docs.branch.io/apps/deep-linking-api/) and [Data Export](https://docs.branch.io/exports/api-v3/#__search) APIs. Agency data filters (e.g. Only Show Agency-tagged Data) will not apply to data accessed via the Daily Export API, so we recommend against granting agencies these permissions and providing them with API keys.
 
-### Defining Permissions
+#### Defining Permissions
 
 Each access level - as defined above - comes with predefined permissions which you can edit if you choose.
 
@@ -32,7 +32,7 @@ Each access level - as defined above - comes with predefined permissions which y
 - **Aggregate Data** - Summary data that contains no granular data.
 - **Sensitive Data** - Data that can contain user-identifying, payment-related, or secret information.
 
-### Additional Data Filters
+#### Additional Data Filters
 
 During the process of granting an agency access to your Branch account, you can also impose limitations around what data is available to the agency at any given time.
 

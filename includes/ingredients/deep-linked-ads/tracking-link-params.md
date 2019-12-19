@@ -1,5 +1,3 @@
-### Tracking Link Parameters
-
 Branch Tracking links allow tracking many parameters about the performance of your ad campaigns and individual ads. Additional parameters for advanced analysis may be added to the link after the '?' or '&' character, to trace extra information.
 
 !!! tip "Example Tracking Link with Additional Parameters"
