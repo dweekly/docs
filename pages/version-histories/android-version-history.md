@@ -1,3 +1,9 @@
+### v4.2.1
+
+**( 19 Dec 2019 )**
+
+- Make attribution window optional for LATD requests.
+
 ### v4.2.0
 
 **( 13 Nov 2019 )**
