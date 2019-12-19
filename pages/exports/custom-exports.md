@@ -5,11 +5,13 @@
 
 The Branch Custom Exports find and queue log records that match your search criteria for export. You can do so either via the **Custom Exports** section in your Branch dashboard OR via API.
 
-Custom exports endpoints are limited to a maximum of 2 million records each and can query up to 120 days prior to the date of export. If more records are required, please make multiple requests with smaller time intervals to pull the necessary data in "batches".
+Custom exports endpoints are limited to a maximum of 2 million records each and can query up to 120 days prior to the date of export.
+
+If more records are required, please make multiple requests with smaller time intervals to pull the necessary data in "batches". In some cases, Branch can increase the number of records above 2 million. Please contact [Support](mailto:support@branch.io) to request an increase.
 
 ## Authentication
 
-Calls to the Custom Export API require an _api_key_ query string parameter to be passed with each request. API Keys are generated on a per-user basis and are permanent.
+Calls to the Custom Export API require an _api_key_ parameter to be passed with each request. API Keys are generated on a per-user basis and are permanent.
 
 Learn how to [retrieve your API key (a.k.a. `Access Token`)](/dashboard/organization-view/#managing-your-user-profile)
 
@@ -464,8 +466,6 @@ To request an export:
 
 ![image](/_assets/img/pages/exports/custom-exports.gif)
 
-Upon request, you will receive a confirmation email verifying the details of your request. Once we finish processing your export, you will receive another email that includes as CSV attachment. Please keep in mind larger exports require more processing time.
-
 You can also view any requested export in the **Custom Exports Created** table which includes:
 
 - Date Created
@@ -626,7 +626,7 @@ Optional parameter; results are returned in UTC if not provided.
 
 			curl -X POST 'https://api2.branch.io/v2/logs?organization_id=732662944269095814'
 			-H "Content-Type: application/json"
-			-H "Access-Token: REMOVED"  
+			-H "Access-Token: YOUR_ACCESS_TOKEN_HERE"  
 			-d '{"report_type": "eo_open",
 					"limit": 100,
 					"fields": ["app_id","organization_id"],
@@ -637,7 +637,7 @@ Optional parameter; results are returned in UTC if not provided.
 
 - *TUNE REQUEST*
 
-			https://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/installs?api_key=REMOVED&start_date=2019-01-14T00:00:00&end_date=2019-01-15T00:00:00&timezone=UTC&fields=site.name,site.id,device_ip&limit=100&response_format=csv
+			https://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/installs?api_key=YOUR_ACCESS_TOKEN_HERE&start_date=2019-01-14T00:00:00&end_date=2019-01-15T00:00:00&timezone=UTC&fields=site.name,site.id,device_ip&limit=100&response_format=csv
 
 #### Sample Export Response
 
@@ -647,7 +647,7 @@ Optional parameter; results are returned in UTC if not provided.
 
 - *TUNE RESPONSE*
 
-			{"handle":"0818e641-cd5c-4498-8a17-77152689bb94","export_job_status_url":"http://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=REMOVED","branch_url":"http://tlnk.branch.io/v3/logs/advertisers/ADVERTISER_ID/exports/installs?start_date=2019-01-14T00%3A00%3A00%2B00%3A00&end_date=2019-01-15T00%3A00%3A00%2B00%3A00&fields=site.name%2Csite.id%2Cdevice_ip&filter_cthulhu=%5B%22in%22%2C%20%22advertiser_id%22%2C%20ADVERTISER_ID%5D&response_format=csv&timezone=UTC&limit=100&api_key=REMOVED"}
+			{"handle":"0818e641-cd5c-4498-8a17-77152689bb94","export_job_status_url":"http://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=YOUR_ACCESS_TOKEN_HERE","branch_url":"http://tlnk.branch.io/v3/logs/advertisers/ADVERTISER_ID/exports/installs?start_date=2019-01-14T00%3A00%3A00%2B00%3A00&end_date=2019-01-15T00%3A00%3A00%2B00%3A00&fields=site.name%2Csite.id%2Cdevice_ip&filter_cthulhu=%5B%22in%22%2C%20%22advertiser_id%22%2C%20ADVERTISER_ID%5D&response_format=csv&timezone=UTC&limit=100&api_key=YOUR_ACCESS_TOKEN_HERE"}
 
 ### Building the Download Export Request
 
@@ -693,18 +693,18 @@ Finds and exports requested queue (by handle) and provides URL location for down
 - *BRANCH REQUEST*
 
 			curl 'http://api2.branch.io/v2/logs/1612dbb3-85ef-49f8-b1c5-5818c163600c?organization_id=732662944269095814'
-			-H "Access-Token: REMOVED"
+			-H "Access-Token: YOUR_ACCESS_TOKEN_HERE"
 
 - *TUNE REQUEST*
 
-			http://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=REMOVED
+			http://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=YOUR_ACCESS_TOKEN_HERE
 
 #### Sample Download Export Response
 
 - *BRANCH RESPONSE*
 
-			{"code":200,"lines_exported":2000000,"status":"complete","response_url":"https://branch-exports-web.s3.amazonaws.com/732662944269095814-eo_open-2019-12-10-2019-12-10-1612dbb3-85ef-49f8-b1c5-5818c163600c-bUlN2lwyTE10qIVH.csv?Signature=REMOVED&AWSAccessKeyId=REMOVED&Expires=1577305615"}
+			{"code":200,"lines_exported":2000000,"status":"complete","response_url":"https://branch-exports-web.s3.amazonaws.com/732662944269095814-eo_open-2019-12-10-2019-12-10-1612dbb3-85ef-49f8-b1c5-5818c163600c-bUlN2lwyTE10qIVH.csv?Signature=YOUR_ACCESS_TOKEN_HERE&AWSAccessKeyId=YOUR_ACCESS_TOKEN_HERE&Expires=1577305615"}
 
 - *TUNE RESPONSE*
 
-			{"report_schedule_id": null, "lines_exported": null, "context": "", "url": "https://branch-exports-web.s3.amazonaws.com/ADVERTISER_ID-installs-2019-01-14-2019-01-15-0818e641-cd5c-4498-8a17-77152689bb94-wxGQxyHo0Djw2ktt.csv?Signature=5XN9MRMftyQ1XafNSTW4STMpT9U%3D&AWSAccessKeyId=AKIAI7A6NRHGMRDK2LIQ&Expires=1548295211", "percent_complete": 100, "status": "complete", "branch_url": "http://tlnk.branch.io/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=REMOVED"}
+			{"report_schedule_id": null, "lines_exported": null, "context": "", "url": "https://branch-exports-web.s3.amazonaws.com/ADVERTISER_ID-installs-2019-01-14-2019-01-15-0818e641-cd5c-4498-8a17-77152689bb94-wxGQxyHo0Djw2ktt.csv?Signature=5XN9MRMftyQ1XafNSTW4STMpT9U%3D&AWSAccessKeyId=AKIAI7A6NRHGMRDK2LIQ&Expires=1548295211", "percent_complete": 100, "status": "complete", "branch_url": "http://tlnk.branch.io/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=YOUR_ACCESS_TOKEN_HERE"}
