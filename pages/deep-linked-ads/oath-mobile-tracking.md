@@ -17,50 +17,6 @@ Oath Ad Platforms has two main products/channels relevant to mobile advertising 
 
 Branch currently attributes only Gemini inventory using Branch links, and is able to send all event data to Oath which can attribute both Gemini and DSP inventory.
 
-## Data Mapping between Branch and Oath
-
-### Event Names
-
-|Branch Event Name(s)|Oath Event Name|Event category|
-|--- |--- |--- |
-|INSTALL|n/a - specific endpoint|n/a - specific endpoint|
-|PURCHASE|Purchased|Purchase|
-|INITIATE_PURCHASE|InitiatedCheckout|Initiate Checkout|
-|ADD_TO_CART|AddedToCart|Add to Cart|
-|VIEW_ITEM|ViewedContent|View Content|
-|ADD_PAYMENT_INFO|AddedPaymentInfo|Add Payment Info|
-|COMPLETE_REGISTRATION|CompletedRegistration|Others|
-|SEARCH|Searched|Others|
-|ACHIEVE_LEVEL|AchievedLevel|Others|
-|OPEN, REINSTALL|ActivatedApp|Others|
-|COMPLETE_TUTORIAL|CompletedTutorial|Others|
-|ADD_TO_WISHLIST|AddedToWishlist|Add To Wishlist|
-|UNLOCK_ACHIEVEMENT|UnlockedAchievement|Others|
-|SHARE|n/a|Others|
-|SPEND_CREDITS|SpentCredits|Others|
-|RATE|Rated|Others|
-|SUBSCRIBE|SignUp|Sign Up|
-|N/A -- Custom -- to document|Lead|Others|
-
-### Campaign/Ad Data
-
-|Oath Attribution API|Branch Analytics Tag|Example Value|Notes|
-|--- |--- |--- |--- |
-|n/a|$3p|“a_oath”||
-|n/a|~advertising_partner_name|“Oath”||
-|engagement_time|last_attributed_touch_timestamp|1455675372963||
-|campaign_name|~campaign|Light Bright Launch||
-|campaign_id|~campaign_id|15292426||
-|adgroup_name|~ad_set_name|“Example name”||
-|adgroup_id|~ad_set_id|235465654654||
-|creative_name|~ad_name & ~creative_name|Creative name||
-|creative_id|~ad_id & ~creative_id|123456||
-|demand_platform_id|~channel|1|Note that 1 is for Native Ad Platform (O&O), 2 is for Verizon Media DSP.|
-|campaign_type|~tags|App Install||
-|network_id|~network|456456|ID to identify Native Ad Platform to 3P Data Providers. Least important of the IDs as it doesn’t necessarily change.|
-|site_id|~secondary_publisher|dhjs8723tgajshd23a||
-|event_type|last_attributed_touch_type|CLICK or IMPRESSION|For Oath this can be 100: Impression, 200: Click or 300: App Install. NOTE: We will not store or attribute to 300 response. It is only for in-app events that have had an install in 6 months of click and click timestamp is not supported.|
-
 ## Setup
 
 {! ingredients/deep-linked-ads/integrate-branch-sdk.md !}
