@@ -11,7 +11,7 @@ If more records are required, please make multiple requests with smaller time in
 
 ## Authentication
 
-Calls to the Custom Export API require an _api_key_ parameter to be passed with each request. API Keys are generated on a per-user basis and are permanent.
+Calls to the Custom Export API require an **api_key** or **access token** parameter to be passed with each request. API Keys are generated on a per-user basis and are permanent.
 
 Learn how to [retrieve your API key (a.k.a. `Access Token`)](/dashboard/organization-view/#managing-your-user-profile)
 
@@ -64,34 +64,35 @@ To provide an agency team member with access to the Custom Export API:
 
 - *BRANCH TOPICS*
 
-			- Blocked Clicks
-			- Blocked Commerce Events
-			- Blocked Content Events
-			- Blocked CTA Views
-			- Blocked Custom Events
-			- Blocked Impressions
-			- Blocked Installs
-			- Blocked Opens
-			- Blocked Pageviews
-			- Blocked Reinstalls
-			- Blocked SMS Sent
-			- Blocked User Lifecycle Events
-			- Blocked Web Session Starts
-			- Clicks
-			- Commerce Events
-			- Content Events
-			- CTA Views
-			- Custom Events
-			- Impressions
-			- Installs
-			- Opens
-			- Pageviews
-			- Postback Records
-			- Reinstalls
-			- SMS Sent
-			- User Lifecycle Events
-			- Web Session Starts
-			- Web To App Auto Redirects
+			- **Nice Name / Branch EO Topic Name**	
+			- Blocked Clicks / eo_click_blocked
+			- Blocked Commerce Events / eo_commerce_event_blocked
+			- Blocked Content Events / eo_content_event_blocked
+			- Blocked CTA Views / eo_branch_cta_view_blocked
+			- Blocked Custom Events / eo_custom_event_blocked
+			- Blocked Impressions / eo_impression_blocked
+			- Blocked Installs / eo_install_blocked
+			- Blocked Opens / eo_open_blocked
+			- Blocked Pageviews / eo_pageview_blocked
+			- Blocked Reinstalls / eo_reinstall_blocked
+			- Blocked SMS Sent / eo_sms_sent_blocked
+			- Blocked User Lifecycle Events / eo_user_lifecycle_event_blocked
+			- Blocked Web Session Starts / eo_web_session_start_blocked
+			- Clicks / eo_click
+			- Commerce Events / eo_commerce_event
+			- Content Events / eo_content_event
+			- CTA Views / eo_branch_cta_view
+			- Custom Events / eo_custom_event
+			- Impressions / eo_impression
+			- Installs / eo_install
+			- Opens / eo_open
+			- Pageviews / eo_pageview
+			- Postback Records / webhook2
+			- Reinstalls / eo_reinstall
+			- SMS Sent / eo_sms_sent
+			- User Lifecycle Events / eo_user_lifecycle_event
+			- Web Session Starts / eo_web_session_start
+			- Web To App Auto Redirects / eo_web_to_app_auto_redirect
 
 - *TUNE TOPICS*
 
@@ -541,11 +542,11 @@ Find and queue all records that match search criteria for export; returns a “h
    </td>
   </tr>
   <tr>
-   <td>api_key
+   <td>api_key / access token
    </td>
    <td>String
    </td>
-   <td>Your API Key; <strong>REQUIRED</strong>
+   <td>Your API Key / Access Token; <strong>REQUIRED</strong>
    </td>
   </tr>
 	<tr>
@@ -584,6 +585,14 @@ Dates without offsets (i.e. a timezone) default to the value provided for the ti
    <td><a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">Timezone for results. Accepts tz database strings like ‘America/Los_Angeles’. </a>
 <p>
 Optional parameter; results are returned in UTC if not provided.
+   </td>
+  </tr>
+  <tr>
+   <td>filter
+   </td>
+   <td>Filter
+   </td>
+   <td><strong>BRANCH CALLS ONLY</strong>; Filter by fields and boolean operators against fields of the LogInstalls model; must be URI encoded and JSON parsed. Example: <code>&filter_cthulhu=%5B%22and%22%2C%5B%22eq%22%2C%22mat_id%22%2C%223bc15517-92d5-4b7f-9837-e9a30d6fb9b8%22%5D%2C%5B%22eq%22%2C%22site_event_id%22%2C1844998705%5D%5D</code>
    </td>
   </tr>
   <tr>
@@ -671,11 +680,11 @@ Finds and exports requested queue (by handle) and provides URL location for down
    </td>
   </tr>
   <tr>
-   <td>api_key
+   <td>api_key / acess token
    </td>
    <td>String
    </td>
-   <td>Your API Key; <strong>REQUIRED</strong>
+   <td>Your API Key / Access Token; <strong>REQUIRED</strong>
    </td>
   </tr>
   <tr>
