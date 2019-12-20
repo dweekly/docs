@@ -39,6 +39,7 @@ Conversion | Product Catalogue Sales | Web or App | **[link](/deep-linked-ads/fa
 | CustomizeProduct                | Custom                |
 | Donate                          | Custom                |
 | fb_mobile_achievement_unlocked  | UNLOCK_ACHIEVEMENT    |
+| MOBILE_APP_INSTALL              | INSTALL               |
 | fb_mobile_activate_app          | OPEN                  |
 | fb_mobile_add_payment_info      | ADD_PAYMENT_INFO      |
 | fb_mobile_add_to_cart           | ADD_TO_CART           |
