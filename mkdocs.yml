@@ -178,7 +178,6 @@ nav:
       - Retrieving Branch's Cross-Platform ID: apps/retrieving-branchs-cross-platform-id.md
       - Retrieving Branch's Last Attributed Touch Data: apps/retrieving-last-attributed-touch-data.md
       - SDK Privacy Controls: apps/sdk-privacy-controls.md
-      - Supporting Chinese Ad Attribution: apps/supporting-chinese-ad-attribution.md
       - Tracking Commerce, Content, Lifecycle and Custom Events: apps/v2event.md
     - Version Histories:
       - Android Version History: version-histories/android-version-history.md
