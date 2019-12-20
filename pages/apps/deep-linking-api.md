@@ -122,10 +122,10 @@
 
         ```bash
         curl -X DELETE \
-        'https://api2.branch.io/v1/url?url=https://branchster.app.link/1H5KaitBi2' \
+        'https://api2.branch.io/v1/url?url=https://example.app.link/1H5KaitBi2' \
           -d '{
-          "branch_key": "key_live_hkDytPACtipny3N9XmnbZlapBDdj4WIL",
-          "branch_secret": "secret_live_8CcBNYaLwvLM398sjTXOdptVf8EA57YP"
+          "branch_key": "REMOVED",
+          "branch_secret": "REMOVED"
         }'
         ```
 
@@ -133,7 +133,7 @@
 
         ```js
         {
-          "url": "https://branchster.app.link/1H5KaitBi2",
+          "url": "https://example.app.link/1H5KaitBi2",
           "deleted": true
         }
         ```
