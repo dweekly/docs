@@ -71,6 +71,22 @@ If you track commerce events without a currency, we assume they are USD. If you 
 
 This allows you to easily visualize revenue on the Dashboard, across many countries and currencies, because all units are USD. The exchange rate is pulled from [openexchangerates.org](https://openexchangerates.org) regularly, and is generally within an hour of the realtime exchange rate. If you view raw Branch events via either Webhooks or Exports, you can see the exchange rate used.
 
+### Endpoint
+
+```
+POST /v2/event/standard
+Content-Type: application/json
+```
+
+### Parameters
+
+Note about required identifiers. You must send up (in user_data):
+
+developer_identity OR
+browser_fingerprint_id OR
+os=iOS AND (idfa OR idfv) OR
+os=Android AND (android_id or aaid)
+
 ### iOS
 
 - *Swift*
@@ -396,6 +412,22 @@ See [full API docs here](https://github.com/BranchMetrics/branch-deep-linking-pu
 
 Content events are events that occur when a user engages with your in-app content. For example, if you have in-app articles, you would want to track events related to when users search, view content, rate the content, and share. This can apply to a wide variety of in-app content, such as blog posts, music, video, pictures, and e-commerce catalogue items.
 
+### Endpoint
+
+```
+POST /v2/event/standard
+Content-Type: application/json
+```
+
+### Parameters
+
+Note about required identifiers. You must send up (in user_data):
+
+developer_identity OR
+browser_fingerprint_id OR
+os=iOS AND (idfa OR idfv) OR
+os=Android AND (android_id or aaid)
+
 ### iOS
 
 - *Swift*
@@ -609,6 +641,22 @@ See [full API docs here](https://github.com/BranchMetrics/branch-deep-linking-pu
 
 Lifecycle events can be described as events a user takes in your app to continue progressing. These events can apply to game apps, as well as non game apps, for when a user completes a user profile, registration or tutorial.
 
+### Endpoint
+
+```
+POST /v2/event/standard
+Content-Type: application/json
+```
+
+### Parameters
+
+Note about required identifiers. You must send up (in user_data):
+
+developer_identity OR
+browser_fingerprint_id OR
+os=iOS AND (idfa OR idfv) OR
+os=Android AND (android_id or aaid)
+
 ### iOS
 
 - *Swift*
@@ -708,6 +756,22 @@ If you want to track an event that isn't a predefined event, simply do the follo
     The name `custom event` is reserved by Branch. Please ensure you give your custom event an actual name.
 
     We strongly recommend using custom event names that contain no more than 40 characters, contain only letters, numbers, hyphens, spaces and underscores, and do not start with a hyphen. Facebook will not accept events that violate these rules, and if you enable the Facebook integration, Branch may sanitize your event names to pass validation.
+
+### Endpoint
+
+```
+POST /v2/event/custom
+Content-Type: application/json
+```
+
+### Parameters
+
+Note about required identifiers. You must send up (in user_data):
+
+developer_identity OR
+browser_fingerprint_id OR
+os=iOS AND (idfa OR idfv) OR
+os=Android AND (android_id or aaid)
 
 ### iOS
 
