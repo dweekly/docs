@@ -174,11 +174,11 @@ nav:
       - Apple App Store: apps/ios-launch.md
       - Google Play: apps/android-launch.md
     - Advanced Configuration:
-      - Tracking Commerce, Content, Lifecycle and Custom Events: apps/v2event.md
-      - SDK Privacy Controls: apps/sdk-privacy-controls.md
       - Logging Branch Events Using Google Tag Manager: apps/logging-branch-events-using-google-tag-manager.md
       - Retrieving Branch's Cross-Platform ID: apps/retrieving-branchs-cross-platform-id.md
       - Retrieving Branch's Last Attributed Touch Data: apps/retrieving-last-attributed-touch-data.md
+      - SDK Privacy Controls: apps/sdk-privacy-controls.md
+      - Tracking Commerce, Content, Lifecycle and Custom Events: apps/v2event.md
     - Version Histories:
       - Android Version History: version-histories/android-version-history.md
       - iOS Version History: version-histories/ios-version-history.md
@@ -1029,6 +1029,7 @@ nav:
       - myTracker: integrations/mytracker.md
       - Netcore Smartech: integrations/netcore-smartech.md
       - Neustar: integrations/neustar.md
+      - NotifyVisitors: integrations/notifyvisitors.md
       - Scalarr: integrations/scalarr.md
       - SearchAdsHQ: integrations/searchadshq.md
       - Segment (export): integrations/segment-export.md

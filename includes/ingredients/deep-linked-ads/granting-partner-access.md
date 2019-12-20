@@ -1,6 +1,6 @@
 #### Granting Ad Partner Access
 
-To grant an Ad Partner access to your App's data, you need to add them as an `agency` in your Branch account.  Doing so give's said ad partner access to your app; based on the permissions you define.
+To grant an Ad Partner access to your App's data, you need to add them as an `agency` in your Branch account.  Doing so gives said ad partner access to your app; based on the permissions you define.
 
 1. Go to **Account Settings** and click on the **Agencies** tab.
 1. On the **Agencies** tab, click the **Add New Agency** button.

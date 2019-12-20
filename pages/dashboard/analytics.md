@@ -50,12 +50,6 @@ title: Dashboard analytics
         - You must [identify your users](#dialog-code?ios=track-users&android=track-users&adobe=track-users&cordova=track-users&mparticleAndroid=track-users&mparticleIos=track-users&titanium=track-users&reactNative=track-users&unity=track-users&xamarin=track-users) in order for the `User ID` column to be populated. The `Branch ID` refers to the internal Branch ID associated with that user. The `Developer ID` is the value you assign when you set the identity
         - You must [setting identities](#dialog-code?ios=track-users&android=track-users&adobe=track-users&cordova=track-users&mparticleAndroid=track-users&mparticleIos=track-users&titanium=track-users&reactNative=track-users&unity=track-users&xamarin=track-users) within your app
 
-        - Measuring influencers
-        The [Analytics](https://dashboard.branch.io/referrals/analytics) page on the dashboard will show you who is driving the most new signups.
-
-            ![image](/_assets/img/pages/dashboard/referrals.png)
-
-
 ## Dashboard pages
 
 - ### Summary
@@ -92,42 +86,6 @@ title: Dashboard analytics
     - [Dashboard Organic Search](https://dashboard.branch.io/search) shows you how your deep links and content are being scraped by search engines
     - Use [app indexing](/organic-search/firebase/) within your app to enable
     - Validate with the [App indexing validator](https://branch.io/resources/app-indexing/)
-
-- ### Referrals
-
-    - [Dashboard Referrals](https://dashboard.branch.io/referrals/analytics) allows you to track referrals between users
-
-    - The dashboard updates every 4 hours
-
-    - ##### Implementing
-
-        - Referrer has their [identity set](#dialog-code?ios=track-users&android=track-users&adobe=track-users&cordova=track-users&mparticleAndroid=track-users&mparticleIos=track-users&titanium=track-users&reactNative=track-users&unity=track-users&xamarin=track-users)
-        - Referrer `creates` a deep link
-        - Referrer `shares` the deep link
-        - Referee `clicks` on the deep link
-        - Referee has their [identity set](#dialog-code?ios=track-users&android=track-users&adobe=track-users&cordova=track-users&mparticleAndroid=track-users&mparticleIos=track-users&titanium=track-users&reactNative=track-users&unity=track-users&xamarin=track-users)
-        - Referee triggers a [custom event](#dialog-code?ios=track-events&android=track-events&adobe=track-events&cordova=track-events&mparticleAndroid=track-events&mparticleIos=track-events&titanium=track-events&reactNative=track-events&unity=track-events&xamarin=track-events)
-        - The custom event triggers a [Reward rule](https://dashboard.branch.io/referrals/rules) to assign referral points
-
-    - ##### Troubleshooting
-
-        - The Referrer and Referee are connected by the `deep link`
-        - Referring points happen whenever the `custom event` occurs in the app which triggers the `referral rule`
-        - It is best to assign referring points on a `custom event` rather than Branch events (install and open) to prevent referral abuse
-        - Make sure you set the identity of both the referrer and referee to prevent anonymous users from showing up in your [Referral analytics](https://dashboard.branch.io/referrals/analytics)
-        - Referrals are based on a `session`, not a device. If a user closes and opens the app before triggering the referral rule, then the referral points will not be delivered
-        - If your referrals are based on custom install event, then you will need to uninstall the app and [simulate a Branch install](#dialog-code) to test referrals
-        - A [Reward rule](https://dashboard.branch.io/referrals/rules) with `All acting users` will trigger credits even if a referral did not happen. To only reward credits on a referral, use `Referring users` or `Referred acting users`
-
-    - ##### Tracking
-        - Use the [Referral analytics](https://dashboard.branch.io/referrals/analytics)
-        - Use the [LiveView export](https://dashboard.branch.io/liveview/link_clicks) to get data as a `.csv`
-        - Create a [Webhook](/exports/webhooks/) to send data to your server
-
-    - ##### Querying
-        - Query the events export the custom referral event that triggered the referral rule
-        - The `developer identity` of this event is your referee
-        - The `session referring developer identity` is your referrer
 
 - ### Quick Links
     - [Dashboard Quick Links](https://dashboard.branch.io/quick-links) allows you to quickly create deep links and track their analytics in the dashboard
@@ -176,4 +134,3 @@ title: Dashboard analytics
 - ### Account settings
     - [Dashboard Account Setting](https://dashboard.branch.io/account-settings/app) is where you find your `Branch Keys`, `User information`, `Billing`, and `Team`
     - Find more information in [Configure your dashboard](/dashboard/integrate/#advance-integration)
-

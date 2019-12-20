@@ -76,8 +76,6 @@ Once you've enabled an integration it's time to create a tracking link.
 
 {! ingredients/deep-linked-ads/all-events-toggle.md !}
 
-{! ingredients/deep-linked-ads/whitelist-ip.md !}
-
 {! ingredients/deep-linked-ads/edit-postbacks.md !}
 
 {! ingredients/deep-linked-ads/tracking-link-params.md !}

@@ -751,6 +751,7 @@
         | deepview_desktop | `string` | The current deepview selected for the desktop platform
         | deepview_ios | `string` | The current deepview selected for the iOS platform
         | deepview_android | `string` | The current deepview selected for the Android platform
+        | organization_id | `string` | The Branch ID assigned to your organization
 
 - ### App read
 

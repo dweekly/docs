@@ -1,11 +1,8 @@
-# Query API
-
-!!! tip "Getting started"
-    For newcomers to this API, we strongly suggest you check out our [Query Recipe Book](/exports/query-recipe-book/). It has screenshots of Dashboard visualizations, accompanied by what queries you need to make to pull the same data. It's a quick way to get up and running with this API.
+## Overview
 
 The Query API is an HTTP API that can be used for programmatically querying pre-aggregated analytics. It can be used to fetch the same data displayed in your Branch dashboard, without having to access the Dashboard itself.
 
-!!! warning "Self Attributing Network Data Not Available"
+!!! warning "Self Attributing Network Cost Data Not Available"
     The Query API does not return cost click/impression data associated with SANs; i.e. Google Ads, Snap, Twitter, Facebook Ads and Apple Search Ads.
 
 An individual query is constructed from three types of parameters:
@@ -14,35 +11,8 @@ An individual query is constructed from three types of parameters:
 - Data selection keys which define which events are eligible to be counted in the results (eg, filters)
 - Result format specifiers that define which results are included in the HTTP response, and how the result is returned (eg, sorting)
 
-An example query could look like:
-```js
-{
-  // Authentication
-  "branch_key":"<YOUR_BRANCH_KEY>",
-  "branch_secret":"<YOUR_BRANCH_SECRET>",
-  // Data selection
-  "start_date": "2017-12-12",
-  "end_date": "2017-12-18",
-  "data_source": "eo_click",
-  "dimensions": [
-    "last_attributed_touch_data_tilde_feature",
-    "last_attributed_touch_data_tilde_channel",
-    "last_attributed_touch_data_tilde_campaign",
-    "last_attributed_touch_data_plus_current_feature"
-  ],
-  "filters": {
-    "!last_attributed_touch_data_plus_current_feature": [
-      "MOBILE_DEEPVIEWS",
-      "DESKTOP_DEEPVIEWS"
-    ]
-  },
-  // Result format
-  "ordered": "descending",
-  "ordered_by": "unique_count",
-  "aggregation": "unique_count",
-  "zero_fill": true
-}
-```
+!!! tip "Getting started"
+    For newcomers to this API, we strongly suggest you check out our [Query Recipe Book](/exports/query-recipe-book/). It has screenshots of Dashboard visualizations, accompanied by what queries you need to make to pull the same data. It's a quick way to get up and running with this API.
 
 ## Endpoint Definition
 ```
@@ -126,7 +96,8 @@ Branch data sources
   "eo_commerce_event",
   "eo_custom_event",
   "eo_content_event",
-  "eo_user_lifecycle_event"
+  "eo_user_lifecycle_event",
+  "cost"
 ]
 ```
 
@@ -150,7 +121,8 @@ _possible values_:
 [
   "unique_count",
   "total_count",
-  "revenue"
+  "revenue",
+  "cost"
 ]
 ```
 
@@ -386,8 +358,9 @@ _format_: string
 
 **Note:** The query id should be treated as ephemeral, and should only be used when retrieving pages of an existing query where the pagination URLs already have query_id set as a query parameter. You should not attempt to change the id between requests or include a query id with a different query request.
 
-
 ## Example Usage
+
+### Installs Per Day Per OS
 
 Basic query for pulling installs per day, split by OS of the device the user installed on, limited to 5 results:
 
@@ -453,6 +426,8 @@ Example results:
   }
 }
 ```
+
+### Unique Click Counts Per Channel/Campaign/Feature
 
 More complex query for pulling unique click counts, split by the last touch channel, campaign, feature and the +via_current_features values.
 
