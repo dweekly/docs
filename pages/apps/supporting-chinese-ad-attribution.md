@@ -14,10 +14,45 @@ To this end, Branch built an Android plugin specifically to capture the IMEI (In
 
 ## Enabling China Features
 
-
-
-## Supported Ad Networks
-
-
+Please contact your Account Manager to enable this feature.  Once enabled, you will need to accept Terms of Service before being able to gain access to the Github repo containing the Android plugin.
 
 ## SDK Implementation
+
+!!! warning "GITHUB REPO ACCESS RESTRICTED"
+	Before you can implement the Branch Android IMEI module, you must contact your account manager and accept the Terms of Service for using this feature.
+
+The Android IMEI module is used by the main [Branch Android SDK](/apps/android) to inject IMEI data of the device in the requests.
+
+The module checks whether Google Play Services is available or not to the app. If yes, then it will not fetch the IMEI. Otherwise, it will pass the IMEI in the requests.
+
+1. To build the `.jar` file, run the task `makeJar`.
+2. To read the IMEI of the device, you need to add the following permission in the Manifest file:
+```
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+```
+3. Download the `.aar` file from the main dir and use with the main Branch SDK as follows.
+
+4. Copy the `.aar` file in your app root directory -> libs -> Branch-IMEI-release-latestVersion.aar (create libs if needed)
+
+5. Add the support for libs inside your project/build.gradle:
+```
+allprojects {
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+```
+6. Add the support for the Inside your app/build.gradle.
+```
+implementation (name:'Branch-IMEI-release-latestVersion', ext:'aar')
+```
+
+7. Call the following in your Application Class -> onCreate(): import BranchDeviceImei
+```
+import io.branch.referral.deviceimei.BranchDeviceImei;
+```
+```
+Branch.getInstance().addModule(BranchDeviceImei.get(this));
+```
