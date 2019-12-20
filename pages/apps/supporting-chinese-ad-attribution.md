@@ -3,14 +3,14 @@
 
 ## Overview
 
-The mobile app market in China is unique in that there are hundreds of app stores with Google being a minor one. This dictates the necessity for a unique approach to supporting attribution for apps downloaded in China.
+The mobile app market in China is unique in that there are hundreds of app stores with Google being a minor one. This requires a unique approach to supporting attribution for apps downloaded in China.
 
 As attribution providers mainly rely on Google's advertising identifier (GAID) for attribution - which is not available via any other app store in China - a different device identifier must be used to accurately attribute installs in the Chinese mobile app market.
 
-To this end, Branch built an Android plugin specifically to capture the IMEI (International Mobile Equipment Identity) of any Android device.
+To this end, Branch built an Android plugin specifically to capture the IMEI (International Mobile Equipment Identity) of Open Source Android devices.
 
 !!! warning "NOT COMPATIBLE WITH GOOGLE PLAY"
-	Using this module without supervision can cause the app to removed from Google Play store.
+	Using this module in apps that are listed on the Play Store can cause the app to removed from the store.
 
 ## Enabling China Features
 
@@ -23,7 +23,10 @@ Please contact your Account Manager to enable this feature.  Once enabled, you w
 
 The Android IMEI module is used by the main [Branch Android SDK](/apps/android) to inject IMEI data of the device in the requests.
 
-The module checks whether Google Play Services is available or not to the app. If yes, then it will not fetch the IMEI. Otherwise, it will pass the IMEI in the requests.
+The module checks whether Google Play Services is linked to the app. If yes, then it will not fetch the IMEI. Otherwise, it will pass the IMEI in the requests.
+
+!!! info "NOTE"
+	If Google Play Services is present, but not linked, the request for IMEI will result in an error.
 
 1. To build the `.jar` file, run the task `makeJar`.
 2. To read the IMEI of the device, you need to add the following permission in the Manifest file:
