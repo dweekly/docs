@@ -1029,6 +1029,7 @@ nav:
       - myTracker: integrations/mytracker.md
       - Netcore Smartech: integrations/netcore-smartech.md
       - Neustar: integrations/neustar.md
+      - NotifyVisitors: integrations/notifyvisitors.md
       - Scalarr: integrations/scalarr.md
       - SearchAdsHQ: integrations/searchadshq.md
       - Segment (export): integrations/segment-export.md
