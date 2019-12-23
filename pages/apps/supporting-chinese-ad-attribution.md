@@ -1,5 +1,8 @@
+title: Supporting Chinese Ad Attribution
+---
+
 !!! warning "DO NOT USE OUTSIDE CHINA"
-	This guide is specific to China and cannot used for the attribution of Android devices outside of China.  
+	This guide is specific to China and cannot be used for the attribution of Android devices outside of China.  
 
 ## Overview
 
@@ -10,7 +13,7 @@ As attribution providers mainly rely on Google's advertising identifier (GAID) f
 To this end, Branch built an Android plugin specifically to capture the IMEI (International Mobile Equipment Identity) of Open Source Android devices.
 
 !!! warning "NOT COMPATIBLE WITH GOOGLE PLAY"
-	Using this module in apps that are listed on the Play Store can cause the app to removed from the store.
+	Using this module in apps that are listed on the Play Store can cause the app to be removed from the store.
 
 ## Enabling China Features
 
