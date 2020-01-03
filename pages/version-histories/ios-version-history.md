@@ -1,8 +1,14 @@
+### v0.31.3
+
+**(2019-Dec-30)**
+
+- Change type of field `cpu_type`.
+
 ### v0.31.2
 
 **(2019-Dec-18)**
 
-- Change type of field cpu_type.
+- Change type of field `cpu_type`.
 
 ### v0.31.1
 
