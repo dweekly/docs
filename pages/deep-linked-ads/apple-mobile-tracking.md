@@ -34,9 +34,11 @@ To enable this check, add a `delayInitToCheckForSearchAds` call to your **AppDel
 
 ```obj-c
 Branch *branch = [Branch getInstance];
+
+// This will usually add less than 1 second on first time startup.  Up to 3.5 seconds if Apple Search Ads fails to respond.
 [branch delayInitToCheckForSearchAds];
 
-// Branch will wait longer for Apple Search Ads to respond.
+// Increases the amount of time the SDK waits for Apple Search Ads to respond. The default wait has a better than 90% success rate, however waiting longer can improve the success rate. This will increase the usual delay to about 3 seconds on first time startup.  Up to about 15 seconds if Apple Search Ads fails to respond.
 [branch useLongerWaitForAppleSearchAds];
 
 // Branch won't callback with Apple's test data, this is still sent to the server.
@@ -50,9 +52,11 @@ Branch *branch = [Branch getInstance];
 
 ```swift
 let branch = Branch.getInstance()
+
+// This will usually add less than 1 second on first time startup.  Up to 3.5 seconds if Apple Search Ads fails to respond.
 branch.delayInitToCheckForSearchAds()
 
-// Branch will wait longer for Apple Search Ads to respond.
+// Increases the amount of time the SDK waits for Apple Search Ads to respond. The default wait has a better than 90% success rate, however waiting longer can improve the success rate. This will increase the usual delay to about 3 seconds on first time startup.  Up to about 15 seconds if Apple Search Ads fails to respond.
 branch.useLongerWaitForAppleSearchAds()
 
 // Branch won't callback with Apple's test data, this is still sent to the server.
