@@ -67,12 +67,12 @@
             // required for all Android apps
             implementation 'io.branch.sdk.android:library:4.+'
 
-            // required if your app is in the Google Play Store
-            implementation 'com.google.android.gms:play-services-appindexing:9.+' // App indexing
-            implementation 'com.google.android.gms:play-services-ads:9+' // GAID matching
+            // required if your app is in the Google Play Store (tip: avoid using bundled play services libs)
+            implementation 'com.google.firebase:firebase-appindexing:19.0.0' // App indexing
+            implementation 'com.google.android.gms:play-services-ads:16+' // GAID matching
 
             // optional
-            implementation 'com.android.support:customtabs:23.3.0' // Chrome Tab matching
+            implementation 'com.android.support:customtabs:28.0.0' // Chrome Tab matching (enables 100% guaranteed matching based on cookies), androidx.browser:browser works just the same
 
 
 
@@ -117,7 +117,7 @@
 
                     <!-- Branch URI Scheme -->
                     <intent-filter>
-                        <data android:scheme="androidexample" />
+                        <data android:scheme="https" android:host="example-alternate.app.link" />     <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website.  -->
                         <action android:name="android.intent.action.VIEW" />
                         <category android:name="android.intent.category.DEFAULT" />
                         <category android:name="android.intent.category.BROWSABLE" />
@@ -136,7 +136,7 @@
                 <!-- Branch init -->
                 <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Sw" />
                 <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_hlxrWC5Zx16DkYmWu4AHiimdqugRYMr" />
-                <meta-data android:name="io.branch.sdk.TestMode" android:value="false" /> <!-- Set to true to use Branch_Test_Key -->
+                <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />     <!-- Set to true to use Branch_Test_Key (useful when simulating installs and/or switching between debug and production flavors) -->
 
                 <!-- Branch install referrer tracking (optional) -->
                 <receiver android:name="io.branch.referral.InstallListener" android:exported="true">
@@ -187,8 +187,10 @@
 
         import org.json.JSONObject;
 
+        import io.branch.indexing.BranchUniversalObject;
         import io.branch.referral.Branch;
         import io.branch.referral.BranchError;
+        import io.branch.referral.util.LinkProperties;
 
         public class LauncherActivity extends AppCompatActivity {
 
@@ -225,51 +227,35 @@
         ```java hl_lines="16 17 29 30 31 32 33 34 35 36 37 38 39 40 43 44 45"
         package com.eneff.branch.example.android
 
-        import android.content.Intent
-        import android.os.Bundle
-        import android.support.design.widget.FloatingActionButton
-        import android.support.design.widget.Snackbar
-        import android.support.v7.app.AppCompatActivity
-        import android.support.v7.widget.Toolbar
-        import android.util.Log
-        import android.view.View
-        import android.view.Menu
-        import android.view.MenuItem
-
-        import org.json.JSONObject
-
+        import io.branch.indexing.BranchUniversalObject
         import io.branch.referral.Branch
         import io.branch.referral.BranchError
-
-        class LauncherActivity : AppCompatActivity() {
-
-            override fun onCreate(savedInstanceState: Bundle?) {
-                super.onCreate(savedInstanceState)
-                setContentView(R.layout.activity_launcher)
-            }
+        import io.branch.referral.util.LinkProperties
 
             override fun onStart() {
                 super.onStart()
-
                 // Branch init
-                Branch.getInstance().initSession(object : BranchReferralInitListener {
+                Branch.getInstance().initSession(branchListener, this.intent.data, this)
+            }
+
+            override fun onNewIntent(intent: Intent) {
+                super.onNewIntent(intent)
+                this.intent = intent
+                // Branch reinit (in case Activity is already in foreground when Branch link is clicked)
+                Branch.getInstance().reInitSession(this, branchListener)
+            }
+
+            object branchListener : Branch.BranchReferralInitListener {
                     override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
                         if (error == null) {
-                            Log.e("BRANCH SDK", referringParams.toString())
+                            Log.i("BRANCH SDK", referringParams.toString())
                             // Retrieve deeplink keys from 'referringParams' and evaluate the values to determine where to route the user
                             // Check '+clicked_branch_link' before deciding whether to use your Branch routing logic
                         } else {
                             Log.e("BRANCH SDK", error.message)
                         }
                     }
-                }, this.intent.data, this)
-            }
-
-            override fun onNewIntent(intent: Intent) {
-                super.onNewIntent(intent)
-                this.intent = intent
-            }
-        }
+                }
         ```
 
     !!! warning "Only initialize Branch in the Launcher activity"
@@ -564,27 +550,28 @@
             @Override
             public void onInitFinished(JSONObject referringParams, BranchError error) {
                 if (error == null) {
-                    // option 1: log data
-                    Log.i("BRANCH SDK", referringParams.toString());
+                  try {
+                  // option 1: log data
+                  Log.i("BRANCH SDK", referringParams.toString());
 
-                    // option 2: save data to be used later
-                    SharedPreferences preferences = .getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor = preferences.edit();
-                    editor.putString("branchData", referringParams.toString(2));
-                    editor.commit();
+                  // option 2: save data to be used later
+                  SharedPreferences preferences = MainActivity.this.getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
+                  preferences.edit().putString("branchData", referringParams.toString()).apply();
 
-                    // option 3: navigate to page
-                    Intent intent = new Intent(MainActivity.this, OtherActivity.class);
-                    intent.putExtra("branchData", referringParams.toString(2));
-                    startActivity(intent);
+                  // option 3: navigate to page
+                  Intent intent = new Intent(MainActivity.this, OtherActivity.class);
+                  startActivity(intent);
 
-                    // option 4: display data
-                    Toast.makeText(this, referringParams.toString(2), Toast.LENGTH_LONG).show();
+                  // option 4: display data
+                  Toast.makeText(MainActivity.this, referringParams.toString(), Toast.LENGTH_LONG).show();
+                  } catch (JSONException e) {
+                    e.printStackTrace();
+                  }
                 } else {
                     Log.i("BRANCH SDK", error.getMessage());
                 }
-            }
-        }, this.getIntent().getData(), this);
+              }
+            }, this.getIntent().getData(), this);
         ```
 
     - *Kotlin*
@@ -599,17 +586,15 @@
 
                     // option 2: save data to be used later
                     val preferences =  getSharedPreferences("MyPreferences", Context.MODE_PRIVATE)
-                    val editor = preferences.edit()
-                    editor.putString("branchData", referringParams.toString(2))
-                    editor.commit()
+                    preferences.edit().putString("branchData", referringParams.toString()).apply();
 
                     // option 3: navigate to page
-                    val intent = Intent(this, MainActivity2::class.java)
-                    intent.putExtra("branchData", referringParams.toString(2))
+                    val intent = Intent(this@MainActivity, MainActivity2::class.java)
+                    intent.putExtra("branchData", referringParams.toString())
                     startActivity(intent)
 
                     // option 4: display data
-                    Toast.makeText(this, referringParams.toString(2), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, referringParams.toString(), Toast.LENGTH_SHORT).show()
                 } else {
                     Log.e("BRANCH SDK", error.message)
                 }
@@ -630,7 +615,7 @@
     - Needs `build.gradle` library
 
         ```java
-        compile 'com.google.android.gms:play-services-appindexing:9.+'
+        implementation 'com.google.firebase:firebase-appindexing:19.0.0' // App indexing
         ```
 
     - *Java*
@@ -798,38 +783,49 @@
 
     - Deep link to content from GCM push notifications just by adding a Branch link to your result intent
 
-    - *Java*
+        - *Java*
 
-        ```java
-        Intent resultIntent = new Intent(this, TargetActivity.class);
-        resultIntent.putExtra("branch","http://xxxx.app.link/testlink");
-        resultIntent.putExtra("branch_force_new_session",true);
-        PendingIntent resultPendingIntent =  PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        ```
+            ```java
+            Intent resultIntent = new Intent(this, TargetActivity.class);
+            resultIntent.putExtra("branch","http://xxxx.app.link/testlink");
+            resultIntent.putExtra("branch_force_new_session",true);
+            PendingIntent resultPendingIntent =  PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+            ```
 
-    - *Kotlin*
+        - *Kotlin*
 
-        ```java
-        val resultIntent = Intent(this, TargetClass::class.java)
-        resultIntent.putExtra("branch", "http://xxxx.app.link/testlink")
-        val resultPendingIntent = PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT)
-        resultIntent.putExtra("branch_force_new_session", true)
-        ```
+            ```java
+            val resultIntent = Intent(this, TargetClass::class.java)
+            resultIntent.putExtra("branch", "http://xxxx.app.link/testlink")
+            val resultPendingIntent = PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT)
+            resultIntent.putExtra("branch_force_new_session", true)
+            ```
 
     - To handle situations where TargetActivity is in the foreground when push notification is clicked, don't forget to call reInitSession from onNewIntent inside TargetActivity:
 
-    - *Java*
+        - *Java*
 
-        ```java
-        @Override
-        protected void onNewIntent(Intent intent) {
-            super.onNewIntent(intent);
-            setIntent(intent);
-            // if activity is in foreground (or in backstack but partially visible) launching the same
-            // activity will skip onStart, handle this case with reInitSession
-            Branch.getInstance().reInitSession(this, branchReferralInitListener);
-        }
-        ```
+            ```java
+            @Override
+            protected void onNewIntent(Intent intent) {
+                super.onNewIntent(intent);
+                setIntent(intent);
+                // if activity is in foreground (or in backstack but partially visible) launching the same
+                // activity will skip onStart, handle this case with reInitSession
+                Branch.getInstance().reInitSession(this, branchReferralInitListener);
+            }
+            ```
+
+        - *Kotlin*
+
+            ```java
+            override fun onNewIntent(intent: Intent) {
+                    super.onNewIntent(intent)
+                    this.intent = intent
+                    // Branch reinit (in case Activity is already visible when Branch link is clicked)
+                    Branch.getInstance().reInitSession(this, branchListener)
+            }
+            ```
 
 !!! warning ""
     Handling a new deep link via `reInitSession` will clear the current session data, if there is any, and a new referred "open" will be attributed.
@@ -868,7 +864,7 @@
 
     - Uses `Chrome Tabs` to increase attribute matching success
 
-    - Add `compile 'com.android.support:customtabs:23.3.0'` to your `build.gradle`
+    - Add `implementation 'com.android.support:customtabs:28.0.0' // Chrome Tab matching (enables 100% guaranteed matching based on cookies), androidx.browser:browser works just the same` to your `build.gradle`
 
 - ### Enable / Disable User Tracking
 
@@ -959,7 +955,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                  <data android:scheme="https" android:host="bnc.lt" />
-                 <data android:scheme="https" android:host="bnc.lt" />
+                 <data android:scheme="http" android:host="bnc.lt" />
             </intent-filter>
         </activity>
         ```
@@ -974,7 +970,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                  <data android:scheme="https" android:host="your.app.com" />
-                 <data android:scheme="https" android:host="your.app.com" />
+                 <data android:scheme="http" android:host="your.app.com" />
             </intent-filter>
         </activity>
         ```

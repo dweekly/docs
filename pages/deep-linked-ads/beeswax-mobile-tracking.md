@@ -24,6 +24,19 @@ This guide will walk you through how to setup your campaigns with **[Beeswax](ht
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 
+!!! warning "GDPR Compliance"
+	In order to comply with GDPR in EU countries, the SHA1 version of the User ID macro `{{USER_ID_SHA1}}` must be passed the Beeswax Tracking Links. Please ensure that the hashed User ID macro updated for campaigns running in the EU as specified  below:
+
+	Non-EU compliant Campaign:
+	```
+	https://branchster.app.link/p6w7O3Wyw2?%243p=a_beeswax&*USER_ID={{USER_ID}}&~click_id={{AUCTION_ID}}
+	```
+
+	EU compliant campaign:
+	```
+	https://branchster.app.link/p6w7O3Wyw2?%243p=a_beeswax&*USER_ID={{USER_ID_SHA1}}&~click_id={{AUCTION_ID}}
+	```
+
 {! ingredients/deep-linked-ads/view-ad-link-data.md !}
 
 {! ingredients/deep-linked-ads/people-based-attribution.md !}

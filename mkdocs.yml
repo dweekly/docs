@@ -1024,6 +1024,7 @@ nav:
       - mFilterit: integrations/mfilterit.md
       - Mixpanel: integrations/mixpanel.md
       - MobileAction: integrations/mobileaction.md
+      - Moengage: integrations/moengage.md
       - mParticle (export): integrations/mparticle-export.md
       - mParticle (import): integrations/mparticle-import.md
       - myTracker: integrations/mytracker.md

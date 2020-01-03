@@ -101,13 +101,12 @@ Branch will only import events from Segment that are not already auto-tracked wi
 | Push Notification Bounced | - | - | No |
 
 
-#### Identifiers
+#### Identifiers for app events
 
 Identifiers are required for events to be imported to Branch. You must include:
 
-* userId OR
 * context.device.advertisingId AND context.device.type OR
-* context.device.id AND context.device.type
+* context.device.id AND context.device.type OR
 
 Branch maps Segment's identifiers to the following:
 
@@ -121,6 +120,39 @@ Branch maps Segment's identifiers to the following:
 If using User ID with Segment, Branch will automatically map this to [developer identity](/apps/ios/#track-users). Check out Segment's [User ID docs](https://segment.com/docs/spec/identify#user-id){:target="\_blank"} for more details.
 
 At this time, Branch does not map Segment's anonymous ID to any field, and [will not attribute logged out web events](#attribution-for-logged-out-users-on-web) received from the server-to-server integration. Anonymous ID [can still be attached to events](#attaching-anonymous-id-to-events).
+
+#### Identifiers for web events
+
+In order to attribute accurately on web it is important to collect the Branch SDK's browser fingerprint and pass it to the Segment track function. Branch uses this along with the `userAgent` collected by the Segment SDK to identify the user's persona, platform, os and other parameters. Collecting the browser fingerprint can be done with the following code snippet:
+
+```javascript
+const loadBranchAndGetFingerprint = new Promise(function(resolve, reject) {
+  branch.init('BRANCH_KEY', {}, function(err, data) {
+  branch.getBrowserFingerprintId(function(err, fingerprint) {  // fetch the browser fingerprint from the SDK
+    if (!!err) {
+      reject(err);
+      return;
+    }
+    resolve({...data, fingerprint});
+  });
+  });
+});
+```
+
+You can then pass it into the payload of the Segment track event:
+
+```javascript
+loadBranchAndGetFingerprint.then(function(data) {
+    const { fingerprint } = data;
+    // Load the Segment SDK and initialize with key here
+
+    // Segment track request
+    analytics.track('Order Completed', {
+        browser_fingerprint_id: fingerprint // add the browser fingerprint to the Segment track event
+        //... Other event details ...
+    })
+});
+```
 
 #### Validating the integration
 
