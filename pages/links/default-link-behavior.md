@@ -32,7 +32,7 @@
 
     - ##### Desktop
 
-        !!! note "We now support deep linking to Desktop apps such as Spotify and Slack, via URI schemes"
+        !!! note "We now support deep linking to Desktop apps via URI schemes"
             Our beta Mac OS Desktop SDK is available for testing, so please contact your Branch Account Manager or integrations@branch.io for more information.
 
         - Use these settings to control the default behavior of your deep links on Desktop browsers
@@ -40,13 +40,13 @@
             ![image](/_assets/img/pages/dashboard/desktop.png)
 
         - For Desktop apps
-            - Enter your Desktop URI Scheme (e.g. `spotify://`)
+            - Enter your Desktop URI Scheme (e.g. `your_desktop_uri_scheme://`)
             - Include `$desktop_deeplink_path` key-value pair to your link (e.g. `"$desktop_deeplink_path": "track/5D8o9tGf3Dfjz7CgMxcoeI"`)
             - If the app is not installed when the link is clicked, we will fall back to the Desktop or Default URL, in that order
             - This feature is still in the early stages of development; so usage without a Desktop SDK will not be able to attribute or pass data through an install.
 
     - ##### Fallback
-        - Use these settings to control the default behavior of your deep links on any other platform
+        - Use these settings to control the default behavior of your deep links on anxy other platform
 
             ![image](/_assets/img/pages/dashboard/fallback.png)
 
