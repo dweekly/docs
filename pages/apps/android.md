@@ -117,7 +117,7 @@
 
                     <!-- Branch URI Scheme -->
                     <intent-filter>
-                        <data android:scheme="https" android:host="example-alternate.app.link" />     <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website.  -->
+                        <data android:scheme="yourapp" android:host="open" />
                         <action android:name="android.intent.action.VIEW" />
                         <category android:name="android.intent.category.DEFAULT" />
                         <category android:name="android.intent.category.BROWSABLE" />
@@ -129,6 +129,7 @@
                         <category android:name="android.intent.category.DEFAULT" />
                         <category android:name="android.intent.category.BROWSABLE" />
                         <data android:scheme="https" android:host="example.app.link" />
+                        <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website.  -->                        
                         <data android:scheme="https" android:host="example-alternate.app.link" />
                     </intent-filter>
                 </activity>
