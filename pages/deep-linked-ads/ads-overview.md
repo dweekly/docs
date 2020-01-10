@@ -1,6 +1,7 @@
 ## Universal Ads and Partners
 
-- [Branch Universal Ads](/deep-linked-ads/branch-universal-ads-mobile-tracking/)
+- [Universal Ads Basics](/deep-linked-ads/branch-universal-ads-mobile-tracking/)
+- [Universal Ads Advanced](/deep-linked-ads/branch-universal-ads-advanced/)
 - [Universal Ads Partners](/deep-linked-ads/ad-networks-list/)
 
 
