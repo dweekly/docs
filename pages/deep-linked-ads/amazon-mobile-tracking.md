@@ -63,6 +63,10 @@ Amazon issues an Amazon Standard Identification Numbers (ASIN) for every app lis
 
 ![image](/_assets/img/pages/deep-linked-ads/amazon/android settings 3.png)
 
+#### Testing Links
+
+The easiest way to test is to put Branch links into a simple HTML page that you then load up in the Amazon Fire TV's Silk browser. You can even create a Branch link to this test page to shorten the URL that you need to type into the Silk URL bar.
+
 {! ingredients/deep-linked-ads/view-ad-link-data.md !}
 
 {! ingredients/deep-linked-ads/people-based-attribution.md !}
