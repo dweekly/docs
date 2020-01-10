@@ -1,4 +1,8 @@
-Branch Tracking links allow tracking many parameters about the performance of your ad campaigns and individual ads. Additional parameters for advanced analysis may be added to the link after the '?' or '&' character, to trace extra information.
+Branch Tracking links allow tracking many parameters about the performance of your ad campaigns and individual ads. You can see each partner's specific link Parameters under the **Link Parameters** tab:
+
+![image](/_assets/img/ingredients/deep-linked-ads/link-parameters.png)
+
+Additional parameters for advanced analysis may be added to the link after the '?' or '&' character, to trace extra information.
 
 !!! tip "Example Tracking Link with Additional Parameters"
     Example Branch link including additional parameters to pass Agency and Sub Publisher information:`https://tracking.app.link?$3p=a_partner&~agency=myAgency&~secondary_publisher=best_publisher`
