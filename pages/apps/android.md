@@ -551,7 +551,7 @@
             @Override
             public void onInitFinished(JSONObject referringParams, BranchError error) {
                 if (error == null) {
-                  try {
+
                   // option 1: log data
                   Log.i("BRANCH SDK", referringParams.toString());
 
@@ -565,9 +565,7 @@
 
                   // option 4: display data
                   Toast.makeText(MainActivity.this, referringParams.toString(), Toast.LENGTH_LONG).show();
-                  } catch (JSONException e) {
-                    e.printStackTrace();
-                  }
+
                 } else {
                     Log.i("BRANCH SDK", error.getMessage());
                 }
