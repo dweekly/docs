@@ -1,4 +1,4 @@
- !!! info "Current SDK Version 0.31.3"
+!!! info "Current SDK Version 0.31.3"
     Please see the [iOS Version History](/version-histories/ios-version-history) to view change log.
 
 ## Integrate Branch
@@ -89,138 +89,231 @@
 
 - ### Initialize Branch
 
-    - *Swift 5*
+  - #### Apps NOT Using Scenes
 
-        ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
-        import UIKit
-        import Branch
+      - *Swift 5*
 
-        @UIApplicationMain
-        class AppDelegate: UIResponder, UIApplicationDelegate {
+          ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
+          import UIKit
+          import Branch
 
-        var window: UIWindow?
+          @UIApplicationMain
+          class AppDelegate: UIResponder, UIApplicationDelegate {
 
-        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-          // if you are using the TEST key
-          Branch.setUseTestBranchKey(true)
-          // listener for Branch Deep Link data
-          if let branchInstance = Branch.getInstance(){
-             branchInstance.initSession(launchOptions: launchOptions) { (params, error) in
-               // do stuff with deep link data (nav to page, display content, etc)
-               print(params as? [String: AnyObject] ?? {})
+          var window: UIWindow?
+
+          func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+            // if you are using the TEST key
+            Branch.setUseTestBranchKey(true)
+            // listener for Branch Deep Link data
+            if let branchInstance = Branch.getInstance(){
+               branchInstance.initSession(launchOptions: launchOptions) { (params, error) in
+                 // do stuff with deep link data (nav to page, display content, etc)
+                 print(params as? [String: AnyObject] ?? {})
+              }
+            }
+
+            return true
+          }
+
+          func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+            if let branchInstance = Branch.getInstance(){
+              branchInstance.application(app, open: url, options: options)
+            }
+            return true
+          }
+
+          func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+            // handler for Universal Links
+            if let branchInstance = Branch.getInstance(){
+              branchInstance.continue(userActivity)
+            }
+            return true
+          }
+
+          func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+            // handler for Push Notifications
+            if let branchInstance = Branch.getInstance(){
+              branchInstance.handlePushNotification(userInfo)
             }
           }
+          ```
 
-          return true
-        }
+      - *Swift 4.2*
 
-        func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-          if let branchInstance = Branch.getInstance(){
-            branchInstance.application(app, open: url, options: options)
+          ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
+          import UIKit
+          import Branch
+
+          @UIApplicationMain
+          class AppDelegate: UIResponder, UIApplicationDelegate {
+
+          var window: UIWindow?
+
+          func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+            // if you are using the TEST key
+            Branch.setUseTestBranchKey(true)
+            // listener for Branch Deep Link data
+            Branch.getInstance().initSession(launchOptions: launchOptions) { (params, error) in
+              // do stuff with deep link data (nav to page, display content, etc)
+              print(params as? [String: AnyObject] ?? {})
+            }
+            return true
           }
-          return true
-        }
 
-        func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-          // handler for Universal Links
-          if let branchInstance = Branch.getInstance(){
-            branchInstance.continue(userActivity)
+          func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+            Branch.getInstance().application(app, open: url, options: options)
+            return true
           }
-          return true
-        }
 
-        func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-          // handler for Push Notifications
-          if let branchInstance = Branch.getInstance(){
-            branchInstance.handlePushNotification(userInfo)
+          func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+            // handler for Universal Links
+            Branch.getInstance().continue(userActivity)
+            return true
           }
-        }
+
+          func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+            // handler for Push Notifications
+            Branch.getInstance().handlePushNotification(userInfo)
+          }
+          ```
+
+      - *Swift 3*
+
+          ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
+          import UIKit
+          import Branch
+
+          @UIApplicationMain
+          class AppDelegate: UIResponder, UIApplicationDelegate {
+
+          var window: UIWindow?
+
+          func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+            // if you are using the TEST key
+            Branch.setUseTestBranchKey(true)
+            // listener for Branch Deep Link data
+            Branch.getInstance().initSession(launchOptions: launchOptions) { (params, error) in
+              // do stuff with deep link data (nav to page, display content, etc)
+              print(params as? [String: AnyObject] ?? {})
+            }
+            return true
+          }
+
+          func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+            Branch.getInstance().application(app, open: url, options: options)
+            return true
+          }
+
+          func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+            // handler for Universal Links
+            Branch.getInstance().continue(userActivity)
+            return true
+          }
+
+          func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+            // handler for Push Notifications
+            Branch.getInstance().handlePushNotification(userInfo)
+          }
+          ```
+
+      - *Objective-C*
+
+          ```objc hl_lines="2 11 12 13 14 15 16 17 22 23 28 29 34 35"
+          #import "AppDelegate.h"
+          #import "Branch/Branch.h"
+
+          @interface AppDelegate ()
+
+          @end
+
+          @implementation AppDelegate
+
+          - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+            // if you are using the TEST key
+            [Branch setUseTestBranchKey:YES];
+            // listener for Branch Deep Link data
+            [[Branch getInstance] initSessionWithLaunchOptions:launchOptions andRegisterDeepLinkHandler:^(NSDictionary * _Nonnull params, NSError * _Nullable error) {
+              // do stuff with deep link data (nav to page, display content, etc)
+              NSLog(@"%@", params);
+            }];
+            return YES;
+          }
+
+          - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+            [[Branch getInstance] application:app openURL:url options:options];
+            return YES;
+          }
+
+          - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler {
+            // handler for Universal Links
+            [[Branch getInstance] continueUserActivity:userActivity];
+            return YES;
+          }
+
+          - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+            // handler for Push Notifications
+            [[Branch getInstance] handlePushNotification:userInfo];
+          }
+
+          @end
+          ```
+
+  - #### Apps Using Scenes
+
+!!! info ""
+    If your app uses iOS [Scenes](https://developer.apple.com/documentation/uikit/app_and_environment/scenes), please use the code samples below.
+
+  - In your app's `AppDelegate file`:
+
+      - *Swift 5*
+
         ```
-
-
-    - *Swift 4.2*
-
-        ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
         import UIKit
         import Branch
 
         @UIApplicationMain
         class AppDelegate: UIResponder, UIApplicationDelegate {
 
-        var window: UIWindow?
 
-        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-          // if you are using the TEST key
-          Branch.setUseTestBranchKey(true)
-          // listener for Branch Deep Link data
-          Branch.getInstance().initSession(launchOptions: launchOptions) { (params, error) in
-            // do stuff with deep link data (nav to page, display content, etc)
-            print(params as? [String: AnyObject] ?? {})
-          }
-          return true
-        }
 
-        func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-          Branch.getInstance().application(app, open: url, options: options)
-          return true
-        }
+            func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+                // Override point for customization after application launch.
 
-        func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-          // handler for Universal Links
-          Branch.getInstance().continue(userActivity)
-          return true
-        }
+                let branch = Branch.getInstance()
+                branch?.initSession(launchOptions: launchOptions, andRegisterDeepLinkHandler: { (params, error) in
+                    if let safe = params {
+                        NSLog("Branch: %@", safe)
+                    }
+                })
+                return true
+            }
 
-        func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-          // handler for Push Notifications
-          Branch.getInstance().handlePushNotification(userInfo)
-        }
-        ```
+            func applicationWillTerminate(_ application: UIApplication) {
+                // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+            }
 
-    - *Swift 3*
+            // MARK: UISceneSession Lifecycle
 
-        ```swift hl_lines="2 10 11 12 13 14 15 16 21 22 27 28 33 34"
-        import UIKit
-        import Branch
+            func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+                // Called when a new scene session is being created.
+                // Use this method to select a configuration to create the new scene with.
+                return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+            }
 
-        @UIApplicationMain
-        class AppDelegate: UIResponder, UIApplicationDelegate {
-
-        var window: UIWindow?
-
-        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-          // if you are using the TEST key
-          Branch.setUseTestBranchKey(true)
-          // listener for Branch Deep Link data
-          Branch.getInstance().initSession(launchOptions: launchOptions) { (params, error) in
-            // do stuff with deep link data (nav to page, display content, etc)
-            print(params as? [String: AnyObject] ?? {})
-          }
-          return true
-        }
-
-        func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-          Branch.getInstance().application(app, open: url, options: options)
-          return true
-        }
-
-        func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
-          // handler for Universal Links
-          Branch.getInstance().continue(userActivity)
-          return true
-        }
-
-        func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-          // handler for Push Notifications
-          Branch.getInstance().handlePushNotification(userInfo)
+            func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+                // Called when the user discards a scene session.
+                // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+                // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+            }
         }
         ```
 
-    - *Objective-C*
+      - *Objective-C*
 
-        ```objc hl_lines="2 11 12 13 14 15 16 17 22 23 28 29 34 35"
+        ```
         #import "AppDelegate.h"
-        #import "Branch/Branch.h"
+        @import Branch;
 
         @interface AppDelegate ()
 
@@ -228,31 +321,169 @@
 
         @implementation AppDelegate
 
+
         - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-          // if you are using the TEST key
-          [Branch setUseTestBranchKey:YES];
-          // listener for Branch Deep Link data
-          [[Branch getInstance] initSessionWithLaunchOptions:launchOptions andRegisterDeepLinkHandler:^(NSDictionary * _Nonnull params, NSError * _Nullable error) {
-            // do stuff with deep link data (nav to page, display content, etc)
-            NSLog(@"%@", params);
-          }];
-          return YES;
+            // Override point for customization after application launch.
+
+            [[Branch getInstance] initSessionWithLaunchOptions:launchOptions andRegisterDeepLinkHandler:^(NSDictionary * _Nullable params, NSError * _Nullable error) {
+                NSLog(@"Branch: %@", params);
+            }];
+
+            return YES;
         }
 
-        - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-          [[Branch getInstance] application:app openURL:url options:options];
-          return YES;
+
+        - (void)applicationWillTerminate:(UIApplication *)application {
+            // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         }
 
-        - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler {
-          // handler for Universal Links
-          [[Branch getInstance] continueUserActivity:userActivity];
-          return YES;
+
+        #pragma mark - UISceneSession lifecycle
+
+
+        - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
+            // Called when a new scene session is being created.
+            // Use this method to select a configuration to create the new scene with.
+            return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
         }
 
-        - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-          // handler for Push Notifications
-          [[Branch getInstance] handlePushNotification:userInfo];
+
+        - (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
+            // Called when the user discards a scene session.
+            // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+            // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+        }
+
+        @end
+        ```
+
+  - In your app's `SceneDelegate` file:
+
+      - *Swift 5*
+
+        ```
+        import UIKit
+        import Branch
+
+        class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+            var window: UIWindow?
+
+
+            func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+                // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+                // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+                // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+                guard let _ = (scene as? UIWindowScene) else { return }
+            }
+
+            func sceneDidDisconnect(_ scene: UIScene) {
+                // Called as the scene is being released by the system.
+                // This occurs shortly after the scene enters the background, or when its session is discarded.
+                // Release any resources associated with this scene that can be re-created the next time the scene connects.
+                // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
+            }
+
+            func sceneDidBecomeActive(_ scene: UIScene) {
+                // Called when the scene has moved from an inactive state to an active state.
+                // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+            }
+
+            func sceneWillResignActive(_ scene: UIScene) {
+                // Called when the scene will move from an active state to an inactive state.
+                // This may occur due to temporary interruptions (ex. an incoming phone call).
+            }
+
+            func sceneWillEnterForeground(_ scene: UIScene) {
+                // Called as the scene transitions from the background to the foreground.
+                // Use this method to undo the changes made on entering the background.
+            }
+
+            func sceneDidEnterBackground(_ scene: UIScene) {
+                // Called as the scene transitions from the foreground to the background.
+                // Use this method to save data, release shared resources, and store enough scene-specific state information
+                // to restore the scene back to its current state.
+            }
+
+            func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+                NSLog("Branch: scene.continueUserActivity")
+
+                // direct mapping to existing Branch API
+                Branch.getInstance()?.continue(userActivity)
+            }
+
+            func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+                NSLog("Branch: scene.openURL")
+                if let context = URLContexts.first {
+                    Branch.getInstance()?.application(nil, open: context.url, sourceApplication: context.options.sourceApplication, annotation: context.options.annotation)
+                }
+            }
+
+        }
+        ```
+
+      - *Objective-C*
+
+        ```
+        #import "SceneDelegate.h"
+        @import Branch;
+
+        @interface SceneDelegate ()
+
+        @end
+
+        @implementation SceneDelegate
+
+
+        - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
+            // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+            // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+            // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        }
+
+
+        - (void)sceneDidDisconnect:(UIScene *)scene {
+            // Called as the scene is being released by the system.
+            // This occurs shortly after the scene enters the background, or when its session is discarded.
+            // Release any resources associated with this scene that can be re-created the next time the scene connects.
+            // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
+        }
+
+
+        - (void)sceneDidBecomeActive:(UIScene *)scene {
+            // Called when the scene has moved from an inactive state to an active state.
+            // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        }
+
+
+        - (void)sceneWillResignActive:(UIScene *)scene {
+            // Called when the scene will move from an active state to an inactive state.
+            // This may occur due to temporary interruptions (ex. an incoming phone call).
+        }
+
+
+        - (void)sceneWillEnterForeground:(UIScene *)scene {
+            // Called as the scene transitions from the background to the foreground.
+            // Use this method to undo the changes made on entering the background.
+        }
+
+
+        - (void)sceneDidEnterBackground:(UIScene *)scene {
+            // Called as the scene transitions from the foreground to the background.
+            // Use this method to save data, release shared resources, and store enough scene-specific state information
+            // to restore the scene back to its current state.
+        }
+
+        - (void)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)userActivity {
+            [[Branch getInstance] continueUserActivity:userActivity];
+        }
+
+        - (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
+
+            UIOpenURLContext *context = URLContexts.allObjects.firstObject;
+            if (context) {
+                [[Branch getInstance] application:nil openURL:context.URL sourceApplication:context.options.sourceApplication annotation:context.options.annotation];
+            }
         }
 
         @end

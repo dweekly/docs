@@ -551,7 +551,7 @@
             @Override
             public void onInitFinished(JSONObject referringParams, BranchError error) {
                 if (error == null) {
-                  try {
+
                   // option 1: log data
                   Log.i("BRANCH SDK", referringParams.toString());
 
@@ -565,9 +565,7 @@
 
                   // option 4: display data
                   Toast.makeText(MainActivity.this, referringParams.toString(), Toast.LENGTH_LONG).show();
-                  } catch (JSONException e) {
-                    e.printStackTrace();
-                  }
+
                 } else {
                     Log.i("BRANCH SDK", error.getMessage());
                 }
@@ -798,8 +796,8 @@
             ```java
             val resultIntent = Intent(this, TargetClass::class.java)
             resultIntent.putExtra("branch", "http://xxxx.app.link/testlink")
-            val resultPendingIntent = PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT)
             resultIntent.putExtra("branch_force_new_session", true)
+            val resultPendingIntent = PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT)
             ```
 
     - To handle situations where TargetActivity is in the foreground when push notification is clicked, don't forget to call reInitSession from onNewIntent inside TargetActivity:

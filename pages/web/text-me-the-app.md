@@ -14,6 +14,9 @@ Branch reserves the right to limit your use of the Text Me The App service and c
 
 ## Setup
 
+!!! warning "This setting overrides the default desktop redirect behavior for all links" 
+    Do not enable the `Custom Landing Page with SMS` toggle unless this is the desired behavior.
+
 If you don't want to use Branch's default Text Me The App Page or show a desktop deepview, follow these instructions. This will let you customize a Text Me The App page using Branch.
 
 ### Set Destination URL
