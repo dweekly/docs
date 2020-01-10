@@ -37,7 +37,7 @@ First need add Newtonsoft.Json from NuGet
 
 #### **Adding the Branch SDK**
 
-1. Clone this repository to the local machine: `https://github.com/BranchMetrics/branch-windows-sdk.git`
+1. Clone this repository to the local machine: `https://github.com/BranchMetrics/windows-branch-deep-linking.git`
 2. Add the `branch_debug_0.1.0` or `branch_0.1.0` libary to project from DLLs folder
 
 ___
