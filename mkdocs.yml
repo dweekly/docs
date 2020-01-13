@@ -85,7 +85,7 @@ extra:
     algolia:
       appId: 'WWVVC15B3P'
       apiKey: '63fed64eb90bdb869334f90e3568b813'
-      index: 'branchmetrics'
+      index: 'docsearchIndex'
       selector: '#algolia-doc-search'
       debug: false
       hits: 15
