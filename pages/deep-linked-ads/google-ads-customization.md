@@ -130,7 +130,7 @@ Web | Yes
 iOS | Yes
 Android | Yes
 
-#### Dynamic Remarketing Campaigns for Apps  
+#### Dynamic Remarketing Campaigns for Apps
 
 [App Engagement Campaigns](/deep-linked-ads/google-ads-app-engagement/) do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a <notranslate>**Web-based Ad**</notranslate> using the <notranslate>**Display Network**</notranslate>.
 
@@ -140,15 +140,15 @@ Please follow Google Ads help documentation on how to create a new [Dynamic Rema
 
 Google Data | Branch Data | Definition
 --- | --- | ---
-currency_code | event_data_currency | optional (should be in the URL string as query param)  
-value | revenue | optional (should be in the URL string as query param AND in the body if available)  
-origin | custom_data.origin | optional
-start_date | custom_data.start_date | optional
-end_date | custom_data.end_date | optional
-search_term | custom_data.search_term | optional
-google_business_vertical | custom_data.google_business_vertical | optional
-item_location_id | custom_data.item_location_id | optional
-item_id | content_items[].$sku | required  
+`currency_code` | `event_data_currency` | optional (should be in the URL string as query param)
+`value` | `revenue` | optional (should be in the URL string as query param AND in the body if available)
+`origin` | `custom_data.origin` | optional
+`start_date` | `custom_data.start_date` | optional
+`end_date` | `custom_data.end_date` | optional
+`search_term` | `custom_data.search_term` | optional
+`google_business_vertical` | `custom_data.google_business_vertical` | optional
+`item_location_id` | `custom_data.item_location_id` | optional
+`item_id` | `content_items[].$sku` | required
 
 ### Shopping Ads Specifics
 

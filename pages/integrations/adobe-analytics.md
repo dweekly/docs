@@ -55,11 +55,11 @@ Branch has provided a default classification rule set for the Branch data that w
 
 Adobe Classification | Branch Analytics Tag | Example
 --- | ---
-Source | Channel | Our Website
-Campaign | Campaign | Journeys Test Campaign
-Medium | Feature | Journeys
-Action | Branch Event Name | Install
-Action Property| Branch Tags | tag=bar&tag2=1234
+<notranslate>Source</notranslate> | <notranslate>Channel</notranslate> | Our Website
+<notranslate>Campaign</notranslate> | <notranslate>Campaign</notranslate> | Journeys Test Campaign
+<notranslate>Medium</notranslate> | <notranslate>Feature</notranslate> | Journeys
+<notranslate>Action</notranslate> | <notranslate>Branch Event Name</notranslate> | Install
+<notranslate>Action Property</notranslate> | <notranslate>Branch Tags</notranslate> | tag=bar&tag2=1234
 
 ![image](/_assets/img/pages/integrations/adobe-analytics/data-settings.png)
 
@@ -79,10 +79,10 @@ Under Manage App Setting -> SDK Analytics Options, find the following data
 
 Branch field | Adobe field value
 --- | ---
-Protocol | Use HTTPS Check Box (if checked, select HTTPS)
-Analytics Server Domain | Tracking Server
-Omniture iOS/Android Server Key | Report Suite ID for that app
-Timestamp | Offline Tracking
+<notranslate>Protocol</notranslate> | <notranslate>Use HTTPS Check Box (if checked, select HTTPS)</notranslate>
+<notranslate>Analytics Server Domain</notranslate> | <notranslate>Tracking Server</notranslate>
+<notranslate>Omniture iOS/Android Server Key</notranslate> | <notranslate>Report Suite ID for that app</notranslate>
+<notranslate>Timestamp</notranslate> | <notranslate>Offline Tracking</notranslate>
 
 For `Analytics Server Domain`, please do not include `http` or `https`. If your value for this is `http://test.com`, simply put in `test.com`. This means no extra slashes, and no protocol.
 
@@ -223,11 +223,11 @@ Branch sends the following values from Branch link data in the Adobe Context Dat
 
 | Adobe Classification | Branch Analytics Tag | Example |
 | --- | --- | --- |
-| Source | Channel | Our Website |
-| Campaign | Campaign | Journeys Test Campaign |
-| Medium | Feature | Journeys |
-| Action | Branch Event Name | Install |
-| Action Property| Branch Tags | tag=bar&tag2=1234 |
+| <notranslate>Source</notranslate> | <notranslate>Channel</notranslate> | Our Website |
+| <notranslate>Campaign</notranslate> | <notranslate>Campaign</notranslate> | Journeys Test Campaign |
+| <notranslate>Medium</notranslate> | <notranslate>Feature</notranslate> | Journeys |
+| <notranslate>Action</notranslate> | <notranslate>Branch Event Name</notranslate> | Install |
+| <notranslate>Action Property</notranslate> | <notranslate>Branch Tags</notranslate> | tag=bar&tag2=1234 |
 
 If you create a Quick Link and specify analytics, those analytics will appear in the Adobe Analytics reporting suite.
 

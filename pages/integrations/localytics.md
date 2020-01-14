@@ -47,7 +47,7 @@ We have built a custom integration to automatically send all Branch install data
 
 Branch Analytics Tag | Localytics Data Placeholder Tag
 --- | ---
-Campaign | campaign
+<notranslate>Campaign</notranslate> | `campaign`
 
 Branch will also send any arbitrary parameters you attach to a link on to Localytics.  All Branch data will appear in the Localytics <notranslate>"Attribution"</notranslate> dashboard, but not the <notranslate>"Events"</notranslate> dashboard.
 

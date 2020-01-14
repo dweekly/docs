@@ -44,8 +44,8 @@ For Android, this will be your package name registered on AppsFlyer. If your pac
 
 Branch Analytics Tag | AppsFlyer Data Placeholder Tag
 --- | ---
-Campaign | Maps to _AppsFlyer Campaign_, `c`
-Channel | Maps to _AppsFlyer Channel_, `af_channel`
+<notranslate>Campaign</notranslate> | Maps to _AppsFlyer Campaign_, `c`
+<notranslate>Channel</notranslate> | Maps to _AppsFlyer Channel_, `af_channel`
 
 The default Media Source will appear as <notranslate>"branch_int"</notranslate> (mandated by AppsFlyer and cannot be changed).
 

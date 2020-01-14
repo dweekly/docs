@@ -79,13 +79,13 @@ Branch maps the following data fields from Twitter Ads to Branch.
 
 Twitter Data | Branch Data | Possible Values
 --- | --- | ---
-n/a | ~advertising_partner_name | “Twitter”
-tpn_attribution | ~channel | “Twitter” if null or last touch, or “Twitter Audience Platform” if TAP is last touch
-engagement_time | last_attributed_touch_timestamp | 1455675372963
-campaign_name | ~campaign | Light Bright Launch
-campaign_id | ~campaign_id | 15292426
-engagement_type | last_touch_type | CLICK or IMPRESSION
-country_code | ~user_data_geo_country_code | US
+n/a | `~advertising_partner_name` | “Twitter”
+`tpn_attribution` | `~channel` | “Twitter” if null or last touch, or “Twitter Audience Platform” if TAP is last touch
+`engagement_time` | `last_attributed_touch_timestamp` | 1455675372963
+`campaign_name` | `~campaign` | Light Bright Launch
+`campaign_id` | `~campaign_id` | 15292426
+`engagement_type` | `last_touch_type` | CLICK or IMPRESSION
+`country_code` | `~user_data_geo_country_code` | US
 
 ## Forwarding Events to Twitter Ads
 

@@ -218,23 +218,23 @@ Branch supports the full suite of Criteo events. Please talk to your Criteo Solu
 
 Branch Event Name | Criteo Name | Branch Event Categorization | Additional Metadata Keys
 --- | --- | --- | ---
-OPEN | View Home & appDeeplink | SDK Default | `$criteo_deep_link_url`
-INSTALL | Install | SDK Default | None
-VIEW_ITEMS | View Listing | Content Event | None
-VIEW_ITEM | View Product | Content Event | None
-VIEW_CART | View Basket | Commerce Event | None
-PURCHASE | Track Transaction | Commerce Event | None
-PURCHASE* | Static Track Transaction  | Commerce Event  | None
-ACHIEVE_LEVEL | UI Level | User Lifecycle Event | `ui_level`
-UNLOCK_ACHIEVEMENT | UI Achievement  | User Lifecycle Event |  `ui_achievement`
-COMPLETE_REGISTRATION | Registration  | User Lifecycle Event | None
-COMPLETE_TUTORIAL | Tutorial Finished  | User Lifecycle Event  | None
-UI_STATUS | UI Status  | <notranslate>**Custom Event**</notranslate> |  `ui_status`
-UI_LOGIN | UI Login  | <notranslate>**Custom Event**</notranslate> |  None
-SUBSCRIPTION | Subscription  | <notranslate>**Custom Event**</notranslate> |  None
-LOW_PRIORITY | Low Priority  | <notranslate>**Custom Event**</notranslate>  | None
-HIGH_PRIORITY | High Priority  | <notranslate>**Custom Event**</notranslate>  | None
-ABANDONED_BASKET | Abandoned Basket  | <notranslate>**Custom Event**</notranslate>  | None
+`OPEN` | <notranslate>View Home & appDeeplink</notranslate> | SDK Default | `$criteo_deep_link_url`
+`INSTALL` | <notranslate>Install</notranslate> | SDK Default | None
+`VIEW_ITEMS` | <notranslate>View Listing</notranslate> | Content Event | None
+`VIEW_ITEM` | <notranslate>View Product</notranslate> | Content Event | None
+`VIEW_CART` | <notranslate>View Basket</notranslate> | Commerce Event | None
+`PURCHASE` | <notranslate>Track Transaction</notranslate> | Commerce Event | None
+`PURCHASE*` | <notranslate>Static Track Transaction</notranslate>  | Commerce Event  | None
+`ACHIEVE_LEVEL` | <notranslate>UI Level</notranslate> | User Lifecycle Event | `ui_level`
+`UNLOCK_ACHIEVEMENT` | <notranslate>UI Achievement</notranslate>  | User Lifecycle Event |  `ui_achievement`
+`COMPLETE_REGISTRATION` | <notranslate>Registration</notranslate>  | User Lifecycle Event | None
+`COMPLETE_TUTORIAL` | <notranslate>Tutorial Finished</notranslate>  | User Lifecycle Event  | None
+`UI_STATUS` | <notranslate>UI Status</notranslate>  | **Custom Event** |  `ui_status`
+`UI_LOGIN` | <notranslate>UI Login</notranslate>  | **Custom Event** |  None
+`SUBSCRIPTION` | <notranslate>Subscription</notranslate>  | **Custom Event** |  None
+`LOW_PRIORITY` | <notranslate>Low Priority</notranslate>  | **Custom Event**  | None
+`HIGH_PRIORITY` | <notranslate>High Priority</notranslate>  | **Custom Event**  | None
+`ABANDONED_BASKET` | <notranslate>Abandoned Basket</notranslate>  | **Custom Event**  | None
 
 
 *\* The Static Track Transaction Postback is available as a custom version of the PURCHASE postback. Please see [advanced configuration](#editing-postbacks) for setup.*

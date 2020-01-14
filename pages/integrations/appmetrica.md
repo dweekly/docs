@@ -55,10 +55,10 @@ Branch will send any parameters that you append to a link on to AppMetrica. By d
 
 Branch Analytics Tag | AppMetrica Data Placeholder Tag
 --- | ---
-Campaign | my_campaign
-Channel | my_placement
-Feature | my_keyword
-Branch Click ID | tracking_id
+<notranslate>Campaign</notranslate> | `my_campaign`
+<notranslate>Channel</notranslate> | `my_placement`
+<notranslate>Feature</notranslate> | `my_keyword`
+<notranslate>Branch Click ID</notranslate> | `tracking_id`
 
 ### Advanced AppMetrica Tracker Settings
 

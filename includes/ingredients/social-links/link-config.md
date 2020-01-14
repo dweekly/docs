@@ -54,7 +54,7 @@ If you use your web URL as a deep link value:
     The Branch [Quick Link creator](/getting-started/creating-links/dashboard/) also scrapes your web URL for deep link data to make link creation even easier. [Hosting Deep Link Data](/getting-started/hosted-deep-link-data/guide/) on your website will make using Branch products easier in future.
 
 
-In the meantime, you can proceed to the next step: <notranslate>**[Configure ESP](#configure-your-esp)**</notranslate>.
+In the meantime, you can proceed to the next step: **[Configure ESP](#configure-your-esp)**.
 
 ### Deep linking settings for email
 

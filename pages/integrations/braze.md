@@ -67,10 +67,10 @@ In the above snippet, `this` is the Activity context.
 
 Branch Analytics Tag | Braze Data Placeholder Tag
 --- | ---
-Campaign | campaign
-Channel | source
-Adgroup | adgroup
-Ad | ad
+<notranslate>Campaign</notranslate> | `campaign`
+<notranslate>Channel</notranslate> | `source`
+<notranslate>Adgroup</notranslate> | `adgroup`
+<notranslate>Ad</notranslate> | `ad`
 
 ### Braze Endpoints.
 
