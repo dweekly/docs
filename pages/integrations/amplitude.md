@@ -35,7 +35,7 @@ Find your Amplitude Project Key and enter it into the Branch Dashboard.
 
 1. Log in to your [Amplitude account](https://analytics.amplitude.com/){:target="\_blank"}  and navigate to Settings by clicking your username in the top right hand corner.
 ![image](/_assets/img/pages/integrations/amplitude/amplitude-settings.png)
-1. In settings, select "Projects" from the left hand navigation.
+1. In settings, select <notranslate>"Projects"</notranslate> from the left hand navigation.
 ![image](/_assets/img/pages/integrations/amplitude/amplitude-settings-projects.png)
 1. Copy the Project Key of whichever app you’re going to use with Branch.
 ![image](/_assets/img/pages/integrations/amplitude/amplitude-project-key.png)
@@ -46,7 +46,7 @@ Find your Amplitude Project Key and enter it into the Branch Dashboard.
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
 1. Locate Amplitude and choose **Enable**.
   * If you have not yet entered billing information, please do so now.
-1. Enter your Amplitude Project Key in the relevant app under "[iOS/Android] API key" and hit **Save**. If you use the same key for iOS and Android, it's fine to enter the same key twice.
+1. Enter your Amplitude Project Key in the relevant app under <notranslate>"[iOS/Android] API key"</notranslate> and hit **Save**. If you use the same key for iOS and Android, it's fine to enter the same key twice.
 
 ![image](/_assets/img/pages/integrations/amplitude/amplitude-marketplace.png)
 
@@ -68,17 +68,17 @@ Please ensure you're using the Branch iOS SDK 0.12.2 or greater, and Android SDK
 
 | Property Name | Value | Sourced from | Example | Req
 | --- | --- | --- | --- | ---
-| api_key | API Key | Branch Dashboard | 70d1db75922b0b4be56b819c42bxxxxx | Y
-| event_type | Branch event | event name | [Branch] install | Y
-| platform | `ios` or `android` | collected by Branch SDK | ios | Y
-| idfa | IDFA | collected by Branch SDK | AEBE52E7-03EE-455A-B3C4-E57283966239 | *
-| idfv | IDFV | collected by Branch SDK | AEBE52E7-03EE-455A-B3C4-E57283966239 | *
-| android_id | Android ID | collected by Branch SDK | f07a13984f6d116a | N
-| adid | GAID | collected by Branch SDK | AEBE52E7-03EE-455A-B3C4-E57283966239 | *
-| device_id | Unique ID for device | $amplitude_device_id | AEBE52E7-03EE-455A-B3C4-E57283966239 | N
-| user_id | Unique ID for user | $amplitude_user_id | User A | N
-| ip | User’s IP Address | collected by Branch SDK | 111.111.111.111 | N
-| event_properties.ANY-KEY (many) | The value associated with the key | event metadata or referring link data | ~channel: facebook | N
+| `api_key` | API Key | Branch Dashboard | 70d1db75922b0b4be56b819c42bxxxxx | Y
+| `event_type` | Branch event | event name | [Branch] install | Y
+| `platform` | `ios` or `android` | collected by Branch SDK | ios | Y
+| `idfa` | IDFA | collected by Branch SDK | AEBE52E7-03EE-455A-B3C4-E57283966239 | *
+| `idfv` | IDFV | collected by Branch SDK | AEBE52E7-03EE-455A-B3C4-E57283966239 | *
+| `android_id` | Android ID | collected by Branch SDK | f07a13984f6d116a | N
+| `adid` | GAID | collected by Branch SDK | AEBE52E7-03EE-455A-B3C4-E57283966239 | *
+| `device_id` | Unique ID for device | $amplitude_device_id | AEBE52E7-03EE-455A-B3C4-E57283966239 | N
+| `user_id` | Unique ID for user | $amplitude_user_id | User A | N
+| `ip` | User’s IP Address | collected by Branch SDK | 111.111.111.111 | N
+| `event_properties.ANY-KEY` (many) | The value associated with the key | event metadata or referring link data | ~channel: facebook | N
 
 * On iOS, `idfa` or `idfv` is required. On Android, `adid` is required.
 
@@ -111,10 +111,10 @@ The simplest way to test your integration is working end to end is to open your 
 
 1. Create a Branch Quick Link at [https://dashboard.branch.io/quick-links](https://dashboard.branch.io/quick-links){:target="\_blank"}.
 1. Click that Branch link to open your app.
-1. In your Branch dashboard, verify you see the open event show as a "referred session" with a "session referring link URL" in your Branch dashboard under "Liveview > Events"
+1. In your Branch dashboard, verify you see the open event show as a <notranslate>"referred session"</not> with a <notranslate>"session referring link URL"</notranslate> in your Branch dashboard under <notranslate>"Liveview > Events"</notranslate>
 
 ![image](/_assets/img/pages/integrations/amplitude/branch-amplitude-liveview.png)
 
-1. Go to your Amplitude dashboard and click on "User Activity" and look at the "Real-time activity" section. You should see events with `[Branch]` prepended. There can sometimes be a delay in events appearing, so check back 30 minutes after testing.
+1. Go to your Amplitude dashboard and click on <notranslate>"User Activity"</notranslate> and look at the <notranslate>"Real-time activity"</notranslate> section. You should see events with `[Branch]` prepended. There can sometimes be a delay in events appearing, so check back 30 minutes after testing.
 
 ![image](/_assets/img/pages/integrations/amplitude/amplitude-user-activity.png)

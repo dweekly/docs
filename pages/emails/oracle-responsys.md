@@ -8,7 +8,7 @@ This guide will walk you through how to setup your email campaigns with **[Oracl
 
 ## Setup
 
-To use the Branch Link Conversion SDK, you'll need an **EMD (Email Message Designer)** enabled account. If you're using the Classic dashboard, or if you’re not sure, please talk to your Responsys Account Manager.
+To use the Branch Link Conversion SDK, you'll need an <notranslate>**EMD (Email Message Designer)**</notranslate> enabled account. If you're using the Classic dashboard, or if you’re not sure, please talk to your Responsys Account Manager.
 
 {! ingredients/email/prerequisites.md !}
 
@@ -16,7 +16,7 @@ To use the Branch Link Conversion SDK, you'll need an **EMD (Email Message Desig
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Oracle-Responsys** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Oracle-Responsys**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
@@ -86,18 +86,18 @@ In this step, we'll upload an SDK that makes it very easy to create deep links i
 
     ![image](/_assets/img/pages/email/responsys/responsys-shortcuts.png)
 
-1. Once you are in the Content Manager, you’ll see a list of folders where content is stored. Under **All Content**, create a new folder named `Branch_SDK`:
+1. Once you are in the Content Manager, you’ll see a list of folders where content is stored. Under <notranslate>**All Content**</notranslate>, create a new folder named `Branch_SDK`:
 
     ![image](/_assets/img/pages/email/responsys/responsys-new-folder.png)
 
-1. Select the **Branch_SDK** folder and then click **Create Document**:
+1. Select the <notranslate>**Branch_SDK**</notranslate> folder and then click <notranslate>**Create Document**</notranslate>:
 
     ![image](/_assets/img/pages/email/responsys/responsys-create-document.png)
 
 1. In the Create Document window:
     * Enter `branch-sdk` in the “Document Name” field.
-    * In the **Content Box**, delete all the text.
-    * Paste the snippet you copied in **1**.
+    * In the <notranslate>**Content Box**</notranslate>, delete all the text.
+    * Paste the snippet you copied in <notranslate>**1**</notranslate>.
     * Click Save.
 
       ![image](/_assets/img/pages/email/responsys/responsys-snippet.png)
@@ -108,7 +108,7 @@ You have now successfully created the deep linking script. Your file structure s
 
 ##### Configure your Responsys email templates
 
-This code is referred to as the "Branch script" - this script will convert your web URLs to deep links.
+This code is referred to as the <notranslate>"Branch script"</notranslate> - this script will convert your web URLs to deep links.
 
 The Responsys integration requires you to add email template code in two places.
 
@@ -123,11 +123,11 @@ Copy the following snippet, and using the “Source” view, paste the snippet d
 
 ##### Configuring the Responsys Link Table
 
-For the Branch SDK to generate Branch links in the email or the 3P links while redirections, the Link Tracking table for the email template should contain the following two LINK NAME with the `${deeplink}` as the **LINK URL**.
+For the Branch SDK to generate Branch links in the email or the 3P links while redirections, the Link Tracking table for the email template should contain the following two LINK NAME with the `${deeplink}` as the <notranslate>**LINK URL**</notranslate>.
 
 ![image](/_assets/img/pages/email/responsys/configure-responsys-5.png)
 
-*For creating tracked links, ensure that **‘Track Link’** is set to **ON**. Tracked links will be generated under the Responsys Click Tracking Domain and will then redirect to a Branch 3p link (the link added as the base URL in the Branch_SDK.htm file.*
+*For creating tracked links, ensure that <notranslate>**‘Track Link’**</notranslate> is set to <notranslate>**ON**</notranslate>. Tracked links will be generated under the Responsys Click Tracking Domain and will then redirect to a Branch 3p link (the link added as the base URL in the Branch_SDK.htm file.*
 ##### Create deep links
 
 Wherever you are using `<a>` tags in your email templates, replace those with `<@deeplink>` tags, or add `<@tracked_deeplink />` for web URLs that you would like to deep link.

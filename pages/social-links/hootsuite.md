@@ -14,7 +14,7 @@ This guide will walk you through how to setup your social links campaigns with *
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain - Hootsuite refers to this as a Vanity URL - in the **[Account & Settings > Vanity URLs]** section of your Hootsuite account.
+1. Add and verify a custom click tracking domain - Hootsuite refers to this as a Vanity URL - in the <notranslate>**[Account & Settings > Vanity URLs]**</notranslate> section of your Hootsuite account.
 
 For more information on how to set up your domain, please visit Hootsuite's [documentation](https://help.hootsuite.com/hc/en-us/articles/204585640-Add-share-or-delete-a-vanity-URL){:target="\_blank"}.
 
@@ -27,13 +27,13 @@ For more information on how to set up your domain, please visit Hootsuite's [doc
 
 ### Choose your Social Link provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Hootsuite** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Hootsuite**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/social-links/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Account & Settings > Vanity URLs]** section of your Hootsuite account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**[Account & Settings > Vanity URLs]**</notranslate> section of your Hootsuite account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 {! ingredients/social-links/technical-setup.md !}
 

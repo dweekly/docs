@@ -12,13 +12,13 @@ Branch will import events that are not auto-tracked with the Branch SDKs. This i
 
 1. [Contact Branch](https://support.branch.io){:target="\_blank"} to configure Branch to receive events from Segment. Please note that a subscription to [Data Feeds](https://branch.io/data-feeds/){:target="\_blank"} is required to enable data import from Segment to Branch.
 1. Navigate to the [Data Integrations page](https://dashboard.branch.io/data-import-export/data-feeds/integrations){:target="\_blank"} of the Branch dashboard.
-    1. Select **Segment** from the menu on the left.
-    1. Select the platforms you would like to import events from and click **Save**.
+    1. Select <notranslate>**Segment**</notranslate> from the menu on the left.
+    1. Select the platforms you would like to import events from and click <notranslate>**Save**</notranslate>.
 
     ![image](/_assets/img/pages/integrations/segment/segment-import.png)
 
 1. Navigate to your your Segment UI’s Destinations page.
-    1. Click on **Add Destination**.
+    1. Click on <notranslate>**Add Destination**</notranslate>.
     1. Search for Branch within the Destinations Catalog and confirm the Source you’d like to connect to.
     1. Enter your Branch Key. This can be found in the [Account Settings > App](https://dashboard.branch.io/account-settings/app){:target="\_blank"} section of the Branch dashboard.
     1. Enter your Branch Secret. This can be found in the [Account Settings > App](https://dashboard.branch.io/account-settings/app){:target="\_blank"} section of the Branch dashboard.
@@ -63,42 +63,42 @@ Branch will only import events from Segment that are not already auto-tracked wi
 
 | Segment Event | Branch Event | Branch Event Category | Imported |
 | --- | --- | --- | --- |
-| Product Added | Add To Cart | Commerce Event | **Yes** |
-| Product Added to Wishlist | Add To Wishlist | Commerce Event | **Yes** |
-| Cart Viewed | View Cart | Commerce Event | **Yes** |
-| Payment Info Entered | Add Payment Info | Commerce Event | **Yes** |
-| Checkout Started | Initiate Purchase | Commerce Event | **Yes** |
-| Order Completed | Purchase | Commerce Event | **Yes** |
-| *use the Branch event name* | Spend Credits | Commerce Event | **Yes** |
-| Products Searched | Search | Content Event | **Yes** |
-| Product Viewed | View Item | Content Event | **Yes** |
-| Product List Viewed | View Items | Content Event | **Yes** |
-| Product Reviewed | Rate | Content Event | **Yes** |
-| Product Shared | Share | Content Event | **Yes** |
-| *use the Branch event name* | Complete Registration | Lifecycle Event | **Yes** |
-| *use the Branch event name* | Complete Tutorial | Lifecycle Event | **Yes** |
-| *use the Branch event name* | Achieve Level | Lifecycle Event | **Yes** |
-| *use the Branch event name* | Unlock Achievement | Lifecycle Event | **Yes** |
-| *any event name* | Custom | Custom Event | **Yes** |
-| Deep Link Clicked | Click | - | No |
-| Install Attributed | Install | - | No |
-| Deep Link Opened | Reinstall | - | No |
-| Deep Link Opened | Open | - | No |
-| - | SMS Sent | - | No |
-| - | Pageview | - | No |
-| - | Web Session Start | - | No |
-| - | Branch CTA View | - | No |
-| - | Impression | - | No |
-| - | Web to App Auto Redirect | - | No |
-| Application Installed | - | - | No |
-| Application Opened | - | - | No |
-| Application Updated | - | - | No |
-| Application Backgrounded | - | - | No |
-| Application Crashed | - | - | No |
-| Application Uninstalled | - | - | No |
-| Push Notification Received | - | - | No |
-| Push Notification Tapped | - | - | No |
-| Push Notification Bounced | - | - | No |
+| <notranslate>Product Added</notranslate> | <notranslate>Add To Cart</notranslate> | Commerce Event | **Yes** |
+| <notranslate>Product Added to Wishlist</notranslate> | <notranslate>Add To Wishlist</notranslate> | Commerce Event | **Yes** |
+| <notranslate>Cart Viewed</notranslate> | <notranslate>View Cart</notranslate> | Commerce Event | **Yes** |
+| <notranslate>Payment Info Entered</notranslate> | <notranslate>Add</notranslate> Payment Info</notranslate> | Commerce Event | **Yes** |
+| <notranslate>Checkout Started</notranslate> | <notranslate>Initiate Purchase</notranslate> | Commerce Event | **Yes** |
+| <notranslate>Order Completed</notranslate> | <notranslate>Purchase</notranslate> | Commerce Event | **Yes** |
+| *use the Branch event name* | <notranslate>Spend Credits</notranslate> | Commerce Event | **Yes** |
+| <notranslate>Products Searched</notranslate> | <notranslate>Search</notranslate> | Content Event | **Yes** |
+| <notranslate>Product Viewed</notranslate> | <notranslate>View Item</notranslate> | Content Event | **Yes** |
+| <notranslate>Product List Viewed</notranslate> | <notranslate>View Items</notranslate> | Content Event | **Yes** |
+| <notranslate>Product Reviewed</notranslate> | <notranslate>Rate</notranslate> | Content Event | **Yes** |
+| <notranslate>Product Shared</notranslate> | <notranslate>Share</notranslate> | Content Event | **Yes** |
+| *use the Branch event name* | <notranslate>Complete Registration</notranslate> | Lifecycle Event | **Yes** |
+| *use the Branch event name* | <notranslate>Complete Tutorial</notranslate> | Lifecycle Event | **Yes** |
+| *use the Branch event name* | <notranslate>Achieve Level</notranslate> | Lifecycle Event | **Yes** |
+| *use the Branch event name* | <notranslate>Unlock Achievement</notranslate> | Lifecycle Event | **Yes** |
+| *any event name* | <notranslate>Custom</notranslate> | Custom Event | **Yes** |
+| <notranslate>Deep Link Clicked</notranslate> | <notranslate>Click</notranslate> | - | No |
+| <notranslate>Install Attributed</notranslate> | <notranslate>Install</notranslate> | - | No |
+| <notranslate>Deep Link Opened</notranslate> | <notranslate>Reinstall</notranslate> | - | No |
+| <notranslate>Deep Link Opened</notranslate> | <notranslate>Open</notranslate> | - | No |
+| - | <notranslate>SMS Sent</notranslate> | - | No |
+| - | <notranslate>Pageview</notranslate> | - | No |
+| - | <notranslate>Web Session Start</notranslate> | - | No |
+| - | <notranslate>Branch CTA View</notranslate> | - | No |
+| - | <notranslate>Impression</notranslate> | - | No |
+| - | <notranslate>Web to App Auto Redirect</notranslate> | - | No |
+| <notranslate>Application Installed</notranslate> | - | - | No |
+| <notranslate>Application Opened</notranslate> | - | - | No |
+| <notranslate>Application Updated</notranslate> | - | - | No |
+| <notranslate>Application Backgrounded</notranslate> | - | - | No |
+| <notranslate>Application Crashed</notranslate> | - | - | No |
+| <notranslate>Application Uninstalled</notranslate> | - | - | No |
+| <notranslate>Push Notification Received</notranslate> | - | - | No |
+| <notranslate>Push Notification Tapped</notranslate> | - | - | No |
+| <notranslate>Push Notification Bounced</notranslate> | - | - | No |
 
 
 #### Identifiers for app events
@@ -112,10 +112,10 @@ Branch maps Segment's identifiers to the following:
 
 | Segment field | Branch field |
 | --- | --- |
-| userId | developer_identity |
-| context.device.advertisingId | idfa or aaid |
-| context.device.id | idfv or android_id |
-| context.device.type | os |
+| `userId` | `developer_identity` |
+| `context.device.advertisingId` | `idfa` or `aaid` |
+| `context.device.id` | `idfv` or `android_id` |
+| `context.device.type` | `os` |
 
 If using User ID with Segment, Branch will automatically map this to [developer identity](/apps/ios/#track-users). Check out Segment's [User ID docs](https://segment.com/docs/spec/identify#user-id){:target="\_blank"} for more details.
 
@@ -160,7 +160,7 @@ Once you have import turned on in both Segment and Branch, events should come th
 
 ![image](/_assets/img/pages/integrations/segment/segment-import-status.png)
 
-To see more information on the events that are coming in, you can look at events with **origin** `SEGMENT` in [Liveview](https://dashboard.branch.io/liveview/events){:target="\_blank"}:
+To see more information on the events that are coming in, you can look at events with <notranslate>**origin**</notranslate> `SEGMENT` in [Liveview](https://dashboard.branch.io/liveview/events){:target="\_blank"}:
 
 ![image](/_assets/img/pages/integrations/segment/segment-import-liveview.png)
 

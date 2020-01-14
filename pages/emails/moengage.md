@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[MoEng
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **MoEngage** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**MoEngage**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Tracking Domains](https://XXX.com){:target="\_blank"}** section of your XXX account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**[Tracking Domains](https://XXX.com){:target="\_blank"}**</notranslate> section of your XXX account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/moengage/setup-config.png)
 
@@ -44,7 +44,7 @@ You can retrieve your click tracking domain from the **[Tracking Domains](https:
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **[Tracking Domains](https://app.moengage.com/v3/#/settings/email/connector){:target="\_blank"}** section of your MoEngage account:
+1. Add and verify a custom click tracking domain in the <notranslate>**[Tracking Domains](https://app.moengage.com/v3/#/settings/email/connector){:target="\_blank"}**</notranslate> section of your MoEngage account:
 
 For more information on how to set up your domain, please visit MoEngage's [documentation](https://help.moengage.com/hc/en-us/articles/206814913-Configuring-Custom-SMTP-connector){:target="\_blank"}.
 

@@ -143,7 +143,6 @@ public void onCreate() {
                 ```
 
             - `pod install`
-
             - To remove CocoaPods entirely from your project, in case you were only using it for Branch:
 
                 ```bash
@@ -407,11 +406,11 @@ public void onCreate() {
 
     - Compile your app with Xcode
 
-    - Paste deep link in `Apple Notes`
+    - Paste deep link in <notranslate>**Apple Notes**</notranslate>
 
     - Long press on the deep link *(not 3D Touch)*
 
-    - Click `Open in "APP_NAME"` to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
+    - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
 
 - ### Test deep link Android
 
@@ -421,7 +420,7 @@ public void onCreate() {
 
     - Compile your app with Android Studio
 
-    - Paste deep link in `Google Hangouts`
+    - Paste deep link in <notranslate>**Google Hangouts**</notranslate>
 
     - Click on the deep link to open your app
 
@@ -438,7 +437,7 @@ public void onCreate() {
 
 - ### Create content reference
 
-    - The `Branch Universal Object` encapsulates the thing you want to share (content or user)
+    - The <notranslate>**Branch Universal Object**</notranslate> encapsulates the thing you want to share (content or user)
 
     - Uses the [Universal Object Properties](/links/integrate/#universal-object)
 
@@ -800,7 +799,7 @@ public void onCreate() {
 
     - Android
 
-        - Uses `Chrome Tabs` to increase attribute matching success
+        - Uses <notranslate>**Chrome Tabs**</notranslate> to increase attribute matching success
 
         - Add `compile 'com.android.support:customtabs:23.3.0'` to your `build.gradle`
 

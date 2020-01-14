@@ -71,7 +71,7 @@ This will create the appropriate NSUserActivity and tell Apple that a view occur
 
 ### Handle incoming traffic from Spotlight
 
-Open your **AppDelegate.m** file and add the following method. If you completed the basic SDK integration guide, this is likely already present.
+Open your <notranslate>**AppDelegate.m**</notranslate> file and add the following method. If you completed the basic SDK integration guide, this is likely already present.
 
 - *Swift 3*
 

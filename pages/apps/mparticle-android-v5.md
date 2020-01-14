@@ -110,7 +110,7 @@ Please ensure you've followed [mParticle's documentation](http://docs.mparticle.
 
 - Compile your app to your device
 
-- Paste deep link in `Google Hangouts`
+- Paste deep link in <notranslate>**Google Hangouts**</notranslate>
 
 - Click on the deep link to open your app
 

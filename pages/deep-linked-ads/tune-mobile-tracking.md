@@ -28,7 +28,7 @@ This guide will walk you through how to setup your campaigns with **[TUNE](http:
 {! ingredients/deep-linked-ads/create-ad-link.md !}
 
 !!! info "Placing Your Branch Link"
-	Select **Branch** from the Universal Links menu in the Links panel, then paste your Branch link into the **Default Offer URL** field as usual.
+	Select <notranslate>**Branch**</notranslate> from the Universal Links menu in the Links panel, then paste your Branch link into the <notranslate>**Default Offer URL**</notranslate> field as usual.
 
 	![image](/_assets/img/pages/deep-linked-ads/hasoffers/hasoffers-url.png)
 

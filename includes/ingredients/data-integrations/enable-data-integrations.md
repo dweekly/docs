@@ -10,6 +10,6 @@ Data Integrations are included as part of the Data Feeds product. For more infor
     ![Ads Partner Management](/_assets/img/ingredients/data-integrations/search-for-integration.png)
 
     !!! note "We've upgraded our Data Integrations!"
-		    We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click "Preview Now" to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018.
+ 		    We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click <notranslate>"Preview Now"</notranslate> to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018.
 
         ![Ads Partner Management](/_assets/img/ingredients/data-integrations/legacy-data-integrations.png)

@@ -176,11 +176,11 @@
 
     - Compile your app *(`cordova run ios` `phonegap run ios` `ionic run ios`)*
 
-    - Paste deep link in `Apple Notes`
+    - Paste deep link in <notranslate>**Apple Notes**</notranslate>
 
     - Long press on the deep link *(not 3D Touch)*
 
-    - Click `Open in "APP_NAME"` to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
+    - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
 
 - ### Test deep link Android
 
@@ -190,7 +190,7 @@
 
     - Compile your app *(`cordova run android` `phonegap run android` `ionic run android`)*
 
-    - Paste deep link in `Google Hangouts`
+    - Paste deep link in <notranslate>**Google Hangouts**</notranslate>
 
     - Click on the deep link to open your app
 
@@ -220,7 +220,7 @@
 
 - ### Create content reference
 
-    - The `Branch Universal Object` encapsulates the thing you want to share (content or user)
+    - The <notranslate>**Branch Universal Object**</notranslate> encapsulates the thing you want to share (content or user)
 
     - Uses the [Universal Object Properties](#/links/integrate/#universal-object)
 
@@ -417,7 +417,7 @@
 
 - ### Display content
 
-    - List content on `iOS Spotlight`
+    - List content on <notranslate>**iOS Spotlight**</notranslate>
 
     - Needs a [Branch Universal Object](#create-content-reference)
 
@@ -632,7 +632,7 @@
 
     - Delete your app
 
-    - *[iOS]* iPhone Device -> Settings -> Privacy -> Advertising -> Reset Advertising Identifier -> Reset Identifier
+    - *[iOS]* iPhone Device -> **Settings** -> **Privacy** -> **Advertising** -> **Reset Advertising Identifier** -> **Reset Identifier**
 
     - *[Android]* Add `<android-testmode value="true" />` to your `Config.xml` ([Testing: Optional App Config](#testing-optional-app-config))
 
@@ -656,15 +656,15 @@
 
         | Key | Default | Usage | Link Property
         | --- | :-: | --- | :-:
-        | canonicalIdentifier | | **(Required)** This is the unique identifier for content that will help Branch dedupe across many instances of the same thing. Suitable options: a website with pathing, or a database with identifiers for entities | `$canonical_identifier`
-        | canonicalUrl | | The canonical URL, used for SEO purposes | `$canonical_url`
-        | title | | The name for the piece of content | `$og_title`
-        | contentDescription | | A description for the content | `$og_description`
-        | contentImageUrl | | The image URL for the content. Must be an absolute path | `$og_image_url `
-        | price | | The price of the item | `$amount`
-        | currency | | The currency representing the price in ISO 4217 currency code | `$currency`
-        | contentIndexingMode | `"public"` | Can be set to either `"public"` or `"private"`. Public indicates that you’d like this content to be discovered by other apps. | `$publicly_indexable`
-        | contentMetadata | | Any custom key-value data e.g. `{ "custom": "data" }`
+        | `canonicalIdentifier` | | **(Required)** This is the unique identifier for content that will help Branch dedupe across many instances of the same thing. Suitable options: a website with pathing, or a database with identifiers for entities | `$canonical_identifier`
+        | `canonicalUrl` | | The canonical URL, used for SEO purposes | `$canonical_url`
+        | `title` | | The name for the piece of content | `$og_title`
+        | `contentDescription` | | A description for the content | `$og_description`
+        | `contentImageUrl` | | The image URL for the content. Must be an absolute path | `$og_image_url `
+        | `price` | | The price of the item | `$amount`
+        | `currency` | | The currency representing the price in ISO 4217 currency code | `$currency`
+        | `contentIndexingMode` | `"public"` | Can be set to either `"public"` or `"private"`. Public indicates that you’d like this content to be discovered by other apps. | `$publicly_indexable`
+        | `contentMetadata` | | Any custom key-value data e.g. `{ "custom": "data" }`
 
 - ### Commerce properties
 
@@ -674,82 +674,82 @@
 
         | Value | Category | Value | Category |
         | --- | --- | --- | --- |
-        | 0 | Animals & Pet Supplies | 11 | Home & Garden |
-        | 1 | Apparel & Accessories | 12 | Luggage & Bags |
-        | 2 | Arts & Entertainment | 13 | Mature |
-        | 3 | Baby & Toddler | 14 | Media |
-        | 4 | Business & Industrial | 15 | Office Supplies |
-        | 5 | Camera & Optics | 16 | Religious & Ceremonial |
-        | 6 | Electronics | 17 | Software |
-        | 7 | Food, Beverage & Tobacco | 18 | Sporting Goods |
-        | 8 | Furniture | 19 | Toys & Games |
-        | 9 | Hardware | 20 | Vehicles & Parts |
-        | 10 | Health & Beauty | | |
+        | `0` | <notranslate>Animals & Pet Supplies</notranslate> | `11` | <notranslate>Home & Garden</notranslate> |
+        | `1` | <notranslate>Apparel & Accessories</notranslate> | `12` | <notranslate>Luggage & Bags</notranslate> |
+        | `2` | <notranslate>Arts & Entertainment</notranslate> | `13` | <notranslate>Mature</notranslate> |
+        | `3` | <notranslate>Baby & Toddler</notranslate> | `14` | <notranslate>Media</notranslate> |
+        | `4` | <notranslate>Business & Industrial</notranslate> | `15` | <notranslate>Office Supplies</notranslate> |
+        | `5` | <notranslate>Camera & Optics</notranslate> | `16` | <notranslate>Religious & Ceremonial</notranslate> |
+        | `6` | <notranslate>Electronics</notranslate> | `17` | <notranslate>Software</notranslate> |
+        | `7` | <notranslate>Food, Beverage & Tobacco</notranslate> | `18` | <notranslate>Sporting Goods</notranslate> |
+        | `8` | <notranslate>Furniture</notranslate> | `19` | <notranslate>Toys & Games</notranslate> |
+        | `9` | <notranslate>Hardware</notranslate> | `20` | <notranslate>Vehicles & Parts</notranslate> |
+        | `10` | <notranslate>Health & Beauty </notranslate>| | |
 
     - Currencies
 
         | Value | Currency | Value | Currency | Value | Currency |
         | --- | --- | --- | --- | --- | --- |
-        | 0  | AED | 60 | HKD | 120 | RSD |
-        | 1  | AFN | 61 | HNL | 121 | RUB |
-        | 2  | ALL | 62 | HRK | 122 | RWF |
-        | 3  | AMD | 63 | HTG | 123 | SAR |
-        | 4  | ANG | 64 | HUF | 124 | SBD |
-        | 5  | AOA | 65 | IDR | 125 | SCR |
-        | 6  | ARS | 66 | ILS | 126 | SDG |
-        | 7  | AUD | 67 | INR | 127 | SEK |
-        | 8  | AWG | 68 | IQD | 128 | SGD |
-        | 9  | AZN | 69 | IRR | 129 | SHP |
-        | 10 | BAM | 70 | ISK | 130 | SLL |
-        | 11 | BBD | 71 | JMD | 131 | SOS |
-        | 12 | BDT | 72 | JOD | 132 | SRD |
-        | 13 | BGN | 73 | JPY | 133 | SSP |
-        | 14 | BHD | 74 | KES | 134 | STD |
-        | 15 | BIF | 75 | KGS | 135 | SYP |
-        | 16 | BMD | 76 | KHR | 136 | SZL |
-        | 17 | BND | 77 | KMF | 137 | THB |
-        | 18 | BOB | 78 | KPW | 138 | TJS |
-        | 19 | BOV | 79 | KRW | 139 | TMT |
-        | 20 | BRL | 80 | KWD | 140 | TND |
-        | 21 | BSD | 81 | KYD | 141 | TOP |
-        | 22 | BTN | 82 | KZT | 142 | TRY |
-        | 23 | BWP | 83 | LAK | 143 | TTD |
-        | 24 | BYN | 84 | LBP | 144 | TWD |
-        | 25 | BYR | 85 | LKR | 145 | TZS |
-        | 26 | BZD | 86 | LRD | 146 | UAH |
-        | 27 | CAD | 87 | LSL | 147 | UGX |
-        | 28 | CDF | 88 | LYD | 148 | USD |
-        | 29 | CHE | 89 | MAD | 149 | USN |
-        | 30 | CHF | 90 | MDL | 150 | UYI |
-        | 31 | CHW | 91 | MGA | 151 | UYU |
-        | 32 | CLF | 92 | MKD | 152 | UZS |
-        | 33 | CLP | 93 | MMK | 153 | VEF |
-        | 34 | CNY | 94 | MNT | 154 | VND |
-        | 35 | COP | 95 | MOP | 155 | VUV |
-        | 36 | COU | 96 | MRO | 156 | WST |
-        | 37 | CRC | 97 | MUR | 157 | XAF |
-        | 38 | CUC | 98 | MVR | 158 | XAG |
-        | 39 | CUP | 99 | MWK | 159 | XAU |
-        | 40 | CVE | 100 | MXN | 160 | XBA |
-        | 41 | CZK | 101 | MXV | 161 | XBB |
-        | 42 | DJF | 102 | MYR | 162 | XBC |
-        | 43 | DKK | 103 | MZN | 163 | XBD |
-        | 44 | DOP | 104 | NAD | 164 | XCD |
-        | 45 | DZD | 105 | NGN | 165 | XDR |
-        | 46 | EGP | 106 | NIO | 166 | XFU |
-        | 47 | ERN | 107 | NOK | 167 | XOF |
-        | 48 | ETB | 108 | NPR | 168 | XPD |
-        | 49 | EUR | 109 | NZD | 169 | XPF |
-        | 50 | FJD | 110 | OMR | 170 | XPT |
-        | 51 | FKP | 111 | PAB | 171 | XSU |
-        | 52 | GBP | 112 | PEN | 172 | XTS |
-        | 53 | GEL | 113 | PGK | 173 | XUA |
-        | 54 | GHS | 114 | PHP | 174 | XXX |
-        | 55 | GIP | 115 | PKR | 175 | YER |
-        | 56 | GMD | 116 | PLN | 176 | ZAR |
-        | 57 | GNF | 117 | PYG | 177 | ZMW |
-        | 58 | GTQ | 118 | QAR |     |     |
-        | 59 | GYD | 119 | RON |     |     |
+        | `0`  | `AED` | `60` | `HKD` | `120` | `RSD` |
+        | `1`  | `AFN` | `61` | `HNL` | `121` | `RUB` |
+        | `2`  | `ALL` | `62` | `HRK` | `122` | `RWF` |
+        | `3`  | `AMD` | `63` | `HTG` | `123` | `SAR` |
+        | `4`  | `ANG` | `64` | `HUF` | `124` | `SBD` |
+        | `5`  | `AOA` | `65` | `IDR` | `125` | `SCR` |
+        | `6`  | `ARS` | `66` | `ILS` | `126` | `SDG` |
+        | `7`  | `AUD` | `67` | `INR` | `127` | `SEK` |
+        | `8`  | `AWG` | `68` | `IQD` | `128` | `SGD` |
+        | `9`  | `AZN` | `69` | `IRR` | `129` | `SHP` |
+        | `10` | `BAM` | `70` | `ISK` | `130` | `SLL` |
+        | `11` | `BBD` | `71` | `JMD` | `131` | `SOS` |
+        | `12` | `BDT` | `72` | `JOD` | `132` | `SRD` |
+        | `13` | `BGN` | `73` | `JPY` | `133` | `SSP` |
+        | `14` | `BHD` | `74` | `KES` | `134` | `STD` |
+        | `15` | `BIF` | `75` | `KGS` | `135` | `SYP` |
+        | `16` | `BMD` | `76` | `KHR` | `136` | `SZL` |
+        | `17` | `BND` | `77` | `KMF` | `137` | `THB` |
+        | `18` | `BOB` | `78` | `KPW` | `138` | `TJS` |
+        | `19` | `BOV` | `79` | `KRW` | `139` | `TMT` |
+        | `20` | `BRL` | `80` | `KWD` | `140` | `TND` |
+        | `21` | `BSD` | `81` | `KYD` | `141` | `TOP` |
+        | `22` | `BTN` | `82` | `KZT` | `142` | `TRY` |
+        | `23` | `BWP` | `83` | `LAK` | `143` | `TTD` |
+        | `24` | `BYN` | `84` | `LBP` | `144` | `TWD` |
+        | `25` | `BYR` | `85` | `LKR` | `145` | `TZS` |
+        | `26` | `BZD` | `86` | `LRD` | `146` | `UAH` |
+        | `27` | `CAD` | `87` | `LSL` | `147` | `UGX` |
+        | `28` | `CDF` | `88` | `LYD` | `148` | `USD` |
+        | `29` | `CHE` | `89` | `MAD` | `149` | `USN` |
+        | `30` | `CHF` | `90` | `MDL` | `150` | `UYI` |
+        | `31` | `CHW` | `91` | `MGA` | `151` | `UYU` |
+        | `32` | `CLF` | `92` | `MKD` | `152` | `UZS` |
+        | `33` | `CLP` | `93` | `MMK` | `153` | `VEF` |
+        | `34` | `CNY` | `94` | `MNT` | `154` | `VND` |
+        | `35` | `COP` | `95` | `MOP` | `155` | `VUV` |
+        | `36` | `COU` | `96` | `MRO` | `156` | `WST` |
+        | `37` | `CRC` | `97` | `MUR` | `157` | `XAF` |
+        | `38` | `CUC` | `98` | `MVR` | `158` | `XAG` |
+        | `39` | `CUP` | `99` | `MWK` | `159` | `XAU` |
+        | `40` | `CVE` | `100` | `MXN` | `160` | `XBA` |
+        | `41` | `CZK` | `101` | `MXV` | `161` | `XBB` |
+        | `42` | `DJF` | `102` | `MYR` | `162` | `XBC` |
+        | `43` | `DKK` | `103` | `MZN` | `163` | `XBD` |
+        | `44` | `DOP` | `104` | `NAD` | `164` | `XCD` |
+        | `45` | `DZD` | `105` | `NGN` | `165` | `XDR` |
+        | `46` | `EGP` | `106` | `NIO` | `166` | `XFU` |
+        | `47` | `ERN` | `107` | `NOK` | `167` | `XOF` |
+        | `48` | `ETB` | `108` | `NPR` | `168` | `XPD` |
+        | `49` | `EUR` | `109` | `NZD` | `169` | `XPF` |
+        | `50` | `FJD` | `110` | `OMR` | `170` | `XPT` |
+        | `51` | `FKP` | `111` | `PAB` | `171` | `XSU` |
+        | `52` | `GBP` | `112` | `PEN` | `172` | `XTS` |
+        | `53` | `GEL` | `113` | `PGK` | `173` | `XUA` |
+        | `54` | `GHS` | `114` | `PHP` | `174` | `XXX` |
+        | `55` | `GIP` | `115` | `PKR` | `175` | `YER` |
+        | `56` | `GMD` | `116` | `PLN` | `176` | `ZAR` |
+        | `57` | `GNF` | `117` | `PYG` | `177` | `ZMW` |
+        | `58` | `GTQ` | `118` | `QAR` |     |     |
+        | `59` | `GYD` | `119` | `RON` |     |     |
 
 - ### Cordova dependencies
 
@@ -777,9 +777,9 @@
 
         - Install [Android Studio](https://developer.android.com/studio/index.html)
 
-        - Open Android Studio -> configure -> appearance/system settings/android sdk -> android 6.0 -> Okay
+        - Open Android Studio -> <notranslate>**configure** -> **appearance/system settings/android sdk** -> **android 6.0** -> **Okay**</notranslate>
 
-        - Open Android Studio -> New project -> ... -> Run -> Create new emulator -> Nexus 6p 23 -> Finish
+        - Open Android Studio -> <notranslate>**New project** -> ... -> **Run** -> **Create new emulator** -> **Nexus 6p 23** -> **Finish**</notranslate>
 
             ```sh
             # add to ~/.bash_profile
@@ -811,7 +811,7 @@
 
         - Install [Genymotion](https://www.genymotion.com/download/)
 
-        - Genymotion -> Add virtual device -> Google Nexus 6P - 6.0.0 - API 23 -> Next
+        - Genymotion -> <notranslate>**Add virtual device** -> **Google Nexus 6P** - **6.0.0** - **API 23** -> **Next**</notranslate>
 
 - ### Display console logs
 
@@ -819,9 +819,9 @@
 
         - `cordova run ios;`
 
-        - Safari -> Preferences -> Advance -> Show Develop menu in menu bar
+        - Safari -> <notranslate>**Preferences** -> **Advance** -> **Show Develop menu in menu bar**</notranslate>
 
-        - Safari -> Develop -> Simulator -> index.html -> Console
+        - Safari -> <notranslate>**Develop** -> **Simulator** -> **index.html** -> **Console**</notranslate>
 
         - *May need to unplug and replug device*
 
@@ -833,13 +833,13 @@
 
         - `cordova build ios;`
 
-        - Xcode -> APP_LOCATION/platforms/ios/APP_NAME.Xcodeproj
+        - Xcode -> `APP_LOCATION/platforms/ios/APP_NAME.Xcodeproj`
 
-        - Xcode -> App -> General -> Signing -> Team
+        - Xcode -> <notranslate>**App** -> **General** -> **Signing** -> **Team**</notranslate>
 
-        - Xcode -> Product -> Run
+        - Xcode -> <notranslate>**Product** -> **Run**</notranslate>
 
-        - Xcode -> View -> Debug Area -> Activate Console
+        - Xcode -> <notranslate>**View** -> **Debug Area** -> **Activate Console**</notranslate>
 
     - Android Device
 
@@ -847,15 +847,15 @@
 
         - `cordova run android;`
 
-        - Chrome -> [chrome://inspect/#devices](chrome://inspect/#devices) -> Console
+        - Chrome -> `[chrome://inspect/#devices](chrome://inspect/#devices)` -> <notranslate>**Console**</notranslate>
 
     - Android Genymotion
 
-        - Genymotion -> Start
+        - Genymotion -> <notranslate>**Start**</notranslate>
 
         - `cordova run android;`
 
-        - Chrome -> [chrome://inspect/#devices](chrome://inspect/#devices) -> Console
+        - Chrome -> `[chrome://inspect/#devices](chrome://inspect/#devices)` -> <notranslate>**Console**</notranslate>
 
 - ### Update the Branch SDK
 

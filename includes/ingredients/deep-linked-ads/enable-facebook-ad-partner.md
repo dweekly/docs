@@ -1,7 +1,7 @@
 #### Enable Facebook as an Ad Partner (for measurement)
 
 !!! Note
-    Completing this section -- "Enable Facebook as an Ad Partner" -- will result in Branch sending app events to Facebook in order to attribute them back to ad campaigns. **This does not enable deep linking for the ad**. Further work below is required for deep linking.
+    Completing this section -- "Enable Facebook as an Ad Partner" -- will result in Branch sending app events to Facebook in order to attribute them back to ad campaigns. <notranslate>**This does not enable deep linking for the ad**</notranslate>. Further work below is required for deep linking.
 
 If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow this section to do so. Advanced options for sending events can be found [here](/deep-linked-ads/facebook-ads-faq/#facebook-mmp-event-options).
 
@@ -9,9 +9,9 @@ If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow 
 
     ![Ads Partner Management](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
 
-1. Search for **Facebook**.
+1. Search for <notranslate>**Facebook**</notranslate>.
 
-1. Click `Connect With Facebook`
+1. Click <notranslate>**Connect With Facebook**</notranslate>
 
     ![Connect with Facebook](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
 
@@ -54,6 +54,6 @@ If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow 
 
     ![complete](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
 
-1. Finally, to create a Facebook Ads link click the `Create Facebook Link` button in the top right hand corner.
+1. Finally, to create a Facebook Ads link click the <notranslate>**Create Facebook Link**</notranslate> button in the top right hand corner.
 
     ![Create Facebook Ad Link](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)

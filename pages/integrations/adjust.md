@@ -37,10 +37,10 @@ From there, you will need to create a new tracker, which is found under Data Man
 ### Enable the Adjust card in your Branch dashboard
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
-1. Locate Adjust and choose **Enable**.
+1. Locate Adjust and choose <notranslate>**Enable**</notranslate>.
   * If you have not yet entered billing information, please do so now.
 1. Enter your tracker for iOS and Android.
-1. Hit **Save**.
+1. Hit <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/integrations/adjust/enable-adjust-integration.png)
 
@@ -52,7 +52,7 @@ You need to point the iOS Custom Redirect to Adjust. Take the tracker you just c
 
 | Platform | URL
 | --- | ---
-| **iOS** | https://app.adjust.io/abcdef
+| <notranslate>**iOS**</notranslate> | https://app.adjust.io/abcdef
 
 ![image](/_assets/img/pages/integrations/adjust/adjust-redirect-settings.png)
 
@@ -64,22 +64,22 @@ By default, Branch sends the following parameters to Adjust as part of the integ
 
 Branch Analytics Tag | Adjust Data Tag
 --- | ---
-Campaign | campaign
-Channel | adgroup
-Feature | creative
-Branch Click ID | external_click_id
+`Campaign` | `campaign`
+`Channel` | `adgroup`
+`Feature` | `creative`
+`Branch Click ID` | `external_click_id`
 
 ### Advanced network segmentation with Adjust
 
 By default, installs and events via Branch links will be attributed to Branch via your default tracker. If you'd like to use Branch links on your paid ad networks for deep linking, but you'd like more granular network attribution, you can create a new tracker in Adjust then use the tracker id in your Branch link. This will override the default Branch attribution.
 
-1. Name your Adjust tracker something like "TapjoyBranch"
+1. Name your Adjust tracker something like <notranslate>"TapjoyBranch"</notranslate>
 1. Take the 6 letter identifier for your tracker and put it as a key value pair with key `tracker_id` in your deep link data for that specific link.
 
 ![image](/_assets/img/pages/integrations/adjust/override-adjust.png)
 
 !!! info "Platform-specific Tracker IDs"
-    If you have different `Tracker IDs` for your Android and iOS apps, you can specify these by using the following keys:
+    If you have different <notranslate>**Tracker IDs**</notranslate> for your Android and iOS apps, you can specify these by using the following keys:
 
-    - **android_tracker_id**
-    - **ios_tracker_id**
+    - <notranslate>**android_tracker_id**</notranslate>
+    - <notranslate>**ios_tracker_id**</notranslate>

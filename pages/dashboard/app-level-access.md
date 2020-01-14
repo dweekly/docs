@@ -1,4 +1,4 @@
-The "App" level of a Branch account is the third level of access and includes access (either edit or read-only) to the following functionality:
+The <notranslate>"App"</notranslate> level of a Branch account is the third level of access and includes access (either edit or read-only) to the following functionality:
 
 <table>
   <tr>
@@ -54,33 +54,33 @@ The "App" level of a Branch account is the third level of access and includes ac
 
 ![image](/_assets/img/pages/dashboard/access-levels/app-level-profile.png)
 
-If you are an Admin, you have edit access to the **Profile** tab.
+If you are an Admin, you have edit access to the <notranslate>**Profile**</notranslate> tab.
 
-- **Branch Key** - provided by Branch; resettable.
-- **Branch Secret** - provided by Branch; resettable.
-- **App Name** - provided by you; editable.
-- **App ID** - assigned by Branch; not editable.
-- **Time Zone** - Your time zone affects your dashboard analytics and how your Branch data matches up with external data sources. Use the drop-down to select the appropriate time zone.
+- <notranslate>**Branch Key**</notranslate> - provided by Branch; resettable.
+- <notranslate>**Branch Secret**</notranslate> - provided by Branch; resettable.
+- <notranslate>**App Name**</notranslate> - provided by you; editable.
+- <notranslate>**App ID**</notranslate> - assigned by Branch; not editable.
+- <notranslate>**Time Zone**</notranslate> - Your time zone affects your dashboard analytics and how your Branch data matches up with external data sources. Use the drop-down to select the appropriate time zone.
 
 !!! info "Resetting your Branch Key/Secret"
-	If you need to reset your Branch Key/Secret, click **Reset Key** or **Reset Secret** respectively.  Doing so automatically generates a new Branch Key/Secret.
+	If you need to reset your Branch Key/Secret, click <notranslate>**Reset Key**</notranslate> or <notranslate>**Reset Secret**</notranslate> respectively.  Doing so automatically generates a new Branch Key/Secret.
 
 ### Managing your User Profile
 
 ![image](/_assets/img/pages/dashboard/access-levels/org-user.png)
 
-Any user type - Admin, Team Member, Full Read, Limited Read - has the ability to edit the **User** tab.
+Any user type - Admin, Team Member, Full Read, Limited Read - has the ability to edit the <notranslate>**User**</notranslate> tab.
 
-- **Dashboard UID** - assigned by Branch; not editable.
-- **First and Last Names** - provided by you; editable.
-- **Email Address** - provided by you; editable.
-- **Change Password** - provided by you; editable.
+- <notranslate>**Dashboard UID**</notranslate> - assigned by Branch; not editable.
+- <notranslate>**First and Last Names**</notranslate> - provided by you; editable.
+- <notranslate>**Email Address**</notranslate> - provided by you; editable.
+- <notranslate>**Change Password**</notranslate> - provided by you; editable.
 
 ### Viewing Billing
 
 ### Managing Your App's Team
 
-If you are an Admin, you have edit access to the **Team** tab.
+If you are an Admin, you have edit access to the <notranslate>**Team**</notranslate> tab.
 
 #### Adding an App Team User
 
@@ -88,18 +88,18 @@ If you are an Admin, you have edit access to the **Team** tab.
 
 To add a new App Team User:
 
-1. Click the **Add App Team Member** button.
-2. In the **Add App Team Member** modal:
-	1. Provide the user's **Email Address**
-	1. Provide the user's **First** and **Last** names
-	1. Select the appropriate **Access Level**
-		- **Admin** - Edit access to all settings and export access to all data.
-		- **Team Member** - Edit access to channels and links, read-only access to app settings, and access to aggregate data.
-		- **Full Read** - Read-only access to all settings and access to aggregate data.
-		- **Limited Read**  - Access to aggregate data only.
-		- **Custom** - Customize settings and data access.
-		- **No Access** - no dashboard access.
-	1. Click **Invite**.
+1. Click the <notranslate>**Add App Team Member**</notranslate> button.
+2. In the <notranslate>**Add App Team Member**</notranslate> modal:
+	1. Provide the user's <notranslate>**Email Address**</notranslate>
+	1. Provide the user's <notranslate>**First**</notranslate> and <notranslate>**Last**</notranslate> names
+	1. Select the appropriate <notranslate>**Access Level**</notranslate>
+		- <notranslate>**Admin**</notranslate> - Edit access to all settings and export access to all data.
+		- <notranslate>**Team Member**</notranslate> - Edit access to channels and links, read-only access to app settings, and access to aggregate data.
+		- <notranslate>**Full Read**</notranslate> - Read-only access to all settings and access to aggregate data.
+		- <notranslate>**Limited Read**</notranslate>  - Access to aggregate data only.
+		- <notranslate>**Custom**</notranslate> - Customize settings and data access.
+		- <notranslate>**No Access**</notranslate> - no dashboard access.
+	1. Click <notranslate>**Invite**</notranslate>.
 
 #### Defining Permissions
 
@@ -108,12 +108,12 @@ Each access level - as defined above - comes with predefined permissions which y
 !!! tip "Modifying Permissions"
 	If you want to modify a predefined access level, click the pencil icon to (de)select the available options.
 
-- **Link-level Settings** - Settings or features that can impact functionality for single links.
-- **Channel-level Settings** - Settings or features that can impact functionality across a marketing channel.
-- **App-level Settings** - Settings or features that can impact functionality app-wide.
-- **Aggregate Data** - Summary data that contains no granular data.
-- **Sensitive Data** - Data that can contain user-identifying, payment-related, or secret information.
-- **Fraud Settings & Data** - Settings or data associated with fraud detection and prevention.
+- <notranslate>**Link-level Settings**</notranslate> - Settings or features that can impact functionality for single links.
+- <notranslate>**Channel-level Settings**</notranslate> - Settings or features that can impact functionality across a marketing channel.
+- <notranslate>**App-level Settings**</notranslate> - Settings or features that can impact functionality app-wide.
+- <notranslate>**Aggregate Data**</notranslate> - Summary data that contains no granular data.
+- <notranslate>**Sensitive Data**</notranslate> - Data that can contain user-identifying, payment-related, or secret information.
+- <notranslate>**Fraud Settings & Data**</notranslate> - Settings or data associated with fraud detection and prevention.
 
 #### Modifying an App Team Member
 
@@ -121,24 +121,24 @@ Each access level - as defined above - comes with predefined permissions which y
 
 To modify an existing App Team Member:
 
-1. Find the App Team member you want to modify and click the **...** button in the **Actions** column for that user.
+1. Find the App Team member you want to modify and click the <notranslate>**...**</notranslate> button in the <notranslate>**Actions**</notranslate> column for that user.
 1. To edit the App Team member:
-	1. Click **Edit** and modify any of the following:
+	1. Click <notranslate>**Edit**</notranslate> and modify any of the following:
 		- Email
 		- First and Last names
 		- Access Level
-	1. Click **Save**.
+	1. Click <notranslate>**Save**</notranslate>.
 1. To resend the invitation to join the account:
-	1. Click **Resend Invite**.
+	1. Click <notranslate>**Resend Invite**</notranslate>.
 1. To delete the App Team member:
-	1. Click **Delete**.
-	1. In the **Are you sure you want to delete?** modal, click **Yes, Delete**.
+	1. Click <notranslate>**Delete**</notranslate>.
+	1. In the <notranslate>**Are you sure you want to delete?**</notranslate> modal, click <notranslate>**Yes, Delete**</notranslate>.
 
 ## Link Settings
 
 ### General
 
-If you are an Admin, you have edit access to the **General** tab.
+If you are an Admin, you have edit access to the <notranslate>**General**</notranslate> tab.
 
 #### General Redirect Settings
 
@@ -146,9 +146,9 @@ If you are an Admin, you have edit access to the **General** tab.
 
 This selector allows you to control how and when Branch uses URI schemes to open your app when Universal Links and Android App Links fail. See browser specifics in the docs here.
 
-- **Conservative** mode will never use URI schemes if there is a risk of error messages.
-- **Intelligent** mode is recommended, and uses Branch data to safely use URI schemes everywhere, with the slight risk of error messages in certain browsers if the app is uninstalled.
-- **Aggressive** will force URI schemes everywhere, causing users without the app to see error messages in some browsers.
+- <notranslate>**Conservative**</notranslate> mode will never use URI schemes if there is a risk of error messages.
+- <notranslate>**Intelligent**</notranslate> mode is recommended, and uses Branch data to safely use URI schemes everywhere, with the slight risk of error messages in certain browsers if the app is uninstalled.
+- <notranslate>**Aggressive**</notranslate> will force URI schemes everywhere, causing users without the app to see error messages in some browsers.
 
 #### iOS Redirects
 
@@ -168,7 +168,7 @@ This selector allows you to control how and when Branch uses URI schemes to open
 - Enabling App Links
     - Starting with Android 6.0 (API level 23) and higher allow an app to designate itself as the default handler of a given type of link. App Links will open URLs directly into an app, rather than the usual Link -> Browser -> App handoff cycle. This requires some set up, but we do this for you. We need your sha256_cert_fingerprints.
     - Generate a SHA256 Cert Fingerprint
-        - Navigate to your `keystore file` (used to build the debug and production version of your APK file before it gets deployed)
+        - Navigate to your <notranslate>**keystore file**</notranslate> (used to build the debug and production version of your APK file before it gets deployed)
         - Run `keytool -list -v -keystore my-release-key.keystore` to generate a fingerprint
         - Example fingerprint `AA:C9:D9:A5:E9:76:3E:51:1B:FB:35:00:06:9B:56:AC:FB:A6:28:CE:F3:D6:65:38:18:E3:9C:63:94:FB:D2:C1` to add to your [Branch Dashboard](https://dashboard.branch.io/link-settings)
 
@@ -209,20 +209,20 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 ![image](/_assets/img/pages/dashboard/access-levels/advanced-settings.png)
 
-- **Match Type**
+- <notranslate>**Match Type**</notranslate>
     - Recommended `Normal`. Selecting `Unique` means that Branch will only make a deep link through install match if there is a single, unique outstanding footprint. For example, if you and your twin both have iPhone 5s with the same OS/version, etc and click different links for the same app, then open the app up at the same time, we won’t deep link when Unique is selected. You probably don’t want this as it’s mostly for very special circumstances.
-- **Use UTM tags for analytics (for dynamically-created links)**
+- <notranslate>**Use UTM tags for analytics (for dynamically-created links)**</notranslate>
     - Recommend `disabled`. If you enable this, Branch will automatically set channel, feature, campaign, tags and $keywords based on UTM params. This only applies to dynamically created links, not links generated through the Dashboard, API or SDKs.
 
         | UTM parameter | Branch parameter
         | --- | --- |
-        | utm_source | Channel
-        | utm_medium | Feature
-        | utm_campaign | Campaign
-        | utm_content | Tags
-        | utm_term | Keywords (not visible on Dashboard)
+        | `utm_source` | Channel
+        | `utm_medium` | Feature
+        | `utm_campaign` | Campaign
+        | `utm_content` | Tags
+        | `utm_term` | Keywords (not visible on Dashboard)
 
-- **Enable Link Scraping**
+- <notranslate>**Enable Link Scraping**</notranslate>
     - If you enable this, Branch will automatically add data from your website's meta tags.
 
 #### Social Media Display Customization
@@ -236,9 +236,9 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 ![image](/_assets/img/pages/dashboard/access-levels/link-domain.png)
 
-- Choose a `link domain` which will be used for all your links
-- The `link domain` is the website which hosts your deep links
-- The `link domain` is not a deep link
+- Choose a <notranslate>**link domain**</notranslate> which will be used for all your links
+- The <notranslate>**link domain**</notranslate> is the website which hosts your deep links
+- The <notranslate>**link domain**</notranslate> is not a deep link
     - Deep links have an `alias` behind them to uniquely identify the link data inside them
         - e.g. https://example.app.link/VZsTctoINF
         - e.g. https://example.app.link/custom-alias
@@ -263,11 +263,11 @@ If you choose to delete your app, this will be a permanent change. Note the foll
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
 
-- `Deep Linking Duration` refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
+- <notranslate>**Deep Linking Duration**</notranslate> refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
 
-- `Click to x` refers to events that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
+- <notranslate>**Click to x**</notranslate> refers to events that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
 
-- `Impression to x` refers to events that occur after someone views a Branch impression link. Measured in days.
+- <notranslate>**Impression to x**</notranslate> refers to events that occur after someone views a Branch impression link. Measured in days.
 
 - `Re-engagement Inactivity` defines the period between two events that a user must be inactive in order to define the later event as a re-engagement. Used in re-engagement cohort analysis but not activity analysis.
 
@@ -275,19 +275,19 @@ If you choose to delete your app, this will be a permanent change. Note the foll
 
 ### Partner Management
 
-If you are an Admin, you have edit access to the **Partner Management** tab.
+If you are an Admin, you have edit access to the <notranslate>**Partner Management**</notranslate> tab.
 
 ![image](/_assets/img/pages/dashboard/access-levels/app-partner-management.gif)
 
 Each Universal Ad Partner has the following settings:
 
-- **Account Settings**
+- <notranslate>**Account Settings**</notranslate>
     - Partner Credentials; e.g. API Key, SDK Key, Security Token.
-- **Postback Config**
+- <notranslate>**Postback Config**</notranslate>
     - Partner supported postback templates per conversion type
-- **Link Parameters**
+- <notranslate>**Link Parameters**</notranslate>
     - Parameters added to the Partner's link by default; not editable.
-- **Attribution Windows**
+- <notranslate>**Attribution Windows**</notranslate>
     - Use a custom attribution window to match AdAction Engage's attribution windows. This overrides your app level attribution windows.
 
 ## Testing

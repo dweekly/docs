@@ -92,19 +92,19 @@ HTML
 ```
 
 
-Grab the **~id** from the response
+Grab the `**~id**` from the response
 
 
 ### **CSVs: Manual export or Data  Export API**
 
 
 
-*   With the id, you can look at the** last_attributed_touch_data_tilde_id **column for any attributed events.
+*   With the id, you can look at the `last_attributed_touch_data_tilde_id` column for any attributed events.
 
 
 ### **Query API**
 
-If you just want to look at the just counts via the query API by specifying the **last_attributed_touch_data_tilde_id,** for example:
+If you just want to look at the just counts via the query API by specifying the `last_attributed_touch_data_tilde_id`, for example:
 
 Request:
 

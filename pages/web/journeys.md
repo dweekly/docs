@@ -72,11 +72,11 @@ If a user is referred to a page running Journeys via a Branch link, then referri
 ### Create Journey banner or interstitial
 
 1. Head to the [Journeys page](http://dashboard.branch.io/journeys) on the Branch dashboard.
-2. Click the **Create New Journey** button to get started.
+2. Click the <notranslate>**Create New Journey**</notranslate> button to get started.
 
 ![image](/_assets/img/pages/journeys/create-journey-button.png)
 
-3. In the **Journey Name:** field, enter a name to use for internal reference (this will never be shown to your users).
+3. In the <notranslate>**Journey Name:**</notranslate> field, enter a name to use for internal reference (this will never be shown to your users).
 
 ![image](/_assets/img/pages/journeys/journeys-name.png)
 
@@ -88,22 +88,22 @@ You can customize the audience that will see your Journey by choosing target pla
 
 | Option | Description |
 | --- | --- |
-| Platform | Branch currently offers Journeys on one platform: **Mobile web**. This will display for mobile users on your website. _More options coming soon._
-| Devices | Which devices would you like to target? For example, if you only have an iOS app, then you might want to show a Journey only to users viewing your mobile website on iOS.
-| Additional Filters | Read about advanced filtering criteria [here](/web/journeys/#advanced-audience-rules).
+| <notranslate>Platform</notranslate> | Branch currently offers Journeys on one platform: **Mobile web**. This will display for mobile users on your website. _More options coming soon._
+| <notranslate>Devices</notranslate> | Which devices would you like to target? For example, if you only have an iOS app, then you might want to show a Journey only to users viewing your mobile website on iOS.
+| <notranslate>Additional Filters</notranslate> | Read about advanced filtering criteria [here](/web/journeys/#advanced-audience-rules).
 
 ### Select and style the banner or interstitial
 
-1. First, click the **Select a Template** button. ![image](/_assets/img/pages/journeys/select-template.png)
+1. First, click the <notranslate>**Select a Template**</notranslate> button. ![image](/_assets/img/pages/journeys/select-template.png)
 1. Next, click to select the type of template that you want to show. There are three template options:
     - Smart Banner at bottom of screen.
     - Smart Banner at top of screen
     - Full Screen Interstitial (SEO friendly!)
     - _The fourth option shown is an alternate preconfiguration of the full screen interstitial_![image](/_assets/img/pages/journeys/select-template-type.png)
-1. Click **Customize** to make changes to the template.
-1. In the **Customize Template** heading, you may edit the the name to use for internal reference.
+1. Click <notranslate>**Customize**</notranslate> to make changes to the template.
+1. In the <notranslate>**Customize Template**</notranslate> heading, you may edit the the name to use for internal reference.
 1. Click any object in the preview to edit it. To see documentation on all customization options, [click here](/web/journeys/#template-customization-options).
-1. When finished, click **Save & Close** button to continue.
+1. When finished, click <notranslate>**Save & Close**</notranslate> button to continue.
 
 **Note about generic deep linking params** If you are running a generic download campaign or a site-wide discount offer, your users would go to the same place inside your app regardless of where they originated on your website. You can configure this destination by setting **Deep Link Data** for the **Button** element when you [customize your template options](/web/journeys/#template-customization-options).
 
@@ -119,7 +119,7 @@ Use the dropdown menu to switch between your Journey variations.
 
 ![image](/_assets/img/pages/journeys/select-preview-variation.png)
 
-To preview your Journey in your live, production website, enter your website URL in the **Test on your mobile device** field, and press the copy button. **The URL you enter must have the Branch Web SDK integrated and be using your Branch Key.**
+To preview your Journey in your live, production website, enter your website URL in the <notranslate>**Test on your mobile device**</notranslate> field, and press the copy button. <notranslate>**The URL you enter must have the Branch Web SDK integrated and be using your Branch Key.**</notranslate>
 
 ![image](/_assets/img/pages/journeys/test-on-device.png)
 
@@ -157,12 +157,12 @@ A Journey can have one of four states:
 
 | State | Meaning | Next Stage |
 | --- | --- | --- |
-| Draft | Not yet published, editable | **Active** |
-| Active | Live for your users, editable | **Stopped** |
-| Stopped | Not live for your users, editable | **Active** or **Archived** |
-| Archived | Not live for your users, editable | _none_ |
+| <notranslate>Draft</notranslate> | Not yet published, editable | <notranslate>**Active**</notranslate> |
+| <notranslate>Active</notranslate> | Live for your users, editable | <notranslate>**Stopped**</notranslate> |
+| <notranslate>Stopped</notranslate> | Not live for your users, editable | <notranslate>**Active**</notranslate> or <notranslate>**Archived**</notranslate> |
+| <notranslate>Archived</notranslate> | Not live for your users, editable | _none_ |
 
-You can activate a journey directly from the creation flow, or from **Start** in the Actions menus in the Journeys Manager.
+You can activate a journey directly from the creation flow, or from <notranslate>**Start**</notranslate> in the Actions menus in the Journeys Manager.
 
 ![image](/_assets/img/pages/journeys/edit-journeys.png)
 
@@ -192,7 +192,7 @@ You're now in Priority View.
 
 ![image](/_assets/img/pages/journeys/first-priority-view.png)
 
-2. Click the **Save** button.
+2. Click the <notranslate>**Save**</notranslate> button.
 
 ![image](/_assets/img/pages/journeys/save-priority.png)
 
@@ -202,7 +202,7 @@ You're now in Priority View.
 
 !!! warning "Caution"
 
-    When you save Journeys priorities, **ALL** Journeys will be prioritized in the order they appear in the table.
+    When you save Journeys priorities, <notranslate>**ALL**</notranslate> Journeys will be prioritized in the order they appear in the table.
 
 
 For more detailed Journeys prioritization questions, visit our [Advanced section](/web/journeys/#prioritization).
@@ -218,7 +218,7 @@ Journeys map to [standard Branch analytics labels](/getting-started/configuring-
 - Each Journey: `campaign` = `[Journey Name]`
 - Individual Templates: `tags` = `[Template Name]` (+ any additional tags you specify during configuration)
 
-You can access your Journey’s performance by selecting **View Performance** from the actions menu in the Journeys Manager.
+You can access your Journey’s performance by selecting <notranslate>**View Performance**</notranslate> from the actions menu in the Journeys Manager.
 
 ![image](/_assets/img/pages/journeys/view-performance.png)
 
@@ -289,7 +289,7 @@ You might choose to only show a Journey that asks a user to open the app to thos
 
 #### Has clicked on ad
 
-A user is grouped into "Has clicked on Ad" when they've clicked a link from [Deep Linked Feeds](/deep-linked-ads/dynamic-product-feeds/).
+A user is grouped into <notranslate>"Has clicked on Ad"</notranslate> when they've clicked a link from [Deep Linked Feeds](/deep-linked-ads/dynamic-product-feeds/).
 
 Use this to target users who have been part of an ad campaign to improve your ROI; maybe with a specific call to action to open the app and buy something if they've also never made a purchase in the app.
 
@@ -297,7 +297,7 @@ The technical definition is that they've clicked on a link with an Ad Network's 
 
 #### Has clicked on email
 
-A user is grouped into "Has clicked on Email" when they've clicked a link from [Universal Email](https://dashboard.branch.io/email).
+A user is grouped into <notranslate>"Has clicked on Email"</notranslate> when they've clicked a link from [Universal Email](https://dashboard.branch.io/email).
 
 Use this to target users who have been part of an email campaign; maybe with a specific call to action to get them download the app if they don't have it and they've landed on mobile web.
 
@@ -339,7 +339,7 @@ Use this filter to target users who have interacted with a specific Journey befo
 
 ### has_app limitations
 
-Several pieces of Journeys functionality rely on Branch’s understanding of whether an end user has a customer’s app installed (indicated in Branch’s system using the `has_app` flag). For example, the `Has the app installed` advanced audience rule will only be satisfied if Branch believes the app is installed on that user’s device. Similarly, the CTA text on a Journey will only switch from “install” to “open” if Branch believes the app is installed on that user’s device.
+Several pieces of Journeys functionality rely on Branch’s understanding of whether an end user has a customer’s app installed (indicated in Branch’s system using the `has_app` flag). For example, the <notranslate>**Has the app installed**</notranslate> advanced audience rule will only be satisfied if Branch believes the app is installed on that user’s device. Similarly, the CTA text on a Journey will only switch from “install” to “open” if Branch believes the app is installed on that user’s device.
 
 Unfortunately, Branch does not - and cannot - know with 100% accuracy whether a given user actually has the app installed, since the operating systems (e.g. iOS, Android) do not make this information available to developers. We’ve developed our own methods for gleaning this information, and while our methods are quite accurate, there are nevertheless opportunities for both false positives and false negatives.
 
@@ -356,7 +356,7 @@ While we don’t think these limitations should discourage you from using featur
 
 This feature allows you to run A/B tests by designing multiple templates and assigning a percentage of your audience to each one.
 
-1. Click the **Add Variation** button to add another design variation. ![image](/_assets/img/pages/journeys/add-variation.png)
+1. Click the <notranslate>**Add Variation**</notranslate> button to add another design variation. ![image](/_assets/img/pages/journeys/add-variation.png)
 1. To remove an unwanted variation, click the `-` button. ![image](/_assets/img/pages/journeys/remove-variation.png)
 1. Use the percentage fields to control the ratio of your audience that will see each variation.![image](/_assets/img/pages/journeys/multiple-templates.png)
 
@@ -461,7 +461,7 @@ We recommend setting priority for all Journeys. All new Journeys you create will
 
 You can set a time when your Journey will become active and be visible to your users and/or a time when it will no longer be displayed. You can also schedule Journeys on a recurring basis.
 
-You can access this feature from the **Validate & Test** step or directly from the action menu on the Journeys manager page.
+You can access this feature from the <notranslate>**Validate & Test**</notranslate> step or directly from the action menu on the Journeys manager page.
 
 ![image](/_assets/img/pages/journeys/schedule-action.png)
 
@@ -628,13 +628,13 @@ branch.addListener(listener);
 
 | Listener Name | Description |
 | --- | --- |
-| willShowJourney | Journey is about to be shown. |
-| didShowJourney | Journey's entrance animation has completed and it is being shown to the user. |
-| willNotShowJourney | Journey will not be shown and no other events will be emitted. |
-| didClickJourneyCTA | User clicked on Journey's CTA button. |
-| didClickJourneyClose | User clicked on Journey's close button. |
-| willCloseJourney | Journey close animation has started. |
-| didCloseJourney | Journey's close animation has completed and it is no longer visible to the user. |
+| `willShowJourney` | Journey is about to be shown. |
+| `didShowJourney` | Journey's entrance animation has completed and it is being shown to the user. |
+| `willNotShowJourney` | Journey will not be shown and no other events will be emitted. |
+| `didClickJourneyCTA` | User clicked on Journey's CTA button. |
+| `didClickJourneyClose` | User clicked on Journey's close button. |
+| `willCloseJourney` | Journey close animation has started. |
+| `didCloseJourney` | Journey's close animation has completed and it is no longer visible to the user. |
 
 ### Journeys text localization
 
@@ -670,7 +670,7 @@ Journeys provides limited server-side localization. This functionality is curren
 
 ### CSS Editor
 
-If you have an upgraded premium account, you may also modify your CSS code directly in addition to using the WYSIWYG View Editor. To do so, go to the **Configure Views** step, click to edit a template, and then select the **CSS Editor** tab on the **Customize Template** screen.
+If you have an upgraded premium account, you may also modify your CSS code directly in addition to using the WYSIWYG View Editor. To do so, go to the <notranslate>**Configure Views**</notranslate> step, click to edit a template, and then select the <notranslate>**CSS Editor**</notranslate> tab on the <notranslate>**Customize Template**</notranslate> screen.
 
 ![image](/_assets/img/pages/journeys/view-css-editor.png)
 
@@ -768,8 +768,8 @@ The available configuration options are identical for banners at both the top an
 | Text Color | Change the color of the button text and button outline |
 | Background Color | Change the color of the button background
 | Button Text | Change the text shown when the app is installed and not installed. |
-| Channel | Set the **[Channel](/links/integrate/#analytical-labels)** for the Branch link attached to the button. For example, `website`
-| Tags | Set the **[Tags](/links/integrate/#analytical-labels)** for the Branch link attached to the button. For example, `purchase` and `fall-sale`
+| Channel | Set the <notranslate>**[Channel](/links/integrate/#analytical-labels)**</notranslate> for the Branch link attached to the button. For example, `website`
+| Tags | Set the <notranslate>**[Tags](/links/integrate/#analytical-labels)**</notranslate> for the Branch link attached to the button. For example, `purchase` and `fall-sale`
 | Deep Link Data | Insert deep link data and advanced link control parameters. Can contain any [Branch link parameter](/links/integrate/#configure-deep-links)
 
 !!! warning "Relies on has_app"
@@ -848,8 +848,8 @@ The content block contains everything except for the background image. Dimension
 | Text Color | Change the color of the button text and button outline |
 | Background Color | Change the color of the button background
 | Button Text | Change the text shown when the app is installed and not installed. |
-| Channel | Set the **[Channel](/links/integrate/#analytical-labels)** for the Branch link attached to the button. For example, `website`
-| Tags | Set the **[Tags](/links/integrate/#analytical-labels)** for the Branch link attached to the button. For example, `purchase` and `fall-sale`
+| Channel | Set the <notranslate>**[Channel](/links/integrate/#analytical-labels)**</notranslate> for the Branch link attached to the button. For example, `website`
+| Tags | Set the <notranslate>**[Tags](/links/integrate/#analytical-labels)**</notranslate> for the Branch link attached to the button. For example, `purchase` and `fall-sale`
 | Deep Link Data | Insert deep link data and advanced link control parameters. Can contain any [Branch link parameter](/links/integrate/#configure-deep-links)
 
 !!! warning "Relies on has_app"
@@ -882,7 +882,7 @@ The content block contains everything except for the background image. Dimension
 | Button Text - App Installed | The text of the button when the user already has the app installed on the device |
 | Button Text - App Not Installed | The text of the button when the user does not have the app installed on the device |
 | Auto-Open| When this box is checked, if a user views this Journey on your website and they have the app installed, the app will automatically open without them clicking |
-| Tags | Set the **[Tags](/links/integrate/#analytical-labels)** for the Branch link attached to the button. For example, `purchase` and `fall-sale`
+| Tags | Set the <notranslate>**[Tags](/links/integrate/#analytical-labels)**</notranslate> for the Branch link attached to the button. For example, `purchase` and `fall-sale`
 | Deep Link Data | Insert deep link data and advanced link control parameters. Can contain any [Branch link parameter](/links/integrate/#configure-deep-links)
 
 !!! warning "Relies on has_app"
@@ -904,9 +904,9 @@ The content block contains everything except for the background image. Dimension
 
 To access the template's container (iFrame) CSS code:
 
-1. Once you've chosen a template for your Journey, click on the **Page Placement** tab.
-2. Under **Page Settings** on the **Page Placement** tab, click the **Customize Container (iFrame)** radio button.
-3. Modify the iFrame as you see fit and click **Save & Close**.
+1. Once you've chosen a template for your Journey, click on the <notranslate>**Page Placement**</notranslate> tab.
+2. Under <notranslate>**Page Settings**</notranslate> on the <notranslate>**Page Placement**</notranslate> tab, click the <notranslate>**Customize Container (iFrame)**</notranslate> radio button.
+3. Modify the iFrame as you see fit and click <notranslate>**Save & Close**</notranslate>.
 
 ![image](/_assets/img/pages/journeys/customize-container-iframe.png)
 
@@ -915,11 +915,11 @@ To access the template's container (iFrame) CSS code:
 
 ### Limitations for apps with free accounts
 
-- Any number of Journeys may be created in **Draft** mode using all features.
+- Any number of Journeys may be created in <notranslate>**Draft**</notranslate> mode using all features.
 - An invitation to upgrade will be displayed when premium-only functionality is enabled
-- Only a single Journey using the Smart Banner template (either top or bottom position) may be **Active** at any one time.
-- To enable a different Journey, the currently active Journey must first be put into **Stopped** mode.
-- Any Journey using premium-only features cannot be placed into **Active** mode until the app has been upgraded.
+- Only a single Journey using the Smart Banner template (either top or bottom position) may be <notranslate>**Active**</notranslate> at any one time.
+- To enable a different Journey, the currently active Journey must first be put into <notranslate>**Stopped**</notranslate> mode.
+- Any Journey using premium-only features cannot be placed into <notranslate>**Active**</notranslate> mode until the app has been upgraded.
 
 ## Web to app routing without Journeys
 
@@ -1002,9 +1002,9 @@ The image will not look scaled properly in the editor view. This is because the 
 ### Prevent overlap between top banners and persistent navigation bars
 
 - Navigate to [Dashboard Journey Page](https://branch.dashboard.branch.io/web/journeys)
-- Select Journey -> Edit -> Configure Views -> Banner -> Page Placement
-- Banner Scroll = `sticky`
-- Press `Save & Close`
+- Select <notranslate>**Journey**</notranslate> -> <notranslate>**Edit**</notranslate> -> <notranslate>**Configure Views**</notranslate> -> <notranslate>**Banner**</notranslate> -> <notranslate>**Page Placement**</notranslate>
+- Banner Scroll = <notranslate>**sticky**</notranslate>
+- Press <notranslate>**Save & Close**</notranslate>
 - Add the following div to your nav
 
     ```html
@@ -1032,11 +1032,11 @@ All of these examples require you to configure advanced audience rules, which is
 
 #### New Users
 
-In this example, you'll configure an audience to target people who have visited your site **less than 3 times** historically. Anyone who had visited more than this will be excluded. First, you'll add a new rule for `Has visted web` in the advanced section.
+In this example, you'll configure an audience to target people who have visited your site **less than 3 times** historically. Anyone who had visited more than this will be excluded. First, you'll add a new rule for <notranslate>**Has visted web**</notranslate> in the advanced section.
 
 ![image](/_assets/img/pages/journeys/examples/new_users_0.png)
 
-Next, you'll choose the `Less than or equal to` in the middle section:
+Next, you'll choose the <notranslate>**Less than or equal to**</notranslate> in the middle section:
 
 ![image](/_assets/img/pages/journeys/examples/new_users_1.png)
 
@@ -1048,11 +1048,11 @@ Save and continue!
 
 #### Loyal Users
 
-In this example, you'll configure an audience to target people who have visited your site **more than 4 times** historically. Anyone who had visited less than this will be excluded. First, you'll add a new rule for `Has visted web` in the advanced section.
+In this example, you'll configure an audience to target people who have visited your site **more than 4 times** historically. Anyone who had visited less than this will be excluded. First, you'll add a new rule for <notranslate>**Has visted web**</notranslate> in the advanced section.
 
 ![image](/_assets/img/pages/journeys/examples/new_users_0.png)
 
-Next, you'll choose the `More than or equal to` in the middle section:
+Next, you'll choose the <notranslate>**More than or equal to**</notranslate> in the middle section:
 
 ![image](/_assets/img/pages/journeys/examples/loyal_users_1.png)
 
@@ -1064,7 +1064,7 @@ Save and continue!
 
 #### Retargeting Users
 
-In this example, you'll configure an audience to target people who have completed some action on your site in a past or current session. For example, if a user had added something to their cart or had previously completed a purchase. You can retarget these users with a custom call to action to download. We'll use a generic event called `MyAction` in the example. First, you'll add a new rule for `Has completed event` in the advanced section.
+In this example, you'll configure an audience to target people who have completed some action on your site in a past or current session. For example, if a user had added something to their cart or had previously completed a purchase. You can retarget these users with a custom call to action to download. We'll use a generic event called `MyAction` in the example. First, you'll add a new rule for <notranslate>**Has completed event**</notranslate> in the advanced section.
 
 ![image](/_assets/img/pages/journeys/examples/retargeting_users_0.png)
 
@@ -1072,7 +1072,7 @@ In this next dropdown, you'll choose the custom event to retarget from. Here, we
 
 ![image](/_assets/img/pages/journeys/examples/retargeting_users_1.png)
 
-Next, you'll choose the `More than or equal to` in the middle section:
+Next, you'll choose the <notranslate>**More than or equal to**</notranslate> in the middle section:
 
 ![image](/_assets/img/pages/journeys/examples/retargeting_users_2.png)
 
@@ -1084,11 +1084,11 @@ Save and continue!
 
 #### SEO Friendly
 
-Google has recently announced that it will begin punishing sites that show a full page interstitial when a user comes from search. Because of this, you'll likely need to treat Google search traffic differently than traffic that comes from any other source. In this example, you'll set up an audience specific to users who come from Google. First, you'll add a new rule for `Came directly from a url` in the advanced section.
+Google has recently announced that it will begin punishing sites that show a full page interstitial when a user comes from search. Because of this, you'll likely need to treat Google search traffic differently than traffic that comes from any other source. In this example, you'll set up an audience specific to users who come from Google. First, you'll add a new rule for <notranslate>**Came directly from a url**</notranslate> in the advanced section.
 
 ![image](/_assets/img/pages/journeys/examples/seo_friendly_0.png)
 
-Next, you'll choose the `starts with` in the middle section to match a substring:
+Next, you'll choose the <notranslate>**starts with**</notranslate> in the middle section to match a substring:
 
 ![image](/_assets/img/pages/journeys/examples/seo_friendly_1.png)
 
@@ -1106,7 +1106,7 @@ In this example, you'll restrict the audience to users in countries where Englis
 
 ![image](/_assets/img/pages/journeys/examples/ios_english_0.png)
 
-Next, go through and choose the following countries: `United States`, `Canada`, `United Kingdom` and `Australia`.
+Next, go through and choose the following countries: `United States`, `Canada`, <notranslate>**United Kingdom**</notranslate> and `Australia`.
 
 ![image](/_assets/img/pages/journeys/examples/ios_english_1.png)
 
@@ -1117,11 +1117,13 @@ In order to help our customers comply with [GDPR](https://branch.io/gdpr/), and 
 
 If you enable that mode, you can still display some Journeys to your users. Whether or not a Journey will display for users in Do Not Track mode depends on the targeting criteria you’ve defined for that Journey. If the Journey uses any of the following audience filters, it will *not* display for users in Do Not Track mode. Otherwise, the Journey will display.
 
+<notranslate>
 * Has completed event
 * Has visited web
 * Has visited the app
 * Has clicked on email
 * Has clicked on ad
 * Has the app installed
+</notranslate>
 
 If a Journey does display for a user in Do Not Track mode, any analytics related to the Journey’s display or the user’s interactions with that Journey *will not be published in the Branch dashboard.*

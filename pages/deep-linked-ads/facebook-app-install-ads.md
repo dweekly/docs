@@ -39,17 +39,17 @@ Branch maps the following data fields from Facebook App Install Ads to Branch.
 
 Facebook Data | Branch Data | Possible Values
 --- | --- | ---
-n/a | ~advertising_partner_name | “Facebook”
-n/a | ~channel | “Facebook” if null or last touch
-na/a | ~feature | "Paid Advertising"
-campaign_name | ~campaign | Light Bright Launch
-campaign_id | ~campaign_id | 15292426
-publisher_platform | ~secondary_publisher | facebook / instagram / audience_network
-creative_name | ~creative_name | Light Bright Vertical
-creative_id | ~creative_id | 1234567890
-ad_set_name | ~ad_set_name | Light Bright
-ad_set_id | ~ad_set_id | 12345567890
-ad_name | ~ad_name | Light Bright
+n/a | `~advertising_partner_name` | “Facebook”
+n/a | `~channel` | “Facebook” if null or last touch
+n/a | `~feature` | "Paid Advertising"
+`campaign_name` | `~campaign` | Light Bright Launch
+`campaign_id` | `~campaign_id` | 15292426
+`publisher_platform` | `~secondary_publisher` | facebook / instagram / audience_network
+`creative_name` | `~creative_name` | Light Bright Vertical
+`creative_id` | `~creative_id` | 1234567890
+`ad_set_name` | `~ad_set_name` | Light Bright
+`ad_set_id` | `~ad_set_id` | 12345567890
+`ad_name` | `~ad_name` | Light Bright
 
 {! ingredients/deep-linked-ads/add-agency-prefix-san-only.md !}
 
@@ -93,7 +93,7 @@ This section is **not required for measurement** if you are running app-only ads
 1. Create a Branch Ad link from the [Partner Management page](https://dashboard.branch.io/ads/partner-management) `Create Facebook Link` button under the Facebook Partner and select `App Install or Engagement`
 <img src="/_assets/img/pages/deep-linked-ads/reusable-images/create-link-install-engagement.png" alt="Link Creation" class="half left">
 1. Enter a Link Name for later reference.
-1. Configure the link with the Ad Format set to **App Only**, the Ad Partner set to **Facebook**, and the Secondary Ad Format set to **App Install Ads**.
+1. Configure the link with the Ad Format set to <notranslate>**App Only**</notranslate>, the Ad Partner set to <notranslate>**Facebook**</notranslate>, and the Secondary Ad Format set to <notranslate>**App Install Ads**</notranslate>.
 ![Create Ad Link](/_assets/img/pages/deep-linked-ads/facebook-app-install-ads/link-setup.png)
 
 1. Under the Configure Options tab, use the deep link data input section to add your deep linking parameters. You can use this configuration section to specify custom link parameters that will be deep linked into the app after install. These could include a coupon code or a page identifier to route the user. Visit the [Deep Link Routing](/deep-linking/routing/) page to learn more.
@@ -108,16 +108,16 @@ This section is **not required for measurement** if you are running app-only ads
 ### Configure your campaign to deep link the Ad Link
 
 1. Navigate to [https://www.facebook.com/ads/create](https://www.facebook.com/ads/create) while logged in to the account that owns your Facebook app.
-1. Select **App Installs** as the campaign marketing objective.
+1. Select <notranslate>**App Installs**</notranslate> as the campaign marketing objective.
 ![Campaign Selection](/_assets/img/pages/deep-linked-ads/facebook-app-install-ads/campaign-selection.png)
 1. Continue with campaign creation selecting the app to advertise, audience, placement, and budget. Then press continue to enter the Advert creation step.
 1. Now select an advertisement format and customize your ad
-1. Under the **Destination** field, you can select to direct your advertisement to the App Store or a Facebook Canvas Advertisement.
-	- If you select the App Store, fill in the **Deep Link** field with your Branch Ad link
+1. Under the <notranslate>**Destination**</notranslate> field, you can select to direct your advertisement to the App Store or a Facebook Canvas Advertisement.
+	- If you select the App Store, fill in the <notranslate>**Deep Link**</notranslate> field with your Branch Ad link
 
 	![Deep Link Placement](/_assets/img/pages/deep-linked-ads/facebook-app-install-ads/deep-link.png)
 
-	- If you select Canvas, add your Branch Ad link as the **Destination** Website URL for your canvas advertisement components
+	- If you select Canvas, add your Branch Ad link as the <notranslate>**Destination**</notranslate> Website URL for your canvas advertisement components
 
 	![Canvas Setup](/_assets/img/pages/deep-linked-ads/facebook-app-install-ads/facebook-canvas-setup.png)
 
@@ -201,7 +201,7 @@ As a last resort, you can manually input a direct deep link. To retrieve this:
 
 1. Go to Facebook's [Open Graph Object Debugger](https://developers.facebook.com/tools/debug/og/object/)
 1. Input the Branch link you want to use for your ad
-1. Click **Fetch new scrape information**
+1. Click <notranslate>**Fetch new scrape information**</notranslate>
 1. Find the `al:ios:url` line (it should look like `<meta property="al:ios:url" content="myapp://open?link_click_id=link-242052337263342024" />`)
 1. Copy the value of this (`myapp://open?link_click_id=link-242052337263342024`) and input it as the Deep Link value of your ad
 
@@ -211,10 +211,10 @@ If none of these approaches work, please reach out to integrations@branch.io imm
 
 We recently discovered a bug within the Facebook system that prevents App Links from being read by the robot if you change any of these values from the defaults in your Advanced Facebook App Settings tab. Please make sure
 
-- Contains Alcohol is set to **No**
-- Age Restriction is set to **Anyone (13+)**
-- Social Discovery is set to **Yes**
-- Country Restricted is set to **No**
+- Contains Alcohol is set to <notranslate>**No**</notranslate>
+- Age Restriction is set to <notranslate>**Anyone (13+)**</notranslate>
+- Social Discovery is set to <notranslate>**Yes**</notranslate>
+- Country Restricted is set to <notranslate>**No**</notranslate>
 
 It has to look like this **exactly**:
 

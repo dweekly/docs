@@ -29,9 +29,9 @@ When you add Branch to your identity provider, add the following SAML attribute 
 
 | SAML attribute | Field it should map to in your IdP
 | --- | ---
-| email | User's email address
-| firstName | User's first name
-| lastName | User's last name
+| `email` | User's email address
+| `firstName` | User's first name
+| `lastName` | User's last name
 
 Here is some initial information that your IdP might ask for:
 
@@ -46,11 +46,11 @@ Ask your account manager or [support](https://support.branch.io/support/tickets/
 
 ### Copy your details back to Branch
 
-When you have added Branch, your IdP should provide you with an **Identity provider Entity ID**, an **Identity provider SSO URL**, and a **Public x509 certificate**. Go to [Account Settings > SSO](https://dashboard.branch.io/account-settings/sso){:target="\_blank"} and paste in the information:
+When you have added Branch, your IdP should provide you with an <notranslate>**Identity provider Entity ID**</notranslate>, an <notranslate>**Identity provider SSO URL**</notranslate>, and a <notranslate>**Public x509 certificate**</notranslate>. Go to [Account Settings > SSO](https://dashboard.branch.io/account-settings/sso){:target="\_blank"} and paste in the information:
 
 ![image](/_assets/img/pages/dashboard/sso/configure-saml.png)
 
-Click **Save** to save your information. SSO will not be enabled for your team yet.
+Click <notranslate>**Save**</notranslate> to save your information. SSO will not be enabled for your team yet.
 
 If you do not see the above fields, likely Branch has not finished enabling your account yet. Please contact your account manager or [support](https://support.branch.io/support/tickets/new){:target="\_blank"}.
 
@@ -64,7 +64,7 @@ Branch does not currently support just-in-time or SCIM provisioning. [Learn More
 
 ### Enable SSO
 
-Return to the [Account Settings > SSO](https://dashboard.branch.io/account-settings/sso){:target="\_blank"} page and toggle SAML/SSO to **On**. When you click **Save** at the bottom, SSO will be enabled and users will have to login via your branded subdomain:
+Return to the [Account Settings > SSO](https://dashboard.branch.io/account-settings/sso){:target="\_blank"} page and toggle SAML/SSO to <notranslate>**On**</notranslate>. When you click <notranslate>**Save**</notranslate> at the bottom, SSO will be enabled and users will have to login via your branded subdomain:
 
 ![image](/_assets/img/pages/dashboard/sso/enable-saml.png)
 

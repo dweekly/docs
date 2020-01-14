@@ -9,7 +9,7 @@ Branch makes it simple to enable Universal Links all while greatly improving on 
 ### Enable Universal Links on the Branch dashboard
 
 1. Navigate to [Link Settings](https://dashboard.branch.io/link-settings) in the Branch Dashboard.
-1. Check the box to `Enable Universal Links` from iOS redirects.
+1. Check the box to <notranslate>**Enable Universal Links**</notranslate> from iOS redirects.
 1. Type in your App’s Bundle Identifier.
 1. Type in your Apple App Prefix (found by clicking your app on [this page](https://developer.apple.com/account/ios/identifier/bundle) in Apple's Developer Portal).
 1. Scroll down and click on the `Save` button.
@@ -32,7 +32,7 @@ Branch makes it simple to enable Universal Links all while greatly improving on 
 ### Add your Branch link domains
 
 1. Go to the [Link Settings](https://dashboard.branch.io/link-settings) page on the dashboard.
-1. Scroll down to the `Link Domain` area.
+1. Scroll down to the <notranslate>**Link Domain**</notranslate> area.
 1. Copy your domain name.![image](/_assets/img/pages/deep-linking/universal-links/subdomain-setting.png)
 1. In the `Domains` section, click the `+` icon and add the following entries: (making sure that `xxxx` matches the subdomain prefix you've been assigned or selected for yourself)
 	* `applinks:xxxx.app.link`
@@ -43,7 +43,7 @@ Branch makes it simple to enable Universal Links all while greatly improving on 
 ![image](/_assets/img/pages/deep-linking/universal-links/add_domain.png)
 
 !!! warning "Support for legacy links"
-	If the **Default domain name** box shows the legacy `bnc.lt` domain, you should use the following entry instead: `applinks:bnc.lt`
+	If the <notranslate>**Default domain name**</notranslate> box shows the legacy `bnc.lt` domain, you should use the following entry instead: `applinks:bnc.lt`
 
 !!! tip "Using a custom domain or subdomain?"
 	If you use a [custom domain or subdomain for your Branch links](/dashboard/integrate/#change-link-domain), you should instead add entries for `applinks:[mycustomdomainorsubdomain]` and `XXXX-alternate.app.link`. If you're unsure of your Branch-assigned app.link subdomain, contact integrations@branch.io, and we can provide it.
@@ -150,7 +150,7 @@ When users enter your app via a Universal Link, we check to see to see if the li
 
 For most implementations this will never be an issue, since your deep links will be routed correctly either way. However, if you use a custom link domain *and* you rely on `handledByBranch` to return `YES` for every incoming Branch-generated Universal Link, you can inform the Branch SDK by following these steps:
 
-1. In your **Info.plist** file, create a new key called `branch_universal_link_domains`.
+1. In your <notranslate>**Info.plist**</notranslate> file, create a new key called `branch_universal_link_domains`.
 1. Add your custom domain(s) as a string. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domain.png)
 1. Save the file.
 

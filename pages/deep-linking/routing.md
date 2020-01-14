@@ -104,18 +104,18 @@ In addition to any custom key/value pairs specified in the link data dictionary,
 
 | **Parameter** | **Meaning** |
 | ---: | --- |
-| **+is_first_session** | Denotes whether this is the first session (install) or any other session (re-install, open)
-| **+clicked_branch_link** | Denotes whether or not the user clicked a Branch link that triggered this session
-| **+match_guaranteed** | True or false as to whether the match was made with 100% accuracy
-| **+referrer** | The referrer for the link click, if a link was clicked
-| **+click_timestamp** | Epoch timestamp of when the click occurred
-| **+url** | The full URL of the link that drove the install/open, if present (e.g. yourapp.app.link/abcde12345)
-| **~channel** | The channel on which the link was shared, specified at link creation time
-| **~feature** | The feature, such as `invite` or `share`, specified at link creation time
-| **~tags** | Any tags, specified at link creation time
-| **~campaign** | The campaign the link is associated with, specified at link creation time
-| **~creation_source** | Where the link was created ('API', 'Dashboard', 'SDK', 'iOS SDK', 'Android SDK', or 'Web SDK')
-| **~id** | Automatically generated 18 digit ID number for the link that drove the install/open, if present (0 for dynamic and 3P links)
+| <notranslate>**+is_first_session**</notranslate> | Denotes whether this is the first session (install) or any other session (re-install, open)
+| <notranslate>**+clicked_branch_link**</notranslate> | Denotes whether or not the user clicked a Branch link that triggered this session
+| <notranslate>**+match_guaranteed**</notranslate> | True or false as to whether the match was made with 100% accuracy
+| <notranslate>**+referrer**</notranslate> | The referrer for the link click, if a link was clicked
+| <notranslate>**+click_timestamp**</notranslate> | Epoch timestamp of when the click occurred
+| <notranslate>**+url**</notranslate> | The full URL of the link that drove the install/open, if present (e.g. yourapp.app.link/abcde12345)
+| <notranslate>**~channel**</notranslate> | The channel on which the link was shared, specified at link creation time
+| <notranslate>**~feature**</notranslate> | The feature, such as `invite` or `share`, specified at link creation time
+| <notranslate>**~tags**</notranslate> | Any tags, specified at link creation time
+| <notranslate>**~campaign**</notranslate> | The campaign the link is associated with, specified at link creation time
+| <notranslate>**~creation_source**</notranslate> | Where the link was created ('API', 'Dashboard', 'SDK', 'iOS SDK', 'Android SDK', or 'Web SDK')
+| <notranslate>**~id**</notranslate> | Automatically generated 18 digit ID number for the link that drove the install/open, if present (0 for dynamic and 3P links)
 
 ### Access deep link parameters later on
 
@@ -369,12 +369,12 @@ Now whenever your app launches from a Branch link that has the `product_picture`
 
 | **Option** | **Meaning** |
 | ---: | --- |
-| **BNCViewControllerOptionShow** | This option pushes view controller onto the navigation stack in a similar way as the showViewController
-| **BNCViewControllerOptionPush** | This option pushes view controller onto the navigation stack in a similar way as the pushViewController
-| **BNCViewControllerOptionPresent** | This option presents view controller onto the root view controller of window in a similar way as the presentViewController
+| <notranslate>**BNCViewControllerOptionShow**</notranslate> | This option pushes view controller onto the navigation stack in a similar way as the showViewController
+| <notranslate>**BNCViewControllerOptionPush**</notranslate> | This option pushes view controller onto the navigation stack in a similar way as the pushViewController
+| <notranslate>**BNCViewControllerOptionPresent**</notranslate> | This option presents view controller onto the root view controller of window in a similar way as the presentViewController
 
 !!! note
-	**BNCViewControllerOptionShow** or **BNCViewControllerOptionPush** option would only push a view controller if the root view controller of window is of type **UINavigationViewController**. Or else, the view controller would be presented by default.
+	<notranslate>**BNCViewControllerOptionShow**</notranslate> or <notranslate>**BNCViewControllerOptionPush**</notranslate> option would only push a view controller if the root view controller of window is of type <notranslate>**UINavigationViewController**</notranslate>. Or else, the view controller would be presented by default.
 
 ### Auto-routing in Android
 

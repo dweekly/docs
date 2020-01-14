@@ -19,10 +19,10 @@ Basic postbacks are automatically activated for events like _Install_ and _Purch
 
 To add a postback:
 
-1. Under **Partner Management**, select the partner for whom you want to add/edit their postback.
-2. Click on the **Postback Config** tab on said partner’s page.
-3. Click the **Add New Postback** button at the bottom of the screen.
-4. A modal will appear with Branch default events, as well as any commerce (reserved events like _PURCHASE)_ or custom events you've set up. Select an event, enter a postback URL if you're asked to, and click **Save**. This will be the event that triggers your new postback.
+1. Under <notranslate>**Partner Management**</notranslate>, select the partner for whom you want to add/edit their postback.
+2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
+3. Click the <notranslate>**Add New Postback**</notranslate> button at the bottom of the screen.
+4. A modal will appear with Branch default events, as well as any commerce (reserved events like _PURCHASE)_ or custom events you've set up. Select an event, enter a postback URL if you're asked to, and click <notranslate>**Save**</notranslate>. This will be the event that triggers your new postback.
     1. NOTE: If Branch does not already have a postback template for a partner, please provide a valid URL for your partner.
 
 ![image](/_assets/img/pages/partner-management/postback-add.gif)
@@ -31,9 +31,9 @@ To add a postback:
 
 To disable any postback currently enabled for an ad partner:
 
-1. Under **Partner Management**, select the partner for whom you want to add/edit their postback.
-2. Click on the **Postback Config** tab on said partner’s page.
-3. Uncheck the box in the **Enable** column for the postback you want to disable.
+1. Under <notranslate>**Partner Management**</notranslate>, select the partner for whom you want to add/edit their postback.
+2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
+3. Uncheck the box in the <notranslate>**Enable**</notranslate> column for the postback you want to disable.
 
 ![image](/_assets/img/pages/partner-management/postback-disable.gif)
 
@@ -42,12 +42,12 @@ To disable any postback currently enabled for an ad partner:
 
 ### Deleting
 
-To delete any postback currently enabled for an ad partner:  
+To delete any postback currently enabled for an ad partner:
 
-1. Under **Partner Management**, select the partner for whom you want to add/edit their postback.
-2. Click on the **Postback Config** tab on said partner’s page.
-3. Hover on the three dots icon to the right of the postback and click **Delete Postback**.
-4. Click **Save**.
+1. Under <notranslate>**Partner Management**</notranslate>, select the partner for whom you want to add/edit their postback.
+2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
+3. Hover on the three dots icon to the right of the postback and click <notranslate>**Delete Postback**</notranslate>.
+4. Click <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/partner-management/postback-delete.gif)
 
@@ -57,10 +57,10 @@ To delete any postback currently enabled for an ad partner:
 
 ### Sending All Events
 
-If you want to send **All Events** - whether attributed to this partner or not  - you can enable this setting by checking the **All Events** box on a per postback basis.
+If you want to send <notranslate>**All Events**</notranslate> - whether attributed to this partner or not  - you can enable this setting by checking the <notranslate>**All Events**</notranslate> box on a per postback basis.
 
 !!! warning "Privacy Implications"
-	As this setting will send **All Events** - with the name and customer event alias listed in this row, whether attributed to this partner or not - we recommend using caution when/if enabling, especially if you have enabled agencies to access your account.
+	As this setting will send <notranslate>**All Events**</notranslate> - with the name and customer event alias listed in this row, whether attributed to this partner or not - we recommend using caution when/if enabling, especially if you have enabled agencies to access your account.
 
 ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/all-events.png)
 
@@ -73,21 +73,21 @@ In most cases, the default postback URL generated from your selections is suffic
 But sometimes you may need/want to edit or remove a parameter from the postback URL, or append a macro expression/variable to include additional information.
 
 !!! tip "Example"
-	You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current `Add to Cart` postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template.
+	You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current <notranslate>**Add to Cart**</notranslate> postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template.
 
 Please refer to [Postback Macros & Functions](#postback-macros-functions) when looking to append additional macros.
 
 To edit the postback template:
 
-1. Under **Partner Management**, select the partner for whom you want to add/edit their postback.
-2. Click on the **Postback Config** tab on said partner’s page.
-3. In the **Postback URL** field, add/edit/remove the key-value pairs necessary.
+1. Under <notranslate>**Partner Management**</notranslate>, select the partner for whom you want to add/edit their postback.
+2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
+3. In the <notranslate>**Postback URL**</notranslate> field, add/edit/remove the key-value pairs necessary.
     1. You must include a `&` before each key-value pairs you append.
-4. Click **Save**.
-5. Alternatively, hover on the three dots icon to the right of the postback and click **Advanced Edit**.
-6. In the **Send a Webhook to** field, add/edit/remove the key-value pairs necessary.
+4. Click <notranslate>**Save**</notranslate>.
+5. Alternatively, hover on the three dots icon to the right of the postback and click <notranslate>**Advanced Edit**</notranslate>.
+6. In the <notranslate>**Send a Webhook to**</notranslate> field, add/edit/remove the key-value pairs necessary.
     2. You must include a `&` before each key-value pairs you append.
-7. Click **Save**.
+7. Click <notranslate>**Save**</notranslate>.
 
 ### Adding Filters
 
@@ -97,21 +97,21 @@ By default, all postbacks include the following two filters:
     *   This filter ensures Branch is only sending postbacks based on real traffic.
 *   Last Attributed Touch Data $3p = Currently selected Ad Partner
     *   This filter ensures Branch is only sending postbacks for events attributed to the currently selected ad partner.
-    *   NOTE: Removing this filter results in Branch sending all events regardless of the attributed ad partner. This is equivalent to checking the **All Events** box.
+    *   NOTE: Removing this filter results in Branch sending all events regardless of the attributed ad partner. This is equivalent to checking the <notranslate>**All Events**</notranslate> box.
 
 !!! tip "Example"
-	Your partner requires separate postbacks for Android purchase events vs iOS purchase events.  To achieve this, you would need to add two Purchase postbacks and add a filter for **Operating System** - **user_data.os** - **equals** - **Android **to one and **Operating System** - **user_data.os** - **equals** - **iOS **to the other.
+	Your partner requires separate postbacks for Android purchase events vs iOS purchase events.  To achieve this, you would need to add two Purchase postbacks and add a filter for <notranslate>**Operating System**</notranslate> - <notranslate>**user_data.os**</notranslate> - <notranslate>**equals**</notranslate> - <notranslate>**Android **</notranslate>to one and <notranslate>**Operating System**</notranslate> - <notranslate>**user_data.os**</notranslate> - <notranslate>**equals**</notranslate> - <notranslate>**iOS **</notranslate>to the other.
 
 To create a filter:
 
-1. Under **Partner Management**, select the partner for whom you want to add/edit their postback.
-2. Click on the **Postback Config** tab on said partner’s page.
-3. Hover on the three dots icon to the right of the postback and click **Advanced Edit**.
-4. Click the **Add Filter** button
+1. Under <notranslate>**Partner Management**</notranslate>, select the partner for whom you want to add/edit their postback.
+2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
+3. Hover on the three dots icon to the right of the postback and click <notranslate>**Advanced Edit**</notranslate>.
+4. Click the <notranslate>**Add Filter**</notranslate> button
 5. Select the metadata you'd like to filter on. See list of basic filters below.
-    1. Select **equals** or **does not equal** from the next drop-down.
+    1. Select <notranslate>**equals**</notranslate> or <notranslate>**does not equal**</notranslate> from the next drop-down.
 6. Finally, set the value of the key that you'd like to filter in or out.
-7. Click **Save**.
+7. Click <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/partner-management/postback-add-filter.gif)
 
@@ -119,22 +119,22 @@ To create a filter:
 
 The following filters are available when editing your postback:
 
-*   Campaign
-*   Channel
-*   Country
-*   Custom - see Advanced Filters for more information
-*   Feature
-*   Tags
-*   Last Attributed Touch ID
-*   Last Attributed Touch Type
-*   Operating System
-*   Environment
-*   Platform
-*   Agency ID
-*   Re-engagement Activity
-*   Attributed
-*   Customer Event Alias
-*   First Event for User
+*   <notranslate>Campaign</notranslate>
+*   <notranslate>Channel</notranslate>
+*   <notranslate>Country</notranslate>
+*   <notranslate>Custom</notranslate> - see Advanced Filters for more information
+*   <notranslate>Feature</notranslate>
+*   <notranslate>Tags</notranslate>
+*   <notranslate>Last Attributed Touch ID</notranslate>
+*   <notranslate>Last Attributed Touch Type</notranslate>
+*   <notranslate>Operating System</notranslate>
+*   <notranslate>Environment</notranslate>
+*   <notranslate>Platform</notranslate>
+*   <notranslate>Agency ID</notranslate>
+*   <notranslate>Re-engagement Activity</notranslate>
+*   <notranslate>Attributed</notranslate>
+*   <notranslate>Customer Event Alias</notranslate>
+*   <notranslate>First Event for User</notranslate>
 
 #### Advanced Filters
 
@@ -144,20 +144,20 @@ Make sure you've taken a look at the data format before you attempt to set advan
 
 To create a filter:
 
-1. Under **Partner Management**, select the partner for whom you want to add/edit their postback.
-2. Click on the **Postback Config** tab on said partner’s page.
-3. Hover on the three dots icon to the right of the postback and click **Advanced Edit**.
-4. Click the **Add Filter** button.
-5. Select the metadata you'd like to filter on. For advanced filtering, choose "Custom"
+1. Under <notranslate>**Partner Management**</notranslate>, select the partner for whom you want to add/edit their postback.
+2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
+3. Hover on the three dots icon to the right of the postback and click <notranslate>**Advanced Edit**</notranslate>.
+4. Click the <notranslate>**Add Filter**</notranslate> button.
+5. Select the metadata you'd like to filter on. For advanced filtering, choose <notranslate>"Custom"</notranslate>
 6. Type in the key that you'd like to filter on. To find the key you'd like to filter on, reference our quick introduction to the [People-Based Attribution's data format](https://docs.branch.io/exports/ua-webhooks/#data-format) to figure out where your key is likely nested. Another foolproof way to find your key is looking at your data in full before setting up your filter. You can do this by doing a [CSV export](https://dashboard.branch.io/data-import-export/csv-exports), [API export](https://docs.branch.io/exports/api-v3/) or send a single postback with a POST body, and locate your key in that POST body.
-7. Unless your key is part of the top level data (e.g. **timestamp** or **id**), it will likely be nested one level deep. Most keys will be of the format **object_name.key**. For example, if you want to filter for a custom key in deep link data called "product_deeplink_id", that would take the form **last_attributed_touch_data.product_deeplink_id**.
+7. Unless your key is part of the top level data (e.g. <notranslate>**timestamp**</notranslate> or <notranslate>**id**</notranslate>), it will likely be nested one level deep. Most keys will be of the format <notranslate>**object_name.key**</notranslate>. For example, if you want to filter for a custom key in deep link data called <notranslate>"product_deeplink_id"</notranslate>, that would take the form <notranslate>**last_attributed_touch_data.product_deeplink_id**</notranslate>.
 
-Let’s say you’re interested in receiving a postback for every **Purchase** event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for "coupon"](https://docs.branch.io/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](https://docs.branch.io/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a postback only when **coupon** is equal to **HOLIDAYS** you will:
+Let’s say you’re interested in receiving a postback for every <notranslate>**Purchase**</notranslate> event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for <notranslate>"coupon"</notranslate>](https://docs.branch.io/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](https://docs.branch.io/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a postback only when <notranslate>**coupon**</notranslate> is equal to <notranslate>**HOLIDAYS**</notranslate> you will:
 
-1. Select "Custom" from the filter key dropdown
-2. Make the key **event_data.coupon**
-3. Select "equals" on the equivalency dropdown
-4. Enter a value of **HOLIDAYS**
+1. Select <notranslate>"Custom"</notranslate> from the filter key dropdown
+2. Make the key <notranslate>**event_data.coupon**</notranslate>
+3. Select <notranslate>"equals"</notranslate> on the equivalency dropdown
+4. Enter a value of <notranslate>**HOLIDAYS**</notranslate>
 
 ![image](/_assets/img/pages/partner-management/postback-custom-filter.gif)
 
@@ -167,13 +167,13 @@ By default, Branch sends postbacks via the GET HTTP method.  You can, however, c
 
 To change the HTTP method to POST:
 
-1. Under **Partner Management**, select the partner for whom you want to add/edit their postback.
-2. Click on the **Postback Config** tab on said partner’s page.
-3. Hover on the three dots icon to the right of the postback and click **Advanced Edit**.
-4. Change the **GET** drop-down to **POST**.
+1. Under <notranslate>**Partner Management**</notranslate>, select the partner for whom you want to add/edit their postback.
+2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
+3. Hover on the three dots icon to the right of the postback and click <notranslate>**Advanced Edit**</notranslate>.
+4. Change the <notranslate>**GET**</notranslate> drop-down to <notranslate>**POST**</notranslate>.
 5. By default, Branch’s header settings for POST include:
-    1. **Content-Type** : **application/json**
-        1. Additional Content-Type values include **application/x-www-form** & **urlencoded**.
+    1. <notranslate>**Content-Type**</notranslate> : <notranslate>**application/json**</notranslate>
+        1. Additional Content-Type values include <notranslate>**application/x-www-form**</notranslate> & <notranslate>**urlencoded**</notranslate>.
 
 ![image](/_assets/img/pages/partner-management/postback-post.gif)
 
@@ -183,11 +183,11 @@ Once you’ve enabled and/or configured new postbacks, you can test they’re wo
 
 To test postbacks/webhooks in Liveview:
 
-1. In the left-hand navigation, under **Setup & Testing** click on **Liveview**.
-2. Click the **Webhooks Record** tab to load the Webhook/Postbacks object.
-3. Click the **Add Filter** button, and select **Webhook Partner Key** from the drop-down and insert the relevant value for the partner.
-4. Click the columns button to add both the **Webhook Response Code** and **Webhook Response Body** as columns.
-5. Click **Update Session** to view the filtered results.
+1. In the left-hand navigation, under <notranslate>**Setup & Testing**</notranslate> click on <notranslate>**Liveview**</notranslate>.
+2. Click the <notranslate>**Webhooks Record**</notranslate> tab to load the Webhook/Postbacks object.
+3. Click the <notranslate>**Add Filter**</notranslate> button, and select <notranslate>**Webhook Partner Key**</notranslate> from the drop-down and insert the relevant value for the partner.
+4. Click the columns button to add both the <notranslate>**Webhook Response Code**</notranslate> and <notranslate>**Webhook Response Body**</notranslate> as columns.
+5. Click <notranslate>**Update Session**</notranslate> to view the filtered results.
 
 ![image](/_assets/img/pages/partner-management/liveview-webhooks.png)
 

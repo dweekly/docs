@@ -18,23 +18,23 @@ We have built a custom integration to automatically send all Branch install data
 
 ### Set up Localytics
 
-1. On the Localytics dashboard, navigate to the **Attribution** section, click the **•••** (overflow) button, and select **Settings**.
+1. On the Localytics dashboard, navigate to the <notranslate>**Attribution**</notranslate> section, click the <notranslate>**•••**</notranslate> (overflow) button, and select <notranslate>**Settings**</notranslate>.
 ![image](/_assets/img/pages/integrations/localytics/localytics-more.png)
-1. Once there, you'll need to add your **Store ID** (iTunes for iOS, Play Store for Android).
-1. Under the section **Ad Tracking Setup**, check the box labeled **Third-party Attribution**. This will enable an **Attribution ID** for you. Copy it, and have it handy for the next steps.
+1. Once there, you'll need to add your <notranslate>**Store ID**</notranslate> (iTunes for iOS, Play Store for Android).
+1. Under the section <notranslate>**Ad Tracking Setup**</notranslate>, check the box labeled <notranslate>**Third-party Attribution**</notranslate>. This will enable an <notranslate>**Attribution ID**</notranslate> for you. Copy it, and have it handy for the next steps.
 ![image](/_assets/img/pages/integrations/localytics/localytics-attr-settings.png)
 
 !!! protip "What does this mean?"
-    Once you have selected to allow third-party attribution, Localytics will attribute non-Localytics installs to your dashboard. **This information is delayed by 10 minutes.**
+    Once you have selected to allow third-party attribution, Localytics will attribute non-Localytics installs to your dashboard. <notranslate>**This information is delayed by 10 minutes.**</notranslate>
 
 
 
 ### Configure the Branch Dashboard
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
-1. Locate Localytics and choose **Enable**.
+1. Locate Localytics and choose <notranslate>**Enable**</notranslate>.
   * If you have not yet entered billing information, please do so now.
-1. Enter your Localytics Attribution ID for each platform and hit **Save**
+1. Enter your Localytics Attribution ID for each platform and hit <notranslate>**Save**</notranslate>
 
 ![image](/_assets/img/pages/integrations/localytics/enable-localytics-integration.png)
 
@@ -47,9 +47,9 @@ We have built a custom integration to automatically send all Branch install data
 
 Branch Analytics Tag | Localytics Data Placeholder Tag
 --- | ---
-Campaign | campaign
+<notranslate>Campaign</notranslate> | `campaign`
 
-Branch will also send any arbitrary parameters you attach to a link on to Localytics.  All Branch data will appear in the Localytics "Attribution" dashboard, but not the "Events" dashboard.
+Branch will also send any arbitrary parameters you attach to a link on to Localytics.  All Branch data will appear in the Localytics <notranslate>"Attribution"</notranslate> dashboard, but not the <notranslate>"Events"</notranslate> dashboard.
 
 ## Support
 

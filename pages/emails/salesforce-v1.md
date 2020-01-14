@@ -9,7 +9,7 @@ This guide will walk you through how to setup your email campaigns with **[Sales
 ## Setup
 
 !!! tip "SFMC Pre-requisite"
-	You must have the **[Salesforce Marketing Cloud Sender Authentication Package (SAP)](https://help.salesforce.com/articleView?id=mc_es_sender_authentication_package.htm&type=5){:target="\_blank"}** in order to benefit from Universal Links + click tracking functionality.
+	You must have the <notranslate>**[Salesforce Marketing Cloud Sender Authentication Package (SAP)](https://help.salesforce.com/articleView?id=mc_es_sender_authentication_package.htm&type=5){:target="\_blank"}**</notranslate> in order to benefit from Universal Links + click tracking functionality.
 
 {! ingredients/email/prerequisites.md !}
 
@@ -17,7 +17,7 @@ This guide will walk you through how to setup your email campaigns with **[Sales
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Salesforce** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Salesforce**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
@@ -57,8 +57,8 @@ Your Salesforce account must be configured to correctly handle Universal Links. 
 ![image](https://cdn.branch.io/branch-assets/1559434914239-og_image.png)
 
 1. Enter the AppID value
-1. Check the "Exclude Profile" and "Unsub Center" checkboxes to force links to these items to open in the browser and not the app, if desired.
-1. Click "Save" to save the configuration.
+1. Check the "Exclude Profile" and <notranslate>"Unsub Center"</notranslate> checkboxes to force links to these items to open in the browser and not the app, if desired.
+1. Click <notranslate>"Save"</notranslate> to save the configuration.
 1. Let Salesforce and Branch know that you've finished this step and your Technical Account Manager will verify that everything looks good.
 
 ![image](/_assets/img/pages/email/salesforce/salesforce-aasa-form.png)
@@ -88,15 +88,15 @@ Using Salesforce's AMPscript, we'll add a new Content Area in Salesforce that co
     %%[ VAR @deeplink, @branch_base_url SET @branch_base_url = "https://DOMAIN-HERE/3p?%243p=e_et" SET @deeplink = CONCAT(@branch_base_url, CONCAT("&%24original_url=", URLEncode(@link_to_be_wrapped, 1, 1))) ]%%
     ```
 
-1. After logging into Salesforce Marketing Cloud, click on **Email Studio** and then a sub-menu will appear. Click on **Email** in the dropdown menu:
+1. After logging into Salesforce Marketing Cloud, click on <notranslate>**Email Studio**</notranslate> and then a sub-menu will appear. Click on <notranslate>**Email**</notranslate> in the dropdown menu:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-dropdown.png)
 
-1. This will take you to the landing page for the Email section. Click on **Content** in the menu bar to navigate to the Content section:
+1. This will take you to the landing page for the Email section. Click on <notranslate>**Content**</notranslate> in the menu bar to navigate to the Content section:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-menu-bar.png)
 
-1. In the Content section, you will see a list of folders on the left side. Right click on the **My Contents** folder and choose **New Folder** in the context menu:
+1. In the Content section, you will see a list of folders on the left side. Right click on the <notranslate>**My Contents**</notranslate> folder and choose <notranslate>**New Folder**</notranslate> in the context menu:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-folders.png)
 
@@ -104,23 +104,23 @@ Using Salesforce's AMPscript, we'll add a new Content Area in Salesforce that co
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-name-folder.png)
 
-1. Once the folder is created, click on the **Branch** folder. On the right side, you will see a menu bar for the Branch folder. Click on **Create** and in the sub menu, click **Content** to create new content:
+1. Once the folder is created, click on the <notranslate>**Branch**</notranslate> folder. On the right side, you will see a menu bar for the Branch folder. Click on <notranslate>**Create**</notranslate> and in the sub menu, click <notranslate>**Content**</notranslate> to create new content:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-new-content.png)
 
-1. In the Create Content window that appears, enter `deeplink` in the text field named Content Name. Click on **Next** after you enter the text:
+1. In the Create Content window that appears, enter `deeplink` in the text field named Content Name. Click on <notranslate>**Next**</notranslate> after you enter the text:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-deeplink.png)
 
-1. The next screen will ask you to select the format of the content. Choose **Free Form** and then click **Next**:
+1. The next screen will ask you to select the format of the content. Choose <notranslate>**Free Form**</notranslate> and then click <notranslate>**Next**</notranslate>:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-format.png)
 
-1. In the next screen, paste in the snippet you generated in **1**:
+1. In the next screen, paste in the snippet you generated in <notranslate>**1**</notranslate>:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-snippet.png)
 
-1. Click **Save**. You will now be back at your list of folders in the Content section with the file **deeplink** listed:
+1. Click <notranslate>**Save**</notranslate>. You will now be back at your list of folders in the Content section with the file <notranslate>**deeplink**</notranslate> listed:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-saved.png)
 
@@ -142,7 +142,7 @@ For example, if you decide to convert the link below into a Branch Link:
 <a href="https://www.blueapron.com/"> I want it! </a>
 ```
 
-This is what the link will look like in the email template, **after** you added the AMPscript to convert it into a Branch link:
+This is what the link will look like in the email template, <notranslate>**after**</notranslate> you added the AMPscript to convert it into a Branch link:
 ```
 %%[ SET @link_to_be_wrapped = "https://www.blueapron.com/" ContentAreaByName("My Contents\deeplink") ]%%
 <a href="%%=RedirectTo(@deeplink)=%%">I want it!</a>
@@ -151,11 +151,11 @@ This is what the link will look like in the email template, **after** you added 
 The process to convert links into Branch links using AMPscript is as follows (this flow converts the links in a separate document, and then pastes them back into your final template):
 
 1. Log in to Salesforce Marketing Cloud
-2. Click on **Email Studio** and then a sub-menu will appear. Click on **Email** in the dropdown menu:
+2. Click on <notranslate>**Email Studio**</notranslate> and then a sub-menu will appear. Click on <notranslate>**Email**</notranslate> in the dropdown menu:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-dropdown.png)
 
-1. This will take you to the landing page for the Email section. Click on **Content** in the menu bar to navigate to the Content section:
+1. This will take you to the landing page for the Email section. Click on <notranslate>**Content**</notranslate> in the menu bar to navigate to the Content section:
 
     ![image](/_assets/img/pages/email/salesforce/salesforce-menu-bar.png)
 
@@ -217,7 +217,7 @@ For links that should always open in web, even if the app is installed, add Sale
 <a mc-deep-link="false" href="https://my.app.link/3p?$3p=e_et&$original_url=..." >This link will not open the app.</a>
 ```
 
-If the link in the "href" part of the tag is a normal web link, the app will NOT open in Android.  If the link in the "href" part of the tag is a Branch link, but you don't want the app to open, then you'll need to add `&%24web_only%3Dtrue` as a query parameter:
+If the link in the "href" part of the tag is a normal web link, the app will NOT open in Android.  If the link in the <notranslate>"href"</notranslate> part of the tag is a Branch link, but you don't want the app to open, then you'll need to add `&%24web_only%3Dtrue` as a query parameter:
 
 ```html
 <a href="https://my.app.link/3p?%243p=e_xx&%24original_url=http%3A%2F%2Fexample.com&%24web_only%3Dtrue" >Link to your app!</a>

@@ -23,7 +23,7 @@ By connecting your Twitter Ads and Branch accounts, the following is enabled:
 		* [x] iOS App Store ID set
 		* [x] Android Package Name set
 	* [x] Ads is a premium product priced on Monthly Active Users. Sign up for the Ads product to enable this functionality.
-	
+
 ## Campaign Support
 
 | **Campaign Type** | **Attribution Supported** | **Branch Linking Supported** |
@@ -36,7 +36,7 @@ The integration with Twitter Ads for mobile app conversion tracking is designed 
 
 ## Branch links
 
-App campaigns do not support Branch links. Branch links can be used on Tweets, promoted Tweets, and non-app campaign types, but will only report conversions in Branch and not Twitter. To avoid high-level reporting discrepancies, you may want to segment this traffic from the integration by using Quick Links. 
+App campaigns do not support Branch links. Branch links can be used on Tweets, promoted Tweets, and non-app campaign types, but will only report conversions in Branch and not Twitter. To avoid high-level reporting discrepancies, you may want to segment this traffic from the integration by using Quick Links.
 
 ## Enable Twitter Ads for Measurement
 
@@ -46,7 +46,7 @@ App campaigns do not support Branch links. Branch links can be used on Tweets, p
 
 1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management) and search for **Twitter**.
 
-1. Click `Log in with Twitter`
+1. Click <notranslate>**Log in with Twitter**</notranslate>
 
     ![image](/_assets/img/pages/deep-linked-ads/twitter-ads/twitter-ads-enable.png)
 
@@ -79,13 +79,13 @@ Branch maps the following data fields from Twitter Ads to Branch.
 
 Twitter Data | Branch Data | Possible Values
 --- | --- | ---
-n/a | ~advertising_partner_name | “Twitter”
-tpn_attribution | ~channel | “Twitter” if null or last touch, or “Twitter Audience Platform” if TAP is last touch
-engagement_time | last_attributed_touch_timestamp | 1455675372963
-campaign_name | ~campaign | Light Bright Launch
-campaign_id | ~campaign_id | 15292426
-engagement_type | last_touch_type | CLICK or IMPRESSION
-country_code | ~user_data_geo_country_code | US
+n/a | `~advertising_partner_name` | “Twitter”
+`tpn_attribution` | `~channel` | “Twitter” if null or last touch, or “Twitter Audience Platform” if TAP is last touch
+`engagement_time` | `last_attributed_touch_timestamp` | 1455675372963
+`campaign_name` | `~campaign` | Light Bright Launch
+`campaign_id` | `~campaign_id` | 15292426
+`engagement_type` | `last_touch_type` | CLICK or IMPRESSION
+`country_code` | `~user_data_geo_country_code` | US
 
 ## Forwarding Events to Twitter Ads
 
@@ -95,26 +95,26 @@ Branch will forward in-app events to Twitter Ads for campaign optimization. In a
 
 Branch Event Name | Twitter Conversion Type
 --- | ---
-INSTALL | INSTALL
-PURCHASE | PURCHASE
-INITIATE_PURCHASE | CHECKOUT_INITIATED
-ADD_TO_CART | ADD_TO_CART
-VIEW_ITEM | CONTENT_VIEW
-ADD_PAYMENT_INFO | ADDED_PAYMENT_INFO
-COMPLETE_REGISTRATION | SIGN_UP
-SEARCH | SEARCH
-ACHIEVE_LEVEL | LEVEL_ACHIEVED
-OPEN, REINSTALL | RE_ENGAGE
-COMPLETE_TUTORIAL | TUTORIAL_COMPLETE
-ADD_TO_WISHLIST | ADD_TO_WISHLIST
-UNLOCK_ACHIEVEMENT | ACHIEVEMENT_UNLOCKED
-SHARE | SHARE
-SPEND_CREDITS | SPENT_CREDITS
-RATE | RATED
-UPDATE | UPDATE
-RESERVE | RESERVATION
-LOGIN | LOGIN
-INVITE | INVITE
+`INSTALL` | `INSTALL`
+`PURCHASE` | `PURCHASE`
+`INITIATE_PURCHASE` | `CHECKOUT_INITIATED`
+`ADD_TO_CART` | `ADD_TO_CART`
+`VIEW_ITEM` | `CONTENT_VIEW`
+`ADD_PAYMENT_INFO` | `ADDED_PAYMENT_INFO`
+`COMPLETE_REGISTRATION` | `SIGN_UP`
+`SEARCH` | `SEARCH`
+`ACHIEVE_LEVEL` | `LEVEL_ACHIEVED`
+`OPEN`, `REINSTALL` | `RE_ENGAGE`
+`COMPLETE_TUTORIAL` | `TUTORIAL_COMPLETE`
+`ADD_TO_WISHLIST` | `ADD_TO_WISHLIST`
+`UNLOCK_ACHIEVEMENT` | `ACHIEVEMENT_UNLOCKED`
+`SHARE` | `SHARE`
+`SPEND_CREDITS` | `SPENT_CREDITS`
+`RATE` | `RATED`
+`UPDATE` | `UPDATE`
+`RESERVE` | `RESERVATION`
+`LOGIN` | `LOGIN`
+`INVITE` | `INVITE`
 
 In order to track these events, please refer to the [v2 Event document](/apps/v2event/#v2-event) for further information.
 
@@ -124,9 +124,9 @@ Twitter has a data agreement with TUNE, and there are several layers of data tha
 
 ### Data Levels
 
-**Source Level** > Source level is the source information including Publisher name (hardcoded to "Twitter"), Publisher ID, 3p (hardcoded to "a_twitter") and advertising partner name (hardcoded to "Twitter").
+<notranslate>**Source Level**</notranslate> > Source level is the source information including Publisher name (hardcoded to "Twitter"), Publisher ID, 3p (hardcoded to "a_twitter") and advertising partner name (hardcoded to "Twitter").
 
-**Campaign Level** > Campaign level includes campaign information such as Campaign (Twitter Campaign Name), Campaign ID (Twitter Campaign ID), Channel (Twitter or Twitter Audience Platform), Feature (hardcoded to "paid advertising"), Ad ID (Tweet ID), Partner Ad Set ID (Line Item ID).
+<notranslate>**Campaign Level**</notranslate> > Campaign level includes campaign information such as Campaign (Twitter Campaign Name), Campaign ID (Twitter Campaign ID), Channel (Twitter or Twitter Audience Platform), Feature (hardcoded to "paid advertising"), Ad ID (Tweet ID), Partner Ad Set ID (Line Item ID).
 
 !!! warning "Whitelisting for Device IDs"
 	If you want to receive device IDs and campaign level information via Branch's data feeds, then you must contact your Twitter and Branch account manager. Please make use the email title of "CAMPAIGN LEVEL DATA EXPORT WHITELIST" when contacting your account manager to ensure proper handling.
@@ -159,7 +159,7 @@ There are two main causes for Twitter Ads discrepancies with Branch:
 
 **Not last click**
 
-Twitter will claim and report all conversions they have tracked clicks or views for within window. Because Branch will attribute to the last partner to interact with the user, you may see up to 10-30% discrepancies. 
+Twitter will claim and report all conversions they have tracked clicks or views for within window. Because Branch will attribute to the last partner to interact with the user, you may see up to 10-30% discrepancies.
 
 **August 2019 user data sharing changes**
 
@@ -172,9 +172,9 @@ In early August of 2019, Twitter temporarily suspended sharing conversion data w
 - You must have permissions to configure ad accounts.
 - You can only track apps that are configured with store IDs & package names in Link Settings.
 
-**What does the error `Missing app event tags` mean?**
+**What does the error <notranslate>**Missing app event tags**</notranslate> mean?**
 
-If you see the `Missing apop event tags` error while trying to enable the Twitter integration, please go through the onboarding flow in your Branch dashboard again.  If you continue to see this error, please [Contact Support](mailto:support@branch.io).
+If you see the <notranslate>**Missing apop event tags**</notranslate> error while trying to enable the Twitter integration, please go through the onboarding flow in your Branch dashboard again.  If you continue to see this error, please [Contact Support](mailto:support@branch.io).
 
 **What does the error `Non-Branch app event provider configuration detected` mean?**
 

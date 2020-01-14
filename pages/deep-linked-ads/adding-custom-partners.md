@@ -8,10 +8,10 @@ Partners can email integrations@branch.io to become an integrated partner.
 
 To manually add a custom partner in your Branch dashboard:
 
-1. In the left-hand navigation, under **Channels & Links**, click on **Ads** and then **Partner Management**.
-2. On the **Partner Management** page, under **More Ad Partners**, click **Add Custom Partner**.
-3. In the **Add New Custom Partner** modal, provide a clearly identifiable name.
-4. Click **Save and Enable**.
+1. In the left-hand navigation, under <notranslate>**Channels & Links**</notranslate>, click on <notranslate>**Ads**</notranslate> and then <notranslate>**Partner Management**</notranslate>.
+2. On the <notranslate>**Partner Management**</notranslate> page, under <notranslate>**More Ad Partners**</notranslate>, click <notranslate>**Add Custom Partner**</notranslate>.
+3. In the <notranslate>**Add New Custom Partner**</notranslate> modal, provide a clearly identifiable name.
+4. Click <notranslate>**Save and Enable**</notranslate>.
 
 ![image](/_assets/img/pages/deep-linked-ads/custom-partner.png)
 
@@ -21,9 +21,9 @@ To continue setting up your new custom partner, you can set up postback URLs and
 
 ### Postback Configuration
 
-1. Click the **Add New Postback** button at the bottom of the screen.
+1. Click the <notranslate>**Add New Postback**</notranslate> button at the bottom of the screen.
 
-2. A modal will appear with Branch default events, as well as any commerce or custom events you've set up. Select an event, enter a postback URL if you're asked to, and click **Save**. This will be the event that triggers your new postback.
+2. A modal will appear with Branch default events, as well as any commerce or custom events you've set up. Select an event, enter a postback URL if you're asked to, and click <notranslate>**Save**</notranslate>. This will be the event that triggers your new postback.
 
     ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/add-new-postback-modal1.png)
 

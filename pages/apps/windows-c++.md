@@ -6,7 +6,7 @@
 
 ### Branch-integrated Demo Apps
 
-There are several demo apps embedded in this repository, which you can find in the ***BranchSDK-Samples*** folder.
+There are several demo apps embedded in this repository, which you can find in the *<notranslate>**BranchSDK-Samples**</notranslate>* folder.
 Please use these as a reference.
 
 Should you run into an issue with the SDK, please check that it is present in the demo app before submitting any issue
@@ -38,13 +38,13 @@ and alternate domains will be needed when configuring a project to support deep 
 
 ### Branch keys
 
-Branch keys consist of a prefix (**key_live_** or **key_test_**) followed by a string of 32 aphanumeric characters
+Branch keys consist of a prefix (<notranslate>**key_live_**</notranslate> or <notranslate>**key_test_**</notranslate>) followed by a string of 32 aphanumeric characters
 (*key_live_kdzhBMBYt5Pi4g4DVRfQbdkbqDlm5rIv*, for example). Branch keys are used to associate apps with Branch links.
 An app's Branch key is required to initialize the Branch SDK. Data associated with Branch links can only be read by apps
 that  use the same Branch key.
 
-Note that the **Live** and **Test** apps on the Branch dashboard are completely separate; each has its own Branch key.
-Even when **Live** and **Test** sections of the dashboard have been configured identically and links from both are able
+Note that the <notranslate>**Live**</notranslate> and <notranslate>**Test**</notranslate> apps on the Branch dashboard are completely separate; each has its own Branch key.
+Even when <notranslate>**Live**</notranslate> and <notranslate>**Test**</notranslate> sections of the dashboard have been configured identically and links from both are able
 to open up a particular app, the app will only receive link data for which it has the matching Branch key.
 
 ### Creating a Branch link domain and Branch key for an app
@@ -86,7 +86,7 @@ ___
 
 ### Integrating the Branch SDK
 
-**I. Create project in visual studio**  
+**I. Create project in visual studio**
 
 * Open Visual Studio and create a new Blank App (Windows Desktop Application) project
 
@@ -155,7 +155,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 Note that opening a session with Branch will notify of any pending deep links in the callback.
 
-**V. Register app to handle deep links**  
+**V. Register app to handle deep links**
 
 To enable your Windows application for deep linking, please follow [Microsoft's documentation on enabling apps for websites using app URI handlers](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/web-to-app-linking).
 
@@ -246,7 +246,7 @@ BranchIO.logout(myCallback):
 Use BranchIO::BranchStandardEvent class to track special user actions or application specific events beyond app installs,
 opens, and sharing. You can track events such as when a user adds an item to an on-line shopping cart, or searches for a
 keyword etc. BranchEvent provides an interface to add content(s) in order to associate content(s) with events. You can
-view analytics for the BranchEvents you fire on the Branch dashboard.  
+view analytics for the BranchEvents you fire on the Branch dashboard.
 
 *BranchIO::BranchStandardEvent* enumerate the most commonly tracked events and event parameters that can be used with
 BranchEvent for the best results. You can always use custom event names and event parameters.
@@ -299,28 +299,28 @@ _optional keys in the data dictionary_. Please use this
 
 | Key | Value
 | --- | ---
-| "$og_title" | The title you'd like to appear for the link in social media.
-| "$og_description" | The description you'd like to appear for the link in social media.
-| "$og_image_url" | The URL for the image you'd like to appear for the link in social media.
-| "$og_video" | The URL for the video.
-| "$og_url" | The URL you'd like to appear.
-| "$og_app_id" | the OG app ID. Optional and rarely used.
+| `$og_title` | The title you'd like to appear for the link in social media.
+| `$og_description` | The description you'd like to appear for the link in social media.
+| `$og_image_url` | The URL for the image you'd like to appear for the link in social media.
+| `$og_video` | The URL for the video.
+| `$og_url` | The URL you'd like to appear.
+| `$og_app_id` | the OG app ID. Optional and rarely used.
 
 Also, you do custom redirection by inserting the following _optional keys in the dictionary_:
 
 | Key | Value
 | --- | ---
-| "$desktop_url" | Where to send the user on a desktop or laptop. By default it is the Branch-hosted text-me service.
-| "$android_url" | The replacement URL for the Play Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_
-| "$ios_url" | The replacement URL for the App Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_
-| "$ipad_url" | Same as above but for iPad Store.
-| "$fire_url" | Same as above but for Amazon Fire Store.
-| "$blackberry_url" | Same as above but for Blackberry Store.
-| "$windows_phone_url" | Same as above but for Windows Store.
+| `$desktop_url` | Where to send the user on a desktop or laptop. By default it is the Branch-hosted text-me service.
+| `$android_url` | The replacement URL for the Play Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_
+| `$ios_url` | The replacement URL for the App Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_
+| `$ipad_url` | Same as above but for iPad Store.
+| `$fire_url` | Same as above but for Amazon Fire Store.
+| `$blackberry_url` | Same as above but for Blackberry Store.
+| `$windows_phone_url` | Same as above but for Windows Store.
 
 You have the ability to control the direct deep linking of each link by inserting the following _optional keys in the dictionary_:
 
 | Key | Value
 | --- | ---
-| "$deeplink_path" | The value of the deep link path that you'd like us to append to the URI. For example, you could specify "$deeplink_path": "radio/station/456" and we'll open the app with the URI "theapp://radio/station/456?link_click_id=branch-identifier". This is primarily for supporting legacy deep linking infrastructure.
-| "$always_deeplink" | true or false. (default is not to deep link first) This key can be specified to have our linking service force try to open the app, even if we're not sure the user has the app installed. If the app is not installed, we fall back to the respective app store or $platform_url key. By default, we only open the app if we've seen a user initiate a session in the app from a Branch link (has been cookied and deep linked by Branch).
+| `$deeplink_path` | The value of the deep link path that you'd like us to append to the URI. For example, you could specify "$deeplink_path": "radio/station/456" and we'll open the app with the URI "theapp://radio/station/456?link_click_id=branch-identifier". This is primarily for supporting legacy deep linking infrastructure.
+| `$always_deeplink` | true or false. (default is not to deep link first) This key can be specified to have our linking service force try to open the app, even if we're not sure the user has the app installed. If the app is not installed, we fall back to the respective app store or $platform_url key. By default, we only open the app if we've seen a user initiate a session in the app from a Branch link (has been cookied and deep linked by Branch).

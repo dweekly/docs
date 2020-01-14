@@ -41,13 +41,13 @@ By connecting your Google Marketing Platform and Branch accounts, the following 
 !!! note ""
 	Completing this section will result in Branch sending app conversion to Google in order to attribute them back to Google Marketing Platform campaigns.
 
-1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management) and search for **Google Marketing Platform**.
+1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management) and search for <notranslate>**Google Marketing Platform**</notranslate>.
 
-1. Provide the **Link IDs** for your Android/iOS apps respectively.
+1. Provide the <notranslate>**Link IDs**</notranslate> for your Android/iOS apps respectively.
 	![image](/_assets/img/pages/deep-linked-ads/google-marketing-platform/google-marketing-platform-enable.png)
-1. Click **Save and Enable**.
+1. Click <notranslate>**Save and Enable**</notranslate>.
 
-1. Finally, to create a Google Marketing Platform Ads link click the **Create Google Marketing Platform Link** button in the top right hand corner.
+1. Finally, to create a Google Marketing Platform Ads link click the <notranslate>**Create Google Marketing Platform Link**</notranslate> button in the top right hand corner.
 
 ## Creating a Google Marketing Platform Ads Campaign
 
@@ -61,12 +61,12 @@ Branch maps the following data fields from the Google Marketing Platform to Bran
 
 Google Marketing Platform | Branch Data | Possible Values
 --- | --- | ---
-n/a | ~advertising_partner_name | “Google Marketing Platform”
-product_type | ~channel | This field reports the product that is responsible for the conversions, either “DBM” or “DCM”.
-creative_id | ~creative_id | The numeric ID of the creative ad unit that produced the ad event. This value is guaranteed unique. When product is DBM, this field represents the DBM Creative ID. When product is DCM, this field represents the DCM Creative ID.
-placement_id | ~placement | The ID of the placement tag that calls an ad server for ad content when users visit a site. DCM serves ads when users visit a site with DCM placement tags. DCM generates a unique tag for each placement in an ad campaign. This value is only provided when product is DCM.
-line_item_id | ~ad_id | Line items in DBM can be used for targeting, bidding and assigning creatives. This is the ID of the line item that produced the ad event. This value is guaranteed unique within the DBM universe. This value is only provided when product is DBM
-line_item_name | ~ad_name | Name of the line items in DBM that produced the ad event. This value is only provided when product is DBM.
+n/a | `~advertising_partner_name` | “Google Marketing Platform”
+`product_type` | `~channel` | This field reports the product that is responsible for the conversions, either “DBM” or “DCM”.
+`creative_id` | `~creative_id` | The numeric ID of the creative ad unit that produced the ad event. This value is guaranteed unique. When product is DBM, this field represents the DBM Creative ID. When product is DCM, this field represents the DCM Creative ID.
+`placement_id` | `~placement` | The ID of the placement tag that calls an ad server for ad content when users visit a site. DCM serves ads when users visit a site with DCM placement tags. DCM generates a unique tag for each placement in an ad campaign. This value is only provided when product is DCM.
+`line_item_id` | `~ad_id` | Line items in DBM can be used for targeting, bidding and assigning creatives. This is the ID of the line item that produced the ad event. This value is guaranteed unique within the DBM universe. This value is only provided when product is DBM
+`line_item_name` | `~ad_name` | Name of the line items in DBM that produced the ad event. This value is only provided when product is DBM.
 
 ## Forwarding Events to Google Marketing Platform
 
@@ -76,25 +76,25 @@ Branch will forward in-app events to the Google Marketing Platform for campaign 
 
 Branch Event Name | Google Marketing Platform Conversion Type
 --- | ---
-INSTALL | FIRST_OPEN
-PURCHASE | ECOMMERCE_PURCHASE / IN_APP_PURCHASE
-INITIATE_PURCHASE | CUSTOM
-ADD_TO_CART | ADD_TO_CART
-VIEW_ITEM | VIEW_ITEM
-ADD_PAYMENT_INFO | CUSTOM
-COMPLETE_REGISTRATION | CUSTOM
-SEARCH | VIEW_SEARCH_RESULTS
-ACHIEVE_LEVEL | CUSTOM
-OPEN, REINSTALL | SESSION_START
-COMPLETE_TUTORIAL | CUSTOM
-ADD_TO_WISHLIST | CUSTOM
-UNLOCK_ACHIEVEMENT | CUSTOM
-SHARE | CUSTOM
-SPEND_CREDITS | CUSTOM
-RATE | CUSTOM
-UPDATE | CUSTOM
-RESERVE | CUSTOM
-LOGIN | CUSTOM
-INVITE | CUSTOM
+`INSTALL` | `FIRST_OPEN`
+`PURCHASE` | `ECOMMERCE_PURCHASE` / `IN_APP_PURCHASE`
+`INITIATE_PURCHASE` | `CUSTOM`
+`ADD_TO_CART` | `ADD_TO_CART`
+`VIEW_ITEM` | `VIEW_ITEM`
+`ADD_PAYMENT_INFO` | `CUSTOM`
+`COMPLETE_REGISTRATION` | `CUSTOM`
+`SEARCH` | `VIEW_SEARCH_RESULTS`
+`ACHIEVE_LEVEL` | `CUSTOM`
+`OPEN`, `REINSTALL` | `SESSION_START`
+`COMPLETE_TUTORIAL` | `CUSTOM`
+`ADD_TO_WISHLIST` | `CUSTOM`
+`UNLOCK_ACHIEVEMENT` | `CUSTOM`
+`SHARE` | `CUSTOM`
+`SPEND_CREDITS` | `CUSTOM`
+`RATE` | `CUSTOM`
+`UPDATE` | `CUSTOM`
+`RESERVE` | `CUSTOM`
+`LOGIN` | `CUSTOM`
+`INVITE` | `CUSTOM`
 
 In order to track these events, please refer to the [v2 Event document](/apps/v2event/#v2-event) for further information.

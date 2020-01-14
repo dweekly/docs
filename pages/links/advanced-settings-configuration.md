@@ -1,6 +1,6 @@
 - ### Change advanced settings
     - Go to [Link Settings](https://dashboard.branch.io/link-settings) on the Branch Dashboard
-    - Set `Match type` to either `unique` or `normal` (default)
+    - Set <notranslate>**Match type**</notranslate> to either `unique` or `normal` (default)
         - Recommended `Normal`. Selecting `Unique` means that Branch will only make a deep link through install match if there is a single, unique outstanding footprint. For example, if you and your twin both have iPhone 5s with the same OS/version, etc and click different links for the same app, then open the app up at the same time, we won’t deep link when Unique is selected. You probably don’t want this as it’s mostly for very special circumstances.
     - Set `Duration` to seconds
         - Duration is how long a `click` will live in our system before it is consumed by either an app `open` or system delete. Modifying this value will change how long we wait to fingerprint a user. If a user is fingerprinted within the set duration, then deep link data will flow into the app. The default expiration is 2 hours (7200 seconds).
@@ -9,11 +9,11 @@
 
             | UTM parameter | Branch parameter
             | --- | --- |
-            | utm_source | Channel
-            | utm_medium | Feature
-            | utm_campaign | Campaign
-            | utm_content | Tags
-            | utm_term | Keywords (not visible on Dashboard)
+            | `utm_source` | Channel
+            | `utm_medium` | Feature
+            | `utm_campaign` | Campaign
+            | `utm_content` | Tags
+            | `utm_term` | Keywords (not visible on Dashboard)
 
 - ### Change link domain
     - Go to [Link Settings](https://dashboard.branch.io/link-settings) on the Branch Dashboard
@@ -30,7 +30,7 @@
         - Update your `CNAME` record on your custom subdomain
             - `CNAME` = `custom.bnc.lt`
         - Click `Confirm` on [Link settings](https://dashboard.branch.io/link-settings)
-        - If you are configuring the domain through AWS's Route 53, make sure you are editing the nameservers under the `Registered Domains` tab, and not the `Hosted zones` section
+        - If you are configuring the domain through AWS's Route 53, make sure you are editing the nameservers under the <notranslate>**Registered Domains**</notranslate> tab, and not the <notranslate>**Hosted zones**</notranslate> section
 
     - ##### Use custom root domain
         - Understand [Domain change warning](#domain-change-warning)
@@ -44,7 +44,7 @@
                 - `ns-991.awsdns-59.net`
                 - `ns-428.awsdns-53.com`
         - Click `Confirm` on [Link settings](https://dashboard.branch.io/link-settings)
-        - If you are configuring the domain through AWS's Route 53, make sure you are editing the nameservers under the `Registered Domains` tab, and not the `Hosted zones` section
+        - If you are configuring the domain through AWS's Route 53, make sure you are editing the nameservers under the <notranslate>**Registered Domains**</notranslate> tab, and not the <notranslate>**Hosted zones**</notranslate> section
 
 ## Troubleshoot issues
 
@@ -76,7 +76,7 @@
     - Used for [Change link domain](#change-link-domain)
     - You can test your domain record changes with `dig ns <domain>` or `dig cname <domain>`
     - We recommend that you choose one domain or subdomain to use with Branch and stick with it, as switching can cause significant problems with your existing links
-    - If you are configuring the domain through AWS's Route 53, make sure you are editing the nameservers under the `Registered Domains` tab, and not the `Hosted zones` section
+    - If you are configuring the domain through AWS's Route 53, make sure you are editing the nameservers under the <notranslate>**Registered Domains**</notranslate> tab, and not the <notranslate>**Hosted zones**</notranslate> section
     - You cannot use your main website domain for hosting Branch links
     - Do not include `www` when adding your custom link domain
     - If you have CAA records set for your domain, add letsencrypt.org to the list

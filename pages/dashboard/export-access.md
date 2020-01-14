@@ -1,9 +1,9 @@
 ## Overview
 
-The "Export" level of access applies specifically to the [Sensitive Data](/dashboard/sensitive-data-access/) level of access and allows users to export sensitive data from pages they've been given view access to.
+The <notranslate>"Export"</notranslate> level of access applies specifically to the [Sensitive Data](/dashboard/sensitive-data-access/) level of access and allows users to export sensitive data from pages they've been given view access to.
 
 !!! warning ""
-	Users with export access to sensitive data, can export **log-level data** via the **Export** section.
+	Users with export access to sensitive data, can export **log-level data** via the <notranslate>**Export**</notranslate> section.
 
 ## Granting a User Export Access
 
@@ -12,15 +12,15 @@ The "Export" level of access applies specifically to the [Sensitive Data](/dashb
 
  To give export access to non-Admin users (both creating new and editing existing):
 
- 1. Using the **Access Level** drop-down, select **Custom**.
- 2. Select the **Export** box next to the Access-level setting.
- 3. Select the **Sensitive Data - View** setting.
+ 1. Using the <notranslate>**Access Level**</notranslate> drop-down, select <notranslate>**Custom**</notranslate>.
+ 2. Select the <notranslate>**Export**</notranslate> box next to the Access-level setting.
+ 3. Select the <notranslate>**Sensitive Data - View**</notranslate> setting.
  4. Select the following resource settings as you see fit.
-	 - **Link-level Settings** - Settings or features that can impact functionality for single links.
-	 - **Channel-level Settings** - Settings or features that can impact functionality across a marketing channel.
-	 - **App-level Settings** - Settings or features that can impact functionality app-wide.
-	 - **Aggregate Data** - Summary data that contains no granular data.
-5. Click **Save**.
+	 - <notranslate>**Link-level Settings**</notranslate> - Settings or features that can impact functionality for single links.
+	 - <notranslate>**Channel-level Settings**</notranslate> - Settings or features that can impact functionality across a marketing channel.
+	 - <notranslate>**App-level Settings**</notranslate> - Settings or features that can impact functionality app-wide.
+	 - <notranslate>**Aggregate Data**</notranslate> - Summary data that contains no granular data.
+5. Click <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/dashboard/access-levels/export-access.png)
 

@@ -18,34 +18,34 @@ For each platform (iOS and Android) you should create campaign IDs. You will do 
 
 1. Log in to Kochava.
 1. Select the desired app .
-1. Select `App Tools > Campaign Manager`
-1. Click `Add a Campaign`
+1. Select <notranslate>**App Tools > Campaign Manager**</notranslate>
+1. Click <notranslate>**Add a Campaign**</notranslate>
 1. Enter a unique Campaign name.
 
 #### Create a Segment
 
-1. Select `Campaign Tools>New Segment`
+1. Select <notranslate>**Campaign Tools>New Segment**</notranslate>
 1. Enter a Segment Name.
 1. Click submit
 
 #### Create a tracker
 
-1. Click `Segment Tools > New Tracker`
+1. Click <notranslate>**Segment Tools > New Tracker**</notranslate>
 1. Enter the Tracker Name.
-1. Select `Tracker Type>3rd Party Tracking` (default setting)
-1. Select `Select A Network > Branch`
+1. Select <notranslate>**Tracker Type>3rd Party Tracking**</notranslate> (default setting)
+1. Select <notranslate>**Select A Network > Branch**</notranslate>
 1. Click submit. (If no further trackers need to be created).
 
-Once you've clicked `Submit` you should see a screen with the campaign ID.
+Once you've clicked <notranslate>**Submit**</notranslate> you should see a screen with the campaign ID.
 
 ![image](/_assets/img/pages/integrations/kochava/kochava-dashboard.png)
 
 ### Configure the Branch Dashboard
 
-1. In the Branch dashboard, go to the [Integrations page](https://dashboard.branch.io/integrations) and look for the **Kochava** card.
-1. Click **Enable** on the card
+1. In the Branch dashboard, go to the [Integrations page](https://dashboard.branch.io/integrations) and look for the <notranslate>**Kochava**</notranslate> card.
+1. Click <notranslate>**Enable**</notranslate> on the card
 1. Enter your Kochava campaign ID for the relevant platform
-1. Hit **Save**
+1. Hit <notranslate>**Save**</notranslate>
 
 ![image](/_assets/img/pages/integrations/kochava/enable-kochava-integration.png)
 
@@ -59,7 +59,7 @@ If you are interested in advanced network attribution segmentation in Kochava, y
 1. Start with an existing Branch link, for example, a [ Quick Link](../../dashboard/analytics/#quick-links).
 1. Next, [create a Kochava Click URL](http://support.kochava.com/campaign-management/create-an-install-campaign){:target="\_blank"} in the Kochava Dashboard with the parameters you'd like to capture.
 	- Select the "Click" URL (as opposed to the Impression URL)
-	- After creating the URL, copy everything after **click** value and append the parameters to the end of your Branch link.
+	- After creating the URL, copy everything after <notranslate>**click**</notranslate> value and append the parameters to the end of your Branch link.
 
 **Example**
 

@@ -127,9 +127,9 @@ Please ensure you've followed [mParticle's documentation](http://docs.mparticle.
 - Create a deep link from the [Branch Dashboard](https://dashboard.branch.io/marketing)
 - Delete your app from the device
 - Compile and test on a device
-- Paste deep link in `Apple Notes`
+- Paste deep link in <notranslate>**Apple Notes**</notranslate>
 - Long press on the deep link (not 3D Touch)
-- Click `Open in "APP_NAME"` to open your app ([example](/_assets/img/pages/apps/ios-notes.png))
+- Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app ([example](/_assets/img/pages/apps/ios-notes.png))
 
 ## Implementing features
 
