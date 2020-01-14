@@ -6,7 +6,7 @@ site_url: ##### # replaced with parameter by CircleCI
 repo_name: 'Branch documentation'
 repo_url: 'https://github.com/branchmetrics/docs'
 edit_uri: 'edit/master/pages/'
-copyright: 'Copyright &copy; 2019 <a href="https://branch.io">Branch</a>'
+copyright: 'Copyright &copy; 2020 <a href="https://branch.io">Branch</a>'
 
 # Files
 theme:
