@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[SendG
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **SendGrid** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**SendGrid**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Tracking Domains](https://app.sendgrid.com/settings/sender_auth/links){:target="\_blank"}** section of your SendGrid account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**[Tracking Domains](https://app.sendgrid.com/settings/sender_auth/links){:target="\_blank"}**</notranslate> section of your SendGrid account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/sendgrid/setup-config.png)
 
@@ -42,7 +42,7 @@ You can retrieve your click tracking domain from the **[Tracking Domains](https:
 
 ### Setup a custom click tracking domain
 
-1. Add a custom click tracking domain in the **[Tracking Domains](https://app.sendgrid.com/settings/sender_auth/links){:target="\_blank"}** section of your SendGrid account:
+1. Add a custom click tracking domain in the <notranslate>**[Tracking Domains](https://app.sendgrid.com/settings/sender_auth/links){:target="\_blank"}**</notranslate> section of your SendGrid account:
 
     ![image](/_assets/img/pages/email/sendgrid/create-domain.png)
 

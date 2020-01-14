@@ -32,8 +32,8 @@ This guide will walk you through how to setup your campaigns with **[Amazon](htt
 
 Create separate links to track campaigns for Fire TV devices vs Tablet devices. Make sure to  append the following mandatory key-values for tracking ad links on Amazon Fire Tablet/TV Devices:
 
-- **Fire Tablet**: %24os=AMAZON_FIRE
-- **Fire TV**: %24os=AMAZON_FIRE_TV
+- <notranslate>**Fire Tablet**</notranslate>: %24os=AMAZON_FIRE
+- <notranslate>**Fire TV**</notranslate>: %24os=AMAZON_FIRE_TV
 
 Implement these links for platform-specific Fire OS ad campaigns on the Amazon Advertising platform.
 
@@ -59,7 +59,7 @@ In order for Android App Links to work properly, be sure to add your Amazon Fire
 
 #### Adding your Amazon Fire ASIN
 
-Amazon issues an Amazon Standard Identification Numbers (ASIN) for every app listed on its store. You need to provide this to Branch in order for Branch to fall back to the Amazon Fire Store when your app is not installed. You can find this on your publicly listed app store page under "Product details" -> "ASIN".
+Amazon issues an Amazon Standard Identification Numbers (ASIN) for every app listed on its store. You need to provide this to Branch in order for Branch to fall back to the Amazon Fire Store when your app is not installed. You can find this on your publicly listed app store page under <notranslate>**Product details** -> **ASIN**</notranslate>.
 
 ![image](/_assets/img/pages/deep-linked-ads/amazon/android settings 3.png)
 

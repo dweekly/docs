@@ -14,11 +14,11 @@ If you are running paid advertising campaigns, you'll want to create a Branch Ad
 
 To create a Branch Ad Link:
 
-1. From within the Ads section in your Branch dashboard, click **Create Ad Link** in the upper right-hand corner.
+1. From within the Ads section in your Branch dashboard, click <notranslate>**Create Ad Link**</notranslate> in the upper right-hand corner.
 
 ### Selecting Ad Format Types
 
-1.  In the **Create Ad Link** modal, select one of the following ad formats:
+1.  In the <notranslate>**Create Ad Link**</notranslate> modal, select one of the following ad formats:
 	- App Install or Engagement
 	- Create Display Link
 	- Create Product Link
@@ -29,14 +29,14 @@ To create a Branch Ad Link:
 
 	![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link.png)
 
-1. Click **Continue**.
+1. Click <notranslate>**Continue**</notranslate>.
 
 ### Defining Ad Link Domain & Ad Partner
 
-1. In the **Define** section, please provide the following:
+1. In the <notranslate>**Define**</notranslate> section, please provide the following:
 	- Choose which link domain you want to use (available for ex-TUNE clients only):
-		- **Branch domain** - Create a link using your Branch domain. Note that links created with this domain will use Branch link parameters by default.
-		- **TUNE domain** - Create a link using your TUNE domain. Note that links created with this domain will use TUNE link parameters/macros by default.
+		- <notranslate>**Branch domain**</notranslate> - Create a link using your Branch domain. Note that links created with this domain will use Branch link parameters by default.
+		- <notranslate>**TUNE domain**</notranslate> - Create a link using your TUNE domain. Note that links created with this domain will use TUNE link parameters/macros by default.
 	- Name Your Link
 	- Select the ad partner the link is for
 
@@ -44,26 +44,26 @@ To create a Branch Ad Link:
 
 ### Configuring Options
 
-1. Click **Configure Options**.
-1. In the **Configure Options** section, please provide the following:
-	- Define your **Link Alias**; this cannot be changed after you create the ad link.
+1. Click <notranslate>**Configure Options**</notranslate>.
+1. In the <notranslate>**Configure Options**</notranslate> section, please provide the following:
+	- Define your <notranslate>**Link Alias**</notranslate>; this cannot be changed after you create the ad link.
 	- Provide any of the following if applicable:
-		- **Deep Linking**
-		- **Redirects**
-		- **Analytics Tags**
+		- <notranslate>**Deep Linking**</notranslate>
+		- <notranslate>**Redirects**</notranslate>
+		- <notranslate>**Analytics Tags**</notranslate>
 
 		![image](/_assets/img/pages/links/ad-link-configure-options.gif)
 
-1. Click **Create Link Now**.
+1. Click <notranslate>**Create Link Now**</notranslate>.
 
 #### Deep Linking
 
-The **Deep Linking** tab allows you to include additional data to your links to be used not only for contextual deep linking, but for passing additional attributes you or your ad partner may require.
+The <notranslate>**Deep Linking**</notranslate> tab allows you to include additional data to your links to be used not only for contextual deep linking, but for passing additional attributes you or your ad partner may require.
 
 To add additional data - i.e. key-value pairs - to your Ad Link:
 
-1. Click **+More Data**.
-1. Input the parameter name in the **Key** field, and it's corresponding value or macro in the **Value** field.
+1. Click <notranslate>**+More Data**</notranslate>.
+1. Input the parameter name in the <notranslate>**Key**</notranslate> field, and it's corresponding value or macro in the <notranslate>**Value**</notranslate> field.
 
 ![image](/_assets/img/pages/links/ad-link-deep-linking.png)
 
@@ -71,29 +71,29 @@ To add additional data - i.e. key-value pairs - to your Ad Link:
 	For a full list of available parameters you can include in your Ad Link, refer to [TUNE <> Branch Mapped Fields](https://support.branch.io/support/solutions/articles/6000216765-tune-branch-mapped-fields).
 
 !!! info "Force Open the App"
-	If you want to force the app to open, even if it risks showing an error message when the app is not installed, add `uri_redirect_mode` in the **Key** field and `2` in the **Value** field.
+	If you want to force the app to open, even if it risks showing an error message when the app is not installed, add `uri_redirect_mode` in the <notranslate>**Key**</notranslate> field and `2` in the <notranslate>**Value**</notranslate> field.
 
 	**NOTE**: By adding this key-value pair, only those who click on this link will have the app forced open regardless. For links created on the TUNE domain, attach your `invoke_url` key with URL encoded URI scheme value (e.g. `invoke_url=branchsters%3A%2F%2F`) and set your app-level URI redirect mode to 'Aggressive'.
 
 #### Redirect
 
-The **Redirect** tab allows you to override your default redirects - as set in **Link Settings** - and direct users to specific locations if the app is not installs.
+The <notranslate>**Redirect**</notranslate> tab allows you to override your default redirects - as set in <notranslate>**Link Settings**</notranslate> - and direct users to specific locations if the app is not installs.
 
-- **Default Redirect** - Set at the account level within Link Settings. Typically set to the relevant mobile stores
+- <notranslate>**Default Redirect**</notranslate> - Set at the account level within Link Settings. Typically set to the relevant mobile stores
 
-- **Web URL** - Send users to a specific web page if they don’t have to the app to avoid any unexpected flow to the app store
+- <notranslate>**Web URL**</notranslate> - Send users to a specific web page if they don’t have to the app to avoid any unexpected flow to the app store
 
-- **Deepview** - Send users to a specific deepview you may have created under the **Web to App > Deepview** section. Copy the key and paste it into the text box. Useful if you want to present the user with a preview of the content before taking them directly to the app store. Should not be set for Desktop option.
+- <notranslate>**Deepview**</notranslate> - Send users to a specific deepview you may have created under the <notranslate>**Web to App > Deepview**</notranslate> section. Copy the key and paste it into the text box. Useful if you want to present the user with a preview of the content before taking them directly to the app store. Should not be set for Desktop option.
 
 !!! info "Force Open the App"
-	If you want to always force the app to open, even if it risks showing an error message when the app is not installed, make sure the `URI Scheme Deep Link Mode` in your `Link Settings` is set to `Aggressive`.
+	If you want to always force the app to open, even if it risks showing an error message when the app is not installed, make sure the <notranslate>**URI Scheme Deep Link Mode**</notranslate> in your <notranslate>**Link Settings**</notranslate> is set to `Aggressive`.
 
 	**NOTE**: By changing this setting, Branch will force open the app for all users. Available for links created on both the Branch and TUNE domain.
 
 #### Analytics Tags
 
 !!! tip "Set Analytics tags"
-	It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. _Channels_ generally correspond to ad networks, and _Campaigns_ correspond to marketing initiatives that you're launching. For example: _Channel_: "YouTube", _Campaign_: "Summer 2017 Shoe Discounts."
+	It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. <notranslate>_Channels_</notranslate> generally correspond to ad networks, and <notranslate>_Campaigns_</notranslate> correspond to marketing initiatives that you're launching. For example: <notranslate>_Channel_</notranslate>: "YouTube", <notranslate>_Campaign_</notranslate>: "Summer 2017 Shoe Discounts."
 
 ## Validating Your Ad Link
 
@@ -113,4 +113,4 @@ We provide you with a Branch link for both clicks and impressions.  Simply copy 
 
 ![image](/_assets/img/pages/links/ad-link-share.png)
 
-You can also text yourself (or someone else) the link by providing a phone number and clicking **Send**.
+You can also text yourself (or someone else) the link by providing a phone number and clicking <notranslate>**Send**</notranslate>.

@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Betao
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Betaout** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Betaout**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-Contact Betaout support and request that they **disable the Smart URL feature***. Otherwise, deep links won't work.
+Contact Betaout support and request that they <notranslate>**disable the Smart URL feature**</notranslate>*. Otherwise, deep links won't work.
 
 ![image](/_assets/img/pages/email/betaout/setup-config.png)
 

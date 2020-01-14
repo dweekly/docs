@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Kahun
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Kahuna** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Kahuna**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **Account Settings** section of your Kahuna account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**Account Settings**</notranslate> section of your Kahuna account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/kahuna/setup-config.png)
 
@@ -42,7 +42,7 @@ You can retrieve your click tracking domain from the **Account Settings** sectio
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **Account Settings** section of your Kahuna account:
+1. Add and verify a custom click tracking domain in the <notranslate>**Account Settings**</notranslate> section of your Kahuna account:
 
 !!! tip "Adding a custom click-tracking domain"
     If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Kahuna.

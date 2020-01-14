@@ -57,7 +57,7 @@ Please follow Google Ads' documentation on how to [set up an App Engagement Camp
 * [x] Have [mobile app conversion tracking](https://support.google.com/google-ads/answer/6100665) set up and [a supported third party](https://support.google.com/google-ads/answer/7382633) (Branch) to track conversions.
 
 !!! warning "Dynamic Remarketing Campaigns for Apps"
-	App Engagement Campaigns do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a **Web-based Ad** using the **Display Network**.
+	App Engagement Campaigns do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a <notranslate>**Web-based Ad**</notranslate> using the <notranslate>**Display Network**</notranslate>.
 
 For more detailed information, please see [Google Ads' help documentation](https://support.google.com/google-ads/answer/9234180).
 
@@ -66,7 +66,7 @@ For more detailed information, please see [Google Ads' help documentation](https
 !!! info "Non-App Campaigns"
 	The integration is mostly designed to strongly support app install campaigns and app engagement campaigns. However, you can also still run non-app campaigns and Google will confirm when a supported app conversion occurs.
 
-- Includes **Search**, **Display**, **Shopping** and **Video** Campaign types
+- Includes <notranslate>**Search**</notranslate>, <notranslate>**Display**</notranslate>, <notranslate>**Shopping**</notranslate> and <notranslate>**Video**</notranslate> Campaign types
 	- Dynamic Remarketing campaigns for Apps
 - Full attribution for:
 	- App conversions (opens & in-app events)
@@ -79,7 +79,7 @@ For more detailed information, please see [Google Ads' help documentation](https
 
 #### Web Routing Requirements
 
-If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the power of Branch for **desktop and mobile web** conversions, please make sure you complete the following:
+If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the power of Branch for <notranslate>**desktop and mobile web**</notranslate> conversions, please make sure you complete the following:
 
 * [x] Branch SDK integrated into your app.
 * [x] Collect the IDFA on iOS, or the AAID on Android. For specifics, refer to the set up guide for [iOS](/apps/ios/#install-branch) and [Android](/apps/android/#install-branch) respectively.
@@ -87,7 +87,7 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 * [x] Have admin access to your Google Ads account; required for generating Link IDs in Google Ads.
 * [x] [Branch Web SDK v2.48.0+](/web/integrate/)
 * [x] [Measurement of relevant v2 events](/web/integrate/#track-events)
-* [x] Requires [Branch Ad link](/deep-linked-ads/google-ads-customization/#create-a-branch-ad-link) in the campaign's **Tracking Template**.
+* [x] Requires [Branch Ad link](/deep-linked-ads/google-ads-customization/#create-a-branch-ad-link) in the campaign's <notranslate>**Tracking Template**</notranslate>.
 
 Please follow Google Ads' documentation on how to [set up a Campaign](https://support.google.com/google-ads/answer/6324971?hl=en&ref_topic=3121941).
 
@@ -100,15 +100,15 @@ Branch maps the following data fields from Google Ads to Branch.
 
 Google Data | Branch Data | Definition | Possible Values
 --- | --- | --- | ---
-campaign_id | ~campaign_id | The numeric campaign ID of the campaign that produced the ad event. This value is guaranteed unique. | Google Ads Campaign ID
-campaign_name | ~campaign  | The advertiser-defined campaign name of the campaign that produced the ad event. This value is not guaranteed unique. | Google Ads Campaign Name
-ad_type | ~ad_format | The type of ad that resulted in the ad event. This value can be used to distinguish between various types of inventory as follows. | ClickToDownload<br/>AppDeepLink<br/>AppDeepLinkContinue<br/> Unknown
-network_type | ~channel | This field will identify the Google Ads advertising network the ad event occurred on. | Search<br/>Display<br/>YouTube
-network_subtype | ~secondary_publisher | This field will identify the “subtype” of the Google Ads advertising network the ad event occurred on. The possible values vary by primary network type. | Google Search, Search Partners, mGDN, Google AdMob, YouTubeVideos, YouTubeSearch, VideoPartners; `null` when campaign_type is UAC and network_type is Display.
-campaign_type | ~tags | This field will identify the type of campaign that produced the ad event. | UAC, UACe, Search, Display, Video, Shopping
-ad_group_id | ~ad_set_id | The numeric ID of the ad group that produced with the ad event. Only provided when campaign_type is not UAC. | Google Ads Ad Group ID
-creative_id | ~ad_id | The numeric ID of the creative ad unit that produced the ad event. Only provided when campaign_type is not UAC. | Google Ads Creative ID
-keyword | ~keyword | The search keyword associated with the ad event. Only provided when network_type is Search and campaign_type is not UAC. | Google Ads Keyword
+`campaign_id` | `~campaign_id` | The numeric campaign ID of the campaign that produced the ad event. This value is guaranteed unique. | Google Ads Campaign ID
+`campaign_name` | `~campaign`  | The advertiser-defined campaign name of the campaign that produced the ad event. This value is not guaranteed unique. | Google Ads Campaign Name
+`ad_type` | `~ad_format` | The type of ad that resulted in the ad event. This value can be used to distinguish between various types of inventory as follows. | ClickToDownload<br/>AppDeepLink<br/>AppDeepLinkContinue<br/> Unknown
+`network_type` | `~channel` | This field will identify the Google Ads advertising network the ad event occurred on. | Search<br/>Display<br/>YouTube
+`network_subtype` | `~secondary_publisher` | This field will identify the “subtype” of the Google Ads advertising network the ad event occurred on. The possible values vary by primary network type. | Google Search, Search Partners, mGDN, Google AdMob, YouTubeVideos, YouTubeSearch, VideoPartners; `null` when campaign_type is UAC and network_type is Display.
+`campaign_type` | `~tags` | This field will identify the type of campaign that produced the ad event. | UAC, UACe, Search, Display, Video, Shopping
+`ad_group_id` | `~ad_set_id` | The numeric ID of the ad group that produced with the ad event. Only provided when campaign_type is not UAC. | Google Ads Ad Group ID
+`creative_id` | `~ad_id` | The numeric ID of the creative ad unit that produced the ad event. Only provided when campaign_type is not UAC. | Google Ads Creative ID
+`keyword` | `~keyword` | The search keyword associated with the ad event. Only provided when network_type is Search and campaign_type is not UAC. | Google Ads Keyword
 
 ## Forwarding Events to Google Ads
 
@@ -118,15 +118,15 @@ Regardless of campaign type, Branch will forward in-app events to Google Ads for
 
 Google Event | Branch Event
 --- | ---
-first_open | install
-session_start | open
-in_app_purchase | purchase
-view_item_list | view_items
-view_item | view_item
-view_search_results | search
-add_to_cart | add_to_cart
-ecommerce_purchase | purchase
-custom | any custom event tracked through Branch
+`first_open` | `install`
+`session_start` | `open`
+`in_app_purchase` | `purchase`
+`view_item_list` | `view_items`
+`view_item` | `view_item`
+`view_search_results` | `search`
+`add_to_cart` | `add_to_cart`
+`ecommerce_purchase` | `purchase`
+`custom` | any custom event tracked through Branch
 
 In order to track these events, please refer to this document for further [information](/apps/v2event/#v2-event).
 

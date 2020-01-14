@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[IBM W
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **IBM Watson Campaign Automation** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**IBM Watson Campaign Automation**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **Domain Settings** section of your Organisation Settings at IBM Watson Campaign Automation account.
+You can retrieve your click tracking domain from the <notranslate>**Domain Settings**</notranslate> section of your Organisation Settings at IBM Watson Campaign Automation account.
 
 If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 

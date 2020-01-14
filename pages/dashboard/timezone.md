@@ -9,7 +9,7 @@ The time zone setting also allows you to import data from third parties, like Fa
 The time zone can be set in [Account Settings](https://dashboard.branch.io/account-settings/app). 
 
 - Select your time zone from the dropdown
-- Scroll down until you see the **Save Settings** button. Click **Save Settings** to save your time zone.
+- Scroll down until you see the <notranslate>**Save Settings**</notranslate> button. Click <notranslate>**Save Settings**</notranslate> to save your time zone.
 
 !!! caution "Changing time zone"
     Branch allows you to change your time zone. Changing your time zone will take effect after a page refresh, and will set your dashboard to use your new time zone. **However** we do not recommend changing time zone unless you have to, as it can cause discrepancies between previously exported data and the data in your dashboard. In the future, changing time zone may not be possible as we may store data in your specified time zone.

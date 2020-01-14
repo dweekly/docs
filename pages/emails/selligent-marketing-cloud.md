@@ -14,7 +14,7 @@ This guide will walk you through how to setup your email campaigns with **[Selli
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Selligent Marketing Cloud** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Selligent Marketing Cloud**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
@@ -42,7 +42,7 @@ Retrieve your click tracking domain from your Selligent Marketing Cloud account.
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **[Tracking Domains]** section of your Selligent Marketing Cloud account.
+1. Add and verify a custom click tracking domain in the <notranslate>**[Tracking Domains]**</notranslate> section of your Selligent Marketing Cloud account.
 
 !!! tip "Adding a custom click-tracking domain"
     If you need help with setting up a custom click-tracking domain - please ask your account manager or Support.

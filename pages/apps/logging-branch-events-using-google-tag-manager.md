@@ -27,7 +27,7 @@
 1. If using [ProGuard](https://developer.android.com/tools/help/proguard.html), make sure that the class names and methods are not obfuscated. Use the Keep annotation to specify this.
 1. Within this custom class, use the following function below
 	`public abstract void execute (Map<String, Object> parameters)`
-1. Within this function, read the parameters passed by GTM within the "execute" function and log a Branch standard /custom event. Please ensure you import the Branch library.
+1. Within this function, read the parameters passed by GTM within the <notranslate>"execute"</notranslate> function and log a Branch standard /custom event. Please ensure you import the Branch library.
 	```
 	@Keep
 	public class TagProviderImpl implements CustomTagProvider {
@@ -77,7 +77,7 @@
 	```
 1. Within this custom class, use the following function below:
 	`@objc func execute(withParameters parameters: [AnyHashable : Any]!) -> NSObject! { ...}`
-1. Within this function, read the parameters passed by GTM within the "execute" function and log a Branch standard or custom event. Please ensure you import the Branch library. This is an example:
+1. Within this function, read the parameters passed by GTM within the <notranslate>"execute"</notranslate> function and log a Branch standard or custom event. Please ensure you import the Branch library. This is an example:
 	```
 	import Foundation
 	import GoogleTagManager

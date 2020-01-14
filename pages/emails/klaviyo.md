@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Klavi
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Klaviyo** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Klaviyo**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-Contact your **Klaviyo Account Manager** and request the name of your Custom Click Tracking domain. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+Contact your <notranslate>**Klaviyo Account Manager**</notranslate> and request the name of your Custom Click Tracking domain. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/klaviyo/setup-config.png)
 
@@ -42,7 +42,7 @@ Contact your **Klaviyo Account Manager** and request the name of your Custom Cli
 
 ### Setup a custom click tracking domain
 
-1. Contact your **Klaviyo Account Manager** and request them to create a Custom Click Tracking domain.
+1. Contact your <notranslate>**Klaviyo Account Manager**</notranslate> and request them to create a Custom Click Tracking domain.
 
 For more information on how to set up your domain, please visit Klaviyo's [documentation](https://help.klaviyo.com/hc/en-us/articles/360001550572-Setting-Up-Dedicated-Click-Tracking){:target="\_blank"}.
 

@@ -18,9 +18,9 @@ The advertiser must map all of the Goal_IDs in the Postback events section under
 
 In the example below, the HasOffers Postbacks are mapped as follows:
 
-*   OPEN is mapped with **goalid_1**
-*   PURCHASE is mapped with **goalid_2**
-*   PAGEVIEW is mapped with **goalid_3**
+*   OPEN is mapped with <notranslate>**goalid_1**</notranslate>
+*   PURCHASE is mapped with <notranslate>**goalid_2**</notranslate>
+*   PAGEVIEW is mapped with <notranslate>**goalid_3**</notranslate>
 
 ![image](/_assets/img/pages/deep-linked-ads/partner-resources/multiple-goal-ids.png)
 

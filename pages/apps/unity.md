@@ -26,11 +26,11 @@
 
     - [Download the latest SDK version](https://github.com/BranchMetrics/unity-branch-deep-linking-attribution/raw/master/BranchUnityWrapper.unitypackage) or clone our [open-source GitHub repository](https://github.com/BranchMetrics/unity-branch-deep-linking).
 
-    - Import the **BranchUnityWrapper.unitypackage** into your project by clicking `Assets -> Import Package`.
+    - Import the <notranslate>**BranchUnityWrapper.unitypackage**</notranslate> into your project by clicking `Assets -> Import Package`.
 
 - ### Configure app
 
-    - Add the Branch prefab asset to the **first scene** of your Unity project
+    - Add the Branch prefab asset to the <notranslate>**first scene**</notranslate> of your Unity project
 
     - ##### Update your Branch prefab
 
@@ -98,8 +98,7 @@
 
     - Delete your app from the device
 
-    - Paste Quick link in `Google Hangouts (Android)` or `Notes (iOS)`
-
+    - Paste Quick link in <notranslate>**Google Hangouts (Android)**</notranslate> or <notranslate>**Notes (iOS)**</notranslate>
     - Click on the Quick link to open your app
 
     - Compile and download your app to your device
@@ -111,7 +110,7 @@
 
 - ### Create content reference
 
-    - The `Branch Universal Object` encapsulates the thing you want to share with your link
+    - The <notranslate>**Branch Universal Object**</notranslate> encapsulates the thing you want to share with your link
 
         ```csharp
         BranchUniversalObject universalObject = new BranchUniversalObject();
@@ -176,7 +175,7 @@
 
 - ### Read deep link
 
-    - Read Deeplink params from a **BUO** in your `BranchInitSession callback`
+    - Read Deeplink params from a <notranslate>**BUO**</notranslate> in your `BranchInitSession callback`
 
     - Returns [deep link properties](/links/integrate/#read-deep-links)
 

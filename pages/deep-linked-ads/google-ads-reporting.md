@@ -27,10 +27,10 @@ These campaign parameters are not supported by UAC and will not be available in 
 
 Google parameter | Branch parameter
 --- | ---
-keyword | ~keyword_id
-placement | ~placement
-ad_group_id | ~ad_set_id
-creative_id | ~creative_id
+`keyword` | `~keyword_id`
+`placement` | `~placement`
+`ad_group_id` | `~ad_set_id`
+`creative_id` | `~creative_id`
 
 {! ingredients/deep-linked-ads/adwords-valuetrack-info.md !}
 

@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[WhatC
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **WhatCounts** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**WhatCounts**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **Tracking Domains** section of your WhatCounts account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**Tracking Domains**</notranslate> section of your WhatCounts account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 {! ingredients/email/technical-setup.md !}
 
@@ -42,7 +42,7 @@ You can retrieve your click tracking domain from the **Tracking Domains** sectio
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **Tracking Domains** section of your WhatCounts account.
+1. Add and verify a custom click tracking domain in the <notranslate>**Tracking Domains**</notranslate> section of your WhatCounts account.
 
 For more information on how to set up your domain, please visit WhatCounts's [documentation](https://support.whatcounts.com/hc/en-us){:target="\_blank"}.
 

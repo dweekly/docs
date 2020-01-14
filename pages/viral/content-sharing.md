@@ -4,7 +4,7 @@ If your users are creating content in your app, they will probably want to share
 
 ## Guide
 
-Let's say you have developed an app called **Branch Monster Factory**. You want your users to share the monsters they create with their friends, and see the monster that was shared as soon as your app opens. Let's get started!
+Let's say you have developed an app called <notranslate>**Branch Monster Factory**</notranslate>. You want your users to share the monsters they create with their friends, and see the monster that was shared as soon as your app opens. Let's get started!
 
 ### Generate shareable links
 

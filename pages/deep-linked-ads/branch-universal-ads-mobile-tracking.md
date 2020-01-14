@@ -11,7 +11,7 @@ This guide will walk you through how to setup your campaigns using Branch Univer
 ![image](/_assets/img/pages/deep-linked-ads/noname/noname-enable.png)
 
 !!! note "Providing Account Credentials"
-	Not all integrations require providing account credentials. When prompted to, enter any credentials that may be required, and click **Save and Enable** in the bottom right hand corner. If you do not know your account credentials for said partner, please ask your ad partner for this information.
+	Not all integrations require providing account credentials. When prompted to, enter any credentials that may be required, and click <notranslate>**Save and Enable**</notranslate> in the bottom right hand corner. If you do not know your account credentials for said partner, please ask your ad partner for this information.
 
 ![image](/_assets/img/pages/deep-linked-ads/noname/noname-credentials.png)
 

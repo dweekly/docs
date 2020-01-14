@@ -14,7 +14,7 @@ This guide will walk you through how to setup your email campaigns with **[Cheet
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Cheetah Digital Marketing Suite** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Cheetah Digital Marketing Suite**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
@@ -44,7 +44,7 @@ If you have not added a custom click tracking domain yet, follow the instruction
 
 ### Setup a custom click tracking (RTS) domain
 
-Request a new **RTS domain** from your Account team. The RTS domain (typically a sub-domain on your actual domain).
+Request a new <notranslate>**RTS domain**</notranslate> from your Account team. The RTS domain (typically a sub-domain on your actual domain).
 
 !!! tip "Adding a custom click-tracking domain"
     If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Cheetah Digital Marketing Suite.

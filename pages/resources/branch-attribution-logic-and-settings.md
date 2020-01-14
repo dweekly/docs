@@ -38,11 +38,11 @@ Each attribution window has its own default measured in days. Please refer to th
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
 
-*   **Click to x** refers to events - session start/install/conversion event -  that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
-*   **Impression to x** refers to events - session start/install/conversion event - that occur after someone views a Branch impression link. Measured in days.
-*   **Deep Linking Duration** refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
-    *   **Note**: This setting also covers the maximum length of time allowed for fingerprint matching. Hence changing this value will also change the length of time allowed to use a fingerprint for attribution.
-*   **Re-engagement Inactivity** defines the period between two events that a user must be inactive in order to define the later event as a re-engagement. Used in re-engagement cohort analysis but not activity analysis.
+*   <notranslate>**Click to x**</notranslate> refers to events - session start/install/conversion event -  that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
+*   <notranslate>**Impression to x**</notranslate> refers to events - session start/install/conversion event - that occur after someone views a Branch impression link. Measured in days.
+*   <notranslate>**Deep Linking Duration**</notranslate> refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
+    *   <notranslate>**Note**</notranslate>: This setting also covers the maximum length of time allowed for fingerprint matching. Hence changing this value will also change the length of time allowed to use a fingerprint for attribution.
+*   <notranslate>**Re-engagement Inactivity**</notranslate> defines the period between two events that a user must be inactive in order to define the later event as a re-engagement. Used in re-engagement cohort analysis but not activity analysis.
 
 !!! info "Changing Attribution Window Settings"
 	Once you change an attribution window setting, please allow up to several minutes for the change to persist through our system.  New attribution window settings will apply to future attributions **only**.
@@ -58,7 +58,7 @@ Each level of attribution settings can exist independently from one another, but
 
 If your account includes an organization level, you can choose to inherit (or not) its attribution window settings for each individual app in your organization.
 
-To access app-level attribution window settings, navigate to [Link Settings](https://branch.dashboard.branch.io/link-settings), click on the **Attribution Windows** tab and turn the toggle **Inherit attribution windows from your app's parent organization** on.
+To access app-level attribution window settings, navigate to [Link Settings](https://branch.dashboard.branch.io/link-settings), click on the <notranslate>**Attribution Windows**</notranslate> tab and turn the toggle <notranslate>**Inherit attribution windows from your app's parent organization**</notranslate> on.
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-settings-inherit.png)
 

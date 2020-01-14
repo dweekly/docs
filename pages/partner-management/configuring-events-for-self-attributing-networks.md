@@ -43,15 +43,15 @@ If you do not want to use the default event mappings, you can configure how Bran
 
 To configure a SAN’s event mappings:
 
-1. In the left-hand navigation, under **Ads**, click **Partner Management**.
+1. In the left-hand navigation, under <notranslate>**Ads**</notranslate>, click <notranslate>**Partner Management**</notranslate>.
 2. Find and select the SAN for which you want to configure the event mappings.
-3. Click the **Events Config** tab.
-4. Click the **Add Event Mappings** button.
+3. Click the <notranslate>**Events Config**</notranslate> tab.
+4. Click the <notranslate>**Add Event Mappings**</notranslate> button.
 5.  Map your event by providing the following:
-    1. **Your Event Name** - The app event you want mapped; only app events you are tracking with the Branch SDK are available to be mapped.
-    2. **Your Customer Event Alias** - Your custom name for your app event; only available if you’ve already implemented `customer_event_alias` in the Branch or TUNE SDK.
-    3. **Ad Partner Event Name** - The ad partner’s name for the app events they support; see default event mappings above.
-6. Click **Save**.
+    1. <notranslate>**Your Event Name**</notranslate> - The app event you want mapped; only app events you are tracking with the Branch SDK are available to be mapped.
+    2. <notranslate>**Your Customer Event Alias**</notranslate> - Your custom name for your app event; only available if you’ve already implemented `customer_event_alias` in the Branch or TUNE SDK.
+    3. <notranslate>**Ad Partner Event Name**</notranslate> - The ad partner’s name for the app events they support; see default event mappings above.
+6. Click <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/partner-management/event-mappings.gif)
 

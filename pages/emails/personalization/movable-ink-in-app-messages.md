@@ -6,7 +6,7 @@ This guide will walk you through how to setup your personalized campaigns with *
 
 To create a message link, you must merge the **Branch domain** and **Movable Ink link**.
 
-The Branch domain can be found on the **Link Settings** page of your Branch dashboard; e.g. `https://branchster.app.link`
+The Branch domain can be found on the <notranslate>**Link Settings**</notranslate> page of your Branch dashboard; e.g. `https://branchster.app.link`
 
 ![image](/_assets/img/pages/email/movable-ink/movable-ink-messages1.png)
 

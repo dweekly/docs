@@ -70,21 +70,21 @@ Liveview allows you to validate and debug your setup by including advanced filte
 
 ### Liveview for Events
 
-1. In the left-hand navigation, under **Setup & Testing** click on **Liveview**.
-2. By default, Liveview loads the **Events** object.
+1. In the left-hand navigation, under <notranslate>**Setup & Testing**</notranslate> click on <notranslate>**Liveview**</notranslate>.
+2. By default, Liveview loads the <notranslate>**Events**</notranslate> object.
 3. Using the filter in the upper-left hand corner, choose the event type you want to view. This allows you to find your test click and/or resulting app download.
 4. We recommend adding additional filters - Device ID and/or Ad Partner and/or Campaign Name - to help you more quickly identify the ad link you’re testing.
-5. Click **Update Session** to view new selection.
+5. Click <notranslate>**Update Session**</notranslate> to view new selection.
 
 ![image](/_assets/img/pages/resources/events-liveview.png)
 
 ### Liveview for Webhooks/Postbacks
 
-1. In the left-hand navigation, under **Setup & Testing** click on **Liveview**.
-2. Click the **Webhooks Record** tab to load the Webhook/Postbacks object.
-3. Click the **Add Filter** button, and select **Webhook Partner Key** from the drop-down and insert the relevant value for the partner.
-4. Click the columns button to add both the **Webhook Response Code** and **Webhook Response Body** as columns.
-5. Click **Update Session** to view the filtered results.
+1. In the left-hand navigation, under <notranslate>**Setup & Testing**</notranslate> click on <notranslate>**Liveview**</notranslate>.
+2. Click the <notranslate>**Webhooks Record**</notranslate> tab to load the Webhook/Postbacks object.
+3. Click the <notranslate>**Add Filter**</notranslate> button, and select <notranslate>**Webhook Partner Key**</notranslate> from the drop-down and insert the relevant value for the partner.
+4. Click the columns button to add both the <notranslate>**Webhook Response Code**</notranslate> and <notranslate>**Webhook Response Body**</notranslate> as columns.
+5. Click <notranslate>**Update Session**</notranslate> to view the filtered results.
 
 ![image](/_assets/img/pages/resources/liveview-webhooks.png)
 
@@ -101,9 +101,9 @@ In order to filter the webhook records by partner to validate the postback is fi
 
 To find the partner’s webhook key:
 
-1. In the left-hand navigation, under **Channels & Links**, click **Ads** and then **Partner Management**.
+1. In the left-hand navigation, under <notranslate>**Channels & Links**</notranslate>, click <notranslate>**Ads**</notranslate> and then <notranslate>**Partner Management**</notranslate>.
 2. Search for the corresponding partner and click on it to select it.
-3. Once the partner is selected and you’re viewing the **AdPartner Settings** page, look to the URL window of your browser where you will find the URL of the current Branch dashboard page.
+3. Once the partner is selected and you’re viewing the <notranslate>**AdPartner Settings**</notranslate> page, look to the URL window of your browser where you will find the URL of the current Branch dashboard page.
 4. The partner webhook key is the first parameter after `/partner-management/` and begins with `a_`; e.g. `a_youappi`.
 
 ![image](/_assets/img/pages/resources/partner-webhook-key.png)

@@ -188,7 +188,7 @@ https://branch.io/universal-ads&branchify_url=https%3A%2F%2Fexample.app.link%3Fp
 
 ### Creating a Google Feed
 
-The type of feed you create should match the business type you selected when creating your Dynamic remarketing campaign. Use the "Custom" feed only if the other business types don't apply to your products or services.
+The type of feed you create should match the business type you selected when creating your Dynamic remarketing campaign. Use the <notranslate>"Custom"</notranslate> feed only if the other business types don't apply to your products or services.
 Please refer to Google’s [Create a feed for your responsive ads](https://support.google.com/google-ads/answer/6053288?hl=en&ref_topic=3180758) for the following:
 
 *   About feeds
@@ -223,10 +223,10 @@ If you're a retail business, use the [Google Merchant Center to upload your prod
 
 To include your Branch long link in the campaign's settings:
 
-1. Once you've created your campaign, go into the campaign's **Settings**.
-2. On the **Settings** page, expand the **Campaign URL options** section.
-3. In the **Campaign URL options** section, place the Branch long link in the **Tracking Template** field.
-4. Click **Save**.
+1. Once you've created your campaign, go into the campaign's <notranslate>**Settings**</notranslate>.
+2. On the <notranslate>**Settings**</notranslate> page, expand the <notranslate>**Campaign URL options**</notranslate> section.
+3. In the <notranslate>**Campaign URL options**</notranslate> section, place the Branch long link in the <notranslate>**Tracking Template**</notranslate> field.
+4. Click <notranslate>**Save**</notranslate>.
 ![image](/_assets/img/pages/deep-linked-ads/google/tracking-template.png)
 
 ## Facebook Data Feeds

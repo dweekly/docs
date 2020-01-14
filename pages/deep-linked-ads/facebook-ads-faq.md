@@ -2,7 +2,7 @@
 
 ### What is Facebook MMP?
 
-*"Work with a Facebook Marketing Partner to get deeper insights or measure across several ad networks" ([Facebook - "Measuring for App Ads"](https://developers.facebook.com/docs/app-ads/measuring){:target="\_blank"}).*
+*"Work with a Facebook Marketing Partner to get deeper insights or measure across several ad networks" ([Facebook - <notranslate>"Measuring for App Ads"</notranslate>](https://developers.facebook.com/docs/app-ads/measuring){:target="\_blank"}).*
 
 The acronym MMP is used to mean either the broad category of Facebook Mobile Marketing Partners, or more narrowly to mean Mobile Measurement Partners. The latter is a special subset of Facebook partners that have access to device-level attribution data. Branch has been vetted by Facebook and joined this group of partners in order to provide both granular analytics and true cross-channel reporting. We help you measure which installs, opens and conversion events should be attributed to Facebook ad campaigns versus other marketing efforts.
 
@@ -37,7 +37,7 @@ There are advanced options for tracking events, which you can read more about [b
 
 | **Permissions (OAuth scopes)** | **Why** |
 | - | - |
-| ads_read | Pulling marketing insights data (e.g. impressions, clicks, cost) to present on the Branch Dashboard. Also used for pulling creative name and id, etc., to provide richer analytics for installs, opens and other events. |
+| `ads_read` | Pulling marketing insights data (e.g. impressions, clicks, cost) to present on the Branch Dashboard. Also used for pulling creative name and id, etc., to provide richer analytics for installs, opens and other events. |
 
 ### What is each piece of information needed during the onboarding process, and why?
 
@@ -75,7 +75,7 @@ The moment you complete this signup flow, we will upgrade you to getting the ful
 
 _...but now when I navigate to [Facebook within the Ads Management portal](https://dashboard.branch.io/ads/partner-management/a_facebook?tab=settings){:target="\_blank"}, I just see "Connect with Facebook". What gives?_
 
-We've hidden the old Facebook setup flow. Please choose "Connect with Facebook" and follow the guide to [set up the integration with Facebook MMP](/deep-linked-ads/facebook-app-install-ads/#enable-facebook-as-an-ad-partner).
+We've hidden the old Facebook setup flow. Please choose <notranslate>"Connect with Facebook"</notranslate> and follow the guide to [set up the integration with Facebook MMP](/deep-linked-ads/facebook-app-install-ads/#enable-facebook-as-an-ad-partner).
 
 The previous signup flow is no longer supported. If for some reason you need to access the previous signup flow, please [contact us](https://support.branch.io/support/tickets/new){:target="\_blank"} and include "Facebook MMP + legacy signup flow" in the subject.
 
@@ -102,7 +102,7 @@ There are many ways to access data pertaining to Facebook.
 
 You can see analytics on impressions, clicks, installs, opens and conversion events on various pages of the [Branch Dashboard](https://dashboard.branch.io){:target="\_blank"}, as well as the [Query API](/exports/query-api).
 
-If you have signed Facebook's ["Advanced Mobile Measurement" agreement ("Data Use Terms for Advanced Mobile App Measurement")](https://www.facebook.com/ads/manage/advanced_mobile_measurement/tos){:target="\_blank"}, then you can get device level data out via [Webhooks](/exports/ua-webhooks/), the [Daily Export API](/exports/api-v3/), and [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports){:target="\_blank"}. If you have not signed this agreement, any event attributed to a Facebook ad will look like an organic event when accessed via Webhooks, the Daily Export API, and CSV Exports.
+If you have signed Facebook's ["Advanced Mobile Measurement" agreement (<notranslate>"Data Use Terms for Advanced Mobile App Measurement"</notranslate>)](https://www.facebook.com/ads/manage/advanced_mobile_measurement/tos){:target="\_blank"}, then you can get device level data out via [Webhooks](/exports/ua-webhooks/), the [Daily Export API](/exports/api-v3/), and [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports){:target="\_blank"}. If you have not signed this agreement, any event attributed to a Facebook ad will look like an organic event when accessed via Webhooks, the Daily Export API, and CSV Exports.
 
 We cannot send device-level Facebook attribution data to third parties. Thus we cannot send events attributed to Facebook via Data Integrations. Please instead consider analyzing this data in-house (using Webhooks, the Daily Export API, or CSV Exports), or using the Branch Dashboard for all of your analytics and attribution needs. This data is also not returned in the deeplink initSession callback within the app. If you have analytics needs that are not met by the Branch Dashboard, please [contact us](https://support.branch.io/support/tickets/new){:target="\_blank"} and include "Facebook MMP + Feature Request" in the subject.
 
@@ -116,7 +116,7 @@ We cannot send device-level Facebook attribution data to third parties. Thus we 
 | [Webhooks](/exports/ua-webhooks/) | Device-level analytics * |
 | [Data Integrations](/integrations/data-integrations/) | Not supported |
 
-[x] You must have signed you have signed Facebook's ["Advanced Mobile Measurement" agreement ("Data Use Terms for Advanced Mobile App Measurement")](https://www.facebook.com/ads/manage/advanced_mobile_measurement/tos) to view this data.
+[x] You must have signed you have signed Facebook's ["Advanced Mobile Measurement" agreement (<notranslate>"Data Use Terms for Advanced Mobile App Measurement"</notranslate>)](https://www.facebook.com/ads/manage/advanced_mobile_measurement/tos) to view this data.
 
 Here is the page where you can see which ad accounts have signed the AMM agreement:
 

@@ -1,5 +1,5 @@
 !!! warning "Google Analytics vs. Google Firebase"
-  	If you are a free customer, please as follow the guide below as Google Analytics has been deprecated for free users. If you are a paying Google Analytics customer, please refer to our data integration for [Google Analytics](/integrations/google-analytics/).  
+  	If you are a free customer, please as follow the guide below as Google Analytics has been deprecated for free users. If you are a paying Google Analytics customer, please refer to our data integration for [Google Analytics](/integrations/google-analytics/).
 
 ## Overview
 
@@ -18,21 +18,21 @@ Below is the full list of fields:
 
 | Property Name | Value | Sourced from | Example | Req
 | --- | --- | --- | --- | ---
-| v | API version | [fixed] | 1 | Y
-| tid | Tracking ID | Google Analytics Dashboard | UA-XXXXXX-Y | Y
-| ds | Source (mobile SDK) | [fixed] | app | Y
-| an | Application Name | [fixed] | BRANCH-APP | Y
-| t | Type | [fixed] | event | Y
-| ec | Event Category | [fixed] | BranchEvent | Y
-| uid | User Id | $google_analytics_user_id | User A | N
-| cn | Campaign Name | utm_campaign -or- Branch campaign  | "Beaches and breezes" | N
-| cs | Campaign Source | utm_source -or- Branch channel | "Twitter" | N
-| cm | Campaign Medium | utm_medium -or- Branch feature  | "480banner" | N
-| ck | Campaign Keywords | utm_term -or- Branch $keywords | ["Keyword1", "keyword3"] | N
-| cc | Campaign Content | utm_content -or- Branch tags | "Some content" | N
-| ea | Event Action (Name) | event name | install | Y
-| uip | User’s IP Address | collected by Branch SDK | 111.111.111.111 | N
-| z | Cache buster | [unix time + random number] | 1461878903666 | N
+| `v` | API version | [fixed] | 1 | Y
+| `tid` | Tracking ID | Google Analytics Dashboard | UA-XXXXXX-Y | Y
+| `ds` | Source (mobile SDK) | [fixed] | app | Y
+| `an` | Application Name | [fixed] | BRANCH-APP | Y
+| `t` | Type | [fixed] | event | Y
+| `ec` | Event Category | [fixed] | BranchEvent | Y
+| `uid` | User Id | $google_analytics_user_id | User A | N
+| `cn` | Campaign Name | utm_campaign -or- Branch campaign  | "Beaches and breezes" | N
+| `cs` | Campaign Source | utm_source -or- Branch channel | "Twitter" | N
+| `cm` | Campaign Medium | utm_medium -or- Branch feature  | "480banner" | N
+| `ck` | Campaign Keywords | utm_term -or- Branch $keywords | ["Keyword1", "keyword3"] | N
+| `cc` | Campaign Content | utm_content -or- Branch tags | "Some content" | N
+| `ea` | Event Action (Name) | event name | install | Y
+| `uip` | User’s IP Address | collected by Branch SDK | 111.111.111.111 | N
+| `z` | Cache buster | [unix time + random number] | 1461878903666 | N
 
 ## Setup
 
@@ -47,43 +47,43 @@ Below is the full list of fields:
 	 public void onStart() {
 		 super.onStart();
 
-		 // Branch init  
+		 // Branch init
 		 Branch.getInstance().initSession(new Branch.BranchReferralInitListener() {
 			 @Override
 			 public void onInitFinished(JSONObject referringParams, BranchError error) {
 				 if (error == null) {
 					 if (referringParams != null) {
 						 try {
-							 // check if the session is from a Branch link  
+							 // check if the session is from a Branch link
 							 if (referringParams.getBoolean("+clicked_branch_link")) {
 
-								 // create FirebaseAnalytics instance  
+								 // create FirebaseAnalytics instance
 								 FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics
 										 .getInstance(getApplicationContext());
 								 Bundle bundle = new Bundle();
 
 								 bundle.putBoolean("clicked_branch_link",
 										 referringParams.getBoolean("+clicked_branch_link"));
-								 // get the click timestamp  
+								 // get the click timestamp
 								 bundle.putString("click_timestamp",
 										 referringParams.getString("+click_timestamp"));
-								 // get the link OG title  
+								 // get the link OG title
 								 bundle.putString("link_title",
 										 referringParams.getString("$og_title"));
-								 // get the link OG image  
+								 // get the link OG image
 								 bundle.putString("link_image",
 										 referringParams.getString("$og_image_url"));
-								 // get the link campaign  
+								 // get the link campaign
 								 bundle.putString("utm_campaign",
 										 referringParams.getString("~campaign"));
-								 // get the link channel  
+								 // get the link channel
 								 bundle.putString("utm_medium", channel
 										 referringParams.getString("~"));
-								 // get the link feature  
+								 // get the link feature
 								 bundle.putString("utm_source",
 										 referringParams.getString("~feature"));
 
-								 // you can use the local shared preference to detect if this is an install session or open session as below  
+								 // you can use the local shared preference to detect if this is an install session or open session as below
 								 SharedPreferences sharedPreferences = getApplication()
 										 .getSharedPreferences("local_sharefpref",
 												 Context.MODE_PRIVATE);
@@ -95,11 +95,11 @@ Below is the full list of fields:
 									 editor.apply();
 								 }
 
-								 // check if the session is install or open  
+								 // check if the session is install or open
 								 String eventName =
 										 isFirstSession ? "branch_install" : "branch_open";
 
-								 // log the event to the firebase  
+								 // log the event to the firebase
 								 firebaseAnalytics.logEvent(eventName, bundle);
 							 }
 						 } catch (JSONException ignore) {
@@ -122,20 +122,20 @@ Below is the full list of fields:
 	Branch.getInstance().initSession(launchOptions: launchOptions) { (params, error) in
 	// do stuff with deep link data (nav to page, display content, etc)
 	if(error == nil && params != nil){
-	  // create and add properties that you want to track in Firebase                
+	  // create and add properties that you want to track in Firebase
 	  var firebase_params = [String: Any]()
 	  firebase_params["clicked_branch_link"] =  params?["+clicked_branch_link"] ?? ""
 	  // get the click timestamp
 	  firebase_params["click_timestamp"] = params?["+click_timestamp"] ?? ""
-	  // get the link OG title  
+	  // get the link OG title
 	  firebase_params["link_title"] = params?["$og_title"] ?? ""
-	  // get the link OG image  
+	  // get the link OG image
 	  firebase_params["link_image"] =  params?["$og_image_url"] ?? ""
-	  // get the link campaign  
+	  // get the link campaign
 	  firebase_params["utm_campaign"] = params?["~campaign"] ?? ""
-	  // get the link channel  
+	  // get the link channel
 	  firebase_params["utm_medium"] = params?["channel"] ?? ""
-	  // get the link feature  
+	  // get the link feature
 	  firebase_params["utm_source"] = params?["~feature"] ?? ""
 	  // check if this is an open or and install event
 	  if(UserDefaults.standard.object(forKey: "is_first_session") == nil){

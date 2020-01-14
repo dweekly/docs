@@ -13,19 +13,19 @@ When integrating the SDKs, it's often useful to use setDebug to verify that your
 
 If you have a server to server integration you must provide specific requirements for attribution. Make sure to append the following mandatory key-values into tracking ad links to ensure they are not rejected or blocked:
 
-- **Server to Server Parameter**: Add server-to-server click macro URL parameter at the end of your link, so we know it's a server to server link:
+- <notranslate>**Server to Server Parameter**</notranslate>: Add server-to-server click macro URL parameter at the end of your link, so we know it's a server to server link:
     - `%24s2s=true`
 
-- **Device ID Macro Value**: Pass user Advertising Identifier via click macro URL parameter:
+- <notranslate>**Device ID Macro Value**</notranslate>: Pass user Advertising Identifier via click macro URL parameter:
     - `%24idfa={IDFA}` for iOS devices
     - `%24aaid={AAID}` for Android devices
 
-- **IP address**:  Pass user IP information in the header OR click macro URL parameter to override on click:
+- <notranslate>**IP address**</notranslate>:  Pass user IP information in the header OR click macro URL parameter to override on click:
     - HTTP header `x-ip-override: {IP_ADDRESS}`
     - Click macro URL parameter: `device_ip={IP_ADDRESS}`
 
-- **User Agent**:  Pass User Agent information in the header OR click macro URL parameter to override on click:
-    - HTTP header `User-Agent: {USER_AGENT}`  
+- <notranslate>**User Agent**</notranslate>:  Pass User Agent information in the header OR click macro URL parameter to override on click:
+    - HTTP header `User-Agent: {USER_AGENT}`
     - Click macro URL parameter: `user_agent={USER_AGENT}`
 
 !!! warning "Update Partner-specific URL macros"

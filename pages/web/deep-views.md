@@ -15,7 +15,7 @@ Deepviews are discoverable in all search portals (Google, Apple Spotlight, Bing,
 ### Enable Deepviews
 
 1. Head to the [Deepviews configuration page](https://dashboard.branch.io/web/deepviews) on the Branch dashboard.
-1. Deepviews are configured separately for visitors on each platform (iOS, Android, and desktop). Select the platforms you want and click **Enable**.
+1. Deepviews are configured separately for visitors on each platform (iOS, Android, and desktop). Select the platforms you want and click <notranslate>**Enable**</notranslate>.
 
 ![image](/_assets/img/pages/deepviews/deepviews_enable.png)
 
@@ -37,10 +37,10 @@ Branch lets you track the flow of users through Deepviews. You can find this inf
 
 There are various metrics to understand when deep linking from your mobile website.
 
-- **Views:** a user viewed the mobile site.
-- **Clicks:** a user clicked on the Deepview CTA
-- **Installs:** a user installed the app for the first time
-- **Upgrades:** a user re-opened or upgraded the app from a previous version
+- <notranslate>**Views:**</notranslate> a user viewed the mobile site.
+- <notranslate>**Clicks:**</notranslate> a user clicked on the Deepview CTA
+- <notranslate>**Installs:**</notranslate> a user installed the app for the first time
+- <notranslate>**Upgrades:**</notranslate> a user re-opened or upgraded the app from a previous version
 
 Only users who do not have the app will go through this flow. You can view the total counts and conversion rate from each step on this chart.
 
@@ -55,12 +55,12 @@ The default Deepview template simply displays the content from three of the link
 
 | Key | Value
 | --- | ---
-| **$og_title** | The title you'd like to appear on the deepview
-| **$og_description** | The description you'd like to appear on the deepview
-| **$og_image_url** | The URL for the image you'd like to appear on the deepview
+| <notranslate>**$og_title**</notranslate> | The title you'd like to appear on the deepview
+| <notranslate>**$og_description**</notranslate> | The description you'd like to appear on the deepview
+| <notranslate>**$og_image_url**</notranslate> | The URL for the image you'd like to appear on the deepview
 
 !!! tip "Hosting your own OG tags"
-    If you want to use OG tags you host elsewhere, leave these parameters empty and specify a **$desktop_url** control parameter when you create the link. Branch will perform a one-time scrape to populate the Deepview using the OG tags from the URL you specify.
+    If you want to use OG tags you host elsewhere, leave these parameters empty and specify a <notranslate>**$desktop_url**</notranslate> control parameter when you create the link. Branch will perform a one-time scrape to populate the Deepview using the OG tags from the URL you specify.
 
 If you're creating a link by appending query parameters, just append the parameters to the URL. Please make sure to URL encode everything, lest the link will break.
 
@@ -172,9 +172,9 @@ If you've enabled Deepviews globally, it's likely that you'll want to disable th
 
 | Key | Value |
 | --- | --- |
-| **$ios_deepview** | `false` |
-| **$android_deepview** | `false` |
-| **$desktop_deepview** | `false` |
+| <notranslate>**$ios_deepview**</notranslate> | `false` |
+| <notranslate>**$android_deepview**</notranslate> | `false` |
+| <notranslate>**$desktop_deepview**</notranslate> | `false` |
 
 **When creating Quick Links on the Branch dashboard**
 
@@ -188,22 +188,22 @@ You can create new Deepview templates using the [Deepviews configuration page](h
 
 ![image](/_assets/img/pages/deepviews/deepview-create-template.png)
 
-The Deepview editing screen contains two tabs: **Basic** and **Editor**.
+The Deepview editing screen contains two tabs: <notranslate>**Basic**</notranslate> and <notranslate>**Editor**</notranslate>.
 
-**Basic**
+<notranslate>**Basic**</notranslate>
 
 The Basic tab displays your new template, and allows you to modify the default fallback OG tags used if none are specified for a link.
 
 ![image](/_assets/img/pages/deepviews/deepviews_editor_basic.png)
 
-**Deepview Settings**
+<notranslate>**Deepview Settings**</notranslate>
 
 | Setting | Usage |
 | --- | --- |
 | Title | Internal name for your reference |
 | Key | The value that you will reference when creating a link. E.g., `$ios_deepview: [key]` |
 
-**App Settings**
+<notranslate>**App Settings**</notranslate>
 
 !!! warning ""
     These fields are duplicates of the _Social Media_ section of your app's [main link settings page](https://dashboard.branch.io/link-settings). Any updates will be applied in both locations.
@@ -228,13 +228,13 @@ You can use the Deepview editor to edit created templates. You cannot edit pre-c
 
 #### Active Deepviews
 
-Active deepviews should only show when the app is _not_ installed (or when direct deep linking doesn't work like in the Facebook webview), and pause on the deepview page. These let the user preview the content, ultimately deciding if they want to install the app. The user must click the call-to-action of `Get The App` in order to be sent to the appropriate App or Play Store page.
+Active deepviews should only show when the app is _not_ installed (or when direct deep linking doesn't work like in the Facebook webview), and pause on the deepview page. These let the user preview the content, ultimately deciding if they want to install the app. The user must click the call-to-action of <notranslate>**Get The App**</notranslate> in order to be sent to the appropriate App or Play Store page.
 
 | Key | Value | Default Template
 | --- | --- | ---
-| $ios_deepview | The name of the template to use for iOS. | `default_template`
-| $android_deepview | The name of the template to use for Android. | `default_template`
-| $desktop_deepview | The name of the template to use for the desktop. | `default_template`
+| `$ios_deepview` | The name of the template to use for iOS. | `default_template`
+| `$android_deepview` | The name of the template to use for Android. | `default_template`
+| `$desktop_deepview` | The name of the template to use for the desktop. | `default_template`
 
 #### Passive Deepviews
 
@@ -244,7 +244,7 @@ To disable passive deepviews, simply set the value to `false` in the link data.
 
 | Key | Value | Default
 | --- | --- | ---
-| $ios_passive_deepview | The name of the template to use for iOS. | `default_template`
-| $android_passive_deepview | The name of the template to use for Android. | `default_template`
+| `$ios_passive_deepview` | The name of the template to use for iOS. | `default_template`
+| `$android_passive_deepview` | The name of the template to use for Android. | `default_template`
 
 To enable another template as the default passive deepview, select the 'Set as Passive Default' option. You can also change the template **on a link level** by providing the template name in the [control parameters](/links/integrate/#deepview). If you're creating a link by appending query parameters, you simply need to append the parameters to the URL. Please make sure to URL encode everything, lest the link will break.

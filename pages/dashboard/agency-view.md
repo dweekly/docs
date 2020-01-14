@@ -52,27 +52,27 @@ When viewing your Branch account via the Agency entity, you can access (either e
 
 ### Managing your Agency Profile
 
-If you are an Agency Admin, you have edit access to the **Profile** tab.
+If you are an Agency Admin, you have edit access to the <notranslate>**Profile**</notranslate> tab.
 
 ![image](/_assets/img/pages/dashboard/access-levels/agency-profile.png)
 
-- **Agency Name** - provided by you; editable.
-- **Agency ID** - assigned by Branch; not editable.
+- <notranslate>**Agency Name**</notranslate> - provided by you; editable.
+- <notranslate>**Agency ID**</notranslate> - assigned by Branch; not editable.
 
 ### Managing your User Profile
 
-Any user type - Agency Admin, Agency Team Member - has the ability to edit the **User** tab.
+Any user type - Agency Admin, Agency Team Member - has the ability to edit the <notranslate>**User**</notranslate> tab.
 
 ![image](/_assets/img/pages/dashboard/access-levels/agency-user.png)
 
-- **Dashboard UID** - assigned by Branch; not editable.
-- **First and Last Names** - provided by you; editable.
-- **Email Address** - provided by you; editable.
-- **Change Password** - provided by you; editable.
+- <notranslate>**Dashboard UID**</notranslate> - assigned by Branch; not editable.
+- <notranslate>**First and Last Names**</notranslate> - provided by you; editable.
+- <notranslate>**Email Address**</notranslate> - provided by you; editable.
+- <notranslate>**Change Password**</notranslate> - provided by you; editable.
 
 ### Managing Your Agency Team
 
-If you are an Agency Admin, you have edit access to the **Agencies** tab.
+If you are an Agency Admin, you have edit access to the <notranslate>**Agencies**</notranslate> tab.
 
 ![image](/_assets/img/pages/dashboard/access-levels/agency-team-add.gif)
 
@@ -80,31 +80,31 @@ If you are an Agency Admin, you have edit access to the **Agencies** tab.
 
 To add a new Agency (Admin or Team Member) User:
 
-1. Click the **Add Agency Team Member** button.
-2. In the **Add Agency Team Member** modal:
-	1. Provide the user's **Email Address**
-	1. Provide the user's **First** and **Last** names
-	1. Select the appropriate **Access Level**
-		- **Agency Admin** - Full access to Account Settings tab, including the ability to add, edit, and remove team members.
-		- **Agency Team Member** - Read-only access Account Settings tab.
-	1. Click **Invite**.
+1. Click the <notranslate>**Add Agency Team Member**</notranslate> button.
+2. In the <notranslate>**Add Agency Team Member**</notranslate> modal:
+	1. Provide the user's <notranslate>**Email Address**</notranslate>
+	1. Provide the user's <notranslate>**First**</notranslate> and <notranslate>**Last**</notranslate> names
+	1. Select the appropriate <notranslate>**Access Level**</notranslate>
+		- <notranslate>**Agency Admin**</notranslate> - Full access to Account Settings tab, including the ability to add, edit, and remove team members.
+		- <notranslate>**Agency Team Member**</notranslate> - Read-only access Account Settings tab.
+	1. Click <notranslate>**Invite**</notranslate>.
 
 #### Modifying an Agency Team Member
 
 To modify an existing Agency Team member:
 
-1. Find the Agency Team member you want to modify and click the **...** button in the **Actions** column for that user.
+1. Find the Agency Team member you want to modify and click the <notranslate>**...**</notranslate> button in the <notranslate>**Actions**</notranslate> column for that user.
 1. To edit the Agency member:
-	1. Click **Edit** and modify any of the following:
+	1. Click <notranslate>**Edit**</notranslate> and modify any of the following:
 		- Email
 		- First and Last names
 		- Access Level
-	1. Click **Save**.
+	1. Click <notranslate>**Save**</notranslate>.
 1. To resend the invitation to join the Agency account:
-	1. Click **Resend Invite**.
+	1. Click <notranslate>**Resend Invite**</notranslate>.
 1. To delete the Agency member:
-	1. Click **Delete**.
-	1. In the **Are you sure you want to delete?** modal, click **Yes, Delete**.
+	1. Click <notranslate>**Delete**</notranslate>.
+	1. In the <notranslate>**Are you sure you want to delete?**</notranslate> modal, click <notranslate>**Yes, Delete**</notranslate>.
 
 ### Default Agency Restrictions
 

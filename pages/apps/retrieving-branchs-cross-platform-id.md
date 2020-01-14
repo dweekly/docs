@@ -11,9 +11,9 @@ Cross-Platform ID will be consistent across Branch touchpoints if we think those
 
 ## Fields
 
-- **user_data_cross_platform_id**: string, Branch’s internal Persona ID hashed by app_id
-- **user_data_past_cross_platform_ids**: array of strings, which are past Cross-Platform IDs
-- **user_data_prob_cross_platform_ids**: array of dicts. Each dict represents a probabilistically linked Cross-Platform ID, along with a score/probability representing how confident Branch is that this ID is associated with the main Cross-Platform ID for this event.
+- <notranslate>**user_data_cross_platform_id**</notranslate>: string, Branch’s internal Persona ID hashed by app_id
+- <notranslate>**user_data_past_cross_platform_ids**</notranslate>: array of strings, which are past Cross-Platform IDs
+- <notranslate>**user_data_prob_cross_platform_ids**</notranslate>: array of dicts. Each dict represents a probabilistically linked Cross-Platform ID, along with a score/probability representing how confident Branch is that this ID is associated with the main Cross-Platform ID for this event.
 
 ## Retrieving CPID via Daily Export API and UI
 
@@ -34,9 +34,9 @@ The three Cross-Platform ID fields are accessible via Freemarker in our Custom W
 
 | Field Name | Postback Macro | Type | Sample Usage |
 | --- | --- | --- | --- |
-| user_data_cross_platform_id | `${(user_data.cross_platform_id)!}` | String | `cpid=${(user_data.cross_platform_id)!}` |
-| user_data_past_cross_platform_ids | `${(user_data.past_cross_platform_ids)!}` | Array | `past_cpids=<@loop data=user_data.past_cross_platform_ids>${key}=${(val)!}<@sep>&</@sep></@loop>` |
-| user_data_prob_cross_platform_ids | `${(user_data.prob_cross_platform_ids)!}` | Array of Dicts | `prob_cpids=<@urlencode><@jsonmap><@loop data=user_data.past_cross_platform_ids>\"${key}\":\"${(val)!}\"<@sep>,</@sep></@loop></@jsonmap></@urlencode>` |
+| `user_data_cross_platform_id` | `${(user_data.cross_platform_id)!}` | String | `cpid=${(user_data.cross_platform_id)!}` |
+| `user_data_past_cross_platform_ids` | `${(user_data.past_cross_platform_ids)!}` | Array | `past_cpids=<@loop data=user_data.past_cross_platform_ids>${key}=${(val)!}<@sep>&</@sep></@loop>` |
+| `user_data_prob_cross_platform_ids` | `${(user_data.prob_cross_platform_ids)!}` | Array of Dicts | `prob_cpids=<@urlencode><@jsonmap><@loop data=user_data.past_cross_platform_ids>\"${key}\":\"${(val)!}\"<@sep>,</@sep></@loop></@jsonmap></@urlencode>` |
 
 
 ## SDK Querying

@@ -70,30 +70,30 @@ Start from the [Quick Links](dashboard.branch.io/quick-links/qlc/define) page of
 #### Define
 
 1. On the next Define screen, fill in the following fields:
-    *   **Name your link**: Give your link a name so you can find it in the dashboard later. Try to stick to a naming convention if creating multiple quick links
-    *   **Enter a corresponding URL (OPTIONAL)**: Entering a URL to your site in this field will grab social information like Title, Description and Image when shared on social media (more on this later). It will also automatically set the provided URL as the $canonical_url which is useful if that is your routing mechanism.
-    *   **Where will you post this link?**: The channel this will be used in. For example, Facebook, Twitter, Instagram, Snapchat, etc. It’s important to keep the spelling of channels consistent so you can analyze the performance of these channels in aggregate.
-    *   **What campaign is it part of?**: Another analytics tag you can set as it relates to a campaign you are running. “Cyber Monday”, for example.
+    *   <notranslate>**Name your link**</notranslate>: Give your link a name so you can find it in the dashboard later. Try to stick to a naming convention if creating multiple quick links
+    *   <notranslate>**Enter a corresponding URL (OPTIONAL)**</notranslate>: Entering a URL to your site in this field will grab social information like Title, Description and Image when shared on social media (more on this later). It will also automatically set the provided URL as the $canonical_url which is useful if that is your routing mechanism.
+    *   <notranslate>**Where will you post this link?**</notranslate>: The channel this will be used in. For example, Facebook, Twitter, Instagram, Snapchat, etc. It’s important to keep the spelling of channels consistent so you can analyze the performance of these channels in aggregate.
+    *   <notranslate>**What campaign is it part of?**</notranslate>: Another analytics tag you can set as it relates to a campaign you are running. “Cyber Monday”, for example.
     *   When finished, select the Configure Options button
 2. If the link will be shared and visible to the user, you have the ability to set a vanity alias for your quick link. The vanity alias on a link cannot be changed after link creation. When left empty, random string of characters will be assigned for the vanity alias.
 
 #### Configure Options
 
 1. The next section contains information pertaining to the various sub-tabs you see under the vanity URL:
-    *   **DEEP LINKING** - Information passed from web to app to control routing, promo codes, open graph tags, etc.
+    *   <notranslate>**DEEP LINKING**</notranslate> - Information passed from web to app to control routing, promo codes, open graph tags, etc.
         1. Routing - The mechanism in which users are routed from web to app so you can direct users to the correct content. For example, this may be via $canonical_url or $deeplink_path
             *   $canonical_url will be automatically populated from step 3a if filled out
         2. Promo codes - If your app is configured to use a promo code or discount from the Branch data dictionary, you can enter that here. You’ll need to know the exact key-value syntax. Talk to your mobile app developers if you’re unfamiliar.
-        3. OG Tags - Control how your links will look when shared on social media platforms. In-depth customizable options here. **You will not set title, description or image in this section of the dashboard.**
-    *   **REDIRECTS** - Links you create will automatically inherit redirects on iOS, Android, and Desktop per the default settings applied at your account level. Here you have the ability to override those defaults and direct users to specific locations if the app is not installed.
+        3. OG Tags - Control how your links will look when shared on social media platforms. In-depth customizable options here. <notranslate>**You will not set title, description or image in this section of the dashboard.**</notranslate>
+    *   <notranslate>**REDIRECTS**</notranslate> - Links you create will automatically inherit redirects on iOS, Android, and Desktop per the default settings applied at your account level. Here you have the ability to override those defaults and direct users to specific locations if the app is not installed.
         4. Default Redirect - Set at the account level within Link Settings. Typically set to the relevant mobile stores
         5. Web URL - Send users to a specific web page if they don’t have to the app to avoid any unexpected flow to the app store
         6. Deepview - Send users to a specific deepview you may have created within the branch dashboard. Copy the key and paste it into the text box. Useful if you want to present the user with a preview of the content before taking them directly to the app store. Should not be set for Desktop option
-    *   **ANALYTICS TAGS** - Setting tags on links in order to view performance on them in the dashboard
+    *   <notranslate>**ANALYTICS TAGS**</notranslate> - Setting tags on links in order to view performance on them in the dashboard
         7. Channel - For example, Facebook, Twitter, Instagram, Snapchat, etc. Keep the spelling of names consistent
         8. Campaign -“Cyber Monday”, for example
         9. Tags - Further tagging granularity. For example, “US”, “UK”, Social influencer name, blog poster, etc.
-    *   **SOCIAL MEDIA** - Setting Title, Description and Image for instances when this link is shared on social platforms. This will be automatically populated from OG Tags included on the redirection URL. Use the previewer on the right side of the screen.
+    *   <notranslate>**SOCIAL MEDIA**</notranslate> - Setting Title, Description and Image for instances when this link is shared on social platforms. This will be automatically populated from OG Tags included on the redirection URL. Use the previewer on the right side of the screen.
 
 ### Making your Branch Link compatible with SingleTap™
 

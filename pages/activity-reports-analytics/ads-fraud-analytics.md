@@ -1,7 +1,7 @@
 ## Overview
 
 !!! warning "Viewing Fraud Data Permissions"
-	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the **Fraud Settings & Data** permission.  Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
+	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the <notranslate>**Fraud Settings & Data**</notranslate> permission.  Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
 
 Branch’s Fraud Detection Platform uses an intelligent blacklist to block known bad actors in real time, ensuring customers don’t pay for fraudulent traffic. It includes core metrics that help identify forms of fraud such as install hijacking, click flooding and device reset fraud.
 
@@ -15,14 +15,14 @@ Branch recommends creating [fraud rules](/deep-linked-ads/leveraging-fraud-rules
 
 ### Available Fraud Rules
 
-- **Geo Conflict**: The touch and the conversion occur in different countries
-- **Device Conflict**: The device information on the touch and the conversion are different
-- **IP**: Events coming from known TOR networks
-- **Conversion Time**: The time between the touch and the conversion is short
-- **Persona Fraud**: Browsers or devices with suspicious behavior based on Branch’s cross-platform persona graph
-- **Once Ever Capped**: Events only occurring once per user
-- **Custom**: Events matching your custom selection of fraud parameters.
-- **None**: Do not show blocked events based on Fraud Rules. Branch automatically selects `None` when you filter on Key Fraud Indicators instead.
+- <notranslate>**Geo Conflict**</notranslate>: The touch and the conversion occur in different countries
+- <notranslate>**Device Conflict**</notranslate>: The device information on the touch and the conversion are different
+- <notranslate>**IP**</notranslate>: Events coming from known TOR networks
+- <notranslate>**Conversion Time**</notranslate>: The time between the touch and the conversion is short
+- <notranslate>**Persona Fraud**</notranslate>: Browsers or devices with suspicious behavior based on Branch’s cross-platform persona graph
+- <notranslate>**Once Ever Capped**</notranslate>: Events only occurring once per user
+- <notranslate>**Custom**</notranslate>: Events matching your custom selection of fraud parameters.
+- <notranslate>**None**</notranslate>: Do not show blocked events based on Fraud Rules. Branch automatically selects `None` when you filter on Key Fraud Indicators instead.
 
 !!! info "Fraud Rules vs Fraud Indicators"
 	Fraud Rules are enabled by you based on your business criteria for what constitutes fraud.  Fraud Indicators are built into Branch and are auto-enabled to protect you from generic fraud methods.  **NOTE**: You cannot view blocked events based on both of these types of fraud simultaneously; please select one at a time.

@@ -1,4 +1,4 @@
-Branch Tracking links allow tracking many parameters about the performance of your ad campaigns and individual ads. You can see each partner's specific link Parameters under the **Link Parameters** tab:
+Branch Tracking links allow tracking many parameters about the performance of your ad campaigns and individual ads. You can see each partner's specific link Parameters under the <notranslate>**Link Parameters**</notranslate> tab:
 
 ![image](/_assets/img/ingredients/deep-linked-ads/link-parameters.png)
 
@@ -13,31 +13,31 @@ The following parameters are available to use within the pre-generated tracking 
 
 Branch Parameter | Description
 --- | ---
-~agency | Agency name
-~secondary_publisher | Sub Publisher
-~campaign | Campaign name
-~campaign_id | Campaign ID
-~channel | Channel
-~feature | Feature
-~stage | Stage
-~tags | Tags
-~creative_name | Creative name
-~creative_id | Creative ID
-~ad_set_name | Ad set name
-~ad_set_id | Ad set ID
-~ad_name | Ad unit name
-~ad_id | Ad unit ID
-~banner_dimensions | Banner Dimension
-~placement | Placement
-~keyword_id | Keyword ID
-~keyword_text | Keyword Text
+`~agency` | Agency name
+`~secondary_publisher` | Sub Publisher
+`~campaign` | Campaign name
+`~campaign_id` | Campaign ID
+`~channel` | Channel
+`~feature` | Feature
+`~stage` | Stage
+`~tags` | Tags
+`~creative_name` | Creative name
+`~creative_id` | Creative ID
+`~ad_set_name` | Ad set name
+`~ad_set_id` | Ad set ID
+`~ad_name` | Ad unit name
+`~ad_id` | Ad unit ID
+`~banner_dimensions` | Banner Dimension
+`~placement` | Placement
+`~keyword_id` | Keyword ID
+`~keyword_text` | Keyword Text
 
 #### Device Information
 
 Branch Parameter | Description
 --- | ---
-%24aaid | Google AAID
-%24idfa | Apple IDFA
+`%24aaid` | Google AAID
+`%24idfa` | Apple IDFA
 
 #### Spend Calculation
 
@@ -46,6 +46,6 @@ Branch Parameter | Description
 
 Branch Parameter | Description
 --- | ---
-~cost_model | Cost Model; e.g. CPI, eCPC
-~cost_value | Cost Value; e.g. 10.00
-~cost_currency | Cost Currency; e.g. USD
+`~cost_model` | Cost Model; e.g. CPI, eCPC
+`~cost_value` | Cost Value; e.g. 10.00
+`~cost_currency` | Cost Currency; e.g. USD

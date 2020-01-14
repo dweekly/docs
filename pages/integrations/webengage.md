@@ -22,8 +22,8 @@ This guide will walk you through how to send your Branch data to **[WebEngage](h
 
 On the WebEngage dashboard:
 
-1. Click the `Integrations` option on the top right.
-1. Click the `REST API` option.
+1. Click the <notranslate>**Integrations**</notranslate> option on the top right.
+1. Click the <notranslate>**REST API**</notranslate> option.
 1. Copy the API key
 
 ![image](/_assets/img/pages/integrations/webengage/webengage-api-key.png)

@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Mailg
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Mailgun** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Mailgun**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Domains](https://app.mailgun.com/app/domains){:target="\_blank"}** section of your Mailgun account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**[Domains](https://app.mailgun.com/app/domains){:target="\_blank"}**</notranslate> section of your Mailgun account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/mailgun/setup-config.png)
 
@@ -42,7 +42,7 @@ You can retrieve your click tracking domain from the **[Domains](https://app.mai
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **[Domains](https://app.mailgun.com/app/domains){:target="\_blank"}** section of your Mailgun account:
+1. Add and verify a custom click tracking domain in the <notranslate>**[Domains](https://app.mailgun.com/app/domains){:target="\_blank"}**</notranslate> section of your Mailgun account:
 
     ![image](/_assets/img/pages/email/mailgun/create-domain.png)
 

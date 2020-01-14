@@ -18,9 +18,9 @@ By default, Branch sets the re-engagement inactivity window to 7 days. This mean
 
 To modify your app-level re-engagement inactivity window:
 
-1. In the left-hand nav, click on **Link Settings**.
-2. On the **Link Settings** page, click on the **Attribution Windows** tab.
-3. Scroll down to the **Re-engagement Inactivity** setting and edit the value to any value between 0.001 and 90 days.
+1. In the left-hand nav, click on <notranslate>**Link Settings**</notranslate>.
+2. On the <notranslate>**Link Settings**</notranslate> page, click on the <notranslate>**Attribution Windows**</notranslate> tab.
+3. Scroll down to the <notranslate>**Re-engagement Inactivity**</notranslate> setting and edit the value to any value between 0.001 and 90 days.
 
 ![image](/_assets/img/pages/resources/matching/re-engagement-attribution.png)
 
@@ -35,11 +35,11 @@ Unlike the app-level setting, this impacts all analytics and postbacks, and can 
 !!! warning "Enabling Install Touch Setting"
 	Currently this setting is not available in your Branch dashboard.  If you are interested in having this setting available in your account, please contact [Support](mailto:support@branch.io).
 
-1. In the left-hand nav, click on **Ads** and then on **Partner Management**.
+1. In the left-hand nav, click on <notranslate>**Ads**</notranslate> and then on <notranslate>**Partner Management**</notranslate>.
 2. Search for and select the partner you wish to enable install touch for.
-3. On the partner's **Attribution Windows** tab, toggle **Use ad partner attribution settings** on.
-4. At the bottom of the attribution window settings table, tick the box next to **Only attribute based on touch**.
-5. Click **Save**.
+3. On the partner's <notranslate>**Attribution Windows**</notranslate> tab, toggle <notranslate>**Use ad partner attribution settings**</notranslate> on.
+4. At the bottom of the attribution window settings table, tick the box next to <notranslate>**Only attribute based on touch**</notranslate>.
+5. Click <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/resources/matching/install-touch-setting.png)
 
@@ -49,9 +49,9 @@ While re-engagement activity is not viewable in the Ads Activity report, you can
 
 To view a re-engagement cohort:
 
-1. In the left-hand nav, click on **Ads**, click on **Analytics** and then click the **Cohorts** tab.
-2. Click **Create New Cohort** and select **Re-engagement** as the **Cohort Type**.
-3. Finish your report selections and click **Save**.
+1. In the left-hand nav, click on <notranslate>**Ads**</notranslate>, click on <notranslate>**Analytics**</notranslate> and then click the <notranslate>**Cohorts**</notranslate> tab.
+2. Click <notranslate>**Create New Cohort**</notranslate> and select <notranslate>**Re-engagement**</notranslate> as the <notranslate>**Cohort Type**</notranslate>.
+3. Finish your report selections and click <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/resources/matching/reengagement-cohort.png)
 

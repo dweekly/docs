@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `Branch Web SDK` allows you to create and share deep links with a banner, over SMS, or your own methods. It also offers event tracking, access to referrals, and management of credits. The SDK is only ~13K gzipped.
+The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share deep links with a banner, over SMS, or your own methods. It also offers event tracking, access to referrals, and management of credits. The SDK is only ~13K gzipped.
 
 ### Notes
 
@@ -14,7 +14,7 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 
 - ### Configure Branch
 
-    - Complete the `Basic integration` within [Configure your dashboard](/dashboard/integrate/)
+    - Complete the **Basic integration** within [Configure your dashboard](/dashboard/integrate/)
 
         ![image](/_assets/img/pages/dashboard/fallback.png)
 
@@ -70,11 +70,11 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 
     | Key | Value
     | --- | ---
-    | data_parsed | `object`. If the user was referred from a link, and the link has associated data, the data is passed in here.
-    | has_app | `boolean`. Does the user have the app installed already, using Branch's persona data.
-    | identity | *optional* - `string`. Unique string that identifies the user, if set from `setIdentity`
-    | ~referring_link | `string`. The referring link clicked, if available.
-    | referring_identity | `string`. If the user was referred from a link, and the link was created by a user with an identity, that identity is here.
+    | `data_parsed` | `object`. If the user was referred from a link, and the link has associated data, the data is passed in here.
+    | `has_app` | `boolean`. Does the user have the app installed already, using Branch's persona data.
+    | `identity` | *optional* - `string`. Unique string that identifies the user, if set from `setIdentity`
+    | `~referring_link` | `string`. The referring link clicked, if available.
+    | `referring_identity` | `string`. If the user was referred from a link, and the link was created by a user with an identity, that identity is here.
 
 - ### Create deep link
 
@@ -250,7 +250,7 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
         };
 
         var linkOptions = {
-          make_new_link: false // don't create a new deep link if one already exists (e.g. _branch_match_id is in the address bar)
+          make_new_link: false // don't create a new deep link if one already exists (e.g. <notranslate>_branch_match_</notranslate>id is in the address bar)
         };
 
         branch.sendSMS(phoneNumber, linkData, linkOptions, function(err, data) {
@@ -263,13 +263,13 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
     - Make it easier for marketers to create deep links
     - Used for [Journeys](/web/journeys/), [Universal Emails](/emails/braze/), [Quick links](/dashboard/analytics/#quick-links), and the [Chrome Extension](https://chrome.google.com/webstore/detail/branch-link-creator/pekdpppibljpmpbcjelehhnldnfbglgf)
     - Branch will scrape the web URL for deep link data on link creation
-    - Validate by creating a [Quick Link](https://dashboard.branch.io/quick-links) and fill in `web URL` to your web page
+    - Validate by creating a [Quick Link](https://dashboard.branch.io/quick-links) and fill in <notranslate>**web URL**</notranslate> to your web page
 
         | Example URL | URL data | Metatags to add to your site
         | --- | --- | ---
         | https://shop.com/shoes/brown-loafers | productId=1234, productView=true | `<meta name="branch:deeplink:productId" content="1234" />`, `<meta name="branch:deeplink:productView" content="true" />`
         | https://shop.com/shoes | categoryId=5678 | `<meta name="branch:deeplink:categoryId" content="5678" />`
-        |https://shop.com/your-mother-is-great | No corresponding app content ([open web](/links/integrate/#open-web-instead-of-app)) | `<meta name="branch:deeplink:$web_only" content="true" />`
+        | https://shop.com/your-mother-is-great | No corresponding app content ([open web](/links/integrate/#open-web-instead-of-app)) | `<meta name="branch:deeplink:$web_only" content="true" />`
 
 - ### Track users
 
@@ -477,10 +477,10 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 
         | Key | Default | Usage
         | --- | --- | ---
-        | bucket |  | The bucket from which to retrieve credit transactions (63 max characters)
-        | begin_after_id | | The credit transaction id of the last item in the previous retrieval
-        | length | `100` | The number of credit transactions to retrieve
-        | direction | `0` | The order of credit transactions to retrieve (**deprecated**)
+        | `bucket` |  | The bucket from which to retrieve credit transactions (63 max characters)
+        | `begin_after_id` | | The credit transaction id of the last item in the previous retrieval
+        | `length` | `100` | The number of credit transactions to retrieve
+        | `direction` | `0` | The order of credit transactions to retrieve (**deprecated**)
 
 - ### Handle listeners
 
@@ -501,14 +501,14 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 
         | Key | Usage
         | --- | ---
-        | willShowJourney | Journey is about to be shown.
-        | didShowJourney | Journey's entrance animation has completed and it is being shown to the user.
-        | willNotShowJourney | Journey will not be shown and no other events will be emitted.
-        | didClickJourneyCTA | User clicked on Journey's CTA button.
-        | didClickJourneyClose | User clicked on Journey's close button.
-        | willCloseJourney | Journey close animation has started.
-        | didCloseJourney | Journey's close animation has completed and it is no longer visible to the user.
-        | didCallJourneyClose | Emitted when developer calls branch.closeJourney() to dismiss Journey.
+        | `willShowJourney` | Journey is about to be shown.
+        | `didShowJourney` | Journey's entrance animation has completed and it is being shown to the user.
+        | `willNotShowJourney` | Journey will not be shown and no other events will be emitted.
+        | `didClickJourneyCTA` | User clicked on Journey's CTA button.
+        | `didClickJourneyClose` | User clicked on Journey's close button.
+        | `willCloseJourney` | Journey close animation has started.
+        | `didCloseJourney` | Journey's close animation has completed and it is no longer visible to the user.
+        | `didCallJourneyClose` | Emitted when developer calls branch.closeJourney() to dismiss Journey.
 
 - ### Handle Firebase App Indexing
 
@@ -523,8 +523,7 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 
     - If optional parameters above are not specified, Branch will try to build Firebase App Indexing tags using your page's App Links tags. Alternatively, if optional parameters are specified but Firebase App Indexing tags already exist on your webpage then Branch tracking params will be appended to the end of these tags and ignore what is passed into `Branch.autoAppIndex()`.
 
-    - Analytics related to Google's attempts to index your App's content via this method can be found on your [Branch Dashboard](https://dashboard.branch.io/sources) where channel is `Firebase App Indexing` and feature is `Auto App Indexing`
-
+    - Analytics related to Google's attempts to index your App's content via this method can be found on your [Branch Dashboard](https://dashboard.branch.io/sources) where channel is <notranslate>**Firebase App Indexing**</notranslate> and feature is <notranslate>**Auto App Indexing**</notranslate>
         ```js
         branch.autoAppIndex({
             iosAppId:'123456789',
@@ -543,11 +542,11 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 
         | Key | Usage
         | --- | ---
-        | "androidPackageName" | Android App's package name
-        | "androidURL" | A custom scheme for your Android App such as: `example/home/cupertino/12345` where `example` is the App's URI scheme and `home/cupertino/12345` routes to unique content in the App
-        | "iosAppId" | iTunes App Store ID for your iOS App
-        | "iosURL" | A custom scheme for your iOS App such as: `example/home/cupertino/12345`
-        | "data" | Any additional deep link data that you would like to pass to your App
+        | `androidPackageName` | Android App's package name
+        | `androidURL` | A custom scheme for your Android App such as: `example/home/cupertino/12345` where `example` is the App's URI scheme and `home/cupertino/12345` routes to unique content in the App
+        | `iosAppId` | iTunes App Store ID for your iOS App
+        | `iosURL` | A custom scheme for your iOS App such as: `example/home/cupertino/12345`
+        | `data` | Any additional deep link data that you would like to pass to your App
 
 - ### Enable / Disable User Tracking
 
@@ -596,13 +595,13 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 
         | Key | Value
         | --- | ---
-        | branch_match_id | *optional* - `string`. The current user's browser-fingerprint-id. The value of this parameter should be the same as the value of ?_branch_match_id (automatically appended by Branch after a link click). _Only necessary if ?_branch_match_id is lost due to multiple redirects in your flow_.
-        | branch_view_id | *optional* - `string`. If you would like to test how Journeys render on your page before activating them, you can set the value of this parameter to the id of the view you are testing. _Only necessary when testing a view related to a Journey_.
-        | no_journeys | *optional* - `boolean`. When true, prevents Journeys from appearing on current page.
-        | disable_entry_animation | *optional* - `boolean`. When true, prevents a Journeys entry animation.
-        | disable_exit_animation | *optional* - `boolean`. When true, prevents a Journeys exit animation.
-        | open_app | *optional* - `boolean`. Whether to try to open the app passively through Journeys (as opposed to opening it upon user clicking); defaults to false.
-        | nonce | *optional* - `string`. A nonce value that will be included on any script or style tags Branch adds to your site. Used to whitelist these tags in your Content Security Policy.
+        | `branch_match_id` | *optional* - `string`. The current user's browser-fingerprint-id. The value of this parameter should be the same as the value of ?_branch_match_id (automatically appended by Branch after a link click). _Only necessary if ?_branch_match_id is lost due to multiple redirects in your flow_.
+        | `branch_view_id` | *optional* - `string`. If you would like to test how Journeys render on your page before activating them, you can set the value of this parameter to the id of the view you are testing. _Only necessary when testing a view related to a Journey_.
+        | `no_journeys` | *optional* - `boolean`. When true, prevents Journeys from appearing on current page.
+        | `disable_entry_animation` | *optional* - `boolean`. When true, prevents a Journeys entry animation.
+        | `disable_exit_animation` | *optional* - `boolean`. When true, prevents a Journeys exit animation.
+        | `open_app` | *optional* - `boolean`. Whether to try to open the app passively through Journeys (as opposed to opening it upon user clicking); defaults to false.
+        | `nonce` | *optional* - `string`. A nonce value that will be included on any script or style tags Branch adds to your site. Used to whitelist these tags in your Content Security Policy.
 
 
 - ### Testing read deep link
@@ -632,9 +631,9 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 - ### Journey not sticking to nav
 
     - Navigate to [Dashboard Journey Page](https://branch.dashboard.branch.io/web/journeys)
-    - Select Journey -> Edit -> Configure Views -> Banner -> Page Placement
-    - Banner Scroll = `sticky`
-    - Press `Save & Close`
+    - Select Journey -> <notranslate>**Edit**</notranslate> -> <notranslate>**Configure Views**</notranslate> -> <notranslate>**Banner**</notranslate> -> <notranslate>**Page Placement**</notranslate>
+    - Banner Scroll = <notranslate>**sticky**</notranslate>
+    - Press <notranslate>**Save & Close**</notranslate>
     - Add the following div to your nav
 
         ```html
@@ -655,7 +654,7 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
           campaign: String(Date.now())
         };
         var linkOptions = {
-          make_new_link: false, // don't create a new deep link if one already exists (e.g. _branch_match_id is in the address bar)
+          make_new_link: false, // don't create a new deep link if one already exists (e.g. <notranslate>_branch_match_</notranslate>id is in the address bar)
           open_app: true  // will attempt to open the app if install (URI Scheme deep linking only - will not work with Safari)
         };
         branch.deepview(linkData, linkOptions, function(err, data) {

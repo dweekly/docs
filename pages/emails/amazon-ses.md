@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Amazo
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Amazon Simple Email Service** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Amazon Simple Email Service**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You will also need to add your AWS tracking domain next to your click tracking domain in the **Amazon SES Domain** field in the Configure ESP step. It should be one of the following:
+You will also need to add your AWS tracking domain next to your click tracking domain in the <notranslate>**Amazon SES Domain**</notranslate> field in the Configure ESP step. It should be one of the following:
 
 | AWS Region | AWS tracking domain
 | --- | ---
@@ -50,7 +50,7 @@ You will also need to add your AWS tracking domain next to your click tracking d
 
 ### Setup a custom click tracking domain
 
-Add and verify an email domain in the **Domains** section of your Amazon SES account:
+Add and verify an email domain in the <notranslate>**Domains**</notranslate> section of your Amazon SES account:
 
    ![image](/_assets/img/pages/email/amazon-ses-domain.png)
 

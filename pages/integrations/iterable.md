@@ -19,7 +19,7 @@ Please refer to [Iterable's documentation](https://support.iterable.com/hc/en-us
 ### What Branch sends to Iterable
 
 !!! warning "IMPORTANT"
-	To be able to match events with your users - you must send a client's email as the `User Identity` to Branch:
+	To be able to match events with your users - you must send a client's email as the <notranslate>**User Identity**</notranslate> to Branch:
 
 	**iOS**: https://docs.branch.io/apps/ios/#track-users
 

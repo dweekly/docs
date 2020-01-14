@@ -12,8 +12,8 @@ Branch will import events that are not auto-tracked with the Branch SDKs. This i
 
 1. [Contact Branch](https://support.branch.io){:target="\_blank"} to configure Branch to receive events from mParticle. Please note that a subscription to [Data Feeds](https://branch.io/data-feeds/){:target="\_blank"} is required to enable data import from mParticle to Branch.
 1. Navigate to the [Data Integrations page](https://dashboard.branch.io/data-import-export/data-feeds/integrations){:target="\_blank"} of the Branch dashboard.
-    1. Select **mParticle** from the menu on the left.
-    1. Select the platforms you would like to import events from and click **Save**.
+    1. Select <notranslate>**mParticle**</notranslate> from the menu on the left.
+    1. Select the platforms you would like to import events from and click <notranslate>**Save**</notranslate>.
 
     ![image](/_assets/img/pages/integrations/mparticle/mparticle-import.png)
 
@@ -32,33 +32,33 @@ The Branch integration supports some of the events tracked with mParticle’s [A
 
 | mParticle Action | mParticle Event Type | mParticle Custom Event Type | Branch Event | Branch Event Category | Imported |
 | --- | --- | --- | --- | --- | --- |
-| add_to_cart | product_action | - | Add To Cart | Commerce Event | **Yes** |
-| add_to_wishlist | product_action | - | Add To Wishlist | Commerce Event | **Yes** |
-| *use the Branch event name* | - | - | View Cart | Commerce Event | **Yes** |
-| *use the Branch event name* | - | - | Add Payment Info | Commerce Event | **Yes** |
-| checkout | product_action | - | Initiate Purchase | Commerce Event | **Yes** |
-| purchase | product_action | - | Purchase | Commerce Event | **Yes** |
-| *use the Branch event name* | - | - | Spend Credits | Commerce Event | **Yes** |
-| *use the Branch event name* | custom_event | search | Search | Content Event | **Yes** |
-| view_detail | product_action | - | View Item | Content Event | **Yes** |
-| view_detail | product_action | - | View Items | Content Event | **Yes** |
-| *use the Branch event name* | - | - | Rate | Content Event | **Yes** |
-| *use the Branch event name* | - | - | Share | Content Event | **Yes** |
-| *use the Branch event name* | - | - | Complete Registration | Lifecycle Event | **Yes** |
-| *use the Branch event name* | - | - | Complete Tutorial | Lifecycle Event | **Yes** |
-| *use the Branch event name* | - | - | Achieve Level | Lifecycle Event | **Yes** |
-| *use the Branch event name* | - | - | Unlock Achievement | Lifecycle Event | **Yes** |
-| *use the Branch event name* | - | - | Custom | Custom Event | **Yes** |
-| - | - | - | Click | - | No |
-| - | - | - | Install | - | No |
-| - | - | - | Reinstall | - | No |
-| - | - | - | Open | - | No |
-| - | - | - | SMS Sent | - | No |
-| - | - | - | Pageview | - | No |
-| - | - | - | Web Session Start | - | No |
-| - | - | - | Branch CTA View | - | No |
-| - | - | - | Impression | - | No |
-| - | - | - | Web to App Auto Redirect | - | No |
+| `add_to_cart` | `product_action` | - | <notranslate>Add To Cart</notranslate> | Commerce Event | **Yes** |
+| `add_to_wishlist` | `product_action` | - | <notranslate>Add To Wishlist</notranslate> | Commerce Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>View Cart</notranslate> | Commerce Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>Add Payment Info</notranslate> | Commerce Event | **Yes** |
+| `checkout` | `product_action` | - | <notranslate>Initiate Purchase</notranslate> | Commerce Event | **Yes** |
+| `purchase` | `product_action` | - | <notranslate>Purchase</notranslate> | Commerce Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>Spend Credits</notranslate> | Commerce Event | **Yes** |
+| *use the Branch event name* | `custom_event` | `search` | <notranslate>Search</notranslate> | Content Event | **Yes** |
+| `view_detail` | `product_action` | - | <notranslate>View Item</notranslate> | Content Event | **Yes** |
+| `view_detail` | `product_action` | - | <notranslate>View Items</notranslate> | Content Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>Rate</notranslate> | Content Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>Share</notranslate> | Content Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>Complete Registration</notranslate> | Lifecycle Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>Complete Tutorial</notranslate> | Lifecycle Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>Achieve Level</notranslate> | Lifecycle Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>Unlock Achievement</notranslate> | Lifecycle Event | **Yes** |
+| *use the Branch event name* | - | - | <notranslate>Custom</notranslate> | Custom Event | **Yes** |
+| - | - | - | <notranslate>Click</notranslate> | - | No |
+| - | - | - | <notranslate>Install</notranslate> | - | No |
+| - | - | - | <notranslate>Reinstall</notranslate> | - | No |
+| - | - | - | <notranslate>Open</notranslate> | - | No |
+| - | - | - | <notranslate>SMS Sent</notranslate> | - | No |
+| - | - | - | <notranslate>Pageview</notranslate> | - | No |
+| - | - | - | <notranslate>Web Session Start</notranslate> | - | No |
+| - | - | - | <notranslate>Branch CTA View</notranslate> | - | No |
+| - | - | - | <notranslate>Impression</notranslate> | - | No |
+| - | - | - | <notranslate>Web to App Auto Redirect</notranslate> | - | No |
 
 
 #### Identifiers
@@ -73,12 +73,12 @@ Branch maps mParticle's identifiers to the following:
 
 | mParticle field | Branch field |
 | --- | --- |
-| context.userId.Customer | developer_identity |
-| environment.Identity.DeviceIdentity.IOS_ADVERTISING_ID | idfa |
-| environment.Identity.DeviceIdentity.GOOGLE_ADVERTISING_ID | aaid |
-| environment.Identity.DeviceIdentity.IOS_VENDOR_ID | idfv |
-| environment.Identity.DeviceIdentity.ANDROID_ID | android_id |
-| context.runtimeEnvironment.type | os |
+| `context.userId.Customer` | `developer_identity` |
+| `environment.Identity.DeviceIdentity.IOS_ADVERTISING_ID` | `idfa` |
+| `environment.Identity.DeviceIdentity.GOOGLE_ADVERTISING_ID` | `aaid` |
+| `environment.Identity.DeviceIdentity.IOS_VENDOR_ID` | `idfv` |
+| `environment.Identity.DeviceIdentity.ANDROID_ID` | `android_id` |
+| `context.runtimeEnvironment.type` | `os` |
 
 At this time, Branch [will not attribute logged out web events](#attribution-for-logged-out-users-on-web) received from the server-to-server integration.
 
@@ -88,7 +88,7 @@ Once you have import turned on in both mParticle and Branch, events should come 
 
 ![image](/_assets/img/pages/integrations/mparticle/mparticle-import-status.png)
 
-To see more information on the events that are coming in, you can look at events with **origin** `MPARTICLE` in [Liveview](https://dashboard.branch.io/liveview/events){:target="\_blank"}:
+To see more information on the events that are coming in, you can look at events with <notranslate>**origin**</notranslate> `MPARTICLE` in [Liveview](https://dashboard.branch.io/liveview/events){:target="\_blank"}:
 
 ![image](/_assets/img/pages/integrations/mparticle/mparticle-import-liveview.png)
 

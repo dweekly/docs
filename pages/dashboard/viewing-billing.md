@@ -59,7 +59,7 @@ Here are the steps:
 
 1. Log in to your Branch account at https://dashboard.branch.io/
 2. Visit https://dashboard.branch.io/settings/billing/account
-3. Click "Cancel" in the lower right corner and follow any confirmations.
+3. Click <notranslate>"Cancel"</notranslate> in the lower right corner and follow any confirmations.
 4. You're all set!
 
 
