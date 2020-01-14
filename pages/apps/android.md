@@ -12,7 +12,7 @@
     If you are running Google Play Services versions below 17, no update is necessary.
 
 !!! info "Amazon Fire Device Support"
-    The Branch Android SDK 4.1.1+ includes support for Amazon Fire devices.  
+    The Branch Android SDK 4.1.1+ includes support for Amazon Fire devices.
 
     Please follow the guide below **except do not include the following two lines in the app level `build.gradle` file**:
     ```
@@ -24,9 +24,9 @@
 
 - ### Configure Branch
 
-    - Complete the `Basic integration` within [Configure your dashboard](/dashboard/integrate/)
+    - Complete the **Basic integration** within [Configure your dashboard](/dashboard/integrate/)
 
-    - Make sure `Always try to open app` and `I have an Android App` are both enabled
+    - Make sure <notranslate>**Always try to open app**</notranslate> and <notranslate>**I have an Android App**</notranslate> are both enabled
 
         ![image](/_assets/img/pages/dashboard/android.png)
 
@@ -129,7 +129,7 @@
                         <category android:name="android.intent.category.DEFAULT" />
                         <category android:name="android.intent.category.BROWSABLE" />
                         <data android:scheme="https" android:host="example.app.link" />
-                        <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website.  -->                        
+                        <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website.  -->
                         <data android:scheme="https" android:host="example-alternate.app.link" />
                     </intent-filter>
                 </activity>
@@ -159,7 +159,7 @@
         - `key_test_hlxrWC5Zx16DkYmWu4AHiimdqugRYMr`
 
     !!! warning "Google Play App Install Referrer API"
-        Branch can use the [Google Play App Install Referrer API](https://developer.android.com/google/play/installreferrer/library.html) to return the Install Referrer click timestamp and the install-begin timestamp. Please make sure you include the `Branch install referrer tracking (optional)` receiver in the AndroidManifest.xml file as per the above code sample.
+        Branch can use the [Google Play App Install Referrer API](https://developer.android.com/google/play/installreferrer/library.html) to return the Install Referrer click timestamp and the install-begin timestamp. Please make sure you include the <notranslate>**Branch install referrer tracking (optional)**</notranslate> receiver in the AndroidManifest.xml file as per the above code sample.
 
     !!! warning "Single Task launch mode required"
         If there is no singleTask Activity instance in the system yet, a new one would be created and simply placed on top of the stack in the same Task. If you are using the Single Task mode as is, it should not restart your entire app. The Single Task mode instantiates the Main/Splash Activity only if it does not exist in the Activity Stack. If the Activity exists in the background, every subsequent intent to the Activity just brings it to the foreground. You can read more about Single Task mode [here](https://developer.android.com/guide/components/activities/tasks-and-back-stack.html#TaskLaunchModes).
@@ -320,7 +320,7 @@
 
     - Compile your app to your device
 
-    - Paste deep link in `Google Hangouts`
+    - Paste deep link in <notranslate>**Google Hangouts**</notranslate>
 
     - Click on the deep link to open your app
 
@@ -331,7 +331,7 @@
 
 - ### Create content reference
 
-    - The `Branch Universal Object` encapsulates the thing you want to share (content or user)
+    - The <notranslate>**Branch Universal Object**</notranslate> encapsulates the thing you want to share (content or user)
 
     - Uses the [Universal Object Properties](#/links/integrate/#universal-object)
 
@@ -603,8 +603,7 @@
 
 - ### Display content
 
-    - List content on `Google Search` with `App Indexing`
-
+    - List content on <notranslate>**Google Search**</notranslate> with <notranslate>**App Indexing**</notranslate>
     - Enable App Indexing on the [Branch Dashboard](#https://dashboard.branch.io/search)
 
     - Validate with the [App indexing validator](https://branch.io/resources/app-indexing/)
@@ -861,7 +860,7 @@
 
 - ### Enable 100% matching
 
-    - Uses `Chrome Tabs` to increase attribute matching success
+    - Uses <notranslate>**Chrome Tabs**</notranslate> to increase attribute matching success
 
     - Add `implementation 'com.android.support:customtabs:28.0.0' // Chrome Tab matching (enables 100% guaranteed matching based on cookies), androidx.browser:browser works just the same` to your `build.gradle`
 
@@ -996,7 +995,7 @@
 
     - Branch links within the `WebView` will route internally within your app, while other contents will continue to route externally
 
-    - Launch Branch deep links with `Web View`
+    - Launch Branch deep links with <notranslate>**Web View**</notranslate>
 
         - *Java*
 
@@ -1074,7 +1073,7 @@
             }
             ```
 
-    - Launch Branch deep links with `Chrome Tabs`
+    - Launch Branch deep links with <notranslate>**Chrome Tabs**</notranslate>
 
         - *Java*
 
@@ -1220,7 +1219,7 @@
 
 - ### Generate signing certificate
 
-    - Used for Android `App Link` deep linking
+    - Used for Android <notranslate>**App Link**</notranslate> deep linking
 
     - Navigate to your keystore file
 

@@ -5,7 +5,7 @@ In most cases, the default postback URL generated from your selections is suffic
 But sometimes you may need/want to edit or remove a parameter from the postback URL, or append a macro expression/variable to include additional information.
 
 !!! tip "Example"
-	You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current `Add to Cart` postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template.
+	You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current <notranslate>**Add to Cart**</notranslate> postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template.
 
 Please refer to [Postback Macros & Functions](#postback-macros-functions) when looking to append additional macros.
 

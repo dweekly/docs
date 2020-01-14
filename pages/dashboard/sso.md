@@ -29,9 +29,9 @@ When you add Branch to your identity provider, add the following SAML attribute 
 
 | SAML attribute | Field it should map to in your IdP
 | --- | ---
-| email | User's email address
-| firstName | User's first name
-| lastName | User's last name
+| `email` | User's email address
+| `firstName` | User's first name
+| `lastName` | User's last name
 
 Here is some initial information that your IdP might ask for:
 

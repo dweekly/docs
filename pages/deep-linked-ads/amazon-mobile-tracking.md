@@ -59,7 +59,7 @@ In order for Android App Links to work properly, be sure to add your Amazon Fire
 
 #### Adding your Amazon Fire ASIN
 
-Amazon issues an Amazon Standard Identification Numbers (ASIN) for every app listed on its store. You need to provide this to Branch in order for Branch to fall back to the Amazon Fire Store when your app is not installed. You can find this on your publicly listed app store page under "Product details" -> "ASIN".
+Amazon issues an Amazon Standard Identification Numbers (ASIN) for every app listed on its store. You need to provide this to Branch in order for Branch to fall back to the Amazon Fire Store when your app is not installed. You can find this on your publicly listed app store page under <notranslate>"Product details" -> "ASIN"</notranslate>.
 
 ![image](/_assets/img/pages/deep-linked-ads/amazon/android settings 3.png)
 

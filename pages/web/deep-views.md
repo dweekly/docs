@@ -228,13 +228,13 @@ You can use the Deepview editor to edit created templates. You cannot edit pre-c
 
 #### Active Deepviews
 
-Active deepviews should only show when the app is _not_ installed (or when direct deep linking doesn't work like in the Facebook webview), and pause on the deepview page. These let the user preview the content, ultimately deciding if they want to install the app. The user must click the call-to-action of `Get The App` in order to be sent to the appropriate App or Play Store page.
+Active deepviews should only show when the app is _not_ installed (or when direct deep linking doesn't work like in the Facebook webview), and pause on the deepview page. These let the user preview the content, ultimately deciding if they want to install the app. The user must click the call-to-action of <notranslate>**Get The App**</notranslate> in order to be sent to the appropriate App or Play Store page.
 
 | Key | Value | Default Template
 | --- | --- | ---
-| $ios_deepview | The name of the template to use for iOS. | `default_template`
-| $android_deepview | The name of the template to use for Android. | `default_template`
-| $desktop_deepview | The name of the template to use for the desktop. | `default_template`
+| `$ios_deepview` | The name of the template to use for iOS. | `default_template`
+| `$android_deepview` | The name of the template to use for Android. | `default_template`
+| `$desktop_deepview` | The name of the template to use for the desktop. | `default_template`
 
 #### Passive Deepviews
 
@@ -244,7 +244,7 @@ To disable passive deepviews, simply set the value to `false` in the link data.
 
 | Key | Value | Default
 | --- | --- | ---
-| $ios_passive_deepview | The name of the template to use for iOS. | `default_template`
-| $android_passive_deepview | The name of the template to use for Android. | `default_template`
+| `$ios_passive_deepview` | The name of the template to use for iOS. | `default_template`
+| `$android_passive_deepview` | The name of the template to use for Android. | `default_template`
 
 To enable another template as the default passive deepview, select the 'Set as Passive Default' option. You can also change the template **on a link level** by providing the template name in the [control parameters](/links/integrate/#deepview). If you're creating a link by appending query parameters, you simply need to append the parameters to the URL. Please make sure to URL encode everything, lest the link will break.

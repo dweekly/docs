@@ -50,7 +50,7 @@ During the process of granting an agency/partner access to your Branch account, 
   	When giving an agency access to your Branch account, please make sure you toggle the `Only Show Agency-Tagged Data` to on and select the agency you are giving access to.
 
 !!! warning "Filter to Only Show Data from Specific Ad Networks"
-  	When giving an ad partner access to your Branch account, please make sure you toggle the `Only Show Data from Specific Ad Networks` to on and select the ad partner you are giving access to.
+  	When giving an ad partner access to your Branch account, please make sure you toggle the <notranslate>**Only Show Data from Specific Ad Networks**</notranslate> to on and select the ad partner you are giving access to.
 
 ![image](/_assets/img/pages/dashboard/agency-ad-partner-invite.png)
 

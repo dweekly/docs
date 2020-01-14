@@ -25,7 +25,7 @@ First, we'll need to grab the advertiser ID. Select the advertiser you want to t
 
 #### Grab Server to Server Token
 
-Once you've captured the advertiser ID and selected the advertiser, navigate to <notranslate>**Floodlight Configuration**</notranslate>. From there, go to "server to server", and make sure "in-app attribution tracking" is check-marked. Click new token, call it “Branch token”, and save it. Copy this value, as well.
+Once you've captured the advertiser ID and selected the advertiser, navigate to <notranslate>**Floodlight Configuration**</notranslate>. From there, go to <notranslate>"server to server"</notranslate>, and make sure <notranslate>"in-app attribution tracking"</notranslate> is check-marked. Click new token, call it <notranslate>“Branch token”</notranslate>, and save it. Copy this value, as well.
 
 ![image](/_assets/img/pages/deep-linked-ads/doubleclick/server-token.png)
 
@@ -65,7 +65,7 @@ At this point, you have enabled Branch to communicate with Doubleclick. Now we n
 
 In the screenshot above, we have two events, "In App Activations - Android", and "In App Activations - iOS", which correspond to the Branch Install event. For this example, the <notranslate>**Activity tag Strings**</notranslate> are *act-and* and *act-ios*. The <notranslate>**Group tag String**</notranslate> is *sales*.
 
-Copy the existing URL in Install, and replace the <notranslate>*src*</notranslate>, <notranslate>*cat*</notranslate>, and <notranslate>*type*</notranslate> variables. The "cat" example below has conditional iOS and Android information.
+Copy the existing URL in Install, and replace the <notranslate>*src*</notranslate>, <notranslate>*cat*</notranslate>, and <notranslate>*type*</notranslate> variables. The <notranslate>"cat"</notranslate> example below has conditional iOS and Android information.
 
 Your end result should look exactly like this, where there are different cat tags for iOS and Android.
 

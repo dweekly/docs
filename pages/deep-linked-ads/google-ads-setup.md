@@ -33,7 +33,7 @@ Store these Link IDs for easy access as you will need them to finish enabling th
 
 Once you've linked Branch in Google Ads:
 
-1. Navigate to Branch's [partner management](https://dashboard.branch.io/ads/partner-management){:target="\_blank"} tab and click `Connect with Google`. Choose the email address that is tied to the Google Ads accounts you want to connect.
+1. Navigate to Branch's [partner management](https://dashboard.branch.io/ads/partner-management){:target="\_blank"} tab and click <notranslate>**Connect with Google**</notranslate>. Choose the email address that is tied to the Google Ads accounts you want to connect.
 ![Connect Google](/_assets/img/pages/deep-linked-ads/google/connect-with-google.png)
 1. Select all the necessary accounts, and continue.
 ![Connect Accounts](/_assets/img/pages/deep-linked-ads/google/connect-accounts.png)

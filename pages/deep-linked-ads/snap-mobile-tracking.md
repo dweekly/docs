@@ -27,7 +27,7 @@ Before you begin, be sure the following is confirmed.
 
     ![Find Snap](/_assets/img/pages/deep-linked-ads/snap/find-snap.png)
 
-1. Click `Log in with Snapchat`.
+1. Click <notranslate>**Log in with Snapchat**</notranslate>.
 1. Read and accept the Snap Advertiser Agreement terms if you haven't already.
 
     !!! info
@@ -36,17 +36,17 @@ Before you begin, be sure the following is confirmed.
     ![Accept Terms](/_assets/img/pages/deep-linked-ads/snap/sign-terms.png)
 
 
-1. Log in to Snap. Once logged in, accept permissions and click `Continue`.
+1. Log in to Snap. Once logged in, accept permissions and click <notranslate>**Continue**</notranslate> .
 
     ![Log in to Snap](/_assets/img/pages/deep-linked-ads/snap/log-in-to-snap.png)
     ![Continue OAuth](/_assets/img/pages/deep-linked-ads/snap/accept-oauth.png)
 
     !!! warning
-        Due to an issue with Snap Login, if you see the Snap "My Account" screen after logging in, you'll need to manually return to the Branch dashboard at [https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings](https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings){:target="\_blank"}. Click `Log in with Snapchat` again in the same browser, and you should see the `Continue` button instead of the login screen.
+        Due to an issue with Snap Login, if you see the Snap "My Account" screen after logging in, you'll need to manually return to the Branch dashboard at [https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings](https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings){:target="\_blank"}. Click <notranslate>**Log in with Snapchat**</notranslate> again in the same browser, and you should see the <notranslate>**Continue**</notranslate>  button instead of the login screen.
 
         ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/snap-my-account.png)
 
-1. Click `Continue` to return to the Branch dashboard.
+1. Click <notranslate>**Continue**</notranslate> to return to the Branch dashboard.
 
     ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/oauth-redirect-return.png)
 
@@ -62,21 +62,21 @@ Before you begin, be sure the following is confirmed.
 
 ## Using Branch Links in Snap Campaigns
 
-Branch links are not necessary for attribution, however, you can insert Branch links into the `Drive Traffic to App` campaign type if you are trying to use deferred deeplinking (send users to a specific page after install+launch).
+Branch links are not necessary for attribution, however, you can insert Branch links into the <notranslate>**Drive Traffic to App**</notranslate> campaign type if you are trying to use deferred deeplinking (send users to a specific page after install+launch).
 
-To use Branch links in your `Drive Traffic to App` campaigns:
+To use Branch links in your <notranslate>**Drive Traffic to App**</notranslate> campaigns:
 
 1. Generate/fetch your Branch link from the Branch dashboard.
-1. Set up your Snap campaign, selecting `Drive Traffic to App`.
+1. Set up your Snap campaign, selecting <notranslate>**Drive Traffic to App**</notranslate>.
   ![image](/_assets/img/pages/deep-linked-ads/snap/drive-traffic-to-app.png)
-1. On the `Build Your Ads` page:
-    1. Paste your Branch link into the `DEEPLINK URI` field.
-    1. Select `Web Site` as the `FALLBACK TYPE` to ensure deferred deep linking via your Branch link.
+1. On the <notranslate>**Build Your Ads**</notranslate> page:
+    1. Paste your Branch link into the <notranslate>**DEEPLINK URI**</notranslate> field.
+    1. Select <notranslate>**Web Site**</notranslate> as the <notranslate>**FALLBACK TYPE**</notranslate> to ensure deferred deep linking via your Branch link.
   ![image](/_assets/img/pages/deep-linked-ads/snap/build-your-ad.png)
 1. Finish building your Snap campaign.
 
 !!! warning "Web Site as Fallback Required for Deferred Deep Linking"
-    Please ensure you choose `Web Site` as the `FALLBACK TYPE` and inserting the same Branch link into the provided field.  If you choose `App Install` as the `FALLBACK TYPE`, users not properly routed will be sent to the App Store without the Branch link and deferred deep linking will not occur.
+    Please ensure you choose <notranslate>**Web Site**</notranslate> as the <notranslate>**FALLBACK TYPE**</notranslate> and inserting the same Branch link into the provided field.  If you choose <notranslate>**App Install**</notranslate> as the `FALLBACK TYPE`, users not properly routed will be sent to the App Store without the Branch link and deferred deep linking will not occur.
 
 
 {! ingredients/deep-linked-ads/add-agency-prefix-san-only.md !}
@@ -108,23 +108,23 @@ By default, all events in the below table will be sent to Snap.
 
 | Branch event name | Snap event name
 | --- | ---
-| INSTALL | APP_INSTALL
-| VIEW_ITEM | VIEW_CONTENT
-| ADD_TO_CART | ADD_CART
-| INITIATE_PURCHASE | START_CHECKOUT
-| PURCHASE | PURCHASE
-| ADD_PAYMENT_INFO | ADD_BILLING
-| COMPLETE_REGISTRATION | SIGN_UP
-| SEARCH | SEARCH
-| ACHIEVE_LEVEL | LEVEL_COMPLETE
-| OPEN, REINSTALL | APP_OPEN
+| `INSTALL` | `APP_INSTALL`
+| `VIEW_ITEM` | `VIEW_CONTENT`
+| `ADD_TO_CART` | `ADD_CART`
+| `INITIATE_PURCHASE` | `START_CHECKOUT`
+| `PURCHASE` | `PURCHASE`
+| `ADD_PAYMENT_INFO` | `ADD_BILLING`
+| `COMPLETE_REGISTRATION` | `SIGN_UP`
+| `SEARCH` | `SEARCH`
+| `ACHIEVE_LEVEL` | `LEVEL_COMPLETE`
+| `OPEN`, `REINSTALL` | `APP_OPEN`
 
 The below events can be sent to Snap by registering [custom events ](/apps/v2event/#track-custom-events){target:"\_blank"} that exactly match the Branch custom event name below. Snap does not accept other custom events, so they will not be sent to Snap.
 
 | Branch custom event name | Snap event name
 | --- | ---
-| SAVE | SAVE
-| PAGE_VIEW | PAGE_VIEW
+| `SAVE` | `SAVE`
+| `PAGE_VIEW` | `PAGE_VIEW`
 
 ### Campaign Data
 
@@ -132,24 +132,24 @@ Branch maps the following data fields from Snap to Branch.
 
 Branch Data | Snap Data
 --- | ---
-~campaign | campaign_name
-~campaign_id | campaign_id
-~ad_set_name | ad_squad_name
-~ad_set_id | ad_squad_id
-~ad_name | ad_name
-~ad_id | ad_id
+`~campaign` | `campaign_name`
+`~campaign_id` | `campaign_id`
+`~ad_set_name` | `ad_squad_name`
+`~ad_set_id` | `ad_squad_id`
+`~ad_name` | `ad_name`
+`~ad_id` | `ad_id`
 
 ### Metadata
 
 | Branch metadata   | Snap Metadata  | Description                                                                                                                                                                                                                                     |
 |-------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SKU (list of)     | item_ids       | International Article Number (EAN) when applicable, or other product or category identifier.                                                                                                                                                    |
-| Quantity          | number_items   | Number of items.                                                                                                                                                                                                                                |
-| revenue           | price          | Monetary value of the conversion event in float format. Valid delimiters are “|” “,” “;”. Please do not include currency symbols or commas as part of the value. (ex. single value: price=34.24, multiple values: price=99.43,45.34;34.2|23.22) |
-| currency_code     | currency       | Currency in standard ISO 4217 code (ex. EUR, USD, JPY). Required if price is included.                                                                                                                                                          |
-| transactionID     | transaction_id | Transaction ID.                                                                                                                                                                                                                                 |
-| searchQuery       | search_string  | The text string that was searched.                                                                                                                                                                                                              |
-| custom_data.level | level          | Level in the game.                                                                                                                                                                                                                              |
+| SKU (list of)     | `item_ids`       | International Article Number (EAN) when applicable, or other product or category identifier.                                                                                                                                                    |
+| `Quantity`          | `number_items`   | Number of items.                                                                                                                                                                                                                                |
+| `revenue`           | `price`          | Monetary value of the conversion event in float format. Valid delimiters are “|” “,” “;”. Please do not include currency symbols or commas as part of the value. (ex. single value: price=34.24, multiple values: price=99.43,45.34;34.2|23.22) |
+| `currency_code`     | `currency`       | Currency in standard ISO 4217 code (ex. EUR, USD, JPY). Required if price is included.                                                                                                                                                          |
+| `transactionID`     | `transaction_id` | Transaction ID.                                                                                                                                                                                                                                 |
+| `searchQuery`       | `search_string`  | The text string that was searched.                                                                                                                                                                                                              |
+| `custom_data.level` | `level`          | Level in the game.                                                                                                                                                                                                                              |
 
 {! ingredients/deep-linked-ads/cost-data.md !}
 
@@ -163,7 +163,7 @@ Branch Data | Snap Data
     ![Snap - Attribution Windows](/_assets/img/pages/deep-linked-ads/snap/snap-attribution-windows.png)
 
 - When deep linking, create a link via the Branch dashboard. If you are running an app campaign, please ensure your link has `%24deeplink_no_attribution=true` as a query parameter to remove that link's ability to claim attribution, otherwise the link may claim attribution over the SAN claim. The link will still deep link.
-- Snap's reporting API does not provide any "compare by" functionality outside of the ads analytics tags. So, you cannot compare Snap click + impression data by platform, OS or country, for example.
+- Snap's reporting API does not provide any <notranslate>"compare by"</notranslate> functionality outside of the ads analytics tags. So, you cannot compare Snap click + impression data by platform, OS or country, for example.
 
 {! ingredients/deep-linked-ads/cost-data-discrepancies.md !}
 

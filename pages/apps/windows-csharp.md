@@ -20,7 +20,7 @@ A Branch-integrated app called TestBed-Windows and assigned the default Branch l
 
 ### Configure Branch
 
-Complete the `Basic integration` within [Configure your dashboard](/dashboard/integrate/)
+Complete the **Basic integration** within [Configure your dashboard](/dashboard/integrate/)
 
     ![image](/_assets/img/pages/dashboard/fallback.png)
 
@@ -44,11 +44,11 @@ ___
 
 ### Integrating the Branch SDK
 
-**I. Create project in visual studio**  
+**I. Create project in visual studio**
 
 * Open Visual Studio and create a new Blank App (Windows Universal) project
 
-**II. Register app to  handle deep link**  
+**II. Register app to  handle deep link**
 
 * Select `Package.appxmanifest` in Solution Explorer and press `F7`
 
@@ -148,13 +148,13 @@ To help you get started, we have provided this example for learning how to to wr
 
 ### Integrating the Branch SDK
 
-**I. Create project in visual studio**  
+**I. Create project in visual studio**
 
 * Open Visual Studio and create a new Console App (.NET Framework) project
 
 **II. Configuring**
 
-* In `Output build` create folder `Configs` and in it folder create two text files (.txt) with names `live_branch_key.txt` and `test_branch_key.txt` and fill they with branch keys from your app dashboard
+* In <notranslate>**Output build**</notranslate> create folder `Configs` and in it folder create two text files (.txt) with names `live_branch_key.txt` and `test_branch_key.txt` and fill they with branch keys from your app dashboard
 * You may configure your app with that methods:
 	* `Branch.I.SetDebug(bool isDebug);` - If `isDebug` is true then app will use `Test` Branch key if specified. Otherwise, the app will use the `Live` Branch key.
 	* `Branch.I.SetNetworkTimeout(int timeout);` - That method is set timeout for all requests
@@ -255,31 +255,31 @@ You can customize the Facebook OG tags of each URL if you want to dynamically sh
 
 | Key | Value
 | --- | ---
-| "$og_title" | The title you'd like to appear for the link in social media
-| "$og_description" | The description you'd like to appear for the link in social media
-| "$og_image_url" | The URL for the image you'd like to appear for the link in social media
-| "$og_video" | The URL for the video
-| "$og_url" | The URL you'd like to appear
-| "$og_app_id" | the OG app ID. Optional and rarely used.
+| `$og_title` | The title you'd like to appear for the link in social media
+| `$og_description` | The description you'd like to appear for the link in social media
+| `$og_image_url` | The URL for the image you'd like to appear for the link in social media
+| `$og_video` | The URL for the video
+| `$og_url` | The URL you'd like to appear
+| `$og_app_id` | the OG app ID. Optional and rarely used.
 
 Also, you do custom redirection by inserting the following _optional keys in the dictionary_:
 
 | Key | Value
 | --- | ---
-| "$desktop_url" | Where to send the user on a desktop or laptop. By default it is the Branch-hosted text-me service
-| "$android_url" | The replacement URL for the Play Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_
-| "$ios_url" | The replacement URL for the App Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_
-| "$ipad_url" | Same as above but for iPad Store
-| "$fire_url" | Same as above but for Amazon Fire Store
-| "$blackberry_url" | Same as above but for Blackberry Store
-| "$windows_phone_url" | Same as above but for Windows Store
+| `$desktop_url` | Where to send the user on a desktop or laptop. By default it is the Branch-hosted text-me service
+| `$android_url` | The replacement URL for the Play Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_
+| `$ios_url` | The replacement URL for the App Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_
+| `$ipad_url` | Same as above but for iPad Store
+| `$fire_url` | Same as above but for Amazon Fire Store
+| `$blackberry_url` | Same as above but for Blackberry Store
+| `$windows_phone_url` | Same as above but for Windows Store
 
 You have the ability to control the direct deep linking of each link by inserting the following _optional keys in the dictionary_:
 
 | Key | Value
 | --- | ---
-| "$deeplink_path" | The value of the deep link path that you'd like us to append to the URI. For example, you could specify "$deeplink_path": "radio/station/456" and we'll open the app with the URI "theapp://radio/station/456?link_click_id=branch-identifier". This is primarily for supporting legacy deep linking infrastructure.
-| "$always_deeplink" | true or false. (default is not to deep link first) This key can be specified to have our linking service force try to open the app, even if we're not sure the user has the app installed. If the app is not installed, we fall back to the respective app store or $platform_url key. By default, we only open the app if we've seen a user initiate a session in the app from a Branch link (has been cookied and deep linked by Branch)
+| "`$deeplink_path` | The value of the deep link path that you'd like us to append to the URI. For example, you could specify "$deeplink_path": "radio/station/456" and we'll open the app with the URI "theapp://radio/station/456?link_click_id=branch-identifier". This is primarily for supporting legacy deep linking infrastructure.
+| "`$always_deeplink` | true or false. (default is not to deep link first) This key can be specified to have our linking service force try to open the app, even if we're not sure the user has the app installed. If the app is not installed, we fall back to the respective app store or $platform_url key. By default, we only open the app if we've seen a user initiate a session in the app from a Branch link (has been cookied and deep linked by Branch)
 
 
 ### Referral rewards

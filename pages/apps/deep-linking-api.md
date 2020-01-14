@@ -358,8 +358,8 @@
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
         | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | identity | `string` | Unique user id, also known as the `Developer Id` on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √*
-        | identity_id | `string` | Unique user id for Branch, also known as the `Branch Identity Id` on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √*
+        | identity | `string` | Unique user id, also known as the <notranslate>**Developer Id**</notranslate> on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √*
+        | identity_id | `string` | Unique user id for Branch, also known as the <notranslate>**Branch Identity Id**</notranslate> on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √*
 
         - `*` =  `identity` *OR* `identity_id` is required
 
@@ -415,7 +415,7 @@
         | --- | :-: | --- | :-:
         | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
         | branch_secret | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | identity | `string` | Unique user id, also known as the `Developer Id` on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √
+        | identity | `string` | Unique user id, also known as the <notranslate>**Developer Id**</notranslate> on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √
         | amount | `string` | Number of credits | √
         | bucket | `string` | The category where the credits are save to (defaults to `default`) |
 

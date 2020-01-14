@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `Branch Web SDK` allows you to create and share deep links with a banner, over SMS, or your own methods. It also offers event tracking, access to referrals, and management of credits. The SDK is only ~13K gzipped.
+The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share deep links with a banner, over SMS, or your own methods. It also offers event tracking, access to referrals, and management of credits. The SDK is only ~13K gzipped.
 
 ### Notes
 
@@ -14,7 +14,7 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 
 - ### Configure Branch
 
-    - Complete the `Basic integration` within [Configure your dashboard](/dashboard/integrate/)
+    - Complete the **Basic integration** within [Configure your dashboard](/dashboard/integrate/)
 
         ![image](/_assets/img/pages/dashboard/fallback.png)
 
@@ -263,7 +263,7 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
     - Make it easier for marketers to create deep links
     - Used for [Journeys](/web/journeys/), [Universal Emails](/emails/braze/), [Quick links](/dashboard/analytics/#quick-links), and the [Chrome Extension](https://chrome.google.com/webstore/detail/branch-link-creator/pekdpppibljpmpbcjelehhnldnfbglgf)
     - Branch will scrape the web URL for deep link data on link creation
-    - Validate by creating a [Quick Link](https://dashboard.branch.io/quick-links) and fill in `web URL` to your web page
+    - Validate by creating a [Quick Link](https://dashboard.branch.io/quick-links) and fill in <notranslate>**web URL**</notranslate> to your web page
 
         | Example URL | URL data | Metatags to add to your site
         | --- | --- | ---
@@ -523,8 +523,7 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
 
     - If optional parameters above are not specified, Branch will try to build Firebase App Indexing tags using your page's App Links tags. Alternatively, if optional parameters are specified but Firebase App Indexing tags already exist on your webpage then Branch tracking params will be appended to the end of these tags and ignore what is passed into `Branch.autoAppIndex()`.
 
-    - Analytics related to Google's attempts to index your App's content via this method can be found on your [Branch Dashboard](https://dashboard.branch.io/sources) where channel is `Firebase App Indexing` and feature is `Auto App Indexing`
-
+    - Analytics related to Google's attempts to index your App's content via this method can be found on your [Branch Dashboard](https://dashboard.branch.io/sources) where channel is <notranslate>**Firebase App Indexing**</notranslate> and feature is <notranslate>**Auto App Indexing**</notranslate>
         ```js
         branch.autoAppIndex({
             iosAppId:'123456789',

@@ -13,13 +13,13 @@ The recommended use of pulling cost data via API is "pull all the cost by partne
 
 **Top tips**:
 
-- `Aggregation` must be `cost` (for other dimensions it could be "total_count" or "unique_count" but those are not applicable for cost).
+- `Aggregation` must be `cost` (for other dimensions it could be "total_count" or <notranslate>"unique_count"</notranslate> but those are not applicable for cost).
 
 - Cost is always returned in USD, where the exchange rate is stored at the time we retrieve from an API (virtually always the day of the campaign, e.g. we pull data for a campaign that ran Dec 17th 2020 into the Branch system on Dec 17th 2020 and the exchange rate will be the exchange rate on Dec 17th 2020).
 
 - Click & impressions not supported today, coming with new API (2020, time TBD)
 
-- We will only return the parameters available from the ad partner API, so often dimensions will appear "null" for cost. For example, Snap data has virtually no device breakdowns (e.g. OS)
+- We will only return the parameters available from the ad partner API, so often dimensions will appear <notranslate>"null"</notranslate> for cost. For example, Snap data has virtually no device breakdowns (e.g. OS)
 
 - Supported partners: FB, Google, Snap, Apple.
 

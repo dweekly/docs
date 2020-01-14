@@ -67,7 +67,7 @@ The first step to listing your app content in Google is to tell Branch what the 
 
 ### Enable App Indexing
 
- Enable automatic sitemap generation on the [Organic Search](https://dashboard.branch.io/search) page of the Branch Dashboard. Check the `Automatic sitemap generation` checkbox.
+ Enable automatic sitemap generation on the [Organic Search](https://dashboard.branch.io/search) page of the Branch Dashboard. Check the <notranslate>**Automatic sitemap generation**</notranslate> checkbox.
 
 ![image](/_assets/img/pages/organic-search/firebase/db-settings.png)
 
@@ -121,11 +121,11 @@ This requires:
 
 | Key | Value
 | --- | ---
-| "androidPackageName" | Android App's package name
-| "androidURL" | A custom scheme for your Android App such as: `example/home/cupertino/12345` where `example` is the App's URI scheme and `home/cupertino/12345` routes to unique content in the App
-| "iosAppId" | iTunes App Store ID for your iOS App
-| "iosURL" | A custom scheme for your iOS App such as: `example/home/cupertino/12345`
-| "data" | Any additional deep link data that you would like to pass to your App
+| <notranslate>"androidPackageName"</notranslate> | Android App's package name
+| <notranslate>"androidURL"</notranslate> | A custom scheme for your Android App such as: `example/home/cupertino/12345` where `example` is the App's URI scheme and `home/cupertino/12345` routes to unique content in the App
+| <notranslate>"iosAppId"</notranslate> | iTunes App Store ID for your iOS App
+| <notranslate>"iosURL"</notranslate> | A custom scheme for your iOS App such as: `example/home/cupertino/12345`
+| <notranslate>"data"</notranslate> | Any additional deep link data that you would like to pass to your App
 
 
 ```javascript

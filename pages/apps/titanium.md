@@ -131,11 +131,11 @@
 
     - Compile your app
 
-    - Paste deep link in `Apple Notes`
+    - Paste deep link in <notranslate>**Apple Notes**</notranslate>
 
     - Long press on the deep link *(not 3D Touch)*
 
-    - Click `Open in "APP_NAME"` to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
+    - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
 
 - ### Test deep link Android
 
@@ -145,7 +145,7 @@
 
     - Compile your app
 
-    - Paste deep link in `Google Hangouts`
+    - Paste deep link in <notranslate>**Google Hangouts**</notranslate>
 
     - Click on the deep link to open your app
 
@@ -153,7 +153,7 @@
 
 - ### Create content reference
 
-	- The `Branch Universal Object` encapsulates the thing you want to share
+	- The <notranslate>**Branch Universal Object**</notranslate> encapsulates the thing you want to share
 
 	- Uses the Universal Object Properties listed below:
 

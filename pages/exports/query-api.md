@@ -89,7 +89,7 @@ Branch data sources
 total_count = 30
 unique_count = 10
 ```
-When querying with a datasource of "eo_commerce_event", the aggregation may also be specified as "revenue", in which case the counts returned are the sum of revenue from matching events, and not the number of events themselves.
+When querying with a datasource of <notranslate>"eo_commerce_event"</notranslate>, the aggregation may also be specified as <notranslate>"revenue"</notranslate>, in which case the counts returned are the sum of revenue from matching events, and not the number of events themselves.
  <notranslate>_required_</notranslate>: true
  <notranslate>_location_</notranslate>: body
  <notranslate>_format_</notranslate>: string
@@ -248,7 +248,7 @@ would count only events where
 
 **A note on sorts and the ordered_by parameter:**
 
-It is not possible to provide an explicit sort method to the query, so the sort type is chosen automatically based on the value of "ordered_by". Behavior for comparison of equal values is left undefined, and as such the sort is not considered order stable for identical values.
+It is not possible to provide an explicit sort method to the query, so the sort type is chosen automatically based on the value of <notranslate>"ordered_by"</notranslate>. Behavior for comparison of equal values is left undefined, and as such the sort is not considered order stable for identical values.
 ordered_by value sort choices:
   - unique_count, total_count, revenue -> numerically sorted
   - timestamp -> chronologically ordered

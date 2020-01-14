@@ -51,18 +51,18 @@ Note: no code changes are needed, and if you want to change the deep linking win
 
 Now that deep linking and attribution analytics are separate, we have attribution windows for analytics. As a reminder, an attribution window simply defines the window of time for  when an eligible attribution or deep link can occur.
 
-To access your attribution settings, navigate to the [Link Settings](https://dashboard.branch.io/link-settings) page, and click on the `Attribution Windows` tab.
+To access your attribution settings, navigate to the [Link Settings](https://dashboard.branch.io/link-settings) page, and click on the <notranslate>**Attribution Windows**</notranslate> tab.
 
 !!! info "Default Attribution Window Settings"
 		Each attribution window has its own default measured in days.  Please refer to the image below for these defaults.
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
 
-- `Deep Linking Duration` refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
+- <notranslate>**Deep Linking Duration**</notranslate> refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
 
-- `Click to x` refers to events that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
+- <notranslate>**Click to x**</notranslate> refers to events that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
 
-- `Impression to x` refers to events that occur after someone views a Branch impression link. Measured in days.
+- <notranslate>**Impression to x**</notranslate> refers to events that occur after someone views a Branch impression link. Measured in days.
 
 - `Re-engagement Inactivity` defines the period between two events that a user must be inactive in order to define the later event as a re-engagement. USed in re-engagement cohort analysis but not activity analysis.
 
@@ -104,7 +104,7 @@ We've removed the pie chart from the old visualizations; this is simply removing
 
 This new install summary chart by default shows Branch only installs, that are powered by the new attribution [windows](#attribution-windows). If you want to see all installs, and not just Branch driven installs, simply click `Show All Installs`. You will likely notice a higher number of installs driven by Branch--this is because we have a bigger window to count an install.
 
-Filtering is improved on this chart, as you can add additional query logic by clicking `Add Compare` and `Add Filter`. Previously, you could only filter by one dimension, and now you can filter with more dimensions, with more comparisons.
+Filtering is improved on this chart, as you can add additional query logic by clicking <notranslate>**Add Compare**</notranslate> and `Add Filter`. Previously, you could only filter by one dimension, and now you can filter with more dimensions, with more comparisons.
 
 #### Click Flow Section
 

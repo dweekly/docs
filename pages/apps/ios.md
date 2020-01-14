@@ -8,9 +8,9 @@
 
 - ### Configure Branch
 
-    - Complete the `Basic integration` within [Configure your dashboard](/dashboard/integrate/)
+    - Complete the **Basic integration** within [Configure your dashboard](/dashboard/integrate/)
 
-    - Make sure `I have an iOS app` is enabled
+    - Make sure <notranslate>**I have an iOS app**</notranslate> is enabled
 
         ![image](/_assets/img/pages/dashboard/ios.png)
 
@@ -78,13 +78,11 @@
         github "BranchMetrics/ios-branch-deep-linking"
         ```
 
-        - Import `AdSupport`, `SafariServices`, `MobileCoreServices`, `CoreSpotlight`, `Webkit` and `iAd` into `Linked Frameworks`
-
+        - Import `AdSupport`, `SafariServices`, `MobileCoreServices`, `CoreSpotlight`, `Webkit` and `iAd` into <notranslate>**Linked Frameworks**</notranslate>
     - Option 3: Manually install the [source code](https://github.com/BranchMetrics/ios-branch-deep-linking/releases) with dependencies
 
-        - Drag and drop `Branch.framework` into `Embedded Binaries` (select `Copy items if needed`)
-        - Import `AdSupport`, `SafariServices`, `MobileCoreServices`, `CoreSpotlight`, `Webkit` and `iAd` into `Linked Frameworks`
-
+        - Drag and drop `Branch.framework` into <notranslate>**Embedded Binaries**</notranslate> (select <notranslate>**Copy items if needed**</notranslate>)
+        - Import `AdSupport`, `SafariServices`, `MobileCoreServices`, `CoreSpotlight`, `Webkit` and `iAd` into <notranslate>**Linked Frameworks**</notranslate>
         ![image](/_assets/img/pages/apps/cocoapods-frameworks.png)
 
 - ### Initialize Branch
@@ -494,9 +492,9 @@
     - Create a deep link from the [Branch Dashboard](https://dashboard.branch.io/marketing)
     - Delete your app from the device
     - Compile and test on a device
-    - Paste deep link in `Apple Notes`
+    - Paste deep link in <notranslate>**Apple Notes**</notranslate>
     - Long press on the deep link (not 3D Touch)
-    - Click `Open in "APP_NAME"` to open your app ([example](/_assets/img/pages/apps/ios-notes.png))
+    - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app ([example](/_assets/img/pages/apps/ios-notes.png))
 
     !!! tip "Testing deferred deep linking"
         Deferred deep linking is simply deep linking into an app that is not yet installed. Once the app is installed, the context is preserved and the user's first app-open will have the deep link data from the original Branch link. To test this, uninstall the app from your device, click the Branch link, and manually launch the app from Xcode. You should be routed to the correct content within your app.
@@ -505,7 +503,7 @@
 
 - ### Create content reference
 
-    - The `Branch Universal Object` encapsulates the thing you want to share
+    - The <notranslate>**Branch Universal Object**</notranslate> encapsulates the thing you want to share
 
     - Uses [Universal Object properties](/links/integrate/#universal-object)
 
@@ -744,7 +742,7 @@
 
 - ### Display
 
-    - List content on `iOS Spotlight`
+    - List content on <notranslate>**iOS Spotlight**</notranslate>
 
     - Needs a [Create content reference](#create-content-reference)
 
@@ -1049,7 +1047,7 @@
 
 - ### Submitting to the App Store
 
-    - Need to select `app uses IDFA or GAID` when publishing your app (for better deep link matching)
+    - Need to select <notranslate>**app uses IDFA or GAID**</notranslate> when publishing your app (for better deep link matching)
 
 - ### App not opening
 

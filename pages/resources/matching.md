@@ -61,9 +61,9 @@ This means that if two users with the same fingerprint, on the same wifi, were t
 First off, you'll need to include the `SafariServices.framework` into your app to leverage this. Currently, as soon as you add the Framework, Branch will start triggering the Safari-based 100% match technique. To add the framework, simply go to your Xcode project:
 
 - Select the right build target
-- Select the `General` tab
-- Scroll down to `Linked Frameworks and Libraries`
-- Click the `+` button
+- Select the <notranslate>**General**</notranslate> tab
+- Scroll down to <notranslate>**Linked Frameworks and Libraries**</notranslate>
+- Click the <notranslate>**+**</notranslate> button
 - Add `SafariServices.framework`
 
 ### Set the matching domain to app.link

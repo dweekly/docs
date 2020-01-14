@@ -79,40 +79,40 @@ The following log topics are available via the Aggregate Export API:
 
 | TUNE Field                    |TUNE Human Readable           |
 |-------------------------------|------------------------------|
-| ad_network_id                 | Ad Network ID                |
-| ad_network.name               | Ad Network Name              |
-| advertiser_id                 | Advertiser ID                |
-| advertiser.name               | Advertiser Name              |
-| advertiser_sub_ad.name        | My Ad Name                   |
-| advertiser_sub_ad.ref         | My Ad Ref                    |
-| advertiser_sub_adgroup.name   | My AdGroup Name              |
-| advertiser_sub_adgroup.ref    | My AdGroup Ref               |
-| advertiser_sub_campaign.name  | My Campaign Name             |
-| advertiser_sub_campaign.ref   | My Campaign Ref              |
-| advertiser_sub_keyword.name   | My Keyword Name              |
-| advertiser_sub_keyword.ref    | My Keyword Ref               |
-| advertiser_sub_placement.name | My Placement Name            |
-| advertiser_sub_placement.ref  | My Placement Ref             |
-| advertiser_sub_publisher.name | My Publisher Name            |
-| advertiser_sub_publisher.ref  | My Publisher Ref             |
-| advertiser_sub_site.name      | My Site Name                 |
-| advertiser_sub_site.ref       | My Site Ref                  |
-| country.code                  | Country Code                 |
-| device_type                   | Device Type                  |
-| publisher_sub_ad.name         | Publisher Sub Ad Name        |
-| publisher_sub_ad.ref          | Publisher Sub Ad Ref         |
-| publisher_sub_adgroup.name    | Publisher Sub AdGroup Name   |
-| publisher_sub_adgroup.ref     | Publisher Sub AdGroup Ref    |
-| publisher_sub_campaign.name   | Publisher Sub Campaign Name  |
-| publisher_sub_campaign.ref    | Publisher Sub Campaign Ref   |
-| publisher_sub_keyword.name    | Publisher Sub Keyword Name   |
-| publisher_sub_placement.name  | Publisher Sub Placement Name |
-| publisher_sub_publisher.name  | Publisher Sub Publisher Name |
-| publisher_sub_site.name       | Publisher Sub Site Name      |
-| site_id                       | Site ID                      |
-| timestamp                     | Timestamp                    |
-| wurfl_device_os               | Device OS                    |
-| wurfl_model_name              | Model Name                   |
+| `ad_network_id`                 | <notranslate>Ad Network ID</notranslate>                |
+| `ad_network.name`               | <notranslate>Ad Network Name</notranslate>              |
+| `advertiser_id`                 | <notranslate>Advertiser ID</notranslate>                |
+| `advertiser.name`               | <notranslate>Advertiser Name</notranslate>              |
+| `advertiser_sub_ad.name`        | <notranslate>My Ad Name</notranslate>                   |
+| `advertiser_sub_ad.ref`         | <notranslate>My Ad Ref</notranslate>                    |
+| `advertiser_sub_adgroup.name`   | <notranslate>My AdGroup Name</notranslate>              |
+| `advertiser_sub_adgroup.ref`    | <notranslate>My AdGroup Ref</notranslate>               |
+| `advertiser_sub_campaign.name`  | <notranslate>My Campaign Name</notranslate>             |
+| `advertiser_sub_campaign.ref`   | <notranslate>My Campaign Ref</notranslate>              |
+| `advertiser_sub_keyword.name`   | <notranslate>My Keyword Name</notranslate>              |
+| `advertiser_sub_keyword.ref`    | <notranslate>My Keyword Ref</notranslate>               |
+| `advertiser_sub_placement.name` | <notranslate>My Placement Name</notranslate>            |
+| `advertiser_sub_placement.ref`  | <notranslate>My Placement Ref</notranslate>             |
+| `advertiser_sub_publisher.name` | <notranslate>My Publisher Name</notranslate>            |
+| `advertiser_sub_publisher.ref`  | <notranslate>My Publisher Ref</notranslate>             |
+| `advertiser_sub_site.name`      | <notranslate>My Site Name</notranslate>                 |
+| `advertiser_sub_site.ref`       | <notranslate>My Site Ref</notranslate>                  |
+| `country.code`                  | <notranslate>Country Code</notranslate>                 |
+| `device_type`                   | <notranslate>Device Type</notranslate>                  |
+| `publisher_sub_ad.name`         | <notranslate>Publisher Sub Ad Name</notranslate>        |
+| `publisher_sub_ad.ref`          | <notranslate>Publisher Sub Ad Ref</notranslate>         |
+| `publisher_sub_adgroup.name`    | <notranslate>Publisher Sub AdGroup Name</notranslate>   |
+| `publisher_sub_adgroup.ref`     | <notranslate>Publisher Sub AdGroup Ref</notranslate>    |
+| `publisher_sub_campaign.name`   | <notranslate>Publisher Sub Campaign Name</notranslate>  |
+| `publisher_sub_campaign.ref`    | <notranslate>Publisher Sub Campaign Ref</notranslate>   |
+| `publisher_sub_keyword.name`    | <notranslate>Publisher Sub Keyword Name</notranslate>   |
+| `publisher_sub_placement.name`  | <notranslate>Publisher Sub Placement Name</notranslate> |
+| `publisher_sub_publisher.name`  | <notranslate>Publisher Sub Publisher Name</notranslate> |
+| `publisher_sub_site.name`       | <notranslate>Publisher Sub Site Name</notranslate>      |
+| `site_id`                       | <notranslate>Site ID</notranslate>                      |
+| `timestamp`                     | <notranslate>Timestamp</notranslate>                    |
+| `wurfl_device_os`               | <notranslate>Device OS</notranslate>                    |
+| `wurfl_model_name`              | <notranslate>Model Name</notranslate>                   |
 
 
 !!! warning "Discontinued Fields"

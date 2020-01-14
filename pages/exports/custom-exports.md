@@ -252,7 +252,7 @@ Optional parameter; results are returned in UTC if not provided.
 
 			curl -X POST 'https://api2.branch.io/v2/logs?organization_id=732662944269095814'
 			-H "Content-Type: application/json"
-			-H "Access-Token: YOUR_ACCESS_TOKEN_HERE"  
+			-H "Access-Token: YOUR_ACCESS_TOKEN_HERE"
 			-d '{"report_type": "eo_open",
 					"limit": 100,
 					"fields": ["app_id","organization_id"],
@@ -341,34 +341,34 @@ Finds and exports requested queue (by handle) and provides URL location for down
 
 |Topic                                                        |Human Readable                                          |
 |-------------------------------------------------------------|--------------------------------------------------------|
-|eo_click_blocked                                             |Blocked Clicks                                          |
-|eo_commerce_event_blocked                                    |Blocked Commerce Events                                 |
-|eo_content_event_blocked                                     |Blocked Content Events                                  |
-|eo_branch_cta_view_blocked                                   |Blocked CTA Views                                       |
-|eo_custom_event_blocked                                      |Blocked Custom Events                                   |
-|eo_impression_blocked                                        |Blocked Impressions                                     |
-|eo_install_blocked                                           |Blocked Installs                                        |
-|eo_open_blocked                                              |Blocked Opens                                           |
-|eo_pageview_blocked                                          |Blocked Pageviews                                       |
-|eo_reinstall_blocked                                         |Blocked Reinstalls                                      |
-|eo_sms_sent_blocked                                          |Blocked SMS Sent                                        |
-|eo_user_lifecycle_event_blocked                              |Blocked User Lifecycle Events                           |
-|eo_web_session_start_blocked                                 |Blocked Web Session Starts                              |
-|eo_click                                                     |Clicks                                                  |
-|eo_commerce_event                                            |Commerce Events                                         |
-|eo_content_event                                             |Content Events                                          |
-|eo_branch_cta_view                                           |CTA Views                                               |
-|eo_custom_event                                              |Custom Events                                           |
-|eo_impression                                                |Impressions                                             |
-|eo_install                                                   |Installs                                                |
-|eo_open                                                      |Opens                                                   |
-|eo_pageview                                                  |Pageviews                                               |
-|webhook2                                                     |Postback Records                                        |
-|eo_reinstall                                                 |Reinstalls                                              |
-|eo_sms_sent                                                  |SMS Sent                                                |
-|eo_user_lifecycle_event                                      |User Lifecycle Events                                   |
-|eo_web_session_start                                         |Web Session Starts                                      |
-|eo_web_to_app_auto_redirect                                  |Web To App Auto Redirects                               |
+| `eo_click_blocked`                                          | <notranslate>**Blocked Clicks**</notranslate>                       |
+| `eo_commerce_event_blocked`                                 | <notranslate>**Blocked Commerce Events**</notranslate>              |
+| `eo_content_event_blocked`                                  | <notranslate>**Blocked Content Events**</notranslate>               |
+| `eo_branch_cta_view_blocked`                                | <notranslate>**Blocked CTA Views**</notranslate>                    |
+| `eo_custom_event_blocked`                                   | <notranslate>**Blocked Custom Events**</notranslate>                |
+| `eo_impression_blocked`                                     | <notranslate>**Blocked Impressions**</notranslate>                  |
+| `eo_install_blocked`                                        | <notranslate>**Blocked Installs**</notranslate>                     |
+| `eo_open_blocked`                                           | <notranslate>**Blocked Opens**</notranslate>                        |
+| `eo_pageview_blocked`                                       | <notranslate>**Blocked Pageviews**</notranslate>                    |
+| `eo_reinstall_blocked`                                      | <notranslate>**Blocked Reinstalls**</notranslate>                   |
+| `eo_sms_sent_blocked`                                       | <notranslate>**Blocked SMS Sent**</notranslate>                     |
+| `eo_user_lifecycle_event_blocked`                           | <notranslate>**Blocked User Lifecycle Events**</notranslate>        |
+| `eo_web_session_start_blocked`                              | <notranslate>**Blocked Web Session Starts**</notranslate>           |
+| `eo_click`                                                  | <notranslate>**Clicks**</notranslate>                               |
+| `eo_commerce_event`                                         | <notranslate>**Commerce Events**</notranslate>                      |
+| `eo_content_event`                                          | <notranslate>**Content Events**</notranslate>                       |
+| `eo_branch_cta_view`                                        | <notranslate>**CTA Views**</notranslate>                            |
+| `eo_custom_event`                                           | <notranslate>**Custom Events**</notranslate>                        |
+| `eo_impression`                                             | <notranslate>**Impressions**</notranslate>                          |
+| `eo_install`                                                | <notranslate>**Installs**</notranslate>                             |
+| `eo_open`                                                   | <notranslate>**Opens**</notranslate>                                |
+| `eo_pageview`                                               | <notranslate>**Pageviews**</notranslate>                            |
+| `webhook2`                                                  | <notranslate>**Postback Records**</notranslate>                     |
+| `eo_reinstall`                                              | <notranslate>**Reinstalls**</notranslate>                           |
+| `eo_sms_sent`                                               | <notranslate>**SMS Sent**</notranslate>                             |
+| `eo_user_lifecycle_event`                                   | <notranslate>**User Lifecycle Events**</notranslate>                |
+| `eo_web_session_start`                                      | <notranslate>**Web Session Starts**</notranslate>                   |
+| `eo_web_to_app_auto_redirect`                               | <notranslate>**Web To App Auto Redirects**</notranslate>            |
 
 ### TUNE Available Topics
 
@@ -387,188 +387,188 @@ Finds and exports requested queue (by handle) and provides URL location for down
 
 | EO field                                                      | Human Readable                              | Type            |
 |---------------------------------------------------------------|---------------------------------------------|-----------------|
-| app_id                                                        | App ID (pls capitalize ID in Liveview)      | Long            |
-| content_items                                                 | Content Items                               | ArrayStruct     |
-| custom_data                                                   | Custom Data                                 | MapStringString |
-| customer_event_alias                                          | Customer Event Alias                        | String          |
-| datasource                                                    | - do not expose in API or UI -              | String          |
-| days_from_last_attributed_touch_to_event                      | Days From Last Attributed Touch To Event    | Integer         |
-| deep_linked                                                   | Deep Linked                                 | Boolean         |
-| di_match_click_token                                          | DI Match Click Token                        | Long            |
-| event_data_affiliation                                        | Affiliation                                 | String          |
-| event_data_coupon                                             | Coupon                                      | String          |
-| event_data_currency                                           | Currency                                    | String          |
-| event_data_description                                        | Event Description                           | String          |
-| event_data_exchange_rate                                      | Exchange Rate                               | Double          |
-| event_data_revenue                                            | Revenue                                     | Double          |
-| event_data_revenue_in_usd                                     | Revenue In USD                              | Double          |
-| event_data_search_query                                       | Search Query                                | String          |
-| event_data_shipping                                           | Shipping                                    | Double          |
-| event_data_tax                                                | Tax                                         | Double          |
-| event_data_transaction_id                                     | Transaction ID                              | String          |
-| event_timestamp                                               | Event Timestamp                             | Long            |
-| existing_user                                                 | Existing User                               | Boolean         |
-| external_intent_uri                                           | External Intent URI                         | String          |
-| first_event_for_user                                          | First Event For User                        | Boolean         |
-| hash_version                                                  | Hash Version                                | String          |
-| hours_from_last_attributed_touch_to_event                     | House From Last Attributed Touch To Event   | Integer         |
-| id                                                            | ID                                          | String          |
-| install_activity_timestamp                                    | Install Timestamp                           | Long            |
-| install_activity_touch_data_advertising_partner_name          | Install Ad Partner                          | String          |
-| last_attributed_touch_data_custom_fields                      | Last Attributed Touch Custom Fields         | String          |
-| last_attributed_touch_data_dollar_3p                          | Ad Partner (3p)                             | String          |
-| last_attributed_touch_data_dollar_fb_data_terms_not_signed    | - do not expose in API or UI -              | Boolean         |
-| last_attributed_touch_data_plus_current_feature               | Current Feature                             | String          |
-| last_attributed_touch_data_tilde_id                           | Last Attributed Touch ID                    | Long            |
-| last_attributed_touch_data_plus_touch_id                      | Last Attributed Touch Touch ID              | String          |
-| last_cta_view_data_tilde_id                                   | Last CTA View ID                            | Long            |
-| last_cta_view_data_plus_touch_id                              | Last CTA View Touch ID                      | String          |
-| last_attributed_touch_data_plus_via_features                  | Via Features                                | ArrayString     |
-| last_attributed_touch_data_plus_web_format                    | Web Format                                  | String          |
-| last_attributed_touch_data_tilde_ad_id                        | Ad ID                                       | String          |
-| last_attributed_touch_data_tilde_ad_name                      | Ad Name                                     | String          |
-| last_attributed_touch_data_tilde_ad_set_id                    | Ad Set ID                                   | String          |
-| last_attributed_touch_data_tilde_ad_set_name                  | Ad Set Name                                 | String          |
-| last_attributed_touch_data_tilde_advertising_partner_id       | Ad Partner ID                               | String          |
-| last_attributed_touch_data_tilde_advertising_partner_name     | Ad Partner                                  | String          |
-| last_attributed_touch_data_tilde_agency                       | Agency                                      | String          |
-| last_attributed_touch_data_tilde_agency_id                    | Agency ID                                   | String          |
-| last_attributed_touch_data_tilde_banner_dimensions            | Banner Dimensions                           | String          |
-| last_attributed_touch_data_tilde_branch_ad_format             | Branch Ad Format                            | String          |
-| last_attributed_touch_data_tilde_campaign                     | Campaign                                    | String          |
-| last_attributed_touch_data_tilde_campaign_id                  | Campaign ID                                 | String          |
-| last_attributed_touch_data_tilde_campaign_type                | Campaign Type                               | String          |
-| last_attributed_touch_data_tilde_channel                      | Channel                                     | String          |
-| last_attributed_touch_data_tilde_creative_name                | Creative Name                               | String          |
-| last_attributed_touch_data_tilde_creative_id                  | Creative ID                                 | String          |
-| last_attributed_touch_data_tilde_customer_ad_name             | Customer Ad Name                            | String          |
-| last_attributed_touch_data_tilde_customer_campaign            | Customer Campaign                           | String          |
-| last_attributed_touch_data_tilde_customer_keyword             | Customer Keyword                            | String          |
-| last_attributed_touch_data_tilde_customer_placement           | Customer Placement                          | String          |
-| last_attributed_touch_data_tilde_customer_secondary_publisher | Customer Secondary Publisher                | String          |
-| last_attributed_touch_data_tilde_customer_sub_site_name       | Customer Sub Site Name                      | String          |
-| last_attributed_touch_data_tilde_external_touch_id            | External Touch ID                           | String          |
-| last_attributed_touch_data_tilde_feature                      | Feature                                     | String          |
-| last_attributed_touch_data_tilde_journey_id                   | Journey ID                                  | String          |
-| last_attributed_touch_data_tilde_journey_name                 | Journey Name                                | String          |
-| last_attributed_touch_data_tilde_keyword                      | Keyword                                     | String          |
-| last_attributed_touch_data_tilde_keyword_id                   | Keyword ID                                  | String          |
-| last_attributed_touch_data_tilde_optimization_model           | Optimization Model                          | String          |
-| last_attributed_touch_data_tilde_placement                    | Placement                                   | String          |
-| last_attributed_touch_data_tilde_placement_id                 | Placement ID                                | String          |
-| last_attributed_touch_data_tilde_secondary_ad_format          | Secondary Ad Format                         | String          |
-| last_attributed_touch_data_tilde_secondary_publisher          | Secondary Publisher                         | String          |
-| last_attributed_touch_data_tilde_secondary_publisher_id       | Secondary Publisher ID                      | String          |
-| last_attributed_touch_data_tilde_stage                        | Stage                                       | String          |
-| last_attributed_touch_data_tilde_sub_site_name                | Sub Site Name                               | String          |
-| last_attributed_touch_data_tilde_tags                         | Tags                                        | ArrayString     |
-| last_attributed_touch_data_tilde_technology_partner           | Technology Partner                          | String          |
-| last_attributed_touch_data_tilde_tilde_customer_ad_set_name   | Customer Ad Set Name                        | String          |
-| last_attributed_touch_data_tilde_tune_publisher_id            | TUNE Publisher ID                           | Long            |
-| last_attributed_touch_data_tilde_tune_publisher_name          | TUNE Publisher Name                         | String          |
-| last_attributed_touch_data_tilde_view_id                      | View ID                                     | String          |
-| last_attributed_touch_data_tilde_view_name                    | View Name                                   | String          |
-| last_attributed_touch_timestamp                               | Last Attributed Touch Timestamp             | Long            |
-| last_attributed_touch_timestamp_iso                           | Last Attributed Touch Timestamp (ISO)       | String          |
-| last_attributed_touch_type                                    | Last Attributed Touch Type                  | String          |
-| last_cta_view_data_custom_fields                              | Last CTA View Custom Fields                 | String          |
-| last_cta_view_data_dollar_3p                                  | Last CTA View Ad Partner (3p)               | String          |
-| last_cta_view_data_plus_via_features                          | Last CTA View Via Features                  | ArrayString     |
-| last_cta_view_data_plus_web_format                            | Last CTA View Web Format                    | String          |
-| last_cta_view_data_tilde_ad_id                                | Last CTA View Ad ID                         | String          |
-| last_cta_view_data_tilde_ad_name                              | Last CTA View Ad Name                       | String          |
-| last_cta_view_data_tilde_ad_set_id                            | Last CTA View Ad Set ID                     | String          |
-| last_cta_view_data_tilde_ad_set_name                          | Last CTA View Ad Set Name                   | String          |
-| last_cta_view_data_tilde_advertising_partner_name             | Last CTA View Ad Partner                    | String          |
-| last_cta_view_data_tilde_agency                               | Last CTA View Agency                        | String          |
-| last_cta_view_data_tilde_banner_dimensions                    | Last CTA View Banner Dimensions             | String          |
-| last_cta_view_data_tilde_branch_ad_format                     | Last CTA View Branch Ad Format              | String          |
-| last_cta_view_data_tilde_campaign                             | Last CTA View Campaign                      | String          |
-| last_cta_view_data_tilde_campaign_id                          | Last CTA View Campaign ID                   | String          |
-| last_cta_view_data_tilde_campaign_type                        | Last CTA View Campaign Type                 | String          |
-| last_cta_view_data_tilde_channel                              | Last CTA View Channel                       | String          |
-| last_cta_view_data_tilde_creative_id                          | Last CTA View Creative ID                   | String          |
-| last_cta_view_data_tilde_creative_name                        | Last CTA View Creative Name                 | String          |
-| last_cta_view_data_tilde_external_touch_id                    | Last CTA View External Touch ID             | Long            |
-| last_cta_view_data_tilde_feature                              | Last CTA View Feature                       | String          |
-| last_cta_view_data_tilde_keyword_id                           | Last CTA View Keyword ID                    | String          |
-| last_cta_view_data_tilde_optimization_model                   | Last CTA View Optimization Model            | String          |
-| last_cta_view_data_tilde_placement                            | Last CTA View Placement                     | String          |
-| last_cta_view_data_tilde_secondary_ad_format                  | Last CTA View Secondary Ad Format           | String          |
-| last_cta_view_data_tilde_secondary_publisher                  | Last CTA View Secondary Publisher           | String          |
-| last_cta_view_data_tilde_stage                                | Last CTA View Stage                         | String          |
-| last_cta_view_data_tilde_tags                                 | Last CTA View Tags                          | ArrayString     |
-| last_cta_view_data_tilde_technology_partner                   | Last CTA View Technology Partner            | String          |
-| last_cta_view_timestamp                                       | Last CTA View Timestamp                     | Long            |
-| last_cta_view_timestamp_iso                                   | Last CTA View Timestamp (ISO)               | String          |
-| minutes_from_last_attributed_touch_to_event                   | Minutes From Last Attributed Touch To Event | Integer         |
-| name                                                          | Name                                        | String          |
-| organization_id                                               | Organization ID                             | Long            |
-| organization_name                                             | Organization Name                           | String          |
-| origin                                                        | Origin                                      | String          |
-| reengagement_activity_attributed                              | Reengagement Activity Attributed            | Boolean         |
-| referrer_click_timestamp                                      | Referrer Click Timestamp                    | Long            |
-| seconds_from_last_attributed_touch_to_event                   | Seconds From Last Attributed Touch To Event | Integer         |
-| site_event_items_count                                        | Content Items Count                         | Integer         |
-| site_event_name                                               | ?? isn't this customer_event_alias?         | String          |
-| store_install_begin_timestamp                                 | Store Install Begin Timestamp               | Long            |
-| timestamp                                                     | Timestamp                                   | Long            |
-| timestamp_iso                                                 | Timestamp (ISO)                             | String          |
-| tune_fired_webhook                                            | - do not expose in API or UI -              | Boolean         |
-| tune_site_event_id                                            | TUNE Site Event ID                          | Long            |
-| tune_site_id                                                  | TUNE Site ID                                | Long            |
-| tune_site_name                                                | TUNE Site Name                              | String          |
-| user_data_aaid                                                | AAID                                        | String          |
-| user_data_android_id                                          | Android ID                                  | String          |
-| user_data_app_package_name                                    | App Package Name                            | String          |
-| user_data_app_version                                         | App Version                                 | String          |
-| user_data_brand                                               | Brand                                       | String          |
-| user_data_browser                                             | Browser                                     | String          |
-| user_data_build                                               | Build                                       | String          |
-| user_data_cpu_type                                            | CPU Type                                    | String          |
-| user_data_cross_platform_id                                   | Cross Platform ID                           | String          |
-| user_data_developer_identity                                  | Developer Identity                          | String          |
-| user_data_device_type                                         | Device Type                                 | String          |
-| user_data_environment                                         | Environment                                 | String          |
-| user_data_geo_city_code                                       | City Code                                   | Integer         |
-| user_data_geo_city_en                                         | City                                        | Integer         |
-| user_data_geo_country_code                                    | Country Code                                | String          |
-| user_data_geo_country_en                                      | Country                                     | String          |
-| user_data_geo_dma_code                                        | DMA Code                                    | Integer         |
-| user_data_geo_lat                                             | Latitude                                    | Float           |
-| user_data_geo_lon                                             | Longitude                                   | Float           |
-| user_data_geo_postal_code                                     | Postal Code                                 | String          |
-| user_data_http_referrer                                       | HTTP Referrer                               | String          |
-| user_data_idfa                                                | IDFA                                        | String          |
-| user_data_idfv                                                | IDFV                                        | String          |
-| user_data_installer_package_name                              | Installer Package Name                      | String          |
-| user_data_internet_connection_type                            | Internet Connection Type                    | String          |
-| user_data_ip                                                  | IP Address                                  | String          |
-| user_data_is_coppa                                            | - do not expose in API or UI -              | Boolean         |
-| user_data_is_jailbroken                                       | Is Jailbroken                               | Boolean         |
-| user_data_kindle_id                                           | Kindle ID                                   | String          |
-| user_data_language                                            | Language                                    | String          |
-| user_data_limit_ad_tracking                                   | Limit Ad Tracking                           | Boolean         |
-| user_data_limit_facebook_tracking                             | - do not expose in API or UI -              | Boolean         |
-| user_data_model                                               | Model                                       | String          |
-| user_data_os                                                  | OS                                          | String          |
-| user_data_os_version                                          | OS Version                                  | String          |
-| user_data_os_version_android                                  | OS Version (Android)                        | String          |
-| user_data_past_cross_platform_ids                             | Past Cross Platforms IDs                    | ArrayString     |
-| user_data_platform                                            | Platform                                    | String          |
-| user_data_prob_cross_platform_ids                             | Probabilistic Cross Platform IDs            | ArrayStruct     |
-| user_data_screen_height                                       | Screen Height                               | Integer         |
-| user_data_screen_width                                        | Screen Width                                | Integer         |
-| user_data_sdk_version                                         | SDK Version                                 | String          |
-| user_data_tune_mat_id                                         | TUNE MAT ID                                 | String          |
-| user_data_user_agent                                          | User Agent                                  | String          |
-| user_data_windows_aid                                         | Windows AID                                 | String          |
-| user_data_device_locale                                       | Device Locale                               | String          |
-| user_data_carrier_name                                        | Carrier Name                                | String          |
-| seconds_from_last_attributed_touch_to_store_install_begin     | Seconds From Touch To Store Install Begin   | Integer         |
-| seconds_from_install_to_event                                 | Seconds From Install To Event               | Integer         |
-| last_attributed_touch_data_tilde_advertising_account_id       | Advertising Account ID                      | String          |
-| last_attributed_touch_data_tilde_advertising_account_name     | Advertising Account Name                    | String          |
+| `app_id`                                                      | <notranslate>App ID (pls capitalize ID in Liveview</notranslate>)      | `Long`            |
+| `content_items`                                               | <notranslate>Content Items</notranslate>                               | `ArrayStruct`     |
+| `custom_data`                                                 | <notranslate>Custom Data</notranslate>                                 | `MapStringString` |
+| `customer_event_alias`                                        | <notranslate>Customer Event Alias</notranslate>                        | `String`          |
+| `datasource`                                                  | <notranslate>- do not expose in API or UI -</notranslate>              | `String`          |
+| `days_from_last_attributed_touch_to_event`                    | <notranslate>Days From Last Attributed Touch To Event</notranslate>    | `Integer`         |
+| `deep_linked`                                                 | <notranslate>Deep Linked</notranslate>                                 | `Boolean`         |
+| `di_match_click_token`                                        | <notranslate>DI Match Click Token</notranslate>                        | `Long`            |
+| `event_data_affiliation`                                      | <notranslate>Affiliation</notranslate>                                 | `String`          |
+| `event_data_coupon`                                           | <notranslate>Coupon</notranslate>                                      | `String`          |
+| `event_data_currency`                                         | <notranslate>Currency</notranslate>                                    | `String`          |
+| `event_data_description`                                      | <notranslate>Event Description</notranslate>                           | `String`          |
+| `event_data_exchange_rate`                                    | <notranslate>Exchange Rate</notranslate>                               | `Double`          |
+| `event_data_revenue`                                          | <notranslate>Revenue</notranslate>                                     | `Double`          |
+| `event_data_revenue_in_usd`                                   | <notranslate>Revenue In USD</notranslate>                              | `Double`          |
+| `event_data_search_query`                                     | <notranslate>Search Query</notranslate>                                | `String`          |
+| `event_data_shipping`                                         | <notranslate>Shipping</notranslate>                                    | `Double`          |
+| `event_data_tax`                                              | <notranslate>Tax</notranslate>                                         | `Double`          |
+| `event_data_transaction_id`                                   | <notranslate>Transaction ID</notranslate>                              | `String`          |
+| `event_timestamp`                                             | <notranslate>Event Timestamp</notranslate>                             | `Long`            |
+| `existing_user`                                               | <notranslate>Existing User</notranslate>                               | `Boolean`         |
+| `external_intent_uri`                                         | <notranslate>External Intent URI</notranslate>                         | `String`          |
+| `first_event_for_user`                                        | <notranslate>First Event For User</notranslate>                        | `Boolean`         |
+| `hash_version`                                                | <notranslate>Hash Version</notranslate>                                | `String`          |
+| `hours_from_last_attributed_touch_to_event`                   | <notranslate>House From Last Attributed Touch To Event</notranslate>   | `Integer`         |
+| `id`                                                          | <notranslate>ID</notranslate>                                          | `String`          |
+| `install_activity_timestamp`                                  | <notranslate>Install Timestamp</notranslate>                           | `Long`            |
+| `install_activity_touch_data_advertising_partner_name`        | <notranslate>Install Ad Partner</notranslate>                          | `String`          |
+| `last_attributed_touch_data_custom_fields`                    | <notranslate>Last Attributed Touch Custom Fields</notranslate>         | `String`          |
+| `last_attributed_touch_data_dollar_3p`                        | <notranslate>Ad Partner (3p</notranslate>)                             | `String`          |
+| `last_attributed_touch_data_dollar_fb_data_terms_not_signed`  | <notranslate>- do not expose in API or UI -</notranslate>              | `Boolean`         |
+| `last_attributed_touch_data_plus_current_feature`             | <notranslate>Current Feature</notranslate>                             | `String`          |
+| `last_attributed_touch_data_tilde_id`                         | <notranslate>Last Attributed Touch ID</notranslate>                    | `Long`            |
+| `last_attributed_touch_data_plus_touch_id`                    | <notranslate>Last Attributed Touch Touch ID</notranslate>              | `String`          |
+| `last_cta_view_data_tilde_id`                                 | <notranslate>Last CTA View ID</notranslate>                            | `Long`            |
+| `last_cta_view_data_plus_touch_id`                            | <notranslate>Last CTA View Touch ID</notranslate>                      | `String`          |
+| `last_attributed_touch_data_plus_via_features`                | <notranslate>Via Features</notranslate>                                | `ArrayString`     |
+| `last_attributed_touch_data_plus_web_format`                  | <notranslate>Web Format</notranslate>                                  | `String`          |
+| `last_attributed_touch_data_tilde_ad_id`                      | <notranslate>Ad ID</notranslate>                                       | `String`          |
+| `last_attributed_touch_data_tilde_ad_name`                    | <notranslate>Ad Name</notranslate>                                     | `String`          |
+| `last_attributed_touch_data_tilde_ad_set_id`                  | <notranslate>Ad Set ID</notranslate>                                   | `String`          |
+| `last_attributed_touch_data_tilde_ad_set_name`                | <notranslate>Ad Set Name</notranslate>                                 | `String`          |
+| `last_attributed_touch_data_tilde_advertising_partner_id`     | <notranslate>Ad Partner ID</notranslate>                               | `String`          |
+| `last_attributed_touch_data_tilde_advertising_partner_name`   | <notranslate>Ad Partner</notranslate>                                  | `String`          |
+| `last_attributed_touch_data_tilde_agency`                     | <notranslate>Agency</notranslate>                                      | `String`          |
+| `last_attributed_touch_data_tilde_agency_id`                  | <notranslate>Agency ID</notranslate>                                   | `String`          |
+| `last_attributed_touch_data_tilde_banner_dimensions`          | <notranslate>Banner Dimensions</notranslate>                           | `String`          |
+| `last_attributed_touch_data_tilde_branch_ad_format`           | <notranslate>Branch Ad Format</notranslate>                            | `String`          |
+| `last_attributed_touch_data_tilde_campaign`                   | <notranslate>Campaign</notranslate>                                    | `String`          |
+| `last_attributed_touch_data_tilde_campaign_id`                | <notranslate>Campaign ID</notranslate>                                 | `String`          |
+| `last_attributed_touch_data_tilde_campaign_type`              | <notranslate>Campaign Type</notranslate>                               | `String`          |
+| `last_attributed_touch_data_tilde_channel`                    | <notranslate>Channel</notranslate>                                     | `String`          |
+| `last_attributed_touch_data_tilde_creative_name`              | <notranslate>Creative Name</notranslate>                               | `String`          |
+| `last_attributed_touch_data_tilde_creative_id`                | <notranslate>Creative ID</notranslate>                                 | `String`          |
+| `last_attributed_touch_data_tilde_customer_ad_name`           | <notranslate>Customer Ad Name</notranslate>                            | `String`          |
+| `last_attributed_touch_data_tilde_customer_campaign`          | <notranslate>Customer Campaign</notranslate>                           | `String`          |
+| `last_attributed_touch_data_tilde_customer_keyword`           | <notranslate>Customer Keyword</notranslate>                            | `String`          |
+| `last_attributed_touch_data_tilde_customer_placement`         | <notranslate>Customer Placement</notranslate>                          | `String`          |
+| `last_attributed_touch_data_tilde_customer_secondary_publisher` <notranslate>Customer Secondary Publisher</notranslate>                | `String`          |
+| `last_attributed_touch_data_tilde_customer_sub_site_name`     | <notranslate>Customer Sub Site Name</notranslate>                      | `String`          |
+| `last_attributed_touch_data_tilde_external_touch_id`          | <notranslate>External Touch ID</notranslate>                           | `String`          |
+| `last_attributed_touch_data_tilde_feature`                    | <notranslate>Feature</notranslate>                                     | `String`          |
+| `last_attributed_touch_data_tilde_journey_id`                 | <notranslate>Journey ID</notranslate>                                  | `String`          |
+| `last_attributed_touch_data_tilde_journey_name`               | <notranslate>Journey Name</notranslate>                                | `String`          |
+| `last_attributed_touch_data_tilde_keyword`                    | <notranslate>Keyword</notranslate>                                     | `String`          |
+| `last_attributed_touch_data_tilde_keyword_id`                 | <notranslate>Keyword ID</notranslate>                                  | `String`          |
+| `last_attributed_touch_data_tilde_optimization_model`         | <notranslate>Optimization Model</notranslate>                          | `String`          |
+| `last_attributed_touch_data_tilde_placement`                  | <notranslate>Placement</notranslate>                                   | `String`          |
+| `last_attributed_touch_data_tilde_placement_id`               | <notranslate>Placement ID</notranslate>                                | `String`          |
+| `last_attributed_touch_data_tilde_secondary_ad_format`        | <notranslate>Secondary Ad Format</notranslate>                         | `String`          |
+| `last_attributed_touch_data_tilde_secondary_publisher`        | <notranslate>Secondary Publisher</notranslate>                         | `String`          |
+| `last_attributed_touch_data_tilde_secondary_publisher_id`     | <notranslate>Secondary Publisher ID</notranslate>                      | `String`          |
+| `last_attributed_touch_data_tilde_stage`                      | <notranslate>Stage</notranslate>                                       | `String`          |
+| `last_attributed_touch_data_tilde_sub_site_name`              | <notranslate>Sub Site Name</notranslate>                               | `String`          |
+| `last_attributed_touch_data_tilde_tags`                       | <notranslate>Tags</notranslate>                                        | `ArrayString`     |
+| `last_attributed_touch_data_tilde_technology_partner`         | <notranslate>Technology Partner</notranslate>                          | `String`          |
+| `last_attributed_touch_data_tilde_tilde_customer_ad_set_name` | <notranslate>Customer Ad Set Name</notranslate>                        | `String`          |
+| `last_attributed_touch_data_tilde_tune_publisher_id`          | <notranslate>TUNE Publisher ID</notranslate>                           | `Long`            |
+| `last_attributed_touch_data_tilde_tune_publisher_name`        | <notranslate>TUNE Publisher Name</notranslate>                         | `String`          |
+| `last_attributed_touch_data_tilde_view_id`                    | <notranslate>View ID</notranslate>                                     | `String`          |
+| `last_attributed_touch_data_tilde_view_name`                  | <notranslate>View Name</notranslate>                                   | `String`          |
+| `last_attributed_touch_timestamp`                             | <notranslate>Last Attributed Touch Timestamp</notranslate>             | `Long`            |
+| `last_attributed_touch_timestamp_iso`                         | <notranslate>Last Attributed Touch Timestamp (ISO</notranslate>)       | `String`          |
+| `last_attributed_touch_type`                                  | <notranslate>Last Attributed Touch Type</notranslate>                  | `String`          |
+| `last_cta_view_data_custom_fields`                            | <notranslate>Last CTA View Custom Fields</notranslate>                 | `String`          |
+| `last_cta_view_data_dollar_3p`                                | <notranslate>Last CTA View Ad Partner (3p</notranslate>)               | `String`          |
+| `last_cta_view_data_plus_via_features`                        | <notranslate>Last CTA View Via Features</notranslate>                  | `ArrayString`     |
+| `last_cta_view_data_plus_web_format`                          | <notranslate>Last CTA View Web Format</notranslate>                    | `String`          |
+| `last_cta_view_data_tilde_ad_id`                              | <notranslate>Last CTA View Ad ID</notranslate>                         | `String`          |
+| `last_cta_view_data_tilde_ad_name`                            | <notranslate>Last CTA View Ad Name</notranslate>                       | `String`          |
+| `last_cta_view_data_tilde_ad_set_id`                          | <notranslate>Last CTA View Ad Set ID</notranslate>                     | `String`          |
+| `last_cta_view_data_tilde_ad_set_name`                        | <notranslate>Last CTA View Ad Set Name</notranslate>                   | `String`          |
+| `last_cta_view_data_tilde_advertising_partner_name`           | <notranslate>Last CTA View Ad Partner</notranslate>                    | `String`          |
+| `last_cta_view_data_tilde_agency`                             | <notranslate>Last CTA View Agency</notranslate>                        | `String`          |
+| `last_cta_view_data_tilde_banner_dimensions`                  | <notranslate>Last CTA View Banner Dimensions</notranslate>             | `String`          |
+| `last_cta_view_data_tilde_branch_ad_format`                   | <notranslate>Last CTA View Branch Ad Format</notranslate>              | `String`          |
+| `last_cta_view_data_tilde_campaign`                           | <notranslate>Last CTA View Campaign</notranslate>                      | `String`          |
+| `last_cta_view_data_tilde_campaign_id`                        | <notranslate>Last CTA View Campaign ID</notranslate>                   | `String`          |
+| `last_cta_view_data_tilde_campaign_type`                      | <notranslate>Last CTA View Campaign Type</notranslate>                 | `String`          |
+| `last_cta_view_data_tilde_channel`                            | <notranslate>Last CTA View Channel</notranslate>                       | `String`          |
+| `last_cta_view_data_tilde_creative_id`                        | <notranslate>Last CTA View Creative ID</notranslate>                   | `String`          |
+| `last_cta_view_data_tilde_creative_name`                      | <notranslate>Last CTA View Creative Name</notranslate>                 | `String`          |
+| `last_cta_view_data_tilde_external_touch_id`                  | <notranslate>Last CTA View External Touch ID</notranslate>             | `Long`            |
+| `last_cta_view_data_tilde_feature`                            | <notranslate>Last CTA View Feature</notranslate>                       | `String`          |
+| `last_cta_view_data_tilde_keyword_id`                         | <notranslate>Last CTA View Keyword ID</notranslate>                    | `String`          |
+| `last_cta_view_data_tilde_optimization_model`                 | <notranslate>Last CTA View Optimization Model</notranslate>            | `String`          |
+| `last_cta_view_data_tilde_placement`                          | <notranslate>Last CTA View Placement</notranslate>                     | `String`          |
+| `last_cta_view_data_tilde_secondary_ad_format`                | <notranslate>Last CTA View Secondary Ad Format</notranslate>           | `String`          |
+| `last_cta_view_data_tilde_secondary_publisher`                | <notranslate>Last CTA View Secondary Publisher</notranslate>           | `String`          |
+| `last_cta_view_data_tilde_stage`                              | <notranslate>Last CTA View Stage</notranslate>                         | `String`          |
+| `last_cta_view_data_tilde_tags`                               | <notranslate>Last CTA View Tags</notranslate>                          | `ArrayString`     |
+| `last_cta_view_data_tilde_technology_partner`                 | <notranslate>Last CTA View Technology Partner</notranslate>            | `String`          |
+| `last_cta_view_timestamp`                                     | <notranslate>Last CTA View Timestamp</notranslate>                     | `Long`            |
+| `last_cta_view_timestamp_iso`                                 | <notranslate>Last CTA View Timestamp (ISO</notranslate>)               | `String`          |
+| `minutes_from_last_attributed_touch_to_event`                 | <notranslate>Minutes From Last Attributed Touch To Event</notranslate> | `Integer`         |
+| `name`                                                        | <notranslate>Name</notranslate>                                        | `String`          |
+| `organization_id`                                             | <notranslate>Organization ID</notranslate>                             | `Long`            |
+| `organization_name`                                           | <notranslate>Organization Name</notranslate>                           | `String`          |
+| `origin`                                                      | <notranslate>Origin</notranslate>                                      | `String`          |
+| `reengagement_activity_attributed`                            | <notranslate>Reengagement Activity Attributed</notranslate>            | `Boolean`         |
+| `referrer_click_timestamp`                                    | <notranslate>Referrer Click Timestamp</notranslate>                    | `Long`            |
+| `seconds_from_last_attributed_touch_to_event`                 | <notranslate>Seconds From Last Attributed Touch To Event</notranslate> | `Integer`         |
+| `site_event_items_count`                                      | <notranslate>Content Items Count</notranslate>                         | `Integer`         |
+| `site_event_name`                                             | <notranslate>?? isn't this customer_event_alias</notranslate>?         | `String`          |
+| `store_install_begin_timestamp`                               | <notranslate>Store Install Begin Timestamp</notranslate>               | `Long`            |
+| `timestamp`                                                   | <notranslate>Timestamp</notranslate>                                   | `Long`            |
+| `timestamp_iso`                                               | <notranslate>Timestamp (ISO</notranslate>)                             | `String`          |
+| `tune_fired_webhook`                                          | <notranslate>- do not expose in API or UI -</notranslate>              | `Boolean`         |
+| `tune_site_event_id`                                          | <notranslate>TUNE Site Event ID</notranslate>                          | `Long`            |
+| `tune_site_id`                                                | <notranslate>TUNE Site ID</notranslate>                                | `Long`            |
+| `tune_site_name`                                              | <notranslate>TUNE Site Name</notranslate>                              | `String`          |
+| `user_data_aaid`                                              | <notranslate>AAID</notranslate>                                        | `String`          |
+| `user_data_android_id`                                        | <notranslate>Android ID</notranslate>                                  | `String`          |
+| `user_data_app_package_name`                                  | <notranslate>App Package Name</notranslate>                            | `String`          |
+| `user_data_app_version`                                       | <notranslate>App Version</notranslate>                                 | `String`          |
+| `user_data_brand`                                             | <notranslate>Brand</notranslate>                                       | `String`          |
+| `user_data_browser`                                           | <notranslate>Browser</notranslate>                                     | `String`          |
+| `user_data_build`                                             | <notranslate>Build</notranslate>                                       | `String`          |
+| `user_data_cpu_type`                                          | <notranslate>CPU Type</notranslate>                                    | `String`          |
+| `user_data_cross_platform_id`                                 | <notranslate>Cross Platform ID</notranslate>                           | `String`          |
+| `user_data_developer_identity`                                | <notranslate>Developer Identity</notranslate>                          | `String`          |
+| `user_data_device_type`                                       | <notranslate>Device Type</notranslate>                                 | `String`          |
+| `user_data_environment`                                       | <notranslate>Environment</notranslate>                                 | `String`          |
+| `user_data_geo_city_code`                                     | <notranslate>City Code</notranslate>                                   | `Integer`         |
+| `user_data_geo_city_en`                                       | <notranslate>City</notranslate>                                        | `Integer`         |
+| `user_data_geo_country_code`                                  | <notranslate>Country Code</notranslate>                                | `String`          |
+| `user_data_geo_country_en`                                    | <notranslate>Country</notranslate>                                     | `String`          |
+| `user_data_geo_dma_code`                                      | <notranslate>DMA Code</notranslate>                                    | `Integer`         |
+| `user_data_geo_lat`                                           | <notranslate>Latitude</notranslate>                                    | `Float`           |
+| `user_data_geo_lon`                                           | <notranslate>Longitude</notranslate>                                   | `Float`           |
+| `user_data_geo_postal_code`                                   | <notranslate>Postal Code</notranslate>                                 | `String`          |
+| `user_data_http_referrer`                                     | <notranslate>HTTP Referrer</notranslate>                               | `String`          |
+| `user_data_idfa`                                              | <notranslate>IDFA</notranslate>                                        | `String`          |
+| `user_data_idfv`                                              | <notranslate>IDFV</notranslate>                                        | `String`          |
+| `user_data_installer_package_name`                            | <notranslate>Installer Package Name</notranslate>                      | `String`          |
+| `user_data_internet_connection_type`                          | <notranslate>Internet Connection Type</notranslate>                    | `String`          |
+| `user_data_ip`                                                | <notranslate>IP Address</notranslate>                                  | `String`          |
+| `user_data_is_coppa`                                          | <notranslate>- do not expose in API or UI -</notranslate>              | `Boolean`         |
+| `user_data_is_jailbroken`                                     | <notranslate>Is Jailbroken</notranslate>                               | `Boolean`         |
+| `user_data_kindle_id`                                         | <notranslate>Kindle ID</notranslate>                                   | `String`          |
+| `user_data_language`                                          | <notranslate>Language</notranslate>                                    | `String`          |
+| `user_data_limit_ad_tracking`                                 | <notranslate>Limit Ad Tracking</notranslate>                           | `Boolean`         |
+| `user_data_limit_facebook_tracking`                           | <notranslate>- do not expose in API or UI -</notranslate>              | `Boolean`         |
+| `user_data_model`                                             | <notranslate>Model</notranslate>                                       | `String`          |
+| `user_data_os`                                                | <notranslate>OS</notranslate>                                          | `String`          |
+| `user_data_os_version`                                        | <notranslate>OS Version</notranslate>                                  | `String`          |
+| `user_data_os_version_android`                                | <notranslate>OS Version (Android</notranslate>)                        | `String`          |
+| `user_data_past_cross_platform_ids`                           | <notranslate>Past Cross Platforms IDs</notranslate>                    | `ArrayString`     |
+| `user_data_platform`                                          | <notranslate>Platform</notranslate>                                    | `String`          |
+| `user_data_prob_cross_platform_ids`                           | <notranslate>Probabilistic Cross Platform IDs</notranslate>            | `ArrayStruct`     |
+| `user_data_screen_height`                                     | <notranslate>Screen Height</notranslate>                               | `Integer`         |
+| `user_data_screen_width`                                      | <notranslate>Screen Width</notranslate>                                | `Integer`         |
+| `user_data_sdk_version`                                       | <notranslate>SDK Version</notranslate>                                 | `String`          |
+| `user_data_tune_mat_id`                                       | <notranslate>TUNE MAT ID</notranslate>                                 | `String`          |
+| `user_data_user_agent`                                        | <notranslate>User Agent</notranslate>                                  | `String`          |
+| `user_data_windows_aid`                                       | <notranslate>Windows AID</notranslate>                                 | `String`          |
+| `user_data_device_locale`                                     | <notranslate>Device Locale</notranslate>                               | `String`          |
+| `user_data_carrier_name`                                      | <notranslate>Carrier Name</notranslate>                                | `String`          |
+| `seconds_from_last_attributed_touch_to_store_install_begin`   | <notranslate>Seconds From Touch To Store Install Begin</notranslate>   | `Integer`         |
+| `seconds_from_install_to_event`                               | <notranslate>Seconds From Install To Event</notranslate>               | `Integer`         |
+| `last_attributed_touch_data_tilde_advertising_account_id`     | <notranslate>Advertising Account ID</notranslate>                      | `String`          |
+| `last_attributed_touch_data_tilde_advertising_account_name`   | <notranslate>Advertising Account Name</notranslate>                    | `String`          |
 
 ### TUNE Available Fields
 
@@ -584,126 +584,126 @@ Finds and exports requested queue (by handle) and provides URL location for down
 
 | TUNE Field                                                     | TUNE Human Readable                        |
 |----------------------------------------------------------------|--------------------------------------------|
-|ad_network_id                                                   | Ad Network ID                              |
-|ad_network_name                                                 | Ad Network Name                            |
-|advertiser_id                                                   | Advertiser ID                              |
-|advertiser_name                                                 | Advertiser Name                            |
-|advertiser_opt_out                                              | Advertiser Opt Out                         |
-|advertiser_ref_id                                               | Advertiser Ref ID                          |
-|advertiser_sub_ad_name                                          | My Ad Name                                 |
-|advertiser_sub_ad_ref                                           | My Ad Ref                                  |
-|advertiser_sub_adgroup_name                                     | My Adgroup Name                            |
-|advertiser_sub_adgroup_ref                                      | My Adgroup Ref                             |
-|advertiser_sub_campaign_name                                    | My Campaign Name                           |
-|advertiser_sub_campaign_ref                                     | My Campaign Ref                            |
-|advertiser_sub_keyword_name                                     | My Keyword Name                            |
-|advertiser_sub_keyword_ref                                      | My Keyword Ref                             |
-|advertiser_sub_placement_name                                   | My Placement Name                          |
-|advertiser_sub_placement_ref                                    | My Placement Ref                           |
-|advertiser_sub_publisher_name                                   | My Publisher Name                          |
-|advertiser_sub_publisher_ref                                    | My Publisher Ref                           |
-|advertiser_sub_site_name                                        | My Site Name                               |
-|advertiser_sub_site_ref                                         | My Site Ref                                |
-|agency_id                                                       | Agency ID                                  |
-|agency_name                                                     | Agency Name                                |
-|app_version                                                     | App Version                                |
-|attribute_sub1                                                  | Attribute Sub1                             |
-|attribute_sub2                                                  | Attribute Sub2                             |
-|attribute_sub3                                                  | Attribute Sub3                             |
-|attribute_sub4                                                  | Attribute Sub4                             |
-|attribute_sub5                                                  | Attribute Sub5                             |
-|branch_app_id                                                   | Branch App ID                              |
-|click_created                                                   | Click Created                              |
-|country_code                                                    | Country Code                               |
-|country_name                                                    | Country Name                               |
-|created                                                         | Created                                    |
-|currency_code                                                   | Currency Code                              |
-|device_brand                                                    | Device Brand                               |
-|device_carrier                                                  | Device Carrier                             |
-|device_ip                                                       | Device IP                                  |
-|device_model                                                    | Device Model                               |
-|device_type                                                     | Device Type                                |
-|download_date                                                   | Download Date                              |
-|event_type                                                      | Event Type                                 |
-|existing_user                                                   | Existing User                              |
-|google_ad_tracking                                              | Google Ad Tracking Enabled                 |
-|google_aid                                                      | Google Advertising ID                      |
-|id                                                              | ID                                         |
-|impression_created                                              | Impression Created                         |
-|install_created                                                 | Install Created                            |
-|install_date                                                    | Install Date                               |
-|install_publisher_name                                          | Install Publisher Name                     |
-|ios_ad_tracking                                                 | iOS Ad Tracking Enabled                    |
-|ios_ifa                                                         | iOS IDFA                                   |
-|ios_ifv                                                         | iOS IDFV                                   |
-|ip                                                              | IP                                         |
-|is_view_through                                                 | Is View Through                            |
-|language                                                        | Language                                   |
-|latitude                                                        | Latitude                                   |
-|longitude                                                       | Longitude                                  |
-|mat_id                                                          | Mat ID                                     |
-|metro_code                                                      | Metro Code                                 |
-|os_id                                                           | OS ID                                      |
-|os_jailbroke                                                    | Jailbroken                                 |
-|os_version                                                      | OS Version                                 |
-|package_name                                                    | Package Name                               |
-|platform_aid                                                    | Platform AID                               |
-|postal_code                                                     | Postal Code                                |
-|publisher_adgroup_id                                            | Publisher Adgroup ID                       |
-|publisher_click_id                                              | Publisher Click ID                         |
-|publisher_id                                                    | Publisher ID                               |
-|publisher_name                                                  | Publisher Name                             |
-|publisher_ref_id                                                | Publisher Ref ID                           |
-|publisher_sub_ad_id                                             | Publisher Sub Ad ID                        |
-|publisher_sub_ad_name                                           | Publisher Sub Ad Name                      |
-|publisher_sub_ad_ref                                            | Publisher Sub Ad Ref                       |
-|publisher_sub_adgroup_name                                      | Publisher Sub Adgroup Name                 |
-|publisher_sub_adgroup_ref                                       | Publisher Sub Adgroup Ref                  |
-|publisher_sub_campaign_id                                       | Publisher Sub Campaign ID                  |
-|publisher_sub_campaign_name                                     | Publisher Sub Campaign Name                |
-|publisher_sub_campaign_ref                                      | Publisher Sub Campaign Ref                 |
-|publisher_sub_channel                                           | Publisher Sub Channel                      |
-|publisher_sub_feature                                           | Publisher Sub Feature                      |
-|publisher_sub_keyword_id                                        | Publisher Sub Keyword ID                   |
-|publisher_sub_keyword_name                                      | Publisher Sub Keyword Name                 |
-|publisher_sub_keyword_ref                                       | Publisher Sub Keyword Ref                  |
-|publisher_sub_placement_id                                      | Publisher Sub Placement ID                 |
-|publisher_sub_placement_name                                    | Publisher Sub Placement Name               |
-|publisher_sub_placement_ref                                     | Publisher Sub Placement Ref                |
-|publisher_sub_publisher_id                                      | Publisher Sub Publisher ID                 |
-|publisher_sub_publisher_name                                    | Publisher Sub Publisher Name               |
-|publisher_sub_publisher_ref                                     | Publisher Sub Publisher Ref                |
-|publisher_sub_site_name                                         | Publisher Sub Site Name                    |
-|publisher_sub1                                                  | Publisher Sub1                             |
-|publisher_sub2                                                  | Publisher Sub2                             |
-|publisher_sub3                                                  | Publisher Sub3                             |
-|publisher_sub4                                                  | Publisher Sub4                             |
-|publisher_sub5                                                  | Publisher Sub5                             |
-|publisher_sub_stage                                             | Publisher Sub Stage                        |
-|publisher_sub_tags                                              | Publisher Sub Tags                         |
-|region_name                                                     | Region Name                                |
-|revenue                                                         | Revenue                                    |
-|revenue_usd                                                     | Revenue USD                                |
-|sdk                                                             | SDK                                        |
-|sdk_version                                                     | SDK Version                                |
-|search_string                                                   | Search String                              |
-|session_datetime                                                | Session Datetime                           |
-|site_event_id                                                   | Site Event ID                              |
-|site_event_name                                                 | Site Event Name                            |
-|site_event_type                                                 | Site Event Type                            |
-|site_id                                                         | Site ID                                    |
-|site_name                                                       | Site Name                                  |
-|stat_click_id                                                   | Click ID                                   |
-|stat_impression_id                                              | Impression ID                              |
-|transaction_id                                                  | Transaction ID                             |
-|user_agent                                                      | User Agent                                 |
-|user_id                                                         | User ID                                    |
-|windows_aid                                                     | Windows Advertising ID                     |
-|wurfl_brand_name                                                | Brand Name                                 |
-|wurfl_device_os                                                 | Device OS                                  |
-|wurfl_device_os_version                                         | Device OS Version                          |
-|wurfl_model_name                                                | Model Name                                 |
-|branch_app_id                                                   | Branch App ID                              |
+| `ad_network_id`                                                | <notranslate>Ad Network ID</notranslate>                              |
+| `ad_network_name`                                              | <notranslate>Ad Network Name</notranslate>                            |
+| `advertiser_id`                                                | <notranslate>Advertiser ID</notranslate>                              |
+| `advertiser_name`                                              | <notranslate>Advertiser Name</notranslate>                            |
+| `advertiser_opt_out`                                           | <notranslate>Advertiser Opt Out</notranslate>                         |
+| `advertiser_ref_id`                                            | <notranslate>Advertiser Ref ID</notranslate>                          |
+| `advertiser_sub_ad_name`                                       | <notranslate>My Ad Name</notranslate>                                 |
+| `advertiser_sub_ad_ref`                                        | <notranslate>My Ad Ref</notranslate>                                  |
+| `advertiser_sub_adgroup_name`                                  | <notranslate>My Adgroup Name</notranslate>                            |
+| `advertiser_sub_adgroup_ref`                                   | <notranslate>My Adgroup Ref</notranslate>                             |
+| `advertiser_sub_campaign_name`                                 | <notranslate>My Campaign Name</notranslate>                           |
+| `advertiser_sub_campaign_ref`                                  | <notranslate>My Campaign Ref</notranslate>                            |
+| `advertiser_sub_keyword_name`                                  | <notranslate>My Keyword Name</notranslate>                            |
+| `advertiser_sub_keyword_ref`                                   | <notranslate>My Keyword Ref</notranslate>                             |
+| `advertiser_sub_placement_name`                                | <notranslate>My Placement Name</notranslate>                          |
+| `advertiser_sub_placement_ref`                                 | <notranslate>My Placement Ref</notranslate>                           |
+| `advertiser_sub_publisher_name`                                | <notranslate>My Publisher Name</notranslate>                          |
+| `advertiser_sub_publisher_ref`                                 | <notranslate>My Publisher Ref</notranslate>                           |
+| `advertiser_sub_site_name`                                     | <notranslate>My Site Name</notranslate>                               |
+| `advertiser_sub_site_ref`                                      | <notranslate>My Site Ref</notranslate>                                |
+| `agency_id`                                                    | <notranslate>Agency ID</notranslate>                                  |
+| `agency_name`                                                  | <notranslate>Agency Name</notranslate>                                |
+| `app_version`                                                  | <notranslate>App Version</notranslate>                                |
+| `attribute_sub1`                                               | <notranslate>Attribute Sub1</notranslate>                             |
+| `attribute_sub2`                                               | <notranslate>Attribute Sub2</notranslate>                             |
+| `attribute_sub3`                                               | <notranslate>Attribute Sub3</notranslate>                             |
+| `attribute_sub4`                                               | <notranslate>Attribute Sub4</notranslate>                             |
+| `attribute_sub5`                                               | <notranslate>Attribute Sub5</notranslate>                             |
+| `branch_app_id`                                                | <notranslate>Branch App ID</notranslate>                              |
+| `click_created`                                                | <notranslate>Click Created</notranslate>                              |
+| `country_code`                                                 | <notranslate>Country Code</notranslate>                               |
+| `country_name`                                                 | <notranslate>Country Name</notranslate>                               |
+| `created`                                                      | <notranslate>Created</notranslate>                                    |
+| `currency_code`                                                | <notranslate>Currency Code</notranslate>                              |
+| `device_brand`                                                 | <notranslate>Device Brand</notranslate>                               |
+| `device_carrier`                                               | <notranslate>Device Carrier</notranslate>                             |
+| `device_ip`                                                    | <notranslate>Device IP</notranslate>                                  |
+| `device_model`                                                 | <notranslate>Device Model</notranslate>                               |
+| `device_type`                                                  | <notranslate>Device Type</notranslate>                                |
+| `download_date`                                                | <notranslate>Download Date</notranslate>                              |
+| `event_type`                                                   | <notranslate>Event Type</notranslate>                                 |
+| `existing_user`                                                | <notranslate>Existing User</notranslate>                              |
+| `google_ad_tracking`                                           | <notranslate>Google Ad Tracking Enabled</notranslate>                 |
+| `google_aid`                                                   | <notranslate>Google Advertising ID</notranslate>                      |
+| `id`                                                           | <notranslate>ID</notranslate>                                         |
+| `impression_created`                                           | <notranslate>Impression Created</notranslate>                         |
+| `install_created`                                              | <notranslate>Install Created</notranslate>                            |
+| `install_date`                                                 | <notranslate>Install Date</notranslate>                               |
+| `install_publisher_name`                                       | <notranslate>Install Publisher Name</notranslate>                     |
+| `ios_ad_tracking`                                              | <notranslate>iOS Ad Tracking Enabled</notranslate>                    |
+| `ios_ifa`                                                      | <notranslate>iOS IDFA</notranslate>                                   |
+| `ios_ifv`                                                      | <notranslate>iOS IDFV</notranslate>                                   |
+| `ip`                                                           | <notranslate>IP</notranslate>                                         |
+| `is_view_through`                                              | <notranslate>Is View Through</notranslate>                            |
+| `language`                                                     | <notranslate>Language</notranslate>                                   |
+| `latitude`                                                     | <notranslate>Latitude</notranslate>                                   |
+| `longitude`                                                    | <notranslate>Longitude</notranslate>                                  |
+| `mat_id`                                                       | <notranslate>Mat ID</notranslate>                                     |
+| `metro_code`                                                   | <notranslate>Metro Code</notranslate>                                 |
+| `os_id`                                                        | <notranslate>OS ID</notranslate>                                      |
+| `os_jailbroke`                                                 | <notranslate>Jailbroken</notranslate>                                 |
+| `os_version`                                                   | <notranslate>OS Version</notranslate>                                 |
+| `package_name`                                                 | <notranslate>Package Name</notranslate>                               |
+| `platform_aid`                                                 | <notranslate>Platform AID</notranslate>                               |
+| `postal_code`                                                  | <notranslate>Postal Code</notranslate>                                |
+| `publisher_adgroup_id`                                         | <notranslate>Publisher Adgroup ID</notranslate>                       |
+| `publisher_click_id`                                           | <notranslate>Publisher Click ID</notranslate>                         |
+| `publisher_id`                                                 | <notranslate>Publisher ID</notranslate>                               |
+| `publisher_name`                                               | <notranslate>Publisher Name</notranslate>                             |
+| `publisher_ref_id`                                             | <notranslate>Publisher Ref ID</notranslate>                           |
+| `publisher_sub_ad_id`                                          | <notranslate>Publisher Sub Ad ID</notranslate>                        |
+| `publisher_sub_ad_name`                                        | <notranslate>Publisher Sub Ad Name</notranslate>                      |
+| `publisher_sub_ad_ref`                                         | <notranslate>Publisher Sub Ad Ref</notranslate>                       |
+| `publisher_sub_adgroup_name`                                   | <notranslate>Publisher Sub Adgroup Name</notranslate>                 |
+| `publisher_sub_adgroup_ref`                                    | <notranslate>Publisher Sub Adgroup Ref</notranslate>                  |
+| `publisher_sub_campaign_id`                                    | <notranslate>Publisher Sub Campaign ID</notranslate>                  |
+| `publisher_sub_campaign_name`                                  | <notranslate>Publisher Sub Campaign Name</notranslate>                |
+| `publisher_sub_campaign_ref`                                   | <notranslate>Publisher Sub Campaign Ref</notranslate>                 |
+| `publisher_sub_channel`                                        | <notranslate>Publisher Sub Channel</notranslate>                      |
+| `publisher_sub_feature`                                        | <notranslate>Publisher Sub Feature</notranslate>                      |
+| `publisher_sub_keyword_id`                                     | <notranslate>Publisher Sub Keyword ID</notranslate>                   |
+| `publisher_sub_keyword_name`                                   | <notranslate>Publisher Sub Keyword Name</notranslate>                 |
+| `publisher_sub_keyword_ref`                                    | <notranslate>Publisher Sub Keyword Ref</notranslate>                  |
+| `publisher_sub_placement_id`                                   | <notranslate>Publisher Sub Placement ID</notranslate>                 |
+| `publisher_sub_placement_name`                                 | <notranslate>Publisher Sub Placement Name</notranslate>               |
+| `publisher_sub_placement_ref`                                  | <notranslate>Publisher Sub Placement Ref</notranslate>                |
+| `publisher_sub_publisher_id`                                   | <notranslate>Publisher Sub Publisher ID</notranslate>                 |
+| `publisher_sub_publisher_name`                                 | <notranslate>Publisher Sub Publisher Name</notranslate>               |
+| `publisher_sub_publisher_ref`                                  | <notranslate>Publisher Sub Publisher Ref</notranslate>                |
+| `publisher_sub_site_name`                                      | <notranslate>Publisher Sub Site Name</notranslate>                    |
+| `publisher_sub1`                                               | <notranslate>Publisher Sub1</notranslate>                             |
+| `publisher_sub2`                                               | <notranslate>Publisher Sub2</notranslate>                             |
+| `publisher_sub3`                                               | <notranslate>Publisher Sub3</notranslate>                             |
+| `publisher_sub4`                                               | <notranslate>Publisher Sub4</notranslate>                             |
+| `publisher_sub5`                                               | <notranslate>Publisher Sub5</notranslate>                             |
+| `publisher_sub_stage`                                          | <notranslate>Publisher Sub Stage</notranslate>                        |
+| `publisher_sub_tags`                                           | <notranslate>Publisher Sub Tags</notranslate>                         |
+| `region_name`                                                  | <notranslate>Region Name</notranslate>                                |
+| `revenue`                                                      | <notranslate>Revenue</notranslate>                                    |
+| `revenue_usd`                                                  | <notranslate>Revenue USD</notranslate>                                |
+| `sdk`                                                          | <notranslate>SDK</notranslate>                                        |
+| `sdk_version`                                                  | <notranslate>SDK Version</notranslate>                                |
+| `search_string`                                                | <notranslate>Search String</notranslate>                              |
+| `session_datetime`                                             | <notranslate>Session Datetime</notranslate>                           |
+| `site_event_id`                                                | <notranslate>Site Event ID</notranslate>                              |
+| `site_event_name`                                              | <notranslate>Site Event Name</notranslate>                            |
+| `site_event_type`                                              | <notranslate>Site Event Type</notranslate>                            |
+| `site_id`                                                      | <notranslate>Site ID</notranslate>                                    |
+| `site_name`                                                    | <notranslate>Site Name</notranslate>                                  |
+| `stat_click_id`                                                | <notranslate>Click ID</notranslate>                                   |
+| `stat_impression_id`                                           | <notranslate>Impression ID</notranslate>                              |
+| `transaction_id`                                               | <notranslate>Transaction ID</notranslate>                             |
+| `user_agent`                                                   | <notranslate>User Agent</notranslate>                                 |
+| `user_id`                                                      | <notranslate>User ID</notranslate>                                    |
+| `windows_aid`                                                  | <notranslate>Windows Advertising ID</notranslate>                     |
+| `wurfl_brand_name`                                             | <notranslate>Brand Name</notranslate>                                 |
+| `wurfl_device_os`                                              | <notranslate>Device OS</notranslate>                                  |
+| `wurfl_device_os_version`                                      | <notranslate>Device OS Version</notranslate>                          |
+| `wurfl_model_name`                                             | <notranslate>Model Name</notranslate>                                 |
+| `branch_app_id`                                                | <notranslate>Branch App ID</notranslate>                              |
 
 #### Field Value Changes
 

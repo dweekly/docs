@@ -73,7 +73,7 @@ In most cases, the default postback URL generated from your selections is suffic
 But sometimes you may need/want to edit or remove a parameter from the postback URL, or append a macro expression/variable to include additional information.
 
 !!! tip "Example"
-	You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current `Add to Cart` postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template.
+	You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current <notranslate>**Add to Cart**</notranslate> postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template.
 
 Please refer to [Postback Macros & Functions](#postback-macros-functions) when looking to append additional macros.
 
@@ -148,15 +148,15 @@ To create a filter:
 2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
 3. Hover on the three dots icon to the right of the postback and click <notranslate>**Advanced Edit**</notranslate>.
 4. Click the <notranslate>**Add Filter**</notranslate> button.
-5. Select the metadata you'd like to filter on. For advanced filtering, choose "Custom"
+5. Select the metadata you'd like to filter on. For advanced filtering, choose <notranslate>"Custom"</notranslate>
 6. Type in the key that you'd like to filter on. To find the key you'd like to filter on, reference our quick introduction to the [People-Based Attribution's data format](https://docs.branch.io/exports/ua-webhooks/#data-format) to figure out where your key is likely nested. Another foolproof way to find your key is looking at your data in full before setting up your filter. You can do this by doing a [CSV export](https://dashboard.branch.io/data-import-export/csv-exports), [API export](https://docs.branch.io/exports/api-v3/) or send a single postback with a POST body, and locate your key in that POST body.
-7. Unless your key is part of the top level data (e.g. <notranslate>**timestamp**</notranslate> or <notranslate>**id**</notranslate>), it will likely be nested one level deep. Most keys will be of the format <notranslate>**object_name.key**</notranslate>. For example, if you want to filter for a custom key in deep link data called "product_deeplink_id", that would take the form <notranslate>**last_attributed_touch_data.product_deeplink_id**</notranslate>.
+7. Unless your key is part of the top level data (e.g. <notranslate>**timestamp**</notranslate> or <notranslate>**id**</notranslate>), it will likely be nested one level deep. Most keys will be of the format <notranslate>**object_name.key**</notranslate>. For example, if you want to filter for a custom key in deep link data called <notranslate>"product_deeplink_id"</notranslate>, that would take the form <notranslate>**last_attributed_touch_data.product_deeplink_id**</notranslate>.
 
-Let’s say you’re interested in receiving a postback for every <notranslate>**Purchase**</notranslate> event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for "coupon"](https://docs.branch.io/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](https://docs.branch.io/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a postback only when <notranslate>**coupon**</notranslate> is equal to <notranslate>**HOLIDAYS**</notranslate> you will:
+Let’s say you’re interested in receiving a postback for every <notranslate>**Purchase**</notranslate> event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for <notranslate>"coupon"</notranslate>](https://docs.branch.io/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](https://docs.branch.io/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a postback only when <notranslate>**coupon**</notranslate> is equal to <notranslate>**HOLIDAYS**</notranslate> you will:
 
-1. Select "Custom" from the filter key dropdown
+1. Select <notranslate>"Custom"</notranslate> from the filter key dropdown
 2. Make the key <notranslate>**event_data.coupon**</notranslate>
-3. Select "equals" on the equivalency dropdown
+3. Select <notranslate>"equals"</notranslate> on the equivalency dropdown
 4. Enter a value of <notranslate>**HOLIDAYS**</notranslate>
 
 ![image](/_assets/img/pages/partner-management/postback-custom-filter.gif)

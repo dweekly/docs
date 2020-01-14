@@ -9,7 +9,7 @@ Branch makes it simple to enable Universal Links all while greatly improving on 
 ### Enable Universal Links on the Branch dashboard
 
 1. Navigate to [Link Settings](https://dashboard.branch.io/link-settings) in the Branch Dashboard.
-1. Check the box to `Enable Universal Links` from iOS redirects.
+1. Check the box to <notranslate>**Enable Universal Links**</notranslate> from iOS redirects.
 1. Type in your App’s Bundle Identifier.
 1. Type in your Apple App Prefix (found by clicking your app on [this page](https://developer.apple.com/account/ios/identifier/bundle) in Apple's Developer Portal).
 1. Scroll down and click on the `Save` button.
@@ -32,7 +32,7 @@ Branch makes it simple to enable Universal Links all while greatly improving on 
 ### Add your Branch link domains
 
 1. Go to the [Link Settings](https://dashboard.branch.io/link-settings) page on the dashboard.
-1. Scroll down to the `Link Domain` area.
+1. Scroll down to the <notranslate>**Link Domain**</notranslate> area.
 1. Copy your domain name.![image](/_assets/img/pages/deep-linking/universal-links/subdomain-setting.png)
 1. In the `Domains` section, click the `+` icon and add the following entries: (making sure that `xxxx` matches the subdomain prefix you've been assigned or selected for yourself)
 	* `applinks:xxxx.app.link`

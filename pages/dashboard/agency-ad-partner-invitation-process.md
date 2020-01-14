@@ -14,7 +14,7 @@ Once a Branch client has invited you to access their Branch app data, an email i
 
 ### New User
 
-If you've used the Branch dashboard before, you will be prompted to `Reset Your Password` before being automatically logged into the dashboard.
+If you've used the Branch dashboard before, you will be prompted to <notranslate>**Reset Your Password**</notranslate> before being automatically logged into the dashboard.
 
 ### Existing User
 

@@ -108,7 +108,7 @@ You have now successfully created the deep linking script. Your file structure s
 
 ##### Configure your Responsys email templates
 
-This code is referred to as the "Branch script" - this script will convert your web URLs to deep links.
+This code is referred to as the <notranslate>"Branch script"</notranslate> - this script will convert your web URLs to deep links.
 
 The Responsys integration requires you to add email template code in two places.
 

@@ -107,7 +107,7 @@ If you are generating AMP pages programmatically, it makes sense to generate the
 
 You can customize the appearance of a Journey dynamically using query parameters on your `amp-iframe` link. These are the fields currently supported for dynamic layout customization on AMP:
 
-| <notranslate>**Link Data Key**</notranslate> | <notranslate>**Value**</notranslate> | <notranslate>**Example**</notranslate> |
+| **Link Data Key** | **Value** | **Example** |
 | ---: | --- | --- |
 | `$journeys_button_get_has_app` | The call to action button when the app is currently installed | `$journeys_button_get_has_app=Download` |
 | `$journeys_button_get_no_app` | The call to action button when the app is **not** currently installed | `$journeys_button_get_no_app=Read` |

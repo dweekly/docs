@@ -26,7 +26,7 @@ You must add Apple's <notranslate>**iAd.framework**</notranslate> and <notransla
 #### Enable Apple Search Ads Check
 
 !!! info "Branch iOS SDK v0.30.0"
-    As of v0.30.0, the Branch iOS SDK supports new logic that increases wait time for Apple Search Ads to respond with the payload, as well as ignore Apple's test data.  
+    As of v0.30.0, the Branch iOS SDK supports new logic that increases wait time for Apple Search Ads to respond with the payload, as well as ignore Apple's test data.
 
 To enable this check, add a `delayInitToCheckForSearchAds` call to your <notranslate>**AppDelegate.m**</notranslate> (or <notranslate>**AppDelegate.swift**</notranslate>) file after you create the Branch singleton, but *before* you call `initSession`. Your code will end up looking something like this:
 
@@ -111,7 +111,7 @@ Please refer to Apple Search Ads developer documentation on how to [make request
 
 ### Cost Data Support
 
-#### "Next" button not clickable
+#### <notranslate>"Next"</notranslate> button not clickable
 
 Please ensure you've both selected the correct files *and* pressed the blue upload arrows to complete your upload.
 
@@ -136,11 +136,11 @@ Branch receives and maps the following parameters from the Apple Search Ads Attr
 
 | Apple Search Ads Parameter | Branch Mapped Field                           |
 |----------------------------|-----------------------------------------------|
-| iad-campaign-name          | last_attributed_touch_data_tilde_campaign     |
-| iad-campaign-id            | last_attributed_touch_data_tilde_campaign_id  |
-| iad-adgroup-name           | last_attributed_touch_data_tilde_ad_set_name  |
-| iad-adgroup-id             | last_attributed_touch_data_tilde_ad_set_id    |
-| iad-keyword                | last_attributed_touch_data_tilde_keyword      |
+| `iad-campaign-name`          | `last_attributed_touch_data_tilde_campaign`     |
+| `iad-campaign-id`            | `last_attributed_touch_data_tilde_campaign_id`  |
+| `iad-adgroup-name`           | `last_attributed_touch_data_tilde_ad_set_name`  |
+| `iad-adgroup-id`             | `last_attributed_touch_data_tilde_ad_set_id`    |
+| `iad-keyword`                | `last_attributed_touch_data_tilde_keyword`      |
 
 ## View Attribution on Dashboard
 
@@ -189,4 +189,4 @@ Since this integration doesn't utilize Branch links, options for deep linking ar
 
 ### Installs or conversion events appearing without keywords in Branch dashboard
 
-There are "Keyword" and "Search Match" match sources for Apple Search Ads. The Search Match feature automatically matches your ad to relevant user searches on the App Store, rather than a rubric of preassigned keywords. Installs attributed to Search Matches do not have keywords associated with them. Search Match can be enabled & disabled at the Ad Group level in the Apple Search Ads dashboard.
+There are <notranslate>"Keyword"</notranslate> and <notranslate>"Search Match"</notranslate> match sources for Apple Search Ads. The Search Match feature automatically matches your ad to relevant user searches on the App Store, rather than a rubric of preassigned keywords. Installs attributed to Search Matches do not have keywords associated with them. Search Match can be enabled & disabled at the Ad Group level in the Apple Search Ads dashboard.

@@ -60,9 +60,9 @@ The most popular filter options are available in a dropdown. This should help yo
 To create a filter:
 
 1. Click the <notranslate>**Add Filter**</notranslate> button
-1. Select the metadata you'd like to filter on. For example, if you only want <notranslate>**iOS**</notranslate> installs, select "Operating System" from the dropdown. You'll see the text field to the right populate with the correct key. When doing advanced filtering later you will select "Custom" and manually set this key.
-1. Select "equals" or "does not equal" from next dropdown.
-1. Finally, set the <notranslate>**value**</notranslate> of the key that you'd like to filter in or out. For example, if you want iOS installs, you'll have set up "equals" and "IOS" in the dropdowns. In this example, the robots filter is redundant, so let's remove it using the minus button.
+1. Select the metadata you'd like to filter on. For example, if you only want <notranslate>**iOS**</notranslate> installs, select "Operating System" from the dropdown. You'll see the text field to the right populate with the correct key. When doing advanced filtering later you will select <notranslate>"Custom"</notranslate> and manually set this key.
+1. Select <notranslate>"equals"</notranslate> or <notranslate>"does not equal"</notranslate> from next dropdown.
+1. Finally, set the <notranslate>**value**</notranslate> of the key that you'd like to filter in or out. For example, if you want iOS installs, you'll have set up "equals" and <notranslate>"IOS"</notranslate> in the dropdowns. In this example, the robots filter is redundant, so let's remove it using the minus button.
 
 This should be your final view before saving:
 
@@ -110,13 +110,13 @@ To test whether your webhook is configured correctly, you can use [RequestBin](h
 
 Setting up Advanced Filters or Freemarker macros requires an understanding of the Event Ontology data format. Before diving into the schema, you should understand some high level concepts about event metadata structure:
 
-- Each event has top level fields, such as "name" and "id" that are not nested
-- Link data is generally nested in "Last Attributed Touch Data"
-- User data (including device and OS data) is nested in "User Data"
-- Product or content level data is nested in "Content Items"
-- Transaction and generic content data is nested in "Event Data"
-- Journeys or Deepviews view data (e.g. Journey banners loads, not clicks) is "Last CTA View Data"
-- Client-specified custom data (e.g. internal fields your company requires on specific events) is nested in "Custom Data"
+- Each event has top level fields, such as "name" and <notranslate>"id"</notranslate> that are not nested
+- Link data is generally nested in <notranslate>"Last Attributed Touch Data"</notranslate>
+- User data (including device and OS data) is nested in <notranslate>"User Data"</notranslate>
+- Product or content level data is nested in <notranslate>"Content Items"</notranslate>
+- Transaction and generic content data is nested in <notranslate>"Event Data"</notranslate>
+- Journeys or Deepviews view data (e.g. Journey banners loads, not clicks) is <notranslate>"Last CTA View Data"</notranslate>
+- Client-specified custom data (e.g. internal fields your company requires on specific events) is nested in <notranslate>"Custom Data"</notranslate>
 
 !!! info "Full List of Available Postback Macros"
     To find a complete list of Branch supported postback macros, please see [Postback Macros & Functions](/resources/postback-macros-and-functions/).
@@ -223,9 +223,9 @@ Make sure you've taken a look at the [data format](#data-format) before you atte
 To create a filter:
 
 1. Click the <notranslate>**Add Filter**</notranslate> button
-1. Select the metadata you'd like to filter on. For advanced filtering, choose "Custom"
+1. Select the metadata you'd like to filter on. For advanced filtering, choose <notranslate>"Custom"</notranslate>
 1. Type in the key that you'd like to filter on. To find the key you'd like to filter on, reference our quick introduction to the [People-Based Attribution's data format](#data-format) to figure out where your key is likely nested. Another foolproof way to find your key is looking at your data in full before setting up your filter. You can do this by doing a [CSV export](https://dashboard.branch.io/data-import-export/csv-exports), [API export](/exports/api-v3/) or send a single webhook with a POST body, and locate your key in that POST body.
-1. Unless your key is part of the top level data (e.g. <notranslate>**timestamp**</notranslate> or <notranslate>**id**</notranslate>), it will likely be nested one level deep. Most keys will be of the format <notranslate>**object_name.key**</notranslate>. For example, if you want to filter for a custom key in deep link data called "product_deeplink_id", that would take the form <notranslate>**last_attributed_touch_data.product_deeplink_id**</notranslate>.
+1. Unless your key is part of the top level data (e.g. <notranslate>**timestamp**</notranslate> or <notranslate>**id**</notranslate>), it will likely be nested one level deep. Most keys will be of the format <notranslate>**object_name.key**</notranslate>. For example, if you want to filter for a custom key in deep link data called <notranslate>"product_deeplink_id"</notranslate>, that would take the form <notranslate>**last_attributed_touch_data.product_deeplink_id**</notranslate>.
 
 !!! note "Example: Filtering purchases for a specific coupon"
 	Let’s say you’re interested in receiving a webhook for every <notranslate>**Purchase**</notranslate> event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for "coupon"](/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a webhook only when <notranslate>**coupon**</notranslate> is equal to <notranslate>**SUMMERDEALS10**</notranslate> you will:

@@ -98,7 +98,7 @@ The simplest way to test your integration is working end to end is to open your 
 
 1. Create a Branch Quick Link at [https://dashboard.branch.io/quick-links](https://dashboard.branch.io/quick-links){:target="\_blank"}.
 1. Click that Branch link to open your app.
-1. In your Branch dashboard, verify you see the open event show as a "referred session" with a "session referring link URL" in your Branch dashboard under "Liveview > Events"
+1. In your Branch dashboard, verify you see the open event show as a <notranslate>"referred session"</notranslate> with a <notranslate>"session referring link URL"</notranslate> in your Branch dashboard under <notranslate>"Liveview > Events"</notranslate>
 
 #### Screenshots of where data should appear in the CleverTap Dashboard
 

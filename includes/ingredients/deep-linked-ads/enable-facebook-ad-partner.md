@@ -11,7 +11,7 @@ If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow 
 
 1. Search for <notranslate>**Facebook**</notranslate>.
 
-1. Click `Connect With Facebook`
+1. Click <notranslate>**Connect With Facebook**</notranslate>
 
     ![Connect with Facebook](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
 
@@ -54,6 +54,6 @@ If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow 
 
     ![complete](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
 
-1. Finally, to create a Facebook Ads link click the `Create Facebook Link` button in the top right hand corner.
+1. Finally, to create a Facebook Ads link click the <notranslate>**Create Facebook Link**</notranslate> button in the top right hand corner.
 
     ![Create Facebook Ad Link](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)

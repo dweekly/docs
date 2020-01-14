@@ -1,4 +1,4 @@
-The "App" level of a Branch account is the third level of access and includes access (either edit or read-only) to the following functionality:
+The <notranslate>"App"</notranslate> level of a Branch account is the third level of access and includes access (either edit or read-only) to the following functionality:
 
 <table>
   <tr>
@@ -168,7 +168,7 @@ This selector allows you to control how and when Branch uses URI schemes to open
 - Enabling App Links
     - Starting with Android 6.0 (API level 23) and higher allow an app to designate itself as the default handler of a given type of link. App Links will open URLs directly into an app, rather than the usual Link -> Browser -> App handoff cycle. This requires some set up, but we do this for you. We need your sha256_cert_fingerprints.
     - Generate a SHA256 Cert Fingerprint
-        - Navigate to your `keystore file` (used to build the debug and production version of your APK file before it gets deployed)
+        - Navigate to your <notranslate>**keystore file**</notranslate> (used to build the debug and production version of your APK file before it gets deployed)
         - Run `keytool -list -v -keystore my-release-key.keystore` to generate a fingerprint
         - Example fingerprint `AA:C9:D9:A5:E9:76:3E:51:1B:FB:35:00:06:9B:56:AC:FB:A6:28:CE:F3:D6:65:38:18:E3:9C:63:94:FB:D2:C1` to add to your [Branch Dashboard](https://dashboard.branch.io/link-settings)
 
@@ -236,9 +236,9 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 ![image](/_assets/img/pages/dashboard/access-levels/link-domain.png)
 
-- Choose a `link domain` which will be used for all your links
-- The `link domain` is the website which hosts your deep links
-- The `link domain` is not a deep link
+- Choose a <notranslate>**link domain**</notranslate> which will be used for all your links
+- The <notranslate>**link domain**</notranslate> is the website which hosts your deep links
+- The <notranslate>**link domain**</notranslate> is not a deep link
     - Deep links have an `alias` behind them to uniquely identify the link data inside them
         - e.g. https://example.app.link/VZsTctoINF
         - e.g. https://example.app.link/custom-alias
@@ -263,11 +263,11 @@ If you choose to delete your app, this will be a permanent change. Note the foll
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
 
-- `Deep Linking Duration` refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
+- <notranslate>**Deep Linking Duration**</notranslate> refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
 
-- `Click to x` refers to events that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
+- <notranslate>**Click to x**</notranslate> refers to events that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
 
-- `Impression to x` refers to events that occur after someone views a Branch impression link. Measured in days.
+- <notranslate>**Impression to x**</notranslate> refers to events that occur after someone views a Branch impression link. Measured in days.
 
 - `Re-engagement Inactivity` defines the period between two events that a user must be inactive in order to define the later event as a re-engagement. Used in re-engagement cohort analysis but not activity analysis.
 

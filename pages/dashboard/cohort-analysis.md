@@ -82,25 +82,25 @@ Show measures include important KPIs and metrics which you can use to hone in on
 
 | Measure           | Description                                                                                                           |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Add Payment Info  | Add Payment Info events                                                                                               |
-| Add to Cart       | Add to Cart events                                                                                                    |
-| Add to Wishlist   | Add to Wishlist events                                                                                                |
-| ARPPU              | Average revenue per paying user; Ads Channel only                                                                            |
-| ARPU              | Average revenue per user; Ads Channel only                                                                            |
-| Cost              | Total cost; Ads Channel only                                                                                          |
-| eCPA              | Effective cost per purchase; Ads Channel only                                                                         |
-| eCPI              | Effective cost per install. The total cost of the campaign divided by the number of installs driven; Ads Channel only |
-| Gross Profit      | Amount; Ads Channel only                                                                                              |
-| Initiate Purchase | Initiate Purchase events                                                                                              |
-| Opens             | Open events                                                                                                           |
-| Purchase          | Purchase events
-| Retention           | The ability of a product or service to retain its existing customers, with retention rates measuring the ratio of customers who are devoted and “stay” (those who keep using and supporting your app) to the total number of customers who installed your app.                                                                                                       |
-| Revenue           | Revenue for commerce events                                                                                           |
-| ROAS              | Return on Ad Spend. Revenue as a percentage of cost (will need this to compare for cohorts); Ads Channel only         |
-| ROI               | Return on investment. Profit as a percentage of cost; Ads Channel only                                                |
-| Spend Credits     | Spend Credits events                                                                                                  |
-| Users             | The total number of unique users for each compare by in your cohort. Accessible in Table View only.                   |
-| View Cart         | View Cart events                                                                                                      |
+| <notranslate>**Add Payment Info**</notranslate> | Add Payment Info events                                                                                               |
+| <notranslate>**Add to Cart**</notranslate>       | Add to Cart events                                                                                                    |
+| <notranslate>**Add to Wishlist**</notranslate>   | Add to Wishlist events                                                                                                |
+| <notranslate>**ARPPU**</notranslate>              | Average revenue per paying user; Ads Channel only                                                                            |
+| <notranslate>**ARPU**</notranslate>              | Average revenue per user; Ads Channel only                                                                            |
+| <notranslate>**Cost**</notranslate>              | Total cost; Ads Channel only                                                                                          |
+| <notranslate>**eCPA**</notranslate>              | Effective cost per purchase; Ads Channel only                                                                         |
+| <notranslate>**eCPI**</notranslate>              | Effective cost per install. The total cost of the campaign divided by the number of installs driven; Ads Channel only |
+| <notranslate>**Gross Profit**</notranslate>      | Amount; Ads Channel only                                                                                              |
+| <notranslate>**Initiate Purchase**</notranslate> | Initiate Purchase events                                                                                              |
+| <notranslate>**Opens**</notranslate>             | Open events                                                                                                           |
+| <notranslate>**Purchase**</notranslate>          | Purchase events
+| <notranslate>**Retention**</notranslate>           | The ability of a product or service to retain its existing customers, with retention rates measuring the ratio of customers who are devoted and “stay” (those who keep using and supporting your app) to the total number of customers who installed your app.                                                                                                       |
+| <notranslate>**Revenue**</notranslate>           | Revenue for commerce events                                                                                           |
+| <notranslate>**ROAS**</notranslate>              | Return on Ad Spend. Revenue as a percentage of cost (will need this to compare for cohorts); Ads Channel only         |
+| <notranslate>**ROI**</notranslate>               | Return on investment. Profit as a percentage of cost; Ads Channel only                                                |
+| <notranslate>**Spend Credits**</notranslate>     | Spend Credits events                                                                                                  |
+| <notranslate>**Users**</notranslate>             | The total number of unique users for each compare by in your cohort. Accessible in Table View only.                   |
+| <notranslate>**View Cart**</notranslate>         | View Cart events                                                                                                      |
 
 #### Compare by & (where/and/equals) Filters
 
@@ -108,41 +108,41 @@ Compare by and (where/and/equals) filters can be applied to any cohorting event 
 
 | Name                           | Description                                                                                                                                     |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| ad name                        | The name of the ad used in your campaign.                                                                                                       |
-| ad partner                     | The name of the ad partner attributed to the install/re-engagement event.                                                                       |
-| ad set name                    | The name of the ad set used in your ad.                                                                                                         |
-| attributed                     | Whether or not the install/re-engagement event was attributed; values ‘true’ or ‘false’.                                                        |
-| campaign                       | The name of the campaign associated with the install/re-engagement event.                                                                       |
-| channel                        | The name of the channel associated with the install/re-engagement event                                                                         |
-| country                        | The country code associated with the install/re-engagement event.                                                                               |
-| creative name                  | The name of the creative used in your ad.                                                                                                       |
-| date                           | The date of the event associated with the install/re-engagement event.                                                                          |
-| environment                    | The overall environment - app OR web - associated with the install/re-engagement event.                                                         |
-| environment (conversion event) | The overall environment - app OR web - associated with the downstream event.                                                                    |
-| feature                        | The name of the Branch feature from which the install/re-engagement event. stems; paid advertising (Universal Ads), journeys or email provider. |
-| has app                        | Whether or not the user already had the app was installed before the re-engagement event; values ‘true’ or ‘false’.                             |
-| has clicked ad                 | Whether or not the user clicked on an ad using a Branch link; values ‘true’ or ‘false’.                                                         |
-| has clicked email              | Whether or not the user clicked on an email using a Branch link; values ‘true’ or ‘false’.                                                      |
-| journey name                   | The name you gave the Journey associated with the install/re-engagement event.                                                                  |
-| keyword                        | They keyword used in your ad.                                                                                                                   |
-| last attributed touch type     | Whether the last attributed touch was a click or an impression                                                                                  |
-| name                           | The name of the app or web event associated with the install/re-engagement event.                                                               |
-| os                             | The operating system of the device associated with the install/re-engagement event.                                                             |
-| os (conversion event)          | The operating system of the device associated with the downstream event.                                                                        |
-| platform                       | The platform - Android, iOS, Web, Desktop - associated with the install/re-engagement event.                                                    |
-| platform (conversion event)    | The platform - Android, iOS, Web, Desktop - associated with the downstream event.                                                               |
-| referring domain               | The name of the Branch referring domain associated with the install/re-engagement event.                                                        |
-| secondary publisher            | The secondary publisher specified for the last attributed touch, passed by the ad network.                                                      |
-| stage                          | The name of the stage associated with the install/re-engagement event                                                                           |
-| tags                           | The tags associated with the install/re-engagement event                                                                                        |
-| view name                      | The name of the Journey campaign associated with the install/re-engagement event.                                                               |
-| web format                     | Whether the touch that referred the install or re-engagement event occurred on AMP web or regular web                                           |
+| <notranslate>**ad name**</notranslate>                        | The name of the ad used in your campaign.                                                                                                       |
+| <notranslate>**ad partner**</notranslate>                     | The name of the ad partner attributed to the install/re-engagement event.                                                                       |
+| <notranslate>**ad set name**</notranslate>                    | The name of the ad set used in your ad.                                                                                                         |
+| <notranslate>**attributed**</notranslate>                     | Whether or not the install/re-engagement event was attributed; values ‘true’ or ‘false’.                                                        |
+| <notranslate>**campaign**</notranslate>                       | The name of the campaign associated with the install/re-engagement event.                                                                       |
+| <notranslate>**channel**</notranslate>                        | The name of the channel associated with the install/re-engagement event                                                                         |
+| <notranslate>**country**</notranslate>                        | The country code associated with the install/re-engagement event.                                                                               |
+| <notranslate>**creative name**</notranslate>                  | The name of the creative used in your ad.                                                                                                       |
+| <notranslate>**date**</notranslate>                           | The date of the event associated with the install/re-engagement event.                                                                          |
+| <notranslate>**environment**</notranslate>                    | The overall environment - app OR web - associated with the install/re-engagement event.                                                         |
+| <notranslate>**environment (conversion event)**</notranslate> | The overall environment - app OR web - associated with the downstream event.                                                                    |
+| <notranslate>**feature**</notranslate>                        | The name of the Branch feature from which the install/re-engagement event. stems; paid advertising (Universal Ads), journeys or email provider. |
+| <notranslate>**has app**</notranslate>                        | Whether or not the user already had the app was installed before the re-engagement event; values ‘true’ or ‘false’.                             |
+| <notranslate>**has clicked ad**</notranslate>                 | Whether or not the user clicked on an ad using a Branch link; values ‘true’ or ‘false’.                                                         |
+| <notranslate>**has clicked email**</notranslate>              | Whether or not the user clicked on an email using a Branch link; values ‘true’ or ‘false’.                                                      |
+| <notranslate>**journey name**</notranslate>                   | The name you gave the Journey associated with the install/re-engagement event.                                                                  |
+| <notranslate>**keyword**</notranslate>                        | They keyword used in your ad.                                                                                                                   |
+| <notranslate>**last attributed touch type**</notranslate>     | Whether the last attributed touch was a click or an impression                                                                                  |
+| <notranslate>**name**</notranslate>                           | The name of the app or web event associated with the install/re-engagement event.                                                               |
+| <notranslate>**os**</notranslate>                             | The operating system of the device associated with the install/re-engagement event.                                                             |
+| <notranslate>**os (conversion event**</notranslate>)          | The operating system of the device associated with the downstream event.                                                                        |
+| <notranslate>**platform**</notranslate>                       | The platform - Android, iOS, Web, Desktop - associated with the install/re-engagement event.                                                    |
+| <notranslate>**platform (conversion event)**</notranslate>    | The platform - Android, iOS, Web, Desktop - associated with the downstream event.                                                               |
+| <notranslate>**referring domain**</notranslate>               | The name of the Branch referring domain associated with the install/re-engagement event.                                                        |
+| <notranslate>**secondary publisher**</notranslate>            | The secondary publisher specified for the last attributed touch, passed by the ad network.                                                      |
+| <notranslate>**stage**</notranslate>                          | The name of the stage associated with the install/re-engagement event                                                                           |
+| <notranslate>**tags**</notranslate>                           | The tags associated with the install/re-engagement event                                                                                        |
+| <notranslate>**view name**</notranslate>                      | The name of the Journey campaign associated with the install/re-engagement event.                                                               |
+| <notranslate>**web format**</notranslate>                     | Whether the touch that referred the install or re-engagement event occurred on AMP web or regular web                                           |
 
 ## Using Visualizations Options
 
 Once you’ve created a cohort, you can view the resulting analytics. All created cohorts include the following visualization functionality:
 
-* <notranslate>**Unique Counts**</notranslate> - When "Unique" is checked, these are unique to a user. For example: if 1 user clicks 100 times, it will count as 1. There is no concept of "unique revenue"; "revenue" is always the sum of all purchase events.
+* <notranslate>**Unique Counts**</notranslate> - When <notranslate>"Unique"</notranslate> is checked, these are unique to a user. For example: if 1 user clicks 100 times, it will count as 1. There is no concept of "unique revenue"; "revenue" is always the sum of all purchase events.
 
 * <notranslate>**Time Interval and Granularity**</notranslate>
 

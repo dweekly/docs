@@ -88,9 +88,9 @@ You can customize the audience that will see your Journey by choosing target pla
 
 | Option | Description |
 | --- | --- |
-| Platform | Branch currently offers Journeys on one platform: **Mobile web**. This will display for mobile users on your website. _More options coming soon._
-| Devices | Which devices would you like to target? For example, if you only have an iOS app, then you might want to show a Journey only to users viewing your mobile website on iOS.
-| Additional Filters | Read about advanced filtering criteria [here](/web/journeys/#advanced-audience-rules).
+| <notranslate>Platform</notranslate> | Branch currently offers Journeys on one platform: **Mobile web**. This will display for mobile users on your website. _More options coming soon._
+| <notranslate>Devices</notranslate> | Which devices would you like to target? For example, if you only have an iOS app, then you might want to show a Journey only to users viewing your mobile website on iOS.
+| <notranslate>Additional Filters</notranslate> | Read about advanced filtering criteria [here](/web/journeys/#advanced-audience-rules).
 
 ### Select and style the banner or interstitial
 
@@ -157,10 +157,10 @@ A Journey can have one of four states:
 
 | State | Meaning | Next Stage |
 | --- | --- | --- |
-| Draft | Not yet published, editable | <notranslate>**Active**</notranslate> |
-| Active | Live for your users, editable | <notranslate>**Stopped**</notranslate> |
-| Stopped | Not live for your users, editable | <notranslate>**Active**</notranslate> or <notranslate>**Archived**</notranslate> |
-| Archived | Not live for your users, editable | _none_ |
+| <notranslate>Draft</notranslate> | Not yet published, editable | <notranslate>**Active**</notranslate> |
+| <notranslate>Active</notranslate> | Live for your users, editable | <notranslate>**Stopped**</notranslate> |
+| <notranslate>Stopped</notranslate> | Not live for your users, editable | <notranslate>**Active**</notranslate> or <notranslate>**Archived**</notranslate> |
+| <notranslate>Archived</notranslate> | Not live for your users, editable | _none_ |
 
 You can activate a journey directly from the creation flow, or from <notranslate>**Start**</notranslate> in the Actions menus in the Journeys Manager.
 
@@ -289,7 +289,7 @@ You might choose to only show a Journey that asks a user to open the app to thos
 
 #### Has clicked on ad
 
-A user is grouped into "Has clicked on Ad" when they've clicked a link from [Deep Linked Feeds](/deep-linked-ads/dynamic-product-feeds/).
+A user is grouped into <notranslate>"Has clicked on Ad"</notranslate> when they've clicked a link from [Deep Linked Feeds](/deep-linked-ads/dynamic-product-feeds/).
 
 Use this to target users who have been part of an ad campaign to improve your ROI; maybe with a specific call to action to open the app and buy something if they've also never made a purchase in the app.
 
@@ -297,7 +297,7 @@ The technical definition is that they've clicked on a link with an Ad Network's 
 
 #### Has clicked on email
 
-A user is grouped into "Has clicked on Email" when they've clicked a link from [Universal Email](https://dashboard.branch.io/email).
+A user is grouped into <notranslate>"Has clicked on Email"</notranslate> when they've clicked a link from [Universal Email](https://dashboard.branch.io/email).
 
 Use this to target users who have been part of an email campaign; maybe with a specific call to action to get them download the app if they don't have it and they've landed on mobile web.
 
@@ -339,7 +339,7 @@ Use this filter to target users who have interacted with a specific Journey befo
 
 ### has_app limitations
 
-Several pieces of Journeys functionality rely on Branch’s understanding of whether an end user has a customer’s app installed (indicated in Branch’s system using the `has_app` flag). For example, the `Has the app installed` advanced audience rule will only be satisfied if Branch believes the app is installed on that user’s device. Similarly, the CTA text on a Journey will only switch from “install” to “open” if Branch believes the app is installed on that user’s device.
+Several pieces of Journeys functionality rely on Branch’s understanding of whether an end user has a customer’s app installed (indicated in Branch’s system using the `has_app` flag). For example, the <notranslate>**Has the app installed**</notranslate> advanced audience rule will only be satisfied if Branch believes the app is installed on that user’s device. Similarly, the CTA text on a Journey will only switch from “install” to “open” if Branch believes the app is installed on that user’s device.
 
 Unfortunately, Branch does not - and cannot - know with 100% accuracy whether a given user actually has the app installed, since the operating systems (e.g. iOS, Android) do not make this information available to developers. We’ve developed our own methods for gleaning this information, and while our methods are quite accurate, there are nevertheless opportunities for both false positives and false negatives.
 
@@ -489,7 +489,7 @@ You can access this feature from the <notranslate>**Validate & Test**</notransla
 
 We now support the use case where you can customize the appearance of a Journey depending on which link referred the web session. So, you can create a Branch link with a set of defined keys and values that will change properties such as the title or images when the user is referred to your website from this link.
 
-| <notranslate>**Link Data Key**</notranslate> | <notranslate>**Value**</notranslate> | <notranslate>**Example Value**</notranslate> |
+| **Link Data Key** | **Value** | **Example Value** |
 | ---: | --- | --- |
 | `$journeys_button_get_has_app` | The call to action button when the app is currently installed | "Open App" |
 | `$journeys_button_get_no_app` | The call to action button when the app is **not** currently installed | "Install App" |
@@ -628,13 +628,13 @@ branch.addListener(listener);
 
 | Listener Name | Description |
 | --- | --- |
-| willShowJourney | Journey is about to be shown. |
-| didShowJourney | Journey's entrance animation has completed and it is being shown to the user. |
-| willNotShowJourney | Journey will not be shown and no other events will be emitted. |
-| didClickJourneyCTA | User clicked on Journey's CTA button. |
-| didClickJourneyClose | User clicked on Journey's close button. |
-| willCloseJourney | Journey close animation has started. |
-| didCloseJourney | Journey's close animation has completed and it is no longer visible to the user. |
+| `willShowJourney` | Journey is about to be shown. |
+| `didShowJourney` | Journey's entrance animation has completed and it is being shown to the user. |
+| `willNotShowJourney` | Journey will not be shown and no other events will be emitted. |
+| `didClickJourneyCTA` | User clicked on Journey's CTA button. |
+| `didClickJourneyClose` | User clicked on Journey's close button. |
+| `willCloseJourney` | Journey close animation has started. |
+| `didCloseJourney` | Journey's close animation has completed and it is no longer visible to the user. |
 
 ### Journeys text localization
 
@@ -1032,11 +1032,11 @@ All of these examples require you to configure advanced audience rules, which is
 
 #### New Users
 
-In this example, you'll configure an audience to target people who have visited your site **less than 3 times** historically. Anyone who had visited more than this will be excluded. First, you'll add a new rule for `Has visted web` in the advanced section.
+In this example, you'll configure an audience to target people who have visited your site **less than 3 times** historically. Anyone who had visited more than this will be excluded. First, you'll add a new rule for <notranslate>**Has visted web**</notranslate> in the advanced section.
 
 ![image](/_assets/img/pages/journeys/examples/new_users_0.png)
 
-Next, you'll choose the `Less than or equal to` in the middle section:
+Next, you'll choose the <notranslate>**Less than or equal to**</notranslate> in the middle section:
 
 ![image](/_assets/img/pages/journeys/examples/new_users_1.png)
 
@@ -1048,11 +1048,11 @@ Save and continue!
 
 #### Loyal Users
 
-In this example, you'll configure an audience to target people who have visited your site **more than 4 times** historically. Anyone who had visited less than this will be excluded. First, you'll add a new rule for `Has visted web` in the advanced section.
+In this example, you'll configure an audience to target people who have visited your site **more than 4 times** historically. Anyone who had visited less than this will be excluded. First, you'll add a new rule for <notranslate>**Has visted web**</notranslate> in the advanced section.
 
 ![image](/_assets/img/pages/journeys/examples/new_users_0.png)
 
-Next, you'll choose the `More than or equal to` in the middle section:
+Next, you'll choose the <notranslate>**More than or equal to**</notranslate> in the middle section:
 
 ![image](/_assets/img/pages/journeys/examples/loyal_users_1.png)
 
@@ -1064,7 +1064,7 @@ Save and continue!
 
 #### Retargeting Users
 
-In this example, you'll configure an audience to target people who have completed some action on your site in a past or current session. For example, if a user had added something to their cart or had previously completed a purchase. You can retarget these users with a custom call to action to download. We'll use a generic event called `MyAction` in the example. First, you'll add a new rule for `Has completed event` in the advanced section.
+In this example, you'll configure an audience to target people who have completed some action on your site in a past or current session. For example, if a user had added something to their cart or had previously completed a purchase. You can retarget these users with a custom call to action to download. We'll use a generic event called `MyAction` in the example. First, you'll add a new rule for <notranslate>**Has completed event**</notranslate> in the advanced section.
 
 ![image](/_assets/img/pages/journeys/examples/retargeting_users_0.png)
 
@@ -1072,7 +1072,7 @@ In this next dropdown, you'll choose the custom event to retarget from. Here, we
 
 ![image](/_assets/img/pages/journeys/examples/retargeting_users_1.png)
 
-Next, you'll choose the `More than or equal to` in the middle section:
+Next, you'll choose the <notranslate>**More than or equal to**</notranslate> in the middle section:
 
 ![image](/_assets/img/pages/journeys/examples/retargeting_users_2.png)
 
@@ -1084,11 +1084,11 @@ Save and continue!
 
 #### SEO Friendly
 
-Google has recently announced that it will begin punishing sites that show a full page interstitial when a user comes from search. Because of this, you'll likely need to treat Google search traffic differently than traffic that comes from any other source. In this example, you'll set up an audience specific to users who come from Google. First, you'll add a new rule for `Came directly from a url` in the advanced section.
+Google has recently announced that it will begin punishing sites that show a full page interstitial when a user comes from search. Because of this, you'll likely need to treat Google search traffic differently than traffic that comes from any other source. In this example, you'll set up an audience specific to users who come from Google. First, you'll add a new rule for <notranslate>**Came directly from a url**</notranslate> in the advanced section.
 
 ![image](/_assets/img/pages/journeys/examples/seo_friendly_0.png)
 
-Next, you'll choose the `starts with` in the middle section to match a substring:
+Next, you'll choose the <notranslate>**starts with**</notranslate> in the middle section to match a substring:
 
 ![image](/_assets/img/pages/journeys/examples/seo_friendly_1.png)
 
@@ -1106,7 +1106,7 @@ In this example, you'll restrict the audience to users in countries where Englis
 
 ![image](/_assets/img/pages/journeys/examples/ios_english_0.png)
 
-Next, go through and choose the following countries: `United States`, `Canada`, `United Kingdom` and `Australia`.
+Next, go through and choose the following countries: `United States`, `Canada`, <notranslate>**United Kingdom**</notranslate> and `Australia`.
 
 ![image](/_assets/img/pages/journeys/examples/ios_english_1.png)
 

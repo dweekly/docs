@@ -98,8 +98,7 @@
 
     - Delete your app from the device
 
-    - Paste Quick link in `Google Hangouts (Android)` or `Notes (iOS)`
-
+    - Paste Quick link in <notranslate>**Google Hangouts (Android)**</notranslate> or <notranslate>**Notes (iOS)**</notranslate>
     - Click on the Quick link to open your app
 
     - Compile and download your app to your device
@@ -111,7 +110,7 @@
 
 - ### Create content reference
 
-    - The `Branch Universal Object` encapsulates the thing you want to share with your link
+    - The <notranslate>**Branch Universal Object**</notranslate> encapsulates the thing you want to share with your link
 
         ```csharp
         BranchUniversalObject universalObject = new BranchUniversalObject();

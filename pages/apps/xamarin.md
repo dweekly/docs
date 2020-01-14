@@ -20,13 +20,13 @@
 
 - ### Install Branch
 
-    - **Nuget**
+    - **NuGet**
 
         The Branch Xamarin SDK is available as a NuGet package. The [Branch NuGet package](https://www.nuget.org/packages/Branch-Xamarin-Linking-SDK) must be added to each of the Xamarin projects that will use Branch methods.
 
         To add the Branch NuGet package to a project:
 
-        1. Right-click on each project and select `Add` > `Add NuGet Packages`
+        1. Right-click on each project and select <notranslate>**Add > Add NuGet Packages**</notranslate>
         1. If not already present, find the <notranslate>_Microsoft BCL Build Components_</notranslate> package version 1.0.21 and add it to the project
         1. Find the <notranslate>_Branch Xamarin SDK_</notranslate> package version 3.0 and add it to the project
 
@@ -795,11 +795,10 @@
 
     - Compile your app with Xcode
 
-    - Paste deep link in `Apple Notes`
-
+    - Paste deep link in <notranslate>**Apple Notes**</notranslate>
     - Long press on the deep link *(not 3D Touch)*
 
-    - Click `Open in "APP_NAME"` to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
+    - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
 
 - ### Test deep link Android
 
@@ -809,7 +808,7 @@
 
     - Compile your app with Android Studio
 
-    - Paste deep link in `Google Hangouts`
+    - Paste deep link in <notranslate>**Google Hangouts**</notranslate>
 
     - Click on the deep link to open your app
 
@@ -817,7 +816,7 @@
 
 - ### Create content reference
 
-    - The `Branch Universal Object` encapsulates the thing you want to share
+    - The <notranslate>**Branch Universal Object**</notranslate> encapsulates the thing you want to share
 
     - Uses [Universal Object properties](/links/integrate/#universal-object)
 

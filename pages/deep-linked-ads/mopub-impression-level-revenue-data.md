@@ -82,10 +82,10 @@ A unified ad delegate is used by all formats except for rewarded video, which us
 
 | MoPub Parameter    | Branch PURCHASE parameter        |
 |--------------------|----------------------------------|
-| publisher_revenue  | revenue                          |
-| precision          | custom_data.precision            |
-| adgroup_type       | eventDescription                 |
-| [entire JSON blob] | custom_data.mopub_ad_information |
+| `publisher_revenue`  | `revenue`                          |
+| `precision`          | `custom_data.precision`            |
+| `adgroup_type`       | `eventDescription`                 |
+| [entire JSON blob] | `custom_data.mopub_ad_information` |
 
 
 ## ILRD in Reporting & Exports

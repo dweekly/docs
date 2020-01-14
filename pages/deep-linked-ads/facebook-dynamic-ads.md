@@ -59,7 +59,7 @@ To set up a Facebook Product Catalogue campaign, you will need to first create y
 1. Navigate to your [Facebook Ads Manager](https://www.facebook.com/ads/manager/){:target="_blank"}.
 1. In the top left hand corner, click into the menu, select <notranslate>**All tools**</notranslate>, and select <notranslate>**Product Catalogues**</notranslate>.
 ![Facebook Product Catalogues](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/fb-product-catalogs.png)
-1. From the drop down menu click "Create new catalog...", name it (remember this name, you'll need it later) and select "Products sold online".
+1. From the drop down menu click "Create new catalog...", name it (remember this name, you'll need it later) and select <notranslate>"Products sold online"</notranslate>.
 <img src="/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/create-new-catalog.png" alt="Facebook Create New Product Catalogue">
 1. Now that you have a product catalog, you can add a new feed. Click "Add Product Feed."
 ![Add New Feed](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/add-new-feed.png)
@@ -68,7 +68,7 @@ To set up a Facebook Product Catalogue campaign, you will need to first create y
 ![Feed URL settings](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/upload-feed-url.png)
 1. If you've created a Deep Linked Feed CSV file to upload, select the option "Single upload: Upload a single file feed now." Select the Deep Linked Feed URL or CSV file you would like to upload to Facebook, and click "Upload".
 ![Feed Uploaded](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/successful-feed-upload.png)
-1. Wait for the upload to complete successfully. If you'd like to create a "Product set" (a subset of products in your catalog for use in specific ad sets) you can do that now.
+1. Wait for the upload to complete successfully. If you'd like to create a <notranslate>"Product set"</notranslate> (a subset of products in your catalog for use in specific ad sets) you can do that now.
 
 #### Setting up App Events and the Facebook Pixel
 
@@ -77,7 +77,7 @@ Facebook requires you to report events about your users interacting with your co
 - [Sending App Events with the Branch SDK](/deep-linked-ads/facebook-ads-faq/#tracking-other-conversion-events)
 - [Sending Web Events with the Facebook Pixel](https://developers.facebook.com/docs/marketing-api/facebook-pixel/v2.8){:target="_blank"}
 
-Use the "Product events" tab in your Product Catalog view to ensure that Facebook is registering the events against your Product Catalog items correctly.
+Use the <notranslate>"Product events"</notranslate> tab in your Product Catalog view to ensure that Facebook is registering the events against your Product Catalog items correctly.
 
 #### Creating a Dynamic Ad Campaign
 

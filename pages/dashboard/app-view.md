@@ -1,4 +1,4 @@
-The "App" view of a Branch account is the standard level of entity access and can include access to the entire Branch dashboard for that app, based on access resource settings and access role type.
+The <notranslate>"App"</notranslate> view of a Branch account is the standard level of entity access and can include access to the entire Branch dashboard for that app, based on access resource settings and access role type.
 
 ## App View Overview
 

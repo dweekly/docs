@@ -102,7 +102,7 @@ In addition to any custom key/value pairs specified in the link data dictionary,
 * (for the curious, `$` denotes reserved keywords used for controlling how the Branch service behaves. Read more about control parameters on the [Configuring Links page](/links/integrate/#configure-deep-links)
 
 
-| <notranslate>**Parameter**</notranslate> | <notranslate>**Meaning**</notranslate> |
+| **Parameter** | **Meaning** |
 | ---: | --- |
 | <notranslate>**+is_first_session**</notranslate> | Denotes whether this is the first session (install) or any other session (re-install, open)
 | <notranslate>**+clicked_branch_link**</notranslate> | Denotes whether or not the user clicked a Branch link that triggered this session

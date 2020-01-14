@@ -25,10 +25,10 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 * [x] [Branch Web SDK v2.48.0+](/web/integrate/)
 * [x] [Measurement of relevant v2 events](/web/integrate/#track-events)
 * [x] Branch Deep Linking enabled via either:
-	* [x] Adding `$uri_redirect_mode=1` to link's data.  If app link settings `URI Deep Link Mode` is set to `Intelligent`, then this link key is unnecessary.
+	* [x] Adding `$uri_redirect_mode=1` to link's data.  If app link settings <notranslate>**URI Deep Link Mode**</notranslate> is set to `Intelligent`, then this link key is unnecessary.
 * [x] [App links (Android)](/deep-linking/android-app-links/) and/or [Universal Links (iOS)](/deep-linking/universal-links/) as the campaign's <notranslate>**Destination URL**</notranslate>.
 * [x] [Branch Ad link](/deep-linked-ads/google-ads-customization/#create-a-branch-ad-link) in the campaign's <notranslate>**Tracking Template**</notranslate>.
-* [x] Place your [modified Branch link](#modifying-your-final-url-to-include-your-branch-link-as-a-query-parameter) in the `Final URL` field during Google Ads campaign setup.
+* [x] Place your [modified Branch link](#modifying-your-final-url-to-include-your-branch-link-as-a-query-parameter) in the <notranslate>**Final URL**</notranslate> field during Google Ads campaign setup.
 
 ![image](/_assets/img/pages/deep-linked-ads/google/web-based-ads-routing-options.png)
 
@@ -39,7 +39,7 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 
 ### Create a Branch Ad Link
 
-1. Create a Branch Ad link from the [Partner Management page](https://dashboard.branch.io/ads/partner-management)'s `Create Google Ads Link` button under the Google Ads Partner and select `Create Search/Display Link` depending on the type of Google Ads campaign you are running.
+1. Create a Branch Ad link from the [Partner Management page](https://dashboard.branch.io/ads/partner-management)'s <notranslate>**Create Google Ads Link**</notranslate> button under the Google Ads Partner and select `Create Search/Display Link` depending on the type of Google Ads campaign you are running.
 <img src="/_assets/img/pages/deep-linked-ads/reusable-images/create-link-display.png" alt="Link Creation" class="three-quarters center">
 1. Under the Define Section, pick a Link Name for later reference
 1. Configure the link with the Ad Format set to <notranslate>**Search**</notranslate> or <notranslate>**Display**</notranslate> and the Ad Partner set to <notranslate>**Google Ads**</notranslate>.
@@ -78,8 +78,8 @@ Please follow Google Ads help documentation on how to create a new [Google Ads c
 !!! tip "Branch Link Placement in Google Ads Campaign"
 	During campaign creation, please make sure you place the Branch link in the correct location depending on your desired user outcome.
 
-	- **For Web Routing Only** - place your Branch link in the `Tracking Template` field during Google Ads campaign setup.
-	- **For Deep Linking into App if App Installed else Routing to Web** - place your modified Branch Link in the `Final URL` field during Google Ads campaign setup & place your unencoded Branch link in the `Tracking Template` field during Google Ads campaign setup.
+	- **For Web Routing Only** - place your Branch link in the <notranslate>**Tracking Template**</notranslate> field during Google Ads campaign setup.
+	- **For Deep Linking into App if App Installed else Routing to Web** - place your modified Branch Link in the <notranslate>**Final URL**</notranslate> field during Google Ads campaign setup & place your unencoded Branch link in the <notranslate>**Tracking Template**</notranslate> field during Google Ads campaign setup.
 
 For additional information on Google Ads campaigns, please see [Create ads and campaigns](https://support.google.com/google-ads/topic/3119116?hl=en&ref_topic=311907).
 

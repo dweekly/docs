@@ -62,7 +62,7 @@ You will still need to request a custom click tracking domain from Vero, but wit
 1. Email Vero (support@getvero.com) with your new click tracking domain and ask them to set up the separate click tracking domain
 	1. [Mailgun](/emails/mailgun/#configure-your-esp){:target="\_blank"}
 	1. [Sendgrid](/emails/sendgrid/#configure-your-esp){:target="\_blank"}
-1. Log into Vero and go to Settings > Email Providers. Add a new Mailgun "account" and input the domain name you have just verified. Vero will now allow you to set this as the default, or use this on a per-campaign basis.
+1. Log into Vero and go to Settings > Email Providers. Add a new Mailgun <notranslate>"account"</notranslate> and input the domain name you have just verified. Vero will now allow you to set this as the default, or use this on a per-campaign basis.
 
 For more information on how to set up your domain, please visit Vero's [documentation](https://help.getvero.com/articles/how-to-setup-my-domain-signing-and-remove-via-getveromail-com-from-your-emails.html){:target="\_blank"}.
 

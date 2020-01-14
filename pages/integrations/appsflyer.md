@@ -11,7 +11,7 @@ Branch will send all Branch mobile link clicks to AppsFlyer. This includes sendi
 
 ### What does it look like?
 
-Branch events will appear on the AppsFlyer dashboard, in the overview page. Scroll to the `Aggregated Performance Report` section, and you'll notice Branch led attributions fall under the name `branch_int`.
+Branch events will appear on the AppsFlyer dashboard, in the overview page. Scroll to the <notranslate>**Aggregated Performance Report**</notranslate> section, and you'll notice Branch led attributions fall under the name `branch_int`.
 
 ![image](/_assets/img/pages/integrations/appsflyer/appsflyer.png)
 
@@ -47,7 +47,7 @@ Branch Analytics Tag | AppsFlyer Data Placeholder Tag
 Campaign | Maps to _AppsFlyer Campaign_, `c`
 Channel | Maps to _AppsFlyer Channel_, `af_channel`
 
-The default Media Source will appear as "branch_int" (mandated by AppsFlyer and cannot be changed).
+The default Media Source will appear as <notranslate>"branch_int"</notranslate> (mandated by AppsFlyer and cannot be changed).
 
 You can also append additional [AppsFlyer Parameters in this format](https://support.appsflyer.com/hc/en-us/articles/207447163-AppsFlyer-Tracking-Link-Structure-and-Parameters) in link data or as query parameters.
 

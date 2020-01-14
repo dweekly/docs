@@ -18,25 +18,25 @@ For each platform (iOS and Android) you should create campaign IDs. You will do 
 
 1. Log in to Kochava.
 1. Select the desired app .
-1. Select `App Tools > Campaign Manager`
-1. Click `Add a Campaign`
+1. Select <notranslate>**App Tools > Campaign Manager**</notranslate>
+1. Click <notranslate>**Add a Campaign**</notranslate>
 1. Enter a unique Campaign name.
 
 #### Create a Segment
 
-1. Select `Campaign Tools>New Segment`
+1. Select <notranslate>**Campaign Tools>New Segment**</notranslate>
 1. Enter a Segment Name.
 1. Click submit
 
 #### Create a tracker
 
-1. Click `Segment Tools > New Tracker`
+1. Click <notranslate>**Segment Tools > New Tracker**</notranslate>
 1. Enter the Tracker Name.
-1. Select `Tracker Type>3rd Party Tracking` (default setting)
-1. Select `Select A Network > Branch`
+1. Select <notranslate>**Tracker Type>3rd Party Tracking**</notranslate> (default setting)
+1. Select <notranslate>**Select A Network > Branch**</notranslate>
 1. Click submit. (If no further trackers need to be created).
 
-Once you've clicked `Submit` you should see a screen with the campaign ID.
+Once you've clicked <notranslate>**Submit**</notranslate> you should see a screen with the campaign ID.
 
 ![image](/_assets/img/pages/integrations/kochava/kochava-dashboard.png)
 

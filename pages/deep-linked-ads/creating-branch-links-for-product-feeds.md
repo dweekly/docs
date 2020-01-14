@@ -188,7 +188,7 @@ https://branch.io/universal-ads&branchify_url=https%3A%2F%2Fexample.app.link%3Fp
 
 ### Creating a Google Feed
 
-The type of feed you create should match the business type you selected when creating your Dynamic remarketing campaign. Use the "Custom" feed only if the other business types don't apply to your products or services.
+The type of feed you create should match the business type you selected when creating your Dynamic remarketing campaign. Use the <notranslate>"Custom"</notranslate> feed only if the other business types don't apply to your products or services.
 Please refer to Google’s [Create a feed for your responsive ads](https://support.google.com/google-ads/answer/6053288?hl=en&ref_topic=3180758) for the following:
 
 *   About feeds

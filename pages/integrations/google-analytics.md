@@ -103,22 +103,22 @@ Branch.getInstance().setRequestMetadata("$google_analytics_user_id", "USER-ID-HE
 
 | Property Name | Value | Sourced from | Example | Req
 | --- | --- | --- | --- | ---
-| v | API version | [fixed] | 1 | Y
-| tid | Tracking ID | Branch Dashboard | UA-XXXXXX-Y | Y
-| ds | Source (mobile SDK) | [fixed] | app | Y
-| an | Application Name | [fixed] | BRANCH-APP | Y
-| t | Type | [fixed] | event | Y
-| ec | Event Category | [fixed] | BranchEvent | Y
-| cid | Client ID | (discussed above, includes $google_analytics_client_id) | AEBE52E7-03EE-455A-B3C4-E57283966239 | Y
-| uid | User Id | $google_analytics_user_id | User A | N
-| cn | Campaign Name | utm_campaign -or- Branch campaign  | "Beaches and breezes" | N
-| cs | Campaign Source | utm_source -or- Branch channel | "Twitter" | N
-| cm | Campaign Medium | utm_medium -or- Branch feature  | "480banner" | N
-| ck | Campaign Keywords | utm_term -or- Branch $keywords | ["Keyword1", "keyword3"] | N
-| cc | Campaign Content | utm_content -or- Branch tags | "Some content" | N
-| ea | Event Action (Name) | event name | install | Y
-| uip | User’s IP Address | collected by Branch SDK | 111.111.111.111 | N
-| z | Cache buster | [unix time + random number] | 1461878903666 | N
+| `v` | API version | [fixed] | 1 | Y
+| `tid` | Tracking ID | Branch Dashboard | UA-XXXXXX-Y | Y
+| `ds` | Source (mobile SDK) | [fixed] | app | Y
+| `an` | Application Name | [fixed] | BRANCH-APP | Y
+| `t` | Type | [fixed] | event | Y
+| `ec` | Event Category | [fixed] | BranchEvent | Y
+| `cid` | Client ID | (discussed above, includes $google_analytics_client_id) | AEBE52E7-03EE-455A-B3C4-E57283966239 | Y
+| `uid` | User Id | $google_analytics_user_id | User A | N
+| `cn` | Campaign Name | utm_campaign -or- Branch campaign  | "Beaches and breezes" | N
+| `cs` | Campaign Source | utm_source -or- Branch channel | "Twitter" | N
+| `cm` | Campaign Medium | utm_medium -or- Branch feature  | "480banner" | N
+| `ck` | Campaign Keywords | utm_term -or- Branch $keywords | ["Keyword1", "keyword3"] | N
+| `cc` | Campaign Content | utm_content -or- Branch tags | "Some content" | N
+| `ea` | Event Action (Name) | event name | install | Y
+| `uip` | User’s IP Address | collected by Branch SDK | 111.111.111.111 | N
+| `z` | Cache buster | [unix time + random number] | 1461878903666 | N
 
 !!! protip "Anonymous Client ID"
     If for some reason Branch does not receive an advertising identifier or hardware identifier, and you do not explicitly specify a `$google_analytics_client_id`, then Branch will send `anonymous` as the Client ID (`cid`). This is a required field by Google Analytics.

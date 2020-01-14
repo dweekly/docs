@@ -1,4 +1,4 @@
-The "Organization" view of a Branch account is an additional level of entity access and is intended for Branch accounts with a portfolio of distinctly managed apps tied to a single organizational entity. Organization view allows companies to manage separate teams associated with their distinct apps and maintain autonomy. Organization team members can switch between the Organization view and the App view at any time.
+The <notranslate>"Organization"</notranslate> view of a Branch account is an additional level of entity access and is intended for Branch accounts with a portfolio of distinctly managed apps tied to a single organizational entity. Organization view allows companies to manage separate teams associated with their distinct apps and maintain autonomy. Organization team members can switch between the Organization view and the App view at any time.
 
 !!! info "INFO"
     Depending on your business and how you manage your apps, you may elect to add the Organization Entity to your Branch account.
@@ -73,11 +73,11 @@ When viewing your Branch account via the Organization entity, you can access (ei
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
 
-- `Deep Linking Duration` refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
+- <notranslate>**Deep Linking Duration**</notranslate> refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
 
-- `Click to x` refers to events that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
+- <notranslate>**Click to x**</notranslate> refers to events that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
 
-- `Impression to x` refers to events that occur after someone views a Branch impression link. Measured in days.
+- <notranslate>**Impression to x**</notranslate> refers to events that occur after someone views a Branch impression link. Measured in days.
 
 - `Re-engagement Inactivity` defines the period between two events that a user must be inactive in order to define the later event as a re-engagement. Used in re-engagement cohort analysis but not activity analysis.
 

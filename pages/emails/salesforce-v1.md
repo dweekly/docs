@@ -57,8 +57,8 @@ Your Salesforce account must be configured to correctly handle Universal Links. 
 ![image](https://cdn.branch.io/branch-assets/1559434914239-og_image.png)
 
 1. Enter the AppID value
-1. Check the "Exclude Profile" and "Unsub Center" checkboxes to force links to these items to open in the browser and not the app, if desired.
-1. Click "Save" to save the configuration.
+1. Check the "Exclude Profile" and <notranslate>"Unsub Center"</notranslate> checkboxes to force links to these items to open in the browser and not the app, if desired.
+1. Click <notranslate>"Save"</notranslate> to save the configuration.
 1. Let Salesforce and Branch know that you've finished this step and your Technical Account Manager will verify that everything looks good.
 
 ![image](/_assets/img/pages/email/salesforce/salesforce-aasa-form.png)
@@ -217,7 +217,7 @@ For links that should always open in web, even if the app is installed, add Sale
 <a mc-deep-link="false" href="https://my.app.link/3p?$3p=e_et&$original_url=..." >This link will not open the app.</a>
 ```
 
-If the link in the "href" part of the tag is a normal web link, the app will NOT open in Android.  If the link in the "href" part of the tag is a Branch link, but you don't want the app to open, then you'll need to add `&%24web_only%3Dtrue` as a query parameter:
+If the link in the "href" part of the tag is a normal web link, the app will NOT open in Android.  If the link in the <notranslate>"href"</notranslate> part of the tag is a Branch link, but you don't want the app to open, then you'll need to add `&%24web_only%3Dtrue` as a query parameter:
 
 ```html
 <a href="https://my.app.link/3p?%243p=e_xx&%24original_url=http%3A%2F%2Fexample.com&%24web_only%3Dtrue" >Link to your app!</a>

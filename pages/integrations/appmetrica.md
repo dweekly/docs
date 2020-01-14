@@ -28,7 +28,7 @@ To set up the integration you will need to create new trackers in the AppMetrica
 
 ![image](/_assets/img/pages/integrations/appmetrica/appmetrica-create-tracker.png)
 
-1. Select "Branch" in <notranslate>**Partner**</notranslate> dropdown
+1. Select <notranslate>"Branch"</notranslate> in <notranslate>**Partner**</notranslate> dropdown
 1. Select a <notranslate>**Destination URL**</notranslate>. If there are no active destination URL's created for this app press the <notranslate>**New destination URL**</notranslate> button and fill in a link to your website or app
 
 ![image](/_assets/img/pages/integrations/appmetrica/appmetrica-destination-url.png)

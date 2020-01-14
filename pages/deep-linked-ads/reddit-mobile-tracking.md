@@ -27,15 +27,15 @@ The basic integration involves two parts:
     You should created a separate links to track iOS and Android campaigns.
 
 !!! warning "Non-App Install Campaigns on iOS"
-    If you run campaign types other than for app installs, you must make sure to add  `$use_https_app_store:true`to your ad link for iOS campaigns. Doing so ensures that users are still redirected to the app store if you have the redirect set to app store for iOS devices. 
+    If you run campaign types other than for app installs, you must make sure to add  `$use_https_app_store:true`to your ad link for iOS campaigns. Doing so ensures that users are still redirected to the app store if you have the redirect set to app store for iOS devices.
 
 ### Reddit Campaign Ad Settings
 
 Once you've created your Branch link, create a new campaign in your Reddit account and ensure the following:
 
-- Select the `App Install` campaign objective.
-- Place your Branch link in the `Ad Click Tracker` field.
-- Place your app's App Store URL in the 'Link' field.
+- Select the <notranslate>**App Install**</notranslate> campaign objective.
+- Place your Branch link in the <notranslate>**Ad Click Tracker**</notranslate> field.
+- Place your app's App Store URL in the <notranslate>**Link**</notranslate> field.
 
 ![image](/_assets/img/pages/deep-linked-ads/reddit/reddit-campaign-setup.png)
 

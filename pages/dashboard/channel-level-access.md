@@ -1,4 +1,4 @@
-The "Channel" level of a Branch account is the fourth level of access and includes access (either edit or read-only) to the following functionality:
+The <notranslate>"Channel"</notranslate> level of a Branch account is the fourth level of access and includes access (either edit or read-only) to the following functionality:
 
 <table>
   <tr>
@@ -76,10 +76,10 @@ A Journey can have one of four states:
 
 | State | Meaning | Next Stage |
 | --- | --- | --- |
-| Draft | Not yet published, editable | <notranslate>**Active**</notranslate> |
-| Active | Live for your users, editable | <notranslate>**Stopped**</notranslate> |
-| Stopped | Not live for your users, editable | <notranslate>**Active**</notranslate> or <notranslate>**Archived**</notranslate> |
-| Archived | Not live for your users, editable | _none_ |
+| `Draft` | Not yet published, editable | <notranslate>**Active**</notranslate> |
+| `Active` | Live for your users, editable | <notranslate>**Stopped**</notranslate> |
+| `Stopped` | Not live for your users, editable | <notranslate>**Active**</notranslate> or <notranslate>**Archived**</notranslate> |
+| `Archived` | Not live for your users, editable | _none_ |
 
 You can activate a journey directly from the creation flow, or from <notranslate>**Start**</notranslate> in the Actions menus in the Journeys Manager.
 
@@ -153,7 +153,7 @@ You can enable/disable Universal Email Partners and view integration information
 !!! warning "Aggregate Data Access Required"
 	Access to the Organic Search section also requires access to [Aggregate Data](aggregate-data-access.md)
 
-Enable automatic sitemap generation by checking the `Automatic sitemap generation` checkbox.
+Enable automatic sitemap generation by checking the <notranslate>**Automatic sitemap generation**</notranslate> checkbox.
 
 ![image](/_assets/img/pages/organic-search/firebase/db-settings.png)
 

@@ -89,10 +89,10 @@ title: Dashboard analytics
 
 - ### Quick Links
     - [Dashboard Quick Links](https://dashboard.branch.io/quick-links) allows you to quickly create deep links and track their analytics in the dashboard
-    - Use the `Create Link` button in the header to generate a quick link
+    - Use the <notranslate>**Create Link**</notranslate> button in the header to generate a quick link
     - Use the `Event` dropdown to see a funnel of your analytics to a [custom event](#dialog-code?ios=track-events&android=track-events&adobe=track-events&cordova=track-events&mparticleAndroid=track-events&mparticleIos=track-events&titanium=track-events&reactNative=track-events&unity=track-events&xamarin=track-events) inside your app
     - Use the `Export` button to get a email with a `.csv` of your quick link data
-    - Use the `Bulk Create Links` to upload a `.csv` file with deep link to be created
+    - Use the <notranslate>**Bulk Create Links**</notranslate> to upload a `.csv` file with deep link to be created
     - Use the `...` button to `Edit`, `View stats`, `Debug`, `Duplicate`, or `Archive` quick links
 
 - ### Link Settings

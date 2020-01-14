@@ -264,7 +264,7 @@ Once you've integrated the SDK and configured the relevant events, you can enabl
 
 It is possible to opt in to send all events occurring in your app to Criteo, not just events attributed to a Criteo campaign. Customers generally do this for the purposes of allowing Criteo insight into users who would be good candidates for retargeting based on their actions in the app.
 
-To send all events to Criteo, switch the "Send Postbacks For" toggle under the <notranslate>**Postback Config**</notranslate> in the [Ads Partner Manager](https://dashboard.branch.io/ads/partner-management/a_criteo?tab=postback) to <notranslate>**All events**</notranslate>.
+To send all events to Criteo, switch the <notranslate>"Send Postbacks For"</notranslate> toggle under the <notranslate>**Postback Config**</notranslate> in the [Ads Partner Manager](https://dashboard.branch.io/ads/partner-management/a_criteo?tab=postback) to <notranslate>**All events**</notranslate>.
 
 ![image](/_assets/img/pages/deep-linked-ads/criteo/all-events-toggle.png)
 
@@ -415,7 +415,7 @@ Criteo accepts hashed emails from your ad campaigns. To send hashed emails, plea
 
 1. In your app, add [custom metadata](#branch-and-criteo-event-mapping) to your events with keys `md5_hashed_email`, and a value of an MD5 hashed email address. Please do **not** send unhashed emails to Branch.
 1. In the Branch dashboard, navigate to <notranslate>**Postback Config**</notranslate> within the Criteo entry of the Ads Partner Manager.
-1. Find the postback you want to edit, and add the following string in the relevant place. This will generally be as another event in the `"events"` array. Please note that _OPEN_ and _INSTALL_ events do not support this parameter.
+1. Find the postback you want to edit, and add the following string in the relevant place. This will generally be as another event in the `<notranslate>"events"</notranslate>` array. Please note that _OPEN_ and _INSTALL_ events do not support this parameter.
 	``` code
 	,{"event":"setHashedEmail", "email":[<@json>${(custom_data.md5_hashed_email)!}</@json>]}
 	```

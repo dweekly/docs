@@ -109,11 +109,11 @@ In the above snippet, `this` is the Activity context.
 
 | Property | Value | Sourced from | Example
 | --- | --- | --- | ---
-| event | Branch event | event name | branch_OPEN
-| event_id | Unique ID for the event | Branch event ID | 469939270182891107
-| properties | Branch Link Data Dictionary | Last Attributed Touch Data for the link to which the event was attributed | "campaign": "Segment test", "channel": "Slack"
-| device_info | Device Data, like OS | Branch User Data for the device | "os": "ANDROID"
-| anonymousId | Segment Anonymous ID | Segment SDK provided Anonymous ID | 12356
-| IP | IP of the event | Device | 192.82.115.928
+| `event` | Branch event | event name | branch_OPEN
+| `event_id` | Unique ID for the event | Branch event ID | 469939270182891107
+| `properties` | Branch Link Data Dictionary | Last Attributed Touch Data for the link to which the event was attributed | "campaign": "Segment test", "channel": "Slack"
+| `device_info` | Device Data, like OS | Branch User Data for the device | "os": "ANDROID"
+| `anonymousId` | Segment Anonymous ID | Segment SDK provided Anonymous ID | 12356
+| `IP` | IP of the event | Device | 192.82.115.928
 
-All of the above properties are received as flat _properties[key]_, even though some are stored as dictionaries in Branch. They are grouped in our documentation for legibility.
+All of the above properties are received as flat <notranslate>_properties[key]_</no>, even though some are stored as dictionaries in Branch. They are grouped in our documentation for legibility.

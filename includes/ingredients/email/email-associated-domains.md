@@ -3,7 +3,7 @@
 To enable Universal Links on your click tracking domain, you'll need to add the click tracking domain to your Associated Domains entitlement.
 
 1. In Xcode, go to the `Capabilities` tab of your project file.
-1. Scroll down and enable `Associated Domains` if it is not already enabled.
+1. Scroll down and enable <notranslate>**Associated Domains**</notranslate> if it is not already enabled.
 
     ![image](/_assets/img/pages/email/enable-associated-domains.png)
 

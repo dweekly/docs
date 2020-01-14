@@ -20,7 +20,7 @@ was opened with the expanded data.
 
 ### Configure Branch
 
-Complete the `Basic integration` within [Configure your dashboard](/dashboard/integrate/)
+Complete the **Basic integration** within [Configure your dashboard](/dashboard/integrate/)
 
     ![image](/_assets/img/pages/dashboard/fallback.png)
 
@@ -389,12 +389,12 @@ We've added a series of custom events that you'll want to start tracking for ric
 
 | Key | Value
 | --- | ---
-| BranchStandardEventViewItem | User viewed the object
-| BranchStandardEventAddToWishlist | User added the object to their wishlist
-| BranchStandardEventAddToCart | User added object to cart
-| BranchStandardEventInitiatePurchase | User started to check out
-| BranchStandardEventPurchase | User purchased the item
-| BranchStandardEventShare | User completed a share
+| `BranchStandardEventViewItem` | User viewed the object
+| `BranchStandardEventAddToWishlist` | User added the object to their wishlist
+| `BranchStandardEventAddToCart` | User added object to cart
+| `BranchStandardEventInitiatePurchase` | User started to check out
+| `BranchStandardEventPurchase` | User purchased the item
+| `BranchStandardEventShare` | User completed a share
 
 #### Methods
 
@@ -480,22 +480,22 @@ You can do custom redirection by inserting the following _optional keys in the d
 
 | Key | Value
 | --- | ---
-| "$fallback_url" | Where to send the user for all platforms when app is not installed. Note that Branch will forward all robots to this URL, overriding any OG tags entered in the link.
-| "$desktop_url" | Where to send the user on a desktop or laptop. By default it is the Branch-hosted text-me service.
-| "$android_url" | The replacement URL for the Play Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_.
-| "$ios_url" | The replacement URL for the App Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_.
-| "$ipad_url" | Same as above, but for iPad Store.
-| "$fire_url" | Same as above, but for Amazon Fire Store.
-| "$blackberry_url" | Same as above, but for Blackberry Store.
-| "$windows_phone_url" | Same as above, but for Windows Store.
-| "$after_click_url" | When a user returns to the browser after going to the app, take them to this URL. _iOS only; Android coming soon_.
+| `$fallback_url` | Where to send the user for all platforms when app is not installed. Note that Branch will forward all robots to this URL, overriding any OG tags entered in the link.
+| `$desktop_url` | Where to send the user on a desktop or laptop. By default it is the Branch-hosted text-me service.
+| `$android_url` | The replacement URL for the Play Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_.
+| `$ios_url` | The replacement URL for the App Store to send the user if they don't have the app. _Only necessary if you want a mobile web splash_.
+| `$ipad_url` | Same as above, but for iPad Store.
+| `$fire_url` | Same as above, but for Amazon Fire Store.
+| `$blackberry_url` | Same as above, but for Blackberry Store.
+| `$windows_phone_url` | Same as above, but for Windows Store.
+| `$after_click_url` | When a user returns to the browser after going to the app, take them to this URL. _iOS only; Android coming soon_.
 
 You have the ability to control the direct deep linking of each link by inserting the following _optional keys in the dictionary_:
 
 | Key | Value
 | --- | ---
-| "$deeplink_path" | The value of the deep link path that you'd like us to append to your URI. For example, you could specify "$deeplink_path": "radio/station/456" and we'll open the app with the URI "yourapp://radio/station/456?link_click_id=branch-identifier". This is primarily for supporting legacy deep linking infrastructure.
-| "$always_deeplink" | true or false. (default is not to deep link first) This key can be specified to have our linking service force try to open the app, even if we're not sure the user has the app installed. If the app is not installed, we fall back to the respective app store or $platform_url key. By default, we only open the app if we've seen a user initiate a session in your app from a Branch link (has been cookied and deep linked by Branch).
+| `$deeplink_path` | The value of the deep link path that you'd like us to append to your URI. For example, you could specify "$deeplink_path": "radio/station/456" and we'll open the app with the URI "yourapp://radio/station/456?link_click_id=branch-identifier". This is primarily for supporting legacy deep linking infrastructure.
+| `$always_deeplink` | true or false. (default is not to deep link first) This key can be specified to have our linking service force try to open the app, even if we're not sure the user has the app installed. If the app is not installed, we fall back to the respective app store or $platform_url key. By default, we only open the app if we've seen a user initiate a session in your app from a Branch link (has been cookied and deep linked by Branch).
 
 <notranslate>**alias**</notranslate>: The alias for a link. Eg. `myapp.com/customalias`
 
