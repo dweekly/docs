@@ -1,6 +1,6 @@
 ## Overview
 
-Branch’s Daily Exports pull granular Branch event data directly. You can do so either via the **Daily Exports** section in your Branch dashboard OR via API directly.
+Branch’s Daily Exports pull granular Branch event data directly. You can do so either via the <notranslate>**Daily Exports**</notranslate> section in your Branch dashboard OR via API directly.
 
 A few important notes:
 
@@ -20,8 +20,8 @@ A few important notes:
 
 ## Requirements
 
-- [x] You must have a **Data Feeds** subscription.
-- [x] Toggle on the **Data Export API** using the slider on the **Data Feeds Manager page**.
+- [x] You must have a <notranslate>**Data Feeds**</notranslate> subscription.
+- [x] Toggle on the <notranslate>**Data Export API**</notranslate> using the slider on the <notranslate>**Data Feeds Manager page**</notranslate>.
 
 ## Access via Branch Dashboard
 
@@ -32,15 +32,15 @@ Rather than accessing the Daily Export API directly, you can use the Daily Expor
 
 To request an export:
 
-1. In the left-hand navigation, under the **Setup & Testing** section, click **Data Import & Export**, then click on **Exports**.
-2. On the **Daily Exports** page, select the period of time you wish to export data for.
+1. In the left-hand navigation, under the <notranslate>**Setup & Testing**</notranslate> section, click <notranslate>**Data Import & Export**</notranslate>, then click on <notranslate>**Exports**</notranslate>.
+2. On the <notranslate>**Daily Exports**</notranslate> page, select the period of time you wish to export data for.
     - Last 1 days
     - Last 3 days
     - Last 7 days
     - Custom
 3. Select the type of events you want to export:
-  - Individually by clicking the respective **Download arrow**
-  - En masse by clicking the **Export All** button.
+  - Individually by clicking the respective <notranslate>**Download arrow**</notranslate>
+  - En masse by clicking the <notranslate>**Export All**</notranslate> button.
 
 ![image](/_assets/img/pages/exports/daily-exports.png)
 
@@ -61,13 +61,13 @@ https://api2.branch.io/v3/export/
 
 ### Query Parameters
 
-**branch_key** _required_
+<notranslate>**branch_key**</notranslate> _required_
 : The Branch key of the originating app
 
-**branch_secret** _required_
+<notranslate>**branch_secret**</notranslate> _required_
 : The Branch secret key of the originating app
 
-**export_date** _required_
+<notranslate>**export_date**</notranslate> _required_
 : The UTC date of the requested data export
 
 **Example request:**

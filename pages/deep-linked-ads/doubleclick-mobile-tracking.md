@@ -25,19 +25,19 @@ First, we'll need to grab the advertiser ID. Select the advertiser you want to t
 
 #### Grab Server to Server Token
 
-Once you've captured the advertiser ID and selected the advertiser, navigate to **Floodlight Configuration**. From there, go to "server to server", and make sure "in-app attribution tracking" is check-marked. Click new token, call it “Branch token”, and save it. Copy this value, as well.
+Once you've captured the advertiser ID and selected the advertiser, navigate to <notranslate>**Floodlight Configuration**</notranslate>. From there, go to "server to server", and make sure "in-app attribution tracking" is check-marked. Click new token, call it “Branch token”, and save it. Copy this value, as well.
 
 ![image](/_assets/img/pages/deep-linked-ads/doubleclick/server-token.png)
 
-Now that you have **Advertiser ID** and **Server to Server Token**, the last step is to find the events you need to track.
+Now that you have <notranslate>**Advertiser ID**</notranslate> and <notranslate>**Server to Server Token**</notranslate>, the last step is to find the events you need to track.
 
 #### Grab Tags for Events
 
-Go to the **Floodlight activities** tab. For all the events you want to track, grab the **Activity tag String** and **Group tag String**.
+Go to the <notranslate>**Floodlight activities**</notranslate> tab. For all the events you want to track, grab the <notranslate>**Activity tag String**</notranslate> and <notranslate>**Group tag String**</notranslate>.
 
 ![image](/_assets/img/pages/deep-linked-ads/doubleclick/cat-type.png)
 
-In the above screenshot, the two values for **Activity tag String** are *act-ios* and *act-android*. The one value for **Group tag String** is *sales*. Do this for all activities you want to track.
+In the above screenshot, the two values for <notranslate>**Activity tag String**</notranslate> are *act-ios* and *act-android*. The one value for <notranslate>**Group tag String**</notranslate> is *sales*. Do this for all activities you want to track.
 
 Once you're done with this exercise, you should have at least 4 unique values:
 
@@ -52,20 +52,20 @@ Let's take these values and place them in Branch's dashboard. Begin by navigatin
 
 #### Enable
 
-Find DoubleClick in the search box. Hit enable. In the **Account Settings** tab, insert your **Server to Server token**.
+Find DoubleClick in the search box. Hit enable. In the <notranslate>**Account Settings**</notranslate> tab, insert your <notranslate>**Server to Server token**</notranslate>.
 
 #### Map Events
 
-At this point, you have enabled Branch to communicate with Doubleclick. Now we need to map Branch events to **Floodlight Activities** found on the Doubleclick dashboard.
+At this point, you have enabled Branch to communicate with Doubleclick. Now we need to map Branch events to <notranslate>**Floodlight Activities**</notranslate> found on the Doubleclick dashboard.
 
-1. Click the **Postback Config** tab.
-1. Set *Send Postbacks For* to **All Events**
-1. You should see a URL for the event **Install**. For demonstration purposes, we will assume you have a corresponding Install event on the Doubleclick dashboard, but this applies to any event you add.
-1. Start by grabbing your **Advertiser ID**, **Activity tag String**, and **Group tag String**.
+1. Click the <notranslate>**Postback Config**</notranslate> tab.
+1. Set <notranslate>*Send Postbacks For*</notranslate> to <notranslate>**All Events**</notranslate>
+1. You should see a URL for the event <notranslate>**Install**</notranslate>. For demonstration purposes, we will assume you have a corresponding Install event on the Doubleclick dashboard, but this applies to any event you add.
+1. Start by grabbing your <notranslate>**Advertiser ID**</notranslate>, <notranslate>**Activity tag String**</notranslate>, and <notranslate>**Group tag String**</notranslate>.
 
-In the screenshot above, we have two events, "In App Activations - Android", and "In App Activations - iOS", which correspond to the Branch Install event. For this example, the **Activity tag Strings** are *act-and* and *act-ios*. The **Group tag String** is *sales*.
+In the screenshot above, we have two events, "In App Activations - Android", and "In App Activations - iOS", which correspond to the Branch Install event. For this example, the <notranslate>**Activity tag Strings**</notranslate> are *act-and* and *act-ios*. The <notranslate>**Group tag String**</notranslate> is *sales*.
 
-Copy the existing URL in Install, and replace the *src*, *cat*, and *type* variables. The "cat" example below has conditional iOS and Android information.
+Copy the existing URL in Install, and replace the <notranslate>*src*</notranslate>, <notranslate>*cat*</notranslate>, and <notranslate>*type*</notranslate> variables. The "cat" example below has conditional iOS and Android information.
 
 Your end result should look exactly like this, where there are different cat tags for iOS and Android.
 

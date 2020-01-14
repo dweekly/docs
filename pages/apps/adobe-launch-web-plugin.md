@@ -27,7 +27,7 @@ To install the Branch Plugin in your Launch Property:
 
 ### Initialize Branch
 
-Before using actions related to Branch, you’ll need to **initialize** the plugin on your site. Best practice is to initialize Branch on **DOM Ready**. Here’s an example that uses the Core plugin’s DOM Ready event to initialize Branch.
+Before using actions related to Branch, you’ll need to <notranslate>**initialize**</notranslate> the plugin on your site. Best practice is to initialize Branch on <notranslate>**DOM Ready**</notranslate>. Here’s an example that uses the Core plugin’s DOM Ready event to initialize Branch.
 
 ![image](/_assets/img/pages/apps/adobe-launch-web-plugin/adobe-launch-web2.png)
 
@@ -35,9 +35,9 @@ Note: The Branch initialization action does not have a configuration screen. Whe
 
 ![image](/_assets/img/pages/apps/adobe-launch-web-plugin/adobe-launch-web3.png)
 
-**Extension**: Branch Experiences and Measurement
+<notranslate>**Extension**: Branch Experiences and Measurement</notranslate>
 
-**Action Type**: Initialize Branch
+<notranslate>**Action Type**: Initialize Branch</notranslate>
 
 Once configured, please remember to publish your changes!
 
@@ -51,7 +51,7 @@ Once your Journey is setup in Branch’s Dashboard and you’ve configured Branc
 
 ## Automatically Open the App When Installed
 
-To have Branch automatically Deep Link users to your mobile app when installed, use the **Auto-Open Native App** action. It is advisable to chain this action to the action that initializes Branch because you’ll want to transport users into the app immediately when installed. The UX for a user that has your app installed, will include a prompt to open your app. Upon acknowledgement, they will get transported into it and data configured within the action’s view will be passed into it. Conversely, if a user does not have the app installed, the user will remain on mobile web.
+To have Branch automatically Deep Link users to your mobile app when installed, use the <notranslate>**Auto-Open Native App**</notranslate> action. It is advisable to chain this action to the action that initializes Branch because you’ll want to transport users into the app immediately when installed. The UX for a user that has your app installed, will include a prompt to open your app. Upon acknowledgement, they will get transported into it and data configured within the action’s view will be passed into it. Conversely, if a user does not have the app installed, the user will remain on mobile web.
 
 ![image](/_assets/img/pages/apps/adobe-launch-web-plugin/adobe-launch-web4.png)
 
@@ -59,7 +59,7 @@ Note: Deep Link Data, Tags, Campaign and Channel can be sourced from Data Elemen
 
 ## Send Desktop Users an SMS to Download App
 
-If you’ve got Desktop users signing up on your website and would like to push them to your mobile app, you can use the **SMS Link to Download App** action. This action has a view similar to the one above but with an additional piece - a user’s phone number. One should use Data Elements to supply the phone number.
+If you’ve got Desktop users signing up on your website and would like to push them to your mobile app, you can use the <notranslate>**SMS Link to Download App**</notranslate> action. This action has a view similar to the one above but with an additional piece - a user’s phone number. One should use Data Elements to supply the phone number.
 
 When this action is triggered, a user will be sent an SMS with a link to download your app. A click on the link with the app not installed will take the user to the App/Play Store to download it. Upon entering the app, data from the action’s view will be delivered into it.
 

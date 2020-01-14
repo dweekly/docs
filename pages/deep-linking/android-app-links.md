@@ -15,8 +15,8 @@ Start by generating a SHA256 fingerprint of your app's signing certificate.
 ### Enable App Links on the Branch dashboard
 
 1. Head to the [Link Settings page](https://dashboard.branch.io/link-settings) on the Branch dashboard.
-1. Toggle the **Enable App Links** checkbox in the Android section.
-1. Paste the copied fingerprint value into the **SHA256 Cert Fingerprints** field that appears. ![image](/_assets/img/pages/deep-linking/universal-links/enable_app_links.png)
+1. Toggle the <notranslate>**Enable App Links**</notranslate> checkbox in the Android section.
+1. Paste the copied fingerprint value into the <notranslate>**SHA256 Cert Fingerprints**</notranslate> field that appears. ![image](/_assets/img/pages/deep-linking/universal-links/enable_app_links.png)
 1. Scroll down and click `Save`.
 
 !!! tip "Using multiple fingerprints"

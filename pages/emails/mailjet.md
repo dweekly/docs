@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Mailj
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Mailjet** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Mailjet**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Sender domains & addresses](https://app.mailjet.com/account/sender){:target="\_blank"}** section of your Mailjet account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**[Sender domains & addresses](https://app.mailjet.com/account/sender){:target="\_blank"}**</notranslate> section of your Mailjet account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/mailjet/setup-config.png)
 
@@ -44,7 +44,7 @@ You can retrieve your click tracking domain from the **[Sender domains & address
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **[Sender domains & addresses](https://app.mailjet.com/account/sender){:target="\_blank"}** section of your Mailjet account:
+1. Add and verify a custom click tracking domain in the <notranslate>**[Sender domains & addresses](https://app.mailjet.com/account/sender){:target="\_blank"}**</notranslate> section of your Mailjet account:
 
     ![image](/_assets/img/pages/email/mailjet/create-domain.png)
 

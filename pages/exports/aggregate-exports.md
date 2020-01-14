@@ -24,7 +24,7 @@ For creating and checking the status of exports, the rate limit is 2 requests pe
 
 ## Export Access
 
-In order to access Aggregate Exports, a user will need to have both **Aggregate Data** and **Export** access.
+In order to access Aggregate Exports, a user will need to have both <notranslate>**Aggregate Data**</notranslate> and <notranslate>**Export**</notranslate> access.
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-access.png)
 
@@ -41,15 +41,15 @@ If you work with an agency that runs your advertising campaigns and want to give
 
 To provide an agency team member with access to the Custom Export API:
 
-1. In the left-hand navigation, under **Setup & Testing**, click on **Account Settings**.
-2. On the **Account Settings** page, click on the **Agencies** tab.
-3. Expand the agency in question, find the agency team member you want to give access to, hover on the button in the **Actions** column and click **Edit**.
-4. In the **Edit Agency Team Member** modal:
-    1. Under **Access Level**, check the **Export** box.
-    2. Under **Permissions**, check the **Aggregate Data** box.
+1. In the left-hand navigation, under <notranslate>**Setup & Testing**</notranslate>, click on <notranslate>**Account Settings**</notranslate>.
+2. On the <notranslate>**Account Settings**</notranslate> page, click on the <notranslate>**Agencies**</notranslate> tab.
+3. Expand the agency in question, find the agency team member you want to give access to, hover on the button in the <notranslate>**Actions**</notranslate> column and click <notranslate>**Edit**</notranslate>.
+4. In the <notranslate>**Edit Agency Team Member**</notranslate> modal:
+    1. Under <notranslate>**Access Level**</notranslate>, check the <notranslate>**Export**</notranslate> box.
+    2. Under <notranslate>**Permissions**</notranslate>, check the <notranslate>**Aggregate Data**</notranslate> box.
 5. Optional: add data filters
-    1. Under **Data Filters**, toggle any necessary data filters on/blue. Exported data will be filtered accordingly.
-6. Click **Save**.
+    1. Under <notranslate>**Data Filters**</notranslate>, toggle any necessary data filters on/blue. Exported data will be filtered accordingly.
+6. Click <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/dashboard/access-levels/agency-aggregate-export.png)
 
@@ -61,12 +61,12 @@ To provide an agency team member with access to the Custom Export API:
 
 The following log topics are available via the Aggregate Export API:
 
-*   **Clicks**
-*   **Events**
-*   **Impressions**
-*   **Installs**
-*   **Opens**
-*   **Revenue USD**
+*   <notranslate>**Clicks**</notranslate>
+*   <notranslate>**Events**</notranslate>
+*   <notranslate>**Impressions**</notranslate>
+*   <notranslate>**Installs**</notranslate>
+*   <notranslate>**Opens**</notranslate>
+*   <notranslate>**Revenue USD**</notranslate>
 
 !!! info "Info"
 	Branch does not support exports of the infrequently-used update and postbacks TUNE topics.

@@ -12,8 +12,8 @@ Branch will import events that are not auto-tracked with the Branch SDKs. This i
 
 1. [Contact Branch](https://support.branch.io){:target="\_blank"} to configure Branch to receive events from mParticle. Please note that a subscription to [Data Feeds](https://branch.io/data-feeds/){:target="\_blank"} is required to enable data import from mParticle to Branch.
 1. Navigate to the [Data Integrations page](https://dashboard.branch.io/data-import-export/data-feeds/integrations){:target="\_blank"} of the Branch dashboard.
-    1. Select **mParticle** from the menu on the left.
-    1. Select the platforms you would like to import events from and click **Save**.
+    1. Select <notranslate>**mParticle**</notranslate> from the menu on the left.
+    1. Select the platforms you would like to import events from and click <notranslate>**Save**</notranslate>.
 
     ![image](/_assets/img/pages/integrations/mparticle/mparticle-import.png)
 
@@ -32,23 +32,23 @@ The Branch integration supports some of the events tracked with mParticle’s [A
 
 | mParticle Action | mParticle Event Type | mParticle Custom Event Type | Branch Event | Branch Event Category | Imported |
 | --- | --- | --- | --- | --- | --- |
-| add_to_cart | product_action | - | Add To Cart | Commerce Event | **Yes** |
-| add_to_wishlist | product_action | - | Add To Wishlist | Commerce Event | **Yes** |
-| *use the Branch event name* | - | - | View Cart | Commerce Event | **Yes** |
-| *use the Branch event name* | - | - | Add Payment Info | Commerce Event | **Yes** |
-| checkout | product_action | - | Initiate Purchase | Commerce Event | **Yes** |
-| purchase | product_action | - | Purchase | Commerce Event | **Yes** |
-| *use the Branch event name* | - | - | Spend Credits | Commerce Event | **Yes** |
-| *use the Branch event name* | custom_event | search | Search | Content Event | **Yes** |
-| view_detail | product_action | - | View Item | Content Event | **Yes** |
-| view_detail | product_action | - | View Items | Content Event | **Yes** |
-| *use the Branch event name* | - | - | Rate | Content Event | **Yes** |
-| *use the Branch event name* | - | - | Share | Content Event | **Yes** |
-| *use the Branch event name* | - | - | Complete Registration | Lifecycle Event | **Yes** |
-| *use the Branch event name* | - | - | Complete Tutorial | Lifecycle Event | **Yes** |
-| *use the Branch event name* | - | - | Achieve Level | Lifecycle Event | **Yes** |
-| *use the Branch event name* | - | - | Unlock Achievement | Lifecycle Event | **Yes** |
-| *use the Branch event name* | - | - | Custom | Custom Event | **Yes** |
+| add_to_cart | product_action | - | Add To Cart | Commerce Event | <notranslate>**Yes**</notranslate> |
+| add_to_wishlist | product_action | - | Add To Wishlist | Commerce Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | View Cart | Commerce Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | Add Payment Info | Commerce Event | <notranslate>**Yes**</notranslate> |
+| checkout | product_action | - | Initiate Purchase | Commerce Event | <notranslate>**Yes**</notranslate> |
+| purchase | product_action | - | Purchase | Commerce Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | Spend Credits | Commerce Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | custom_event | search | Search | Content Event | <notranslate>**Yes**</notranslate> |
+| view_detail | product_action | - | View Item | Content Event | <notranslate>**Yes**</notranslate> |
+| view_detail | product_action | - | View Items | Content Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | Rate | Content Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | Share | Content Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | Complete Registration | Lifecycle Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | Complete Tutorial | Lifecycle Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | Achieve Level | Lifecycle Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | Unlock Achievement | Lifecycle Event | <notranslate>**Yes**</notranslate> |
+| *use the Branch event name* | - | - | Custom | Custom Event | <notranslate>**Yes**</notranslate> |
 | - | - | - | Click | - | No |
 | - | - | - | Install | - | No |
 | - | - | - | Reinstall | - | No |
@@ -88,7 +88,7 @@ Once you have import turned on in both mParticle and Branch, events should come 
 
 ![image](/_assets/img/pages/integrations/mparticle/mparticle-import-status.png)
 
-To see more information on the events that are coming in, you can look at events with **origin** `MPARTICLE` in [Liveview](https://dashboard.branch.io/liveview/events){:target="\_blank"}:
+To see more information on the events that are coming in, you can look at events with <notranslate>**origin**</notranslate> `MPARTICLE` in [Liveview](https://dashboard.branch.io/liveview/events){:target="\_blank"}:
 
 ![image](/_assets/img/pages/integrations/mparticle/mparticle-import-liveview.png)
 

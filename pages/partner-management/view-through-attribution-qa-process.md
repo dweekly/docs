@@ -23,7 +23,7 @@ As a part of our Ad Partners VTA verification process it’s essential to confir
 
 1. Get the Impression link from the final step of link creation on Branch Dashboard.
 
-2. Add our tracking link to your system to generate **ClickID** and other **parameters** specified in the Branch **Impression Link URL**.
+2. Add our tracking link to your system to generate <notranslate>**ClickID**</notranslate> and other <notranslate>**parameters**</notranslate> specified in the Branch <notranslate>**Impression Link URL**</notranslate>.
 
 3. Ensure that Impression URL has a Device ID (`%24idfa=` OR `%24aaid=`) macro populated e.g. `idfa=AEBE52E7-03EE-455A-B3C4-E57283966239`:
 
@@ -33,7 +33,7 @@ As a part of our Ad Partners VTA verification process it’s essential to confir
 
 5. You'll be redirected to the 1x1 pixel web page to ensure view-through is tracked.
 
-6. Navigate to the Google/Apple Store to install the Branch test application **Branch Monster Factory**.
+6. Navigate to the Google/Apple Store to install the Branch test application <notranslate>**Branch Monster Factory**</notranslate>.
 
 	*   iOS: [https://itunes.apple.com/us/app/branch-monster-factory/id917737838?mt=8](https://itunes.apple.com/us/app/branch-monster-factory/id917737838?mt=8)
 	*   Android: [https://play.google.com/store/apps/details?id=io.branch.branchster](https://play.google.com/store/apps/details?id=io.branch.branchster)

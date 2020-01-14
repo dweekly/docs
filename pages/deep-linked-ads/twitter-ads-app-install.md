@@ -124,9 +124,9 @@ Twitter has a data agreement with TUNE, and there are several layers of data tha
 
 ### Data Levels
 
-**Source Level** > Source level is the source information including Publisher name (hardcoded to "Twitter"), Publisher ID, 3p (hardcoded to "a_twitter") and advertising partner name (hardcoded to "Twitter").
+<notranslate>**Source Level**</notranslate> > Source level is the source information including Publisher name (hardcoded to "Twitter"), Publisher ID, 3p (hardcoded to "a_twitter") and advertising partner name (hardcoded to "Twitter").
 
-**Campaign Level** > Campaign level includes campaign information such as Campaign (Twitter Campaign Name), Campaign ID (Twitter Campaign ID), Channel (Twitter or Twitter Audience Platform), Feature (hardcoded to "paid advertising"), Ad ID (Tweet ID), Partner Ad Set ID (Line Item ID).
+<notranslate>**Campaign Level**</notranslate> > Campaign level includes campaign information such as Campaign (Twitter Campaign Name), Campaign ID (Twitter Campaign ID), Channel (Twitter or Twitter Audience Platform), Feature (hardcoded to "paid advertising"), Ad ID (Tweet ID), Partner Ad Set ID (Line Item ID).
 
 !!! warning "Whitelisting for Device IDs"
 	If you want to receive device IDs and campaign level information via Branch's data feeds, then you must contact your Twitter and Branch account manager. Please make use the email title of "CAMPAIGN LEVEL DATA EXPORT WHITELIST" when contacting your account manager to ensure proper handling.

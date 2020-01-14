@@ -34,9 +34,9 @@ For Android, this will be your package name registered on AppsFlyer. If your pac
 ### Configure the Branch Dashboard
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
-1. Locate AppsFlyer and choose **Enable**.
+1. Locate AppsFlyer and choose <notranslate>**Enable**</notranslate>.
   * If you have not yet entered billing information, please do so now.
-1. Enter your AppsFlyer information and hit **Save**.
+1. Enter your AppsFlyer information and hit <notranslate>**Save**</notranslate>.
 
 ## Advanced
 

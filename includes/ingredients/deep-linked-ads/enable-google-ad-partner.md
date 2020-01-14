@@ -6,11 +6,11 @@ If you haven't enabled Google as an Ad Partner on the Branch dashboard follow th
 
 ![Ads Partner Management](/_assets/img/ingredients/deep-linked-ads/enable-google-ad-partner/ads-partner-management.png)
 
-- Search for **Google AdWords**.
+- Search for <notranslate>**Google AdWords**</notranslate>.
 
 ![Find Google Adwords in Partner Manager](/_assets/img/ingredients/deep-linked-ads/enable-google-ad-partner/find-google-partner.png)
 
-- Enter values for the **conversion IDs and labels**. You can put in placeholders for now, but we recommend setting up install conversion tracking in AdWords before launching your campaign. For setup instructions on conversion tracking, check out [Google Conversion Setup](/deep-linked-ads/google-conversions/).
+- Enter values for the <notranslate>**conversion IDs and labels**</notranslate>. You can put in placeholders for now, but we recommend setting up install conversion tracking in AdWords before launching your campaign. For setup instructions on conversion tracking, check out [Google Conversion Setup](/deep-linked-ads/google-conversions/).
 
 - Click the `Save and Enable` button in the lower right hand corner.
 

@@ -16,7 +16,7 @@ In order to check if the user came from an Apple Search Ads, you must make the a
 
 ### Import iAd and AdSupport
 
-You must add Apple's **iAd.framework** and **AdSupport.framework** to your **Linked Frameworks** in your Xcode project to enable Apple Search Ads checking.
+You must add Apple's <notranslate>**iAd.framework**</notranslate> and <notranslate>**AdSupport.framework**</notranslate> to your <notranslate>**Linked Frameworks**</notranslate> in your Xcode project to enable Apple Search Ads checking.
 
 ![image](/_assets/img/pages/apps/ios-frameworks.png)
 
@@ -28,7 +28,7 @@ You must add Apple's **iAd.framework** and **AdSupport.framework** to your **Lin
 !!! info "Branch iOS SDK v0.30.0"
     As of v0.30.0, the Branch iOS SDK supports new logic that increases wait time for Apple Search Ads to respond with the payload, as well as ignore Apple's test data.  
 
-To enable this check, add a `delayInitToCheckForSearchAds` call to your **AppDelegate.m** (or **AppDelegate.swift**) file after you create the Branch singleton, but *before* you call `initSession`. Your code will end up looking something like this:
+To enable this check, add a `delayInitToCheckForSearchAds` call to your <notranslate>**AppDelegate.m**</notranslate> (or <notranslate>**AppDelegate.swift**</notranslate>) file after you create the Branch singleton, but *before* you call `initSession`. Your code will end up looking something like this:
 
 **Objective-C**
 

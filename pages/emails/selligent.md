@@ -4,7 +4,7 @@
 
 This guide will walk you through how to setup your email campaigns with **[Selligent Message Studio](https://www.selligent.com/){:target="\_blank"}** using Branch Universal Email to automatically convert your email links into **multi-platform deep links**
 
-Customers need to be on **Message Studio v10.0** to be upgraded to the service pack containing the integration. Any customers that are currently on previously release lines will first need to upgrade to the base version.
+Customers need to be on <notranslate>**Message Studio v10.0**</notranslate> to be upgraded to the service pack containing the integration. Any customers that are currently on previously release lines will first need to upgrade to the base version.
 
 {! ingredients/email/overview-steps.md !}
 
@@ -16,7 +16,7 @@ Customers need to be on **Message Studio v10.0** to be upgraded to the service p
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Selligent** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Selligent**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 

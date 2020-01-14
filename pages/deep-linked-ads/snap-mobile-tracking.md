@@ -54,7 +54,7 @@ Before you begin, be sure the following is confirmed.
 
     ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/snap-select-accounts.png)
 
-1. Click **Save** to finish.
+1. Click <notranslate>**Save**</notranslate> to finish.
 
     ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/snap-complete.png)
 

@@ -41,13 +41,13 @@ By connecting your Google Marketing Platform and Branch accounts, the following 
 !!! note ""
 	Completing this section will result in Branch sending app conversion to Google in order to attribute them back to Google Marketing Platform campaigns.
 
-1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management) and search for **Google Marketing Platform**.
+1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management) and search for <notranslate>**Google Marketing Platform**</notranslate>.
 
-1. Provide the **Link IDs** for your Android/iOS apps respectively.
+1. Provide the <notranslate>**Link IDs**</notranslate> for your Android/iOS apps respectively.
 	![image](/_assets/img/pages/deep-linked-ads/google-marketing-platform/google-marketing-platform-enable.png)
-1. Click **Save and Enable**.
+1. Click <notranslate>**Save and Enable**</notranslate>.
 
-1. Finally, to create a Google Marketing Platform Ads link click the **Create Google Marketing Platform Link** button in the top right hand corner.
+1. Finally, to create a Google Marketing Platform Ads link click the <notranslate>**Create Google Marketing Platform Link**</notranslate> button in the top right hand corner.
 
 ## Creating a Google Marketing Platform Ads Campaign
 

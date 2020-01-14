@@ -57,7 +57,7 @@ Please follow Google Ads' documentation on how to [set up an App Engagement Camp
 * [x] Have [mobile app conversion tracking](https://support.google.com/google-ads/answer/6100665) set up and [a supported third party](https://support.google.com/google-ads/answer/7382633) (Branch) to track conversions.
 
 !!! warning "Dynamic Remarketing Campaigns for Apps"
-	App Engagement Campaigns do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a **Web-based Ad** using the **Display Network**.
+	App Engagement Campaigns do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a <notranslate>**Web-based Ad**</notranslate> using the <notranslate>**Display Network**</notranslate>.
 
 For more detailed information, please see [Google Ads' help documentation](https://support.google.com/google-ads/answer/9234180).
 
@@ -66,7 +66,7 @@ For more detailed information, please see [Google Ads' help documentation](https
 !!! info "Non-App Campaigns"
 	The integration is mostly designed to strongly support app install campaigns and app engagement campaigns. However, you can also still run non-app campaigns and Google will confirm when a supported app conversion occurs.
 
-- Includes **Search**, **Display**, **Shopping** and **Video** Campaign types
+- Includes <notranslate>**Search**</notranslate>, <notranslate>**Display**</notranslate>, <notranslate>**Shopping**</notranslate> and <notranslate>**Video**</notranslate> Campaign types
 	- Dynamic Remarketing campaigns for Apps
 - Full attribution for:
 	- App conversions (opens & in-app events)
@@ -79,7 +79,7 @@ For more detailed information, please see [Google Ads' help documentation](https
 
 #### Web Routing Requirements
 
-If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the power of Branch for **desktop and mobile web** conversions, please make sure you complete the following:
+If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the power of Branch for <notranslate>**desktop and mobile web**</notranslate> conversions, please make sure you complete the following:
 
 * [x] Branch SDK integrated into your app.
 * [x] Collect the IDFA on iOS, or the AAID on Android. For specifics, refer to the set up guide for [iOS](/apps/ios/#install-branch) and [Android](/apps/android/#install-branch) respectively.
@@ -87,7 +87,7 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 * [x] Have admin access to your Google Ads account; required for generating Link IDs in Google Ads.
 * [x] [Branch Web SDK v2.48.0+](/web/integrate/)
 * [x] [Measurement of relevant v2 events](/web/integrate/#track-events)
-* [x] Requires [Branch Ad link](/deep-linked-ads/google-ads-customization/#create-a-branch-ad-link) in the campaign's **Tracking Template**.
+* [x] Requires [Branch Ad link](/deep-linked-ads/google-ads-customization/#create-a-branch-ad-link) in the campaign's <notranslate>**Tracking Template**</notranslate>.
 
 Please follow Google Ads' documentation on how to [set up a Campaign](https://support.google.com/google-ads/answer/6324971?hl=en&ref_topic=3121941).
 

@@ -14,7 +14,7 @@ By connecting your Google Ads and Branch accounts, the following is enabled:
 
 ## Linking Branch in Google Ads
 
-To link Branch to your Google Ads account, please follow Google's **[Link a third-party app analytics provider and Google Ads](https://support.google.com/google-ads/answer/7365001?hl=en&ref_topic=7280929)**.
+To link Branch to your Google Ads account, please follow Google's <notranslate>**[Link a third-party app analytics provider and Google Ads](https://support.google.com/google-ads/answer/7365001?hl=en&ref_topic=7280929)**</notranslate>.
 
 ![image](/_assets/img/pages/deep-linked-ads/google/google-ads-aap.png)
 
@@ -44,7 +44,7 @@ Once you've linked Branch in Google Ads:
 
 After you have set both Branch & Google Ads up, wait ~20 minutes, and go back to the Google Ads dashboard. NOTE: You can expedite this process if you open your app and simulate the events you want forwarded.
 
-To import your app conversion data as measured by the Branch SDK, please follow Google's **[Track app conversion with third-party analytics providers](https://support.google.com/google-ads/answer/7382633)**.
+To import your app conversion data as measured by the Branch SDK, please follow Google's <notranslate>**[Track app conversion with third-party analytics providers](https://support.google.com/google-ads/answer/7382633)**</notranslate>.
 
 !!! warning "Include in Conversions"
 	For any **first open** event conversions, please ensure you've marked `Include in Conversions` to `YES`. Doing so includes the `first open` conversion action’s data in your `Conversions` reporting column in Google Ads. This is important as Branch reports `first open` events to Google Ads, whereas Google Ads reports on app installs.

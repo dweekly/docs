@@ -2,7 +2,7 @@
 
 ![Tapjoy](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/tapjoy-logo-1524796724959.png)
 
-This guide will walk you through how to setup your campaigns with **[Tapjoy](http://tapjoy.com)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
+This guide will walk you through how to setup your campaigns with <notranslate>**[Tapjoy](http://tapjoy.com)**</notranslate> using Branch Universal Ads and track ad conversions across <notranslate>**every device, platform, and channel**</notranslate>.
 
 {! ingredients/deep-linked-ads/overview-steps.md !}
 
@@ -20,7 +20,7 @@ This guide will walk you through how to setup your campaigns with **[Tapjoy](htt
 
 ![image](/_assets/img/pages/deep-linked-ads/tapjoy/tapjoy-postbacks-new.png)
 
-If you are running CPE campaigns you should add **TAPJOY_APP_ID** in the Goal_ID field. Example **iOS_TAPJOY_APP_ID, Android_TAPJOY_APP_ID**
+If you are running CPE campaigns you should add <notranslate>**TAPJOY_APP_ID**</notranslate> in the Goal_ID field. Example <notranslate>**iOS_TAPJOY_APP_ID, Android_TAPJOY_APP_ID**</notranslate>
 Branch will send the postback **only** for events with matching TAPJOY_APP_ID.
 
 {! ingredients/deep-linked-ads/create-ad-link.md !}

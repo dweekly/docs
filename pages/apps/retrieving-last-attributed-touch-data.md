@@ -74,10 +74,10 @@ Before you can receive Branch last attributed touch data client-side, you need t
 
 To enable LATD:
 
-1. In the left-hand navigation, click on **Link Settings**.
-2. On the **Link Settings** page, scroll down and expand **Advanced Settings**.
-3. Within the **Advanced Settings** section, check the box next to **Enable retrieving Last Attributed Touch Data via SDKs**.
-4. Once checked, scroll down to the bottom of the page and click **Save**.
+1. In the left-hand navigation, click on <notranslate>**Link Settings**</notranslate>.
+2. On the <notranslate>**Link Settings**</notranslate> page, scroll down and expand <notranslate>**Advanced Settings**</notranslate>.
+3. Within the <notranslate>**Advanced Settings**</notranslate> section, check the box next to <notranslate>**Enable retrieving Last Attributed Touch Data via SDKs**</notranslate>.
+4. Once checked, scroll down to the bottom of the page and click <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/apps/latd-setting.png)
 

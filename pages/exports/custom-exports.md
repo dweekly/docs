@@ -3,7 +3,7 @@
 !!! info "Branch & TUNE Export Functionality"
 	Custom exports are available for both Branch data points and TUNE data points.  Please make sure to view the correct tab - Branch or TUNE - when referencing the below documentation.
 
-The Branch Custom Exports find and queue log records that match your search criteria for export. You can do so either via the **Custom Exports** section in your Branch dashboard OR via API.
+The Branch Custom Exports find and queue log records that match your search criteria for export. You can do so either via the <notranslate>**Custom Exports**</notranslate> section in your Branch dashboard OR via API.
 
 Custom exports endpoints are limited to a maximum of 2 million records each and can query up to 120 days prior to the date of export.
 
@@ -11,7 +11,7 @@ If more records are required, please make multiple requests with smaller time in
 
 ## Authentication
 
-Calls to the Custom Export API require an **api_key** or **access token** parameter to be passed with each request. API Keys are generated on a per-user basis and are permanent.
+Calls to the Custom Export API require an <notranslate>**api_key**</notranslate> or <notranslate>**access token**</notranslate> parameter to be passed with each request. API Keys are generated on a per-user basis and are permanent.
 
 Learn how to [retrieve your API key (a.k.a. `Access Token`)](/dashboard/organization-view/#managing-your-user-profile)
 
@@ -28,7 +28,7 @@ For checking the status of an export, the rate limit is 50 requests per minute a
 
 ## Export Access
 
-In order to access Custom Exports, a user will need to have both **Sensitive Data** and **Export** access.
+In order to access Custom Exports, a user will need to have both <notranslate>**Sensitive Data**</notranslate> and <notranslate>**Export**</notranslate> access.
 
 ![image](/_assets/img/pages/dashboard/access-levels/export-access.png)
 
@@ -45,15 +45,15 @@ If you work with an agency that runs your advertising campaigns and want to give
 
 To provide an agency team member with access to the Custom Export API:
 
-1. In the left-hand navigation, under **Setup & Testing**, click on **Account Settings**.
-2. On the **Account Settings** page, click on the **Agencies** tab.
-3. Expand the agency in question, find the agency team member you want to give access to, hover on the button in the **Actions** column and click **Edit**.
-4. In the **Edit Agency Team Member** modal:
-    1. Under **Access Level**, check the **Export** box.
-    2. Under **Permissions**, check the **Sensitive Data** box.
+1. In the left-hand navigation, under <notranslate>**Setup & Testing**</notranslate>, click on <notranslate>**Account Settings**</notranslate>.
+2. On the <notranslate>**Account Settings**</notranslate> page, click on the <notranslate>**Agencies**</notranslate> tab.
+3. Expand the agency in question, find the agency team member you want to give access to, hover on the button in the <notranslate>**Actions**</notranslate> column and click <notranslate>**Edit**</notranslate>.
+4. In the <notranslate>**Edit Agency Team Member**</notranslate> modal:
+    1. Under <notranslate>**Access Level**</notranslate>, check the <notranslate>**Export**</notranslate> box.
+    2. Under <notranslate>**Permissions**</notranslate>, check the <notranslate>**Sensitive Data**</notranslate> box.
 5. Optional: add data filters
-    1. Under **Data Filters**, toggle any necessary data filters on/blue. Exported data will be filtered accordingly.
-6. Click **Save**.
+    1. Under <notranslate>**Data Filters**</notranslate>, toggle any necessary data filters on/blue. Exported data will be filtered accordingly.
+6. Click <notranslate>**Save**</notranslate>.
 
 ![image](/_assets/img/pages/exports/agency-export-access.png)
 
@@ -74,17 +74,17 @@ Rather than accessing the Custom Export API directly, you can use the Custom Exp
 
 To request an export:
 
-1. In the left-hand navigation, under the **Setup & Testing** section, click **Data Import & Export**, then click on **Exports**.
-2. On the **Custom Exports** page, provide the following:
-	- The appropriate **Date Range**.
-	- The **Topic** type the export should include.
-	- The **Columns** of fields you want included.
-	- Any additional **Filters** you want included.
-	- The **Download Type** for the export.
+1. In the left-hand navigation, under the <notranslate>**Setup & Testing**</notranslate> section, click <notranslate>**Data Import & Export**</notranslate>, then click on <notranslate>**Exports**</notranslate>.
+2. On the <notranslate>**Custom Exports**</notranslate> page, provide the following:
+	- The appropriate <notranslate>**Date Range**</notranslate>.
+	- The <notranslate>**Topic**</notranslate> type the export should include.
+	- The <notranslate>**Columns**</notranslate> of fields you want included.
+	- Any additional <notranslate>**Filters**</notranslate> you want included.
+	- The <notranslate>**Download Type**</notranslate> for the export.
 
 ![image](/_assets/img/pages/exports/custom-exports.gif)
 
-You can also view any requested export in the **Custom Exports Created** table which includes:
+You can also view any requested export in the <notranslate>**Custom Exports Created**</notranslate> table which includes:
 
 - Date Created
 - Topic / Date Range

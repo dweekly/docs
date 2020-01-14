@@ -9,7 +9,7 @@ This guide will walk you through how to setup your email campaigns with **[Sales
 ## Setup
 
 !!! caution "Sender Authentication"
-    You must have the **Sender Authentication Package** activated and host your DNS Settings instead of delegating the domain to Salesforce.
+    You must have the <notranslate>**Sender Authentication Package**</notranslate> activated and host your DNS Settings instead of delegating the domain to Salesforce.
     If you've already delegated your domain to Salesforce, please ask your account manager to change domain settings and send your DNS settings.
 
 {! ingredients/email/prerequisites.md !}
@@ -18,13 +18,13 @@ This guide will walk you through how to setup your email campaigns with **[Sales
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Salesforce Marketing Cloud** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Salesforce Marketing Cloud**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Authenticated Domains]** section of your settings at Salesforce Marketing Cloud account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**[Authenticated Domains]**</notranslate> section of your settings at Salesforce Marketing Cloud account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/salesforce_dns/setup-config.png)
 
@@ -53,7 +53,7 @@ You can retrieve your click tracking domain from the **[Authenticated Domains]**
 For more information on how to set up your domain, please visit Salesforce Marketing Cloud's [documentation](https://help.salesforce.com/articleView?id=mc_es_subdomain_delegation_guide.htm&type=5){:target="\_blank"}.
 
 !!! tip "Updating DNS settings"
-    As soon as you've configured and verified the Sender Authentication Package with the Salesforce team, please find the **click** record in your DNS settings so we can update your DNS settings.
+    As soon as you've configured and verified the Sender Authentication Package with the Salesforce team, please find the <notranslate>**click**</notranslate> record in your DNS settings so we can update your DNS settings.
 
 {! ingredients/email/cname.md !}
 

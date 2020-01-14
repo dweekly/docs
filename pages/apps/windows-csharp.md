@@ -52,7 +52,7 @@ ___
 
 * Select `Package.appxmanifest` in Solution Explorer and press `F7`
 
-* Add the **Windows.appUriHandler** extension with your link:
+* Add the <notranslate>**Windows.appUriHandler**</notranslate> extension with your link:
 
 ```xml
 		<Applications>
@@ -80,7 +80,7 @@ ___
         }
 ```
 
-* Navigate to **App.xaml.cs** in your app Visual Studio solution and in **OnActivated()** add handling for linked content:
+* Navigate to <notranslate>**App.xaml.cs**</notranslate> in your app Visual Studio solution and in <notranslate>**OnActivated()**</notranslate> add handling for linked content:
 
 ```csharp
 		protected override void OnActivated(IActivatedEventArgs e) {
@@ -355,19 +355,19 @@ The response will return an array that has been parsed from the following JSON:
 ```
 
 
-**referrer**
+<notranslate>**referrer**</notranslate>
 : The id of the referring user for this credit transaction. Returns null if no referrer is involved. Note this id is the user id in developer's own system that's previously passed to Branch's identify user API call.
 
-**referree**
+<notranslate>**referree**</notranslate>
 : The id of the user who was referred for this credit transaction. Returns null if no referree is involved. Note this id is the user id in developer's own system that's previously passed to Branch's identify user API call.
 
-**type**
+<notranslate>**type**</notranslate>
 : This is the type of credit transaction
 
-1. _0_ - A reward that was added automatically by the user completing an action or referral
-1. _1_ - A reward that was added manually
-2. _2_ - A redemption of credits that occurred through our API or SDKs
-3. _3_ - This is a very unique case where we will subtract credits automatically when we detect fraud
+1. <notranslate>_0_</notranslate> - A reward that was added automatically by the user completing an action or referral
+1. <notranslate>_1_</notranslate> - A reward that was added manually
+2. <notranslate>_2_</notranslate> - A redemption of credits that occurred through our API or SDKs
+3. <notranslate>_3_</notranslate> - This is a very unique case where we will subtract credits automatically when we detect fraud
 
 
 #### Link sharing
@@ -403,7 +403,7 @@ BranchUniversalObject branchUniversalObject = new BranchUniversalObject()
 ```
 ```
 
-**BranchShareSheetStyle**
+<notranslate>**BranchShareSheetStyle**</notranslate>
 This class is need for customize "Link sharing"
 * Its constructor takes two arguments `title` and `message`
 * Method `SetDefaultUrl` allows you set default url if url generating was failed
@@ -428,10 +428,10 @@ This class is need for customize "Link sharing"
 
 ### Creating project
 1. Start Microsoft Visual Studio
-2. On the **File** menu, point to  
-    **New**, and then click **Project**. The **New Project** dialog box opens.
-3. Under **Installed**, click **Visual C++**.  
-4. Click **Windows Console Application**.
+2. On the <notranslate>**File**</notranslate> menu, point to
+    <notranslate>**New**</notranslate>, and then click <notranslate>**Project**</notranslate>. The <notranslate>**New Project**</notranslate> dialog box opens.
+3. Under <notranslate>**Installed**</notranslate>, click <notranslate>**Visual C++**</notranslate>.
+4. Click <notranslate>**Windows Console Application**</notranslate>.
 
 
 ### Setup COM Branch Library

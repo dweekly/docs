@@ -34,10 +34,10 @@ We split out events into logical groupings. We now have the following distinct e
 
 The last four are groupings of multiple events.
 
-- **Custom events** are any events you choose to track with Branch that fall outside our list of standard events.
-- **Commerce events** include a short list of events such as PURCHASE that involve e-commerce.
--  **Content events** include a short list of events such as VIEW_ITEM that involve content and are not directly related to e-commerce.
--  **User lifecycle events** are events marking a distinct action completed by a user as they progress through your app, such as COMPLETE_REGISTRATION.
+- <notranslate>**Custom events**</notranslate> are any events you choose to track with Branch that fall outside our list of standard events.
+- <notranslate>**Commerce events**</notranslate> include a short list of events such as PURCHASE that involve e-commerce.
+-  <notranslate>**Content events**</notranslate> include a short list of events such as VIEW_ITEM that involve content and are not directly related to e-commerce.
+-  <notranslate>**User lifecycle events**</notranslate> are events marking a distinct action completed by a user as they progress through your app, such as COMPLETE_REGISTRATION.
 
 ### Branch Standard Events
 

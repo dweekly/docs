@@ -223,10 +223,10 @@ If you're a retail business, use the [Google Merchant Center to upload your prod
 
 To include your Branch long link in the campaign's settings:
 
-1. Once you've created your campaign, go into the campaign's **Settings**.
-2. On the **Settings** page, expand the **Campaign URL options** section.
-3. In the **Campaign URL options** section, place the Branch long link in the **Tracking Template** field.
-4. Click **Save**.
+1. Once you've created your campaign, go into the campaign's <notranslate>**Settings**</notranslate>.
+2. On the <notranslate>**Settings**</notranslate> page, expand the <notranslate>**Campaign URL options**</notranslate> section.
+3. In the <notranslate>**Campaign URL options**</notranslate> section, place the Branch long link in the <notranslate>**Tracking Template**</notranslate> field.
+4. Click <notranslate>**Save**</notranslate>.
 ![image](/_assets/img/pages/deep-linked-ads/google/tracking-template.png)
 
 ## Facebook Data Feeds

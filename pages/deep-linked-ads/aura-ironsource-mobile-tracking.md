@@ -34,7 +34,7 @@ If you haven't already integrated Branch SDK into your application, please follo
 ![image](/_assets/img/pages/deep-linked-ads/aura-ironsource/auraironsource-postbacks.png)
 
 !!! warning "Attribution Window Settings"
-	For proper attribution, set the **Click to Install** attribution window to 30 days.
+	For proper attribution, set the <notranslate>**Click to Install**</notranslate> attribution window to 30 days.
 
 {! ingredients/deep-linked-ads/aura-ironsource-create-ad-link.md !}
 

@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Campa
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Campaign Monitor** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Campaign Monitor**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Set up a custom domain name for your account](http://email-campmon.branch.rocks/account/customize/customdomain/manage){:target="\_blank"}** section of your Campaign Monitor account.
+You can retrieve your click tracking domain from the <notranslate>**[Set up a custom domain name for your account](http://email-campmon.branch.rocks/account/customize/customdomain/manage){:target="\_blank"}**</notranslate> section of your Campaign Monitor account.
 
 If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
@@ -46,7 +46,7 @@ If you have not added a custom click tracking domain yet, follow the instruction
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **[Set up a custom domain name for your account](http://email-campmon.branch.rocks/account/customize/customdomain/manage){:target="\_blank"}** section of your Campaign Monitor account:
+1. Add and verify a custom click tracking domain in the <notranslate>**[Set up a custom domain name for your account](http://email-campmon.branch.rocks/account/customize/customdomain/manage){:target="\_blank"}**</notranslate> section of your Campaign Monitor account:
 
     ![image](/_assets/img/pages/email/campaign-monitor/create-domain.png)
 

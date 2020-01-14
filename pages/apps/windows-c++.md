@@ -6,7 +6,7 @@
 
 ### Branch-integrated Demo Apps
 
-There are several demo apps embedded in this repository, which you can find in the ***BranchSDK-Samples*** folder.
+There are several demo apps embedded in this repository, which you can find in the *<notranslate>**BranchSDK-Samples**</notranslate>* folder.
 Please use these as a reference.
 
 Should you run into an issue with the SDK, please check that it is present in the demo app before submitting any issue
@@ -38,13 +38,13 @@ and alternate domains will be needed when configuring a project to support deep 
 
 ### Branch keys
 
-Branch keys consist of a prefix (**key_live_** or **key_test_**) followed by a string of 32 aphanumeric characters
+Branch keys consist of a prefix (<notranslate>**key_live_**</notranslate> or <notranslate>**key_test_**</notranslate>) followed by a string of 32 aphanumeric characters
 (*key_live_kdzhBMBYt5Pi4g4DVRfQbdkbqDlm5rIv*, for example). Branch keys are used to associate apps with Branch links.
 An app's Branch key is required to initialize the Branch SDK. Data associated with Branch links can only be read by apps
 that  use the same Branch key.
 
-Note that the **Live** and **Test** apps on the Branch dashboard are completely separate; each has its own Branch key.
-Even when **Live** and **Test** sections of the dashboard have been configured identically and links from both are able
+Note that the <notranslate>**Live**</notranslate> and <notranslate>**Test**</notranslate> apps on the Branch dashboard are completely separate; each has its own Branch key.
+Even when <notranslate>**Live**</notranslate> and <notranslate>**Test**</notranslate> sections of the dashboard have been configured identically and links from both are able
 to open up a particular app, the app will only receive link data for which it has the matching Branch key.
 
 ### Creating a Branch link domain and Branch key for an app

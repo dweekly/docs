@@ -29,11 +29,11 @@ Branch events are similar to Adobe Analytics events in that they can be used to 
 
 ### Activate the Branch Data Connector
 
-In your Adobe Analytics dashboard, under the *Admin* tab, find *Data Connectors*.
+In your Adobe Analytics dashboard, under the <notranslate>**Admin**</notranslate> tab, find <notranslate>**Data Connectors**</notranslate>.
 
 ![image](/_assets/img/pages/integrations/adobe-analytics/select-data-connectors.png)
 
-Click *+Add New*, search for "Branch," and click *Activate*.
+Click <notranslate>**+Add New**</notranslate>, search for "Branch," and click <notranslate>**Activate**</notranslate>.
 
 ![image](/_assets/img/pages/integrations/adobe-analytics/activate-connector.png)
 
@@ -65,7 +65,7 @@ Action Property| Branch Tags | tag=bar&tag2=1234
 
 #### Review Summary
 
-Finally, review the integration, scroll to the bottom of the screen and click *Activate Now* to enable the integration.
+Finally, review the integration, scroll to the bottom of the screen and click <notranslate>**Activate Now**</notranslate> to enable the integration.
 
 ![image](/_assets/img/pages/integrations/adobe-analytics/final-activation.png)
 
@@ -97,7 +97,7 @@ For `Analytics Server Domain`, please do not include `http` or `https`. If your 
 
 ### Pass Adobe IDs to Branch
 
-You'll need to pass through all user IDs configured with Adobe, to the Branch SDKs (There are three possible Adobe IDs this integration can track).  First, figure out which ID you use by asking your Adobe Consultant, and then pass that value to Branch by calling `setRequestMetadataKey` (iOS) or `.setRequestMetadata` (Android) on the Branch SDK, **BEFORE** calling *initSession* on the Branch SDK.
+You'll need to pass through all user IDs configured with Adobe, to the Branch SDKs (There are three possible Adobe IDs this integration can track).  First, figure out which ID you use by asking your Adobe Consultant, and then pass that value to Branch by calling `setRequestMetadataKey` (iOS) or `.setRequestMetadata` (Android) on the Branch SDK, **BEFORE** calling <notranslate>*initSession*</notranslate> on the Branch SDK.
 
 For example, if your Adobe integration uses the Marketing Cloud Visitor ID or Experience Cloud ID, retrieve the ID from Adobe's SDK, and pass it to Branch's SDK with a key called *$marketing_cloud_visitor_id*.  Sample snippets for all ID types below:
 
@@ -239,7 +239,7 @@ There are common strategies to take while trouble shooting.
 
 With Adobe Analytics' dashboard, it may take up to ~2 hours for data to appear. We'd recommend you simulate 10-15 events in one testing session, and validate that they show up two hours later, so that feedback is transparent and obvious.
 
-If you're not seeing an Adobe ID appended to the Branch events in Adobe's dashboard, you can call *setDebug* on the Branch SDK and inspect the requests to `v1/open` in app to confirm the ID is being sent.  The key you want to find in this request payload is either `$adobe_visitor_id`, `$marketing_cloud_visitor_id`, or `$analytics_visitor_id`.
+If you're not seeing an Adobe ID appended to the Branch events in Adobe's dashboard, you can call <notranslate>*setDebug*</notranslate> on the Branch SDK and inspect the requests to `v1/open` in app to confirm the ID is being sent.  The key you want to find in this request payload is either `$adobe_visitor_id`, `$marketing_cloud_visitor_id`, or `$analytics_visitor_id`.
 
 ### What is Context Data and where does Branch provide it to Adobe?
 

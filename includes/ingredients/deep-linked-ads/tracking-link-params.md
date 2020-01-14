@@ -1,4 +1,4 @@
-Branch Tracking links allow tracking many parameters about the performance of your ad campaigns and individual ads. You can see each partner's specific link Parameters under the **Link Parameters** tab:
+Branch Tracking links allow tracking many parameters about the performance of your ad campaigns and individual ads. You can see each partner's specific link Parameters under the <notranslate>**Link Parameters**</notranslate> tab:
 
 ![image](/_assets/img/ingredients/deep-linked-ads/link-parameters.png)
 

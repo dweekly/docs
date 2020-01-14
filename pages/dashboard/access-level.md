@@ -8,25 +8,25 @@ Access to pages, actions and data in the dashboard is controlled using a number 
 
 #### Entity Views
 
-- **[App Access](app-view.md)**: The "App" view of a Branch account is the standard level of entity access and can include access to the entire Branch dashboard for that app, based on access resource settings and access role type. All accounts include the App view and any user regardless of access role type can access it (to varying degrees).
-- **[Organization Access](organization-view.md)**: The "Organization" view of a Branch account is an additional level of entity access and is intended for Branch accounts with a portfolio of distinctly managed apps tied to a single organizational entity. Organization view allows companies to manage separate teams associated with their distinct apps and maintain autonomy. Organization team members can switch between the Organization view and the App view at any time.
-- **[Agency Access](agency-view.md)**: The "Agency" view of a Branch account is another additional level of entity access and is intended for Branch accounts that work with agencies - both full AORs and limited - that buy media on their behalf. Agency view allows the Agency to manage its own team within the Branch dashboard. Agency team members can switch between the Agency view and the App view at any time.
+- <notranslate>**[App Access](app-view.md)**</notranslate>: The "App" view of a Branch account is the standard level of entity access and can include access to the entire Branch dashboard for that app, based on access resource settings and access role type. All accounts include the App view and any user regardless of access role type can access it (to varying degrees).
+- <notranslate>**[Organization Access](organization-view.md)**</notranslate>: The "Organization" view of a Branch account is an additional level of entity access and is intended for Branch accounts with a portfolio of distinctly managed apps tied to a single organizational entity. Organization view allows companies to manage separate teams associated with their distinct apps and maintain autonomy. Organization team members can switch between the Organization view and the App view at any time.
+- <notranslate>**[Agency Access](agency-view.md)**</notranslate>: The "Agency" view of a Branch account is another additional level of entity access and is intended for Branch accounts that work with agencies - both full AORs and limited - that buy media on their behalf. Agency view allows the Agency to manage its own team within the Branch dashboard. Agency team members can switch between the Agency view and the App view at any time.
 
 !!! info "Entity Views Access"
-    While all team members have access to the App view, which additional entity view - Organization and/or Agency - a team member has access to depends entirely upon which view that team member was created within.  
+    While all team members have access to the App view, which additional entity view - Organization and/or Agency - a team member has access to depends entirely upon which view that team member was created within.
 
     For example, an Agency team member added within the Organization view will also inherit access to the Organization view in addition to the App view and the Agency view.  If that same Agency team member were instead added within the App view, said Agency team member would only be able to access the App view and the Agency view.
 
 
 #### Resource Access
 
-- **[App-level Settings](app-level-access.md)**: Settings or features that can impact functionality app-wide.
-- **[Channel-level Settings](/dashboard/channel-level-access/)**: Settings or features that can impact functionality across a marketing channel (e.g. Journeys configuration).
-- **[Link-level Settings](/dashboard/link-level-access/)**: Settings or features that can impact functionality for single links (e.g. configuration of individual Quick Links).
-- **[Aggregate Data](/dashboard/aggregate-data-access/)**: Summary data that contains no granular information (e.g. data on Sources page).
-- **[Sensitive Data](/dashboard/sensitive-data-access/)** Data that can contain user-identifying, payment-related, or secret information (e.g. Branch Key and Secret).
-- **Fraud Settings & Data** Settings or data associated with fraud detection and prevention.
-- **[Export](/dashboard/export-access/):** Allows a user to export Sensitive Data from pages they can view.
+- <notranslate>**[App-level Settings](app-level-access.md)**</notranslate>: Settings or features that can impact functionality app-wide.
+- <notranslate>**[Channel-level Settings](/dashboard/channel-level-access/)**</notranslate>: Settings or features that can impact functionality across a marketing channel (e.g. Journeys configuration).
+- <notranslate>**[Link-level Settings](/dashboard/link-level-access/)**</notranslate>: Settings or features that can impact functionality for single links (e.g. configuration of individual Quick Links).
+- <notranslate>**[Aggregate Data](/dashboard/aggregate-data-access/)**</notranslate>: Summary data that contains no granular information (e.g. data on Sources page).
+- <notranslate>**[Sensitive Data](/dashboard/sensitive-data-access/)**</notranslate> Data that can contain user-identifying, payment-related, or secret information (e.g. Branch Key and Secret).
+- <notranslate>**Fraud Settings & Data**</notranslate> Settings or data associated with fraud detection and prevention.
+- <notranslate>**[Export](/dashboard/export-access/):**</notranslate> Allows a user to export Sensitive Data from pages they can view.
 
 Each page on the dashboard has its own access requirements. For example, in order to view the Summary page of the dashboard, a user must have view access to Aggregate Data. In order to view the Data Feeds Manager page, on the other hand, a user must have view access to both Channel-level Settings and Sensitive Data.
 
@@ -43,21 +43,21 @@ Each dashboard user will have an access role that determines what they will and 
 
 For each type of permission (e.g. App-level Settings), there are a number of levels of access. Those levels are described below:
 
-**App-level Settings, Channel-level Settings, Link-level Settings**
+<notranslate>**App-level Settings, Channel-level Settings, Link-level Settings**</notranslate>
 
-- Edit: user can see the information and edit it
-- View: user can see the information but not edit it
-- No Access: user cannot see or edit the information
+- <notranslate>Edit:</notranslate> user can see the information and edit it
+- <notranslate>View:</notranslate> user can see the information but not edit it
+- <notranslate>No Access:</notranslate> user cannot see or edit the information
 
-**Aggregate Data, Sensitive Data**
+<notranslate>**Aggregate Data, Sensitive Data**</notranslate>
 
-- View: user can see the data
-- No Access: user cannot see the data
+- <notranslate>View:</notranslate> user can see the data
+- <notranslate>No Access:</notranslate> user cannot see the data
 
-**Export**
+<notranslate>**Export**</notranslate>
 
-- Access: user can export sensitive data from pages they can view
-- No Access: user cannot export sensitive data, even from pages they can view
+- <notranslate>Access:</notranslate> user can export sensitive data from pages they can view
+- <notranslate>No Access:</notranslate> user cannot export sensitive data, even from pages they can view
 
 ### Required Permissions by Dashboard Page
 

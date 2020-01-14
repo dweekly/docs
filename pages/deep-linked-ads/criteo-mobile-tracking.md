@@ -21,7 +21,7 @@ If you haven't already integrated Branch, follow the below guides.
 1. Start by following the integration guides for Android and iOS:
 	- [Android](/apps/android/){:target="\_blank"}
 	- [iOS](/apps/ios/){:target="\_blank"}
-1. Once this is complete, you can test your basic integration by going to our [Liveview page](https://dashboard.branch.io/liveview/events){:target="\_blank"}. Set a filter for **OPEN** to verify that the Branch SDK is recording app opens.
+1. Once this is complete, you can test your basic integration by going to our [Liveview page](https://dashboard.branch.io/liveview/events){:target="\_blank"}. Set a filter for <notranslate>**OPEN**</notranslate> to verify that the Branch SDK is recording app opens.
 
 	!!! warning "Limitations with setDebug and seeing data in Branch"
 		When integrating the SDKs, it's often useful to use setDebug to verify that your app is able to communicate with Branch servers, and is receiving deep link data. However, our upstream systems don't register test events sent using setDebug, so events will not appear in Liveview or Analytics, nor will they fire postbacks. You should disable setDebug when looking at Liveview or testing postbacks.
@@ -229,12 +229,12 @@ ACHIEVE_LEVEL | UI Level | User Lifecycle Event | `ui_level`
 UNLOCK_ACHIEVEMENT | UI Achievement  | User Lifecycle Event |  `ui_achievement`
 COMPLETE_REGISTRATION | Registration  | User Lifecycle Event | None
 COMPLETE_TUTORIAL | Tutorial Finished  | User Lifecycle Event  | None
-UI_STATUS | UI Status  | **Custom Event** |  `ui_status`
-UI_LOGIN | UI Login  | **Custom Event** |  None
-SUBSCRIPTION | Subscription  | **Custom Event** |  None
-LOW_PRIORITY | Low Priority  | **Custom Event**  | None
-HIGH_PRIORITY | High Priority  | **Custom Event**  | None
-ABANDONED_BASKET | Abandoned Basket  | **Custom Event**  | None
+UI_STATUS | UI Status  | <notranslate>**Custom Event**</notranslate> |  `ui_status`
+UI_LOGIN | UI Login  | <notranslate>**Custom Event**</notranslate> |  None
+SUBSCRIPTION | Subscription  | <notranslate>**Custom Event**</notranslate> |  None
+LOW_PRIORITY | Low Priority  | <notranslate>**Custom Event**</notranslate>  | None
+HIGH_PRIORITY | High Priority  | <notranslate>**Custom Event**</notranslate>  | None
+ABANDONED_BASKET | Abandoned Basket  | <notranslate>**Custom Event**</notranslate>  | None
 
 
 *\* The Static Track Transaction Postback is available as a custom version of the PURCHASE postback. Please see [advanced configuration](#editing-postbacks) for setup.*
@@ -249,7 +249,7 @@ Once you've integrated the SDK and configured the relevant events, you can enabl
 
 ![image](/_assets/img/pages/deep-linked-ads/criteo/search-criteo.png)
 
-4. Click **Save and Enable** in the bottom right hand corner.
+4. Click <notranslate>**Save and Enable**</notranslate> in the bottom right hand corner.
 
 ![image](/_assets/img/pages/deep-linked-ads/criteo/enable-criteo.png)
 
@@ -264,7 +264,7 @@ Once you've integrated the SDK and configured the relevant events, you can enabl
 
 It is possible to opt in to send all events occurring in your app to Criteo, not just events attributed to a Criteo campaign. Customers generally do this for the purposes of allowing Criteo insight into users who would be good candidates for retargeting based on their actions in the app.
 
-To send all events to Criteo, switch the "Send Postbacks For" toggle under the **Postback Config** in the [Ads Partner Manager](https://dashboard.branch.io/ads/partner-management/a_criteo?tab=postback) to **All events**.
+To send all events to Criteo, switch the "Send Postbacks For" toggle under the <notranslate>**Postback Config**</notranslate> in the [Ads Partner Manager](https://dashboard.branch.io/ads/partner-management/a_criteo?tab=postback) to <notranslate>**All events**</notranslate>.
 
 ![image](/_assets/img/pages/deep-linked-ads/criteo/all-events-toggle.png)
 
@@ -317,32 +317,32 @@ Some types of Criteo campaign require URI scheme style deep linking instead of H
 
 Just need a single link? It's easy to use the Branch dashboard to create a one-off link. The flow below provides examples of how to create links, but you'll want to consult with your Criteo Solutions Engineer to specify what you require.
 
-1. First, click **Create Ad Link** in the top right hand side of the Criteo Partner Manager UI.
+1. First, click <notranslate>**Create Ad Link**</notranslate> in the top right hand side of the Criteo Partner Manager UI.
 
     ![image](/_assets/img/pages/deep-linked-ads/criteo/criteo-create-link.png)
 
-1. First, select an ad format. For App Install or App Engagement campaigns you'll want to select the **App Only** format.
+1. First, select an ad format. For App Install or App Engagement campaigns you'll want to select the <notranslate>**App Only**</notranslate> format.
 
-    To bulk create links for Dynamic Product Ads, select **Product Links**, which are for shopping or dynamic remarketing campaigns. This will take you to create a [Deep Linked Product Feed](/deep-linked-ads/dynamic-product-feeds/) for Criteo with Universal Links and URI schemes.
+    To bulk create links for Dynamic Product Ads, select <notranslate>**Product Links**</notranslate>, which are for shopping or dynamic remarketing campaigns. This will take you to create a [Deep Linked Product Feed](/deep-linked-ads/dynamic-product-feeds/) for Criteo with Universal Links and URI schemes.
 
     ![image](/_assets/img/pages/deep-linked-ads/criteo/criteo-link-chooser.png)
 
-1. If you've select a simple App Engagement link, you'll start with a name for it. Select something that will make it easy to find if you need it later. Your Ad Format and Ad Partner should be selected already, but feel free to choose one if they aren't. It's important that you select the right Ad Partner for analytics later on. Click **Configure Options** to continue.
+1. If you've select a simple App Engagement link, you'll start with a name for it. Select something that will make it easy to find if you need it later. Your Ad Format and Ad Partner should be selected already, but feel free to choose one if they aren't. It's important that you select the right Ad Partner for analytics later on. Click <notranslate>**Configure Options**</notranslate> to continue.
 
     ![image](/_assets/img/pages/deep-linked-ads/criteo/criteo-engagement-link.png)
 
 1. This is your chance to add deep link data and analytics tags.
 
     - Deep Link Data is used to provide the app with product information, so the app can take customers to the right content in the app.
-    - Analytics tags are important for later segmentation, so click the **Analytics** sub tab to add a Channel and Campaign value.
+    - Analytics tags are important for later segmentation, so click the <notranslate>**Analytics**</notranslate> sub tab to add a Channel and Campaign value.
 
     ![image](/_assets/img/pages/deep-linked-ads/criteo/criteo-analytics-tags.png)
 
     !!! tip "Set Analytics tags"
 
-        It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. _Channels_ generally correspond to ad networks, and _Campaigns_ correspond to marketing initiatives that you're launching. For example: _Channel_: "Criteo", _Campaign_: "Summer 2017 Shoe Discounts."
+        It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. <notranslate>_Channels_</notranslate> generally correspond to ad networks, and <notranslate>_Campaigns_</notranslate> correspond to marketing initiatives that you're launching. For example: <notranslate>_Channel_</notranslate>: "Criteo", <notranslate>_Campaign_</notranslate>: "Summer 2017 Shoe Discounts."
 
-1. Click **Create Link Now**, and you have your tracking link! Take this link and give it to your Criteo Solutions Engineer as an example.
+1. Click <notranslate>**Create Link Now**</notranslate>, and you have your tracking link! Take this link and give it to your Criteo Solutions Engineer as an example.
 
     ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/finished-ad-link.png)
 
@@ -392,7 +392,7 @@ By default, postbacks not listed in [the table above](#branch-and-criteo-event-m
 If you'd like to send more data in your Criteo postbacks, you can [customize your postbacks](/deep-linked-ads/branch-universal-ads/#edit-postbacks).
 
 !!! example "Adding Static Track Transaction"
-	*Static Track Transaction* is a custom template that replaces the default PURCHASE (Track Transaction) template. You should see STATIC_TRACK_TRANSACTION as an event under the **Postback Config** in the Criteo Partner Manager UI. You can copy the postback template from STATIC_TRACK_TRANSACTION, and paste it into the PURCHASE postback, replacing the previous postback. Click *Save* at the bottom of the screen, and you're good to go!
+	<notranslate>*Static Track Transaction*</notranslate> is a custom template that replaces the default PURCHASE (Track Transaction) template. You should see STATIC_TRACK_TRANSACTION as an event under the <notranslate>**Postback Config**</notranslate> in the Criteo Partner Manager UI. You can copy the postback template from STATIC_TRACK_TRANSACTION, and paste it into the PURCHASE postback, replacing the previous postback. Click <notranslate>*Save*</notranslate> at the bottom of the screen, and you're good to go!
 
 #### Change attribution windows
 
@@ -403,7 +403,7 @@ If you need to change the default attribution windows, you can [edit attribution
 Criteo can optimize campaigns based on travel search dates. To report travel search dates to Criteo, follow these steps:
 
 1. In your app, add [custom metadata](#branch-and-criteo-event-mapping) to your events with keys `din` and `dout`, and a date string in format `'YYYY-MM-DD'` for the date of the inbound and outbound flight respectively.
-1. In the Branch dashboard, navigate to **Postback Config** within the Criteo entry of the Ads Partner Manager.
+1. In the Branch dashboard, navigate to <notranslate>**Postback Config**</notranslate> within the Criteo entry of the Ads Partner Manager.
 1. Find the postback you want to edit, and add the following string in the relevant place. For _VIEW\_ITEM_ for example, it's another event in the events array.
 	``` code
 	,{"event":"vs","din":<@json>${(custom_data.din)!}</@json>,"dout":<@json>${(custom_data.dout)!}</@json>}
@@ -414,7 +414,7 @@ Criteo can optimize campaigns based on travel search dates. To report travel sea
 Criteo accepts hashed emails from your ad campaigns. To send hashed emails, please follow the below logic.
 
 1. In your app, add [custom metadata](#branch-and-criteo-event-mapping) to your events with keys `md5_hashed_email`, and a value of an MD5 hashed email address. Please do **not** send unhashed emails to Branch.
-1. In the Branch dashboard, navigate to **Postback Config** within the Criteo entry of the Ads Partner Manager.
+1. In the Branch dashboard, navigate to <notranslate>**Postback Config**</notranslate> within the Criteo entry of the Ads Partner Manager.
 1. Find the postback you want to edit, and add the following string in the relevant place. This will generally be as another event in the `"events"` array. Please note that _OPEN_ and _INSTALL_ events do not support this parameter.
 	``` code
 	,{"event":"setHashedEmail", "email":[<@json>${(custom_data.md5_hashed_email)!}</@json>]}

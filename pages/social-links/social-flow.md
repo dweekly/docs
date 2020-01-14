@@ -25,7 +25,7 @@ This guide will walk you through how to setup your social link campaigns with **
 
 ### Choose your Social Link provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Social Flow** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Social Flow**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/social-links/link-setup.md !}
 

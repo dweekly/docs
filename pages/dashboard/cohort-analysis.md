@@ -36,31 +36,31 @@ A re-engagement can be any event that creates a web or app session after a perio
 
 Since re-engagements can only occur after a period of inactivity, any event used for performance analysis can only be part of one re-engagement cohort. A session-qualifying event only counts as a re-engagement if it occurs after a period of inactivity. However, a user can be in multiple re-engagement cohorts if they are re-engaged multiple times.
 
-The default re-engagement inactivity window is 7 days.  You can modify this window under **Channels & Links** > **Link Settings** > **Attribution Windows**.
+The default re-engagement inactivity window is 7 days.  You can modify this window under <notranslate>**Channels & Links**</notranslate> > <notranslate>**Link Settings**</notranslate> > <notranslate>**Attribution Windows**</notranslate>.
 
 ![image](/_assets/img/pages/dashboard/cohort-analysis/image_1.png)
 
 ## Building Your Cohort
 
-To create a cohort, click on the **Create New Cohort** button and provide the following information:
+To create a cohort, click on the <notranslate>**Create New Cohort**</notranslate> button and provide the following information:
 
-* **Cohort Name**
+* <notranslate>**Cohort Name**</notranslate>
 
-* **Cohort Type**
+* <notranslate>**Cohort Type**</notranslate>
 
     * Acquisition (install)
 
     * Re-engagement (any session across web and app)
 
-* **Cohort Date Range**
+* <notranslate>**Cohort Date Range**</notranslate>
 
     * When the install or re-engagement event occurred
 
-* **Include Cost Data**
+* <notranslate>**Include Cost Data**</notranslate>
 
     * Only available within the Ads Channel
 
-* **Measurement**
+* <notranslate>**Measurement**</notranslate>
 
     * Show
 
@@ -142,21 +142,21 @@ Compare by and (where/and/equals) filters can be applied to any cohorting event 
 
 Once you’ve created a cohort, you can view the resulting analytics. All created cohorts include the following visualization functionality:
 
-* **Unique Counts** - When "Unique" is checked, these are unique to a user. For example: if 1 user clicks 100 times, it will count as 1. There is no concept of "unique revenue"; "revenue" is always the sum of all purchase events.
+* <notranslate>**Unique Counts**</notranslate> - When "Unique" is checked, these are unique to a user. For example: if 1 user clicks 100 times, it will count as 1. There is no concept of "unique revenue"; "revenue" is always the sum of all purchase events.
 
-* **Time Interval and Granularity**
+* <notranslate>**Time Interval and Granularity**</notranslate>
 
-* **Incremental vs Cumulative** - Incremental shows only data that occurred that day, giving visibility into how performance changes over time. Cumulative shows data that occurred that day plus all previous days, giving visibility into overall performance over time.
+* <notranslate>**Incremental vs Cumulative**</notranslate> - Incremental shows only data that occurred that day, giving visibility into how performance changes over time. Cumulative shows data that occurred that day plus all previous days, giving visibility into overall performance over time.
 
-* **Apply Cost Data** - shows the cost per event for each compare by in your cohort.
+* <notranslate>**Apply Cost Data**</notranslate> - shows the cost per event for each compare by in your cohort.
 
-* **Total vs Per User Counts** - Total shows the total number for that day. Per user shows the total number for that day over the total number of users for each compare by in your cohort.
+* <notranslate>**Total vs Per User Counts**</notranslate> - Total shows the total number for that day. Per user shows the total number for that day over the total number of users for each compare by in your cohort.
 
-* **Table vs Time Series View**
+* <notranslate>**Table vs Time Series View**</notranslate>
 
-* **Download CSV**
+* <notranslate>**Download CSV**</notranslate>
 
-* **Share Page State**
+* <notranslate>**Share Page State**</notranslate>
 
 * Saved Views
 

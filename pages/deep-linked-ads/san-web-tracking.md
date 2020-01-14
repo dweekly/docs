@@ -24,12 +24,12 @@ First, you'll want to ensure you are capturing web conversions by [integrating t
 1. Navigate to the relevant partner (e.g. Google) to [create an ad link](/deep-linked-ads/google-xplatform-search-ads/#standard-search-ads).
 1. Ensure all the redirects are set to *websites* to avoid any policy violations.
 1. **IMPORTANT**. Ensure that the link has the following properties:
-    1. **All desired analytics tags**. If you don't add analytics tags, you won't see clicks alongside downstream conversion events in the Branch dashboard later. At a minimum you will want to set the *Campaign* (*~campaign* as query parameter or link data), but if you want to filter by other analytics tags, please add those.
+    1. <notranslate>**All desired analytics tags**</notranslate>. If you don't add analytics tags, you won't see clicks alongside downstream conversion events in the Branch dashboard later. At a minimum you will want to set the *Campaign* (*~campaign* as query parameter or link data), but if you want to filter by other analytics tags, please add those.
 
         !!! success
             In order to line up *impressions*, *clicks* and *cost* with all downstream events, analytics tags must be present on the link and the values must *exactly* match the values in the Ad Network's dashboard.
 
-    1. **Campaign ID** (*~campaign_id* in link data). Campaign ID is required to avoid duplicating clicks. More on this in the troubleshooting section.
+    1. <notranslate>**Campaign ID**</notranslate> (*~campaign_id* in link data). Campaign ID is required to avoid duplicating clicks. More on this in the troubleshooting section.
 
 			1. For Google, the Campaign ID can be dynamically filled in using the `{campaignid}` ValueTrack Parameter *~campaign_id={campaignid}*.
 

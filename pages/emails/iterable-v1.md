@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Itera
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Iterable** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Iterable**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Mail Domains]** page of your Iterable account.
+You can retrieve your click tracking domain from the <notranslate>**[Mail Domains]**</notranslate> page of your Iterable account.
 If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/iterable/setup-config.png)
@@ -45,7 +45,7 @@ If you have not added a custom click tracking domain yet, follow the instruction
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **[Mail Domains]** page of your Iterable account:
+1. Add and verify a custom click tracking domain in the <notranslate>**[Mail Domains]**</notranslate> page of your Iterable account:
 
     ![image](/_assets/img/pages/email/iterable/create-domain.png)
 

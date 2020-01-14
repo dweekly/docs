@@ -25,13 +25,13 @@ https://api2.branch.io/v2/export/
 
 ### Query Parameters
 
-**branch_key** _required_
+<notranslate>**branch_key**</notranslate> _required_
 : The Branch key of the originating app
 
-**branch_secret** _required_
+<notranslate>**branch_secret**</notranslate> _required_
 : The Branch secret key of the originating app
 
-**export_date** _required_
+<notranslate>**export_date**</notranslate> _required_
 : The UTC date of the requested data export
 
 Format the URL as follows:

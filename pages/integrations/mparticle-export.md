@@ -14,7 +14,7 @@ Branch will send **attributed installs**. Branch also sends all the data that is
 
 ### What does it look like?
 
-Branch install events will appear as a **Custom Attribution Event** in mParticle. You can then export Branch data to your other data sources.
+Branch install events will appear as a <notranslate>**Custom Attribution Event**</notranslate> in mParticle. You can then export Branch data to your other data sources.
 
 Branch install events are mapped as follows:
 
@@ -37,9 +37,9 @@ For information on how to test your integration and see more detailed data, plea
 Find your mParticle key & secret and enter it into the Branch Dashboard.
 
 1. Navigate to [https://app.mparticle.com](https://app.mparticle.com) and log into the Dashboard.
-1. In the dashboard, navigate to the **[Directory](https://app.mparticle.com/directory)** and search for Branch .
-1. Click the Branch tile, and click **Add Branch Metrics to Setup**
-1. Select the **Input Feed** Integration Type and click **Add to Setup**
+1. In the dashboard, navigate to the <notranslate>**[Directory](https://app.mparticle.com/directory)**</notranslate> and search for Branch .
+1. Click the Branch tile, and click <notranslate>**Add Branch Metrics to Setup**</notranslate>
+1. Select the <notranslate>**Input Feed**</notranslate> Integration Type and click <notranslate>**Add to Setup**</notranslate>
 
     ![image](/_assets/img/pages/integrations/mparticle/mparticle-add-feed-to-setup.png)
 
@@ -60,7 +60,7 @@ Find your mParticle key & secret and enter it into the Branch Dashboard.
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
 1. Search for mParticle and click on the tile.
-1. Enter your mParticle key & secret and hit **Enable**.
+1. Enter your mParticle key & secret and hit <notranslate>**Enable**</notranslate>.
 
     ![image](/_assets/img/pages/integrations/mparticle/mparticle-export.png)
 
@@ -96,20 +96,20 @@ To see the data being passed to mParticle in more detail, you can set up a webho
 
     ![image](/_assets/img/pages/integrations/mparticle/mparticle-test-link.png)
 
-1. In mParticle, navigate to the Directory in mParticle and add **Webhooks** as an option. Add a Requestbin URL generated from [https://requestb.in](https://requestbin.com/?).
+1. In mParticle, navigate to the Directory in mParticle and add <notranslate>**Webhooks**</notranslate> as an option. Add a Requestbin URL generated from [https://requestb.in](https://requestbin.com/?).
 
     ![image](/_assets/img/pages/integrations/mparticle/mparticle-add-webhooks.png)
 
-1. To refine the data being sent to the webhook, navigate to **Connections > Connect**.
-1. Select the Branch Feed as the input, and **Webhooks** as the output.
-1. Finally, view the Requestbin. You can do this by appending **?inspect** to your requestbin URL. You should be able to copy paste the POST body from the request bin into a JSON formatter like [https://jsonlint.com/](https://jsonlint.com/) to view the event details.
+1. To refine the data being sent to the webhook, navigate to <notranslate>**Connections > Connect**</notranslate>.
+1. Select the Branch Feed as the input, and <notranslate>**Webhooks**</notranslate> as the output.
+1. Finally, view the Requestbin. You can do this by appending <notranslate>**?inspect**</notranslate> to your requestbin URL. You should be able to copy paste the POST body from the request bin into a JSON formatter like [https://jsonlint.com/](https://jsonlint.com/) to view the event details.
 1. Once you're done testing, delete the webhook.
 
 ## FAQs
 
 #### Why does Branch only send installs to mParticle?
 
-At this time, the mParticle Inbound Feeds product only supports attributed events via their _attribution_ custom event. This is currently limited to installs. However, please reach out to your Branch or mParticle Account Manager if this limitation prevents you from doing the analysis you need.
+At this time, the mParticle Inbound Feeds product only supports attributed events via their <notranslate>_attribution_</notranslate> custom event. This is currently limited to installs. However, please reach out to your Branch or mParticle Account Manager if this limitation prevents you from doing the analysis you need.
 
 #### Why doesn't Branch require the mParticle customer ID?
 

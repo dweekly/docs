@@ -14,7 +14,7 @@ This guide will walk you through how to send your Branch data to **[Moengage](ht
 
 {! ingredients/data-integrations/add-credentials.md !}
 
-Please refer to [Moengage's documentation](https://docs.moengage.com/docs/branch-integration) if you need instructions on how to find the values - **MoEngage App ID and MoEngage App Key** - required to enable the integration.
+Please refer to [Moengage's documentation](https://docs.moengage.com/docs/branch-integration) if you need instructions on how to find the values - <notranslate>**MoEngage App ID</notranslate> and <notranslate>MoEngage App Key**</notranslate> - required to enable the integration.
 
 ### What Branch sends to Moengage
 

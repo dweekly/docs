@@ -18,7 +18,7 @@ Our new webhook infrastructure supports for all Branch events. The data is forma
 ### Register webhook
 
 1. Open the [Webhooks](https://dashboard.branch.io/data-import-export/webhooks) page on the Branch dashboard.
-1. Click **+ Add New Webhook**:
+1. Click <notranslate>**+ Add New Webhook**</notranslate>:
 
 ![image](/_assets/img/pages/exports/ua-webhooks/add-new-webhook.png)
 
@@ -28,18 +28,18 @@ Our new webhook infrastructure supports for all Branch events. The data is forma
 
 As you fill out the configuration, you'll see the following options:
 
-- **Send a webhook to:** Enter the URL where you would like the events to be sent. This URL can be written with Freemarker syntax to dynamically populate parameters and execute simple, logical expressions. There is more information on Freemarker support below.
-- **using a GET/POST:** Events can be sent either via POST or GET. POST events will be created with a default POST body. There is more information on POST bodies below.
-- **users trigger event:** When the selected event occurs, a webhook will fire:
+- <notranslate>**Send a webhook to:**</notranslate> Enter the URL where you would like the events to be sent. This URL can be written with Freemarker syntax to dynamically populate parameters and execute simple, logical expressions. There is more information on Freemarker support below.
+- <notranslate>**using a GET/POST:**</notranslate> Events can be sent either via POST or GET. POST events will be created with a default POST body. There is more information on POST bodies below.
+- <notranslate>**users trigger event:**</notranslate> When the selected event occurs, a webhook will fire:
 
 | Event | Description
 | --- | ---
-| **install** | Triggered the first time a user ever launches your app on their device.
-| **reinstall** | Triggered if a user deletes and reinstalls your app on their device.
-| **open** | Triggered whenever the app is opened (and the open is neither an install or reinstall)
-| **web session start** | Triggered when the user views a webpage using the Branch Web SDK
-| **click** | Triggered whenever a Branch link is clicked on any platform
-| **-- additional events --** | A complete list of events you track through the Branch Web or App SDKs.
+| <notranslate>**install**</notranslate> | Triggered the first time a user ever launches your app on their device.
+| <notranslate>**reinstall**</notranslate> | Triggered if a user deletes and reinstalls your app on their device.
+| <notranslate>**open**</notranslate> | Triggered whenever the app is opened (and the open is neither an install or reinstall)
+| <notranslate>**web session start**</notranslate> | Triggered when the user views a webpage using the Branch Web SDK
+| <notranslate>**click**</notranslate> | Triggered whenever a Branch link is clicked on any platform
+| <notranslate>**-- additional events --**</notranslate> | A complete list of events you track through the Branch Web or App SDKs.
 
 !!! tip
     Events will only appear in the event dropdown if at least one of those events has been recorded in the past 30 days.
@@ -51,7 +51,7 @@ For an exhaustive list of events and more detailed definitions of each event, pl
 
 #### Basic filtering
 
-In the **Advanced** section of the page you can create a filter. Only events that *pass the filter criteria* will be sent.
+In the <notranslate>**Advanced**</notranslate> section of the page you can create a filter. Only events that *pass the filter criteria* will be sent.
 
 You'll notice a default filter that checks to see whether the event is **not** triggered by a known crawler/robot. To do this, we check if the Operating System does not equal "robots." With that filter applied, only events without OS equal to robots (i.e. iOS and Android) will trigger a webhook.
 
@@ -59,22 +59,22 @@ The most popular filter options are available in a dropdown. This should help yo
 
 To create a filter:
 
-1. Click the **Add Filter** button
-1. Select the metadata you'd like to filter on. For example, if you only want **iOS** installs, select "Operating System" from the dropdown. You'll see the text field to the right populate with the correct key. When doing advanced filtering later you will select "Custom" and manually set this key.
+1. Click the <notranslate>**Add Filter**</notranslate> button
+1. Select the metadata you'd like to filter on. For example, if you only want <notranslate>**iOS**</notranslate> installs, select "Operating System" from the dropdown. You'll see the text field to the right populate with the correct key. When doing advanced filtering later you will select "Custom" and manually set this key.
 1. Select "equals" or "does not equal" from next dropdown.
-1. Finally, set the **value** of the key that you'd like to filter in or out. For example, if you want iOS installs, you'll have set up "equals" and "IOS" in the dropdowns. In this example, the robots filter is redundant, so let's remove it using the minus button.
+1. Finally, set the <notranslate>**value**</notranslate> of the key that you'd like to filter in or out. For example, if you want iOS installs, you'll have set up "equals" and "IOS" in the dropdowns. In this example, the robots filter is redundant, so let's remove it using the minus button.
 
 This should be your final view before saving:
 
 ![image](/_assets/img/pages/exports/ua-webhooks/basic-filtering.png)
 
 !!! note "Example: Filtering installs by attributed link campaign"
-    Let’s say you’re interested in receiving a webhook for every **install** event that is referred from a Branch link where you set the **Campaign** field to **App Install Campaign**. You would configure a filter to fire a webhook only when **Campaign** is equal to **"App Install Campaign"**. You would select **Campaign** from the dropdown, the key would be be autofilled and would equal **last_attributed_touch_data.~campaign**. Finally, you'd set the value equal to **App Install Campaign**.
+    Let’s say you’re interested in receiving a webhook for every <notranslate>**install**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Campaign**</notranslate> field to <notranslate>**App Install Campaign**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Campaign**</notranslate> is equal to <notranslate>**"App Install Campaign"**</notranslate>. You would select <notranslate>**Campaign**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~campaign**</notranslate>. Finally, you'd set the value equal to <notranslate>**App Install Campaign**</notranslate>.
 
     ![image](/_assets/img/pages/exports/ua-webhooks/campaign-install-filter.png)
 
 !!! note "Example: Filtering clicks by link channel"
-    Let’s say you’re interested in receiving a webhook for every **click** event that is referred from a Branch link where you set the **Channel** field to **AppLovin**. You would configure a filter to fire a webhook only when **Channel** is equal to **AppLovin**. You would select **Channel** from the dropdown, the key would be be autofilled and would equal **last_attributed_touch_data.~channel**. Finally, you'd set the value equal to **AppLovin**.
+    Let’s say you’re interested in receiving a webhook for every <notranslate>**click**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Channel**</notranslate> field to <notranslate>**AppLovin**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Channel**</notranslate> is equal to <notranslate>**AppLovin**</notranslate>. You would select <notranslate>**Channel**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~channel**</notranslate>. Finally, you'd set the value equal to <notranslate>**AppLovin**</notranslate>.
 
     ![image](/_assets/img/pages/exports/ua-webhooks/channel-click-filter.png)
 
@@ -86,11 +86,11 @@ See the [Advanced Filtering](#advanced-filtering) page to read more about custom
 
 To test whether your webhook is configured correctly, you can use [RequestBin](https://requestbin.com/). RequestBin gives you a URL that accepts events for 24 hours and allows you to see exactly what Branch is sending.
 
-1. Go to [RequestBin](https://requestbin.com/) and click **+ Create a RequestBin**:
+1. Go to [RequestBin](https://requestbin.com/) and click <notranslate>**+ Create a RequestBin**</notranslate>:
 
 	![image](/_assets/img/pages/exports/requestbin_create.png)
 
-1. Copy the **Bin URL**:
+1. Copy the <notranslate>**Bin URL**</notranslate>:
 
 	![image](/_assets/img/pages/exports/requestbin_inspect.png)
 
@@ -222,23 +222,23 @@ Make sure you've taken a look at the [data format](#data-format) before you atte
 
 To create a filter:
 
-1. Click the **Add Filter** button
+1. Click the <notranslate>**Add Filter**</notranslate> button
 1. Select the metadata you'd like to filter on. For advanced filtering, choose "Custom"
 1. Type in the key that you'd like to filter on. To find the key you'd like to filter on, reference our quick introduction to the [People-Based Attribution's data format](#data-format) to figure out where your key is likely nested. Another foolproof way to find your key is looking at your data in full before setting up your filter. You can do this by doing a [CSV export](https://dashboard.branch.io/data-import-export/csv-exports), [API export](/exports/api-v3/) or send a single webhook with a POST body, and locate your key in that POST body.
-1. Unless your key is part of the top level data (e.g. **timestamp** or **id**), it will likely be nested one level deep. Most keys will be of the format **object_name.key**. For example, if you want to filter for a custom key in deep link data called "product_deeplink_id", that would take the form **last_attributed_touch_data.product_deeplink_id**.
+1. Unless your key is part of the top level data (e.g. <notranslate>**timestamp**</notranslate> or <notranslate>**id**</notranslate>), it will likely be nested one level deep. Most keys will be of the format <notranslate>**object_name.key**</notranslate>. For example, if you want to filter for a custom key in deep link data called "product_deeplink_id", that would take the form <notranslate>**last_attributed_touch_data.product_deeplink_id**</notranslate>.
 
 !!! note "Example: Filtering purchases for a specific coupon"
-	Let’s say you’re interested in receiving a webhook for every **Purchase** event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for "coupon"](/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a webhook only when **coupon** is equal to **SUMMERDEALS10** you will:
+	Let’s say you’re interested in receiving a webhook for every <notranslate>**Purchase**</notranslate> event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for "coupon"](/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a webhook only when <notranslate>**coupon**</notranslate> is equal to <notranslate>**SUMMERDEALS10**</notranslate> you will:
 
     1. Select "Custom" from the filter key dropdown
-    1. Make the key **event_data.coupon**
+    1. Make the key <notranslate>**event_data.coupon**</notranslate>
     1. Select "equals" on the equivalency dropdown
-    1. Enter a value of **SUMMERDEALS10**
+    1. Enter a value of <notranslate>**SUMMERDEALS10**</notranslate>
 
 	![image](/_assets/img/pages/exports/ua-webhooks/coupon-filter-purchase.png)
 
 !!! caution "Array filtering not yet available"
-	Currently, webhooks do not support filtering on values inside arrays. Example arrays that cannot be filtered by value are **tags**, **+via_features** and **content_items**.
+	Currently, webhooks do not support filtering on values inside arrays. Example arrays that cannot be filtered by value are <notranslate>**tags**</notranslate>, <notranslate>**+via_features**</notranslate> and <notranslate>**content_items**</notranslate>.
 
 ### Templating your Postback URL
 

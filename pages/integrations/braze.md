@@ -30,7 +30,7 @@ We have built a custom integration to automatically send all Branch install data
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
 1. Search for Braze and click on the tile.
-1. Enter your Braze API Key and hit **Enable**.
+1. Enter your Braze API Key and hit <notranslate>**Enable**</notranslate>.
 
     ![image]( /_assets/img/pages/integrations/braze/braze_di.png)
 
@@ -42,7 +42,7 @@ We have built a custom integration to automatically send all Branch install data
 
 When you're ready to send data through Branch, you'll need to make sure to pass through the Braze Android Install Tracking ID to the Branch SDKs. In order to do so, retrieve the ID from the Braze SDK and pass this value through `setRequestMetadataKey` on the Branch SDKs.
 
-Here's a sample snippet showing this. **NOTE** This is only required for Android. You must set the correct key before calling *initSession*. You must also initialize the Braze SDK before setting the request metadata in the Branch SDK.
+Here's a sample snippet showing this. **NOTE** This is only required for Android. You must set the correct key before calling <notranslate>*initSession*</notranslate>. You must also initialize the Braze SDK before setting the request metadata in the Branch SDK.
 
 
 **Android**

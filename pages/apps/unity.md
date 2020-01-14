@@ -26,11 +26,11 @@
 
     - [Download the latest SDK version](https://github.com/BranchMetrics/unity-branch-deep-linking-attribution/raw/master/BranchUnityWrapper.unitypackage) or clone our [open-source GitHub repository](https://github.com/BranchMetrics/unity-branch-deep-linking).
 
-    - Import the **BranchUnityWrapper.unitypackage** into your project by clicking `Assets -> Import Package`.
+    - Import the <notranslate>**BranchUnityWrapper.unitypackage**</notranslate> into your project by clicking `Assets -> Import Package`.
 
 - ### Configure app
 
-    - Add the Branch prefab asset to the **first scene** of your Unity project
+    - Add the Branch prefab asset to the <notranslate>**first scene**</notranslate> of your Unity project
 
     - ##### Update your Branch prefab
 
@@ -176,7 +176,7 @@
 
 - ### Read deep link
 
-    - Read Deeplink params from a **BUO** in your `BranchInitSession callback`
+    - Read Deeplink params from a <notranslate>**BUO**</notranslate> in your `BranchInitSession callback`
 
     - Returns [deep link properties](/links/integrate/#read-deep-links)
 

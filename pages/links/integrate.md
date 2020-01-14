@@ -119,7 +119,7 @@
 - ### UTM Behavior
 
 !!! warning "Enabled by Default"
-    To disable this functionality, go to **Link Settings** -> **Advance Settings** -> **Analytics mapping with UTM**.
+    To disable this functionality, go to <notranslate>**Link Settings**</notranslate> -> <notranslate>**Advance Settings**</notranslate> -> <notranslate>**Analytics mapping with UTM**</notranslate>.
     ![image](/_assets/img/pages/links/utm-mapping.png)
 
   - When redirecting to a web URL, Branch automatically passes through any values from the following Branch link analytics tags as UTM parameters:
@@ -212,7 +212,7 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | $fallback_url | | Change the redirect endpoint for all platforms - so you don't have to enable it by platform. Note that Branch will forward all robots to this URL, which **overrides any OG tags** entered in the link.  System-wide Default URL (set in Link Settings)
+        | $fallback_url | | Change the redirect endpoint for all platforms - so you don't have to enable it by platform. Note that Branch will forward all robots to this URL, which <notranslate>**overrides any OG tags**</notranslate> entered in the link.  System-wide Default URL (set in Link Settings)
         | $fallback_url_xx | | Change the redirect endpoint for all platforms based on a [lower-case Alpha-2 country code](https://www.iso.org/obp/ui/#search). For example, `$fallback_url_de="..."` would redirect Germany deep link clicks. You should also set `$fallback_url` to act as the global redirect in addition to the country-specific ones.
         | $desktop_url | | Change the redirect endpoint on desktops Text-Me-The-App page (set in Link Settings)
         | $ios_url | | Change the redirect endpoint for iOS  App Store page for your app (set in Link Settings)
@@ -232,9 +232,9 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Value | Usage
         | --- | --- | ---
-        | $uri_redirect_mode | **0** | This is the default value that yields the standard behavior where we don't try to open the app if the user can see an error.
-        | $uri_redirect_mode | **1** | Smart redirect mode. Same behavior as 0 until we know the user has the app installed through Branch persona data. In that case, force URI schemes to open the app.
-        | $uri_redirect_mode | **2** | Forceful redirect mode. Always try to force open the app, even if it risks showing an [error message](/_assets/img/pages/links/uri-error-message.png) when the app is not installed.
+        | $uri_redirect_mode | <notranslate>**0**</notranslate> | This is the default value that yields the standard behavior where we don't try to open the app if the user can see an error.
+        | $uri_redirect_mode | <notranslate>**1**</notranslate> | Smart redirect mode. Same behavior as 0 until we know the user has the app installed through Branch persona data. In that case, force URI schemes to open the app.
+        | $uri_redirect_mode | <notranslate>**2**</notranslate> | Forceful redirect mode. Always try to force open the app, even if it risks showing an [error message](/_assets/img/pages/links/uri-error-message.png) when the app is not installed.
 
     - Supported Apps
 

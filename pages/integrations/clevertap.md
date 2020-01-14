@@ -39,7 +39,7 @@ Find your CleverTap Account Credentials. Later, you'll enter them into the Branc
 
     ![image](/_assets/img/pages/integrations/clevertap/search-clevertap.png)
 
-1. Enter your CleverTap credentials into the corresponding boxes in the Branch Dashboard as shown below and hit **Save**.
+1. Enter your CleverTap credentials into the corresponding boxes in the Branch Dashboard as shown below and hit <notranslate>**Save**</notranslate>.
 
     ![image](/_assets/img/pages/integrations/clevertap/enter-clevertap-credentials.png)
 

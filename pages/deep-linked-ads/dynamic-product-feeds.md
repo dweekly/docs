@@ -17,9 +17,9 @@ Take advantage of our visual interface for uploading and managing feeds, or set 
 
 ### Prepare your Feed Source
 
-To create a deep linked feed, upload a content or product feed. In Branch terminology, this is called a **Feed Source**.
+To create a deep linked feed, upload a content or product feed. In Branch terminology, this is called a <notranslate>**Feed Source**</notranslate>.
 
-When you need to create a **Deep Linked Feed** you'll go through a creation flow that will ask you to select a Feed Source for modification.
+When you need to create a <notranslate>**Deep Linked Feed**</notranslate> you'll go through a creation flow that will ask you to select a Feed Source for modification.
 
 You'll be asked to enter some attribution tags and optionally configure linking. After you've done this, Branch will prepare a Deep Linked Feed, adding any missing columns that are needed, or editing existing columns to use the correct links for deep linking. More specifics on the transformation process can be found in our Advanced section.
 
@@ -28,7 +28,7 @@ A couple of things to note:
 - Be sure that your Feed Source has a `link` column with each product's web URL. This is the minimum requirement for Branch to create deep links (although it will likely not be sufficient to be accepted by Facebook or partners.)
 - We recommend [hosting deep link data](/web/hosted-data/) on your website for each web URL in your feed. We won't use it to modify your feed, but when your link is clicked from an ad, we'll get the link data from your website and return it to your app.
 
-If you choose this option, go to your [Link Settings](https://dashboard.branch.io/link-settings) > Advanced Settings and check **Enable Link Scraping**. This option is only available once you've enabled the Deep Linked Feeds product for your account (you can enable the product by creating and downloading a Deep Linked Feed).
+If you choose this option, go to your [Link Settings](https://dashboard.branch.io/link-settings) > Advanced Settings and check <notranslate>**Enable Link Scraping**</notranslate>. This option is only available once you've enabled the Deep Linked Feeds product for your account (you can enable the product by creating and downloading a Deep Linked Feed).
 
 ![image](/_assets/img/pages/deep-linked-ads/dynamic-product-ads/enable-link-scraping.png)
 
@@ -43,7 +43,7 @@ If you choose this option, go to your [Link Settings](https://dashboard.branch.i
 
 Go directly to [Ads > Links > Feed Sources section](https://dashboard.branch.io/ads/links/feed-sources) in the Branch dashboard to get started.
 
-1. Click the **Feed Sources** tab if needed, then click "Add New Feed Source."
+1. Click the <notranslate>**Feed Sources**</notranslate> tab if needed, then click "Add New Feed Source."
 
     ![image](/_assets/img/pages/deep-linked-ads/dynamic-product-ads/add-new-feed-source.png)
 
@@ -51,15 +51,15 @@ Go directly to [Ads > Links > Feed Sources section](https://dashboard.branch.io/
 
     ![image](/_assets/img/pages/deep-linked-ads/dynamic-product-ads/name-and-upload-feed-source.png)
 
-You can see all of the **Feed Sources** you've uploaded by going to the [Feed Sources](https://dashboard.branch.io/ads/links/feed-sources) tab.
+You can see all of the <notranslate>**Feed Sources**</notranslate> you've uploaded by going to the [Feed Sources](https://dashboard.branch.io/ads/links/feed-sources) tab.
 
 ### Create a New Deep Linked Feed
 
-1. Click the **Create Ad Link** button from either tab.
+1. Click the <notranslate>**Create Ad Link**</notranslate> button from either tab.
 
     ![image](/_assets/img/pages/deep-linked-ads/dynamic-product-ads/add-deep-linked-feed.png)
 
-1. Select **Create Product Link** from the choices on the modal.
+1. Select <notranslate>**Create Product Link**</notranslate> from the choices on the modal.
 
     ![image](/_assets/img/pages/deep-linked-ads/dynamic-product-ads/select-product-from-modal.png)
 
@@ -93,13 +93,13 @@ If you used a Feed Source hosted on a URL (recommended), you will see two option
 
 ![image](/_assets/img/pages/deep-linked-ads/dynamic-product-ads/hosted-dlf.png)
 
-You can see all of the **Deep Linked Feeds** you've created by going to the [Deep Linked Feeds](https://dashboard.branch.io/ads/links/deep-linked-feeds) tab.
+You can see all of the <notranslate>**Deep Linked Feeds**</notranslate> you've created by going to the [Deep Linked Feeds](https://dashboard.branch.io/ads/links/deep-linked-feeds) tab.
 
 ### Download CSV
 
 Click "Download CSV" if you just need a one-time file with your Deep Linked Feed.
 
-You can see all of the **Deep Linked Feeds** you've created by going to the [Deep Linked Feeds](https://dashboard.branch.io/ads/links/deep-linked-feeds) tab.
+You can see all of the <notranslate>**Deep Linked Feeds**</notranslate> you've created by going to the [Deep Linked Feeds](https://dashboard.branch.io/ads/links/deep-linked-feeds) tab.
 
 ### Use your Deep Linked Feed
 

@@ -17,7 +17,7 @@ Branch will send *attributed* **installs** and **opens**, as well as any **custo
 
 ### What does it look like?
 
-Branch events will appear as an event prepended with **branch_** in your Segment debugger.
+Branch events will appear as an event prepended with <notranslate>**branch_**</notranslate> in your Segment debugger.
 
 ![image](/_assets/img/pages/integrations/segment/segment-debugger_1.png)
 
@@ -36,7 +36,7 @@ Find your Segment Token and enter it into the Branch Dashboard.
 
 1. Navigate to [https://app.segment.com](https://app.segment.com/) and log into the Dashboard.
 1. In the dashboard, navigate to your desired Workspace.
-1. In that Workspace, navigate to **Sources** and select the Source that has your app listed. Branch is not yet an independent Source, so Branch events appear within your app's Source.
+1. In that Workspace, navigate to <notranslate>**Sources**</notranslate> and select the Source that has your app listed. Branch is not yet an independent Source, so Branch events appear within your app's Source.
 
     ![image](/_assets/img/pages/integrations/segment/segment-sources.png)
 
@@ -53,7 +53,7 @@ Find your Segment Token and enter it into the Branch Dashboard.
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
 1. Search for Segment and click on the tile.
-1. Enter your Segment Token and hit **Enable**.
+1. Enter your Segment Token and hit <notranslate>**Enable**</notranslate>.
 
     ![image](/_assets/img/pages/integrations/segment/enable-segment.png)
 
@@ -64,11 +64,11 @@ Find your Segment Token and enter it into the Branch Dashboard.
 
 When you're ready to send data through Branch, you'll need to make sure you pass through the configured Segment Anonymous ID the Branch SDKs. In order to do so, you'll ask the Segment SDK to provide you with the Segment Anonymous ID, and pass this value through `setRequestMetadataKey` on the Branch SDKs.
 
-Here's a sample snippet showing this. **NOTE** you must set the correct key before calling *initSession*. You must also initialize the Segment SDK before setting the request metadata in the Branch SDK.
+Here's a sample snippet showing this. **NOTE** you must set the correct key before calling <notranslate>*initSession*</notranslate>. You must also initialize the Segment SDK before setting the request metadata in the Branch SDK.
 
 **iOS**
 
-Inside *didFinishLaunchingWithOptions*
+Inside <notranslate>*didFinishLaunchingWithOptions*</notranslate>
 
 ```objc
 
@@ -78,7 +78,7 @@ Branch *branch = [Branch getInstance];
 
 **Swift**
 
-Inside *didFinishLaunchingWithOptions*
+Inside <notranslate>*didFinishLaunchingWithOptions*</notranslate>
 
 ```swift
 

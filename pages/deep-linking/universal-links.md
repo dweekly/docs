@@ -43,7 +43,7 @@ Branch makes it simple to enable Universal Links all while greatly improving on 
 ![image](/_assets/img/pages/deep-linking/universal-links/add_domain.png)
 
 !!! warning "Support for legacy links"
-	If the **Default domain name** box shows the legacy `bnc.lt` domain, you should use the following entry instead: `applinks:bnc.lt`
+	If the <notranslate>**Default domain name**</notranslate> box shows the legacy `bnc.lt` domain, you should use the following entry instead: `applinks:bnc.lt`
 
 !!! tip "Using a custom domain or subdomain?"
 	If you use a [custom domain or subdomain for your Branch links](/dashboard/integrate/#change-link-domain), you should instead add entries for `applinks:[mycustomdomainorsubdomain]` and `XXXX-alternate.app.link`. If you're unsure of your Branch-assigned app.link subdomain, contact integrations@branch.io, and we can provide it.
@@ -150,7 +150,7 @@ When users enter your app via a Universal Link, we check to see to see if the li
 
 For most implementations this will never be an issue, since your deep links will be routed correctly either way. However, if you use a custom link domain *and* you rely on `handledByBranch` to return `YES` for every incoming Branch-generated Universal Link, you can inform the Branch SDK by following these steps:
 
-1. In your **Info.plist** file, create a new key called `branch_universal_link_domains`.
+1. In your <notranslate>**Info.plist**</notranslate> file, create a new key called `branch_universal_link_domains`.
 1. Add your custom domain(s) as a string. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domain.png)
 1. Save the file.
 

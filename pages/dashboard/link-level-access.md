@@ -38,7 +38,7 @@ The "Link" level of a Branch account is the fourth level of access and includes 
 
 ### Links
 
-If you are an Admin, you have edit access to the following tabs in the **Links** section.
+If you are an Admin, you have edit access to the following tabs in the <notranslate>**Links**</notranslate> section.
 
 #### Ad Links
 
@@ -74,7 +74,7 @@ You can create new feed sources, as well as debug/archive current feed sources.
 !!! warning "Aggregate Data Access Required"
 	Access to the Quick Link Export functionality also requires access to [Aggregate Data](aggregate-data-access.md)
 
-If you are an Admin, you have edit access to the **Quick Links** section.
+If you are an Admin, you have edit access to the <notranslate>**Quick Links**</notranslate> section.
 
 ![image](/_assets/img/pages/dashboard/access-levels/link-quick-links.png)
 
@@ -92,7 +92,7 @@ You can create new Quick Links, as well as edit/view stats/debug/duplicate/archi
 
 To create quick links in bulk:
 
-1. Click the **Bulk Create Links** button.
+1. Click the <notranslate>**Bulk Create Links**</notranslate> button.
 1. Select your CSV that includes the following for each quick link:
 	- campaign
 	- channel
@@ -103,7 +103,7 @@ To create quick links in bulk:
 	- data
 		- $marketing_title
 		- $og_description
-1.  Click **Create Links**
+1.  Click <notranslate>**Create Links**</notranslate>
 
 #### Export
 
@@ -114,8 +114,8 @@ To create quick links in bulk:
 
 To export your existing quick links:
 
-1. Click the **Export** button.
+1. Click the <notranslate>**Export**</notranslate> button.
 1. Provide the following:
 	- Time Range
 	- Interval
-1. Click **Export CSV**
+1. Click <notranslate>**Export CSV**</notranslate>

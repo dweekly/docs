@@ -39,7 +39,7 @@ When no 100% match method is available, we connect the unique fingerprint collec
 
 If you are concerned that users may potentially have the same fingerprint, you can choose to have us not match users if two identical fingerprints are outstanding.
 
-On the Dashboard's [Link Settings](https://dashboard.branch.io/link-settings) page, under advanced options, you should set **Match Type** to `Unique`.
+On the Dashboard's [Link Settings](https://dashboard.branch.io/link-settings) page, under advanced options, you should set <notranslate>**Match Type**</notranslate> to `Unique`.
 
 ![image](/_assets/img/pages/resources/matching/match-type-unique.png)
 

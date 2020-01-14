@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Spark
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Sparkpost** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Sparkpost**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **[Tracking Domains](https://app.sparkpost.com/account/tracking-domains){:target="\_blank"}** section of your Sparkpost account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**[Tracking Domains](https://app.sparkpost.com/account/tracking-domains){:target="\_blank"}**</notranslate> section of your Sparkpost account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/sparkpost/setup-config.png)
 
@@ -44,7 +44,7 @@ You can retrieve your click tracking domain from the **[Tracking Domains](https:
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **[Tracking Domains](https://app.sparkpost.com/account/tracking-domains){:target="\_blank"}** section of your SparkPost account:
+1. Add and verify a custom click tracking domain in the <notranslate>**[Tracking Domains](https://app.sparkpost.com/account/tracking-domains){:target="\_blank"}**</notranslate> section of your SparkPost account:
 
     ![image](/_assets/img/pages/email/sparkpost/create-domain.png)
 

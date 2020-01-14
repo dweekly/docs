@@ -25,61 +25,43 @@ Host: api2.branch.io
 
 ### Authentication
 
-**branch_key**
-
-_description_: The Branch key of the app analytics information is being pulled for.
-
-_required_: true
-
-_location_: body
-
-_format_: string
-
-**branch_secret**
-
-_description_: The Branch secret of the app, used for authentication.
-
-_required_: true
+<notranslate>**branch_key**</notranslate>
+ <notranslate>_description_</notranslate>: The Branch key of the app analytics information is being pulled for.
+ <notranslate>_required_</notranslate>: true
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_format_</notranslate>: string
 
 _location_: body
 
 _format_: string
+
+<notranslate>**branch_secret**</notranslate>
+ <notranslate>_description_</notranslate>: The Branch secret of the app, used for authentication.
+ <notranslate>_required_</notranslate>: true
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_format_</notranslate>: string
 
 ### Data selection
 
-**start_date**
+<notranslate>**start_date**</notranslate>
+ <notranslate>_description_</notranslate>: A timestamp representing the oldest date to return data for.
+ <notranslate>_required_</notranslate>: true
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_restrictions_</notranslate>: Cannot be before 2017-10-14
+ <notranslate>_format_</notranslate>: An ISO-8601 compliant date-time string. Eg: "2017-10-24T16:00:00-08:00"
 
-_description_: A timestamp representing the oldest date to return data for.
+<notranslate>**end_date**</notranslate>
+ <notranslate>_description_</notranslate>: The last timestamp (exclusive) to return data for. No events that triggered after the end_date will be counted in the query results.
+ <notranslate>_required_</notranslate>: true
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_restrictions_</notranslate>: Cannot be more than 7 days after the start_date
+ <notranslate>_format_</notranslate>: An ISO-8601 compliant date-time string. Eg: "2017-10-24T16:00:00-08:00"
 
-_required_: true
-
-_location_: body
-
-_restrictions_: Cannot be before 2017-10-14
-
-_format_: An ISO-8601 compliant date-time string. Eg: "2017-10-24T16:00:00-08:00"
-
-**end_date**
-
-_description_: The last timestamp (exclusive) to return data for. No events that triggered after the end_date will be counted in the query results.
-
-_required_: true
-
-_location_: body
-
-_restrictions_: Cannot be more than 7 days after the start_date
-
-_format_: An ISO-8601 compliant date-time string. Eg: "2017-10-24T16:00:00-08:00"
-
-**data_source**
-
-_description_: The type of event to query for, prefixed with the source (eg 'eo_' + 'open' pulls Branch app opens)
-
-_required_: true
-
-_location_: body
-
-_valid values_:
+<notranslate>**data_source**</notranslate>
+ <notranslate>_description_</notranslate>: The type of event to query for, prefixed with the source (eg 'eo_' + 'open' pulls Branch app opens)
+ <notranslate>_required_</notranslate>: true
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_valid values_</notranslate>:
 Branch data sources
 ```
 [
@@ -101,22 +83,17 @@ Branch data sources
 ]
 ```
 
-**aggregation**
-
-_description_: How to count events towards the final result count. When using unique_count, each event is only counted if an event by that user has not already been seen. Eg, if 10 users each trigger 3 opens:
+<notranslate>**aggregation**</notranslate>
+ <notranslate>_description_</notranslate>: How to count events towards the final result count. When using unique_count, each event is only counted if an event by that user has not already been seen. Eg, if 10 users each trigger 3 opens:
 ```
 total_count = 30
 unique_count = 10
 ```
 When querying with a datasource of "eo_commerce_event", the aggregation may also be specified as "revenue", in which case the counts returned are the sum of revenue from matching events, and not the number of events themselves.
-
-_required_: true
-
-_location_: body
-
-_format_: string
-
-_possible values_:
+ <notranslate>_required_</notranslate>: true
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_format_</notranslate>: string
+ <notranslate>_possible values_</notranslate>:
 ```
 [
   "unique_count",
@@ -126,17 +103,12 @@ _possible values_:
 ]
 ```
 
-**dimensions**
-
-_description_: List of event fields to use as splits for the query. Results counts are returned grouped with other events that have matchings values for each key provided in "dimensions".
-
-_required_: true
-
-_location_: body
-
-_format_: array<string>
-
-_possible element values_:
+<notranslate>**dimensions**</notranslate>
+ <notranslate>_description_</notranslate>: List of event fields to use as splits for the query. Results counts are returned grouped with other events that have matchings values for each key provided in "dimensions".
+ <notranslate>_required_</notranslate>: true
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_format_</notranslate>: array<string>
+ <notranslate>_possible element values_</notranslate>:
 General info:
 ```
 [
@@ -213,15 +185,11 @@ Other:
 ]
 ```
 
-**filters**
-
-_description_: An object where each key is a valid "dimension", and each value is an array of string values. If a key is prefixed with a '!', then any event with a dimension value contained in the value of that key is excluded. Otherwise, only events with dimension values matching the filter will be counted.
-
-_required_: false
-
-_location_: body
-
-_format_: Object<String, Array<String>>, For example, a query with filters specified as:
+<notranslate>**filters**</notranslate>
+ <notranslate>_description_</notranslate>: An object where each key is a valid "dimension", and each value is an array of string values. If a key is prefixed with a '!', then any event with a dimension value contained in the value of that key is excluded. Otherwise, only events with dimension values matching the filter will be counted.
+ <notranslate>_required_</notranslate>: false
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_format_</notranslate>: Object<String, Array<String>>, For example, a query with filters specified as:
 ```
 {
   "filters": {
@@ -235,28 +203,20 @@ _format_: Object<String, Array<String>>, For example, a query with filters speci
 ```
 would count only events where
   - last_attributed_touch_data_plus_current_feature was equal to "MOBILE_DEEPVIEWS" or "DESKTOP_DEEPVIEWS"
-
-_and_
+ <notranslate>_and_</notranslate>
 
   - user_data_os was **not** equal to "iOS"
-
-_possible keys_: See "dimensions" definition for valid key values. Any key may also be used with a "!" prefix
+ <notranslate>_possible keys_</notranslate>: See "dimensions" definition for valid key values. Any key may also be used with a "!" prefix
 
 ### Result formatting
 
-**granularity**
-
-_description_: Range of time to roll multiple events into a single result count. Eg, with a value of "day" the counts for each day are returned independently, where "all" would return a single count for the entire time range.
-
-_required_: false
-
-_location_: body
-
-_default value_: "all"
-
-_format_: string
-
-_possible values_:
+<notranslate>**granularity**</notranslate>
+ <notranslate>_description_</notranslate>: Range of time to roll multiple events into a single result count. Eg, with a value of "day" the counts for each day are returned independently, where "all" would return a single count for the entire time range.
+ <notranslate>_required_</notranslate>: false
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_default value_</notranslate>: "all"
+ <notranslate>_format_</notranslate>: string
+ <notranslate>_possible values_</notranslate>:
 ```
 [
   "all",
@@ -264,33 +224,21 @@ _possible values_:
 ]
 ```
 
-**ordered_by**
+<notranslate>**ordered_by**</notranslate>
+ <notranslate>_description_</notranslate>: Which key of result to sort results on. Only supports 1 sort key
+ <notranslate>_required_</notranslate>: false
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_default value_</notranslate>: value of query "aggregation" property, or "total_count" if not defined
+ <notranslate>_format_</notranslate>: string
+ <notranslate>_possible values_</notranslate>: Any element of query "dimensions" or the value of "aggregation" in the query
 
-_description_: Which key of result to sort results on. Only supports 1 sort key
-
-_required_: false
-
-_location_: body
-
-_default value_: value of query "aggregation" property, or "total_count" if not defined
-
-_format_: string
-
-_possible values_: Any element of query "dimensions" or the value of "aggregation" in the query
-
-**ordered**
-
-_description_: Which direction to order the results
-
-_required_: false
-
-_location_: body
-
-_default value_: "descending""
-
-_format_: string
-
-_possible values_:
+<notranslate>**ordered**</notranslate>
+ <notranslate>_description_</notranslate>: Which direction to order the results
+ <notranslate>_required_</notranslate>: false
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_default value_</notranslate>: "descending""
+ <notranslate>_format_</notranslate>: string
+ <notranslate>_possible values_</notranslate>:
 ```
 [
   "ascending",
@@ -306,55 +254,34 @@ ordered_by value sort choices:
   - timestamp -> chronologically ordered
   - everything else -> lexicographically sorted
 
-**zero_fill**
+<notranslate>**zero_fill**</notranslate>
+ <notranslate>_description_</notranslate>: Whether to return result objects where the result count was 0. If set to false, results with count = 0 will be omitted from the response.
+ <notranslate>_required_</notranslate>: false
+ <notranslate>_location_</notranslate>: body
+ <notranslate>_default value_</notranslate>: false
+ <notranslate>_format_</notranslate>: boolean
 
-_description_: Whether to return result objects where the result count was 0. If set to false, results with count = 0 will be omitted from the response.
+<notranslate>**limit**</notranslate>
+ <notranslate>_description_</notranslate>: Maximum number of results to return in the response. If granularity is set to day, Branch will pull results up to the limit for each day. So if limit is set to 1000 and 5 days worth of data is queried, with granularity=day, then this API will return up to 5000 results.
+ <notranslate>_required_</notranslate>: false
+ <notranslate>_location_</notranslate>: URL query
+ <notranslate>_default value_</notranslate>: 100
+ <notranslate>_max value_</notranslate>: 1000
+ <notranslate>_format_</notranslate>: integer
 
-_required_: false
+<notranslate>**after**</notranslate>
+ <notranslate>_description_</notranslate>: A pagination parameter indicating the index of the first result to return in the response. Eg, with 100 results returned, setting "after" to 50 would return elements 51-100
+ <notranslate>_required_</notranslate>: false
+ <notranslate>_location_</notranslate>: URL
+ <notranslate>_default value_</notranslate>: 0
+ <notranslate>_format_</notranslate>: integer
 
-_location_: body
-
-_default value_: false
-
-_format_: boolean
-
-**limit**
-
-_description_: Maximum number of results to return in the response. If granularity is set to day, Branch will pull results up to the limit for each day. So if limit is set to 1000 and 5 days worth of data is queried, with granularity=day, then this API will return up to 5000 results.
-
-_required_: false
-
-_location_: URL query
-
-_default value_: 100
-
-_max value_: 1000
-
-_format_: integer
-
-**after**
-
-_description_: A pagination parameter indicating the index of the first result to return in the response. Eg, with 100 results returned, setting "after" to 50 would return elements 51-100
-
-_required_: false
-
-_location_: URL
-
-_default value_: 0
-
-_format_: integer
-
-**query_id**
-
-_description_: Returned as query parameter on the "paging" object next_url and previous_url. Locks the last event to count for a query, so new events that occur between queries are not added to the results (prevents count change over time)
-
-_required_: false
-
-_location_: URL
-
-_default value_: null
-
-_format_: string
+<notranslate>**query_id**</notranslate>
+ <notranslate>_description_</notranslate>: Returned as query parameter on the "paging" object next_url and previous_url. Locks the last event to count for a query, so new events that occur between queries are not added to the results (prevents count change over time)
+ <notranslate>_required_</notranslate>: false
+ <notranslate>_location_</notranslate>: URL
+ <notranslate>_default value_</notranslate>: null
+ <notranslate>_format_</notranslate>: string
 
 **Note:** The query id should be treated as ephemeral, and should only be used when retrieving pages of an existing query where the pagination URLs already have query_id set as a query parameter. You should not attempt to change the id between requests or include a query id with a different query request.
 

@@ -66,7 +66,7 @@ The "Channel" level of a Branch account is the fourth level of access and includ
 
 ### Journeys Banners
 
-If you are an Admin, you have edit access to the **Manager** tab.
+If you are an Admin, you have edit access to the <notranslate>**Manager**</notranslate> tab.
 
 You can turn Journeys on and off, clone them, or view performance.
 
@@ -76,12 +76,12 @@ A Journey can have one of four states:
 
 | State | Meaning | Next Stage |
 | --- | --- | --- |
-| Draft | Not yet published, editable | **Active** |
-| Active | Live for your users, editable | **Stopped** |
-| Stopped | Not live for your users, editable | **Active** or **Archived** |
+| Draft | Not yet published, editable | <notranslate>**Active**</notranslate> |
+| Active | Live for your users, editable | <notranslate>**Stopped**</notranslate> |
+| Stopped | Not live for your users, editable | <notranslate>**Active**</notranslate> or <notranslate>**Archived**</notranslate> |
 | Archived | Not live for your users, editable | _none_ |
 
-You can activate a journey directly from the creation flow, or from **Start** in the Actions menus in the Journeys Manager.
+You can activate a journey directly from the creation flow, or from <notranslate>**Start**</notranslate> in the Actions menus in the Journeys Manager.
 
 ![image](/_assets/img/pages/journeys/edit-journeys.png)
 
@@ -93,7 +93,7 @@ You can activate a journey directly from the creation flow, or from **Start** in
 
 ### Deepviews
 
-If you are an Admin, you have edit access to the **Deepviews** section.
+If you are an Admin, you have edit access to the <notranslate>**Deepviews**</notranslate> section.
 
 You can create new Deepview templates either by duplicating the default Branch Public Template, or by creating a new one from scratch. New Deepview templates are shared between all platforms (iOS, Android, and desktop), and cannot be deleted after creation.
 
@@ -117,19 +117,19 @@ Left: Branch default. Right: a customized version.
 
 ### Partner Management
 
-If you are an Admin, you have edit access to the **Partner Management** tab.
+If you are an Admin, you have edit access to the <notranslate>**Partner Management**</notranslate> tab.
 
 ![image](/_assets/img/pages/dashboard/access-levels/app-partner-management.gif)
 
 Each Universal Ad Partner has the following settings:
 
-- **Account Settings**
+- <notranslate>**Account Settings**</notranslate>
     - Partner Credentials; e.g. API Key, SDK Key, Security Token.
-- **Postback Config**
+- <notranslate>**Postback Config**</notranslate>
     - Partner supported postback templates per conversion type
-- **Link Parameters**
+- <notranslate>**Link Parameters**</notranslate>
     - Parameters added to the Partner's link by default; not editable.
-- **Attribution Windows**
+- <notranslate>**Attribution Windows**</notranslate>
     - Use a custom attribution window to match AdAction Engage's attribution windows. This overrides your app level attribution windows.
 
 !!! info "Enabling an Ad Partner"
@@ -139,7 +139,7 @@ Each Universal Ad Partner has the following settings:
 
 ### Email Manager
 
-If you are an Admin, you have edit access to the **Manager** tab.
+If you are an Admin, you have edit access to the <notranslate>**Manager**</notranslate> tab.
 
 You can enable/disable Universal Email Partners and view integration information.
 
@@ -177,7 +177,7 @@ Both the sitemap itself and statistics about Google scraping your links are upda
 
 ## Referrals
 
-If you are an Admin, you have edit access to the **Reward Rules** tab.
+If you are an Admin, you have edit access to the <notranslate>**Reward Rules**</notranslate> tab.
 
 ### Reward Rules
 
@@ -212,8 +212,8 @@ If you are an Admin, you have edit access to the sections below.
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-data-feeds-manager.png)
 
-- **Daily Export API** - Programmatically access Branch event data with granular details like timestamp, OS, and more.
-- **Query API** - Programmatically query for any of the pre-aggregated Branch event data that you can see on the dashboard.
+- <notranslate>**Daily Export API**</notranslate> - Programmatically access Branch event data with granular details like timestamp, OS, and more.
+- <notranslate>**Query API**</notranslate> - Programmatically query for any of the pre-aggregated Branch event data that you can see on the dashboard.
 
 ### Data Integrations
 

@@ -33,8 +33,8 @@ Branch events are similar to Mixpanel events in that they can be used in your ex
 For the basic, codeless integration: find your Mixpanel Token and enter it into the Branch Dashboard.
 
 1. Navigate to [https://mixpanel.com](https://mixpanel.com) and log into the Dashboard.
-1. Click on **Account** in the navigation bar at the top of the page.
-1. Choose **Projects** in the modal that appears, then copy your app’s Token: ![image](/_assets/img/pages/integrations/mixpanel/mixpanel-token.png)
+1. Click on <notranslate>**Account**</notranslate> in the navigation bar at the top of the page.
+1. Choose <notranslate>**Projects**</notranslate> in the modal that appears, then copy your app’s Token: ![image](/_assets/img/pages/integrations/mixpanel/mixpanel-token.png)
 
 ### Configure Branch Dashboard
 
@@ -42,7 +42,7 @@ For the basic, codeless integration: find your Mixpanel Token and enter it into 
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
 1. Search for Mixpanel and click on the tile.
-1. Enter your Mixpanel Token and hit **Enable**.
+1. Enter your Mixpanel Token and hit <notranslate>**Enable**</notranslate>.
 
 ![image](/_assets/img/pages/integrations/mixpanel/enable-mixpanel-integration.png)
 

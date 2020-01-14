@@ -25,7 +25,7 @@ These events will also have analytics, so you can understand their performance, 
 As of now, any calls made through these SDK methods will **not**:
 
 - Work with our [referrals system](/viral/referrals/).
-- Show custom data in the Branch dashboard aside from **Liveview** and **Exports**.
+- Show custom data in the Branch dashboard aside from <notranslate>**Liveview**</notranslate> and <notranslate>**Exports**</notranslate>.
 
 ## Available Events
 

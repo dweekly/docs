@@ -48,14 +48,14 @@ The "Aggregate Data" level of a Branch account is the sixth and most basic level
 
 ## Summary
 
-All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the **Summary** page.
+All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Summary**</notranslate> page.
 
 The [Dashboard Summary](https://dashboard.branch.io/) shows a high level overview of the success of your deep linking.
 
-- View **Installs** which show both Branch and non-Branch installs
-- View **Click flow** to discover where your deep links are being clicked at
-- View **Journeys** to see you Journey funnel from `view` to `click` to either `install` or `open`
-- View **Deepviews** to see you Deepview funnel from `view` to `click` to either `install` or `open`
+- View <notranslate>**Installs**</notranslate> which show both Branch and non-Branch installs
+- View <notranslate>**Click flow**</notranslate> to discover where your deep links are being clicked at
+- View <notranslate>**Journeys**</notranslate> to see you Journey funnel from `view` to `click` to either `install` or `open`
+- View <notranslate>**Deepviews**</notranslate> to see you Deepview funnel from `view` to `click` to either `install` or `open`
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-summary.gif)
 
@@ -63,7 +63,7 @@ The [Dashboard Summary](https://dashboard.branch.io/) shows a high level overvie
 
 ### Ads Analytics
 
-All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the **Ads Analytics** page.
+All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Ads Analytics**</notranslate> page.
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-ads-analytics.gif)
 
@@ -72,7 +72,7 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 ### Journeys Banners Analytics
 
-All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the **Journeys Banners Analytics** page.
+All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Journeys Banners Analytics**</notranslate> page.
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-journeys-analytics.gif)
 
@@ -81,13 +81,13 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 ### Email Analytics
 
-All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the **Email Analytics** page.
+All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Email Analytics**</notranslate> page.
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-email-analytics.gif)
 
 ### Organic Search
 
-All access roles - Admin/Team Member/Full Read - except Limited Read have view access to the **Organic Search** page.
+All access roles - Admin/Team Member/Full Read - except Limited Read have view access to the <notranslate>**Organic Search**</notranslate> page.
 
 !!! warning "Channel-level Access also Required"
     Due to the ability to impact functionality, the Organic Search page also requires the user have Channel-level access.
@@ -96,7 +96,7 @@ All access roles - Admin/Team Member/Full Read - except Limited Read have view a
 
 ### Referrals Analytics
 
-All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the **Referrals Analytics** page.
+All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Referrals Analytics**</notranslate> page.
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-referrals-analytics.gif)
 
@@ -104,13 +104,13 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 ### Sources
 
-All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the **Sources** page.
+All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Sources**</notranslate> page.
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-sources-analytics.png)
 
 ### Content
 
-All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the **Content** page.
+All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Content**</notranslate> page.
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-content-analytics.png)
 

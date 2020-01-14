@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Adobe
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Adobe Campaign Classic** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Adobe Campaign Classic**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **Brand Configuration** page in the field called **External URL of the tracking server**. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**Brand Configuration**</notranslate> page in the field called <notranslate>**External URL of the tracking server**</notranslate>. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/adobe-campaign-classic/setup-config.png)
 
@@ -47,7 +47,7 @@ You can retrieve your click tracking domain from the **Brand Configuration** pag
 
 ### Setup a custom click tracking domain
 
-Add a custom click tracking domain at the **Brand Configuration** page in the field called **External URL of the tracking server**.
+Add a custom click tracking domain at the <notranslate>**Brand Configuration**</notranslate> page in the field called <notranslate>**External URL of the tracking server**</notranslate>.
 
 ![image](/_assets/img/pages/email/adobe-campaign-classic/create-domain.png)
 

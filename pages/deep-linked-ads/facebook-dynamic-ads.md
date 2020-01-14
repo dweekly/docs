@@ -37,7 +37,7 @@ Branch makes it easy for you to create and manage feeds with Facebook-compatible
 <img src="/_assets/img/pages/deep-linked-ads/reusable-images/create-link-product.png" alt="Link Creation">
 1. Enter a Deep Linked Feed Name.
 1. Enter a already set up feed source or upload a new source.
-1. Configure the feed with the Ad Partner set to **Facebook**, and the Ad Format set to **Product**.
+1. Configure the feed with the Ad Partner set to <notranslate>**Facebook**</notranslate>, and the Ad Format set to <notranslate>**Product**</notranslate>.
 ![Ad Link Setup](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/feed-setup.png)
 1. On the next section, select any keys from your feed that you'd like to include in the deep linked data contained in the generated links.
 <img src="/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/feed-keys-setup.png">
@@ -57,13 +57,13 @@ To set up a Facebook Product Catalogue campaign, you will need to first create y
     The largest file size accepted by the tool is 50MB. Please contact [integrations@branch.io](mailto:integrations@branch.io) if you need to upload a larger file.
 
 1. Navigate to your [Facebook Ads Manager](https://www.facebook.com/ads/manager/){:target="_blank"}.
-1. In the top left hand corner, click into the menu, select **All tools**, and select **Product Catalogues**.
+1. In the top left hand corner, click into the menu, select <notranslate>**All tools**</notranslate>, and select <notranslate>**Product Catalogues**</notranslate>.
 ![Facebook Product Catalogues](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/fb-product-catalogs.png)
 1. From the drop down menu click "Create new catalog...", name it (remember this name, you'll need it later) and select "Products sold online".
 <img src="/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/create-new-catalog.png" alt="Facebook Create New Product Catalogue">
 1. Now that you have a product catalog, you can add a new feed. Click "Add Product Feed."
 ![Add New Feed](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/add-new-feed.png)
-1. If you have a [Hosted Deep Linked Feed](/features/deep-linked-feeds/guide/#schedule-refresh){:target="_blank"} (recommended), select the option "Scheduled recurring uploads." Paste your Branch-provided URL into the **Feed URL** text field.
+1. If you have a [Hosted Deep Linked Feed](/features/deep-linked-feeds/guide/#schedule-refresh){:target="_blank"} (recommended), select the option "Scheduled recurring uploads." Paste your Branch-provided URL into the <notranslate>**Feed URL**</notranslate> text field.
 ![Feed URL option](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/new-feed-settings.png)
 ![Feed URL settings](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/upload-feed-url.png)
 1. If you've created a Deep Linked Feed CSV file to upload, select the option "Single upload: Upload a single file feed now." Select the Deep Linked Feed URL or CSV file you would like to upload to Facebook, and click "Upload".
@@ -82,7 +82,7 @@ Use the "Product events" tab in your Product Catalog view to ensure that Faceboo
 #### Creating a Dynamic Ad Campaign
 
 1. Navigate to [https://www.facebook.com/ads/create](https://www.facebook.com/ads/create){:target="_blank"} while logged in to the account that owns your Facebook app.
-1. Choose **Product Catalog Sales**. Select the Product Catalog to which you uploaded your Deep Linked Feed.
+1. Choose <notranslate>**Product Catalog Sales**</notranslate>. Select the Product Catalog to which you uploaded your Deep Linked Feed.
 ![Feed Uploaded](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/campaign-selection.png)
 1. Select the targeting, bid, budget and placements that you'd like.
 1. Select your desired ad format and launch your campaign. The Branch deep linked feed will be automatically set up in your Facebook product catalogue ads.

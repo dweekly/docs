@@ -2,7 +2,7 @@
 
 ![image](/_assets/img/pages/email/send-email.png)
 
-In this prompt, enter the email of someone on your team who is qualified to modify your iOS app, and then click **Send**. They will complete the [technical setup](#technical-setup) steps below.
+In this prompt, enter the email of someone on your team who is qualified to modify your iOS app, and then click <notranslate>**Send**</notranslate>. They will complete the [technical setup](#technical-setup) steps below.
 
 ### Technical setup
 

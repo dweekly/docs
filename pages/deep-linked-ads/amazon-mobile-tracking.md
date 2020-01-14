@@ -32,8 +32,8 @@ This guide will walk you through how to setup your campaigns with **[Amazon](htt
 
 Create separate links to track campaigns for Fire TV devices vs Tablet devices. Make sure to  append the following mandatory key-values for tracking ad links on Amazon Fire Tablet/TV Devices:
 
-- **Fire Tablet**: %24os=AMAZON_FIRE
-- **Fire TV**: %24os=AMAZON_FIRE_TV
+- <notranslate>**Fire Tablet**</notranslate>: %24os=AMAZON_FIRE
+- <notranslate>**Fire TV**</notranslate>: %24os=AMAZON_FIRE_TV
 
 Implement these links for platform-specific Fire OS ad campaigns on the Amazon Advertising platform.
 

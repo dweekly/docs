@@ -329,23 +329,23 @@ branchUniversalObject.contentMetadata.customMetadata["property2"] = "red"
 
 #### Properties
 
-**canonicalIdentifier**: This is the unique identifier for content that will help Branch de-dupe across many instances of the same thing. If you have a website with pathing, feel free to use that. Or if you have database identifiers for entities, use those.
+<notranslate>**canonicalIdentifier**</notranslate>: This is the unique identifier for content that will help Branch de-dupe across many instances of the same thing. If you have a website with pathing, feel free to use that. Or if you have database identifiers for entities, use those.
 
-**title**: This is the name for the content and will automatically be used for the OG tags. It will insert `$og_title` into the data dictionary of any link created.
+<notranslate>**title**</notranslate>: This is the name for the content and will automatically be used for the OG tags. It will insert `$og_title` into the data dictionary of any link created.
 
-**contentDescription**: This is the description for the content and will automatically be used for the OG tags. It will insert `$og_description` into the data dictionary of any link created.
+<notranslate>**contentDescription**</notranslate>: This is the description for the content and will automatically be used for the OG tags. It will insert `$og_description` into the data dictionary of any link created.
 
-**imageUrl**: This is the image URL for the content and will automatically be used for the OG tags. It will insert `$og_image_url` into the data dictionary of any link created.
+<notranslate>**imageUrl**</notranslate>: This is the image URL for the content and will automatically be used for the OG tags. It will insert `$og_image_url` into the data dictionary of any link created.
 
-**keywords**: Key words that describe the object. These are used for Spotlight search and web scraping so that users can find your content.
+<notranslate>**keywords**</notranslate>: Key words that describe the object. These are used for Spotlight search and web scraping so that users can find your content.
 
-**locallyIndex**: If set to true, Branch will index this content on Spotlight on the user's phone.
+<notranslate>**locallyIndex**</notranslate>: If set to true, Branch will index this content on Spotlight on the user's phone.
 
-**publiclyIndex**: If set to true, Branch will index this content on Google, Branch, etc.
+<notranslate>**publiclyIndex**</notranslate>: If set to true, Branch will index this content on Google, Branch, etc.
 
-**expirationDate**: The date when the content will not longer be available or valid. Currently, this is only used for Spotlight indexing but will be used by Branch in the future.
+<notranslate>**expirationDate**</notranslate>: The date when the content will not longer be available or valid. Currently, this is only used for Spotlight indexing but will be used by Branch in the future.
 
-**contentMetadata**: Details that further describe your content. Set the properties of this sub-object depending on the type of content that is relevant to your content:
+<notranslate>**contentMetadata**</notranslate>: Details that further describe your content. Set the properties of this sub-object depending on the type of content that is relevant to your content:
 
 #### BranchUniversalObject.contentMetadata
 
@@ -353,35 +353,35 @@ The `BranchUniversalObject.contentMetadata` properties further describe  your co
 
 Set the properties of this sub-object depending on the type of content that is relevant to your content. The `BranchUniversalObject.contentMetadata.contentSchema` property describes the type of object content. Set other properties as is relevant to the type.
 
-**contentMetadata.contentSchema**: Set this property to a `BranchContentSchema` enum that best describes the content type. It accepts values like `BranchContentSchemaCommerceProduct` and `BranchContentSchemaMediaImage`.
+<notranslate>**contentMetadata.contentSchema**</notranslate>: Set this property to a `BranchContentSchema` enum that best describes the content type. It accepts values like `BranchContentSchemaCommerceProduct` and `BranchContentSchemaMediaImage`.
 
-**contentMetadata.customMetadata**: This dictionary contains any extra parameters you'd like to associate with the Branch Universal Object. These will be made available to you after the user clicks the link and opens up the app.
+<notranslate>**contentMetadata.customMetadata**</notranslate>: This dictionary contains any extra parameters you'd like to associate with the Branch Universal Object. These will be made available to you after the user clicks the link and opens up the app.
 
-**contentMetadata.price**: The price of the item to be used in conjunction with the commerce related events below.
+<notranslate>**contentMetadata.price**</notranslate>: The price of the item to be used in conjunction with the commerce related events below.
 
-**contentMetadata.currency**: The currency representing the price in [ISO 4217 currency code](http://en.wikipedia.org/wiki/ISO_4217). The default is USD.
+<notranslate>**contentMetadata.currency**</notranslate>: The currency representing the price in [ISO 4217 currency code](http://en.wikipedia.org/wiki/ISO_4217). The default is USD.
 
-**contentMetadata.quantity**: The quantity.
+<notranslate>**contentMetadata.quantity**</notranslate>: The quantity.
 
-**contentMetadata.sku**: The vendor SKU.
+<notranslate>**contentMetadata.sku**</notranslate>: The vendor SKU.
 
-**contentMetadata.productName**: Product name.
+<notranslate>**contentMetadata.productName**</notranslate>: Product name.
 
-**contentMetadata.productBrand**: Product brand.
+<notranslate>**contentMetadata.productBrand**</notranslate>: Product brand.
 
-**contentMetadata.productCategory**: The `BNCProductCategory` value, such as `BNCProductCategoryAnimalSupplies` or `BNCProductCategoryFurniture`.
+<notranslate>**contentMetadata.productCategory**</notranslate>: The `BNCProductCategory` value, such as `BNCProductCategoryAnimalSupplies` or `BNCProductCategoryFurniture`.
 
-**contentMetadata.productVariant**: The product variant.
+<notranslate>**contentMetadata.productVariant**</notranslate>: The product variant.
 
-**contentMetadata.condition**: The `BranchCondition` value, such as `BranchConditionNew` or `BranchConditionRefurbished`.
+<notranslate>**contentMetadata.condition**</notranslate>: The `BranchCondition` value, such as `BranchConditionNew` or `BranchConditionRefurbished`.
 
-**ratingAverage, ratingCount, ratingMax**: The rating for your content.
+<notranslate>**ratingAverage, ratingCount, ratingMax**</notranslate>: The rating for your content.
 
-**addressStreet, addressCity, addressRegion, addressCountry, addressPostalCode**: The address of your content.
+<notranslate>**addressStreet, addressCity, addressRegion, addressCountry, addressPostalCode**</notranslate>: The address of your content.
 
-**latitude, longitude**: The longitude and latitude of your content.
+<notranslate>**latitude, longitude**</notranslate>: The longitude and latitude of your content.
 
-**imageCaptions**: Image captions for the content's images.
+<notranslate>**imageCaptions**</notranslate>: Image captions for the content's images.
 
 ### Tracking User Interactions With An Object
 
@@ -470,11 +470,11 @@ branchUniversalObject.getShortUrl(with: linkProperties) { (url, error) in
 
 #### Link Properties Parameters
 
-**channel**: The channel for the link. Examples could be Facebook, Twitter, SMS, etc., depending on where it will be shared.
+<notranslate>**channel**</notranslate>: The channel for the link. Examples could be Facebook, Twitter, SMS, etc., depending on where it will be shared.
 
-**feature**: The feature the generated link will be associated with. Eg. `sharing`.
+<notranslate>**feature**</notranslate>: The feature the generated link will be associated with. Eg. `sharing`.
 
-**controlParams**: A dictionary to use while building up the Branch link. Here is where you specify custom behavior controls as described in the table below.
+<notranslate>**controlParams**</notranslate>: A dictionary to use while building up the Branch link. Here is where you specify custom behavior controls as described in the table below.
 
 You can do custom redirection by inserting the following _optional keys in the dictionary_:
 
@@ -497,16 +497,16 @@ You have the ability to control the direct deep linking of each link by insertin
 | "$deeplink_path" | The value of the deep link path that you'd like us to append to your URI. For example, you could specify "$deeplink_path": "radio/station/456" and we'll open the app with the URI "yourapp://radio/station/456?link_click_id=branch-identifier". This is primarily for supporting legacy deep linking infrastructure.
 | "$always_deeplink" | true or false. (default is not to deep link first) This key can be specified to have our linking service force try to open the app, even if we're not sure the user has the app installed. If the app is not installed, we fall back to the respective app store or $platform_url key. By default, we only open the app if we've seen a user initiate a session in your app from a Branch link (has been cookied and deep linked by Branch).
 
-**alias**: The alias for a link. Eg. `myapp.com/customalias`
+<notranslate>**alias**</notranslate>: The alias for a link. Eg. `myapp.com/customalias`
 
-**matchDuration**: The attribution window in seconds for clicks coming from this link.
+<notranslate>**matchDuration**</notranslate>: The attribution window in seconds for clicks coming from this link.
 
-**stage**: The stage used for the generated link, indicating what part of a funnel the user is in.
+<notranslate>**stage**</notranslate>: The stage used for the generated link, indicating what part of a funnel the user is in.
 
-**tags**: An array of tag strings to be associated with the link.
+<notranslate>**tags**</notranslate>: An array of tag strings to be associated with the link.
 
 #### Get Short Url Parameters
 
-**linkProperties**: The link properties created above that describe the type of link you'd like
+<notranslate>**linkProperties**</notranslate>: The link properties created above that describe the type of link you'd like
 
-**callback**: The callback that is called with url on success, or an error if something went wrong. Note that we'll return a link 100% of the time. Either a short one if network was available or a long one if it was not.
+<notranslate>**callback**</notranslate>: The callback that is called with url on success, or an error if something went wrong. Note that we'll return a link 100% of the time. Either a short one if network was available or a long one if it was not.

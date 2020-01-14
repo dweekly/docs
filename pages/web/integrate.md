@@ -250,7 +250,7 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
         };
 
         var linkOptions = {
-          make_new_link: false // don't create a new deep link if one already exists (e.g. _branch_match_id is in the address bar)
+          make_new_link: false // don't create a new deep link if one already exists (e.g. <notranslate>_branch_match_</notranslate>id is in the address bar)
         };
 
         branch.sendSMS(phoneNumber, linkData, linkOptions, function(err, data) {
@@ -655,7 +655,7 @@ The `Branch Web SDK` allows you to create and share deep links with a banner, ov
           campaign: String(Date.now())
         };
         var linkOptions = {
-          make_new_link: false, // don't create a new deep link if one already exists (e.g. _branch_match_id is in the address bar)
+          make_new_link: false, // don't create a new deep link if one already exists (e.g. <notranslate>_branch_match_</notranslate>id is in the address bar)
           open_app: true  // will attempt to open the app if install (URI Scheme deep linking only - will not work with Safari)
         };
         branch.deepview(linkData, linkOptions, function(err, data) {

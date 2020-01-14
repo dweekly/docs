@@ -6,7 +6,7 @@
 
 ## Overview
 
-Whereas Universal App Campaigns are focused solely on the single conversion type of `app download`, you can leverage other Google Ads campaign types - **Search, Display, Shopping, Video** - to expand your marketing efforts that enable both app and web conversions.
+Whereas Universal App Campaigns are focused solely on the single conversion type of `app download`, you can leverage other Google Ads campaign types - <notranslate>**Search, Display, Shopping, Video**</notranslate> - to expand your marketing efforts that enable both app and web conversions.
 
 
 !!! warning "**Note**"
@@ -26,23 +26,23 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 * [x] [Measurement of relevant v2 events](/web/integrate/#track-events)
 * [x] Branch Deep Linking enabled via either:
 	* [x] Adding `$uri_redirect_mode=1` to link's data.  If app link settings `URI Deep Link Mode` is set to `Intelligent`, then this link key is unnecessary.
-* [x] [App links (Android)](/deep-linking/android-app-links/) and/or [Universal Links (iOS)](/deep-linking/universal-links/) as the campaign's **Destination URL**.
-* [x] [Branch Ad link](/deep-linked-ads/google-ads-customization/#create-a-branch-ad-link) in the campaign's **Tracking Template**.
+* [x] [App links (Android)](/deep-linking/android-app-links/) and/or [Universal Links (iOS)](/deep-linking/universal-links/) as the campaign's <notranslate>**Destination URL**</notranslate>.
+* [x] [Branch Ad link](/deep-linked-ads/google-ads-customization/#create-a-branch-ad-link) in the campaign's <notranslate>**Tracking Template**</notranslate>.
 * [x] Place your [modified Branch link](#modifying-your-final-url-to-include-your-branch-link-as-a-query-parameter) in the `Final URL` field during Google Ads campaign setup.
 
 ![image](/_assets/img/pages/deep-linked-ads/google/web-based-ads-routing-options.png)
 
 ## Setup
 
-!!! warning "**Enabling Required**"
-		Before you can leverage our integration with Google Ads, you must **[Enable the Google Ads integration](/deep-linked-ads/google-ads-enable/)** in your Branch dashboard.
+!!! warning "<notranslate>**Enabling Required**</notranslate>"
+		Before you can leverage our integration with Google Ads, you must <notranslate>**[Enable the Google Ads integration](/deep-linked-ads/google-ads-enable/)**</notranslate> in your Branch dashboard.
 
 ### Create a Branch Ad Link
 
 1. Create a Branch Ad link from the [Partner Management page](https://dashboard.branch.io/ads/partner-management)'s `Create Google Ads Link` button under the Google Ads Partner and select `Create Search/Display Link` depending on the type of Google Ads campaign you are running.
 <img src="/_assets/img/pages/deep-linked-ads/reusable-images/create-link-display.png" alt="Link Creation" class="three-quarters center">
 1. Under the Define Section, pick a Link Name for later reference
-1. Configure the link with the Ad Format set to **Search** or **Display** and the Ad Partner set to **Google Ads**.
+1. Configure the link with the Ad Format set to <notranslate>**Search**</notranslate> or <notranslate>**Display**</notranslate> and the Ad Partner set to <notranslate>**Google Ads**</notranslate>.
 ![Create Ad Link](/_assets/img/pages/deep-linked-ads/google-xplatform-display-ads/link-setup.png)
 1. Under the Configure Options tab, navigate to the Redirects sub section and ensure that the Web redirect is set to the desired final website promoted by the ad campaign.
 ![Create Ad Link](/_assets/img/pages/deep-linked-ads/reusable-images/example-link-redirect.png)
@@ -61,7 +61,7 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 #### Modifying your Final URL to Include Your Branch Link as a Query Parameter
 
 !!! note "For Branch Deep Linking into App Only"
-	Because the **Final URL** for your campaigns must match your display URL and not contain any cross-domain redirects, you cannot put a Branch link directly in that box. However, you can append query parameters to the Final URL in order to pass the required data needed for Branch to route and attribute your users properly.
+	Because the <notranslate>**Final URL**</notranslate> for your campaigns must match your display URL and not contain any cross-domain redirects, you cannot put a Branch link directly in that box. However, you can append query parameters to the Final URL in order to pass the required data needed for Branch to route and attribute your users properly.
 
 1. Copy your Branch Ad Link from the last section and ensure the copied link has the appropriate additional params (~campaign_id, ~ad_set_id, lpurl, etc.) which should be automatically generated on your Branch dashboard.
 1. Remove `%24always_deeplink=false` from the Branch link.
@@ -132,7 +132,7 @@ Android | Yes
 
 #### Dynamic Remarketing Campaigns for Apps  
 
-[App Engagement Campaigns](/deep-linked-ads/google-ads-app-engagement/) do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a **Web-based Ad** using the **Display Network**.
+[App Engagement Campaigns](/deep-linked-ads/google-ads-app-engagement/) do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a <notranslate>**Web-based Ad**</notranslate> using the <notranslate>**Display Network**</notranslate>.
 
 Please follow Google Ads help documentation on how to create a new [Dynamic Remarketing Campaign for Apps](https://support.google.com/google-ads/answer/7688618?visit_id=636880114590173198-621612626&rd=1).
 

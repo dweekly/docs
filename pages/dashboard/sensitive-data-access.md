@@ -52,8 +52,8 @@ If you are an Admin, you have edit access to the sections below.
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-data-feeds-manager.png)
 
-- **Daily Export API** - Programmatically access Branch event data with granular details like timestamp, OS, and more.
-- **Query API** - Programmatically query for any of the pre-aggregated Branch event data that you can see on the dashboard.
+- <notranslate>**Daily Export API**</notranslate> - Programmatically access Branch event data with granular details like timestamp, OS, and more.
+- <notranslate>**Query API**</notranslate> - Programmatically query for any of the pre-aggregated Branch event data that you can see on the dashboard.
 
 ### Data Integrations
 
@@ -81,7 +81,7 @@ You can add new webhooks, edit existing webhooks and archive unwanted webhooks.
 
 ### Managing Your Team
 
-If you are an Admin, you have edit access to the **Team** tab.
+If you are an Admin, you have edit access to the <notranslate>**Team**</notranslate> tab.
 
 #### Adding an App Team User
 
@@ -89,18 +89,18 @@ If you are an Admin, you have edit access to the **Team** tab.
 
 To add a new App Team User:
 
-1. Click the **Add App Team Member** button.
-2. In the **Add App Team Member** modal:
-	1. Provide the user's **Email Address**
-	1. Provide the user's **First** and **Last** names
-	1. Select the appropriate **Access Level**
-		- **Admin** - Edit access to all settings and export access to all data.
-		- **Team Member** - Edit access to channels and links, read-only access to app settings, and access to aggregate data.
-		- **Full Read** - Read-only access to all settings and access to aggregate data.
-		- **Limited Read**  - Access to aggregate data only.
-		- **Custom** - Customize settings and data access.
-		- **No Access** - no dashboard access.
-	1. Click **Invite**.
+1. Click the <notranslate>**Add App Team Member**</notranslate> button.
+2. In the <notranslate>**Add App Team Member**</notranslate> modal:
+	1. Provide the user's <notranslate>**Email Address**</notranslate>
+	1. Provide the user's <notranslate>**First**</notranslate> and <notranslate>**Last**</notranslate> names
+	1. Select the appropriate <notranslate>**Access Level**</notranslate>
+		- <notranslate>**Admin**</notranslate> - Edit access to all settings and export access to all data.
+		- <notranslate>**Team Member**</notranslate> - Edit access to channels and links, read-only access to app settings, and access to aggregate data.
+		- <notranslate>**Full Read**</notranslate> - Read-only access to all settings and access to aggregate data.
+		- <notranslate>**Limited Read**</notranslate>  - Access to aggregate data only.
+		- <notranslate>**Custom**</notranslate> - Customize settings and data access.
+		- <notranslate>**No Access**</notranslate> - no dashboard access.
+	1. Click <notranslate>**Invite**</notranslate>.
 
 #### Defining Permissions
 
@@ -109,11 +109,11 @@ Each access level - as defined above - comes with predefined permissions which y
 !!! tip "Modifying Permissions"
 	If you want to modify a predefined access level, click the pencil icon to (de)select the available options.
 
-- **Link-level Settings** - Settings or features that can impact functionality for single links.
-- **Channel-level Settings** - Settings or features that can impact functionality across a marketing channel.
-- **App-level Settings** - Settings or features that can impact functionality app-wide.
-- **Aggregate Data** - Summary data that contains no granular data.
-- **Sensitive Data** - Data that can contain user-identifying, payment-related, or secret information.
+- <notranslate>**Link-level Settings**</notranslate> - Settings or features that can impact functionality for single links.
+- <notranslate>**Channel-level Settings**</notranslate> - Settings or features that can impact functionality across a marketing channel.
+- <notranslate>**App-level Settings**</notranslate> - Settings or features that can impact functionality app-wide.
+- <notranslate>**Aggregate Data**</notranslate> - Summary data that contains no granular data.
+- <notranslate>**Sensitive Data**</notranslate> - Data that can contain user-identifying, payment-related, or secret information.
 
 #### Modifying an App Team Member
 
@@ -121,24 +121,24 @@ Each access level - as defined above - comes with predefined permissions which y
 
 To modify an existing App Team Member:
 
-1. Find the App Team member you want to modify and click the **...** button in the **Actions** column for that user.
+1. Find the App Team member you want to modify and click the <notranslate>**...**</notranslate> button in the <notranslate>**Actions**</notranslate> column for that user.
 1. To edit the App Team member:
-	1. Click **Edit** and modify any of the following:
+	1. Click <notranslate>**Edit**</notranslate> and modify any of the following:
 		- Email
 		- First and Last names
 		- Access Level
-	1. Click **Save**.
+	1. Click <notranslate>**Save**</notranslate>.
 1. To resend the invitation to join the account:
-	1. Click **Resend Invite**.
+	1. Click <notranslate>**Resend Invite**</notranslate>.
 1. To delete the App Team member:
-	1. Click **Delete**.
-	1. In the **Are you sure you want to delete?** modal, click **Yes, Delete**.
+	1. Click <notranslate>**Delete**</notranslate>.
+	1. In the <notranslate>**Are you sure you want to delete?**</notranslate> modal, click <notranslate>**Yes, Delete**</notranslate>.
 
 ## Testing
 
 ### Liveview
 
-If you are an Admin, you have view access to the **Liveview** tab.
+If you are an Admin, you have view access to the <notranslate>**Liveview**</notranslate> tab.
 
 Liveview enables you to debug the following objects:
 
@@ -152,7 +152,7 @@ Credits
 
 ### Set up SDK
 
-If you are an Admin, you have view access to the **Set Up SDK** tab.
+If you are an Admin, you have view access to the <notranslate>**Set Up SDK**</notranslate> tab.
 
 ![image](/_assets/img/pages/dashboard/access-levels/sensitive-set-up-sdk.gif)
 

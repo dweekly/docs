@@ -25,7 +25,7 @@ This guide will walk you through how to setup your sms campaigns with **[Vibes](
 
 ### Choose your sms service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/sms){:target="\_blank"} section of the Branch dashboard. Select **Vibes** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/sms){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Vibes**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/sms/link-setup.md !}
 

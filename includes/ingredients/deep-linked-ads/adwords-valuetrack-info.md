@@ -1,6 +1,6 @@
 #### Google Adwords Valuetrack Parameters
 
-Branch utilizes Google's Valuetrack parameters to collect more detailed information on the source of an ad click. Furthermore, we dynamically map Adword's **campaign id** and **network parameters** to a Branch link's campaign analytics `Campaign` and `Channel` tags respectively. Leave these tags blank to have them dynamically mapped.
+Branch utilizes Google's Valuetrack parameters to collect more detailed information on the source of an ad click. Furthermore, we dynamically map Adword's <notranslate>**campaign id**</notranslate> and <notranslate>**network parameters**</notranslate> to a Branch link's campaign analytics `Campaign` and `Channel` tags respectively. Leave these tags blank to have them dynamically mapped.
 
 See below for a table of Valuetrack parameters collected by default through Branch's Ad links and refer to the table in [Google's Valuetrack docs](https://support.google.com/adwords/answer/6305348){:target="_blank"} for more parameters to append.
 

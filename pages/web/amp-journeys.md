@@ -20,7 +20,7 @@ Add the following snippet between the AMP page’s `<head></head>` tags
    <style amp-custom>#branch-amp-journey{bottom:0;left:0;width:100%;height:77px;position:fixed;}.hideme{width:100%;height:77px;left:24px;background-color:none;position:fixed;}.close{width:24px;height:100%;left:0;z-index:10000;background-color:none;position:fixed;}.branch-amp-journey-inner{position:relative;width:100%;height:100%;z-index:9999;}.donotdisplay{display:none;}</style>
 ```
 
-Modify the following snippet to include your domain (`xxxx.app.link`) instead of **`DOMAIN_HERE`** and your Branch key instead of **`BRANCH_KEY_HERE`** - in both the `amp-list` tag and the `amp-iframe` tag. You can find these in [Link Settings](https://dashboard.branch.io/link-settings){:target="\_blank"} and [Account Settings](https://dashboard.branch.io/account-settings){:target="\_blank"}.
+Modify the following snippet to include your domain (`xxxx.app.link`) instead of <notranslate>**`DOMAIN_HERE`**</notranslate> and your Branch key instead of <notranslate>**`BRANCH_KEY_HERE`**</notranslate> - in both the `amp-list` tag and the `amp-iframe` tag. You can find these in [Link Settings](https://dashboard.branch.io/link-settings){:target="\_blank"} and [Account Settings](https://dashboard.branch.io/account-settings){:target="\_blank"}.
 
 ```
 <amp-list tabindex=0 role="" on="tap:branch-amp-journey.hide" id="branch-amp-journey" src="https://DOMAIN-HERE/branch-amp-journeys-pre?branch_key=BRANCH_KEY_HERE&__aj_cid=CLIENT_ID(_s)&__amp_viewer=VIEWER&__aj_source_url=SOURCE_URL&__aj_canonical_url=CANONICAL_URL&__aj_v=1.0.0" layout=fixed-height height="77px"><template type="amp-mustache" id="journey-template"><a class="close" on="tap:branch-amp-journey.hide"></a><div class="hideme" ></div><amp-iframe class="branch-amp-journey-inner {{do_not_display}}" layout="fixed-height" height="77px" resizable src="https://DOMAIN-HERE/branch-amp-journeys?branch_key=BRANCH_KEY_HERE&__aj_cid={{__aj_cid}}&__aj_source_url={{__aj_source_url}}&__aj_canonical_url={{__aj_canonical_url}}&_audience_rule_id={{_audience_rule_id}}&_branch_view_id={{_branch_view_id}}&__aj_v=1.0.0" sandbox="allow-scripts allow-top-navigation allow-same-origin" frameborder="0"><div overflow></div></amp-iframe></template></amp-list>
@@ -38,7 +38,7 @@ Finally, if you do not already have the following AMP scripts on your page, add 
 
 ### Target AMP Web in your audience
 
-AMP Journeys can be created as part of the normal [Journeys creation flow](https://dashboard.branch.io/web/journeys/audiencerule/new){:target="\_blank"}. You can target users on AMP pages by checking the box **AMP Web** on the Select Audience step:
+AMP Journeys can be created as part of the normal [Journeys creation flow](https://dashboard.branch.io/web/journeys/audiencerule/new){:target="\_blank"}. You can target users on AMP pages by checking the box <notranslate>**AMP Web**</notranslate> on the Select Audience step:
 
 ![image](/_assets/img/pages/journeys/amp-checkbox.png)
 
@@ -46,27 +46,27 @@ See the [Journeys Guide](/web/journeys/#select-audience){:target="\_blank"} for 
 
 ### Select an AMP-compatible template
 
-Once you have your audience selected, you can configure your templates. Currently, only **Branch Standard Banner Bottom** is supported on AMP because Google requires that banners not show in the top 75% of an AMP page. Over time, Branch will add support for more Journeys templates.
+Once you have your audience selected, you can configure your templates. Currently, only <notranslate>**Branch Standard Banner Bottom**</notranslate> is supported on AMP because Google requires that banners not show in the top 75% of an AMP page. Over time, Branch will add support for more Journeys templates.
 
-When you click **Select Template** from the **Configure Views** step, the **standard bottom banner** view type should already be selected, showing you the Journeys templates that are compatible with AMP:
+When you click <notranslate>**Select Template**</notranslate> from the <notranslate>**Configure Views**</notranslate> step, the <notranslate>**standard bottom banner**</notranslate> view type should already be selected, showing you the Journeys templates that are compatible with AMP:
 
 ![image](/_assets/img/pages/journeys/amp-select-template.png)
 
-Hover over the template and click **Create**.
+Hover over the template and click <notranslate>**Create**</notranslate>.
 
 ### Validate & Test your AMP Journey
 
-On the **Validate & Test** step, you will see AMP-specific messages if you have targeted **AMP Web** users on the [Select Audience](#target-amp-web-in-your-audience) step.
+On the <notranslate>**Validate & Test**</notranslate> step, you will see AMP-specific messages if you have targeted <notranslate>**AMP Web**</notranslate> users on the [Select Audience](#target-amp-web-in-your-audience) step.
 
 ![image](/_assets/img/pages/journeys/amp-validation.png)
 
 #### The selected template is not AMP-compatible
 
-If Branch has detected that you have selected a template that is not compatible with AMP, you will see an error on the **Validate & Test** step. [See which templates are currently compatible](#customization-limitations).
+If Branch has detected that you have selected a template that is not compatible with AMP, you will see an error on the <notranslate>**Validate & Test**</notranslate> step. [See which templates are currently compatible](#customization-limitations).
 
 ### Track Analytics
 
-Analytics for AMP Journeys works the [same way as for regular Journeys](/web/journeys/#visualizing-journeys-performance), in that you can see clicks, opens, installs, and custom events tied to your Journey by clicking **View Performance** from the actions menu for your AMP Journey.
+Analytics for AMP Journeys works the [same way as for regular Journeys](/web/journeys/#visualizing-journeys-performance), in that you can see clicks, opens, installs, and custom events tied to your Journey by clicking <notranslate>**View Performance**</notranslate> from the actions menu for your AMP Journey.
 
 ![image](/_assets/img/pages/journeys/view-performance.png)
 
@@ -74,7 +74,7 @@ Analytics for AMP Journeys works the [same way as for regular Journeys](/web/jou
 
 ### Targeting Audiences with a URL
 
-With AMP, Google will serve your page from the Google AMP cache. This means that the URL that serves your AMP page will look something like `https://www.google.com/amp/s/www.example.com/amp/doc.html`. However, Branch passes through your original source URL, and this is what you should use for audience targeting. For the advanced audience filter **Is viewing a page URL**, you'll want to use the original URL where you host the AMP page. In this example, that would be `https://www.example.com/amp/doc.html`.
+With AMP, Google will serve your page from the Google AMP cache. This means that the URL that serves your AMP page will look something like `https://www.google.com/amp/s/www.example.com/amp/doc.html`. However, Branch passes through your original source URL, and this is what you should use for audience targeting. For the advanced audience filter <notranslate>**Is viewing a page URL**</notranslate>, you'll want to use the original URL where you host the AMP page. In this example, that would be `https://www.example.com/amp/doc.html`.
 
 ### Deep linking with AMP
 
@@ -95,7 +95,7 @@ To deep link to specific content in your app, you can add query parameters to yo
 <amp-iframe class="branch-amp-journey-inner {{do_not_display}}" layout="fixed-height" height="77px" resizable src="https://DOMAIN-HERE/branch-amp-journeys?branch_key=BRANCH_KEY_HERE&__aj_cid={{__aj_cid}}&__aj_source_url={{__aj_source_url}}&__aj_canonical_url={{__aj_canonical_url}}&_audience_rule_id={{_audience_rule_id}}&_branch_view_id={{_branch_view_id}}&__aj_v=1.0.0" sandbox="allow-scripts allow-top-navigation allow-same-origin" frameborder="0"><div overflow></div></amp-iframe>
 ```
 
-If your deep linking keys were **productId** and **category**, for example, you would add `&productId=1234&category=shoes` to your `amp-iframe` like this:
+If your deep linking keys were <notranslate>**productId**</notranslate> and <notranslate>**category**</notranslate>, for example, you would add `&productId=1234&category=shoes` to your `amp-iframe` like this:
 
 ```
 <amp-iframe class="branch-amp-journey-inner {{do_not_display}}" layout="fixed-height" height="77px" resizable src="https://DOMAIN-HERE/branch-amp-journeys?branch_key=BRANCH_KEY_HERE&__aj_cid={{__aj_cid}}&__aj_source_url={{__aj_source_url}}&__aj_canonical_url={{__aj_canonical_url}}&_audience_rule_id={{_audience_rule_id}}&_branch_view_id={{_branch_view_id}}&__aj_v=1.0.0&productId=1234&category=shoes" sandbox="allow-scripts allow-top-navigation allow-same-origin" frameborder="0"><div overflow></div></amp-iframe>
@@ -107,7 +107,7 @@ If you are generating AMP pages programmatically, it makes sense to generate the
 
 You can customize the appearance of a Journey dynamically using query parameters on your `amp-iframe` link. These are the fields currently supported for dynamic layout customization on AMP:
 
-| **Link Data Key** | **Value** | **Example** |
+| <notranslate>**Link Data Key**</notranslate> | <notranslate>**Value**</notranslate> | <notranslate>**Example**</notranslate> |
 | ---: | --- | --- |
 | `$journeys_button_get_has_app` | The call to action button when the app is currently installed | `$journeys_button_get_has_app=Download` |
 | `$journeys_button_get_no_app` | The call to action button when the app is **not** currently installed | `$journeys_button_get_no_app=Read` |
@@ -115,7 +115,7 @@ You can customize the appearance of a Journey dynamically using query parameters
 
 #### Add deep link data in the Journeys dashboard
 
-You can also add deep link data to a Journey in the dashboard. In the **Customize Template** screen, click the button and add your key:value pairs in the deep link data fields. For example if your deep linking key was **productId**:
+You can also add deep link data to a Journey in the dashboard. In the <notranslate>**Customize Template**</notranslate> screen, click the button and add your key:value pairs in the deep link data fields. For example if your deep linking key was <notranslate>**productId**</notranslate>:
 
 ![image](/_assets/img/pages/journeys/amp-deep-link-data.png)
 
@@ -143,13 +143,15 @@ Because javascript is limited on AMP and cookies are restricted on both AMP and 
 
 Because cookies are restricted on both AMP and iOS, event-based audience rules on AMP Journeys are cookie-restricted. Practically, this means that targeting works *only within AMP* for the following rules:
 
+<notranslate>
 * Has completed event
 * Has visited web
 * Has visited the app
 * Has the app installed
+</notranslate>
 
 Once a user has clicked a Branch link outside of AMP, event-based audience rules will adhere to the regular web cookie for that user, and will work across AMP and non-AMP web.
 
 ### Banner Limitations
 
-For the time being, only banners of a fixed height and placement (bottom of the page) are compatible with AMP. This includes **Branch Banner Bottom**, or other custom banners with page placement on the bottom of the page and height of 76px.
+For the time being, only banners of a fixed height and placement (bottom of the page) are compatible with AMP. This includes <notranslate>**Branch Banner Bottom**</notranslate>, or other custom banners with page placement on the bottom of the page and height of 76px.

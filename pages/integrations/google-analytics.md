@@ -33,15 +33,15 @@ To view referred **installs** and **opens**, as well as any custom events you tr
 For the basic, codeless integration: find your Google Analytics Tracking ID (tid) and enter it into the Branch Dashboard.
 
 1. To locate your Google Analytics Tracking ID, navigate to https://analytics.google.com and log in.
-1. Click on **Home** in the navigation bar at the top of the page. You should see your app(s), with accompanying Tracking ID.
+1. Click on <notranslate>**Home**</notranslate> in the navigation bar at the top of the page. You should see your app(s), with accompanying Tracking ID.
 1. Copy the Tracking ID of whichever app you’re going to use with Branch. This is also known as the Property ID, and it is of the form UA-XXXXXX-YY (e.g. UA-000000-01). Here’s an example: ![image](/_assets/img/pages/integrations/google-analytics/tid.png)
 
 ### Configure the Branch Dashboard
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
-1. Locate Google Analytics and choose **Enable**.
+1. Locate Google Analytics and choose <notranslate>**Enable**</notranslate>.
   * If you have not yet entered billing information, please do so now.
-1. Enter your Google Analytics Tracking ID and hit **Save**
+1. Enter your Google Analytics Tracking ID and hit <notranslate>**Save**</notranslate>
 
 ![image](/_assets/img/pages/integrations/google-analytics/enable-ga.png)
 
@@ -53,7 +53,7 @@ For the basic, codeless integration: find your Google Analytics Tracking ID (tid
 !!! warning "Required for integration"
     If you don't include the below code snippet, events will be sent to Google but Google Analytics will not ingest them and they will not be visible on the Google Analytics dashboard.
 
-Please specify `$google_analytics_client_id`. We will pass that to Google (as *cid*) so Google can match the events we send them to a specific user.
+Please specify `$google_analytics_client_id`. We will pass that to Google (as <notranslate>*cid*</notranslate>) so Google can match the events we send them to a specific user.
 
 **iOS:**
 

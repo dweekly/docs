@@ -51,21 +51,21 @@ Properties you can define:
 
 	### Rule 1: rewarding the referred user 10 credits
 
-	1. Who gets a reward: **"Referred acting users"**
-	1. How many credits the reward is: **10**
-	1. Which bucket the credits go to: **default**
-	1. Whether the reward occurs the first time or every time: **the first time**
-	1. Which event triggers the reward: **install**
+	1. Who gets a reward: <notranslate>**"Referred acting users"**</notranslate>
+	1. How many credits the reward is: <notranslate>**10**</notranslate>
+	1. Which bucket the credits go to: <notranslate>**default**</notranslate>
+	1. Whether the reward occurs the first time or every time: <notranslate>**the first time**</notranslate>
+	1. Which event triggers the reward: <notranslate>**install**</notranslate>
 
 	![image](/_assets/img/pages/viral/referral-programs/referred_rule.png)
 
 	### Rule 2: rewarding the referring user 5 credits
 
-	1. Who gets a reward: **"Referring users"**
-	1. How many credits the reward is: **5**
-	1. Which bucket the credits go to: **default**
-	1. Whether the reward occurs the first time or every time: **the first time**
-	1. Which event triggers the reward: **install**
+	1. Who gets a reward: <notranslate>**"Referring users"**</notranslate>
+	1. How many credits the reward is: <notranslate>**5**</notranslate>
+	1. Which bucket the credits go to: <notranslate>**default**</notranslate>
+	1. Whether the reward occurs the first time or every time: <notranslate>**the first time**</notranslate>
+	1. Which event triggers the reward: <notranslate>**install**</notranslate>
 
 	![image](/_assets/img/pages/viral/referral-programs/referring_rule.png)
 

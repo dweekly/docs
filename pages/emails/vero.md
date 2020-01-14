@@ -14,13 +14,13 @@ This guide will walk you through how to setup your email campaigns with **[Vero]
 
 ### Choose your email service provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select **Vero** and click **Enable**.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Vero**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 {! ingredients/email/link-setup.md !}
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from the **Email Delivery** section of your Vero account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**Email Delivery**</notranslate> section of your Vero account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ![image](/_assets/img/pages/email/vero/setup-config.png)
 
@@ -42,7 +42,7 @@ You can retrieve your click tracking domain from the **Email Delivery** section 
 
 ### Setup a custom click tracking domain
 
-1. Add and verify a custom click tracking domain in the **Email Delivery** section of your Vero account:
+1. Add and verify a custom click tracking domain in the <notranslate>**Email Delivery**</notranslate> section of your Vero account:
 
 #### If you use Vero as your sending provider
 

@@ -4,7 +4,7 @@ Once we've provided you with the Click/Impression Tracking URLs via email, pleas
 
 ## Click Tracking & Postback URL Testing
 
-1. Add the previously emailed tracking link to your system to generate a **ClickID** and **AAID** or **IDFA** specified in the Branch tracking URL, e.g.: `https://branchster.app.link/bKzQX2KCcS?%243p=partner_id&%24aaid={aaid}&%24idfa={idfa}&~click_id={click_id}&~secondary_publisher={secondary_publisher}&parameter1={XXX}&parameter2={YYY}&parameter3={ZZZ}`
+1. Add the previously emailed tracking link to your system to generate a <notranslate>**ClickID**</notranslate> and <notranslate>**AAID**</notranslate> or <notranslate>**IDFA**</notranslate> specified in the Branch tracking URL, e.g.: `https://branchster.app.link/bKzQX2KCcS?%243p=partner_id&%24aaid={aaid}&%24idfa={idfa}&~click_id={click_id}&~secondary_publisher={secondary_publisher}&parameter1={XXX}&parameter2={YYY}&parameter3={ZZZ}`
 2. Click on the tracking URL that now contains the filled macro parameters.
 3. You'll be redirected to web page with Branch Monster Factory application.
 4. Please initiate the following actions - *Install*, *Open* and *Purchase* events - following the guide specifications below.

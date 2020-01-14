@@ -30,16 +30,16 @@ Many third-party providers add redirects to your URLs. This facilitates click tr
 ### Create Quick Links on the Branch dashboard
 
 1. Open the [Quick Link creator](https://dashboard.branch.io/quick-links/qlc/define) on the Branch dashboard.
-1. Pick a **Link Name** for later reference. For example: "Launch Email".
+1. Pick a <notranslate>**Link Name**</notranslate> for later reference. For example: "Launch Email".
 1. Paste in the web URL from your email template.
 1. Add analytics tags. For "Where will you post this link?" it's recommended to use `Email` as the channel.
-1. In **Configure Options** > **Redirects**, select **Web URL** for each platform.
-1. Click **Create Link Now**, and then copy the created link into your email template.
+1. In <notranslate>**Configure Options**</notranslate> > <notranslate>**Redirects**</notranslate>, select <notranslate>**Web URL**</notranslate> for each platform.
+1. Click <notranslate>**Create Link Now**</notranslate>, and then copy the created link into your email template.
 
 Repeat this for each URL in your email template that you would like to deep link.
 
 !!! protip "Optional: Deep Link Routing (Advanced)"
-    You can use the **Configure Options** > **Deep Linking** section to specify custom link parameters that will be deep linked into the app after install. These could include a coupon code or a page identifier to route the user. Visit the [Deep Link Routing]({{base.url}}/getting-started/deep-link-routing) page to learn more.
+    You can use the <notranslate>**Configure Options**</notranslate> > <notranslate>**Deep Linking**</notranslate> section to specify custom link parameters that will be deep linked into the app after install. These could include a coupon code or a page identifier to route the user. Visit the [Deep Link Routing]({{base.url}}/getting-started/deep-link-routing) page to learn more.
 
 ### Conclusion
 
