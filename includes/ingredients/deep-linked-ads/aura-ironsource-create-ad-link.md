@@ -14,8 +14,8 @@ Once you've enabled an integration it's time to create a tracking link.
 
 	Key | Value
 	--- | ---
-	$uri_redirect_mode | 0
-	$always_deeplink | false
+	`$uri_redirect_mode` | 0
+	`$always_deeplink` | false
 
 	![image](/_assets/img/pages/deep-linked-ads/aura-ironsource/aura-ironsource-link-data.png)
 

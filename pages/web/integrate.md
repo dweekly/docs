@@ -70,11 +70,11 @@ The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share
 
     | Key | Value
     | --- | ---
-    | data_parsed | `object`. If the user was referred from a link, and the link has associated data, the data is passed in here.
-    | has_app | `boolean`. Does the user have the app installed already, using Branch's persona data.
-    | identity | *optional* - `string`. Unique string that identifies the user, if set from `setIdentity`
-    | ~referring_link | `string`. The referring link clicked, if available.
-    | referring_identity | `string`. If the user was referred from a link, and the link was created by a user with an identity, that identity is here.
+    | `data_parsed` | `object`. If the user was referred from a link, and the link has associated data, the data is passed in here.
+    | `has_app` | `boolean`. Does the user have the app installed already, using Branch's persona data.
+    | `identity` | *optional* - `string`. Unique string that identifies the user, if set from `setIdentity`
+    | `~referring_link` | `string`. The referring link clicked, if available.
+    | `referring_identity` | `string`. If the user was referred from a link, and the link was created by a user with an identity, that identity is here.
 
 - ### Create deep link
 
@@ -269,7 +269,7 @@ The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share
         | --- | --- | ---
         | https://shop.com/shoes/brown-loafers | productId=1234, productView=true | `<meta name="branch:deeplink:productId" content="1234" />`, `<meta name="branch:deeplink:productView" content="true" />`
         | https://shop.com/shoes | categoryId=5678 | `<meta name="branch:deeplink:categoryId" content="5678" />`
-        |https://shop.com/your-mother-is-great | No corresponding app content ([open web](/links/integrate/#open-web-instead-of-app)) | `<meta name="branch:deeplink:$web_only" content="true" />`
+        | https://shop.com/your-mother-is-great | No corresponding app content ([open web](/links/integrate/#open-web-instead-of-app)) | `<meta name="branch:deeplink:$web_only" content="true" />`
 
 - ### Track users
 
@@ -477,10 +477,10 @@ The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share
 
         | Key | Default | Usage
         | --- | --- | ---
-        | bucket |  | The bucket from which to retrieve credit transactions (63 max characters)
-        | begin_after_id | | The credit transaction id of the last item in the previous retrieval
-        | length | `100` | The number of credit transactions to retrieve
-        | direction | `0` | The order of credit transactions to retrieve (**deprecated**)
+        | `bucket` |  | The bucket from which to retrieve credit transactions (63 max characters)
+        | `begin_after_id` | | The credit transaction id of the last item in the previous retrieval
+        | `length` | `100` | The number of credit transactions to retrieve
+        | `direction` | `0` | The order of credit transactions to retrieve (**deprecated**)
 
 - ### Handle listeners
 
@@ -501,14 +501,14 @@ The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share
 
         | Key | Usage
         | --- | ---
-        | willShowJourney | Journey is about to be shown.
-        | didShowJourney | Journey's entrance animation has completed and it is being shown to the user.
-        | willNotShowJourney | Journey will not be shown and no other events will be emitted.
-        | didClickJourneyCTA | User clicked on Journey's CTA button.
-        | didClickJourneyClose | User clicked on Journey's close button.
-        | willCloseJourney | Journey close animation has started.
-        | didCloseJourney | Journey's close animation has completed and it is no longer visible to the user.
-        | didCallJourneyClose | Emitted when developer calls branch.closeJourney() to dismiss Journey.
+        | `willShowJourney` | Journey is about to be shown.
+        | `didShowJourney` | Journey's entrance animation has completed and it is being shown to the user.
+        | `willNotShowJourney` | Journey will not be shown and no other events will be emitted.
+        | `didClickJourneyCTA` | User clicked on Journey's CTA button.
+        | `didClickJourneyClose` | User clicked on Journey's close button.
+        | `willCloseJourney` | Journey close animation has started.
+        | `didCloseJourney` | Journey's close animation has completed and it is no longer visible to the user.
+        | `didCallJourneyClose` | Emitted when developer calls branch.closeJourney() to dismiss Journey.
 
 - ### Handle Firebase App Indexing
 
@@ -542,11 +542,11 @@ The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share
 
         | Key | Usage
         | --- | ---
-        | "androidPackageName" | Android App's package name
-        | "androidURL" | A custom scheme for your Android App such as: `example/home/cupertino/12345` where `example` is the App's URI scheme and `home/cupertino/12345` routes to unique content in the App
-        | "iosAppId" | iTunes App Store ID for your iOS App
-        | "iosURL" | A custom scheme for your iOS App such as: `example/home/cupertino/12345`
-        | "data" | Any additional deep link data that you would like to pass to your App
+        | `androidPackageName` | Android App's package name
+        | `androidURL` | A custom scheme for your Android App such as: `example/home/cupertino/12345` where `example` is the App's URI scheme and `home/cupertino/12345` routes to unique content in the App
+        | `iosAppId` | iTunes App Store ID for your iOS App
+        | `iosURL` | A custom scheme for your iOS App such as: `example/home/cupertino/12345`
+        | `data` | Any additional deep link data that you would like to pass to your App
 
 - ### Enable / Disable User Tracking
 
@@ -595,13 +595,13 @@ The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share
 
         | Key | Value
         | --- | ---
-        | branch_match_id | *optional* - `string`. The current user's browser-fingerprint-id. The value of this parameter should be the same as the value of ?_branch_match_id (automatically appended by Branch after a link click). _Only necessary if ?_branch_match_id is lost due to multiple redirects in your flow_.
-        | branch_view_id | *optional* - `string`. If you would like to test how Journeys render on your page before activating them, you can set the value of this parameter to the id of the view you are testing. _Only necessary when testing a view related to a Journey_.
-        | no_journeys | *optional* - `boolean`. When true, prevents Journeys from appearing on current page.
-        | disable_entry_animation | *optional* - `boolean`. When true, prevents a Journeys entry animation.
-        | disable_exit_animation | *optional* - `boolean`. When true, prevents a Journeys exit animation.
-        | open_app | *optional* - `boolean`. Whether to try to open the app passively through Journeys (as opposed to opening it upon user clicking); defaults to false.
-        | nonce | *optional* - `string`. A nonce value that will be included on any script or style tags Branch adds to your site. Used to whitelist these tags in your Content Security Policy.
+        | `branch_match_id` | *optional* - `string`. The current user's browser-fingerprint-id. The value of this parameter should be the same as the value of ?_branch_match_id (automatically appended by Branch after a link click). _Only necessary if ?_branch_match_id is lost due to multiple redirects in your flow_.
+        | `branch_view_id` | *optional* - `string`. If you would like to test how Journeys render on your page before activating them, you can set the value of this parameter to the id of the view you are testing. _Only necessary when testing a view related to a Journey_.
+        | `no_journeys` | *optional* - `boolean`. When true, prevents Journeys from appearing on current page.
+        | `disable_entry_animation` | *optional* - `boolean`. When true, prevents a Journeys entry animation.
+        | `disable_exit_animation` | *optional* - `boolean`. When true, prevents a Journeys exit animation.
+        | `open_app` | *optional* - `boolean`. Whether to try to open the app passively through Journeys (as opposed to opening it upon user clicking); defaults to false.
+        | `nonce` | *optional* - `string`. A nonce value that will be included on any script or style tags Branch adds to your site. Used to whitelist these tags in your Content Security Policy.
 
 
 - ### Testing read deep link

@@ -48,7 +48,7 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/account-settings/app) | √
+        | `branch_key` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/account-settings/app) | √
         | ... | ... | Parameters from [Configuring Links](/links/integrate/) |
 
 - ### Link create bulk
@@ -111,7 +111,7 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `branch_key` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
         | ... | ... | Parameters from [Configuring Links](/links/integrate/) |
 
     - Bulk link creator is limited to a JSON payload size of 250KB at a time.
@@ -204,8 +204,8 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | url | `string` | The deep link url | √
+        | `branch_key` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `url` | `string` | The deep link url | √
 
 - ### Link update
 
@@ -263,9 +263,9 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | branch_secret | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | url | `string` | The deep link url | √
+        | `branch_key` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `branch_secret` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `url` | `string` | The deep link url | √
 
 - ### Link update tips
 
@@ -357,9 +357,9 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | identity | `string` | Unique user id, also known as the <notranslate>**Developer Id**</notranslate> on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √*
-        | identity_id | `string` | Unique user id for Branch, also known as the <notranslate>**Branch Identity Id**</notranslate> on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √*
+        | `branch_key` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `identity` | `string` | Unique user id, also known as the <notranslate>**Developer Id**</notranslate> on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √*
+        | `identity_id` | `string` | Unique user id for Branch, also known as the <notranslate>**Branch Identity Id**</notranslate> on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √*
 
         - `*` =  `identity` *OR* `identity_id` is required
 
@@ -413,11 +413,11 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | branch_secret | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | identity | `string` | Unique user id, also known as the <notranslate>**Developer Id**</notranslate> on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √
-        | amount | `string` | Number of credits | √
-        | bucket | `string` | The category where the credits are save to (defaults to `default`) |
+        | `branch_key` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `branch_secret` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `identity` | `string` | Unique user id, also known as the <notranslate>**Developer Id**</notranslate> on your [Branch Identity Dashboard](https://dashboard.branch.io/liveview/identities) | √
+        | `amount` | `string` | Number of credits | √
+        | `bucket` | `string` | The category where the credits are save to (defaults to `default`) |
 
 - ### Referral redeem
 
@@ -605,14 +605,14 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | branch_secret | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | calculation_type | `int` | `0` reward for each use, `1` reward for first use only | √
-        | location | `int` | `0` all acting users, `1` referring users, `4`, referred acting users | √
-        | type | `string` | `credit` reward points | √
-        | amount | `string` | Number of credits |  `type` = `credit`
-        | bucket | `string` | The category where the credits are save to | `type` = `credit`
-        | filter | `json` | This is the set of keys and values that must be contained in the event metadata for this reward to be issued |
+        | `branch_key` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `branch_secret` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `calculation_type` | `int` | `0` reward for each use, `1` reward for first use only | √
+        | `location` | `int` | `0` all acting users, `1` referring users, `4`, referred acting users | √
+        | `type` | `string` | `credit` reward points | √
+        | `amount` | `string` | Number of credits |  `type` = `credit`
+        | `bucket` | `string` | The category where the credits are save to | `type` = `credit`
+        | `filter` | `json` | This is the set of keys and values that must be contained in the event metadata for this reward to be issued |
 
     !!! note "Please take note of the `type` parameter"
         `type` = `credit` will create a reward rule on your dashboard. To see the structure of the webhook callback, please test this with [RequestBin](https://requestbin.com/) or a similar service.
@@ -721,37 +721,37 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | user_id | `string` | The Dashboard User Id obtained from [Branch Account Dashboard](https://dashboard.branch.io/settings/account) | √
-        | app_name | `string` | The name of the app | √
-        | dev_name | `string` | The main contact developer name | √
-        | dev_email | `string` | The main contact developer email. A email is sent on account creation | √
-        | android_app | `string` | Whether an Android app is enabled. `0` or `1` indicating `true`
-        | android_url | `string` | The url of the Android store, or package name (e.g. `com.android.myapp`). `android_app` must be set to `2`
-        | android_uri_scheme | `string` | The Android URI scheme
-        | android_package_name | `string` | The Android package name (e.g. `com.android.myapp`)
-        | sha256_cert_fingerprints | `[string]` | The SHA256 fingerprints for App Links
-        | android_app_links_enabled | `string` | Whether App Links are enabled. `0` or `1` indicating `true`
-        | ios_app | `string` | Whether an iOS app is enabled, (`0` or `1` indicating `true`
-        | ios_url | `string` | The url of iOS store, or app id (e.g. `id512451233`), or a fallback URL for iOS if present. `ios_app` must be set to `2`
-        | ios_uri_scheme | `string` | The iOS URI scheme
-        | ios_store_country | `string` | The country code of the app, defaults to `US`
-        | ios_bundle_id | `string` | The iOS Bundle Id
-        | ios_team_id | `string` | The iOS Team Id
-        | universal_linking_enabled | `string` | Whether Universal Links should be enabled. `0` or `1` indicating `true`
-        | fire_url | `string` | The redirect on Fire phone
-        | windows_phone_url | `string` | The redirect on Windows phone
-        | blackberry_url | `string` | The redirect on Blackberry phone
-        | web_url | `string` | Backup website if URLs are `null`
-        | default_desktop_url | `string` | The default desktop redirect, or `null` if set to hosted SMS
-        | text_message | `string` | Text message to use for text-me feature, `{{ link }}` is required and will be replaced with a deep link
-        | og_app_id | `string` | Open Graph app id
-        | og_title | `string` | Open Graph title to be used with link
-        | og_description | `string` | Open Graph description to be used with link
-        | og_image_url | `string` | Open Graph image URL to be used with link
-        | deepview_desktop | `string` | The current deepview selected for the desktop platform
-        | deepview_ios | `string` | The current deepview selected for the iOS platform
-        | deepview_android | `string` | The current deepview selected for the Android platform
-        | organization_id | `string` | The Branch ID assigned to your organization
+        | `user_id` | `string` | The Dashboard User Id obtained from [Branch Account Dashboard](https://dashboard.branch.io/settings/account) | √
+        | `app_name` | `string` | The name of the app | √
+        | `dev_name` | `string` | The main contact developer name | √
+        | `dev_email` | `string` | The main contact developer email. A email is sent on account creation | √
+        | `android_app` | `string` | Whether an Android app is enabled. `0` or `1` indicating `true`
+        | `android_url` | `string` | The url of the Android store, or package name (e.g. `com.android.myapp`). `android_app` must be set to `2`
+        | `android_uri_scheme` | `string` | The Android URI scheme
+        | `android_package_name` | `string` | The Android package name (e.g. `com.android.myapp`)
+        | `sha256_cert_fingerprints` | `[string]` | The SHA256 fingerprints for App Links
+        | `android_app_links_enabled` | `string` | Whether App Links are enabled. `0` or `1` indicating `true`
+        | `ios_app` | `string` | Whether an iOS app is enabled, (`0` or `1` indicating `true`
+        | `ios_url` | `string` | The url of iOS store, or app id (e.g. `id512451233`), or a fallback URL for iOS if present. `ios_app` must be set to `2`
+        | `ios_uri_scheme` | `string` | The iOS URI scheme
+        | `ios_store_country` | `string` | The country code of the app, defaults to `US`
+        | `ios_bundle_id` | `string` | The iOS Bundle Id
+        | `ios_team_id` | `string` | The iOS Team Id
+        | `universal_linking_enabled` | `string` | Whether Universal Links should be enabled. `0` or `1` indicating `true`
+        | `fire_url` | `string` | The redirect on Fire phone
+        | `windows_phone_url` | `string` | The redirect on Windows phone
+        | `blackberry_url` | `string` | The redirect on Blackberry phone
+        | `web_url` | `string` | Backup website if URLs are `null`
+        | `default_desktop_url` | `string` | The default desktop redirect, or `null` if set to hosted SMS
+        | `text_message` | `string` | Text message to use for text-me feature, `{{ link }}` is required and will be replaced with a deep link
+        | `og_app_id` | `string` | Open Graph app id
+        | `og_title` | `string` | Open Graph title to be used with link
+        | `og_description` | `string` | Open Graph description to be used with link
+        | `og_image_url` | `string` | Open Graph image URL to be used with link
+        | `deepview_desktop` | `string` | The current deepview selected for the desktop platform
+        | `deepview_ios` | `string` | The current deepview selected for the iOS platform
+        | `deepview_android` | `string` | The current deepview selected for the Android platform
+        | `organization_id` | `string` | The Branch ID assigned to your organization
 
 - ### App read
 
@@ -822,8 +822,8 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | branch_secret | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `branch_key` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `branch_secret` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
 
 - ### App update
 
@@ -899,9 +899,9 @@
 
         | Key | Value | Usage | Required
         | --- | :-: | --- | :-:
-        | branch_key | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | branch_secret | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
-        | dev_email | `string` | The main contact developer email | √
+        | `branch_key` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `branch_secret` | `string` | From your [Branch Settings Dashboard](https://dashboard.branch.io/settings) | √
+        | `dev_email` | `string` | The main contact developer email | √
         | ... | ... | Parameters from [App Create](#app-create) |
 
 ## API troubleshooting

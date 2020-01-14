@@ -933,13 +933,13 @@
 
         | Key | Value
         | --- | ---
-        | BNCRegisterViewEvent | User viewed the object
-        | BNCAddToWishlistEvent | User added the object to their wishlist
-        | BNCAddToCartEvent | User added object to cart
-        | BNCPurchaseInitiatedEvent | User started to check out
-        | BNCPurchasedEvent | User purchased the item
-        | BNCShareInitiatedEvent | User started to share the object
-        | BNCShareCompletedEvent | User completed a share
+        | `BNCRegisterViewEvent` | User viewed the object
+        | `BNCAddToWishlistEvent` | User added the object to their wishlist
+        | `BNCAddToCartEvent` | User added object to cart
+        | `BNCPurchaseInitiatedEvent` | User started to check out
+        | `BNCPurchasedEvent` | User purchased the item
+        | `BNCShareInitiatedEvent` | User started to share the object
+        | `BNCShareCompletedEvent` | User completed a share
 
 - ### Using bnc.lt or a custom link domain
 

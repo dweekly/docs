@@ -159,12 +159,12 @@
 
 	    | **Key** | Type | **Meaning**
         | --- | --- |---
-        | canonicalIdentifier | `string` | The identifier of the object
-        | title | `string` | The title of the object
-        | contentDescription | `string` | The short description of the object
-        | contentImageUrl | `string` | URL of the image used by the object
-        | contentIndexingMode | `string` | Indexing mode of the object. Set as "private" or "public".
-        | contentMetadata | `dictionary` | Custom keys and values as metadata of the object
+        | `canonicalIdentifier` | `string` | The identifier of the object
+        | `title` | `string` | The title of the object
+        | `contentDescription` | `string` | The short description of the object
+        | `contentImageUrl` | `string` | URL of the image used by the object
+        | `contentIndexingMode` | `string` | Indexing mode of the object. Set as "private" or "public".
+        | `contentMetadata` | `dictionary` | Custom keys and values as metadata of the object
 
         ```js
             var branchUniversalObject = branch.createBranchUniversalObject({

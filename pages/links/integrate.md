@@ -175,23 +175,23 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | ~channel | | Use channel to tag the route that your link reaches users. For example, tag links with `'Facebook'` or `'LinkedIn'` to help track clicks and installs through those paths separately
-        | ~feature | | This is the feature of your app that the link might be associated with. For example, if you had built a referral program, you would label links with the feature 'referral'
-        | ~campaign | | Use this field to organize the links by actual campaign. For example, if you launched a new feature or product and want to run a campaign around that
-        | ~stage | | Use this to categorize the progress or category of a user when the link was generated. For example, if you had an invite system accessible on level 1, level 3 and 5, you could differentiate links generated at each level with this parameter
-        | ~tags | | This is a free form entry with unlimited values `['string']`. Use it to organize your link data with labels that don't fit within the bounds of the above
-        | type | `0` | Must be an `int`. Set to `1` to limit deep link to a single use. Set to `2` to make the link show up under [Quick Links](https://dashboard.branch.io/marketing) while adding `$marketing_title` to `data`. Does not work with the Native SDKs.
+        | `~channel` | | Use channel to tag the route that your link reaches users. For example, tag links with `'Facebook'` or `'LinkedIn'` to help track clicks and installs through those paths separately
+        | `~feature` | | This is the feature of your app that the link might be associated with. For example, if you had built a referral program, you would label links with the feature 'referral'
+        | `~campaign` | | Use this field to organize the links by actual campaign. For example, if you launched a new feature or product and want to run a campaign around that
+        | `~stage` | | Use this to categorize the progress or category of a user when the link was generated. For example, if you had an invite system accessible on level 1, level 3 and 5, you could differentiate links generated at each level with this parameter
+        | `~tags` | | This is a free form entry with unlimited values `['string']`. Use it to organize your link data with labels that don't fit within the bounds of the above
+        | `type` | `0` | Must be an `int`. Set to `1` to limit deep link to a single use. Set to `2` to make the link show up under [Quick Links](https://dashboard.branch.io/marketing) while adding `$marketing_title` to `data`. Does not work with the Native SDKs.
 
     - These labels allow you to customize attribution windows for a single link
 
         | Key | Default | Usage
         | --- | --- | ---
-        | $click_install_window_days | 7 | Time between a click or a web to app auto redirect and an install or reinstall. (i.e., https://branchster.app.link/hpNVE52gxE?$click_install_window_days=3)
-        | $click_session_start_window_days | 1 | Time between a click or a web to app auto redirect and an open or web session start. (i.e., https://branchster.app.link/hpNVE52gxE?$click_session_start_window_days=7)
-        | $click_conversion_window_days | 30 | Time between a click or a web to app auto redirect and a conversion event. Conversion events include commerce events (e.g. purchase, add to cart), all custom events, and all view events like pageviews & content views. (i.e., https://branchster.app.link/hpNVE52gxE?$click_session_start_window_days=30)
-        | $impression_install_window_days | 1 | Time between an ad impression and an install or reinstall. (i.e., https://branchster.app.link/hpNVE52gxE?$impression_install_window_days=3)
-        | $impression_session_start_window_days | 1 | Time between an ad impression and an open or web session start. (i.e., 	https://branchster.app.link/hpNVE52gxE?$impression_session_start_window_days=1)
-        | $impression_conversion_window_days | 7 | Time between an ad impression and a conversion event. Conversion events include commerce events (e.g. purchase, add to cart), all custom events, and all view events like pageviews & content views. (i.e., https://branchster.app.link/hpNVE52gxE?$impression_session_start_window_days=7)
+        | `$click_install_window_days` | 7 | Time between a click or a web to app auto redirect and an install or reinstall. (i.e., https://branchster.app.link/hpNVE52gxE?$click_install_window_days=3)
+        | `$click_session_start_window_days` | 1 | Time between a click or a web to app auto redirect and an open or web session start. (i.e., https://branchster.app.link/hpNVE52gxE?$click_session_start_window_days=7)
+        | `$click_conversion_window_days` | 30 | Time between a click or a web to app auto redirect and a conversion event. Conversion events include commerce events (e.g. purchase, add to cart), all custom events, and all view events like pageviews & content views. (i.e., https://branchster.app.link/hpNVE52gxE?$click_session_start_window_days=30)
+        | `$impression_install_window_days` | 1 | Time between an ad impression and an install or reinstall. (i.e., https://branchster.app.link/hpNVE52gxE?$impression_install_window_days=3)
+        | `$impression_session_start_window_days` | 1 | Time between an ad impression and an open or web session start. (i.e., 	https://branchster.app.link/hpNVE52gxE?$impression_session_start_window_days=1)
+        | `$impression_conversion_window_days` | 7 | Time between an ad impression and a conversion event. Conversion events include commerce events (e.g. purchase, add to cart), all custom events, and all view events like pageviews & content views. (i.e., https://branchster.app.link/hpNVE52gxE?$impression_session_start_window_days=7)
 
 - ### Custom data
 
@@ -199,11 +199,11 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Value | Usage
         | --- | --- | ---
-        | random | `123` | Any key-value pair
-        | custom_data | `true` | Any key-value pair
-        | any_value | `{ 'random': 'dictionary' }` | Any key-value pair
-        | look_at | `[1,2,3,4,5,6]` | Any key-value pair
-        | nav_here | `content/123` | Any key-value pair
+        | `random` | `123` | Any key-value pair
+        | `custom_data` | `true` | Any key-value pair
+        | `any_value` | `{ 'random': 'dictionary' }` | Any key-value pair
+        | `look_at` | `[1,2,3,4,5,6]` | Any key-value pair
+        | `nav_here` | `content/123` | Any key-value pair
 
 - ### Redirections
 
@@ -212,19 +212,19 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | $fallback_url | | Change the redirect endpoint for all platforms - so you don't have to enable it by platform. Note that Branch will forward all robots to this URL, which <notranslate>**overrides any OG tags**</notranslate> entered in the link.  System-wide Default URL (set in Link Settings)
-        | $fallback_url_xx | | Change the redirect endpoint for all platforms based on a [lower-case Alpha-2 country code](https://www.iso.org/obp/ui/#search). For example, `$fallback_url_de="..."` would redirect Germany deep link clicks. You should also set `$fallback_url` to act as the global redirect in addition to the country-specific ones.
-        | $desktop_url | | Change the redirect endpoint on desktops Text-Me-The-App page (set in Link Settings)
-        | $ios_url | | Change the redirect endpoint for iOS  App Store page for your app (set in Link Settings)
-        | $ipad_url | | Change the redirect endpoint for iPads `$ios_url` value
-        | $android_url  | | Change the redirect endpoint for Android Play Store page for your app (set in Link Settings)
-        | $samsung_url  | | Redirect to Samsung Galaxy Store on Samsung devices. Only link level control. Format should be `http://www.samsungapps.com/appquery/appDetail.as?appId=YOUR.PACKAGE.NAME`
-        | $windows_phone_url  | | Change the redirect endpoint for Windows OS Windows Phone default URL (set in Link Settings)
-        | $blackberry_url | | Change the redirect endpoint for Blackberry OS  BlackBerry default URL (set in Link Settings)
-        | $fire_url | | Change the redirect endpoint for Amazon Fire OS Fire default URL (set in Link Settings)
-        | $ios_wechat_url | | Change the redirect endpoint for WeChat on iOS devices `$ios_url` value
-        | $android_wechat_url | | Change the redirect endpoint for WeChat on Android devices  `$android_url` value
-        | $web_only | `false` | Force to open the `$fallback_url` instead of the app
+        | `$fallback_url` | | Change the redirect endpoint for all platforms - so you don't have to enable it by platform. Note that Branch will forward all robots to this URL, which <notranslate>**overrides any OG tags**</notranslate> entered in the link.  System-wide Default URL (set in Link Settings)
+        | `$fallback_url_xx` | | Change the redirect endpoint for all platforms based on a [lower-case Alpha-2 country code](https://www.iso.org/obp/ui/#search). For example, `$fallback_url_de="..."` would redirect Germany deep link clicks. You should also set `$fallback_url` to act as the global redirect in addition to the country-specific ones.
+        | `$desktop_url` | | Change the redirect endpoint on desktops Text-Me-The-App page (set in Link Settings)
+        | `$ios_url` | | Change the redirect endpoint for iOS  App Store page for your app (set in Link Settings)
+        | `$ipad_url` | | Change the redirect endpoint for iPads `$ios_url` value
+        | `$android_url`  | | Change the redirect endpoint for Android Play Store page for your app (set in Link Settings)
+        | `$samsung_url`  | | Redirect to Samsung Galaxy Store on Samsung devices. Only link level control. Format should be `http://www.samsungapps.com/appquery/appDetail.as?appId=YOUR.PACKAGE.NAME`
+        | `$windows_phone_url`  | | Change the redirect endpoint for Windows OS Windows Phone default URL (set in Link Settings)
+        | `$blackberry_url` | | Change the redirect endpoint for Blackberry OS  BlackBerry default URL (set in Link Settings)
+        | `$fire_url` | | Change the redirect endpoint for Amazon Fire OS Fire default URL (set in Link Settings)
+        | `$ios_wechat_url` | | Change the redirect endpoint for WeChat on iOS devices `$ios_url` value
+        | `$android_wechat_url` | | Change the redirect endpoint for WeChat on Android devices  `$android_url` value
+        | `$web_only` | `false` | Force to open the `$fallback_url` instead of the app
 
 - ### Forced redirections
 
@@ -232,9 +232,9 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Value | Usage
         | --- | --- | ---
-        | $uri_redirect_mode | <notranslate>**0**</notranslate> | This is the default value that yields the standard behavior where we don't try to open the app if the user can see an error.
-        | $uri_redirect_mode | <notranslate>**1**</notranslate> | Smart redirect mode. Same behavior as 0 until we know the user has the app installed through Branch persona data. In that case, force URI schemes to open the app.
-        | $uri_redirect_mode | <notranslate>**2**</notranslate> | Forceful redirect mode. Always try to force open the app, even if it risks showing an [error message](/_assets/img/pages/links/uri-error-message.png) when the app is not installed.
+        | `$uri_redirect_mode` | <notranslate>**0**</notranslate> | This is the default value that yields the standard behavior where we don't try to open the app if the user can see an error.
+        | `$uri_redirect_mode` | <notranslate>**1**</notranslate> | Smart redirect mode. Same behavior as 0 until we know the user has the app installed through Branch persona data. In that case, force URI schemes to open the app.
+        | `$uri_redirect_mode` | <notranslate>**2**</notranslate> | Forceful redirect mode. Always try to force open the app, even if it risks showing an [error message](/_assets/img/pages/links/uri-error-message.png) when the app is not installed.
 
     - Supported Apps
 
@@ -250,17 +250,17 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | $deeplink_path | `open?link_click_id=1234` | Set the deep link path for all platforms - so you don't have to enable it by platform. When the Branch SDK receives a link with this parameter set, it will automatically load the custom URI path contained within
-        | $android_deeplink_path | | Set the deep link path for Android apps. When the Branch SDK receives a link with this parameter set, it will automatically load the custom Android URI path contained within
-        | $ios_deeplink_path | | Set the deep link path for iOS apps. When the Branch SDK receives a link with this parameter set, it will automatically load the custom iOS URI path contained within
-        | $desktop_deeplink_path | | Set the deep link path for Desktop apps. You will have to fetch this parameter and route the user accordingly
-        | $match_duration | `7200` | Lets you control the snapshotting match timeout (the time that a click will wait for an app open to match) also known as attribution window. Specified in seconds
-        | $always_deeplink | `true` | Set to `false` to make links always fall back to your mobile site. Does not apply to Universal Links or Android App Links.
-        | $ios_redirect_timeout | `750` | Control the timeout that the client-side JS waits after trying to open up the app before redirecting to the App Store. Specified in milliseconds
-        | $android_redirect_timeout | `750` | Control the timeout that the client side JS waits after trying to open up the app before redirecting to the Play Store. Specified in milliseconds
-        | $custom_sms_text | | Text for SMS link sent for desktop clicks to this link. Must contain `{{ link }}` Value of Text me the app page in Settings
-        | $marketing_title | | Set the marketing title for the deep link in the [Quick Links](https://dashboard.branch.io/marketing) when creating links from the API with `type` = `2`
-        | $deeplink_no_attribution | | Set to `true` for the links to only support deep linking without any attribution for that link.
+        | `$deeplink_path` | `open?link_click_id=1234` | Set the deep link path for all platforms - so you don't have to enable it by platform. When the Branch SDK receives a link with this parameter set, it will automatically load the custom URI path contained within
+        | `$android_deeplink_path` | | Set the deep link path for Android apps. When the Branch SDK receives a link with this parameter set, it will automatically load the custom Android URI path contained within
+        | `$ios_deeplink_path` | | Set the deep link path for iOS apps. When the Branch SDK receives a link with this parameter set, it will automatically load the custom iOS URI path contained within
+        | `$desktop_deeplink_path` | | Set the deep link path for Desktop apps. You will have to fetch this parameter and route the user accordingly
+        | `$match_duration` | `7200` | Lets you control the snapshotting match timeout (the time that a click will wait for an app open to match) also known as attribution window. Specified in seconds
+        | `$always_deeplink` | `true` | Set to `false` to make links always fall back to your mobile site. Does not apply to Universal Links or Android App Links.
+        | `$ios_redirect_timeout` | `750` | Control the timeout that the client-side JS waits after trying to open up the app before redirecting to the App Store. Specified in milliseconds
+        | `$android_redirect_timeout` | `750` | Control the timeout that the client side JS waits after trying to open up the app before redirecting to the Play Store. Specified in milliseconds
+        | `$custom_sms_text` | | Text for SMS link sent for desktop clicks to this link. Must contain `{{ link }}` Value of Text me the app page in Settings
+        | `$marketing_title` | | Set the marketing title for the deep link in the [Quick Links](https://dashboard.branch.io/marketing) when creating links from the API with `type` = `2`
+        | `$deeplink_no_attribution` | | Set to `true` for the links to only support deep linking without any attribution for that link.
 
 
 - ### Content
@@ -269,13 +269,13 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | $publicly_indexable | `1` | Cannot modify here. Needs to be set by the Branch Universal Object
-        | ~keyword | | Keywords for which this content should be discovered by. Just assign an array of strings with the keywords you'd like to use
-        | $canonical_identifier | | This is the unique identifier for content that will help Branch dedupe across many instances of the same thing. Suitable options: a website with pathing, or a database with identifiers for entities
-        | $exp_date | `0` | The date when the content will not longer be available or valid. The value must be an epoch timestamp in milliseconds (e.g. `1529612995526`) within the Branch Universal Object. The click will be attributed, but the install/open will not be. This will not return deep link data once expired.
-        | $link_exp_date | `0` | The date when the content will not longer be available or valid. The value must be an epoch timestamp in milliseconds (e.g. `1529612995526`). Unlike the above, the link is deleted. If it is clicked on after deletion, redirection will continue to work, but with no data passing.
-        | $content_type | | This is a label for the type of content present. Apple recommends that you use uniform type identifier as described here
-        | $do_not_process | `false` | This will prevent click tracking and storage of link analytics. Deep link data will still flow into the app from link click to app open.
+        | `$publicly_indexable` | `1` | Cannot modify here. Needs to be set by the Branch Universal Object
+        | `~keyword` | | Keywords for which this content should be discovered by. Just assign an array of strings with the keywords you'd like to use
+        | `$canonical_identifier` | | This is the unique identifier for content that will help Branch dedupe across many instances of the same thing. Suitable options: a website with pathing, or a database with identifiers for entities
+        | `$exp_date` | `0` | The date when the content will not longer be available or valid. The value must be an epoch timestamp in milliseconds (e.g. `1529612995526`) within the Branch Universal Object. The click will be attributed, but the install/open will not be. This will not return deep link data once expired.
+        | `$link_exp_date` | `0` | The date when the content will not longer be available or valid. The value must be an epoch timestamp in milliseconds (e.g. `1529612995526`). Unlike the above, the link is deleted. If it is clicked on after deletion, redirection will continue to work, but with no data passing.
+        | `$content_type` | | This is a label for the type of content present. Apple recommends that you use uniform type identifier as described here
+        | `$do_not_process` | `false` | This will prevent click tracking and storage of link analytics. Deep link data will still flow into the app from link click to app open.
 
 - ### Deepview
 
@@ -283,16 +283,16 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | $ios_deepview | `branch_default` | The name of the deepview template to use for iOS
-        | $android_deepview | `branch_default` | The name of the deepview template to use for Android
-        | $desktop_deepview | `branch_default` | The name of the deepview template to use for the Desktop
+        | `$ios_deepview` | `branch_default` | The name of the deepview template to use for iOS
+        | `$android_deepview` | `branch_default` | The name of the deepview template to use for Android
+        | `$desktop_deepview` | `branch_default` | The name of the deepview template to use for the Desktop
 
     - Control [passive deepview](/web/deep-views/#passive-deepviews) templates
 
         | Key | Value | Default
         | --- | --- | ---
-        | $ios_passive_deepview | The name of the template to use for iOS. | `branch_default`
-        | $android_passive_deepview | The name of the template to use for Android. | `branch_default`
+        | `$ios_passive_deepview` | The name of the template to use for iOS. | `branch_default`
+        | `$android_passive_deepview` | The name of the template to use for Android. | `branch_default`
 
 - ### Link appearance
 
@@ -300,7 +300,7 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | alias | none | Specify a link alias to replace of the standard encoded short URL (e.g. `https://example.app.link/aQXXDHaxKF` -> `https://example.app.link/october-campaign` or `https://example.app.link/product/id1234`). Link aliases must be unique per app (a `409 error` will occur if you create an alias already taken). Also note that we don't currently support single character path segments after the domain (`/a/`, `/b/`, `/c/`, etc).
+        | `alias` | none | Specify a link alias to replace of the standard encoded short URL (e.g. `https://example.app.link/aQXXDHaxKF` -> `https://example.app.link/october-campaign` or `https://example.app.link/product/id1234`). Link aliases must be unique per app (a `409 error` will occur if you create an alias already taken). Also note that we don't currently support single character path segments after the domain (`/a/`, `/b/`, `/c/`, etc).
 
 - ### Open Graph
 
@@ -308,16 +308,16 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | $og_title | Set on dashboard | Set the title of the link as it will be seen in social media displays
-        | $og_description | Set on dashboard | Set the description of the link as it will be seen in social media displays
-        | $og_image_url | Set on dashboard | Set the image of the link as it will be seen in social media displays
-        | $og_image_width | | Set the image's width in pixels for social media displays
-        | $og_image_height | | Set the image's height in pixels for social media displays
-        | $og_video | | Set a video as it will be seen in social media displays
-        | $og_url | | Set the base URL of the link as it will be seen in social media displays
-        | $og_type | | Set the type of custom card format link as it will be seen in social media displays. Don't set this property when sharing deep links on Facebook
-        | $og_redirect | | (Advanced, not recommended) Set a custom URL that we redirect the social media robots to in order to retrieve all the appropriate tags
-        | $og_app_id | Set on dashboard | (Rarely used) Sets the app id tag
+        | `$og_title` | Set on dashboard | Set the title of the link as it will be seen in social media displays
+        | `$og_description` | Set on dashboard | Set the description of the link as it will be seen in social media displays
+        | `$og_image_url` | Set on dashboard | Set the image of the link as it will be seen in social media displays
+        | `$og_image_width` | | Set the image's width in pixels for social media displays
+        | `$og_image_height` | | Set the image's height in pixels for social media displays
+        | `$og_video` | | Set a video as it will be seen in social media displays
+        | `$og_url` | | Set the base URL of the link as it will be seen in social media displays
+        | `$og_type` | | Set the type of custom card format link as it will be seen in social media displays. Don't set this property when sharing deep links on Facebook
+        | `$og_redirect` | | (Advanced, not recommended) Set a custom URL that we redirect the social media robots to in order to retrieve all the appropriate tags
+        | `$og_app_id` | Set on dashboard | (Rarely used) Sets the app id tag
 
 - ### Twitter
 
@@ -325,21 +325,21 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | $twitter_card | | Set the Twitter card type of the link (e.g. `player`) (you must whitelist your deep link with the [Twitter Card Validator](https://cards-dev.twitter.com/validator)
-        | $twitter_title | Set on dashboard | Set the title of the Twitter card
-        | $twitter_description | Set on dashboard | Set the description of the Twitter card
-        | $twitter_image_url | Set on dashboard | Set the image URL for the Twitter card
-        | $twitter_site | | Set the site for Twitter
-        | $twitter_app_country | | Set the app country for the app card
-        | $twitter_player | | Set the video player's URL. Defaults to the value of `$og_video`.
-        | $twitter_player_width | | Set the player's width in pixels
-        | $twitter_player_height | | Set the player's height in pixels
+        | `$twitter_card` | | Set the Twitter card type of the link (e.g. `player`) (you must whitelist your deep link with the [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+        | `$twitter_title` | Set on dashboard | Set the title of the Twitter card
+        | `$twitter_description` | Set on dashboard | Set the description of the Twitter card
+        | `$twitter_image_url` | Set on dashboard | Set the image URL for the Twitter card
+        | `$twitter_site` | | Set the site for Twitter
+        | `$twitter_app_country` | | Set the app country for the app card
+        | `$twitter_player` | | Set the video player's URL. Defaults to the value of `$og_video`.
+        | `$twitter_player_width` | | Set the player's width in pixels
+        | `$twitter_player_height` | | Set the player's height in pixels
 
 - ### Other Reserved Keys
 
     | Key | Default | Usage
     | --- | --- | ---
-    | data | | Used by Branch to contain top-level link information. If this parameter is added to a Branch link via appending query params, it will be dropped. It can be safely used when creating a link manually via the dashboard.
+    | `data` | | Used by Branch to contain top-level link information. If this parameter is added to a Branch link via appending query params, it will be dropped. It can be safely used when creating a link manually via the dashboard.
 
 - ### Custom Tags
 
@@ -347,7 +347,7 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Value
         | --- | ---
-        | $custom_meta_tags | Valid stringified JSON dictionary of the tags’ keys and values
+        | `$custom_meta_tags` | Valid stringified JSON dictionary of the tags’ keys and values
 
     - Valid dictionary example: "{\"twitter:player:stream\": \"https://branch.io\"}". This will result in the following meta tag: `<meta property="twitter:player:stream" content="https://branch.io" />`
     - If you create the link via the Dashboard, don’t worry about stringifying the dictionary. It will be done automatically.
@@ -359,15 +359,15 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage | Link Property
         | --- | :-: | --- | :-:
-        | canonicalIdentifier | | **(Required)** This is the unique identifier for content that will help Branch dedupe across many instances of the same thing. Suitable options: a website with pathing, or a database with identifiers for entities | `$canonical_identifier`
-        | canonicalUrl | | The canonical URL, used for SEO purposes | `$canonical_url`
-        | title | | The name for the piece of content | `$og_title`
-        | contentDescription | | A description for the content | `$og_description`
-        | contentImageUrl | | The image URL for the content. Must be an absolute path | `$og_image_url `
-        | price | | The price of the item | `$amount`
-        | currency | | The currency representing the price in ISO 4217 currency code | `$currency`
-        | contentIndexingMode | `"public"` | Can be set to either `"public"` or `"private"`. Public indicates that you'd like this content to be discovered by other apps. | `$publicly_indexable`
-        | contentMetadata | | Any custom key-value data e.g. `{ "custom": "data" }`
+        | `canonicalIdentifier` | | **(Required)** This is the unique identifier for content that will help Branch dedupe across many instances of the same thing. Suitable options: a website with pathing, or a database with identifiers for entities | `$canonical_identifier`
+        | `canonicalUrl` | | The canonical URL, used for SEO purposes | `$canonical_url`
+        | `title` | | The name for the piece of content | `$og_title`
+        | `contentDescription` | | A description for the content | `$og_description`
+        | `contentImageUrl` | | The image URL for the content. Must be an absolute path | `$og_image_url `
+        | `price` | | The price of the item | `$amount`
+        | `currency` | | The currency representing the price in ISO 4217 currency code | `$currency`
+        | `contentIndexingMode` | `"public"` | Can be set to either `"public"` or `"private"`. Public indicates that you'd like this content to be discovered by other apps. | `$publicly_indexable`
+        | `contentMetadata` | | Any custom key-value data e.g. `{ "custom": "data" }`
 
     - Best practices for the Branch Universal Object
         - Do
@@ -434,9 +434,9 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Prefix | Usage |
         | --- | --- |
-        | $ | Branch reserved keyword
-        | ~ | Branch analytical data
-        | + | Branch added values
+        | `$` | Branch reserved keyword
+        | `~` | Branch analytical data
+        | `+` | Branch added values
 
 - ### Callback values
 
@@ -444,14 +444,14 @@ You're free to add any of your own key-value parameters to a Branch link. These 
 
         | Key | Default | Usage
         | --- | --- | ---
-        | ~id | | Automatically generated 18 digit ID number for the link that drove the install/open, if present (0 for dynamic and 3P links)
-        | ~referring_link | | The referring link that drove the install/open, if present
-        | ~creation_source | |  Where the link was created (`0` API , `1` Quick Link, `2` SDK, `3` iOS SDK , `4` Android SDK , `5` Web SDK, `6` Dynamic, `7` Third party)
-        | +match_guaranteed | | If the match was made with 100% accuracy
-        | +referrer | | The referrer for the link click, if a link was clicked
-        | +is_first_session | `false` | `true` if first session (install), `false` if any other session (open)
-        | +clicked_branch_link | `false` | Whether or not the user clicked a Branch link that triggered this session
-        | +non_branch_link | | App was opened from a non Branch link (third party, invalid Branch deep link, or Branch key mismatch)
+        | `~id` | | Automatically generated 18 digit ID number for the link that drove the install/open, if present (0 for dynamic and 3P links)
+        | `~referring_link` | | The referring link that drove the install/open, if present
+        | `~creation_source` | |  Where the link was created (`0` API , `1` Quick Link, `2` SDK, `3` iOS SDK , `4` Android SDK , `5` Web SDK, `6` Dynamic, `7` Third party)
+        | `+match_guaranteed` | | If the match was made with 100% accuracy
+        | `+referrer` | | The referrer for the link click, if a link was clicked
+        | `+is_first_session` | `false` | `true` if first session (install), `false` if any other session (open)
+        | `+clicked_branch_link` | `false` | Whether or not the user clicked a Branch link that triggered this session
+        | `+non_branch_link` | | App was opened from a non Branch link (third party, invalid Branch deep link, or Branch key mismatch)
 
 ## Troubleshoot issues
 

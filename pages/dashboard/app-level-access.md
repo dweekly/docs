@@ -216,11 +216,11 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
         | UTM parameter | Branch parameter
         | --- | --- |
-        | utm_source | Channel
-        | utm_medium | Feature
-        | utm_campaign | Campaign
-        | utm_content | Tags
-        | utm_term | Keywords (not visible on Dashboard)
+        | `utm_source` | Channel
+        | `utm_medium` | Feature
+        | `utm_campaign` | Campaign
+        | `utm_content` | Tags
+        | `utm_term` | Keywords (not visible on Dashboard)
 
 - <notranslate>**Enable Link Scraping**</notranslate>
     - If you enable this, Branch will automatically add data from your website's meta tags.

@@ -36,10 +36,10 @@ Each dashboard user will have an access role that determines what they will and 
 
   | Role | App-level Settings | Channel-level settings | Link-level Settings | Aggregate Data | Sensitive Data | Export
   | --- | :-: | :-: | :-: | :-: | :-: | :-: |
-  | Admin | Edit | Edit | Edit | View | View | Access
-  | Team Member | View | Edit | Edit | View | No Access | No Access
-  | Full Read | View | View | View | View | No Access | No Access
- 	| Limited Read | No Access | No Access | No Access | View | No Access | No Access
+  | <notranslate>Admin</notranslate> | Edit | Edit | Edit | View | View | Access
+  | <notranslate>Team Member</notranslate> | View | Edit | Edit | View | No Access | No Access
+  | <notranslate>Full Read</notranslate> | View | View | View | View | No Access | No Access
+ 	| <notranslate>Limited Read</notranslate> | No Access | No Access | No Access | View | No Access | No Access
 
 For each type of permission (e.g. App-level Settings), there are a number of levels of access. Those levels are described below:
 

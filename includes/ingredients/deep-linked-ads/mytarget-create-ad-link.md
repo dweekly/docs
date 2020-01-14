@@ -15,16 +15,16 @@ Once you've enabled an integration it's time to create a tracking link.
 	#### iOS
 	Key | Value
 	--- | ---
-	$redirect_store_id | iTunes ID (example id917737838)
-	$http_redirect_only | true
+	`$redirect_store_id` | iTunes ID (example id917737838)
+	`$http_redirect_only` | true
 
 	![image](/_assets/img/pages/deep-linked-ads/mytarget/ios-link-data.png)
 
 	#### Android
 	Key | Value
 	--- | ---
-	$redirect_store_id | Android App ID (example io.branch.branchster)
-	$http_redirect_only | true
+	`$redirect_store_id` | Android App ID (example io.branch.branchster)
+	`$http_redirect_only` | true
 
 	![image](/_assets/img/pages/deep-linked-ads/mytarget/android-link-data.png)
 

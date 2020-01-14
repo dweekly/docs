@@ -9,11 +9,11 @@
 
             | UTM parameter | Branch parameter
             | --- | --- |
-            | utm_source | Channel
-            | utm_medium | Feature
-            | utm_campaign | Campaign
-            | utm_content | Tags
-            | utm_term | Keywords (not visible on Dashboard)
+            | `utm_source` | Channel
+            | `utm_medium` | Feature
+            | `utm_campaign` | Campaign
+            | `utm_content` | Tags
+            | `utm_term` | Keywords (not visible on Dashboard)
 
 - ### Change link domain
     - Go to [Link Settings](https://dashboard.branch.io/link-settings) on the Branch Dashboard
