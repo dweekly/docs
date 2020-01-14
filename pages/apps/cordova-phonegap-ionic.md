@@ -632,7 +632,7 @@
 
     - Delete your app
 
-    - *[iOS]* iPhone Device -> Settings -> Privacy -> Advertising -> Reset Advertising Identifier -> Reset Identifier
+    - *[iOS]* iPhone Device -> **Settings** -> **Privacy** -> **Advertising** -> **Reset Advertising Identifier** -> **Reset Identifier**
 
     - *[Android]* Add `<android-testmode value="true" />` to your `Config.xml` ([Testing: Optional App Config](#testing-optional-app-config))
 
@@ -777,9 +777,9 @@
 
         - Install [Android Studio](https://developer.android.com/studio/index.html)
 
-        - Open Android Studio -> configure -> appearance/system settings/android sdk -> android 6.0 -> Okay
+        - Open Android Studio -> <notranslate>**configure** -> **appearance/system settings/android sdk** -> **android 6.0** -> **Okay**</notranslate>
 
-        - Open Android Studio -> New project -> ... -> Run -> Create new emulator -> Nexus 6p 23 -> Finish
+        - Open Android Studio -> <notranslate>**New project** -> ... -> **Run** -> **Create new emulator** -> **Nexus 6p 23** -> **Finish**</notranslate>
 
             ```sh
             # add to ~/.bash_profile
@@ -811,7 +811,7 @@
 
         - Install [Genymotion](https://www.genymotion.com/download/)
 
-        - Genymotion -> Add virtual device -> Google Nexus 6P - 6.0.0 - API 23 -> Next
+        - Genymotion -> <notranslate>**Add virtual device** -> **Google Nexus 6P** - **6.0.0** - **API 23** -> **Next**</notranslate>
 
 - ### Display console logs
 
@@ -819,9 +819,9 @@
 
         - `cordova run ios;`
 
-        - Safari -> Preferences -> Advance -> Show Develop menu in menu bar
+        - Safari -> <notranslate>**Preferences** -> **Advance** -> **Show Develop menu in menu bar**</notranslate>
 
-        - Safari -> Develop -> Simulator -> index.html -> Console
+        - Safari -> <notranslate>**Develop** -> **Simulator** -> **index.html** -> **Console**</notranslate>
 
         - *May need to unplug and replug device*
 
@@ -833,13 +833,13 @@
 
         - `cordova build ios;`
 
-        - Xcode -> APP_LOCATION/platforms/ios/APP_NAME.Xcodeproj
+        - Xcode -> `APP_LOCATION/platforms/ios/APP_NAME.Xcodeproj`
 
-        - Xcode -> App -> General -> Signing -> Team
+        - Xcode -> <notranslate>**App** -> **General** -> **Signing** -> **Team**</notranslate>
 
-        - Xcode -> Product -> Run
+        - Xcode -> <notranslate>**Product** -> **Run**</notranslate>
 
-        - Xcode -> View -> Debug Area -> Activate Console
+        - Xcode -> <notranslate>**View** -> **Debug Area** -> **Activate Console**</notranslate>
 
     - Android Device
 
@@ -847,15 +847,15 @@
 
         - `cordova run android;`
 
-        - Chrome -> [chrome://inspect/#devices](chrome://inspect/#devices) -> Console
+        - Chrome -> `[chrome://inspect/#devices](chrome://inspect/#devices)` -> <notranslate>**Console**</notranslate>
 
     - Android Genymotion
 
-        - Genymotion -> Start
+        - Genymotion -> <notranslate>**Start**</notranslate>
 
         - `cordova run android;`
 
-        - Chrome -> [chrome://inspect/#devices](chrome://inspect/#devices) -> Console
+        - Chrome -> `[chrome://inspect/#devices](chrome://inspect/#devices)` -> <notranslate>**Console**</notranslate>
 
 - ### Update the Branch SDK
 

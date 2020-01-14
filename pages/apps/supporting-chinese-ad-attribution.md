@@ -38,9 +38,9 @@ The module checks whether Google Play Services is linked to the app. If yes, the
 ```
 3. Download the `.aar` file from the main dir and use with the main Branch SDK as follows.
 
-4. Copy the `.aar` file in your app root directory -> libs -> Branch-IMEI-release-latestVersion.aar (create libs if needed)
+4. Copy the `.aar` file in your app root directory -> `libs` -> `Branch-IMEI-release-latestVersion.aar` (create libs if needed)
 
-5. Add the support for libs inside your project/build.gradle:
+5. Add the support for libs inside your `project/build.gradle`:
 ```
 allprojects {
     repositories {
@@ -55,7 +55,7 @@ allprojects {
 implementation (name:'Branch-IMEI-release-latestVersion', ext:'aar')
 ```
 
-7. Call the following in your Application Class -> onCreate(): import BranchDeviceImei
+7. Call the following in your Application Class -> `onCreate(): import BranchDeviceImei`
 ```
 import io.branch.referral.deviceimei.BranchDeviceImei;
 ```

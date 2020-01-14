@@ -75,7 +75,7 @@ Finally, review the integration, scroll to the bottom of the screen and click <n
 
 Before navigating to Branch, in your Adobe Analytics dashboard, navigate to the Mobile Marketing UI and find your app.
 
-Under Manage App Setting -> SDK Analytics Options, find the following data
+Under <notranslate>**Manage App Setting** -> **SDK Analytics Options**</notranslate>, find the following data:
 
 Branch field | Adobe field value
 --- | ---
@@ -88,10 +88,10 @@ For `Analytics Server Domain`, please do not include `http` or `https`. If your 
 
 #### Enter Adobe Analytics Information
 
-1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
-1. Locate Adobe Analytics and choose **Enable**.
+1. On the Branch Dashboard (dashboard.branch.io), navigate to the <notranslate>[Integrations page](https://dashboard.branch.io/integrations)</notranslate>.
+1. Locate Adobe Analytics and choose <notranslate>**Enable**</notranslate>.
   * If you have not yet entered billing information, please do so now.
-1. Enter your Adobe Analytics information and hit **Save**.
+1. Enter your Adobe Analytics information and hit <notranslate>**Save**</notranslate>.
 
 ## Additional Setup (Required if not integrating via Adobe Launch)
 

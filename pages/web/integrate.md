@@ -631,9 +631,9 @@ The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share
 - ### Journey not sticking to nav
 
     - Navigate to [Dashboard Journey Page](https://branch.dashboard.branch.io/web/journeys)
-    - Select Journey -> Edit -> Configure Views -> Banner -> Page Placement
-    - Banner Scroll = `sticky`
-    - Press `Save & Close`
+    - Select Journey -> <notranslate>**Edit**</notranslate> -> <notranslate>**Configure Views**</notranslate> -> <notranslate>**Banner**</notranslate> -> <notranslate>**Page Placement**</notranslate>
+    - Banner Scroll = <notranslate>**sticky**</notranslate>
+    - Press <notranslate>**Save & Close**</notranslate>
     - Add the following div to your nav
 
         ```html

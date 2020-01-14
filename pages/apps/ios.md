@@ -1073,7 +1073,7 @@
 
     - Delete your app
 
-    - iPhone Device -> Settings -> Privacy -> Advertising -> Reset Advertising Identifier -> Reset Identifier
+    - iPhone Device -> <notranslate>**Settings** -> **Privacy** -> **Advertising** -> **Reset Advertising Identifier** -> **Reset Identifier**</notranslate>
 
     - Add `Branch.setDebug(true)` before `initSession` ([Initialize Branch Features](#initialize-branch-features))
 
