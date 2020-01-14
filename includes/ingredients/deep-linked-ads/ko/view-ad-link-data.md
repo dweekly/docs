@@ -5,7 +5,7 @@ Branch 대시보드의 [광고 분석 페이지](https://dashboard.branch.io/ads
 
 ![광고 분석 그래프 예시](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-graph.png)
 
-표는 각 광고 캠페인의 성과에 대한 요약 데이터를 보여줍니다. 표의 오른쪽 상단 <notranslate>**다운로드 버튼**</notranslate> 을 클릭하여 차트의 내용을 CSV 파일로 다운로드할 수 있습니다.
+표는 각 광고 캠페인의 성과에 대한 요약 데이터를 보여줍니다. 표의 오른쪽 상단 **다운로드 버튼** 을 클릭하여 차트의 내용을 CSV 파일로 다운로드할 수 있습니다.
 
 ![광고 표 예시](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
 

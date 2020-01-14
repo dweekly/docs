@@ -3,17 +3,17 @@
 
 앱 데이터에 대한 액세스 권한을 광고 파트너에게 부여하려면 먼저 광고 파트너를 Branch 계정에서 `agency`로 추가해야 합니다.  그러면 해당 광고 파트너가 여러분이 정의하는 바에 따라 앱에 대한 액세스 권한을 부여받게 됩니다.
 
-1. <notranslate>**Account Settings**</notranslate> 로 이동하여 <notranslate>**Agencies**</notranslate> 탭을 클릭합니다.
-2. <notranslate>**Agencies**</notranslate> 탭에서 <notranslate>**Add New Agency**</notranslate> 버튼을 클릭합니다.
-3. <notranslate>**Add New Agency**</notranslate> 창에서 다음을 따릅니다.
+1. **Account Settings** 로 이동하여 **Agencies** 탭을 클릭합니다.
+2. **Agencies** 탭에서 **Add New Agency** 버튼을 클릭합니다.
+3. **Add New Agency** 창에서 다음을 따릅니다.
    1. 드롭다운 메뉴에서 에이전시 이름을 선택합니다.
    2. 적절한 수준의 액세스 권한을 선택합니다.
-      * <notranslate>**Admin**</notranslate> - 모든 설정에 대한 액세스 권한을 편집하고 모든 데이터에 대한 액세스 권한을 내보낼 수 있습니다.
-      * <notranslate>**Team Member**</notranslate> - 채널 및 링크에 대한 액세스 권한, 앱 설정에 대한 읽기 전용 액세스 권한, 집계 데이터에 대한 액세스 권한을 편집할 수 있습니다.
-      * <notranslate>**Full Read**</notranslate> - 모든 설정에 대한 읽기 전용 액세스 권한 및 집계 데이터에 대한 액세스 권한이 부여됩니다.
-      * <notranslate>**Limited Read**</notranslate> - 집계 데이터에만 액세스할 수 있습니다.
-      * <notranslate>**Custom**</notranslate> - 설정 및 데이터 액세스 권한을 사용자 지정할 수 있습니다.
-      * <notranslate>**No Access**</notranslate> - 대시보드에 액세스할 수 없습니다.
+      * **Admin** - 모든 설정에 대한 액세스 권한을 편집하고 모든 데이터에 대한 액세스 권한을 내보낼 수 있습니다.
+      * **Team Member** - 채널 및 링크에 대한 액세스 권한, 앱 설정에 대한 읽기 전용 액세스 권한, 집계 데이터에 대한 액세스 권한을 편집할 수 있습니다.
+      * **Full Read** - 모든 설정에 대한 읽기 전용 액세스 권한 및 집계 데이터에 대한 액세스 권한이 부여됩니다.
+      * **Limited Read** - 집계 데이터에만 액세스할 수 있습니다.
+      * **Custom** - 설정 및 데이터 액세스 권한을 사용자 지정할 수 있습니다.
+      * **No Access** - 대시보드에 액세스할 수 없습니다.
 
    3. 'Invite'를 클릭합니다.
    4. 에이전시 계정의 모든 에이전시 관리자는 초대 이메일을 수신하게 되며, 이러한 에이전시 관리자는 누구든지 본인의 에이전시를 대표하여 초대를 수락할 수 있습니다.
@@ -28,11 +28,11 @@
 !!! 팁 "권한 수정하기"
 미리 정의된 액세스 수준을 수정하려면 연필 아이콘을 클릭하여 사용 가능한 옵션을 선택 또는 선택 해제하세요.
 
-* <notranslate>**Link-level Settings**</notranslate> - 단일 링크의 기능에 영향을 줄 수 있는 설정 또는 기능
-* <notranslate>**Channel-level Settings**</notranslate> - 마케팅 채널 전반에서 기능에 영향을 줄 수 있는 설정 또는 기능
-* <notranslate>**App-level Settings**</notranslate> - 앱 전반에서 기능에 영향을 줄 수 있는 설정 또는 기능
-* <notranslate>**Aggregate Data**</notranslate> - 세부적인 데이터를 포함하지 않는 요약 데이터
-* <notranslate>**Sensitive Data**</notranslate> - 사용자 식별, 결제 관련, 또는 비밀 정보를 포함할 수 있는 데이터
+* **Link-level Settings** - 단일 링크의 기능에 영향을 줄 수 있는 설정 또는 기능
+* **Channel-level Settings** - 마케팅 채널 전반에서 기능에 영향을 줄 수 있는 설정 또는 기능
+* **App-level Settings** - 앱 전반에서 기능에 영향을 줄 수 있는 설정 또는 기능
+* **Aggregate Data** - 세부적인 데이터를 포함하지 않는 요약 데이터
+* **Sensitive Data** - 사용자 식별, 결제 관련, 또는 비밀 정보를 포함할 수 있는 데이터
 
 ### 기타 데이터 필터
 
@@ -41,10 +41,10 @@ Branch 계정에 에이전시 액세스 권한을 부여할 때는 언제든지 
 !!! 경고 "특정 광고 네트워크의 데이터만 표시하도록 필터링하기"
 Branch 계정에 대한 액세스 권한을 광고 파트너에게 부여할 때는 `Only Show Data from Specific Ad Networks`의 토글을 켜짐으로 전환하고 액세스 권한을 부여하고자 하는 광고 파트너를 선택해야 합니다.
 
-* <notranslate>**Only Show Agency-tagged Data**</notranslate> - 켜짐으로 설정할 경우 에이전시 사용자는 해당 에이전시의 ID가 태그된 이벤트만 볼 수 있습니다.
-* <notranslate>**Restrict Access to Revenue Data**</notranslate> - 켜짐으로 설정할 경우 에이전시 사용자가 수익 데이터를 볼 수 없습니다.
-* <notranslate>**Only Show Data from Specific Ad Networks**</notranslate> - 켜짐으로 설정할 경우 에이전시 사용자가 특정 광고 네트워크 목록의 이벤트만 볼 수 있습니다.
-* <notranslate>**Only Show Data from Specific Locations**</notranslate> - 켜짐으로 설정할 경우 에이전시 사용자는 특정 목록의 국가에서 발생한 이벤트만 볼 수 있습니다.
+* **Only Show Agency-tagged Data** - 켜짐으로 설정할 경우 에이전시 사용자는 해당 에이전시의 ID가 태그된 이벤트만 볼 수 있습니다.
+* **Restrict Access to Revenue Data** - 켜짐으로 설정할 경우 에이전시 사용자가 수익 데이터를 볼 수 없습니다.
+* **Only Show Data from Specific Ad Networks** - 켜짐으로 설정할 경우 에이전시 사용자가 특정 광고 네트워크 목록의 이벤트만 볼 수 있습니다.
+* **Only Show Data from Specific Locations** - 켜짐으로 설정할 경우 에이전시 사용자는 특정 목록의 국가에서 발생한 이벤트만 볼 수 있습니다.
 
 !!! 경고 "에이전시 초대"
-에이전시에 적절한 수준의 액세스 권한을 정의한 뒤에는 반드시 <notranslate>**초대**</notranslate> 를 통해 에이전시가 Branch 대시보드에 액세스하도록 초대해야 합니다. 조직 관리자만 에이전시가 Branch 대시보드에 액세스하도록 초대할 수 있습니다.
+에이전시에 적절한 수준의 액세스 권한을 정의한 뒤에는 반드시 **초대** 를 통해 에이전시가 Branch 대시보드에 액세스하도록 초대해야 합니다. 조직 관리자만 에이전시가 Branch 대시보드에 액세스하도록 초대할 수 있습니다.
