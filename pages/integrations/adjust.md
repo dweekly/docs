@@ -52,7 +52,7 @@ You need to point the iOS Custom Redirect to Adjust. Take the tracker you just c
 
 | Platform | URL
 | --- | ---
-| <notranslate>**iOS**</notranslate> | https://app.adjust.io/abcdef
+| <notranslate>**iOS**</notranslate> | https://app.adjust.com/abcdef
 
 ![image](/_assets/img/pages/integrations/adjust/adjust-redirect-settings.png)
 
