@@ -707,4 +707,3 @@ deep-linked-ads/zoomd-mobile-tracking/index.html https://docs.branch.io/deep-lin
 deep-linked-ads/zorka-mobi-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
 deep-linked-ads/zucks-ad-network-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
 deep-linked-ads/zucks-affiliate-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
-deep-linked-ads/
