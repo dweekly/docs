@@ -1,3 +1,6 @@
+---
+title: Apple 광고 캠페인 트래킹 관련
+---
 ## 개요
 
 ![Apple Search Ads](/_assets/img/pages/deep-linked-ads/apple-search/search-ads-reduced-logo.png)

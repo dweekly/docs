@@ -1,3 +1,6 @@
+---
+title: Adobe Campaign Standard
+---
 ## Overview
 
 ![Adobe-Campaign-Standard](/_assets/img/pages/email/adobe-campaign-standard/adobe-campaign-standard.png)

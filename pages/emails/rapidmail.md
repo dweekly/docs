@@ -1,3 +1,6 @@
+---
+title: Rapidmail
+---
 ## Overview
 
 ![Rapidmail](/_assets/img/pages/email/rapidmail/rapidmail.png)

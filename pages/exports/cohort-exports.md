@@ -1,3 +1,6 @@
+---
+title: Cohort Exports
+---
 ## Overview
 
 The Branch Cohort Exports allows you to programmatically query and export <notranslate>**Cohort**</notranslate> analytics.

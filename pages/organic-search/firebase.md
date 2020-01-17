@@ -1,3 +1,6 @@
+---
+title: Firebase App Indexing
+---
 ## Overview
 
 Google's App Indexing is a project that attempts to expose app results in Google searches performed on mobile devices. This project is formally called Firebase App Indexing.

@@ -1,3 +1,6 @@
+---
+title: Website SDK
+---
 !!! info "Current SDK Version 2.52.2"
 
 ## Overview

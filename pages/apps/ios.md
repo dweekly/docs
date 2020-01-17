@@ -1,3 +1,6 @@
+---
+title: iOS SDK
+---
 !!! info "Current SDK Version 0.31.3"
     Please see the [iOS Version History](/version-histories/ios-version-history) to view change log.
 
@@ -1204,7 +1207,8 @@
 
         ```swift
         lp.addControlParam("$email_subject", withValue: "Your Awesome Deal")
-        lp.addControlParam("$email_html_header", withValue: "<style>your awesome CSS</style>\nOr Dear Friend,")
+        lp.addControlParam("$email_html_header", withValue: "<style>your awesome CSS</style>
+Or Dear Friend,")
         lp.addControlParam("$email_html_footer", withValue: "Thanks!")
         lp.addControlParam("$email_html_link_text", withValue: "Tap here")
         ```
@@ -1213,7 +1217,8 @@
 
         ```objc
         [lp addControlParam:@"$email_subject" withValue:@"This one weird trick."];
-        [lp addControlParam:@"$email_html_header" withValue:@"<style>your awesome CSS</style>\nOr Dear Friend,"];
+        [lp addControlParam:@"$email_html_header" withValue:@"<style>your awesome CSS</style>
+Or Dear Friend,"];
         [lp addControlParam:@"$email_html_footer" withValue:@"Thanks!"];
         [lp addControlParam:@"$email_html_link_text" withValue:@"Tap here"];
         ```

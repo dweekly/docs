@@ -1,3 +1,6 @@
+---
+title: MessageGears
+---
 ## Overview
 
 ![MessageGears](/_assets/img/pages/email/messagegears/messagegears.png)

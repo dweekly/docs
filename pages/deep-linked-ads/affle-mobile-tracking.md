@@ -1,3 +1,6 @@
+---
+title: Affle
+---
 ## Overview
 
 ![Affle](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/affle_123-1528407257224.png)

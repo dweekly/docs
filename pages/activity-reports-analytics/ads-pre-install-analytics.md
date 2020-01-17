@@ -1,3 +1,6 @@
+---
+title: Pre-Install Analytics
+---
 ## Overview
 
 Many mobile devices come pre-installed with apps already installed, which is great for the user experience because users do not need to launch an app store to download and install these pre-loaded apps. But how do you attribute the pre-loaded app install when there is no ad click to use for attributing the install (to the appropriate advertising partner)?

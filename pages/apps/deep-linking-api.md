@@ -1,3 +1,6 @@
+---
+title: Deep Linking API
+---
 ## Postman
 
   - Use `Postman` to test Branch API for requests, responses, and code examples

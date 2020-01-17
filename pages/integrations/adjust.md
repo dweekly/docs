@@ -1,3 +1,6 @@
+---
+title: Adjust
+---
 ## Overview
 
 Send data to Adjust to maximize your understanding of your mobile acquisition efforts, while deep linking your users through Branch.

@@ -1,3 +1,6 @@
+---
+title: SAN Web Tracking
+---
 # A guide to web tracking with SANs
 
 ## Overview

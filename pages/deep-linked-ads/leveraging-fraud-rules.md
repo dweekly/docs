@@ -1,3 +1,6 @@
+---
+title: Fraud Rules
+---
 ## Overview
 
 !!! warning "Viewing Fraud Data Permissions"

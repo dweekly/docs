@@ -1,3 +1,6 @@
+---
+title: Adobe Launch Web Plugin
+---
 Adding Branch to your Launch Property will allow you to use core functionality from the Web SDK to convert web traffic to mobile traffic effortlessly.
 
 ## Prerequisites

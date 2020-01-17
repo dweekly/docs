@@ -1,3 +1,6 @@
+---
+title: Daily Exports
+---
 ## Overview
 
 Branch’s Daily Exports pull granular Branch event data directly. You can do so either via the <notranslate>**Daily Exports**</notranslate> section in your Branch dashboard OR via API directly.

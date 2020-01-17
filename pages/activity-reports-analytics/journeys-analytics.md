@@ -1,3 +1,6 @@
+---
+title: Journeys Analytics
+---
 **Important Note:**
 
 To get the Analytics for Journeys, you need to have Journeys enabled and set up on the dashboard as per the documentation [here](/web/journeys/).

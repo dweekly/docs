@@ -1,3 +1,6 @@
+---
+title: Query Recipe Book
+---
 !!! protip "Want to see a Query API reference?"
     For an exhaustive list of options for this Query API, flip over to the [Query API](/exports/query-api/) reference page.
 
@@ -4311,4 +4314,3 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
           }
         }
         ```
-

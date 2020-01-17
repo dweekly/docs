@@ -1,3 +1,6 @@
+---
+title: Smartech
+---
 ## Overview
 
 ![Smartech](https://cdn.branch.io/branch-assets/ad-partner-manager//c6ddf6fce4c2-smartechlogo-1569500612651.png)

@@ -1,3 +1,6 @@
+---
+title: Facebook App Install Ads
+---
 ## Overview
 
 Branch links can be used together with Facebook App Install Campaign ads, allowing you to track ad-driven installs on the Branch dashboard and deep link those new users directly to content the first time they open your app.

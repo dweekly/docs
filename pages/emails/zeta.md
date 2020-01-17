@@ -1,3 +1,6 @@
+---
+title: Zeta
+---
 ## Overview
 
 ![Zeta](/_assets/img/pages/email/zeta/zeta.png)

@@ -1,3 +1,6 @@
+---
+title: App Stores List
+---
 **App Store** | **Branch Integration Guide**
 --- | ---
 <a href="https://www.9apps.com/">![9Apps](/_assets/img/pages/app-stores/9apps-logo.jpg)</a>|**[9Apps](/app-stores/9apps-app-store/)**

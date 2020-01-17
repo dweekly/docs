@@ -1,3 +1,6 @@
+---
+title: Bluecore
+---
 ## Overview
 
 ![Bluecore](https://cdn.branch.io/branch-assets/ad-partner-manager//bluecore-logo-blue-horizontal-1550284792141.png)

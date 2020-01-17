@@ -1,3 +1,6 @@
+---
+title: Customization & Edge Cases
+---
 !!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads Resources"
 		- [Overview](/deep-linked-ads/google-ads-overview/)
 		- [Enabling the Integration](/deep-linked-ads/google-ads-setup/)

@@ -1,3 +1,6 @@
+---
+title: Retrieving Branch's Cross-Platform ID
+---
 ## Overview
 
 Branch Cross-Platform ID exposes a series of fields representing app-scoped, anonymous, cross-platform identifiers you can use to stitch together events for multi-touch attribution, user journeys for state-of-the-art UX, and many other use cases.

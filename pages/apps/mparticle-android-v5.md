@@ -1,3 +1,6 @@
+---
+title: mParticle Android
+---
 This documentation explains how to send **mParticle events to your Branch dashboard**. If you'd like to send Branch installs to your mParticle dashboard, please review the [Branch/mParticle Data Integration](/integrations/mparticle).
 
 !!! info "These instructions apply to the mParticle SDK version 5+ integration"

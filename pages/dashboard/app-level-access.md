@@ -1,3 +1,6 @@
+---
+title: App Level Access
+---
 The <notranslate>"App"</notranslate> level of a Branch account is the third level of access and includes access (either edit or read-only) to the following functionality:
 
 <table>

@@ -1,3 +1,6 @@
+---
+title: Netcore Smartech
+---
 ## Overview
 
 ![Netcore Smartech](https://cdn.branch.io/branch-assets/ad-partner-manager//bcad3b4c0c31-netcore_1527812078091-1567147518764.png)

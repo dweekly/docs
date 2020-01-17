@@ -1,3 +1,6 @@
+---
+title: Overview
+---
 Our reporting layer balances speed and efficiency with completeness and complexity. This balance enables us to provide you with both real-time feedback and in-depth analyses.
 
 - Gain a clear understanding of what is actually driving conversions

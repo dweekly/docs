@@ -1,3 +1,6 @@
+---
+title: Braze
+---
 ## Overview
 
 The Branch partnership with [Braze](https://www.braze.com) provides a way to deliver Branch installs and attributions to your Braze dashboard. This allows you to analyze your users coming in from Branch deep linked campaigns.

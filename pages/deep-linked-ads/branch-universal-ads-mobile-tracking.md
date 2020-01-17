@@ -1,3 +1,6 @@
+---
+title: Universal Ads Basics
+---
 This guide will walk you through how to setup your campaigns using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
 !!! note "Paid Product"

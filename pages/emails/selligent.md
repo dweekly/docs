@@ -1,3 +1,6 @@
+---
+title: Selligent Message Studio
+---
 ## Overview
 
 ![Selligent Message Studio](/_assets/img/pages/email/selligent/selligent.png)

@@ -1,3 +1,6 @@
+---
+title: Cohort Analytics
+---
 ## Overview
 
 Cohort analysis is a powerful tool that helps you to not only understand the full ROI of your campaigns, but help you guide future investment decisions and consumer targeting.

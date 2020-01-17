@@ -1,3 +1,6 @@
+---
+title: Visual IQ
+---
 ## Overview
 
 ![Visual IQ](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/Visual-IQ-Logo-1573087845138.png)

@@ -1,3 +1,6 @@
+---
+title: General SEO Compatibility
+---
 ## Overview
 
 Branch has invested a lot of time and effort to ensure that we only help with SEO and search rankings while delivering our value. We've very thoughtfully designed how we treat Google and other search engine bots that crawl links to ensure that SEO juice is properly passed on to your website domain and not ours.

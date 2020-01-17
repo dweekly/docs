@@ -1,3 +1,6 @@
+---
+title: Xiaomi
+---
 ## Overview
 
 ![Xiaomi](/_assets/img/pages/app-stores/xiaomi-logo.png)

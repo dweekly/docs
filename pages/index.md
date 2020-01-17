@@ -1,3 +1,6 @@
+---
+title: Home
+---
 template: main-lp.html
 <div class="main-page">
 

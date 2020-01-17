@@ -1,3 +1,6 @@
+---
+title: Doubleclick (Legacy)
+---
 ## Overview
 
 ![DoubleClick](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/dc_newlogo-1528503421215.png)

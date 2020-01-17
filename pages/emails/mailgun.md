@@ -1,3 +1,6 @@
+---
+title: Mailgun
+---
 ## Overview
 
 ![Mailgun](/_assets/img/pages/email/mailgun/mailgun.png)

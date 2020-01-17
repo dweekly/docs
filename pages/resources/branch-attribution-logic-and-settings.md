@@ -1,3 +1,6 @@
+---
+title: Branch Attribution Logic & Settings
+---
 To accurately measure and attribute interactions (installs and in-app events) that users take with your app, Branch uses several different types of attribution. The attribution method Branch applies depends on a combination of factors, like platform/app store, engagement type, and conversion type.  Branch’s attribution methods are “stack-ranked” to ensure the highest level of accuracy.
 
 ## Key takeaways

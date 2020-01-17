@@ -1,3 +1,6 @@
+---
+title: Betaout
+---
 ## Overview
 
 ![Betaout](/_assets/img/pages/email/betaout/betaout.png)

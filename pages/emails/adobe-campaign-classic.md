@@ -1,3 +1,6 @@
+---
+title: Adobe Campaign Classic
+---
 ## Overview
 
 ![Adobe-Campaign-Classic](/_assets/img/pages/email/adobe-campaign-classic/adobe-campaign-classic.png)

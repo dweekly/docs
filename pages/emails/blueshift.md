@@ -1,3 +1,6 @@
+---
+title: Blueshift
+---
 ## Overview
 
 ![Blueshift](/_assets/img/pages/email/blueshift/blueshift.png)

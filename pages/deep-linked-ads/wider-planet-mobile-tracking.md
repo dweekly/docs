@@ -1,3 +1,6 @@
+---
+title: Wider Planet
+---
 ## Overview
 
 ![Wider Planet](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/Wider_Planet_logo-1546995063867.png)

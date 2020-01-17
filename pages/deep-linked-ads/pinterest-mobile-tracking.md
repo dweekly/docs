@@ -1,3 +1,6 @@
+---
+title: Pinterest
+---
 ## Overview
 
 ![Pinterest](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/pinterest-1539022582075.png)

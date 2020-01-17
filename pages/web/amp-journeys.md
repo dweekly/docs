@@ -1,3 +1,6 @@
+---
+title: Journeys via AMP
+---
 ## Overview
 
 [Accelerated Mobile Pages (AMP)](https://www.ampproject.org/) are a way to build pages that serve static content so that they load in Google search results much faster. Google uses AMP to quickly serve content on mobile devices without users having to click through to a website to view the content, and AMP pages often appear at the top of mobile search results.

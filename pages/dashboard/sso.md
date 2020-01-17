@@ -1,3 +1,6 @@
+---
+title: Enable Single Sign On
+---
 ## Overview
 
 Branch offers Security Assertion Markup Language (SAML) / Single Sign-on (SSO) support for the dashboard. This allows you to use your identity provider (IdP) to centralize access to various services for your team and leverage existing directory systems and security groups.

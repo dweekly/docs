@@ -1,3 +1,6 @@
+---
+title: Forensiq
+---
 ## Overview
 
 ![Forensiq](https://cdn.branch.io/branch-assets/ad-partner-manager//b185ed648c28-Forensiq_logo_web_color-1561594656041.png)

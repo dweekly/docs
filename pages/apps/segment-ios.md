@@ -1,3 +1,6 @@
+---
+title: Segment iOS SDK
+---
 !!! warning "Segment Branch SDK Integration in Maintenance Mode"
     As of November 14, 2019 the Segment - Branch SDK integration is in maintenance mode.  
 

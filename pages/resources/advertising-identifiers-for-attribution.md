@@ -1,3 +1,6 @@
+---
+title: Advertising Identifiers for Attribution
+---
 ## Overview
 
 Branch supports the following advertising identifiers in Branch links on click, install, and other event requests. When the same identifier is available on click and install, Branch can perform attribution by matching this value through Identifier Matching.

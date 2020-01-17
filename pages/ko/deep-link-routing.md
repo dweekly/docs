@@ -1,3 +1,6 @@
+---
+title: 앱 내 딥링크 라우팅 가이드
+---
 ## 개요
 
 Branch Link가 클릭될 때 사용자의 디바이스에 설치한 앱이 실행되거나 App Store/Google Play로 랜딩됩니다. 딥링크는 사용자가 앱을 실행할 때 바로 특정 컨텐츠로 라우팅하는 방법으로 이런 프로세스를 향상시킵니다. Branch Link 를 사용하면 사용자가 앱을 다운로드하고 실행할 때도 특정 컨텐츠로 라우팅시킬 수 있습니다. 이것을 디퍼드 딥링크(Deferred Deep Link라고 함)
@@ -393,7 +396,9 @@ protected void onResume() {
         try {
             String autoDeeplinkedValue = Branch.getInstance().getLatestReferringParams().getString("product_picture");
             launch_mode_txt.setText("Launched by Branch on auto deep linking!"
-                    + "\n\n" + autoDeeplinkedValue);
+                    + "
+
+" + autoDeeplinkedValue);
         } catch (JSONException e) {
             e.printStackTrace();
         }

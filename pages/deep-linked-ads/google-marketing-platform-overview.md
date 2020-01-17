@@ -1,3 +1,6 @@
+---
+title: Google Marketing Platform Overview
+---
 ## Overview
 
 Branch links can be used together with Google Marketing Platform app conversion ads, allowing you to track ad-driven app conversion (installs and in-app events) on the Branch dashboard.

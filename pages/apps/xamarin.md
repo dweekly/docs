@@ -1,3 +1,6 @@
+---
+title: Xamarin
+---
 
 ## Integrate Branch
 
@@ -297,7 +300,8 @@
                     void LogMessage(string message)
                     {
                         Console.WriteLine(message);
-                        logString += DateTime.Now.ToLongTimeString() + "> " + message + "\n";
+                        logString += DateTime.Now.ToLongTimeString() + "> " + message + "
+";
                     }
 
                     #endregion
@@ -346,7 +350,8 @@
                     void LogMessage(string message)
                     {
                         Console.WriteLine(message);
-                        logString += DateTime.Now.ToLongTimeString() + "> " + message + "\n";
+                        logString += DateTime.Now.ToLongTimeString() + "> " + message + "
+";
                     }
 
                     #endregion

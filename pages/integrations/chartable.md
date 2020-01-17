@@ -1,3 +1,6 @@
+---
+title: Chartable
+---
 ## Overview
 
 ![Chartable](https://cdn.branch.io/branch-assets/ad-partner-manager//Chartable_Logo-1569590745878.png)
