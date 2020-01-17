@@ -1,8 +1,8 @@
 !!! info "Current SDK Version 4.2.0"
     Please see the [Android Version History](/version-histories/android-version-history) to view change log.
 
-!!! warning "v4.0.0 Uses Android X"
-    If you implement Branch SDK v4.0.0 for Android, you must also update to Android Studio version 3.4+ to ensure the appropriate support libraries are being used.
+!!! warning "Android Studio Version"
+    We always recommend using the latest stable version of Android Studio. If you update to AndroidX, any library imports with the namespace `com.android.support` can be safely replaced with AndroidX equivalents.
 
 !!! warning "Google Play Services version 17+"
     If you reference Google Play Services version 17 or higher, you **MUST** complete Google's update instructions [here](https://developers.google.com/android/guides/releases#june_17_2019).
