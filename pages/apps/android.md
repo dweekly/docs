@@ -1,8 +1,8 @@
 !!! info "Current SDK Version 4.2.0"
     Please see the [Android Version History](/version-histories/android-version-history) to view change log.
 
-!!! warning "v4.0.0 Uses Android X"
-    If you implement Branch SDK v4.0.0 for Android, you must also update to Android Studio version 3.4+ to ensure the appropriate support libraries are being used.
+!!! warning "Android Studio Version"
+    We always recommend using the latest stable version of Android Studio. If you update to AndroidX, any library imports with the namespace `com.android.support` can be safely replaced with AndroidX equivalents.
 
 !!! warning "Google Play Services version 17+"
     If you reference Google Play Services version 17 or higher, you **MUST** complete Google's update instructions [here](https://developers.google.com/android/guides/releases#june_17_2019).
@@ -34,7 +34,7 @@
 
     - Import the Branch SDK to your `build.gradle`
 
-        ```java hl_lines="30 31 33 34 35 36"
+        ```java hl_lines="8 29 30 31 32 33 34 35 36 37 38 39"
         apply plugin: 'com.android.application'
 
         android {
@@ -66,6 +66,7 @@
 
             // required for all Android apps
             implementation 'io.branch.sdk.android:library:4.+'
+            implementation 'com.android.installreferrer:installreferrer:1.1'
 
             // required if your app is in the Google Play Store (tip: avoid using bundled play services libs)
             implementation 'com.google.firebase:firebase-appindexing:19.0.0' // App indexing
@@ -82,7 +83,6 @@
 
 !!! warning "Google Mobile Ads SDK 17+"
     If you decide to implement the Google Mobile Ads SDK version 17+, you have to declare your app is an Ad Manager app. See [Google Developer Docs](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#update_your_androidmanifestxml) on how to do so. Failure to add this <meta-data> tag results in a crash with the message: "The Google Mobile Ads SDK was initialized incorrectly."
-
 
 - ### Configure app
 
@@ -139,13 +139,6 @@
                 <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_hlxrWC5Zx16DkYmWu4AHiimdqugRYMr" />
                 <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />     <!-- Set to true to use Branch_Test_Key (useful when simulating installs and/or switching between debug and production flavors) -->
 
-                <!-- Branch install referrer tracking (optional) -->
-                <receiver android:name="io.branch.referral.InstallListener" android:exported="true">
-                    <intent-filter>
-                        <action android:name="com.android.vending.INSTALL_REFERRER" />
-                    </intent-filter>
-                </receiver>
-
             </application>
 
         </manifest>
@@ -157,9 +150,6 @@
         - `example-alternate.app.link`
         - `key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Sw`
         - `key_test_hlxrWC5Zx16DkYmWu4AHiimdqugRYMr`
-
-    !!! warning "Google Play App Install Referrer API"
-        Branch can use the [Google Play App Install Referrer API](https://developer.android.com/google/play/installreferrer/library.html) to return the Install Referrer click timestamp and the install-begin timestamp. Please make sure you include the <notranslate>**Branch install referrer tracking (optional)**</notranslate> receiver in the AndroidManifest.xml file as per the above code sample.
 
     !!! warning "Single Task launch mode required"
         If there is no singleTask Activity instance in the system yet, a new one would be created and simply placed on top of the stack in the same Task. If you are using the Single Task mode as is, it should not restart your entire app. The Single Task mode instantiates the Main/Splash Activity only if it does not exist in the Activity Stack. If the Activity exists in the background, every subsequent intent to the Activity just brings it to the foreground. You can read more about Single Task mode [here](https://developer.android.com/guide/components/activities/tasks-and-back-stack.html#TaskLaunchModes).

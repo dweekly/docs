@@ -1,6 +1,6 @@
 ## Overview
 
-![Moloco](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/moloco-1528505765094.png)
+![Moloco](https://cdn.branch.io/branch-assets/ad-partner-manager//MOLOCO_Logo_Horizon-1557359671722.png)
 
 This guide will walk you through how to setup your campaigns with **[Moloco](http://molocoads.com/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
