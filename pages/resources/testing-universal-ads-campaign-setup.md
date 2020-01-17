@@ -6,8 +6,9 @@ Before testing, make sure of the following:
 *   [Default link behavior](https://docs.branch.io/links/default-link-behavior/) and attribution windows are configured.
 *   [Universal Ads Partners](https://docs.branch.io/deep-linked-ads/ad-networks-list/) are enabled.
 
+## 1. Add a Test Device
 
-## 1. Create a Branch Link
+## 2. Create a Branch Link
 
 Please follow the [Creating Ad Links](https://docs.branch.io/links/creating-ad-links/) instructions.
 
@@ -18,7 +19,7 @@ Your Branch Ad Link should look similar to the following (but will vary dependin
 `https://branchster.app.link/Y2E3bNSaCX?%243p=a_youappi&%24aaid=<ANDROID_ID>&%24idfa=<IDFA>&trackertoken=<trackertoken>&ya_reen_id=<ya_reen_id>&~campaign=<campaignname>&~campaign_id=<campaignid>&~click_id=<params>&~secondary_publisher=<publisherid>`
 
 
-## 2. Pass in Required Link Data via Macros
+## 3. Pass in Required Link Data via Macros
 
 As you are testing the link yourself - rather than it being used by your Ad Partner for a live campaign - you will need to manually pass in the relevant values for proper attribution and postbacks.
 
@@ -55,7 +56,7 @@ For a complete list of the macros that Branch supports in postbacks, please see 
 | Broken                       | S2S, specified both AAID & IDFA (means we can't figure out the OS)           | `https://branchster.app.link/Y2E3bNSaCX?%243p=a_youappi&%24aaid=38400000-8cf0-11bd-b23e-10b96e40000d&%24idfa=6D92078A-8246-4BA4-AE5B-76104861E7DC&trackertoken=%3Ctrackertoken%3E&ya_reen_id=%3Cya_reen_id%3E&~campaign=%3Ccampaignname%3E&~campaign_id=%3Ccampaignid%3E&~click_id=%3Cparams%3E&~secondary_publisher=%3Cpublisherid%3E&$s2s=true` |
 
 
-## 3. Perform a Click & Download App
+## 4. Perform a Click & Download App
 
 To test the Branch Ad Link and appropriate routing, email yourself the Ad link. On your device, open the email and click the link (or ad that embeds it). If you're testing on your office Wifi, we recommend turning Wifi off and using LTE/Cell to ensure we get a unique fingerprint of your device.
 
@@ -64,7 +65,7 @@ This click should redirect you through the Branch system to the appropriate app 
 Open the app so that Branch captures your device information and matches the install event with the click event.
 
 
-## 4. Check Liveview for Associated Actions
+## 5. Check Liveview for Associated Actions
 
 Liveview allows you to validate and debug your setup by including advanced filtering that allows you to restrict down to specific events (i.e. clicks, installs, purchases) as well as webhook/postback records.
 
