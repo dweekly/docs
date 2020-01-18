@@ -1,3 +1,6 @@
+---
+title: Facebook Platform Ads
+---
 ## Overview
 
 Branch links can be used together with a variety of Facebook ads, allowing you to track ad performance on the Branch dashboard and to deep link new users from ad-driven installs directly to content the first time they open your app.

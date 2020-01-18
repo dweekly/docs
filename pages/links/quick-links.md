@@ -1,3 +1,6 @@
+---
+title: Creating Quick Links
+---
 Creating quick links is really simple from the Quick Links section of the Branch dashboard. You will be able to create quick links on the fly and add custom redirections, analytics information, and social media tags. These links can be used in your social media channels, blog posts, influencer networks, etc.
 
 To start, from your Branch dashboard, click on the Create Link button on the top right of the dashboard.

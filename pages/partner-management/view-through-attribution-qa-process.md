@@ -1,3 +1,6 @@
+---
+title: View-through Attribution QA Process
+---
 ## Overview
 
 View-through attribution(VTA) allows you to track installs, session starts and conversion events back to an ad impression, even if the ad was never clicked on. It’s important to understand the difference between View-through attribution(VTA) and Click-through attribution(CTA):

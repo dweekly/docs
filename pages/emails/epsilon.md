@@ -1,3 +1,6 @@
+---
+title: Epsilon
+---
 ## Overview
 
 ![Epsilon](/_assets/img/pages/email/epsilon/epsilon.png)

@@ -1,3 +1,6 @@
+---
+title: Google 광고에 대한 전반적인 소개
+---
 !!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
 - **Google Ads 개요(현재 페이지)**
 - [연동 활성화하기](/deep-linked-ads/google-ads-enable/)

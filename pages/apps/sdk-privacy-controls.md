@@ -1,3 +1,6 @@
+---
+title: SDK Privacy Controls
+---
 ## Overview
 
 ### What

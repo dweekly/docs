@@ -1,3 +1,6 @@
+---
+title: Default Link Behavior Configuration
+---
 - ### Configure default behavior
 
     - Set the default behavior for your deep links on [Link Settings](https://dashboard.branch.io/link-settings)

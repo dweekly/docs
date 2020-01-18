@@ -1,3 +1,6 @@
+---
+title: Multiple Goal ID Support
+---
 ##Overview
 
 Branch provides the ability to send different postbacks for an in-app or pre-defined event depending on the multiple Goal IDs specified in the tracking link.

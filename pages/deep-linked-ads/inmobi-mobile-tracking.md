@@ -1,3 +1,6 @@
+---
+title: InMobi
+---
 ## Overview
 
 ![InMobi](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/inmobi-1528505589405.png)

@@ -1,3 +1,6 @@
+---
+title: Advanced Settings Configuration
+---
 - ### Change advanced settings
     - Go to [Link Settings](https://dashboard.branch.io/link-settings) on the Branch Dashboard
     - Set <notranslate>**Match type**</notranslate> to either `unique` or `normal` (default)

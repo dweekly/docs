@@ -1,3 +1,6 @@
+---
+title: Oracle Responsys
+---
 ## Overview
 
 ![Oracle Responsys](/_assets/img/pages/email/oracle-responsys/oracle-responsys.png)

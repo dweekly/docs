@@ -1,3 +1,6 @@
+---
+title: Cheetah Digital Marketing Suite
+---
 ## Overview
 
 ![Cheetah-Digital-Marketing-Suite](/_assets/img/pages/email/cheetah-digital-marketing-suite/cheetah-digital-marketing-suite.png)

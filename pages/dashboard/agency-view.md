@@ -1,3 +1,9 @@
+---
+title: Agency View
+---
+---
+title: Viewing Agency/Partner Settings
+---
 !!! warning "Invite Required"
 	For any Agency to access a customer Branch account, an invitation from an Admin user at the [Organization](/dashboard/organization-view/#adding-an-agency) or [App](/dashboard/app-view/#adding-an-agency) entity level of access is required. All Agency Admins on the agency account will receive an invitation email, and any of those Agency Admins can accept the invitation on behalf of their agency.
 

@@ -1,3 +1,6 @@
+---
+title: Emarsys
+---
 ## Overview
 
 ![Emarsys](https://cdn.branch.io/branch-assets/email-providers/386574786681131050/emarsys-1537315326046.png)

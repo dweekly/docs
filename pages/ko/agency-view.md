@@ -1,3 +1,6 @@
+---
+title: 에이전시 보기 관련
+---
 !!! warning "경고 초대 필요"
 	에이전시가 Branch 계정에 액세스하려면 [조직](/dashboard/organization-view/#adding-an-agency) 또는 [앱](/dashboard/app-view/#adding-an-agency) 엔터티 수준의 액세스 권한을 보유한 관리자로부터 초대를 받아야 합니다.
 

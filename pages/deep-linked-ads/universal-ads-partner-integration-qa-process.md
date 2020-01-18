@@ -1,3 +1,6 @@
+---
+title: Universal Ads Partner Integration QA Process
+---
 An essential part of the Universal Ad Partners verification process is to confirm that the integration works as expected and we deliver the best user experience. This enables Branch to guarantee the highest quality of Ad Partnership integrations and verify data accuracy.
 
 Once we've provided you with the Click/Impression Tracking URLs via email, please follow the steps below so we can verify that postback URLs are coming through correctly on your end.

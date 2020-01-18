@@ -1,3 +1,6 @@
+---
+title: View Billing Information
+---
 ## How do trials work?
 
 What’s great about Branch is all products come with a 14-Day Trial. We want our customers to be successful while using Branch products and this trial period allows setup and testing of the product(s) free of charge. For example, if you sign up on the 1st of the month, paid usage will not begin accruing until your trial period is over, 14 days later.

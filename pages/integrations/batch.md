@@ -1,3 +1,6 @@
+---
+title: Batch
+---
 ## Overview
 
 ![Batch](https://cdn.branch.io/branch-assets/ad-partner-manager//batch-1563920130951.png)

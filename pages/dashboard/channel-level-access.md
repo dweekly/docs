@@ -1,3 +1,6 @@
+---
+title: Channel Level Access
+---
 The <notranslate>"Channel"</notranslate> level of a Branch account is the fourth level of access and includes access (either edit or read-only) to the following functionality:
 
 <table>

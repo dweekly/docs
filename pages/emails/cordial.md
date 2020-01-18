@@ -1,3 +1,6 @@
+---
+title: Cordial
+---
 ## Overview
 
 ![Cordial](https://cdn.branch.io/branch-assets/email-providers//cordial-1559944328558.png)

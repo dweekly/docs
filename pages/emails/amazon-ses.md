@@ -1,3 +1,6 @@
+---
+title: Amazon Simple Email Service
+---
 ## Overview
 
 ![Amazon-SES](/_assets/img/pages/email/amazon-ses/amazon-ses.png)

@@ -1,3 +1,6 @@
+---
+title: Re-engagement Attribution Logic & Settings
+---
 ## Overview
 
 We think about event attribution and re-engagement as different but linked concepts. When we connect an install or event to a click or impression, we refer to this as attribution. Accordingly, we have various attribution windows that define the allowable length of time between a click or impression to install or event. If an install or event occurs outside of the set attribution window, then attribution is not performed. When we attribute an event, we update the corresponding ad click or impression as having been used for attribution.

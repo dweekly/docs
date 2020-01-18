@@ -1,3 +1,6 @@
+---
+title: Creating Branch Links For Product Feeds
+---
 ## Overview
 
 A product feed or catalog is essentially an inventory of all your products and contain information like images, prices, descriptions and more. These attributes are used to define each one of your products in a unique way. Your product feed or catalog should reflect your business type, consisting of different attributes that are specific to your products.

@@ -1,3 +1,6 @@
+---
+title: Hootsuite
+---
 ## Overview
 
 ![Hootsuite](https://cdn.branch.io/branch-assets/email-providers/386574786681131050/hootsuite-horizontal-black-registered-1540233532971.png)

@@ -1,4 +1,7 @@
 ---
+title: iMessage Apps
+---
+---
 title: Marketing your iOS 10 iMessage app
 description: A quick guide on how to configure your Branch links to track installs and deep link your iOS 10 iMessage app.
 path: tree/master/src/app-to-app

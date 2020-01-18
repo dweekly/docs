@@ -1,3 +1,6 @@
+---
+title: Fraud Analytics
+---
 ## Overview
 
 !!! warning "Viewing Fraud Data Permissions"

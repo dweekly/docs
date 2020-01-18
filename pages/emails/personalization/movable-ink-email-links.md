@@ -1,3 +1,6 @@
+---
+title: Movable Ink - Email
+---
 ## Overview
 
 This guide will walk you through how to setup your email campaigns with **[Movable Ink](https://movableink.com)** using Branch Universal Email to automatically convert your email links into **multi-platform deep links**.

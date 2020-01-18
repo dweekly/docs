@@ -1,3 +1,6 @@
+---
+title: Oracle Bronto
+---
 ## Overview
 
 ![Oracle-Bronto](/_assets/img/pages/email/oracle-bronto/oracle-bronto.png)

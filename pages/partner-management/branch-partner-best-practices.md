@@ -1,3 +1,6 @@
+---
+title: Branch Partner Best Practices
+---
 Universal Ads integrated ad partners (i.e. ad networks and affiliate networks) are encouraged to follow the below best practices to optimize measurement of mobile ad campaign effectiveness.
 
 ## Pre-Launch

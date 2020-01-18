@@ -1,3 +1,6 @@
+---
+title: Google Marketing Platform
+---
 ## Overview
 
 ![Google Marketing Platform](https://cdn.branch.io/branch-assets/ad-partner-manager//gmp-logo-1557768658464.png)

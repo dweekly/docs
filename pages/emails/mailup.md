@@ -1,3 +1,6 @@
+---
+title: Mailup
+---
 ## Overview
 
 ![MailUp](https://cdn.branch.io/branch-assets/email-providers/386574786681131050/mailup-1536710113288.png)

@@ -1,3 +1,6 @@
+---
+title: IBM Watson Campaign Automation
+---
 ## Overview
 
 ![IBM-Watson-Campaign-Automation](/_assets/img/pages/email/ibm-watson-campaign-automation/ibm-watson-campaign-automation.png)

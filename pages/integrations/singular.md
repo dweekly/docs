@@ -1,3 +1,6 @@
+---
+title: Singular
+---
 ## Overview
 
 ![Singular](https://dashboard.branch.io/static/images/partners/partner_12.png)

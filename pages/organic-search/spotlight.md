@@ -1,3 +1,6 @@
+---
+title: Spotlight Search
+---
 ## Overview
 
 Listing your app content on Apple's new Spotlight search with Branch is easy. Note that this guide will list on both _cloud search_ and _local spotlight search_.

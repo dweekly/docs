@@ -1,3 +1,6 @@
+---
+title: Partnerize
+---
 ## Overview
 
 ![Partnerize](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/logo-1535766590358.png)

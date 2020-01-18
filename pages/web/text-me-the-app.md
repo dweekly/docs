@@ -1,3 +1,6 @@
+---
+title: Text Me the App
+---
 ## Overview
 
 When users click your links on desktop, they have the option to text themselves a link to download your app. We provide this by default on every Branch link, but you can also create your own fully-branded Text Me The App page.

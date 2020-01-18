@@ -1,3 +1,6 @@
+---
+title: Android App Links 가이드
+---
 ## 개요
 
 Branch 항상 딥링크 링크 관련 기술을 향상시켜오면서 Android App Link 를 고객사가 아주 쉽게 도입할 수 있게 하고 있습니다. Branch 의 Android App Links 는 온전한 attribution(귀속매칭)을 지원하고 Android App Link가 실패한 edge cases 에서 대안을 제공하며 앱 미설치자가 링크 클릭 및 앱 설치후 최초 실행했을 때 지정한 페이지로 딥링크 하는 것도 지원하고 있습니다. Android App Link 는 오직 Android 6+ 에서만 작동합니다. 하지만 Branch 에서 모든 기타 Edge cases 를 지원할 것이기 때문에 근심하실 필요는 없습니다.

@@ -1,3 +1,6 @@
+---
+title: Iterable v2
+---
 ## Overview
 
 ![Iterable](/_assets/img/pages/email/iterable/iterable.png)

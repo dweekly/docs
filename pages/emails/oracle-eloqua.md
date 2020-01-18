@@ -1,3 +1,6 @@
+---
+title: Oracle Eloqua
+---
 ## Overview
 
 ![Oracle-Eloqua](/_assets/img/pages/email/oracle-eloqua/oracle-eloqua.png)

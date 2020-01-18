@@ -1,3 +1,6 @@
+---
+title: Kahuna
+---
 ## Overview
 
 ![Kahuna](/_assets/img/pages/email/kahuna/kahuna.png)

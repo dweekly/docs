@@ -1,3 +1,6 @@
+---
+title: Configuring Events for Self-Attributing Networks
+---
 !!! info "BETA ACCESS ONLY"
 	The ability to configure event mappings for Self Attributing Networks is currently in BETA.  
 

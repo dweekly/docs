@@ -1,3 +1,6 @@
+---
+title: Handling Data Subject Requests From End Users
+---
 ## Handling Data Subject Requests from End Users
 
 This documentation contains information on the procedure for submitting data subject requests to Branch for your end users, to support you in your compliance efforts with applicable data protection laws like GDPR. When your end users exercise their rights under applicable data protection laws, Branch is committed to working with you to fulfill these requests, provided the request comes directly from you. The purpose of this document is to outline the process in which you & Branch will coordinate to facilitate data subject requests for your end users.

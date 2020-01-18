@@ -1,3 +1,6 @@
+---
+title: Kochava
+---
 ## Overview
 
 The Kochava integration sends **all clicks on a Branch link** from Branch to Kochava, for the enabled platform. Now you can see your valuable Branch attribution data in your Kochava dashboard.

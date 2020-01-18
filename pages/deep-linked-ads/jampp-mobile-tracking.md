@@ -1,3 +1,6 @@
+---
+title: Jampp
+---
 ## Overview
 
 ![Jampp](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/jampp-1528308771519.png)

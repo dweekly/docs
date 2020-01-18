@@ -1,3 +1,6 @@
+---
+title: SendGrid
+---
 ## Overview
 
 ![SendGrid](/_assets/img/pages/email/sendgrid/sendgrid.png)

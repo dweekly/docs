@@ -1,4 +1,7 @@
 ---
+title: Export API Migration Guide
+---
+---
 title: Field-by-field guide for migrating from legacy Export API (old)
 ---
 

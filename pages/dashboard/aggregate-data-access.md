@@ -1,3 +1,6 @@
+---
+title: Aggregate Data
+---
 The <notranslate>"Aggregate Data"</notranslate> level of a Branch account is the sixth and most basic level of access and includes access (either view or no access) to the following functionality:
 
 <table>

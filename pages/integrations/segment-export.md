@@ -1,3 +1,6 @@
+---
+title: Segment (export)
+---
 ## Overview
 
 With a push of a button you can send your Branch data to your Segment dashboard, helping you to understand the power of Branch as an acquisition pathway, export your data to your entire suite of analytics tools and build custom audiences upon Branch data.

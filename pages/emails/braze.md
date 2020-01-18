@@ -1,3 +1,6 @@
+---
+title: Braze
+---
 ## Overview
 
 ![Braze](/_assets/img/pages/email/braze/braze.png)

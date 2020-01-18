@@ -1,3 +1,6 @@
+---
+title: Agency/Partner Invitation Process
+---
 !!! warning "Invite Required"
 	For any Agency/Partner to access a customer Branch account, an invitation from an Admin user at the [Organization](/dashboard/organization-view/#adding-an-agency) or [App](/dashboard/app-view/#adding-an-agency) entity level of access is required. All Agency/Partner Admins on the account will receive an invitation email, and any of those Agency/Partner Admins can accept the invitation on behalf of their agency/partner.
 

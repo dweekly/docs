@@ -1,3 +1,6 @@
+---
+title: Apple Search Ads
+---
 ## Overview
 
 ![Apple Search Ads](/_assets/img/pages/deep-linked-ads/apple-search/search-ads-reduced-logo.png)

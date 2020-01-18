@@ -1,3 +1,6 @@
+---
+title: Appsflyer
+---
 ## Overview
 With a push of a button you can send your Branch install data and attributions to your AppsFlyer dashboard, helping you understand the power of Branch as an acquisition pathway.
 

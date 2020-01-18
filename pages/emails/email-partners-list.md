@@ -1,3 +1,9 @@
+---
+title: Email Partners List
+---
+---
+title: Universal Email Partners
+---
 Interested in becoming a Email Partner? Just fill out this form: **[Partner's Profile](https://branch.app.link/tech-partner-signup){:target="\_blank"}**
 
 Logo | Partner

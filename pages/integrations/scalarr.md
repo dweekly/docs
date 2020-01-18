@@ -1,3 +1,6 @@
+---
+title: Scalarr
+---
 ## Overview
 
 ![Scalarr](https://cdn.branch.io/branch-assets/ad-partner-manager//sc-1559415883554.png)

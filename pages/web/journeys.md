@@ -1,3 +1,6 @@
+---
+title: Journeys App Banners
+---
 ## Overview
 
 On a daily basis, Google Search drives **more app installs** than all of Facebook's paid install products combined. Converting your mobile web visitors into native app users is one of the most effective acquisition channels available, and Branch's Journeys App Banners platform makes this easy.

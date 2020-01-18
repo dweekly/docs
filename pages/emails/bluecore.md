@@ -1,3 +1,6 @@
+---
+title: Bluecore
+---
 ## Overview
 
 ![Bluecore](https://cdn.branch.io/branch-assets/email-providers//bluecore-logo-blue-horizontal-1561137049672.png)

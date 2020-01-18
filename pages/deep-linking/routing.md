@@ -1,3 +1,6 @@
+---
+title: In-app deep link routing
+---
 ## Overview
 
 When a Branch link is opened, either your app launches or users are taken to the App/Play store to download it. Deep links improve this process by routing users directly to specific content after your app launches. With Branch, this still works even if users have to stop and download the app first (a.k.a., "deferred deep links").
@@ -390,7 +393,9 @@ protected void onResume() {
         try {
             String autoDeeplinkedValue = Branch.getInstance().getLatestReferringParams().getString("product_picture");
             launch_mode_txt.setText("Launched by Branch on auto deep linking!"
-                    + "\n\n" + autoDeeplinkedValue);
+                    + "
+
+" + autoDeeplinkedValue);
         } catch (JSONException e) {
             e.printStackTrace();
         }

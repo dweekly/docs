@@ -1,3 +1,6 @@
+---
+title: Snap
+---
 ## Overview
 
 ![Snap](https://cdn.branch.io/branch-assets/ad-partner-manager/104632553691939011/Group_2-1538714318018.png)

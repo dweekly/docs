@@ -1,3 +1,6 @@
+---
+title: Machine Advertising
+---
 ## Overview
 
 ![Machine Advertising](https://cdn.branch.io/branch-assets/ad-partner-manager//c6ee7790611f-Machine_Logo_Black-1569986723163.png)
