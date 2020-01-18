@@ -1,3 +1,6 @@
+---
+title: iCubes Pro
+---
 ## Overview
 
 ![iCubes Pro](https://cdn.branch.io/branch-assets/email-providers/388787843096400122/icubespro-1538185683767.png)

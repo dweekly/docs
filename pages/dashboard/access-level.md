@@ -1,3 +1,6 @@
+---
+title: Overview
+---
 In order to ensure that teams have granular control over which parts of the Branch dashboard their team members can and cannot access, Branch provides a robust dashboard access control system.
 
 This system allows account administrators to set and modify access levels for other members, and thus to control what those users can view, edit, and export when using the dashboard.

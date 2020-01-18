@@ -1,3 +1,6 @@
+---
+title: PostUp
+---
 ## Overview
 
 ![PostUp](/_assets/img/pages/email/postup/postup.png)

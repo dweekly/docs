@@ -1,3 +1,6 @@
+---
+title: Google Play
+---
 ## Submitting to the Play Store
 
 If you'd like Branch to collect the [Google Advertising ID](https://support.google.com/googleplay/android-developer/answer/6048248) for advertising or tracking purposes instead of the Android ID, you must add Google Play Services to your app prior to release. After you complete these steps, Branch will handle the rest!

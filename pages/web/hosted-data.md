@@ -1,3 +1,6 @@
+---
+title: Hosted Deep Link Data
+---
 ## Why
 
 - Make it easier for your marketers to create deep links whenever they create [Journeys](/web/journeys/), [Universal Emails](/emails/braze/), [Quick links](/dashboard/analytics/#quick-links), or use the [Chrome Extension](https://chrome.google.com/webstore/detail/branch-link-creator/pekdpppibljpmpbcjelehhnldnfbglgf).

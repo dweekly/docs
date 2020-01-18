@@ -1,3 +1,6 @@
+---
+title: Sender
+---
 ## Overview
 
 ![Sender](/_assets/img/pages/email/sender/sender.png)

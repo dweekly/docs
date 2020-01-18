@@ -1,3 +1,6 @@
+---
+title: Push notifications
+---
 ## Overview
 
   - Push notifications are a great way to engage your existing app users. The Branch platform does not actually send push notifications, but you can add Branch links to your push notifications to get the benefit of deep linking and attribution.

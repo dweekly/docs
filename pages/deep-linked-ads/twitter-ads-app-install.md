@@ -1,3 +1,6 @@
+---
+title: Twitter Ads
+---
 title: Twitter Ads App Install Measurement
 
 ![image](/_assets/img/pages/deep-linked-ads/twitter-ads/twitter-ads-logo.png)

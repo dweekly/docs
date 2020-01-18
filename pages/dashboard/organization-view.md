@@ -1,3 +1,6 @@
+---
+title: Organization View
+---
 The <notranslate>"Organization"</notranslate> view of a Branch account is an additional level of entity access and is intended for Branch accounts with a portfolio of distinctly managed apps tied to a single organizational entity. Organization view allows companies to manage separate teams associated with their distinct apps and maintain autonomy. Organization team members can switch between the Organization view and the App view at any time.
 
 !!! info "INFO"

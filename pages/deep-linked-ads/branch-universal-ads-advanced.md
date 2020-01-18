@@ -1,3 +1,6 @@
+---
+title: Universal Ads Advanced
+---
 !!! warning "Universal Ads Basics Guide"
 	Please refer to our [Universal Ads Basics](/deep-linked-ads/branch-universal-ads-mobile-tracking/) guide before using any the advanced options below.
 

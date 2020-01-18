@@ -1,3 +1,6 @@
+---
+title: Sensitive Data
+---
 The <notranslate>"Sensitive Data"</notranslate> level of a Branch account is the fifth level of access and includes access (either view or no access) to the following functionality:
 
 <table>

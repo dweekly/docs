@@ -1,3 +1,6 @@
+---
+title: Importing Historical User Data
+---
 Any time the Branch SDK sees a user we've never seen before, Branch logs a new install record for that user. While perfect for new apps being introduced to the app stores, this presents a problem for existing apps in the app store, but new to Branch.
 
 If your app already has an established user base before you implement the Branch SDK, you will encounter issues with false positives (new installs) that are actually not new to your app, only new to Branch.

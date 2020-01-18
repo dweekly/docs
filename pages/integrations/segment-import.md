@@ -1,3 +1,6 @@
+---
+title: Segment (import)
+---
 ## Overview
 
 Sending events from Segment to Branch will allow you to attribute downstream conversions like purchases across web and app to Branch link clicks. Events imported from Segment to Branch will be available wherever you can normally use events within Branch, including dashboard visualizations, Data Feeds, Universal Ads postbacks, Journeys targeting, Liveview and more.

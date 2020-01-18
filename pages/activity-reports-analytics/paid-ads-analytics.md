@@ -1,3 +1,6 @@
+---
+title: Paid Ads Analytics
+---
 The Branch Universal Ads Analytics Dashboard is made up of two main sections, the high-level graph at the top of the page, and the more granular table breakdown below. Each view lets you filter and compare various different in-app and web events by a set of analytics parameters associated with your Branch ad links. Whenever you create a Branch ad link, you'll include a campaign, channel, and a set of tags (and Branch will automatically include a feature and ad partner). These can then be used to filter resulting events in either view.
 
 ## Top Menu

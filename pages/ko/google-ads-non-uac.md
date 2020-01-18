@@ -1,3 +1,6 @@
+---
+title: 웹 기반 광고(비 UAC)
+---
 !!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
 - [Google Ads 개요](/deep-linked-ads/google-ads-overview/)
 - [연동 활성화](/deep-linked-ads/google-ads-enable/)

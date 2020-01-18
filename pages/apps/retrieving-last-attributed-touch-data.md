@@ -1,3 +1,6 @@
+---
+title: Retrieving Branch's Last Attributed Touch Data
+---
 ## Overview
 
 Branch includes SDK methods to allow retrieval of our last attributed touch data (LATD) from the client. This results in an asynchronous call being made to Branch’s servers with LATD data returned when possible.

@@ -1,3 +1,6 @@
+---
+title: Movable Ink - In-App Messages
+---
 ## Overview
 
 This guide will walk you through how to setup your personalized campaigns with **[Movable Ink](https://movableink.com)** using Branch to automatically convert your links into **multi-platform deep links**

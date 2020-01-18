@@ -1,3 +1,6 @@
+---
+title: Selligent Marketing Cloud
+---
 ## Overview
 
 ![Selligent Marketing Cloud](https://cdn.branch.io/branch-assets/email-providers//ezgif.com-webp-to-png-1568168019129.png)

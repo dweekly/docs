@@ -1,3 +1,6 @@
+---
+title: Adding Custom Partners
+---
 ## Overview
 
 If you’re running an internal campaign or working with a new partner that does not have an official integration, then you can manually set up the partner in Branch. Plus, first time Branch users can find it helpful to create an custom test partner for the purposes of implementing the SDK or testing attribution initially.

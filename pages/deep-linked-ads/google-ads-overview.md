@@ -1,3 +1,6 @@
+---
+title: Google Ads Overview
+---
 !!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads Resources"
 		- **Overview (this page)**
 		- [Enabling the Integration](/deep-linked-ads/google-ads-setup/)

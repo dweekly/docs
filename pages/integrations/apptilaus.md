@@ -1,3 +1,6 @@
+---
+title: Apptilaus - Subscription Analytics
+---
 ## Overview
 
 ![Apptilaus - Subscription Analytics](https://cdn.branch.io/branch-assets/ad-partner-manager//apptilaus_logo-1562023417593.png)

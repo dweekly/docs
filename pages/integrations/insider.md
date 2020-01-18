@@ -1,3 +1,6 @@
+---
+title: Insider
+---
 ## Overview
 
 ![Insider](https://cdn.branch.io/branch-assets/ad-partner-manager//insider_logo_2x-1561003202055.png)

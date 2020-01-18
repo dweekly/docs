@@ -1,3 +1,6 @@
+---
+title: Mandrill
+---
 ## Overview
 
 ![Mandrill](/_assets/img/pages/email/mandrill/mandrill.png)

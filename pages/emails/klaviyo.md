@@ -1,3 +1,6 @@
+---
+title: Klaviyo
+---
 ## Overview
 
 ![Klaviyo](/_assets/img/pages/email/klaviyo/klaviyo.png)

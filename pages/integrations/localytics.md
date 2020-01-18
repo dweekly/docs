@@ -1,3 +1,6 @@
+---
+title: Localytics
+---
 ## Overview
 
 We've partnered with Localytics to provide an easy way to deliver Branch installs and attributions to your Localytics dashboard. This is great for segmenting your users and providing higher granularity for your organic cohorts vs paid cohorts.

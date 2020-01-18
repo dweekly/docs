@@ -1,3 +1,6 @@
+---
+title: Digital Turbine
+---
 ## Overview
 
 ![Digital-Turbine](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/digital_turbine-1528502999872.png)

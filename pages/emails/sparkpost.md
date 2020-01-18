@@ -1,3 +1,6 @@
+---
+title: SparkPost
+---
 ## Overview
 
 ![Sparkpost](/_assets/img/pages/email/sparkpost/sparkpost.png)

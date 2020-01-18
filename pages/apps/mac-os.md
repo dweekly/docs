@@ -1,3 +1,6 @@
+---
+title: Mac OS SDK
+---
 ## Overview
 
 A Branch link is a web URL that looks like `https://your-app.app.link/bOsE0bbUtO`. When this link

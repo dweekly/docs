@@ -1,3 +1,6 @@
+---
+title: Vero
+---
 ## Overview
 
 ![Vero](/_assets/img/pages/email/vero/vero.png)

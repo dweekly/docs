@@ -1,3 +1,6 @@
+---
+title: SearchAdsHQ
+---
 ## Overview
 
 ![SearchAdsHQ](https://cdn.branch.io/branch-assets/ad-partner-manager//1479b0002dff-18A02F13_B1DF_40A9_B097_D7421ED91A0B-1559413705882.png)

@@ -1,3 +1,6 @@
+---
+title: Granting Access to Your Branch Account
+---
 
 If you are an Organization Admin, you have full edit access to all of the Account Settings mentioned above including the ability to add an Agency/Partner to your Branch account.
 

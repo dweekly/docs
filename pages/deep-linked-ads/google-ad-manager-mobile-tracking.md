@@ -1,3 +1,6 @@
+---
+title: Google Ad Manager
+---
 ## Overview
 
 [Google Ad Manager](https://www.blog.google/technology/ads/new-advertising-brands/) is a comprehensive hosted ad serving platform that streamlines your ad management, whether you deliver ads to websites, mobile webpages, mobile apps, games, or a combination. Ad Manager offers a complete toolkit to manage your ads for a multi-screen audience, including:

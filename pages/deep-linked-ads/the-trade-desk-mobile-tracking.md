@@ -1,3 +1,6 @@
+---
+title: The Trade Desk
+---
 ## Overview
 
 ![The-Trade-Desk](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/TTD-Logo-1528510078241.png)

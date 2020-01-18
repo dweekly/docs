@@ -1,3 +1,6 @@
+---
+title: Creating Ad Links
+---
 ## Overview
 
 A Branch link is the vehicle that ensures seamless user experiences while also providing you with full attribution and analytics across email, referrals, paid advertising, social, organic search, and desktop to mobile.

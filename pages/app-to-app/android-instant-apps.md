@@ -1,3 +1,6 @@
+---
+title: Android Instant Apps
+---
 ## Overview
 
 At the 2017 Google IO, Google launched the public version of Instant Apps for developers to adopt and build on. Instant Apps are a way to load a partial section (or `split` as Google refers to them), without the user having to visit the Play Store and install your app. In effect, it's instant access to your native app. If you have been using a website as a fallback when your full Android app is not installed, an Instant App is an alternative. You'll have to choose between mobile web and your Instant App on Android so make sure you plan out your integration!

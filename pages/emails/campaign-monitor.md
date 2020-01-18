@@ -1,3 +1,6 @@
+---
+title: Campaign Monitor
+---
 ## Overview
 
 ![Campaign-Monitor](/_assets/img/pages/email/campaign-monitor/campaign-monitor.png)

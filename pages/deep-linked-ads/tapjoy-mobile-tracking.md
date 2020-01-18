@@ -1,3 +1,6 @@
+---
+title: Tapjoy
+---
 ## Overview
 
 ![Tapjoy](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/tapjoy-logo-1524796724959.png)

@@ -1,3 +1,6 @@
+---
+title: Query API
+---
 ## Overview
 
 The Query API is an HTTP API that can be used for programmatically querying pre-aggregated analytics. It can be used to fetch the same data displayed in your Branch dashboard, without having to access the Dashboard itself.

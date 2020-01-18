@@ -1,3 +1,6 @@
+---
+title: Logging Branch Events Using Google Tag Manager
+---
 ## Overview
 
 **Use case**: Log Branch Events using Google Tag Manager (GTM), Firebase and Branch libraries. This is done using GTM custom functions.

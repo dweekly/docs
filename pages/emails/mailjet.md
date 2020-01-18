@@ -1,3 +1,6 @@
+---
+title: Mailjet
+---
 ## Overview
 
 ![Mailjet](/_assets/img/pages/email/mailjet/mailjet.png)

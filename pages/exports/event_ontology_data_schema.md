@@ -1,3 +1,6 @@
+---
+title: Event Ontology
+---
 # Event Ontology Data Schema
 
 ## Overview

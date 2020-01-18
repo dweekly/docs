@@ -1,3 +1,6 @@
+---
+title: Vungle
+---
 ## Overview
 
 ![Vungle](https://cdn.branch.io/branch-assets/ad-partner-manager//Vungle_Logo-1553294434257.png)

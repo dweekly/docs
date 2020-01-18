@@ -1,3 +1,6 @@
+---
+title: Export Access
+---
 ## Overview
 
 The <notranslate>"Export"</notranslate> level of access applies specifically to the [Sensitive Data](/dashboard/sensitive-data-access/) level of access and allows users to export sensitive data from pages they've been given view access to.

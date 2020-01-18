@@ -1,3 +1,6 @@
+---
+title: Mixpanel
+---
 ## Overview
 
 With a push of a button you can send your Branch data to your Mixpanel dashboard, helping you understand the power of Branch as an acquisition pathway.

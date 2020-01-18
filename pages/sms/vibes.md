@@ -1,3 +1,6 @@
+---
+title: Vibes
+---
 ## Overview
 
 ![Vibes](https://cdn.branch.io/branch-assets/email-providers/386574786681131050/vibes_logo_2013_0-1542389626273.png)

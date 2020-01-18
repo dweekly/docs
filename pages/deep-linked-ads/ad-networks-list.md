@@ -1,3 +1,9 @@
+---
+title: Ad Partners List
+---
+---
+title: Universal Ad Partners
+---
 Interested in becoming a Universal Ads Partner? Just fill out this form: **[Partner's Profile](https://branch.app.link/tech-partner-signup){:target="\_blank"}**
 
 **Partner Website** | **Branch Integration Guide**

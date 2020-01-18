@@ -1,3 +1,6 @@
+---
+title: Manage
+---
 ## Overview
 
 ![Manage](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/manage_owler_20160228_060330_original-1528505646105.png)

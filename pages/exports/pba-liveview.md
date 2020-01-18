@@ -1,3 +1,6 @@
+---
+title: Liveview
+---
 # Liveview
 
 In Q2 2018, Branch released an overhaul of its liveview, which should make debugging even easier. It includes advanced filtering that allows you to restrict down to specific event names (e.g. PURCHASE) and even individual devices (e.g. IDFA).

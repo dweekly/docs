@@ -1,3 +1,6 @@
+---
+title: Apple App Store
+---
 ## Submitting to the App Store
 
 After integrating the Branch SDK, you need to let Apple know that you use the IDFA. To follow proper protocol when submitting your next release to the App Store, you should:

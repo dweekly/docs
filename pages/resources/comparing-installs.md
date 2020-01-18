@@ -1,3 +1,6 @@
+---
+title: Comparing Installs to Apple iTunes and Google Play
+---
 ## iTunes Connect Reports
 
 ### Timezones

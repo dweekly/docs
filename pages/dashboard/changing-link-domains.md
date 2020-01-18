@@ -1,3 +1,6 @@
+---
+title: Changing Link Domains
+---
 - ### Change link domain
     - Go to [Link Settings](https://dashboard.branch.io/link-settings) on the Branch Dashboard
 
