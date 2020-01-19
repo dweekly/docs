@@ -300,8 +300,7 @@ title: Xamarin
                     void LogMessage(string message)
                     {
                         Console.WriteLine(message);
-                        logString += DateTime.Now.ToLongTimeString() + "> " + message + "
-";
+                        logString += DateTime.Now.ToLongTimeString() + "> " + message + "\n";
                     }
 
                     #endregion
@@ -350,8 +349,7 @@ title: Xamarin
                     void LogMessage(string message)
                     {
                         Console.WriteLine(message);
-                        logString += DateTime.Now.ToLongTimeString() + "> " + message + "
-";
+                        logString += DateTime.Now.ToLongTimeString() + "> " + message + "\n";
                     }
 
                     #endregion
