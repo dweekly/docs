@@ -1,7 +1,6 @@
 ---
 title: Branch 연동 가이드 - iOS
 ---
-
 !!! warning "iOS 11.2+ 에서 Universal Link의 액션이 일치하지 않은 이슈에 대한 설명"
     일반적으로 Universal Link 가 정상적으로 작동하려면 사용자가 앱을 설치한 이후 iOS에서 해당 앱의 AASA 파일을 다운로드합니다. 하지만 iOS 11.2+ 로 업데이트되면서 Branch 에서는 AASA 파일이 사용자의 디바이스에 확실하게 다운로드되지 않을 때가 있는 것을 발견했습니다. 그 결과로, iOS 11.2+ 에서 Universal Link 를 클릭할 때 항상 앱이 실행되는 것은 아닙니다. 그러므로 광고주께서는 Branch 링크 생성 때 forced uri redirect mode 를 설정하여 URI 스키마로 앱을 실행할 수 있습니다. 해당 이슈에 대한 상세내용은 Apple Bug report 를 참고하기 바랍니다.
 
@@ -889,8 +888,7 @@ title: Branch 연동 가이드 - iOS
 
         ```swift
         lp.addControlParam("$email_subject", withValue: "Your Awesome Deal")
-        lp.addControlParam("$email_html_header", withValue: "<style>your awesome CSS</style>
-Or Dear Friend,")
+        lp.addControlParam("$email_html_header", withValue: "<style>your awesome CSS</style>\nOr Dear Friend,")
         lp.addControlParam("$email_html_footer", withValue: "Thanks!")
         lp.addControlParam("$email_html_link_text", withValue: "Tap here")
         ```
@@ -899,8 +897,7 @@ Or Dear Friend,")
 
         ```objc
         [lp addControlParam:@"$email_subject" withValue:@"This one weird trick."];
-        [lp addControlParam:@"$email_html_header" withValue:@"<style>your awesome CSS</style>
-Or Dear Friend,"];
+        [lp addControlParam:@"$email_html_header" withValue:@"<style>your awesome CSS</style>\nOr Dear Friend,"];
         [lp addControlParam:@"$email_html_footer" withValue:@"Thanks!"];
         [lp addControlParam:@"$email_html_link_text" withValue:@"Tap here"];
         ```

@@ -393,9 +393,7 @@ protected void onResume() {
         try {
             String autoDeeplinkedValue = Branch.getInstance().getLatestReferringParams().getString("product_picture");
             launch_mode_txt.setText("Launched by Branch on auto deep linking!"
-                    + "
-
-" + autoDeeplinkedValue);
+                    + "\n\n" + autoDeeplinkedValue);
         } catch (JSONException e) {
             e.printStackTrace();
         }
