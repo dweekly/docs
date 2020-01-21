@@ -1,7 +1,4 @@
 ---
-title: Data Integrations
----
----
 title: Data Integration Partners List
 ---
 Data Integrations provide an easy way to automatically send Branch data to your other analytics services and marketing tools using pre-formatted webhooks. For most integrations, configuration just requires you to input your credentials and hit “Enable”.
