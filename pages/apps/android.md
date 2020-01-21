@@ -207,8 +207,8 @@ title: Android SDK
                 // activity will skip onStart, handle this case with reInitSession
                 Branch.getInstance().reInitSession(this, branchReferralInitListener);
             }
-            private Branch.BranchUniversalReferralInitListener branchReferralInitListener =
-                    new Branch.BranchUniversalReferralInitListener() {
+            private Branch.BranchReferralInitListener branchReferralInitListener =
+                    new Branch.BranchReferralInitListener() {
                         @Override public void onInitFinished(BranchUniversalObject branchUniversalObject,
                                                              LinkProperties linkProperties, BranchError branchError) {
                             // do something with branchUniversalObject/linkProperties..
