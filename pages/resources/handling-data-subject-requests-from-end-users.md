@@ -14,7 +14,7 @@ This documentation contains information on the procedure for submitting data sub
 	4. <notranslate>**user_id**</notranslate> - an ID set by you. This is a way for you to identify your users using your own naming convention (e.g. unique alphanumeric ID, etc.)
 
 2. **Submit  the batched request through our Data Subject Request Portal:**
-	1. Visit the following page and fill out the online form: [https://gdpr.branch.io/hc/en-us/requests/new](https://gdpr.branch.io/hc/en-us/requests/new). 
+	1. Visit the following page and fill out the online form: [https://privacy.branch.io/hc/en-us/requests/new](https://privacy.branch.io/hc/en-us/requests/new). 
 	2. <notranslate>**Required Fields:**</notranslate>
 	    1. <notranslate>**Email Address**</notranslate>: your email address
 	    2. <notranslate>**Requestor**</notranslate>: Select “Someone else’s behalf”
@@ -42,7 +42,7 @@ If it is the first time Branch has received a data subject request from you, we 
     3. <notranslate>**browser_id**</notranslate> - also known as browser_fingerprint_id, which is a unique ID created by Branch to identify a specific browser
     4. <notranslate>**user_id**</notranslate> - an ID set by you. This is a way for you to identify your users using your own naming convention (e.g. unique alphanumeric ID, etc)
 2. <notranslate>**Submit a Request through our Data Subject Request Portal:**</notranslate>
-    1. Visit the following page and fill out the form: [https://gdpr.branch.io/hc/en-us/requests/new](https://gdpr.branch.io/hc/en-us/requests/new). 
+    1. Visit the following page and fill out the form: [https://privacy.branch.io/hc/en-us/requests/new](https://privacy.branch.io/hc/en-us/requests/new). 
     2. <notranslate>**Required Fields:**</notranslate>
         1. <notranslate>**Email Address**</notranslate>: your email address/alias
         2. <notranslate>**Requestor**</notranslate> Select “Someone else’s behalf”
