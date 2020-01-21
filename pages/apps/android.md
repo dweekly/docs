@@ -1179,37 +1179,6 @@ title: Android SDK
         ```xml
         <application android:name="io.branch.referral.BranchApp">
         ```
-
-- ### Custom install referrer class
-
-    - Google only allows one `BroadcastReceiver` per application
-
-    - Add to your `AndroidManifest.xml`
-
-        ```xml
-        <receiver android:name="com.BRANCH SDK.CustomInstallListener" android:exported="true">
-          <intent-filter>
-            <action android:name="com.android.vending.INSTALL_REFERRER" />
-          </intent-filter>
-        </receiver>
-        ```
-
-    - Create an instance of `io.branch.referral.InstallListener` in `onReceive()`
-
-    - *Java*
-
-        ```java
-        InstallListener listener = new InstallListener();
-        listener.onReceive(context, intent);
-        ```
-
-    - *Kotlin*
-
-        ```java
-        val listener = InstallListener()
-        listener.onReceive(context, intent)
-        ```
-
 - ### Generate signing certificate
 
     - Used for Android <notranslate>**App Link**</notranslate> deep linking
