@@ -441,18 +441,18 @@ This class is need for customize "Link sharing"
 
  1. Build solution
  2. Copy COM Library from
-**..\BranchWindowsSdk\DLLs\Debugranch_debug_0.1.0.tlb** or
-**..\BranchWindowsSdk\DLLs\Releaseranch_0.1.0.tlb** to
+**..\BranchWindowsSdk\DLLs\Debug\branch_debug_0.1.0.tlb** or
+**..\BranchWindowsSdk\DLLs\Release\branch_0.1.0.tlb** to
 **..\Your Project Folder\Your Project Name\Debug** or
 **..\Your Project Folder\Your Project Name\Release**
  3. Import library
 ```cpp
-#import "..\Your Project Name\Debugranch_debug_0.1.0.tlb"
+#import "..\Your Project Name\Debug\branch_debug_0.1.0.tlb"
 using namespace branch_debug_0.1.0;
 ```
 or
 ```cpp
-#import "..\Your Project Name\Debugranch_0.1.0.tlb"
+#import "..\Your Project Name\Debug\branch_0.1.0.tlb"
 using namespace branch_0.1.0;
 ```
  4. Include ```<thread>```
