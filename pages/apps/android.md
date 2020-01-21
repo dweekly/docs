@@ -240,7 +240,7 @@ title: Android SDK
             }
 
             object branchListener : Branch.BranchReferralInitListener {
-                    override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
+                    override fun onInitFinished(referringParams: JSONObject?, error: BranchError?) {
                         if (error == null) {
                             Log.i("BRANCH SDK", referringParams.toString())
                             // Retrieve deeplink keys from 'referringParams' and evaluate the values to determine where to route the user
@@ -398,7 +398,7 @@ title: Android SDK
             .addControlParameter("custom", "data")
             .addControlParameter("custom_random", Long.toString(Calendar.getInstance().getTimeInMillis()))
 
-        buo.generateShortUrl(this, lp, BranchLinkCreateListener { url, error ->
+        buo.generateShortUrl(this, lp, BranchLinkCreateListener { url?, error? ->
             if (error == null) {
                 Log.i("BRANCH SDK", "got my Branch link to share: " + url)
             }
@@ -476,7 +476,7 @@ title: Android SDK
         buo.showShareSheet(this, lp, ss, object : Branch.BranchLinkShareListener {
             override fun onShareLinkDialogLaunched() {}
             override fun onShareLinkDialogDismissed() {}
-            override fun onLinkShareResponse(sharedLink: String, sharedChannel: String, error: BranchError?) {}
+            override fun onLinkShareResponse(sharedLink: String?, sharedChannel: String?, error: BranchError?) {}
             override fun onChannelSelected(channelName: String) {}
         })
         ```
@@ -516,7 +516,7 @@ title: Android SDK
         ```java
         // listener (within Main Activity's onStart)
         Branch.getInstance().initSession(object : BranchReferralInitListener {
-            override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
+            override fun onInitFinished(referringParams: JSONObject?, error: BranchError?) {
                 if (error == null) {
                     Log.e("BRANCH SDK", referringParams.toString)
                 } else {
@@ -571,7 +571,7 @@ title: Android SDK
         ```java
         // listener (within Main Activity's onStart)
         Branch.getInstance().initSession(object : BranchReferralInitListener {
-            override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
+            override fun onInitFinished(referringParams: JSONObject?, error: BranchError?) {
                 if (error == null) {
                     // option 1: log data
                     Log.i("BRANCH SDK", referringParams.toString())
@@ -728,7 +728,7 @@ title: Android SDK
         - *Kotlin*
 
             ```java
-            Branch.getInstance().loadRewards { changed, error ->
+            Branch.getInstance().loadRewards { changed, error? ->
                 if (error != null) {
                     Log.i("BRANCH SDK", "branch load rewards failed. Caused by -" + error.message)
                 } else {
@@ -757,7 +757,7 @@ title: Android SDK
         - *Kotlin*
 
             ```java
-            Branch.getInstance().getCreditHistory { history, error ->
+            Branch.getInstance().getCreditHistory { history?, error? ->
                 if (error != null) {
                     Log.i("BRANCH SDK", "branch load credit history failed. Caused by -" + error.message)
                 } else {
